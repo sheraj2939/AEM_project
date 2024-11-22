@@ -1,0 +1,50 @@
+.nodal-officer-box {
+  background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.67) 99.11%);
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.01), 5px 0px 10px rgba(0, 0, 0, 0.01), 0px -5px 10px rgba(0, 0, 0, 0.01), 0px 5px 10px rgba(0, 0, 0, 0.01);
+  border-radius: 30px;
+  padding: 25px 40px;
+}
+.nodal-officer-box .top-heading {
+  margin-bottom: 20px;
+}
+.nodal-officer-box .nodal-officer-top,
+.nodal-officer-box .email-details {
+  padding-bottom: 20px;
+}
+.nodal-officer-box .officer-name {
+  font-family: "OpenSans-Bold";
+}
+.nodal-officer-box a {
+  font-family: "OpenSans-Bold";
+  color: #126FB3;
+}
+.nodal-officer-box .view-documents li {
+  padding-left: 13px;
+  position: relative;
+  margin-top: 10px;
+}
+.nodal-officer-box .view-documents li:first-child {
+  margin-top: 0px;
+}
+.nodal-officer-box .view-documents li::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #126FB3;
+  left: 0;
+  top: 9px;
+}
+.nodal-officer-box .view-documents a {
+  display: inline-block;
+}
+
+@media (max-width: 767px) {
+  .nodal-officer-box {
+    padding: 24px;
+    border-radius: 24px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

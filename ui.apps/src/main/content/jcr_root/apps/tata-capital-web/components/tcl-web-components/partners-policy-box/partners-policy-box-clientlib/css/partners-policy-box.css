@@ -1,0 +1,30 @@
+.partners-policy-box {
+  background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.67) 99.11%);
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.01), 5px 0px 10px rgba(0, 0, 0, 0.01), 0px -5px 10px rgba(0, 0, 0, 0.01), 0px 5px 10px rgba(0, 0, 0, 0.01);
+  border-radius: 20px;
+  padding: 25px 40px;
+}
+.partners-policy-box .policy-points {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: -20px -15px 0;
+}
+.partners-policy-box li {
+  padding: 0 15px;
+  margin-top: 20px;
+}
+.partners-policy-box a {
+  color: #126FB3;
+}
+
+@media (max-width: 991px) {
+  .partners-policy-box {
+    padding: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .partners-policy-box li {
+    width: 100%;
+  }
+}

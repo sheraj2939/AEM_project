@@ -1,0 +1,92 @@
+.tenure-moths-wrapper .text14i {
+	 margin-bottom: 12px;
+}
+ .tenure-moths-wrapper .months-details-menu {
+	 display: flex;
+	 flex-wrap: wrap;
+	 margin: 0 -4px;
+}
+ .tenure-moths-wrapper .months-details-menu li {
+	padding: 6px 4px 0;
+}
+ .tenure-moths-wrapper .months-details-menu .checkbox-btn-wrap {
+	 display: inline-block;
+	 position: relative;
+}
+ .tenure-moths-wrapper .months-details-menu .checkbox-btn-wrap .btn-checkbox {
+	 display: block;
+	 padding: 5px 20px;
+	 min-width: 83px;
+	 background: linear-gradient(134.06deg, #f1f9ff 0%, #f5fbff 99.11%);
+	 box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.01), 5px 0px 10px rgba(0, 0, 0, 0.01), 0px -5px 10px rgba(0, 0, 0, 0.01), 0px 5px 10px rgba(0, 0, 0, 0.01);
+	 border-radius: 30px;
+	 border: 1px solid rgba(60, 122, 185, 0.3);
+	 font-family: 'OpenSans-SemiBold';
+	 font-size: 14px;
+	 line-height: 149.8%;
+	 text-align: center;
+	 color: #333;
+}
+ .tenure-moths-wrapper .months-details-menu .checkbox-btn-wrap input {
+	 width: 100%;
+	 height: 32px;
+	 position: absolute;
+	 left: 0px;
+	 top: 0px;
+	 opacity: 0;
+	 z-index: 1;
+	 cursor: pointer;
+}
+ .tenure-moths-wrapper .months-details-menu .checkbox-btn-wrap input:checked ~ .btn-checkbox {
+	 background: #1961ac;
+	 color: #fff;
+}
+ .micro-finance-calculator .product-details .calculator-textbox {
+	 max-width: 100%;
+}
+ .micro-finance-calculator .monthly-emi-wrapper {
+	 margin-bottom: 10px;
+}
+ .micro-finance-calculator .month-year-tab-wrap {
+	 z-index: 1;
+}
+ .micro-finance-calculator .final-amount-text p {
+	 font-size: 12px;
+	 line-height: 17px;
+}
+ .micro-finance-calculator .calculator-textbox.with-border {
+	 background: linear-gradient(134.06deg, #f1f9ff 0%, #f5fbff 99.11%);
+	 box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.01), 5px 0px 10px rgba(0, 0, 0, 0.01), 0px -5px 10px rgba(0, 0, 0, 0.01), 0px 5px 10px rgba(0, 0, 0, 0.01);
+	 backdrop-filter: blur(9px);
+}
+ @media (max-width: 991px) {
+	 .micro-finance-calculator .product-details .calculator-dropdown-filter {
+		 align-items: center;
+	}
+	 .micro-finance-calculator .product-details .calculator-dropdown-filter .calculator-heading {
+		 width: 61px;
+	}
+	 .micro-finance-calculator .product-details .calculator-dropdown-filter .calculator-textbox {
+		 width: calc(100% - 61px);
+	}
+}
+ @media (max-width: 767px) {
+	 .tenure-moths-wrapper .months-details-menu {
+		 margin: 0 -2px;
+	}
+	 .tenure-moths-wrapper .months-details-menu li {
+		 padding: 5px 2px 0;
+	}
+	 .tenure-moths-wrapper .months-details-menu .checkbox-btn-wrap .btn-checkbox {
+		 padding: 5px 15px;
+		 min-width: 77px;
+	}
+	 .product-details .calculator-dropdown-filter .calculator-textbox {
+		 width: calc(100% - 61px);
+		 margin-left: 0;
+	}
+	 .micro-finance-calculator .final-amount-text p {
+		 font-size: 13px;
+	}
+}
+ 

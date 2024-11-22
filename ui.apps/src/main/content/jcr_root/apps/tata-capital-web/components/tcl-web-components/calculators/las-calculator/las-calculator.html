@@ -1,0 +1,315 @@
+<!--Loan Against Securities Calculator-->
+<style>
+    .red{
+        color: red !important; 
+    }
+</style>
+<section data-sly-use.title="com.adobe.cq.wcm.core.components.models.Title"
+    data-sly-use.template="core/wcm/components/commons/v1/templates.html" data-sly-test.text="${title.text}"
+    data-cmp-data-layer="${title.data.json}" class="calculator-box space-tb40 las z-0"  data-calc-name="${title.text}">
+    <div class="container">
+        <div class="mx-944">
+            <div class="tops-heads">
+                <div
+                    data-sly-resource="${'title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                </div>
+            </div>
+
+            <div class="full-bgcalc calculator-security-wrap">
+                <div class="calculator-rows-outers">
+                    <div class="calculator-price-rows">
+                        <div class="calculator-price-col">
+                            <div class="calculate-price">
+                                <p>Total Net Value</p>
+                                <h4 class="las-tnv">₹0</h4>
+                            </div>
+                        </div>
+                        <div class="calculator-price-col">
+                            <div class="calculate-price">
+                                <p>Eligible Loan Amount</p>
+                                <h4 class="las-ela">₹0</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculate-btn-wrap">
+                        <a href="${title.linkURL}" target=" ${properties.newTab ? '_blank' : '' }" class="calculate-btn btn-blue btn-large">
+                            Apply Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="full-bgcalc">
+
+                <div class="las-main-inner">
+                    <div class="las-company-stock">
+                        <div class="las-company-stock-outer">
+                            <div class="las-company-left">
+                                <div class="row-flex">
+                                    <div class="row-col-45 col-sp15">
+                                        <div class="form-textbox-new calc-textbox-new las-companyname-textbox">
+                                            <label class="label-name">Company/Stock Name</label>
+                                            <div class="form-textbox-searchs">
+                                                <input type="text" class="input-textbox jsFilterText area-values-text gray-textbox ui-autocomplete-input" placeholder="" data-stock-name jsname="filterStock"> 
+                                            </div>
+                                        </div>
+                                        <p jsName="shareQuantity" class="text-label12 success-text-info text-black2 black-value las-value-share-quantity">Value of Share X Quantity:
+                                            ₹<span class="">0</span></p>
+                                        <!-- <p class="text-label12 success-text-info text-value "></p> -->
+                                        <p class="text-label12 success-text-info aGreen-category company-info"></p>
+                                    </div>
+                                    <div class="row-col-25 col-sp15">
+                                        <div class="form-textbox-new calc-textbox-new las-company-textbox">
+                                            <label class="label-name">Quantity</label>
+                                            <div class="form-textbox-searchs">
+                                                <input type="text" class="input-textbox price-only-comma gray-textbox price-with-comma-js-input area-values-text gray-textbox only-numeric-input quantity"  dataInputName = "stockInput" jsname="resetInput"
+                                                    placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row-col-30 col-sp15">
+                                        <div class="form-textbox-new calc-textbox-new active">
+                                            <label class="label-name">Share Amount</label>
+                                            <div class="form-textbox-searchs">
+                                                <p class="qty-calc-values"><span class="icon-rupee"></span><span class="shareamt">0</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <li style="display: none;">
+                                        <p class="heading14">Eligible Loan Amount</p>
+                                        <p class="heading16 font-semibold"><i class="icon-indian-rupee rupeeicon-values"></i> <span class="ela">0</span></p>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="las-add-stock">
+                                <a href="javascript:void(0)" class="btn-blue btn-blue-outline btn14 js-add-stock"><span
+                                        class="icon-plus"></span> Add to list</a>
+                            </div>
+                        </div>
+                        <div class="las-cate-right">
+                            <p class="text-label12 success-text-info text-red category-text-val error company-xs-error"></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="drag-box">
+                    <div class="drag-inner">
+
+                        <div class="drag-inner-box form-drag" id="dragdrop-area">
+                            <!-- Drag file -->
+                            <div class="w-100 drag-panel drag-space-lr drag-panel-box" id="drag01">
+                                <p class="multiple-text">Have Multiple Stocks?</p>
+                                <div class="drag-options">
+                                    <ul>
+                                        <li>Have multiple stocks? Drag and drop file</li>
+                                        <li><span>Or</span></li>
+                                        <li>
+                                            <div class="browse-file">
+                                                <!-- <input type="file" accept=".xls,.xlsx" data-file="browse" data-modaltarget="#uploadConfimation">  -->
+                                                <label><input type="file" data-file="browse" data-target="#uploadConfimation">UPLOAD</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="/content/dam/tata-capital/excel/User LAS Excel.xlsx" download=""><button class="btn-download">Download sample template</button></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Uploading file Progress Bar -->
+                            <div class="drag-panel w-100 hidden" id="drag02">
+                                <div class="loader drag-space-lr">
+                                    <div class="loader-inner">
+                                        <!-- <img alt="" src="assets/img/file-loader.png"> -->
+                                        <span>Uploading...</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Successfully Message -->
+                            <!-- <div class="drag-panel w-100 hidden" id="drag030">
+                                        <div class="success text-center">
+                                            <button class="close" data-drag="close" data-prev="#drag01"><i class="icon-close"></i></button>
+                                            <img alt="" src="../../../assets/images/drag-success.png">
+                                            <div class="success-text">
+                                                <p>Successfully uploaded! <span>Your stocks will reflect in the below table</span> <span class="file">stocks.xlsx</span></p>
+                                            </div>
+                                            <div class="restore-msg">
+                                                <div class="restore-msg-inner">
+                                                    <p>15 out of 25 stocks Uploaded from your file have been edited <button type="button" data-modaltarget="#restoreConfimation" class="jsModalLink">Restore</button></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                     -->
+
+                            <!-- error Unable to retrive the data -->
+                            <div class="drag-panel w-100 hidden" id="drag04">
+                                <div class="success drag-space-lr drag-error text-center">
+                                    <button class="close" data-drag="close" data-prev="#drag01"><i
+                                            class="icon-close"></i></button>
+                                    <p>*Unable to retrive the data</p>
+                                    <p class="text-black2">User LAS <span class="file">stocks.xlsx</span></p>
+                                    <span class="filetext">(a) File might be corrupted (b) Fill the stock details as per
+                                        the template provided</span>
+                                </div>
+                            </div>
+
+                            <!-- error Unable to retrive the data -->
+                            <div class="drag-panel w-100 hidden" id="drag05">
+                                <div class="success drag-space-lr drag-error text-center">
+                                    <button class="close" data-drag="close" data-prev="#drag01"><i
+                                            class="icon-close"></i></button>
+                                    <!-- <img alt="" src="assets/img/drag-error.png"> -->
+                                    <div class="success-text">
+                                        <p>*Wrong file type uploaded</p>
+                                        <span class="file file-name">stocks.pdf</span>
+                                        <a href="/content/dam/tata-capital/excel/User LAS Excel.xlsx" download><span class="filetext">Download and edit the sample templete provided by Tata
+                                            Capital (.xlsx)</span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Successfully Message -->
+                        <div class="file-added-box hidden" id="drag03">
+                            <button class="close jsDragInfoClosed" data-drag="close"><i class="icon-close"></i></button>
+                            <div class="file-added-info">
+                                <!-- <img src="assets/img/drag-success.png" alt="drag-success"> -->
+                                <p>User LAS <span class="file">Excel.xlsl</span></p>
+                            </div>
+                            <div class="file-added-controls">
+                                <span class="jsFileSize">25.2 KB</span>
+                                <a href="javascript:void(0)" class="remove-btn jsDragInfoClosed">Remove</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="las-main-box">
+
+                    <div class="las-main-inner">
+                        <div class="d-block visible-xs text-center">
+                            <div class="added-popup  added-xs-msg" style="display: none;">
+                                <p><i class="icon-check-circle"></i>Stock added to the list</p>
+                            </div>
+                            <div class="added-popup clear-reds remove-xs-msg" style="display: none;">
+                                <p><i class="icon-close-circle"></i>Stock removed from the list</p>
+                            </div>
+                            <div class="added-popup clear-reds clearall-xs-msg" style="display: none;">
+                                <p><i class="icon-close-circle"></i>All Stock removed from the list</p>
+                            </div>
+                        </div>
+
+                        <div class="las-stock-added-inner">
+                            <div class="las-added-left">
+                                <p class="text14i js-stockCount">Stocks added (<span>0</span>)</p>
+                                <div class="added-popup hidden-xs added-msg" style="display: none;">
+                                    <p><i class="icon-check-circle"></i>Stock added to the list</p>
+                                </div>
+                                <div class="added-popup clear-reds hidden-xs remove-msg" style="display: none;">
+                                    <p><i class="icon-close-circle"></i>Stock removed from the list</p>
+                                </div>
+                                <div class="added-popup clear-reds hidden-xs clearall-msg" style="display: none;">
+                                    <p><i class="icon-close-circle"></i>All Stock removed from the list</p>
+                                </div>
+                            </div>
+                            <div class="las-added-right">
+                                <a href="javascript:void(0)" class="btn-links-md semibold js-clear-all">Clear All</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="las-stock-table">
+                        <!-- las-head -->
+                        <div class="las-stock-head hidden-xs">
+                            <div class="las-stock-row">
+                                <ul>
+                                    <li class="stock34 las-stock-name">
+                                        <span class="text-label12">Stock Name</span>
+                                    </li>
+                                    <li class="stock13">
+                                        <span class="text-label12">Share Rate</span>
+                                    </li>
+                                    <li class="stock13">
+                                        <span class="text-label12">Quantity</span>
+                                    </li>
+                                    <li class="stock13">
+                                        <span class="text-label12">Total Value</span>
+                                    </li>
+                                    <li class="stock18">
+                                        <span class="text-label12">Eligible Loan Amount</span>
+                                    </li>
+                                    <li class="stock9 las-stock-remove">
+                                        <span class="text-label12">&nbsp;</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- las-head -->
+
+                        <!-- las-body -->
+                        <div class="las-stock-body relative">
+                            <div class="las-stock-row">
+                                <!--<a href="javascript:void(0)" class="icon-close row-closed"></a>-->
+                                <ul>
+                                    <li class="stock34 las-stock-name">
+                                        <div class="stockrow-companyname-textbox form-textbox-searchs">
+                            
+                                            <input type="text" class="input-textbox area-values-text gray-textbox" placeholder="Company Stock Name"
+                                                autocomplete="off">
+                                        </div>
+                            
+                                        <p class="text11 success-text-info">HDFC Asset Management Company Ltd. recognized as Super Cat A company</p>
+                                        <!--<p class="text11 red font-semibold error">Super Category A: Your eligible loan amount cannot exceed ₹7.5Cr
+                                            per scrip.</p>-->
+                                    </li>
+                                    <li class="stock15 las-share-rate stock13" data-content="Current Share Value">
+                                        <p class="heading16">1,818</p>
+                                    </li>
+                                    <li class="stock15 las-qty stock13" data-content="Quantity">
+                                        <input type="text" class="input-textbox only-numeric-input quantity" value="11111111" placeholder="" disabled style="border: 0;color: #333;">
+                                    </li>
+                                    <li class="stock15 las-value stock13" data-content="Value">
+                                        <p class="heading16 sxq red">20,19,99,99,798</p>
+                                    </li>
+                                    <li class="stock15 las-eli-amt stock18" data-content="Eligible Amount">
+                                        <p class="heading16 ela">7,50,00,000</p>
+                                    </li>
+                                    <li class="stock9 las-stock-remove"><a href="javascript:void(0)" data-stockid="3022139151" class="btn-links-md semibold text-gray row-closed" jsname="removeStock">Remove</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- las-body -->
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--Loan Against Securities Calculator-->
+<div class="popover-modal modals-blue fade popover-show" id="uploadConfimation">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content confirm-upload-file">                
+                <div class="popover-modal-body">                      
+                    <div class="modal-body-inner">      
+                        <div class="confirm-mx">                                            
+                            <h3 class="heading20"><span>Are you sure you want to upload?</span></h3>
+                            <div class="confirm-btn-link">    
+                                <button class="btn-link btn-14" data-dismiss="popover-modal" data-upload="confirm" data-current="#drag01" data-next="#drag02" >Confirm Upload</button>
+
+                                <button type="button" class="btn-blue-new btn14 bg-transparent" data-dismiss="popover-modal">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

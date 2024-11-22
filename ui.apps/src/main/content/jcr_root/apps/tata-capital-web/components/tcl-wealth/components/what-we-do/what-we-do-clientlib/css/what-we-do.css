@@ -1,0 +1,319 @@
+.about-text-center {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.digitals-slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -32px -16px 0;
+}
+.digitals-slider .digitals-row {
+  width: 33.33%;
+  padding: 0px 16px;
+  margin-top: 32px;
+}
+.digitals-slider .digitals-col {
+  height: 100%;
+}
+.digitals-slider .digitals-div {
+  padding: 20px 25px;
+  height: 100%;
+  transition: all 0.2s;
+  min-height: 204px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.digitals-slider .digitals-div .all-icon47 {
+  margin: 0 auto 24px;
+}
+.digitals-slider .digitals-div .heading20 {
+  margin-bottom: 8px;
+}
+.digitals-slider .digitals-div .text14i {
+  margin-bottom: 8px;
+  display: none;
+  word-wrap: break-word;
+}
+.digitals-slider .digitals-div .about-info-text {
+  margin-top: 8px;
+}
+.digitals-slider .digitals-div .digitals-btn .btn-links {
+  color: #fff;
+}
+.digitals-slider .digitals-div .digital-text-new {
+  border-radius: 0px 20px 0px 6px;
+  background-color: #640811;
+  padding: 7px 16px 7px 10px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 3;
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  min-width: 65px;
+}
+.digitals-slider .digitals-div .center-img {
+  margin-bottom: 12px;
+}
+.digitals-slider .digitals-div .center-img img {
+  border-radius: 12px;
+}
+.digitals-slider .digitals-div:hover {
+  background: linear-gradient(0deg, rgba(100, 8, 17, 0.9) 27.87%, rgba(100, 8, 17, 0.83) 100%);
+}
+.digitals-slider .digitals-div:hover .heading20 {
+  color: #fff;
+}
+.digitals-slider .digitals-div:hover .text14i {
+  color: #fff;
+  display: block;
+}
+.digitals-slider .digitals-div:hover .digitals-btn {
+  display: block;
+}
+.digitals-slider .digitals-div:hover .digital-text-new {
+  background-color: #fff;
+  color: #640811;
+}
+.digitals-slider .digitals-div.digitals-with-hover {
+  position: relative;
+  overflow: hidden;
+  min-height: auto;
+  padding: 25px;
+  display: block;
+}
+.digitals-slider .digitals-div.digitals-with-hover .digitals-top .heading20 {
+  margin-bottom: 0px;
+}
+.digitals-slider .digitals-div.digitals-with-hover .digitals-top .text14i {
+  display: none;
+}
+.digitals-slider .digitals-div.digitals-with-hover .digitals-overlay {
+  border-radius: 20px;
+  background: linear-gradient(0deg, rgba(100, 8, 17, 0.9) 27.87%, rgba(100, 8, 17, 0.83) 100%), linear-gradient(136deg, rgba(255, 255, 255, 0.71) 0%, rgba(255, 255, 255, 0.95) 100%), linear-gradient(136deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.67) 100%);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.01), 0px -5px 10px 0px rgba(0, 0, 0, 0.01), 5px 0px 10px 0px rgba(0, 0, 0, 0.01), -5px 0px 10px 0px rgba(0, 0, 0, 0.01);
+  position: absolute;
+  transform: translateY(102%);
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 25px 20px 62px;
+  z-index: 2;
+  transition: all 0.2s;
+}
+.digitals-slider .digitals-div.digitals-with-hover .digitals-overlay .heading20 {
+  color: #fff;
+}
+.digitals-slider .digitals-div.digitals-with-hover .digitals-overlay .text14i {
+  color: #fff;
+  display: block;
+}
+.digitals-slider .digitals-div.digitals-with-hover .digitals-overlay .digitals-btn {
+  display: block;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  padding: 25px;
+}
+.digitals-slider .digitals-div.digitals-with-hover:hover {
+  background: linear-gradient(136deg, rgba(255, 255, 255, 0.71) 0%, rgba(255, 255, 255, 0.95) 100%), linear-gradient(136deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.67) 100%);
+}
+.digitals-slider .digitals-div.digitals-with-hover:hover .digitals-overlay {
+  transform: translateY(0%);
+}
+.digitals-slider .digitals-div.digital-center {
+  min-height: 200px;
+}
+.digitals-slider .digitals-div.digital-center .digitals-overlay {
+  text-align: center;
+}
+.digitals-slider .digitals-top {
+  text-align: center;
+}
+.digitals-slider.plan-for-slider .digitals-div {
+  min-height: 173px;
+}
+.digitals-slider.center-for-slider .digitals-div {
+  padding-top: 25px;
+}
+.digitals-slider.center-for-slider .digitals-top {
+  text-align: left;
+}
+.digitals-slider.digitals-slider4 .digitals-row {
+  width: 25%;
+}
+.digitals-slider.aboutus-slider .digitals-div.digitals-with-hover {
+  min-height: auto;
+}
+.digitals-slider.aboutus-slider .digitals-div.digitals-with-hover:hover .heading20 {
+  color: #333;
+}
+
+@media (max-width: 1199px) {
+  .digitals-slider .digitals-div {
+    min-height: 224px;
+  }
+  .digitals-slider .digitals-div.digitals-with-hover {
+    min-height: 235px;
+  }
+  .digitals-slider .digitals-div.digital-center {
+    min-height: 200px;
+  }
+  .digitals-slider.plan-for-slider .digitals-div {
+    min-height: 173px;
+  }
+  .digitals-slider.digitals-slide .digitals-div {
+    min-height: 235px;
+  }
+  .digitals-slider.digitals-slider4 .digitals-row {
+    width: 33.33%;
+  }
+}
+@media (max-width: 991px) {
+  .digitals-slider {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px -10px 0;
+  }
+  .digitals-slider .digitals-row {
+    width: 50%;
+    padding: 0px 10px;
+    margin-top: 20px;
+  }
+  .digitals-slider .digitals-div {
+    min-height: 204px;
+  }
+  .digitals-slider .digitals-div.digitals-with-hover {
+    min-height: auto;
+  }
+  .digitals-slider .digitals-div.digital-center {
+    min-height: 200px;
+  }
+  .digitals-slider.plan-for-slider .digitals-div {
+    min-height: 173px;
+  }
+  .digitals-slider.digitals-slider4 .digitals-row {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .about-text-center {
+    padding-top: 30px;
+  }
+  .digitals-box .slick-list {
+    padding-left: 7px !important;
+  }
+  .digitals-slider {
+    display: block;
+    margin: 0px;
+  }
+  .digitals-slider .digitals-row {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .digitals-slider .digitals-col {
+    padding: 0 8px 13px;
+  }
+  .digitals-slider .digitals-div {
+    min-height: auto;
+    padding: 24px 24px 62px;
+    position: relative;
+    display: block;
+  }
+  .digitals-slider .digitals-div .all-icon47 {
+    margin-bottom: 12px;
+  }
+  .digitals-slider .digitals-div .heading20 {
+    margin-bottom: 12px;
+  }
+  .digitals-slider .digitals-div .text14i {
+    display: block;
+    margin-bottom: 0px;
+  }
+  .digitals-slider .digitals-div .digitals-btn {
+    display: block;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding: 16px 24px 24px;
+  }
+  .digitals-slider .digitals-div .digitals-btn .btn-links {
+    color: #333333;
+  }
+  .digitals-slider .digitals-div:hover {
+    background: linear-gradient(136deg, rgba(255, 255, 255, 0.71) 0%, rgba(255, 255, 255, 0.95) 100%), linear-gradient(136deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.67) 100%);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.01), 0px -5px 10px 0px rgba(0, 0, 0, 0.01), 5px 0px 10px 0px rgba(0, 0, 0, 0.01), -5px 0px 10px 0px rgba(0, 0, 0, 0.01);
+  }
+  .digitals-slider .digitals-div:hover .all-icon47 {
+    display: block;
+  }
+  .digitals-slider .digitals-div:hover .heading20 {
+    color: #333;
+  }
+  .digitals-slider .digitals-div:hover .text14i {
+    color: #333;
+  }
+  .digitals-slider .digitals-div:hover .digital-text-new {
+    background-color: #640811;
+    color: #fff;
+  }
+  .digitals-slider .digitals-div.digitals-with-hover {
+    padding: 24px 24px 62px;
+  }
+  .digitals-slider .digitals-div.digitals-with-hover .heading20 {
+    display: none;
+  }
+  .digitals-slider .digitals-div.digitals-with-hover .digitals-overlay {
+    position: static;
+    padding: 0px;
+    background: transparent;
+    transform: translateY(0);
+    border-radius: 0px;
+    box-shadow: none;
+  }
+  .digitals-slider .digitals-div.digitals-with-hover .digitals-overlay .heading20 {
+    margin-bottom: 12px;
+    color: #333;
+    display: block;
+  }
+  .digitals-slider .digitals-div.digitals-with-hover .digitals-overlay .text14i {
+    color: #333;
+  }
+  .digitals-slider .digitals-div.digital-center .digitals-overlay {
+    box-shadow: none;
+  }
+  .digitals-slider .digitals-div.digital-center .digitals-overlay:before, .digitals-slider .digitals-div.digital-center .digitals-overlay:after {
+    display: none;
+  }
+  .digitals-slider .digitals-div.digital-center .digitals-btn {
+    text-align: center;
+  }
+  .digitals-slider.plan-for-slider .digitals-div {
+    min-height: auto;
+  }
+  .digitals-slider.digitals-slide .digitals-div {
+    min-height: auto;
+  }
+  .digitals-slider.aboutus-slider .digitals-div.digitals-with-hover {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .digitals-slider.aboutus-slider .digitals-div.digitals-with-hover .heading20 {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

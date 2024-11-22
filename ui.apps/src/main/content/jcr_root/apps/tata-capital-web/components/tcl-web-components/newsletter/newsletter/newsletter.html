@@ -1,0 +1,26 @@
+<div class="subscribe-box">
+	<div class="container">
+		<div class="subscribe-inner">
+			<div class="subscribe-row">
+				<div class="subscribe-left">
+					<sly class="main-container" data-sly-resource="${'sub-header' @ resourceType='/apps/core/wcm/components/container/v1/container'}"></sly>
+				</div>
+				<div class="subscribe-right">
+					<div class="subscribe-form" id="form-subscribe">                                 
+						<div class="form-textbox">
+							<label class="label-name">Email ID</label>
+							<div class="textbox-inner">
+								<input type="text" class="input-textbox" placeholder="" data-type="email">
+							</div>                                    
+						</div>
+                    <sly class="main-container" data-sly-resource="${'sub-btn' @ resourceType='/apps/core/wcm/components/container/v1/container'}"></sly>
+						<div class="subscribe-success d-none">
+							<img src="/content/dam/tata-capital-web/assets/img/tick.svg" loading="lazy" alt="" class="ticks">
+							<p>Submitted successfully</p>
+						</div>
+		            </div>
+				</div>
+			</div>                    
+		</div>
+	</div>
+</div>

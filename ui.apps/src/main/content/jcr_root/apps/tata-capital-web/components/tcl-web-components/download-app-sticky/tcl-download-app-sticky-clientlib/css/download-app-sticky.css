@@ -1,0 +1,19 @@
+.right-sticky-apps {
+    position: fixed;
+    right: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 7;
+}
+
+.right-sticky-apps a {
+    display: block;
+    width: 42px;
+    margin: 10px 0;
+}
+
+@media (max-width: 767px) {
+    .right-sticky-apps a {
+        width: 34px;
+    }
+}

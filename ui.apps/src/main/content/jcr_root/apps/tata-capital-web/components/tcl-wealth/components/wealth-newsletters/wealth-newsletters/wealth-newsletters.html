@@ -1,0 +1,61 @@
+<div class="subscribe-box">
+    <div class="container">
+        <div class="subscribe-inner">
+            <div class="subscribe-row">
+                <div class="subscribe-left">
+                    <p class="customNewsLatter">${properties.headingNormal}<span>${properties.headingBold}</span></p>
+                </div>
+                <div class="subscribe-right">
+                    <div class="subscribe-form" id="form-subscribe">
+                        <div class="row-flex">
+                            <div class="row-col-50 col-sp15">
+                                <div class="form-textbox">
+                                    <label class="label-name">Full name</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" class="input-textbox only-alpha-input disable-emoji"
+                                            placeholder="" data-type="fullname">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-50 col-sp15">
+                                <div class="form-textbox">
+                                    <label class="label-name">Email ID</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" class="input-textbox" placeholder="" data-type="email">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <sly data-sly-test="${properties.btnText}">
+                            <button type="button"
+                                class="btn-dangers btn-big btn-subscribes js-subscribe-btn">${properties.btnText}</button>
+                        </sly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- subscribe modal -->
+<div class="popover-modal fade" id="subscribe-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md6">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content bg-with-img">
+                <button data-dismiss="popover-modal" class="popover-modal-close jsSubscribeClose"><span
+                        class="icon-close"></span></button>
+                <div class="popover-modal-body">
+                    <div class="subscribe-thakyou">
+                        <img src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/thanks.svg"
+                            alt="Thank You" class="thanks-imgs">
+                        <p class="heading20 semibold">Thank you for your subscription!</p>
+                        <p class="text14i">We will keep you updated with the latest research reports from the desk of
+                            our wealth managers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- subscribe modal -->

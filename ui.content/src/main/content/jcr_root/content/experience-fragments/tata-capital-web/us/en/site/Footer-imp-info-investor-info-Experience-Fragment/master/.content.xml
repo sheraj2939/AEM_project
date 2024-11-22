@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-12-02T01:51:06.823+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/tata-capital-web/settings/wcm/templates/tatacapital-web-footer-template"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Footer Experience Fragment"
+        sling:resourceType="tata-capital-web/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="tata-capital-web/components/container"
+            layout="responsiveGrid">
+            <footer_important_inf
+                jcr:created="{Date}2022-12-02T01:51:06.820+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-12-02T01:51:06.820+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/TC-Revamp/Tc-Footer/footer-important-info-investor-info-exp"
+                branchLocator="Top Branches"
+                image="/content/dam/tata-capital-web/Tc-footer-images/footer-logo-mn.svg"
+                importantInfotittle="Important Information"
+                investmentInfotittle="Investor Information"
+                linkTittle="www.tatacapital.com/moneyfy/"
+                otherInformationtittle="Other Solutions"
+                visitUs="Visit us on:">
+                <container-main-top-footer-imp-info-investor-info
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/responsivegrid">
+                    <footer_important_inf
+                        jcr:created="{Date}2022-11-29T14:26:27.914+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-11-29T14:27:04.967+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/Tc-Revamp/Tc-Footer/footer-important-info-exp"
+                        importantInfotittle="Important Information">
+                        <importantInfoList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                heading="Tata Code of Conduct"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                heading="Master Terms &amp; Conditions"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                heading="Vendor Feedback Form"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                heading="Rate History"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                heading="Ways to Service"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                heading="Our Partners"/>
+                        </importantInfoList>
+                    </footer_important_inf>
+                </container-main-top-footer-imp-info-investor-info>
+                <importantInfoList jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        heading="Tata Code of Conduct"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        heading="Master Terms &amp; Conditions"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        heading="Vendor Feedback Form"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        heading="Rate History"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        heading="Ways to Service"/>
+                    <item5
+                        jcr:primaryType="nt:unstructured"
+                        heading="Our Partners"/>
+                </importantInfoList>
+                <investorInfo jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        heading="Tata Capital"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        heading="Tata Capital Financial Services Limited"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        heading="Tata Capital Housing Finance Limited"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        heading="Tata Cleantech Capital Limited"/>
+                </investorInfo>
+            </footer_important_inf>
+        </root>
+    </jcr:content>
+</jcr:root>

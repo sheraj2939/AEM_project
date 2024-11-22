@@ -1,0 +1,55 @@
+ <div class="heading-section">
+    <sly data-sly-resource="${'title' @resourceType='/apps/tata-capital-web/components/home-page/Instant-loan/rte'}" />
+</div>
+<div class="pre-approved-offer">
+    <div class="media-holder d-block d-md-none">
+        <img src="/content/dam/tata-capital-web/tc-instant-loan/tick.png" alt="" />
+    </div>
+    <div class="pre-approved-candidate">
+        <div class="info">
+            <sly data-sly-resource="${'left-desc' @resourceType='/apps/tata-capital-web/components/TC-Revamp/customcontainer/customcontainer'}" />
+        </div>
+        <form class="pre-approved-form" id="preApprovedLoanForm">
+            <div class="form-textbox">
+                <label class="label-name">Name</label>
+                <div class="textbox-inner">
+                    <input type="text" class="input-textbox" placeholder="" data-type="name">
+                </div>
+            </div>
+            <div class="form-textbox">
+                <label class="label-name">Phone Number</label>
+                <div class="textbox-inner">
+                    <input type="text" class="input-textbox only-numeric-input" placeholder="" data-type="mobile"
+                        maxlength="10">
+                </div>
+            </div>
+            <div class="btn-holder">
+                <sly data-sly-resource="${'button' @resourceType='/apps/tata-capital-web/components/TC-Revamp/customcontainer/customcontainer'}" />
+            </div>
+        </form>
+    </div>
+    <div class="pre-approved-otp d-none">
+        <form id="preApprovedOtp">
+            <label class="label-name ">Enter OTP sent to your phone number</label>
+            <div class="form-textbox enter-otp">
+                <div class="enter-otp-block">
+                    <div class="otp-col js-OtpBox">
+                        <input class="input-textbox only-numeric-input" type="text" maxlength="1">
+                        <input class="input-textbox only-numeric-input pointer-none" type="text" maxlength="1">
+                        <input class="input-textbox only-numeric-input pointer-none" type="text" maxlength="1">
+                        <input class="input-textbox only-numeric-input pointer-none" type="text" maxlength="1">
+                    </div>
+                    <span class="watch">00:30</span>
+                </div>
+            </div>
+            <div class="btn-holder">
+                <sly data-sly-resource="${'otp-button' @resourceType='/apps/tata-capital-web/components/TC-Revamp/customcontainer/customcontainer'}" />
+                <a href="javascript:;" class="resend btn-link btn-big js-resendOTP">Resend
+                    OTP</a>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="already-applied" data-cta="Insant Loan Instant Benefit" >
+    <sly data-sly-resource="${'bottom-desc' @resourceType='/apps/tata-capital-web/components/TC-Revamp/customcontainer/customcontainer'}" />
+</div>

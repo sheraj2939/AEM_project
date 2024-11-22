@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Configuration Report Filter"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="{Path}/mnt/overlay/wcm/core/content/sites/components/details.html/apps/tata-capital-website/components/content/wm/wm-footer/README.md">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Heading"
+                        name="./heading"
+                        useFixedInlineToolbar="{Boolean}true"/>
+                    <padTabs
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                        <items jcr:primaryType="nt:unstructured">
+                            <report
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Report List"
+                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                fieldLabel="Report List">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <report-list
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Report List"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="Report List">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                    eaem-nested="NODE_STORE"
+                                                    name="./reportMulti">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <pdfYear
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Enter Pdf  Year"
+                                                                    name="./pdfYear"
+                                                                    useFixedInlineToolbar="{Boolean}true"/>
+                                                                <pdfMonth
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Enter Pdf  Month"
+                                                                    name="./pdfMonth"
+                                                                    useFixedInlineToolbar="{Boolean}true"/>
+                                                                <title
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Title"
+                                                                    name="./title"
+                                                                    useFixedInlineToolbar="{Boolean}true"/>
+                                                                <btn-text
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Enter Button Name"
+                                                                    name="./buttonText"
+                                                                    useFixedInlineToolbar="{Boolean}true"/>
+                                                                <showPdf
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                    composite="{Boolean}true"
+                                                                    name="./showPdf"
+                                                                    text="Show PDF"
+                                                                    value="true"/>
+                                                                <btn-link
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                    fieldLabel="Enter Button Link"
+                                                                    name="./btnLink"
+                                                                    rootPath="/content"/>
+                                                                <newTab
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                    composite="{Boolean}true"
+                                                                    name="./checkNewTab"
+                                                                    text="Open in New Tab"
+                                                                    value="true"/>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                            </report-list>
+                                        </items>
+                                    </column>
+                                </items>
+                            </report>
+                            <rightFilter
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Right Filter"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <container
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Other website"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <default-year
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Default Year Text"
+                                                name="./defaultYear"
+                                                useFixedInlineToolbar="{Boolean}true"/>
+                                            <filtYearId
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Filter Year Number"
+                                                name="./filtYearId"
+                                                useFixedInlineToolbar="{Boolean}true"/>
+                                            <filter-items-year
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Years List"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="Years List">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                    eaem-nested="NODE_STORE"
+                                                    name="./rightFilterYear">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <filter-text
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Filter Items Text"
+                                                                    name="./filterYear"
+                                                                    useFixedInlineToolbar="{Boolean}true"/>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                            </filter-items-year>
+                                            <default-month
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Default Month Text"
+                                                name="./defaultMonth"
+                                                useFixedInlineToolbar="{Boolean}true"/>
+                                            <filtMonthId
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Filter Month Number"
+                                                name="./filtMonthId"
+                                                useFixedInlineToolbar="{Boolean}true"/>
+                                            <filter-items-months
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Months List"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="Months List">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                    eaem-nested="NODE_STORE"
+                                                    name="./filterMonths">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <filter-text
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Filter Items Text"
+                                                                    name="./filterMonth"
+                                                                    useFixedInlineToolbar="{Boolean}true"/>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                            </filter-items-months>
+                                        </items>
+                                    </container>
+                                </items>
+                            </rightFilter>
+                        </items>
+                    </padTabs>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

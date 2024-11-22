@@ -1,0 +1,187 @@
+@charset "UTF-8";
+.channel-options-box .channel-options-wrap {
+  padding: 30px;
+  background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.53) 0%, rgba(255, 255, 255, 0.61) 99.11%);
+}
+.channel-options-box .channel-options-wrap h4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.channel-options-box .form-textbox-new {
+  margin-bottom: 10px;
+}
+.channel-options-box .finance-option-wrap {
+  display: flex;
+  max-width: 680px;
+  margin: 0 auto;
+}
+.channel-options-box .finance-option-wrap li {
+  width: 50%;
+  margin-right: 40px;
+  max-width: 320px;
+}
+.channel-options-box .finance-option-wrap li:nth-last-child(1) {
+  margin-right: 0;
+}
+.channel-options-box .finance-option-wrap li .custom-radiobox-label {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+}
+.channel-options-box .finance-option-wrap li .custom-radiobox-label.active .radio-check {
+  border-color: #65C294;
+  box-shadow: 0px 10px 13px rgba(101, 194, 148, 0.15);
+}
+.channel-options-box .finance-option-wrap li .custom-radio {
+  top: 50%;
+  left: 20px;
+  width: 32px;
+  height: 32px;
+  transform: translateY(-50%);
+}
+.channel-options-box .finance-option-wrap li .custom-radio input[type=radio] {
+  height: 32px;
+  width: 32px;
+}
+.channel-options-box .finance-option-wrap li .custom-radio input:checked ~ .radiobox-check:after {
+  content: "";
+  font-family: "icomoon";
+  width: 32px;
+  height: 32px;
+  box-shadow: none;
+  background: transparent;
+  border: 1px solid #65C294;
+  color: #FFFFFF;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 7px 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transform: translate(0, 0);
+}
+.channel-options-box .finance-option-wrap li .custom-radio input:checked ~ .radiobox-check:before {
+  width: 32px;
+  height: 32px;
+  background: #65C294;
+  box-shadow: none;
+  border: 1px solid #65C294;
+}
+.channel-options-box .finance-option-wrap li .custom-radio .radiobox-check {
+  width: 32px;
+  height: 32px;
+}
+.channel-options-box .finance-option-wrap li .custom-radio .radiobox-check:before {
+  border-color: #333333;
+  width: 32px;
+  height: 32px;
+}
+.channel-options-box .radio-check {
+  width: 100%;
+  padding: 20px 20px 20px 72px;
+  background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.71) 0%, rgba(255, 255, 255, 0.95) 99.11%), linear-gradient(134.06deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.67) 99.11%);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  border: 2px solid transparent;
+}
+.channel-options-box .radio-check .label-text {
+  font-family: "OpenSans-SemiBold";
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+}
+.channel-options-box .radio-check .show-img {
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 20px;
+  font-size: 24px;
+  background: #B287D4;
+  padding: 12px 12px;
+  color: #FFFFFF;
+}
+.channel-options-box .looking-for-wrap {
+  margin-top: 30px;
+}
+.channel-options-box .looking-for-wrap h4 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .channel-options-box .channel-options-wrap {
+    padding: 24px;
+  }
+  .channel-options-box .finance-option-wrap {
+    flex-direction: column;
+  }
+  .channel-options-box .finance-option-wrap li {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  .channel-options-box .finance-option-wrap li:nth-last-child(1) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .channel-options-box .finance-option-wrap li .custom-radio {
+    width: 24px;
+    height: 24px;
+  }
+  .channel-options-box .finance-option-wrap li .custom-radio input[type=radio] {
+    height: 24px;
+    width: 24px;
+  }
+  .channel-options-box .finance-option-wrap li .custom-radio input:checked ~ .radiobox-check:after {
+    width: 24px;
+    height: 24px;
+    padding: 4px 7px;
+    font-size: 11px;
+  }
+  .channel-options-box .finance-option-wrap li .custom-radio input:checked ~ .radiobox-check:before {
+    width: 24px;
+    height: 24px;
+  }
+  .channel-options-box .finance-option-wrap li .custom-radio .radiobox-check {
+    width: 24px;
+    height: 24px;
+  }
+  .channel-options-box .finance-option-wrap li .custom-radio .radiobox-check:before {
+    width: 24px;
+    height: 24px;
+  }
+  .channel-options-box .radio-check {
+    width: 100%;
+    padding: 20px 20px 20px 56px;
+    border-radius: 16px;
+  }
+  .channel-options-box .radio-check .label-text {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .channel-options-box .radio-check .show-img {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    font-size: 20px;
+    padding: 9px 10px;
+  }
+  .channel-options-box .looking-for-wrap {
+    margin-top: 40px;
+  }
+  .channel-options-box .looking-for-wrap h4 {
+    margin-bottom: 11px;
+  }
+  .channel-options-box .looking-for-wrap .form-textbox-new {
+    padding-top: 0;
+  }
+  .channel-options-box .row-flex .row-col-50 {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

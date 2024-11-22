@@ -1,0 +1,14 @@
+.third-party-banner {
+  padding: 25px;
+}
+
+.third-party-banner .third-party-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.third-party-banner .images {
+  width: 100%;
+  height: 100%;
+}

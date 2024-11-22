@@ -1,0 +1,111 @@
+/**** TCHFL our other websites[START] ***/
+.other-websites-blue {
+    background-color: #1961ac;
+    padding: 30px 0;
+    position: relative
+}
+
+.other-websites-blue .footer-headings {
+    color: #fff
+}
+
+.other-websites-blue .footer-links a {
+    color: #fff
+}
+
+.other-websites-blue .footer-links a:hover {
+    color: rgba(255, 255, 255, .8)
+}
+
+.our-other-websites .footer-links li:before {
+    border-left-color: white;
+}
+
+.tcl-footer .our-other-websites .footer-links li:before {
+    border-left-color: rgba(51, 51, 51, 0.4);
+}
+.tchfl .our-other-websites .footer-links li:before {
+    border-left-color: white;
+}
+@media (max-width:767px) {
+    .other-websites-blue {
+        padding: 0px;
+    }
+
+    .other-websites-blue .footer-headings:before {
+        color: #fff
+    }
+
+    .other-websites-blue .footer-links.mob-foot-link li {
+        border-top: 1px solid rgba(255, 255, 255, .2)
+    }
+
+    .other-websites-blue .row-flex .row-col-40 {
+        width: 100%;
+    }
+
+    .other-websites-blue .row-flex .row-col-60 {
+        width: 100%;
+    }
+}
+
+/**** TCHFL our other websites[END] ***/
+
+/**** TCHFL copyright [SATRT] ***/
+#tchfl-copyright {
+    margin-top: -20px;
+}
+
+
+#tchfl-copyright .socal-lists {
+    display: flex;
+    flex-wrap: wrap
+}
+
+#tchfl-copyright .socal-lists a {
+    display: block;
+    margin-left: 20px
+}
+
+#tchfl-copyright .socal-lists a:first-child {
+    margin-left: 0
+}
+
+#tchfl-copyright .copyright-box p {
+    font-size: 12px;
+    line-height: 14px;
+    color: #333
+}
+
+@media (max-width:991px) {
+    #tchfl-copyright .socal-lists {
+        justify-content: center;
+        margin-bottom: 16px
+    }
+
+    /* .copyright-box .copyright-inner {
+        display: block;
+        text-align: center;
+        padding: 20px 0
+    }*/
+}
+
+@media (max-width:767px) {
+    #tchfl-copyright .copyright-box .copyright-inner {
+        padding-top: 0;
+        padding-bottom: 30px;
+        border-top: none
+    }
+
+    #tchfl-copyright .copyright-box .copyright-links {
+        border-bottom: none;
+        margin-bottom: 0
+    }
+
+    .copyright-box .copyright-links {
+        border-bottom: none;
+        margin-bottom: 0px;
+    }
+}
+
+/**** TCHFL copyright [SATRT] ***/

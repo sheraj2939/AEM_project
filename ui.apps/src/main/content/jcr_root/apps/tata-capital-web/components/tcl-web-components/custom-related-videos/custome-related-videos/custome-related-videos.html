@@ -1,0 +1,152 @@
+<!-- related video desktop -->
+<section class="related-video-cntr space-tb40">
+    <div class="container">
+        <div class="tops-heads">
+            <sly
+                data-sly-resource="${'video-title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+            </sly>
+        </div>
+        <div class="related-video-box ${properties.videoStyle}">
+            <sly data-sly-list.video="${resource.children}">
+                <sly data-sly-test="${video.name == 'videoMultifield'}">
+                    <sly data-sly-list.videoItems="${video.children}">
+                        <div class="block-left">
+                            <div class="related-video">
+                                <div class="media-holder">
+                                    <img src="${videoItems.thumnailUrl}" alt="${videoItems.ImageAltTitle}" loading="lazy"/>
+                                    <a href="javascript:;" class="media-figure" data-popovermodal="popover-modal"
+                                        video-source="${videoItems.embedUrl}" data-target="#video-modal-product">
+                                        <i class="icon-play pointEvt"></i>
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <div class="top">
+                                        <div class="hash-tag">
+                                            <span class="tag">${videoItems.hashTag}</span>
+                                        </div>
+                                        <div class="block-title">
+                                            <sly data-sly-test="${videoItems.selectVideoHeadingTag=='videoHeadingTagH3' || !videoItems.selectVideoHeadingTag}">
+                                                <h3 class="heading20"><span>${videoItems.videotitle}</span></h3>
+                                             </sly>
+                                             <sly data-sly-test="${videoItems.selectVideoHeadingTag=='videoHeadingTagP'}">
+                                                <p class="heading20"><span>${videoItems.videotitle}</span></p>
+                                             </sly>
+                                        </div>
+                                        <div class="related-text">${videoItems.videodecsription @ context = 'html'}
+                                        </div>
+                                        <div class="post-info">
+                                            <sly data-sly-test="${videoItems.youtubeVideoTime}">
+                                                <span class="post-time">${videoItems.youtubeVideoTime}</span>
+                                            </sly>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="new-share-bundle js-close-outside">
+                                            <button class="btn-white js-shares-btn">Share <span
+                                                    class="icon-share"></span></button>
+                                            <div class="share-bundle-menu">
+                                                <a href="JavaScript:void(0);" class="social-btn"
+                                                    data-shareurl="${videoItems.embedUrl}" data-share='whatsapp-icon'>
+                                                    <img src="/content/dam/tata-capital-web/assets/img/whatsapp-colored.svg"
+                                                        loading="lazy" alt="whatsapp-icon">
+                                                </a>
+                                                <a href="JavaScript:void(0);" class="social-btn"
+                                                    data-shareurl="${videoItems.embedUrl}" data-share="facebook-icon">
+                                                    <img src="/content/dam/tata-capital-web/assets/img/facebook-colored.svg"
+                                                    loading="lazy" alt="facebook-icon">
+                                                </a>
+                                                <a href="JavaScript:void(0);" class="social-btn"
+                                                    data-shareurl="${videoItems.embedUrl}" data-share="twitter-share">
+                                                    <img src="/content/dam/tata-capital-web/assets/img/twitter-x.svg"
+                                                    loading="lazy" alt="twitter-share">
+                                                </a>
+                                                <a href="JavaScript:void(0);" class="social-btn jsCopyLink"
+                                                    data-shareurl="${videoItems.embedUrl}">
+                                                    <span class="icon-copy icon"></span>
+                                                    <span class="text-copy">Copy</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </sly>
+                </sly>
+            </sly>
+            <sly data-sly-test="${properties.scrollerCheck}">
+                <div class="block-right">
+                    <div class="block-scroll">
+                        <sly data-sly-list.rightVideoContent="${resource.children}">
+                            <sly data-sly-test="${rightVideoContent.name == 'rightVideo'}">
+                                <sly data-sly-list.rightVideoItems="${rightVideoContent.children}">
+                                    <div class="related-video small-size">
+                                        <div class="media-holder">
+                                            <img src="${rightVideoItems.thumbnailImageRight}" alt="${rightVideoItems.ImageAltTitle}" loading="lazy"/>
+                                            <a href="javascript:;" class="media-figure"
+                                                data-popovermodal="popover-modal"
+                                                video-source="${rightVideoItems.rightVideoLink}"
+                                                data-target="#video-modal-product">
+                                                <i class="icon-play pointEvt"></i>
+                                            </a>
+                                        </div>
+                                        <div class="text">
+                                            <div class="top">
+                                                <div class="block-title">
+                                                    <sly data-sly-test="${rightVideoItems.selectVideoRightHeadingTag=='videoHeadingTagH4' || !rightVideoItems.selectVideoRightHeadingTag}">
+                                                        <h4>${rightVideoItems.rightVideoHeading}</h4>
+                                                     </sly>
+                                                     <sly data-sly-test="${rightVideoItems.selectVideoRightHeadingTag=='videoHeadingTagP'}">
+                                                        <p>${rightVideoItems.rightVideoHeading}</p>
+                                                     </sly>
+                                                </div>
+                                                <div class="post-info">
+                                                    <sly data-sly-test="${rightVideoItems.videoDuration}">
+                                                        <span class="post-time">${rightVideoItems.videoDuration}</span>
+                                                    </sly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </div>
+                </div>
+            </sly>
+        </div>
+    </div>
+</section>
+<!-- related video desktop end -->
+
+<!-- video modal -->
+<div class="popover-modal fade" id="video-modal-product">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-lg2">
+        <div class="popover-modal-content video-modals">
+            <button data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></button>
+            <div class="popover-modal-body">
+                <div class="videos-outer">
+                    <iframe src id="frameSrcProduct" title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- video modal -->
+<sly data-sly-use.model="com.tatacapital.web.core.models.VideoSchemaModel"/>
+<sly data-sly-test="${model.getVideoPresent}">
+<script type="application/ld+json">
+     {
+     "@context": "https://schema.org/",
+     "@type": "VideoObject",
+     "name": "${model.videoTitle @context='scriptString'}",
+     "description": "${model.videoDescription @context='scriptComment' || 'TATA CAPITAL DESCRIPTION'}",
+     "thumbnailUrl": "${model.thumbnailUrl @context='scriptComment'}",
+     "duration": "${model.youtubeVideoTime @context='scriptComment'}",
+     "contentUrl":"${model.contentUrl @context='scriptComment'}",
+     "embedUrl": "${model.embedUrl @context='scriptComment'}"
+    }
+</script>
+</sly>

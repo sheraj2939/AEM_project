@@ -1,0 +1,18 @@
+<div class="loan-you-col bg-div cmp-teaser${!wcmmode.disabled && teaser.imageResource ? ' cq-dd-image' : ''}"
+    data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+    data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+    data-sly-use.imageTemplate="image.html"
+    data-sly-use.pretitleTemplate="pretitle.html"
+    data-sly-use.titleTemplate="title.html"
+    data-sly-use.descriptionTemplate="description.html"
+    data-sly-use.actionsTemplate="actions.html"
+    data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+    id="${teaser.id}"
+    data-cmp-data-layer="${teaser.data.json}">
+    <div class="loan-you-top">
+        <p class="heading20 semibold">${properties.titleBlack}<a data-sly-unwrap="${!teaser.link.valid}" data-sly-attribute="${teaser.link.htmlAttributes}"><span class="text-primay-blue">${properties.blueTitle}</span></a>${properties.blackTitle}</p>
+        <div class="list-circle-ticks-voilet" data-sly-call="${descriptionTemplate.description @ teaser=teaser}">
+        </div>
+    </div>
+    <div class="loan-you-bottom" data-sly-resource="${'loan-for-you-cards' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></div>
+</div>

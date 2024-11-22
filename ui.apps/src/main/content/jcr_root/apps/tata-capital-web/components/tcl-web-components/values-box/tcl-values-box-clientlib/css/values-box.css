@@ -1,0 +1,170 @@
+.values-inners {
+  border-radius: 30px;
+  background: url("/content/dam/tata-capital-web/values-box/keys-dsk-bg.png") no-repeat top center;
+  background-size: cover;
+  padding: 36px;
+}
+
+.values-rows {
+  display: flex;
+  flex-wrap: wrap;
+}
+.values-rows .values-key {
+  width: 407px;
+  border-radius: 24px;
+  padding: 25px 23px;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+.values-rows .values-key h3 {
+  margin-bottom: 20px;
+}
+.values-rows .values-right {
+  width: calc(100% - 407px);
+  padding-left: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.values-rows .values-right-inner {
+  width: 100%;
+}
+
+.lists-key-project li {
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+.lists-key-project li:first-child {
+  margin-top: 0px;
+}
+.lists-key-project li .keys-contents {
+  width: calc(100% - 80px);
+  padding: 10px 16px;
+  text-align: left;
+}
+.lists-key-project li .keys-imgs {
+  width: 80px;
+}
+.lists-key-project li .keys-imgs img {
+  height: 100%;
+  width: 100%;
+}
+.lists-key-project li p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #333;
+  font-family: "OpenSans-SemiBold";
+}
+.lists-key-project li .keys-date {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 16.34px;
+  letter-spacing: 0.25px;
+  color: #1D1B20;
+}
+
+.values-info-list {
+  margin-top: -24px;
+  margin-left: -12px;
+  margin-right: -12px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.values-info-list li {
+  padding: 0 12px;
+  margin-top: 24px;
+  width: 50%;
+}
+.values-info-list .values-cols {
+  background: linear-gradient(134.06deg, rgba(18, 104, 179, 0.71) 0%, rgba(16, 141, 250, 0.95) 99.11%);
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid #fff;
+  height: 100%;
+}
+.values-info-list .values-cols .heading20 {
+  margin-bottom: 16px;
+  color: #fff;
+  position: relative;
+  padding-left: 30px;
+}
+.values-info-list .values-cols .heading20 span {
+  font-size: 20px;
+  line-height: 20px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+.values-info-list .values-cols .vals-helps {
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+}
+.values-info-list .values-cols .vals-helps span {
+  font-family: "OpenSans-SemiBold";
+  padding-right: 4px;
+}
+.values-info-list .values-cols .vals-reach {
+  margin-top: 12px;
+}
+
+@media (max-width: 1199px) {
+  .values-inners {
+    padding: 32px;
+  }
+  .values-rows .values-key {
+    width: 370px;
+  }
+  .values-rows .values-right {
+    width: calc(100% - 370px);
+    padding-left: 20px;
+  }
+  .values-info-list {
+    margin-top: -16px;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  .values-info-list li {
+    padding: 0 8px;
+    margin-top: 16px;
+  }
+}
+@media (max-width: 991px) {
+  .values-inners {
+    padding: 24px;
+    border-radius: 24px;
+  }
+  .values-rows .values-key {
+    width: 100%;
+  }
+  .values-rows .values-right {
+    width: 100%;
+    padding-left: 0px;
+    margin-top: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .values-inners {
+    padding: 16px;
+    border-radius: 24px;
+    background-image: url("/content/dam/tata-capital-web/values-box/keys-mob-bg.png");
+  }
+  .values-rows .values-key {
+    width: 100%;
+    padding: 24px 16px;
+  }
+  .lists-key-project li p {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .values-info-list li {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

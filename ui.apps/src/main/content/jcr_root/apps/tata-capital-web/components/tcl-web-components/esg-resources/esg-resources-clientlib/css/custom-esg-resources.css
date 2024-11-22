@@ -1,0 +1,13 @@
+.customcontainer.container.responsivegrid.resource-box{
+    padding: 38px;
+}
+@media (max-width: 1200px) {
+    .customcontainer.container.responsivegrid.resource-box {
+        padding: 30px;
+    }
+}
+@media (max-width: 991px) {
+    .customcontainer.container.responsivegrid.resource-box {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,49 @@
+<sly
+    data-sly-use.blogList="${'com.tatacapital.web.core.models.BlogModel' @ perPage='4', categoryId=properties.productMapValue}">
+</sly>
+<div class="knowledge-outer js-BlogsAll-list">
+    <sly data-sly-list="${blogList.blogDetails}">
+        <div class="knowledge-row js-Blogs-list">
+            <div class="knowledge-col">
+                <div class="knowledge-div bg-div radius30">
+                    <div class="video-media">
+                        <img src="${item.blogImage}" alt="${item.blogProductName}" class="media-img">
+                    </div>
+                    <div class="knowledge-content">
+                        <div class="hash-tag">
+                            <span>${item.blogProductName}</span>
+                        </div>
+                        <p class="heading20 semibold">${item.blogTitle @context='unsafe'}</p>
+                        <!-- <p class="text14i">Lorem ipsum dolor sit amet consectetur. Aliquam egestas lorem eros vivamus
+                        </p> -->
+                        <span class="dates-mins">${item.blogDate}</span>
+                    </div>
+                    <div class="knowledge-shares">
+                        <div class="share-bundle new-share-bundle js-close-outside">
+                            <button class="btn-white js-shares-btn">Share <span class="icon-share"></span></button>
+                            <div class="share-bundle-menu js-fi-share-menu1">
+                                <a href="javscript:void(0)" class="social-btn">
+                                    <img src="/content/dam/tata-capital-web/assets/img/whatsapp-colored.svg" alt="">
+                                </a>
+                                <a href="javscript:void(0)" class="social-btn">
+                                    <img src="/content/dam/tata-capital-web/assets/img/facebook-colored.svg" alt="">
+                                </a>
+                                <a href="javscript:void(0)" class="social-btn">
+                                    <img src="/content/dam/tata-capital-web/assets/img/twitter-x.svg" alt="">
+                                </a>
+                                <a href="javscript:void(0)" class="social-btn jsCopyLink">
+                                    <span class="icon-copy icon"></span>
+                                    <span class="text-copy">Copy</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </sly>
+</div>
+<div class="pd-t30i text-center view-more-btn">
+    <button type="button" class="btn-dangers btn-big min-w149" id="jsBlogsLoadMore">Load more</button>
+    <button type="button" class="btn-dangers btn-big min-w149 d-none" id="jsBlogsLoadLess">Load less</button>
+</div>

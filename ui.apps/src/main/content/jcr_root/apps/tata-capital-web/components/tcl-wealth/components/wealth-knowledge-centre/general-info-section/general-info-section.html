@@ -1,0 +1,81 @@
+<div class="generals-rows-top">
+    <sly data-sly-test="${properties.heading}">
+        <div class="gens-left">
+            <h3 class="heading20"><span>${properties.heading}</span></h3>
+        </div>
+    </sly>
+    <div class="dropdown-right-cont">
+        <sly data-sly-test="${properties.filtYearId}">
+            <div class="custom-dropdown-wrap filter-drop-wrap close-on-outside">
+                <a href="javascript:void(0);" class="custom-dropdown-btn jsShowDrop"
+                    data-rel="yr-${properties.filtYearId}"
+                    data-defaultYear="${properties.defaultYear}">${properties.defaultYear}</a>
+                <div class="custom-dropdown-block jsDropdownBlock" id="yr-${properties.filtYearId}">
+                    <ul class="custom-dropdown-list simple-bar jsGetValue">
+                        <sly data-sly-list.yearFilterList="${resource.children}">
+                            <sly data-sly-test="${yearFilterList.name == 'rightFilterYear'}">
+                                <sly data-sly-list.yearFilterItem="${yearFilterList.children}">
+                                    <li class="list" data-year="${yearFilterItem.filterYear}">
+                                        <label class="custom-checkbox-label">
+                                            ${yearFilterItem.filterYear}
+                                        </label>
+                                    </li>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </ul>
+                </div>
+            </div>
+        </sly>
+        <sly data-sly-test="${properties.filtMonthId}">
+            <div class="custom-dropdown-wrap filter-drop-wrap close-on-outside">
+                <a href="javascript:void(0);" class="custom-dropdown-btn jsShowDrop"
+                    data-rel="month-${properties.filtMonthId}"
+                    data-defaultMonth="${properties.defaultMonth}">${properties.defaultMonth}</a>
+                <div class="custom-dropdown-block min-w135 jsDropdownBlock" id="month-${properties.filtMonthId}">
+                    <ul class="custom-dropdown-list simple-bar jsGetValue">
+                        <sly data-sly-list.monthFilterList="${resource.children}">
+                            <sly data-sly-test="${monthFilterList.name == 'filterMonths'}">
+                                <sly data-sly-list.monthFilterItem="${monthFilterList.children}">
+                                    <li class="list" data-month="${monthFilterItem.filterMonth}">
+                                        <label class="custom-checkbox-label custom-month-click">
+                                            ${monthFilterItem.filterMonth}
+                                        </label>
+                                    </li>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </ul>
+                </div>
+            </div>
+        </sly>
+    </div>
+</div>
+
+
+<div class="bg-div general-info-content">
+    <ul class="general-infolist-wrap">
+        <sly data-sly-list.reportList="${resource.children}">
+            <sly data-sly-test="${reportList.name == 'reportMulti'}">
+                <sly data-sly-list.reportItem="${reportList.children}">
+                    <sly data-sly-test="${reportItem.title}">
+                        <li data-pdfMonth="${reportItem.pdfMonth}" data-pdfYear="${reportItem.pdfYear}"
+                            class="pdfCont ${reportItem.showPdf ? 'custom-pdf':'d-none'}">
+                            <div class="infolist-item">
+                                <span class="icon-pdf list-icon"></span>
+                                <p class="text14 semibold">${reportItem.title}</p>
+                                <div class="btn-controls">
+                                    <sly data-sly-test="${reportItem.btnLink}">
+                                        <a href="${reportItem.btnLink}" class="btn-links link-with-arrow"
+                                            target="${reportItem.checkNewTab ? '_blank' : ''}">${reportItem.buttonText}
+                                            <span class="icon-arrow-right arros"></span></a>
+                                    </sly>
+                                </div>
+                            </div>
+                        </li>
+                    </sly>
+                </sly>
+            </sly>
+        </sly>
+    </ul>
+</div>

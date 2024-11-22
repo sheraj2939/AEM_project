@@ -1,0 +1,47 @@
+<!-- copyright-box-->
+<div class="copyright-box">
+    <div class="footer-container">
+        <div class="copyright-inn-right">
+            <div class="copyright-inner">
+                <div class="footer-social-media">
+                    <p class="heading14 follow-heads">Follow us on</p>
+                    <div class="socal-lists">
+                        <sly data-sly-list.loginLinks="${resource.listChildren}">
+                            <sly data-sly-test="${loginLinks.name == 'socialMedia'}">
+                                <sly data-sly-list.socialMediaList="${loginLinks.listChildren}">
+                                    <a href="${socialMediaList.redirectionLink}"
+                                        target="${socialMediaList.openInNewTab ? '_blank' : ''}"
+                                        data-img-content-social="footerAnalyticData-${socialMediaList.altName}">
+                                        <img height="21" width="26" class="lozad"
+                                            data-src="${socialMediaList.imagePath}" alt="${socialMediaList.altName}">
+                                    </a>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </div>
+                </div>
+                <div class="copyright-links">
+                    <ul>
+                        <sly data-sly-list.loginLinks="${resource.listChildren}">
+                            <sly data-sly-test="${loginLinks.name == 'copyRight'}">
+                                <sly data-sly-list.copyRightList="${loginLinks.listChildren}">
+                                    <li><a href="${copyRightList.redirectionLink}"
+                                            target="${copyRightList.openInNewTab? '_blank' : ''}"
+                                            data-footer="footerAnalyticData-Copy Right Section">${copyRightList.heading}</a>
+                                    </li>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </ul>
+                </div>
+                <div class="copyright-text">
+                    ${properties.description @context = 'html'}
+                </div>
+            </div>
+            <div class="footer-logos">
+                <img src="/content/dam/tata-capital-web/tcl-wealth/wealth-header/footer-logo.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- copyright-box-->

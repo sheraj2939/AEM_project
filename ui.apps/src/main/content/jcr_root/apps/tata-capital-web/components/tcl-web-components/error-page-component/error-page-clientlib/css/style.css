@@ -1,0 +1,69 @@
+.error-box {
+  padding: 55px 30px 55px 60px;
+}
+.error-box .error-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.error-box .error-left {
+  width: calc(100% - 408px);
+  padding-right: 40px;
+}
+.error-box .error-right {
+  width: 408px;
+}
+.error-box .error-num {
+  font-size: 96px;
+  line-height: 124px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+.error-box .text-black {
+  margin-bottom: 8px;
+}
+.error-box .btn-blue {
+  margin-top: 30px;
+}
+
+@media (max-width: 991px) {
+  .error-box {
+    padding: 24px;
+  }
+  .error-box .error-left {
+    width: calc(100% - 300px);
+    padding-right: 20px;
+  }
+  .error-box .error-right {
+    width: 300px;
+  }
+  .error-box .error-num {
+    font-size: 64px;
+    line-height: 64px;
+  }
+}
+@media (max-width: 767px) {
+  .error-box .error-left {
+    width: 100%;
+    order: 2;
+    text-align: center;
+    padding-right: 0;
+  }
+  .error-box .error-right {
+    width: 100%;
+    order: 1;
+  }
+  .error-box .error-right img {
+    margin: 0 auto;
+  }
+  .error-box .error-num {
+    margin-bottom: 15px;
+  }
+  .error-box .text-black {
+    margin-bottom: 4px;
+  }
+  .error-box .btn-blue {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

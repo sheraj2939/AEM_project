@@ -1,0 +1,40 @@
+<div data-sly-use.tabs="com.adobe.cq.wcm.core.components.models.Tabs"
+    data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+    data-panelcontainer="${wcmmode.edit && 'tabs'}"
+    id="${tabs.id}"
+    class="cmp-tabs custom-tabs"
+    data-cmp-is="tabs"
+    data-cmp-data-layer="${tabs.data.json}"
+    data-placeholder-text="${wcmmode.edit && 'Please drag Tab components here' @ i18n}">
+    <img class="tab-graphics-top" src="/content/dam/tata-capital-web/assets/img/way-to-service/tab-graphics-top.svg" alt="">
+    <img class="tab-graphics-bottom" src="/content/dam/tata-capital-web/assets/img/way-to-service/tab-graphics-bottom.svg" alt="">
+    <div data-sly-test="${tabs.items && tabs.items.size > 0}"
+        data-sly-list.tab="${tabs.items}"
+        role="tablist"
+        class="cmp-tabs__tablist tab-left"
+        aria-label="${tabs.accessibilityLabel}"
+        aria-multiselectable="false">
+        <sly data-sly-test.isActive="${tab.name == tabs.activeItem}"/>
+        <button role="tab"
+            id="${tab.id}-tab"
+            data-widget = "ws-tabs"
+            class="cmp-tabs__tab${isActive ? ' cmp-tabs__tab--active' : ''} tablinks has-arrow tabScrollCenter"
+            aria-controls="${tab.id}-tabpanel"
+            tabindex="${isActive ? '0' : '-1'}"
+            data-cmp-hook-tabs="tab">${tab.title}</button>
+    </div>
+    <div class="tab-content-wrap">
+        <div data-sly-repeat.item="${tabs.items}"
+            data-sly-resource="${item.name @ decorationTagName='div'}"
+            id="${item.id}-tabpanel"
+            role="tabpanel"
+            aria-labelledby="${item.id}-tab"
+            tabindex="0"
+            class="cmp-tabs__tabpanel${item.name == tabs.activeItem ? ' cmp-tabs__tabpanel--active' : ''}"
+            data-cmp-hook-tabs="tabpanel"
+            data-cmp-data-layer="${item.data.json}">
+        </div>
+    </div>
+    <sly data-sly-resource="${resource.path @ resourceType='wcm/foundation/components/parsys/newpar', appendPath='/*', decorationTagName='div', cssClassName='new section aem-Grid-newComponent'}"
+        data-sly-test="${(wcmmode.edit || wcmmode.preview) && tabs.items.size < 1}"></sly>
+</div>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Footer Authoring"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <soulutionConsumer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                        <items jcr:primaryType="nt:unstructured">
+                            <container
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Consumer Solution"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <ConsumerSolution
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Consumer Solution"
+                                        name="./consumerSolHead"
+                                        useFixedInlineToolbar="{Boolean}true"/>
+                                    <otherSubscriber
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Consumer Solution"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldLabel="Consumer Solution">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                            name="./solutionConsumer">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <tittle
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Enter heading"
+                                                            name="./tittle"
+                                                            useFixedInlineToolbar="{Boolean}true"/>
+                                                        <subMenuList
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <subLink
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    jcr:title="Solution and Services"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                    composite="{Boolean}true"
+                                                                    fieldLabel="Solution and Services">
+                                                                    <field
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                                        name="./SubMenuFiled">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <column
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                                <items jcr:primaryType="nt:unstructured">
+                                                                                    <subTittle
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                        fieldLabel="Enter Sub Heading"
+                                                                                        name="./subLinkTitle"
+                                                                                        useFixedInlineToolbar="{Boolean}true"/>
+                                                                                    <subLink
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                                            <subLink
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                jcr:title="Other Subsidiaries"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                                                composite="{Boolean}true"
+                                                                                                fieldLabel="Other Subsidiaries">
+                                                                                                <field
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                                                                    name="./subLinks">
+                                                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                                                        <column
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                                                <topHeading
+                                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                                                    fieldLabel="Enter heading"
+                                                                                                                    name="./subMenuHead"
+                                                                                                                    useFixedInlineToolbar="{Boolean}true"/>
+                                                                                                                <link
+                                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                                                    fieldLabel="Enter redirection link"
+                                                                                                                    name="./subMenuLink"
+                                                                                                                    rootPath="/content"/>
+                                                                                                                <openinnewtab
+                                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                                                                    composite="{Boolean}true"
+                                                                                                                    name="./openInNewTab"
+                                                                                                                    text="Check for open link in new tab"
+                                                                                                                    value="true"/>
+                                                                                                            </items>
+                                                                                                        </column>
+                                                                                                    </items>
+                                                                                                </field>
+                                                                                            </subLink>
+                                                                                        </items>
+                                                                                    </subLink>
+                                                                                </items>
+                                                                            </column>
+                                                                        </items>
+                                                                    </field>
+                                                                </subLink>
+                                                            </items>
+                                                        </subMenuList>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </otherSubscriber>
+                                </items>
+                            </container>
+                        </items>
+                    </soulutionConsumer>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

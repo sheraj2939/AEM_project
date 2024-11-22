@@ -1,0 +1,78 @@
+.custom-accordion.custom-accordion-sm .accordion-card {
+	 padding-left: 0;
+	 padding-right: 0;
+}
+ .custom-accordion.custom-accordion-sm .accordion-row .accordion-body-inner {
+	 padding-top: 12px;
+}
+ .custom-accordion.custom-accordion-sm .accordion-row:nth-last-child(1) {
+	 padding-bottom: 0;
+}
+ .custom-accordion .accordion-card {
+	 padding: 10px 40px;
+}
+ .custom-accordion .accordion-row {
+	 border-bottom: 1px solid #bfd4e2;
+	 padding: 30px 0;
+}
+ .custom-accordion .accordion-row:last-child {
+	 border-bottom: none;
+}
+ .custom-accordion .accordion-row .accordion-body {
+	 display: none;
+}
+ .custom-accordion .accordion-row .accordion-body-inner {
+	 padding-top: 20px;
+}
+ .custom-accordion .accordion-row .accordion-body-inner p {
+	 color: #4f4f4f;
+	 margin-bottom: 10px;
+}
+ .custom-accordion .accordion-row .accordion-body-inner .list-circle-info li {
+	 color: #4f4f4f;
+}
+ .custom-accordion .accordion-row .accordion-heading {
+	 font-family: 'OpenSans-SemiBold';
+	 font-size: 20px;
+	 line-height: 116%;
+	 color: #333;
+	 display: block;
+	 padding-right: 20px;
+	 position: relative;
+}
+ .custom-accordion .accordion-row .accordion-heading:before {
+	 content: "\e90e";
+	 font-family: 'icomoon';
+	 font-size: 12px;
+	 font-weight: normal;
+	 position: absolute;
+	 right: 0px;
+	 top: 50%;
+	 transform: translateY(-50%);
+}
+ .custom-accordion .accordion-row .accordion-heading.active:before {
+	 content: "\e90d";
+}
+ @media (max-width: 1199px) {
+	 .custom-accordion .accordion-card {
+		 padding-left: 30px;
+		 padding-right: 30px;
+	}
+}
+ @media (max-width: 767px) {
+	 .custom-accordion .accordion-card {
+		 padding: 4px 24px;
+	}
+	 .custom-accordion .accordion-row {
+		 padding: 20px 0;
+	}
+	 .custom-accordion .accordion-row .accordion-heading {
+		 font-size: 16px;
+		 line-height: 23px;
+	}
+	 .custom-accordion .accordion-body p {
+		 font-size: 13px;
+		 line-height: 19px;
+	}
+}
+ 

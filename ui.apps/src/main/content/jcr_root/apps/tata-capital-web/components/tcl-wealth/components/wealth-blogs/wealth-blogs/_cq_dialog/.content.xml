@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <product-map
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/select"
+                        fieldLabel="Product Map"
+                        name="./productMapValue">
+                        <items jcr:primaryType="nt:unstructured">
+                            <home-page
+                                jcr:primaryType="nt:unstructured"
+                                text="Home Page"
+                                value="0"/>
+                            <wedding-loan
+                                jcr:primaryType="nt:unstructured"
+                                text="Wedding Loan"
+                                value="30"/>
+                            <personal-loan
+                                jcr:primaryType="nt:unstructured"
+                                text="Personal Loan"
+                                value="24"/>
+                            <medical-loan
+                                jcr:primaryType="nt:unstructured"
+                                text="Medical Loan"
+                                value="34"/>
+                            <education-loan
+                                jcr:primaryType="nt:unstructured"
+                                text="Education Loan"
+                                value="28"/>
+                            <travel-loan
+                                jcr:primaryType="nt:unstructured"
+                                text="Travel Loan"
+                                value="29"/>
+                            <home-renovation-loan
+                                jcr:primaryType="nt:unstructured"
+                                text="Home Renovation Loan"
+                                value="31"/>
+                            <home-loan
+                                jcr:primaryType="nt:unstructured"
+                                text="Home Loan"
+                                value="25"/>
+                            <business-loan
+                                jcr:primaryType="nt:unstructured"
+                                text="Business Loan"
+                                value="26"/>
+                            <vehicle-loan
+                                jcr:primaryType="nt:unstructured"
+                                text="Vehicle Loan"
+                                value="27"/>
+                            <loan-against-property
+                                jcr:primaryType="nt:unstructured"
+                                text="Loan Against Property"
+                                value="36"/>
+                            <loan-against-securities
+                                jcr:primaryType="nt:unstructured"
+                                text="Loan Against Securities"
+                                value="35"/>
+                            <mutual-funds
+                                jcr:primaryType="nt:unstructured"
+                                text="Mutual Funds"
+                                value="62"/>
+                            <consumer-durable-loan
+                                jcr:primaryType="nt:unstructured"
+                                text="Consumer Durable Loan"
+                                value="32"/>
+                            <insurance
+                                jcr:primaryType="nt:unstructured"
+                                text="Insurance"
+                                value="33"/>
+                            <wealth-management
+                                jcr:primaryType="nt:unstructured"
+                                text="Wealth Management"
+                                value="37"/>
+                        </items>
+                    </product-map>
+                    <heading-tag
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/select"
+                        fieldLabel="Select Insights Title Tag"
+                        name="./insightTag">
+                        <items jcr:primaryType="nt:unstructured">
+                            <deafult
+                                jcr:primaryType="nt:unstructured"
+                                text="default"
+                                value=""/>
+                            <h6
+                                jcr:primaryType="nt:unstructured"
+                                text="H6"
+                                value="insightTagH6"/>
+                            <p
+                                jcr:primaryType="nt:unstructured"
+                                text="P"
+                                value="insightTagP"/>
+                        </items>
+                    </heading-tag>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

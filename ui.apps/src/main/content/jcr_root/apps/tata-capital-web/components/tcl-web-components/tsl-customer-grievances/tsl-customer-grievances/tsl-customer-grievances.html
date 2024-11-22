@@ -1,0 +1,73 @@
+<div class="board-director-box space-tb40">
+    <div class="container">
+        <div data-sly-test="${properties.titleReg || properties.titleBold}" class="tops-heads mx-w100">
+            <h2>${properties.titleReg}<span>${properties.titleBold}</span></h2>
+        </div>
+        <div class="board-director-inner" id="complaint-policy-plan">
+            <div class="board-directors-left leveltabmob tab-left">
+                <sly data-sly-list.investorInformation="${resource.children}">
+                    <sly data-sly-test="${investorInformation.name == 'dropdownList'}">
+                        <sly data-sly-list.investorInfo="${investorInformation.children}">
+                            <sly data-sly-test.tabMenu="${'level{0}{1}' @ format =[drop.name,investorInfoList.count]}">
+                                <a href="javascript:void(0)" class="tabs-button tablinks has-right-arrow jsTabSelect${investorInfo.activeTab?' active':' '}" id="${TabMenu}">
+                                    ${investorInfo.option}
+                                </a>
+                            </sly>
+                        </sly>
+                    </sly>
+                </sly>
+            </div>
+            <div class="board-directors-right">
+                <sly data-sly-list.investorInformation="${resource.children}">
+                    <sly data-sly-test="${investorInformation.name == 'dropdownList'}">
+                        <sly data-sly-list.investorInfo="${investorInformation.children}">
+                            <sly data-sly-test.tabMenu="${'{0}{1}' @ format =[drop.name,investorInfoList.count]}">
+                                <div class="tab-content level${tabMenu}${investorInfo.activeTab?' active':' '}">
+                                    <div class="raise-complaint-box">
+                                        <h3 class="heading20 pd-b10"><span>${investorInfo.detailTitle}</span></h3>
+                                        <sly data-sly-list.cardInfo="${investorInfo.children}">
+                                            <sly data-sly-test="${cardInfo.name == 'dropdownList1'}">
+                                                <div data-sly-repeat.card="${cardInfo.children}" class="raise-complaint-row">
+                                                    <sly data-sly-test="${card.cardTitleOne || card.cardDescOne}">
+                                                        <div class="raise-complaint-col">
+                                                            <div class="complaint-left">
+                                                                <span class="${card.iconVariationOne}"></span>
+                                                            </div>
+                                                            <div class="complaint-right">
+                                                                <div class="text14i complaint-text">
+                                                                    ${card.cardTitleOne @ context='html'}
+                                                                </div>
+                                                                <div class="text14i">
+                                                                    ${card.cardDescOne @ context='html'}
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </sly>
+                                                    <sly data-sly-test="${card.cardTitleTwo || card.cardDescTwo}">
+                                                        <div class="raise-complaint-col">
+                                                            <div class="complaint-left">
+                                                                <span class="${card.iconVariationTwo}"></span>
+                                                            </div>
+                                                            <div class="complaint-right">
+                                                                <div class="text14i complaint-text">
+                                                                    ${card.cardTitleTwo @ context='html'}
+                                                                </div>
+                                                                <div class="text14i">
+                                                                    ${card.cardDescTwo @ context='html'}
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </sly>
+                                                </div>
+                                            </sly>
+                                        </sly>
+                                    </div>
+                                </div>
+                            </sly>
+                        </sly>
+                    </sly>
+                </sly>
+            </div>
+        </div>
+    </div>
+</div>

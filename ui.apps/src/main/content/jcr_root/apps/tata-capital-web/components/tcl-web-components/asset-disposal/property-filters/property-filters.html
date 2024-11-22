@@ -1,0 +1,265 @@
+<section class="space-tb40 space-b80">
+    <div class="container">
+        <div class="property-search-row">                    
+            <div class="property-search-right">
+                <div class="show-property-list">
+                    <h3 class="heading20"><span id="totalCount">Showing 5 Listings</span></h3>
+                    <div class="deal-row" id="getData">
+                        
+                        <!--<div class="deal-col">
+                            <div class="bg-div deal-div">
+                                <div class="deal-img-out">
+                                    <img src="assets/img/deal/deal-img2.png" alt="" class="deal-img">
+                                    <a href="javascript:void(0)" class="total-pic">8 Photos</a>
+                                </div>
+                                <p class="text14i deal-resident">Row House</p>
+                                <p class="heading20 deal-name semibold">Goodrej Properties, <span class="deal-name-sub">Kalyan</span></p>
+                                <p class="deal-flats text16"><strong>2BHK</strong><span class="deal-flats-size">1800 sq.ft. (SBU)</span></p>
+                                <div class="deal-move">
+                                    <span class="all-icon24 icon-google"></span>
+                                    <p class="text14i">Ready to move in</p>
+                                </div>
+                                <div class="deal-discount">
+                                    <span class="deal-dis-count">Price 15% off</span>
+                                </div>
+                                <div class="deal-prices">
+                                    <p class="heading24 bold deal-price-text">₹48,75,000</p>
+                                    <p class="deal-price-discount">₹50,00,0000</p>
+                                </div>
+                                <div class="deal-btn-more">
+                                    <button class="btn-blue btn-large w-100">Know More</button>
+                                </div>                                        
+                            </div>
+                        </div>
+                        <div class="deal-col">
+                            <div class="bg-div deal-div">
+                                <div class="deal-img-out">
+                                    <img src="assets/img/deal/deal-img1.png" alt="" class="deal-img">
+                                    <a href="javascript:void(0)" class="total-pic">8 Photos</a>
+                                </div>
+                                <p class="text14i deal-resident">Residential Flat</p>
+                                <p class="heading20 deal-name semibold">Shobha Housing, <span class="deal-name-sub">Navi Mumbai</span></p>
+                                <p class="deal-flats text16"><strong>2BHK</strong><span class="deal-flats-size">1800 sq.ft. (SBU)</span></p>
+                                <div class="deal-move">
+                                    <span class="all-icon24 icon-google"></span>
+                                    <p class="text14i">40 Properties</p>
+                                </div>
+                                <div class="deal-discount">
+                                    <span class="deal-dis-count deal-yellow-count">Auction Date</span>
+                                </div>
+                                <div class="deal-prices">
+                                    <p class="heading24 bold deal-price-text">₹42,75,000</p>
+                                    <p class="deal-price-discount">₹50,00,0000</p>
+                                </div>
+                                <div class="deal-btn-more">
+                                    <button class="btn-blue btn-large w-100">Know More</button>
+                                </div>                                        
+                            </div>
+                        </div> -->
+                           
+                    </div>
+                    <div class="deal-row mg-t25 w-100" id="notDataGet">
+                        <div class="mx-944">
+                            <div class="bg-div property-nosearch-found"> <img
+                                    src="/content/dam/tata-capital/asset-disposal-new/no-found.svg" alt=""
+                                    class="no-found-img">
+                                <p class="heading20 semibold">No properties found</p>
+                                <p class="text16i">We could not find any deals on properties for the city selected</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                        
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- filter -->
+<div class="property-filters-box jsPropertyFilter" id="pro-filter">
+    <div class="pro-filter-closed">
+        <a href="javascript:void(0)" data-filterclose="pro-filter">
+            <span class="icon-close"></span>
+        </a>
+    </div>
+
+    <div class="bg-div property-filters">
+        <div class="filters-top">
+            <h3 class="heading20"><span>Filter</span></h3>
+            <a href="javascript:void(0)" class="filter-closed jsFilterReset">Reset <span
+                    class="icon-reset flticon"></span></a>
+        </div>
+
+        <div class="calculator-details-outers">
+
+            <!-- calculator row  -->
+            <div class="calculator-details">
+                <!-- top -->
+                <h4 class="heading-filters">Budget</h4>
+                <div class="calculator-details-top">
+                    <div class="cal-textbox-row">
+                        <div class="cal-textbox50">
+                            <div class="calculator-textbox with-border">
+                                 <!-- 25-8-223 -->
+                                 <div class="textbox-inner input-with-text suffix-text text-with-texts">
+                                    <span class="input-text">Lakh</span>
+                                    <input class="input-textbox-calulator only-numeric-decimal-input price-with-comma js-showCalulatorRangeValue" type="text" id="example_2_input_from" maxlength="5">
+                                </div>
+                                <!-- 25-8-223 -->
+                            </div>
+                        </div>
+                        <div class="cal-textbox50">
+                            <div class="calculator-textbox with-border">
+                                 <!-- 25-8-223 -->
+                                 <div class="textbox-inner input-with-text suffix-text text-with-texts">
+                                    <span class="input-text">Lakh</span>
+                                    <input class="input-textbox-calulator only-numeric-decimal-input price-with-comma js-showCalulatorRangeValue" type="text" id="example_2_input_to" maxlength="5">
+                                </div>
+                                <!-- 25-8-223 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- top -->
+
+                <!-- bottom -->
+                <div class="calculator-details-bottom">
+                    <div class="custom-range-slider-wrap">
+                        <input type="text" class="js-calculatorRangeSlider" id="example_2" name="my_range" />
+                        <div class="custom-range-label">
+                            <span>1 Lakh</span>
+                            <span>1,000 Lakh</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- bottom -->
+            </div>
+            <!-- calculator row  -->
+
+            <!-- calculator row room -->
+            <div class="calculator-details">
+                <h4 class="heading-filters">Room</h4>
+                <ul class="btn-with-checkbox-list">
+                    <li>
+                        <div class="btns-checkbox">
+                            <input type="checkbox" class="btn-check rooms" data-room="1rk" name="room" checked>
+                            <a href="javascript:void()" class="btns-check-link">1 RK</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="btns-checkbox">
+                            <input type="checkbox" data-room="1bhk" class="btn-check rooms" name="room" checked>
+                            <a href="javascript:void()" class="btns-check-link">1 BHK</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="btns-checkbox">
+                            <input type="checkbox" data-room="2bhk" class="btn-check rooms" name="room" checked>
+                            <a href="javascript:void()" class="btns-check-link">2 BHK</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="btns-checkbox">
+                            <input type="checkbox" data-room="3bhk" class="btn-check rooms" name="room" checked>
+                            <a href="javascript:void()" class="btns-check-link">3 BHK</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="btns-checkbox">
+                            <input type="checkbox" data-room="4bhk" class="btn-check rooms" name="room" checked>
+                            <a href="javascript:void()" class="btns-check-link">4 BHK</a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- calculator row room -->
+
+            <!-- calculator row  -->
+            <div class="calculator-details">
+                <!-- top -->
+                <h4 class="heading-filters">Area</h4>
+                <div class="calculator-details-top">
+                    <div class="cal-textbox-row">
+                        <div class="cal-textbox50">
+                            <div class="calculator-textbox with-border">
+                                <div class="textbox-inner input-with-text">
+                                    <input
+                                        class="input-textbox-calulator only-numeric-decimal-input price-with-comma js-showCalulatorRangeValue"
+                                        type="text" id="example_1_input_from" maxlength="6">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cal-textbox50">
+                            <div class="calculator-textbox with-border">
+                                <div class="textbox-inner input-with-text">
+                                    <input
+                                        class="input-textbox-calulator only-numeric-decimal-input price-with-comma js-showCalulatorRangeValue"
+                                        type="text" id="example_1_input_to" maxlength="6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- top -->
+                <!-- bottom -->
+                <div class="calculator-details-bottom">
+                    <div class="custom-range-slider-wrap">
+                        <input type="text" class="js-calculatorRangeSlider" id="example_1" name="my_range" />
+                        <div class="custom-range-label">
+                            <span>100 sqft</span>
+                            <span>50,000 sqft</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- bottom -->
+            </div>
+        </div>
+
+        <div class="cal-apply-btn">
+            <button type="button" data-filterclose="pro-filter" class="btn-blue btn-large w-100">Apply</button>
+        </div>
+
+    </div>
+</div>
+<!-- filter -->
+
+<!-- tab mobile filter tab -->
+<a href="javascript:void(0)" class="pro-filter-tabs" data-filter="pro-filter">
+    <img src="/content/dam/tata-capital/asset-disposal-new/filters.svg" alt="">
+</a>
+<!-- tab mobile filter tab -->
+
+<!-- more images slider -->
+<div class="popover-modal asset-disposal-modal fade channel-partner-modal" id="partnerSliderModal">
+    <button data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></button>
+    <div class="popover-modal-dialog popover-modal-dialog-centered">
+        <div class="popover-modal-content">
+
+            <div class="modal-more-slider slick-slider slider-dots slider-arrows" id="viewMoreSlider">
+               <!-- <div class="more-slider-row">
+                    <div class="more-slider-caption">
+                        <p class="heading20">Channel Partners Meet</p>
+                        <p class="dates-place">May 2022, Panaji, Goa</p>
+                        <div class="view-more-total"><span>1</span><span>/14</span></div>
+                    </div>
+                    <div class="more-slider-image">
+                        <img src="assets/img/channel-partner/more-slider-img1.png" alt="">
+                    </div>
+                </div>
+                <div class="more-slider-row">
+                    <div class="more-slider-caption">
+                        <p class="heading20">Channel Partners Meet</p>
+                        <p class="dates-place">May 2022, Panaji, Goa</p>
+                        <div class="view-more-total"><span>2</span>/14</div>
+                    </div>
+                    <div class="more-slider-image">
+                        <img src="assets/img/channel-partner/more-slider-img2.png" alt="">
+                    </div>
+                </div> -->
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<!-- more images slider -->

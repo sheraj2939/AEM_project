@@ -1,0 +1,16 @@
+<sly data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+    data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-use.imageTemplate="image.html"
+    data-sly-use.pretitleTemplate="pretitle.html" data-sly-use.titleTemplate="title.html"
+    data-sly-use.descriptionTemplate="description.html" data-sly-use.actionsTemplate="actions.html"
+    data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+    id="${teaser.id}" class="cmp-teaser${!wcmmode.disabled && teaser.imageResource ? ' cq-dd-image' : ''}"
+    data-cmp-data-layer="${teaser.data.json}">
+    <a class="cmp-teaser__link bg-div subsidiary-col" data-sly-attribute="${teaser.link.htmlAttributes}"
+        data-cmp-clickable="${teaser.data ? true : false}">
+        <h3 class="heading20"><span>${teaser.title}</span></h3>
+        <div class="text16i"> ${teaser.description @ context = 'html'}</div>
+        <div class="subsidiary-bottom">
+            <span class="icon-arrow-tail-right"></span>
+        </div>
+    </a>
+</sly>

@@ -1,0 +1,84 @@
+  .sustainability-outer {
+    position: relative;
+    z-index: 1;
+  }
+  .sustainability-outer.loan-plr-0 {
+    padding: 0;
+  }
+
+  .sustainability-details-per {
+    background: linear-gradient(135.61deg, rgba(72, 141, 201, 0.75) 0%, rgba(35, 142, 235, 0.95) 106.63%);
+    box-shadow: 0px 5px 14px rgba(31, 137, 230, 0.3);
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    padding: 40px 70px;
+  }
+
+  .sustainability-info-pers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: -40px -70px 40px;
+  }
+  .sustainability-info-pers:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+  .sustainability-info-pers li {
+    border-left: 1px solid #FFFFFF;
+    padding: 0 56px;
+    margin-top: 40px;
+  }
+  .sustainability-info-pers li:first-child, .sustainability-info-pers li:nth-child(5), .sustainability-info-pers li:nth-child(9), .sustainability-info-pers li:nth-child(13) {
+    border-left: none;
+  }
+  .sustainability-info-pers li .heading36, .sustainability-info-pers li .text16i {
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .sustainability-info-pers li .heading36 span, .sustainability-info-pers li .text16i span {
+    font-family: "OpenSans-Bold";
+  }
+  .sustainability-info-pers li .text16i {
+    margin-top: 8px;
+  }
+
+  @media (max-width: 1200px) {
+    .sustainability-details-per {
+      padding: 40px 32px;
+    }
+
+    .sustainability-info-pers {
+      margin: -40px -32px 40px;
+    }
+    .sustainability-info-pers:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+    .sustainability-info-pers li {
+      padding: 0 32px;
+    }
+  }
+  @media (max-width: 991px) {
+    .sustainability-details-per {
+      border-radius: 24px;
+      padding: 9px 24px;
+    }
+
+    .sustainability-info-pers {
+      margin: 0;
+    }
+    .sustainability-info-pers:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+    .sustainability-info-pers li {
+      margin: 0;
+      width: 100%;
+      padding: 15px 0;
+      border-left: none;
+      border-bottom: 1px solid #FFFFFF;
+    }
+    .sustainability-info-pers li:nth-last-child(1) {
+      border-bottom: none;
+    }
+  }
+
+  /*# sourceMappingURL=style.css.map */

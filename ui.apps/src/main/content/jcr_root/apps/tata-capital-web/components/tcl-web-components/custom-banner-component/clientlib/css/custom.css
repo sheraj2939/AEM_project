@@ -1,0 +1,14 @@
+.track-my-application-cls{
+    height: 72px;
+}
+.explore-our-product{
+    height: 685px;
+}
+@media screen and (max-width:767px) {
+    .track-my-application-cls{
+        height: 100%;
+    }
+    .explore-our-product{
+        height: 100%;
+    }
+}

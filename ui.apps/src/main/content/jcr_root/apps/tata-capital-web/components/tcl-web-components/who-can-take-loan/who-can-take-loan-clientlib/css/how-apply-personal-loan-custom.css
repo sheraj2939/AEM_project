@@ -1,0 +1,11 @@
+.how-apply-box .how-apply-tabs .tab-content-wrap .tab-content.cmp-tabs__tab--active{
+    display: flex;
+}
+.how-apply-box .how-apply-tabs .tab-left .tablinks.cmp-tabs__tab--active{
+    background: linear-gradient(134.06deg, rgba(18, 104, 179, 0.71) 0%, rgba(16, 141, 250, 0.95) 99.11%);
+    color: #FFFFFF;
+    box-shadow: 0px 25px 25px rgba(15, 157, 245, 0.02), 0px 70px 42px rgba(15, 157, 245, 0.07), 0px 31px 31px rgba(15, 157, 245, 0.12), 0px 8px 17px rgba(15, 157, 245, 0.14), 0px 0px 0px rgba(15, 157, 245, 0.14);
+}
+.how-apply-box .how-apply-tabs .tab-left{
+    height: max-content;
+}

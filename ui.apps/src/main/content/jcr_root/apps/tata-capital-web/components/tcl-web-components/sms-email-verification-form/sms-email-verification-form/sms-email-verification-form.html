@@ -1,0 +1,193 @@
+<section class="loan-against-prop-box space-tb40" id="sms-email-verification-form">
+    <div class="container">
+        <div class="tops-heads has-only-back-btn">
+
+            <!-- <div class="comp-back-to">
+                <a href="javascript:void(0)"><span class="icon-arrow-tail-left"></span>Back</a>
+            </div> -->
+            <h1>Verify Modes of <span>Contact</span></h1>
+        </div>
+        <div class="loan-against-form-wrap">
+            <div class="loan-against-header">
+                <h4>Please confirm with the email id and mobile number</h4>
+                <div class="clear-btn">
+                    <a href="javascript:void(0)" class="link jsClearLangComm">Clear <span class="icon-clear"></span></a>
+                </div>
+                <div class="loan-againstclose-btn d-none">
+                    <a href="javascript:void(0)" class="link jsCloseLangCommMgs"> <span class="icon-close"></span></a>
+                </div>
+            </div>
+            <div class="loan-against-body">
+                <img src="/content/dam/tata-capital-web/tc-banner/banner-clip.png" class="form-bottom-right-img">
+                <div class="loan-against-form" id="review-contact-form">
+                    <div class="loan-against-form-wrapper">
+                        <h3 class="form-heading">Review Contact Information</h3>
+
+                        <div class="row-flex row-flex-30">
+                            <div class="row-col-33 col-sp30">
+                                <div class="form-textbox-new with-readonly active">
+                                    <label class="label-name">Mobile number</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" name="mobileInput" value="9949427865" class="input-textbox"
+                                            placeholder="" readonly>
+                                    </div>
+                                    <ul class="list-radio-ul">
+                                        <li class="list-radio-li">
+                                            <label class="custom-radiobox-label">
+                                                <span class="custom-radio">
+                                                    <input type="radio" name="mobile" value="Y" checked>
+                                                    <span class="radiobox-check"></span>
+                                                </span>
+                                                Yes
+                                            </label>
+                                        </li>
+                                        <li class="list-radio-li">
+                                            <label class="custom-radiobox-label">
+                                                <span class="custom-radio">
+                                                    <input type="radio" name="mobile"
+                                                        value="N">
+                                                    <span class="radiobox-check"></span>
+                                                </span>
+                                                No
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row-col-33 col-sp30">
+                                <div class="form-textbox-new with-readonly active">
+                                    <label class="label-name">Email address</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" name="emailInput" value="isha.indu@gmail.com"
+                                            class="input-textbox" placeholder="" readonly>
+                                    </div>
+                                    <ul class="list-radio-ul">
+                                        <li class="list-radio-li">
+                                            <label class="custom-radiobox-label">
+                                                <span class="custom-radio">
+                                                    <input type="radio" name="email" value="Y" checked>
+                                                    <span class="radiobox-check"></span>
+                                                </span>
+                                                Yes
+                                            </label>
+                                        </li>
+                                        <li class="list-radio-li">
+                                            <label class="custom-radiobox-label">
+                                                <span class="custom-radio">
+                                                    <input type="radio" name="email"
+                                                        value="N">
+                                                    <span class="radiobox-check"></span>
+                                                </span>
+                                                No
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="btn-controls">
+                        <button class="btn-blue btn-large jsLangCommunication">Submit</button>
+                        <p class="la-agree-btn">To check and validate your current address please login to  <a href="https://retailonline.tatacapital.com/#/login" target="_blank">TATA Capital Customer Portal</a> and further select “Update Communication Address” .</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="popover-modal modals-blue fade" id="thankyou-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md2">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content">
+                <button data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></button>
+                <div class="popover-modal-body">
+                    <div class="thankyou-modal-inner">
+                        <img src="/content/dam/tata-capital-web/assets/img/thankyou.svg" alt="" class="thankyou-img">
+                        <p class="heading36">
+                            Thank you for verifying your
+                            <span>
+                                contact information
+                            </span>
+                        </p>
+                        <div class="verify-infos-outers">
+                            <ul>
+                                <li>
+                                    <div class="verify-infos-rows">
+                                        <div class="verify-infos-img">
+                                            <img src="/content/dam/tata-capital-web/assets/img/tick-circle-white.svg"
+                                                alt="">
+                                        </div>
+                                        <div class="verify-infos-in">
+                                            <span class="verify-mobile-text">Mobile number</span>
+                                            <span class="verify-mobile-number" id="popup-number">9949427865</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="verify-infos-rows">
+                                        <div class="verify-infos-img">
+                                            <img src="/content/dam/tata-capital-web/assets/img/tick-circle-white.svg"
+                                                alt="">
+                                        </div>
+                                        <div class="verify-infos-in">
+                                            <span class="verify-mobile-text">Email address</span>
+                                            <span class="verify-mobile-number"
+                                                id="popup-email">isha.indu@gmail.com</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="popover-modal modals-blue fade" id="update-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md3">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content">
+                <button data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></button>
+                <div class="popover-modal-body">
+                    <div class="thankyou-modal-inner">
+                        <img src="/content/dam/tata-capital-web/assets/img/error-logo.svg" alt="" class="thankyou-img">
+                        <p class="heading36">
+                            Please update your
+                            <span>
+                                information immediately
+                            </span>
+                        </p>
+                        <div class="mg-t20">
+                            <a href="https://retailonline.tatacapital.com/#/login" class="btn-link btn-big btn-with-card-bg min-w149 btn-xs-full">Update</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popover-modal modals-blue fade" id="invalid-emailMobile">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md3">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content">
+                <!-- <a href="/content/tata-capital-web/en.html" data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></a> -->
+                <div class="popover-modal-body">
+                    <div class="thankyou-modal-inner">
+                        <img src="/content/dam/tata-capital-web/assets/img/error-logo.svg" alt="" class="thankyou-img">
+                        <p class="heading36">
+                            We couldn't fetched your mobile number or email address
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

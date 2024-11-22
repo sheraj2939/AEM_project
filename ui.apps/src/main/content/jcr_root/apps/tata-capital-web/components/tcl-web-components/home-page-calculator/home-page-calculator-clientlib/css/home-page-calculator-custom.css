@@ -1,0 +1,20 @@
+/* .custom-dropdown .dropdown-block a{
+    text-align: center;
+} */
+.custom-tab-menu .cmp-tabs__tab--active .tab-btn{
+    background-color: #1961AC;
+    color: #FFFFFF;
+}
+.custom-active-tab .cmp-tabs__tab--active{
+    background-color: #d8e024;
+}
+/* .custom-hiiden.cmp-tabs__tabpanel{
+    display: block !important;
+    visibility: hidden;
+}
+.custom-hiiden.cmp-tabs__tabpanel.cmp-tabs__tabpanel--active{
+    visibility: visible;
+} */
+.p-0 .container{
+	padding:0px;
+}

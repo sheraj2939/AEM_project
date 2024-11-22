@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    allowProxy="{Boolean}true"
+    categories="tsl-component-clientlib"
+    embed="[banner-clientlib,tcl-sub-nav,tcl-about-product,tcl-quick-links-drawer-clientlib,tcl-tchfl-investor-relation-pdf,tcl-contact-us-box,tsl-marquee-box,tcl-instant-loan-box,tcl-key-features,tcl-board-of-directors-tabs,tcl-reach-out-officer,tsl-customer-grievances]"/>

@@ -1,0 +1,12 @@
+<div data-sly-test="${!properties.dynamicProductButtonSecond}" class="text-center">
+    <div class="white-blue-button button">
+        <a class="btn-blue btn14"
+            href="https://www.tatacapital.com/online/loans/personal-loans/apply-now-personal-loan#!" target="_blank">
+            Apply Now
+        </a>
+    </div>
+</div>
+
+<div data-sly-test="${properties.dynamicProductButtonSecond}"  class="text-center">
+    ${properties.dynamicProductButtonSecond @ context = 'html'}
+</div>

@@ -1,0 +1,169 @@
+<div class="popover-modal fade emailWhatsApp" id="whatsapp-email-modal">
+  <div class="popover-modal-dialog popover-modal-dialog-centered">
+    <div class="modal-tb-content">
+      <div class="popover-modal-content bg-with-img">
+        <button data-dismiss="popover-modal" class="popover-modal-close"><span class="icon-close"></span></button>
+        <div class="popover-modal-body get-result-modal">
+
+          <div class="js-getResultFormWrap">
+            <div class="heading-modal">
+              <p class="heading20 text-center text-uppercase">Get result on Your whatsapp and email</p>
+              <p class="heading16 text-center">Forward your calculations for future reference</p>
+            </div>
+            <form id="getResultForm">
+              <div class="row-flex">
+                <div class="row-col-50 col-sp15">
+                  <div class="form-textbox-new">
+                    <label class="label-name">Name*</label>
+                    <div class="textbox-inner">
+                      <input class="input-textbox only-alpha-input disable-emoji" type="text" data-type="name">
+                    </div>
+                  </div>
+                </div>
+                <div class="row-col-50 col-sp15">
+                  <div class="form-textbox-new fixed-active">
+                    <label class="label-name">Where do you  live?*</label>
+                    <div class="textbox-inner">
+                      <div class="custom-select2">
+                        <select class="js-select2" data-type="city">
+                          <option value=""></option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row-col-50 col-sp15" data-ri>
+                  <div class="form-textbox-new">
+                    <label class="label-name">Email ID*</label>
+                    <div class="textbox-inner">
+                      <input type="text" class="input-textbox disable-emoji" placeholder="" data-type="email">
+                    </div>
+                  </div>
+                </div>
+                <div class="row-col-50 col-sp15" data-ri="ri-mobile">
+                  <div class="form-textbox-new">
+                    <label class="label-name">Mobile number*</label>
+                    <div class="textbox-inner">
+                      <input type="text" class="input-textbox allow-numeric disable-emoji" maxlength="10"
+                        pattern="[0-9]*" inputmode="numeric" placeholder="" data-type="mobile">
+                    </div>
+                  </div>
+                </div>
+                <div class="row-col-100 col-sp15">
+                  <div class="form-textbox-new checkbox-wrap">
+                    <div class="custom-checkbox-label">
+                      <span class="custom-checkbox-new">
+                        <input type="checkbox" data-type="checkbox" id="termCondition">
+                        <span class="checkbox-check"></span>
+                      </span>
+                      I agree to share my contact information and/or be contacted by Tata Capital
+                      Wealth team.
+                    </div>
+                  </div>
+                </div>
+                <div class="row-col-100 col-sp15">
+                  <div class="form-textbox-new checkbox-wrap mg-b20">
+                    <div class="custom-checkbox-label">
+                      <span class="custom-checkbox-new pointer-none">
+                        <input type="checkbox" checked>
+                        <span class="checkbox-check"></span>
+                      </span>
+                      I agree to the <a href="/content/dam/tata-capital/pdf/wealth/Disclaimers - Revised.pdf" class="link">Terms & Conditions</a> as specified
+                      here.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-wrap text-center">
+                <button class="btn-dangers btn-big js-proceed-btn w-xs-100" type="button">Proceed</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="otp-modal-wrap js-otpFormWrap hidden">
+            <div class="heading-modal">
+              <p class="heading20 text-center text-uppercase">Enter otp</p>
+              <p class="text-center">Please enter the 4 digit OTP sent to your <br> mobile number
+                XXXXXXXX<span class="js-mobLastNum">10</span> <a href="javascript:void(0);"
+                  class="edit-number js-editNumber"><i class="icon-edit"></i></a></p>
+            </div>
+            <form id="mobileOTPForm">
+              <div class="otp-wrapper">
+                <div class="form-textbox-new fixed-active">
+                  <label class="label-name">Enter OTP</label>
+                  <div class="textbox-inner otp-wrapper-box">
+                    <div class="otp-col">
+                      <input class="input-textbox allow-numeric disable-emoji" type="text" maxlength="1"
+                        data-type="OTP">
+                      <input class="input-textbox allow-numeric pointer-none disable-emoji" type="text" maxlength="1"
+                        data-type="OTP">
+                      <input class="input-textbox allow-numeric pointer-none disable-emoji" type="text" maxlength="1"
+                        data-type="OTP">
+                      <input class="input-textbox allow-numeric pointer-none disable-emoji" type="text" maxlength="1"
+                        data-type="OTP">
+                    </div>
+                  </div>
+                  <div class="loan-otp-timers">
+                    <div class="otp-timers-row">
+                      <div class="otp-timers-col">
+                        <p class="text16i" id="timer">03:00</p>
+                      </div>
+                      <div class="otp-timers-col">
+                        <a href="javascript:void(0)" class="btn-links jsOnGetCallCalc d-none">Get
+                          OTP via call</a>
+                        <p class="text16i text-primary call-with-img semibold jsGetCallingCalc d-none">
+                          <img src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/call.gif"
+                            alt="call icon"> Calling 
+                          <span class="semibold" id="callNum"> +91 XXXXXXXXXX</span>
+                        </p>
+                        <p class="text16i semibold jsGetOTPSent d-none">OTP sent
+                          via call</p>
+                      </div>
+                    </div>
+                  </div><!-- 
+                  <a href="javascript:void(0)" class="resend-otp-label" id="resendOTP">Resend OTP</a> -->
+                </div>
+              </div>
+              <div class="btn-wrap text-center">
+                <button class="btn-dangers btn-big js-otpProceed w-xs-100 disabled" type="button">Verify OTP</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="message-wrapper js-MessageWrap hidden">
+            <div class="text-center hidden" id="js-errorMsgWrap">
+              <img alt="Incorrect Otp" src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/warning.svg">
+              <p class="heading20">Incorrect OTP</p>
+              <p class="heading16">OTP once used cannot be reused. Please resend OTP to try again.</p>
+              <button type="button" class="btn-dangers btn-big js-tryAgainOTP">Try again</button>
+            </div>
+            <div class="text-center hidden" id="js-thankyouWrap">
+              <img alt="Thanks" src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/thanks.svg">
+              <p class="heading20">Your calculation results have been sent to XXXXXXXX<span
+                  class="js-mobLastNum">11</span> and <span class="js-encryptEmail">sdf@gmail.com</span></p>
+              <p class="heading16">If you want to know more, talk to our financial experts. <a
+                  href="/content/tata-capital-web/en/wealth/request-callback.html" class="link">Click here</a> to
+                Request a Call back</p>
+            </div>
+          </div>
+
+          <div class="message-wrapper js-errorWrap hidden">
+            <div class="text-center hidden" id="js-wrong">
+              <img alt="Incorrect Otp" src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/errors.svg">
+              <p class="heading20">Uh oh, something went wrong</p>
+              <p class="heading16">Please try again later.</p>
+            </div>
+          </div>
+
+          <div class="message-wrapper js-otpExpired hidden">
+            <div class="text-center hidden" id="js-otpExpiredMSg">
+              <img alt="Incorrect Otp" src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/errors.svg">
+              <p class="heading20">OTP Expired</p>
+              <p class="heading16">Please try again later.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

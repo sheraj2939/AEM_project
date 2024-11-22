@@ -1,0 +1,83 @@
+<div class="popover-modal modals-blue fade" id="resend-otp-error">
+        <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md2">
+            <div class="modal-tb-content">
+                <div class="popover-modal-content">
+                    <button data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></button>    
+                    <div class="popover-modal-body">                      
+                        <div class="thankyou-modal-inner">      
+                            <div class="prefrence-mx">                
+                                <img src="/content/dam/tata-capital-web/assets/img/error-icon-red.png" alt="" class="thankyou-img">
+                                <p class="heading36">
+                                    <span>
+                                        OTP Failure
+                                    </span>
+                                </p>
+                                <p class="text16i">
+                                    Your OTP could not be sent. Please try again.
+                                </p>
+                                <div class="otp-failure-btn" id="error-resend-otp">
+                                    <a href="javascript:void(0);" class="btn-link btn-big btn-with-card-bg min-w149 btn-xs-full">Resend OTP</a>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- otp timer -->
+<!-- otp sent modal -->
+<div class="popover-modal modals-blue" id="otp-sent-modal"> <!--popover-show-->
+    <!--style="display: block"-->
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content to-apply-loan">
+                <button data-dismiss="popover-modal" class="popover-modal-close jsThanksModalClose"><i
+                        class="icon-close"></i></button>
+                <div class="popover-modal-body">
+                    <div class="modal-body-inner">
+                        <div class="get-otp-wrapper otp-send-success d-none">
+                            <img src="/content/dam/tata-capital-web/assets/img/lead-form/check-circle.svg"
+                                class="get-otp-img" alt="">
+                            <h3 class="heading24 otp-heads">OTP has been sent</h3>
+                        </div>
+                        <div class="get-otp-wrapper otp-expired d-none">
+                            <img src="/content/dam/tata-capital-web/assets/img/lead-form/unsuccesful.svg"
+                                class="get-otp-img" alt="">
+                            <h3 class="heading36 otp-heads">OTP Expired</h3>
+                            <h3 class="text16i otp-heads">Your OTP has been expired. Please try again.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- otp sent modal -->
+
+<!-- not receive otp modal -->
+<div class="popover-modal modals-blue" id="not-receive-otp-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content to-apply-loan">
+                <button class="popover-modal-close jsNotReceiveOtpClose"><i class="icon-close"></i></button>
+                <div class="popover-modal-body">
+                    <div class="modal-body-inner">
+                        <div class="get-otp-wrapper">
+                            <img src="/content/dam/tata-capital-web/assets/img/lead-form/call-ring.svg"
+                                class="get-otp-img" alt="">
+                            <h3 class="heading24 otp-heads">Did not receive OTP?</h3>
+                            <div class="get-otp-btn">
+                                <a href="javascript:void(0)"
+                                    class="btn-link btn-big min-w149 jsModalOnGetCall jsOnGetCallButton">Get
+                                    OTP via call</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- not receive otp modal -->
+<!-- otp timer -->

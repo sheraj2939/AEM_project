@@ -1,0 +1,255 @@
+<header class="header tchfl-header header-backdrop">
+    <div class="header-inner">
+        <div class="header-top">
+            <div class="header-container">
+                <div class="header-slider-contact-wrap">
+                    <div class="left-col">
+                        <div class="header-top-slider">
+                            <div class="slider-item">
+                                <p>${properties.subHeading}<a href="${properties.downloadLink}"
+                                        class="text-downloads" target="${properties.topOpeninNewTab ? '_blank' : '' }">${properties.downloadTest}<span
+                                            class="icon-download2 download2icon"></span></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-col">
+                        <a href="${properties.rightBlogLink}" class="text-icon-link blog-link" target="${properties.rightBlogOpenInNewTab ? '_blank' : '' }">
+                            <span class="icon-blog"></span>${properties.rightBlog}
+                        </a>
+                        <a href="${properties.rightSupportLink}" class="text-icon-link contact-link" target="${properties.rightSupportOpenInNewTab ? '_blank' : '' }">
+                            <span class="icon-headphone"></span>${properties.rightSupport}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-navbar">
+            <div class="header-container">
+                <div class="header-navbar-inner">
+                    <div class="header-logo">
+                        <div class="mobile-tab-menu d-lg-none">
+                            <div class="hamburger-menu" data-menu="menu" data-target="hamburgerMenu">
+                                <div class="first-sub-bar"></div>
+                                <div class="second-sub-bar"></div>
+                                <div class="third-sub-bar"></div>
+                            </div>
+                        </div>
+                        <a href="${properties.redirectionLogoLink}" class="logos">
+                            <img src="${properties.logoImage}" alt="${properties.headerAlt}" />
+                        </a>
+                    </div>
+                    <div class="header-menu-wrap">
+                        <ul class="header-menu">
+                            <sly data-sly-list.subNav="${resource.listChildren}">
+                                <sly data-sly-test="${subNav.name == 'headerNavList'}">
+                                    <sly data-sly-list.subNavList="${subNav.listChildren}">
+                                        <li class="menu-item">
+                                            <sly data-sly-test="${!subNavList.InsuranceDrop}">
+                                                <a href="${subNavList.titelLinks}" class="nav-link"
+                                                target="${subNavList.openInNewTab ? '_blank' : '' }">
+                                                ${subNavList.navHeading}
+                                                </a>
+                                            </sly>
+                                            <sly data-sly-test="${subNavList.InsuranceDrop}">
+                                                <a href="${subNavList.titelLinks}" class="nav-link nav-link-dropdown" target="${subNavList.openInNewTab ? '_blank' : '' }">
+                                                    ${subNavList.navHeading}
+                                                </a>
+                                                <div class="dropdown-content-wrap">
+                                                    <div class="dropdown-cnt-inners">
+                                                        <ul>
+                                                            <sly data-sly-list.drpdwn="${subNavList.Children}">
+                                                                <sly data-sly-test="${drpdwn.name == 'drpdwnList'}">
+                                                                    <sly data-sly-list.dropItem="${drpdwn.listChildren}">
+                                                                        <li>
+                                                                            <a href="${dropItem.drpdwnTitleLink}" target="${dropItem.drpdwnNewTab ? '_blank' : '' }">
+                                                                                <span class="all-icon32">
+                                                                                    <span class="${dropItem.drpdwnIcon}"></span>
+                                                                                </span>
+                                                                                ${dropItem.drpdwnTitle}
+                                                                            </a>
+                                                                        </li>
+                                                                    </sly>
+                                                                </sly>
+                                                            </sly>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </sly>
+                                        </li>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </ul>
+                    </div>
+                    <div class="login-search-wrap">
+                        <ul class="login-search-menu">
+                            <li data-sly-test="${!properties.tslVariation}" class="login-search-item hidden-sm">
+                                <div class="sf-search-wrapper">
+                                    <!-- <img src="/content/dam/tata-capital-web/assets/img/search-icon.svg" id="sf-find-icon">
+                                    <img class="sf-overlay-tooltip" style="display:none" src="/content/dam/tata-capital-web/assets/img/overlayTooltip.svg" alt=""> -->
+                                </div>
+                            </li>
+                            <li data-sly-test="${!properties.tslVariation}" class="login-search-item apply-btn-wrap close-on-outside">
+                                <a href="javascript:void(0);"
+                                    class="login-btn apply-lime-btn animated-btn jsApplyOverlay" data-rel="apply">
+                                    <i>
+                                        ${properties.appylNowTitle}
+                                        <span class="icon-arrow-arrow"></span>
+                                        <span class="icon-arrow-top"></span>
+                                    </i>
+                                </a>
+                                <div class="dropdown-block login-dropdown appy-btn-dropdowns tchfl-apply-drop"
+                                    id="apply">
+                                    <!-- desktop -->
+                                    <div class="apply-drop-outer d-none d-md-block">
+                                        <div class="apply-row-flex">
+                                            <div class="apply-row-col1 apply-cols">
+                                                <div class="bg-div apply-div">
+                                                    <div class="loan-card">
+                                                        <ul>
+                                                            <sly data-sly-list.subNavLeft="${resource.listChildren}">
+                                                                <sly
+                                                                    data-sly-test="${subNavLeft.name == 'notificationList'}">
+                                                                    <sly
+                                                                        data-sly-list.subNavLeftList="${subNavLeft.listChildren}">
+                                                                        <li class="loan-card-item">
+                                                                            <a href="${subNavLeftList.titleLink}"
+                                                                                class="loan-card-link"
+                                                                                target="${subNavLeftList.openInNewTab ? '_blank' : '' }">
+                                                                                <span
+                                                                                    class="${subNavLeftList.icon} head-icons"></span>
+                                                                                <p>${subNavLeftList.title}</p>
+                                                                            </a>
+                                                                        </li>
+                                                                    </sly>
+                                                                </sly>
+                                                            </sly>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- desktop -->
+                                    <!-- mobile -->
+                                    <div class="apply-mobile-menu d-block d-md-none">
+                                        <div class="accordian-mobsubmenu">
+                                            <div class="accord-col">
+                                                <!-- <a href="javascript:void(0)" class="submenu-head">Retail</a> -->
+                                                <div class="">
+                                                    <ul class="mob-sub-menu tchfl-mob-menu">
+                                                        <sly data-sly-list.subNavLeft="${resource.listChildren}">
+                                                            <sly
+                                                                data-sly-test="${subNavLeft.name == 'notificationList'}">
+                                                                <sly
+                                                                    data-sly-list.subNavLeftList="${subNavLeft.listChildren}">
+                                                                    <li>
+                                                                        <a href="${subNavLeftList.titleLink}"
+                                                                            class="menu-sub-items"
+                                                                            target="${subNavLeftList.openInNewTab ? '_blank' : '' }">
+                                                                            ${subNavLeftList.title}
+                                                                        </a>
+                                                                    </li>
+                                                                </sly>
+                                                            </sly>
+                                                        </sly>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- mobile -->
+                                </div>
+                            </li>
+                            <li data-sly-test="${!properties.tslVariation}" class="login-search-item login-btn-wrap close-on-outside">
+                                <a href="javascript:void(0);" class="d-block d-lg-none" data-rel="login">
+                                    <span class="icon-user"></span>
+                                </a>
+                                <a href="javascript:void(0);" class="login-btn d-none d-lg-flex" data-rel="login">
+                                    ${properties.loginTitle}
+                                </a>
+                                <div class="dropdown-block login-dropdown" id="login">
+                                    <ul class="updates-list" id="updatesList">
+                                        <sly data-sly-list.subNavLog="${resource.listChildren}">
+                                            <sly data-sly-test="${subNavLog.name == 'loginList'}">
+                                                <sly data-sly-list.subNavLogList="${subNavLog.listChildren}">
+                                                    <li class="list">
+                                                        <div class="list-item has-icon-right">
+                                                            <span class="media-holder">
+                                                                <span class="icon-arrow-up-right"></span>
+                                                            </span>
+                                                            <a href="${subNavLogList.loginTitleLink}"
+                                                                class="updates-link"
+                                                                target="${subNavLogList.openInNewTab ? '_blank' : '' }">${subNavLogList.loginTitle}</a>
+                                                        </div>
+                                                    </li>
+                                                </sly>
+                                            </sly>
+                                        </sly>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li data-sly-test="${properties.tslVariation}" class="login-search-item">
+                                <div class="sf-search-wrapper">
+                                    <!-- <a href="javascript:void(0);">
+                                        <span class="icon-search"></span>
+                                    </a> -->
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile header -->
+        <div class="mob-header">
+            <div class="mob-inner-header">
+                <!-- mob main menu -->
+                <div class="mob-fixscrollmain">
+                    <!-- Accrodian menu-->
+                    <div class="accordian-mobsubmenu js-mobsubmenu active">
+                        <!-- <a href="javascript:void(0)" class="submenu-head">About Us</a> -->
+                        <sly data-sly-list.subNav="${resource.listChildren}">
+                            <sly data-sly-test="${subNav.name == 'headerNavList'}">
+                                <sly data-sly-list.subNavList="${subNav.listChildren}">
+                                    <sly data-sly-test="${!subNavList.InsuranceDrop}">
+                                        <a href="${subNavList.titelLinks}" class="submenu-head"
+                                            target="${subNavList.openInNewTab ? '_blank' : '' }">
+                                            ${subNavList.navHeading}
+                                        </a>
+                                    </sly>
+                                    <sly data-sly-test="${subNavList.InsuranceDrop}">
+                                        <div class="accord-col js-accord-col-mob">          
+                                            <div class="submenu-head">                                    
+                                                <a href="${subNavList.titelLinks}">${subNavList.navHeading}</a>                                
+                                                <span class="submenu-head-arrow"></span>
+                                            </div>   
+                                            <div class="accord-body">
+                                                <ul class="mob-sub-menu">
+                                                    <sly data-sly-list.drpdwn="${subNavList.Children}">
+                                                        <sly data-sly-test="${drpdwn.name == 'drpdwnList'}">
+                                                            <sly data-sly-list.dropItem="${drpdwn.listChildren}">
+                                                                <li>
+                                                                    <a href="${dropItem.drpdwnTitleLink}" target="${dropItem.drpdwnNewTab ? '_blank' : '' }" class="menu-sub-items ms-bg">${dropItem.drpdwnTitle}</a>
+                                                                </li>
+                                                            </sly>
+                                                        </sly>
+                                                    </sly>
+                                                </ul>                                    
+                                            </div>
+                                        </div>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </div>
+                </div>
+                <!-- mob main menu -->
+            </div>
+
+        </div>
+        <!-- mobile header -->
+    </div>
+</header>

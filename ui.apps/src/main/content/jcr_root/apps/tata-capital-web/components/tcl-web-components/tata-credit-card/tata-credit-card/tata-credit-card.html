@@ -1,0 +1,117 @@
+    <div class="tata-cards-box">
+        <div class="container">
+            <div class="tata-cards-inner bg-div">
+                <sly
+                    data-sly-resource="${'tata-card-heading' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                </sly>
+                <div class="cards-inner-content">
+                    <div class="card-inner-row">
+                        <div class="card-inner-col">
+                            <sly
+                                data-sly-resource="${'left-col-list' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                            </sly>
+                        </div>
+                        <div class="card-inner-col credit-card-col">
+                            <div class="tata-card-img">
+                                <sly
+                                    data-sly-resource="${'middle-image' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                                </sly>
+                            </div>
+                        </div>
+                        <div class="card-inner-col">
+                            <sly
+                                data-sly-resource="${'right-col-list' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                            </sly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="apply-tata-cards">
+                <div class="apply-cards-inner">
+                    <sly data-sly-resource="${'inner-card-white-heading' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/component-title/component-title'}"></sly>
+                    <div class="default-duttons">
+                        <ul class="btn-list">
+                            <li>
+                                <label class="custom-radiobox-label custom-white-radiobox jsApplyRadioBtn"
+                                    data-target="#no-modal">
+                                    <span class="custom-radio custom-white-radio">
+                                        <input type="radio" name="radio1" value="yes">
+                                        <span class="radiobox-check"></span>
+                                    </span>
+                                    Yes
+                                </label>
+                            </li>
+                            <li>
+                                <label class="custom-radiobox-label custom-white-radiobox jsApplyRadioBtn"
+                                    data-target="#yes-modal">
+                                    <span class="custom-radio custom-white-radio">
+                                        <input type="radio" name="radio1" value="no">
+                                        <span class="radiobox-check"></span>
+                                    </span>
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <sly data-sly-resource="${'tata-card-button' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></sly>
+                </div>
+            </div>
+            <div data-sly-resource="${'tata-card-disclaimer' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></div>
+        </div>
+    </div>
+
+<!--Yes modal -->
+<div class="popover-modal modals-blue fade" id="yes-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md2">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content">
+                <button data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></button>
+                <div class="popover-modal-body">
+                    <div class="thankyou-modal-inner">
+                        <div class="prefrence-mx">
+                            <img src="/content/dam/tata-capital-web/img/thanks.svg" alt="" class="thankyou-img">
+                            <p class="heading36">
+                                <span>
+                                    Thank you
+                                </span>
+                            </p>
+                            <p class="text16i">
+                                We have noted your request.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Yes modal -->
+
+
+<!-- No modal -->
+<div class="popover-modal modals-blue fade" id="no-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md2">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content">
+                <button data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></button>
+                <div class="popover-modal-body">
+                    <div class="thankyou-modal-inner">
+                        <div class="prefrence-mx">
+                            <img src="/content/dam/tata-capital-web/img/thanks.svg" alt="" class="thankyou-img">
+                            <p class="heading36">
+                                <span>
+                                    Thank you for showing interest
+                                    in Tata Credit Cards.
+                                </span>
+                            </p>
+                            <p class="text16i">
+                                Our representative will call you shortly
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- No modal -->

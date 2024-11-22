@@ -1,0 +1,160 @@
+<!--/*
+    Copyright 2017 Adobe Systems Incorporated
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+*/-->
+<style type="text/css">
+   
+</style>
+<sly data-sly-test="${!properties.disabledTia}">
+        <script type="text/javascript">
+            window.enableChatIcon = function () {
+                var TCButton = document.getElementById('TC-icon');
+                if (TCButton) {
+                    TCButton.style.display = "block";
+                }
+            }
+            window.TCChatbotHost = window.osgiConfigObj.chatBotUrl;
+            window.TCDefaultLangCode = 'en';
+            window.TCbotHost = window.osgiConfigObj.chatBotDomain
+            window.enableTCbot = function () {
+                // if you want send anything to chatbot add in initParam
+                var initParams = {};
+                window.startTCBot(initParams);
+                var TCButton = document.getElementById('TC-icon');
+                if (TCButton) {
+                    TCButton.style.display = "none";
+                }
+                document.querySelector(".ask-tia-wrap img").style.display = "none";
+                // window.initWebChatSDK(initParams);
+                $('.chat-tia-btn .jsChatBtn').removeClass('hiding');
+                $('.ask-tia-wrap').addClass('hiding');
+            }
+            window.chatBotIsActive = function () {
+                console.log('User having something in chatbot');
+            }
+             </script>
+    
+<div style="display: block;">
+    <div class="chatbot-box">
+        <div class="chat-tia-btn">
+            <a href="javascript:void(0)" class="chatbot-open-btn has-arrow animated-btn showing jsChatBtn">Chat</a>
+        </div>
+        <div class="ask-tia-wrap hiding">
+        <div onclick="window.enableTCbot()" style="cursor: pointer;">
+            <img data-src="/content/dam/tata-capital-web/assets/img/chatbot-girl-opt.svg" class="lozad d-md-block d-none tiaImg" alt="tia-chatbot">
+            <img data-src="/content/dam/tata-capital-web/assets/img/chatbot-girl-mob-opt.svg" class="lozad d-md-none tiaImg" alt="tia-chatbot-mobile">
+            <a href="javascript:void(0)" id="TC-icon" class="chatbot-open-btn semibold animated-btn">Ask TIA</a>
+        </div>
+            <a href="javascript:void(0)" class="cross-btn"><span class="icon-close"></span></a>
+        </div>
+    </div>
+</div>
+</sly>
+
+<sly data-sly-test="${!properties.disabledTia}">
+    <script>
+        var faScrollFlagChatSdk = false;
+        if(screen.width <= 786){
+            document.addEventListener('touchstart', function() {
+                if (!faScrollFlagChatSdk) {
+                    faScrollFlagChatSdk = true;
+                    setTimeout(function() {
+                        var script = document.createElement('script');
+                        script.src = window.osgiConfigObj.chatBotUrl+"/morfeuswebsdk/js/chatSDK.js";
+                        document.body.appendChild(script);
+                    }, 1000)
+                }
+            });
+        }
+        else{
+            document.addEventListener('mousemove', function() {
+                if (!faScrollFlagChatSdk) {
+                    faScrollFlagChatSdk = true;
+                    setTimeout(function() {
+                        var script = document.createElement('script');
+                        script.src = window.osgiConfigObj.chatBotUrl+"/morfeuswebsdk/js/chatSDK.js";
+                        document.body.appendChild(script);
+                    }, 1000)
+                }
+            });
+        }
+    </script>
+</sly>
+
+<!--/*Moengage Integration Start*/-->
+<sly data-sly-test="${!properties.disableMoengage}">
+    <script>
+        var moengageScrollFlag = false;
+        if(screen.width <= 786){
+            document.addEventListener('touchstart', function() {
+                if (!moengageScrollFlag) {
+                    moengageScrollFlag = true;
+                    var script = document.createElement('script');
+                script.src = "/service-worker.js";
+                document.body.appendChild(script);
+                (function(i,s,o,g,r,a,m,n){i.moengage_object=r;t={};q=function(f){return function(){(i.moengage_q=i.moengage_q||[]).push({f:f,a:arguments})}};f=['track_event','add_user_attribute','add_first_name','add_last_name','add_email','add_mobile','add_user_name','add_gender','add_birthday','destroy_session','add_unique_user_id','moe_events','call_web_push','track','location_type_attribute'],h={onsite:["getData"]};for(k in f){t[f[k]]=q(f[k])}a=s.createElement(o);m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);i.moe=i.moe||function(){n=arguments[0];return t};a.onload=function(){if(n){i[r]=moe(n)}}})(window,document,'script','https://cdn.moengage.com/webpush/moe_webSdk.min.latest.js','Moengage')
+            }
+        });
+    }
+    else{
+        document.addEventListener('mousemove', function() {
+            if (!moengageScrollFlag) {
+                moengageScrollFlag = true;
+                var script = document.createElement('script');
+                script.src = "/service-worker.js";
+                document.body.appendChild(script);
+                (function(i,s,o,g,r,a,m,n){i.moengage_object=r;t={};q=function(f){return function(){(i.moengage_q=i.moengage_q||[]).push({f:f,a:arguments})}};f=['track_event','add_user_attribute','add_first_name','add_last_name','add_email','add_mobile','add_user_name','add_gender','add_birthday','destroy_session','add_unique_user_id','moe_events','call_web_push','track','location_type_attribute'],h={onsite:["getData"]};for(k in f){t[f[k]]=q(f[k])}a=s.createElement(o);m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);i.moe=i.moe||function(){n=arguments[0];return t};a.onload=function(){if(n){i[r]=moe(n)}}})(window,document,'script','https://cdn.moengage.com/webpush/moe_webSdk.min.latest.js','Moengage')
+            }
+        });
+    }
+</script>
+</sly>
+<!--/*Moengage Integration End*/-->
+<sly
+    data-sly-use.clientlibs="${'com.adobe.cq.wcm.core.components.models.ClientLibraries' @ categories='tata-capital-web.base',defer=true}">
+    ${clientlibs.jsIncludes @ context="scriptComment"}
+</sly>
+<!--/* <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories='tata-capital-web.base', async=true}" />
+</sly> */-->
+<sly data-sly-test="${!properties.diableSmartSearch}">
+    <sly data-sly-use.tataCapitalWebConfiguration="com.tatacapital.web.core.services.TataCapitalWebConfiguration"/>
+    <script>
+        var senseForthScrollFlag = false;
+        if(screen.width <= 786){
+            window.addEventListener('touchstart', function() {
+                if (!senseForthScrollFlag) {
+                    senseForthScrollFlag = true;
+                    var scriptSenseForth = document.createElement('script');
+                    scriptSenseForth.src = "${tataCapitalWebConfiguration.config.senseForthScriptUrl @ context = 'uri'}";
+                    document.body.appendChild(scriptSenseForth);
+                }
+            });
+        }
+        else{
+            window.addEventListener('mousemove', function() {
+                if (!senseForthScrollFlag) {
+                    senseForthScrollFlag = true;
+                    var scriptSenseForth = document.createElement('script');
+                    scriptSenseForth.src = "${tataCapitalWebConfiguration.config.senseForthScriptUrl @ context = 'uri'}";
+                    document.body.appendChild(scriptSenseForth);
+                }
+            });
+        }
+    </script>
+</sly>
+<!--/*<sly data-sly-test="${!properties.diableSmartSearch}">
+<sly data-sly-use.tataCapitalWebConfiguration="com.tatacapital.web.core.services.TataCapitalWebConfiguration"/>
+<script async type="text/javascript" src="${tataCapitalWebConfiguration.config.senseForthScriptUrl @ context = 'uri'}"></script>
+</sly>*/-->

@@ -1,0 +1,12 @@
+.general-info-box .general-info-list li.customborder{
+    border-bottom: none;
+}
+.general-info-box .general-info-list li a.disable-pdf-icon:before{
+    content: none;
+}
+.general-info-box .general-info-list li a.disable-pdf-icon{
+padding-left:0;
+}
+.openDisclaimer{
+    cursor: pointer;
+}

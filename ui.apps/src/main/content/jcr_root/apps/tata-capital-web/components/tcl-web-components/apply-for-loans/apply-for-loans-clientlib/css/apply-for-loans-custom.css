@@ -1,0 +1,22 @@
+.custom-ul{
+	 display: flex;
+	 flex-wrap: wrap;
+	 margin-left: -15px;
+	 margin-right: -15px;
+	 justify-content: center;
+}
+/* .apply-row-first .list-four.custom-ul li {
+    margin-top: 0;
+} */
+.also-apply-box .apply-lists{
+	height: inherit;
+}
+@media (max-width: 991px) {
+	.custom-ul{
+		margin-left: auto;
+	 	margin-right: auto;
+   }
+   .apply-row-first .list-four.custom-ul li {
+    margin-top: 20px;
+}
+}

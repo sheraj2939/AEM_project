@@ -1,0 +1,157 @@
+.specific-box {
+  background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.67) 99.11%);
+  padding: 0 48px;
+}
+
+.specific-steps-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.specific-steps-inner .specific-steps-left {
+  width: 465px;
+  padding: 48px 0;
+}
+
+.specific-steps-inner .specific-steps-right {
+  width: 280px;
+  padding-top: 48px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.specific-steps-inner .media-holder-row img {
+  width: 100%;
+}
+
+.specific-steps-ul .specific-steps-li {
+  border-bottom: 1px solid rgba(78, 79, 80, 0.2);
+  padding: 20px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.specific-steps-ul .specific-steps-li .specific-li-left {
+  position: relative;
+  padding-right: 50px;
+}
+
+.specific-steps-ul .specific-steps-li.active {
+  background-color: #65c294;
+  border-radius: 12px;
+  border-bottom: transparent;
+}
+
+.specific-steps-ul .specific-steps-li.active .heading20 {
+  color: #fff;
+}
+
+.specific-steps-ul .specific-steps-li.active .steps-texts {
+  color: #fff;
+  height: auto;
+  opacity: 1;
+}
+
+.specific-steps-ul .specific-steps-li.active .steps-icons .step-ticks-img {
+  opacity: 1;
+}
+
+.specific-steps-ul .specific-steps-li.active .progress-custom-container {
+  opacity: 1;
+}
+
+.specific-steps-ul .steps-icons {
+  position: absolute;
+  right: 0px;
+  top: -2px;
+}
+
+.specific-steps-ul .steps-icons .step-ticks-img {
+  opacity: 0.5;
+}
+
+.specific-steps-ul .heading20 {
+  color: #ccd2d2;
+}
+
+.specific-steps-ul .steps-texts {
+  font-size: 15px;
+  line-height: 22px;
+  margin-top: 3px;
+  color: #333;
+  height: 0px;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.specific-steps-ul .progress-custom-container {
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.specific-steps-ul .progress-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 0%;
+  background: linear-gradient(to right, red 0% 0%, green 0% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 3s linear;
+}
+
+.specific-steps-ul .progressCircle {
+  height: 5px;
+  border-radius: 0%;
+}
+
+@media (max-width: 991px) {
+  .specific-box {
+    padding: 0 30px;
+  }
+
+  .specific-steps-inner .specific-steps-left {
+    width: 60%;
+    padding: 30px 0;
+  }
+
+  .specific-steps-inner .specific-steps-right {
+    width: 35%;
+    padding-top: 30px;
+  }
+
+  .specific-steps-ul .specific-steps-li {
+    padding: 16px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .specific-box {
+    padding: 0 24px;
+  }
+
+  .specific-steps-inner .specific-steps-left {
+    width: 100%;
+    padding: 24px 0;
+  }
+
+  .specific-steps-inner .specific-steps-right {
+    width: 220px;
+    margin: auto;
+    padding-top: 0px;
+  }
+
+  .specific-steps-ul .steps-texts {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

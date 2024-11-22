@@ -1,0 +1,331 @@
+.preapproved-offers-box .custom-container {
+  z-index: 0;
+}
+.preapproved-offers-box .preapproved-offers-inner {
+  background-image: url("/content/dam/tata-capital-web/preapproved-offer/preapproved-offers-bg-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 23px 30px 23px 52px;
+  border-radius: 30px;
+  position: relative;
+  min-height: 467px;
+}
+
+.preapproved-inner-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.preapproved-inner-row .preapproved-left-col {
+  width: calc(100% - 369px);
+  padding-right: 73px;
+}
+.preapproved-inner-row .preapproved-left-col h1 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.preapproved-inner-row .preapproved-left-col p {
+  color: #ffffff;
+}
+.preapproved-inner-row .preapproved-right-col {
+  width: 369px;
+  position: relative;
+  z-index: 5;
+}
+
+.preapproved-form-wrapper {
+  border-radius: 30px;
+  min-height: 421px;
+  background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 255, 255, 0.74) 99.11%, rgba(255, 255, 255, 0.94) 99.11%);
+  position: relative;
+}
+.preapproved-form-wrapper .form-top-content {
+  padding: 25px 25px 20px;
+  background: linear-gradient(94.99deg, rgba(79, 179, 129, 0.85) -1.62%, rgba(91, 194, 143, 0.909844) 47.33%, #68C999 102.12%);
+  border-radius: 30px 30px 0px 0px;
+}
+.preapproved-form-wrapper .form-top-content h3 {
+  color: #ffffff;
+}
+.preapproved-form-wrapper .form-bottom-content {
+  padding: 10px 25px 70px;
+  border-radius: 0px 0px 30px 30px;
+  height: 100%;
+}
+.preapproved-form-wrapper .form-bottom-content .custom-checkbox .checkbox-wrap {
+  top: 1px;
+}
+.preapproved-form-wrapper .form-bottom-content .custom-checkbox .error-msgs {
+  top: 20px;
+}
+.preapproved-form-wrapper .form-bottom-content .form-textbox {
+  padding-bottom: 0;
+  margin-bottom: 13px;
+}
+.preapproved-form-wrapper .form-bottom-content .form-textbox .label-name {
+  font-size: 13px;
+  font-family: "OpenSans-Regular";
+  top: 35px;
+}
+.preapproved-form-wrapper .form-bottom-content .form-textbox.active .label-name {
+  font-size: 12px;
+  top: 10px;
+}
+.preapproved-form-wrapper .form-bottom-content .custom-checkbox {
+  margin-top: 30px;
+  padding-bottom: 22px;
+}
+.preapproved-form-wrapper .form-bottom-content .custom-checkbox .checkbox-wrap {
+  background: transparent;
+}
+.preapproved-form-wrapper .form-bottom-content .custom-checkbox .label-text {
+  margin-right: 0;
+  color: #333333;
+  font-size: 12px;
+}
+.preapproved-form-wrapper .form-bottom-content .custom-checkbox .label-text a {
+  color: #333333;
+  font-family: "OpenSans-Regular";
+}
+.preapproved-form-wrapper .otp-btn-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0 25px;
+  bottom: 25px;
+}
+.preapproved-form-wrapper.enter-otp-wrapper .form-bottom-content .text16i {
+  font-family: "OpenSans-SemiBold";
+  margin-bottom: 39px;
+}
+.preapproved-form-wrapper.enter-otp-wrapper .count-text {
+  font-family: "OpenSansMedium";
+  font-size: 16px;
+  line-height: 21px;
+  color: #1268B3;
+  margin-left: 30px;
+}
+.preapproved-form-wrapper.enter-otp-wrapper .otp-controls .btn-link {
+  background: transparent;
+}
+.preapproved-form-wrapper.enter-otp-wrapper .otp-controls .btn-blue {
+  margin-right: 20px;
+}
+.preapproved-form-wrapper.error-wrapper .error-content {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 421px;
+}
+.preapproved-form-wrapper.error-wrapper .error-content img {
+  margin: 0 auto 12px;
+}
+.preapproved-form-wrapper.error-wrapper .error-content .heading36,
+.preapproved-form-wrapper.error-wrapper .error-content .text16i {
+  margin-bottom: 20px;
+}
+
+.key-features-wrapper {
+  position: absolute;
+  left: 52px;
+  bottom: 23px;
+  right: 30px;
+  width: auto;
+  z-index: 1;
+}
+.key-features-wrapper .key-feautures-inner {
+  max-width: 770px;
+}
+.key-features-wrapper .key-feautures-inner h3 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.key-features-wrapper .key-feautres-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.key-features-wrapper .key-features-col {
+  width: 33.33%;
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.key-features-wrapper .key-features-col .col-left-content {
+  width: 32px;
+}
+.key-features-wrapper .key-features-col .col-right-content {
+  width: calc(100% - 32px);
+  padding-left: 10px;
+}
+.key-features-wrapper .key-features-col .col-right-content p {
+  color: #ffffff;
+}
+
+@media (max-width: 1279px) {
+  .key-features-wrapper {
+    left: 30px;
+  }
+  .key-features-wrapper .key-feautures-inner {
+    max-width: 680px;
+  }
+
+  .preapproved-offers-box .preapproved-offers-inner {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 1199px) {
+  .preapproved-inner-row .preapproved-left-col {
+    padding-right: 50px;
+  }
+
+  .preapproved-offers-box .preapproved-offers-inner {
+    padding: 25px;
+  }
+
+  .key-features-wrapper {
+    left: 25px;
+    bottom: 25px;
+  }
+  .key-features-wrapper .key-feautures-inner {
+    max-width: 520px;
+  }
+  .key-features-wrapper .key-feautres-row {
+    margin: 0 -5px;
+  }
+  .key-features-wrapper .key-features-col {
+    padding: 0 5px;
+  }
+}
+@media (max-width: 991px) {
+  .preapproved-offers-box .preapproved-offers-inner {
+    min-height: inherit;
+  }
+
+  .preapproved-inner-row .preapproved-left-col {
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+  .preapproved-inner-row .preapproved-right-col {
+    width: 100%;
+  }
+
+  .preapproved-form-wrapper.error-wrapper {
+    min-height: inherit;
+  }
+  .preapproved-form-wrapper.error-wrapper .error-content {
+    min-height: auto;
+    padding: 30px;
+  }
+  .preapproved-form-wrapper.error-wrapper .error-content .heading36 {
+    margin-bottom: 10px;
+  }
+
+  .key-features-wrapper {
+    position: static;
+    padding-top: 30px;
+  }
+  .key-features-wrapper .key-feautures-inner {
+    max-width: none;
+  }
+  .key-features-wrapper .key-feautres-row {
+    margin: 0;
+  }
+  .key-features-wrapper .key-features-col {
+    padding: 0;
+    padding-bottom: 10px;
+    width: 100%;
+    align-items: center;
+  }
+  .key-features-wrapper .key-features-col:last-child {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .preapproved-offers-box .preapproved-offers-inner {
+    background-image: url("/content/dam/tata-capital-web/preapproved-offer/preapproved-offers-mob-bg-img.png");
+    padding: 20px;
+    border-radius: 28px;
+  }
+
+  .preapproved-form-wrapper {
+    border-radius: 24px;
+    min-height: 395px;
+  }
+  .preapproved-form-wrapper .form-top-content {
+    padding: 16px;
+    border-radius: 24px 24px 0px 0px;
+  }
+  .preapproved-form-wrapper .form-bottom-content {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 45px;
+  }
+  .preapproved-form-wrapper .form-bottom-content .form-textbox-new {
+    padding-bottom: 0;
+  }
+  .preapproved-form-wrapper .form-bottom-content .custom-checkbox {
+    padding-bottom: 22px;
+  }
+  .preapproved-form-wrapper .form-bottom-content .custom-checkbox .label-text {
+    font-size: 12px;
+  }
+  .preapproved-form-wrapper .form-bottom-content .enter-otp-block {
+    justify-content: space-between;
+    max-width: 250px;
+  }
+  .preapproved-form-wrapper .form-bottom-content .enter-otp-block .input-textbox {
+    width: 45px;
+  }
+  .preapproved-form-wrapper .form-bottom-content .enter-otp-block .count-text {
+    margin-left: 0;
+  }
+  .preapproved-form-wrapper .otp-btn-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 16px;
+    width: 100%;
+    padding: 0 16px;
+  }
+  .preapproved-form-wrapper .otp-btn-wrapper .btn-blue,
+.preapproved-form-wrapper .otp-btn-wrapper .btn-link {
+    width: 100%;
+  }
+  .preapproved-form-wrapper.enter-otp-wrapper .otp-controls .btn-blue {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .preapproved-form-wrapper.error-wrapper .error-content {
+    padding: 16px;
+  }
+  .preapproved-form-wrapper.error-wrapper .error-content img {
+    margin: 0 auto 12px;
+  }
+  .preapproved-form-wrapper.error-wrapper .error-content .text16i {
+    margin-bottom: 20px;
+  }
+  .preapproved-form-wrapper.error-wrapper .error-content .btn-blue {
+    width: 100%;
+  }
+}
+@media (max-width: 449px) {
+  .preapproved-form-wrapper .form-bottom-content .enter-otp-block .otp-col {
+    margin-right: 10px;
+  }
+  .preapproved-form-wrapper .form-bottom-content .enter-otp-block .count-text {
+    margin-left: 0;
+  }
+}
+@media (max-width: 360px) {
+  .preapproved-form-wrapper .form-bottom-content .enter-otp-block .otp-col {
+    margin-right: 5px;
+  }
+  .preapproved-form-wrapper .form-bottom-content .enter-otp-block .input-textbox {
+    width: 32px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

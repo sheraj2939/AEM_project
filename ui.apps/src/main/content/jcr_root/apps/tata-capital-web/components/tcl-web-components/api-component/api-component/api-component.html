@@ -1,0 +1,328 @@
+<div class="retail-api-box pd-t50 space-tb40 space-b80">
+  <div class="container">
+    <div class="retail-api-inner">
+      <div class="retail-left">
+        <div class="retail-left-inner bg-div">
+          <div class="tab-header">
+            <h3 class="heading20 jsApiDropMob">
+              <span>${properties.titleReg}</span>
+            </h3>
+          </div>
+          <div class="api-catalogue-content">
+            <div class="catalogue-wrap jsAccordian3 jsApiTabOuter">
+
+              <sly data-sly-list.apiInformation="${resource.children}">
+                <sly data-sly-test="${apiInformation.name == 'dropdownListHead'}">
+                  <sly data-sly-list.apiInfoTwo="${apiInformation.children}">
+                    <sly data-sly-test="${!apiInfoTwo.noDropDown}">
+                      <div class="catalogue-list" accod-row>
+                        <div class="catalogue-dropdown">
+                          <a href="javascript:void(0);"
+                            class="catalogue-links ${apiInfoTwo.accordActive ? 'active' : ''} active-accord  custom-accord"
+                            accod-head>
+                            ${apiInfoTwo.dropdownHead}
+                          </a>
+                          <div class="catelogue-dropdown-body" accod-body>
+                            <ul class="catalogue-accord-wrap">
+                              <sly data-sly-list.apiInfoList="${apiInfoTwo.children}">
+                                <sly data-sly-test="${apiInfoList.name == 'dropdownList1'}">
+                                  <sly data-sly-list.apiList="${apiInfoList.children}">
+                                    <sly
+                                      data-sly-test.tabList="${'{0}_{1}_{2}_{3}' @ format =[apiInformation.name,apiInfoTwoList.count,apiInfoList.name,apiListList.count]}">
+                                      <sly data-sly-test="${!apiList.insideListAcc}">
+                                        <li>
+                                          <a href="javascript:void(0);"
+                                            class="accord-links ${apiList.listActive ? 'active' : ''}"
+                                            data-apitab="${tabList}">${apiList.listDropDown}</a>
+                                        </li>
+                                      </sly>
+                                      <sly data-sly-test="${apiList.insideListAcc}">
+                                        <li>
+                                          <div class="catelogue-sub-accordian jsCatelogueAccordion custom-sub-accord">
+                                            <div class="catelogue-sub-accord-row">
+                                              <div class="catelogue-sub-accord-head">
+                                                <a href="javascript:void(0);"
+                                                  class="accord-links sub-accordion-act ${apiList.listActive ? 'sub-actives' : ''}">${apiList.listDropDown}</a>
+                                              </div>
+                                              <div class="catelogue-sub-accord-body" sub-acco>
+                                                <div class="sub-accord-ul">
+                                                  <sly data-sly-list.apiAcco="${apiList.children}">
+                                                    <sly data-sly-test="${apiAcco.name == 'listInsideAccordion'}">
+                                                      <sly data-sly-list.apiAccoName="${apiAcco.children}">
+                                                        <sly
+                                                          data-sly-test.tabList="${'{0}_{1}_{2}_{3}_{4}_{5}' @ format =[apiInformation.name,apiInfoTwoList.count,apiInfoList.name,apiListList.count,apiAcco.name,apiAccoNameList.count]}">
+                                                          <div class="sub-accord-li">
+                                                            <a href="javascript:void(0);"
+                                                              class="accord-links ${apiAccoName.listActive ? 'active' : ''}"
+                                                              data-apitab="${tabList}">${apiAccoName.listAccoName}</a>
+                                                          </div>
+                                                        </sly>
+                                                      </sly>
+                                                    </sly>
+                                                  </sly>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                      </sly>
+                                    </sly>
+                                  </sly>
+                                </sly>
+                              </sly>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </sly>
+                    <sly data-sly-test="${apiInfoTwo.noDropDown}">
+                      <sly data-sly-test.tabList="${'{0}_{1}' @ format =[apiInformation.name,apiInfoTwoList.count]}">
+                        <div class="catalogue-list" accod-row-link>
+                          <a href="javascript:void(0);" class="catalogue-links noactivelink" data-apitab="${tabList}">
+                            ${apiInfoTwo.dropdownHead}
+                          </a>
+                        </div>
+                      </sly>
+                    </sly>
+                  </sly>
+                </sly>
+              </sly>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="retail-right">
+        <sly
+          data-sly-resource="${'retail-right-content' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+        </sly>
+        <sly data-sly-list.apiInformation="${resource.children}">
+          <sly data-sly-test="${apiInformation.name == 'dropdownListHead'}">
+            <sly data-sly-list.apiInfoTwo="${apiInformation.children}">
+              <sly data-sly-list.apiInfoList="${apiInfoTwo.children}">
+                <sly data-sly-test="${!apiInfoTwo.noDropDown}">
+                  <sly data-sly-test="${apiInfoList.name == 'dropdownList1'}">
+                    <sly data-sly-list.apiList="${apiInfoList.children}">
+                      <sly
+                        data-sly-test.tabList="${'{0}_{1}_{2}_{3}' @ format =[apiInformation.name,apiInfoTwoList.count,apiInfoList.name,apiListList.count]}">
+                        <sly data-sly-test="${!apiList.insideListAcc}">
+                          <div class="retail-right-inner jsApiContentOuter ${apiList.contentActive ? '' : 'd-none'}"
+                            id="${tabList}">
+                            <div class="tops-heads">
+                              <h2 class="retail-heading">
+                                <span>${apiList.titleReg}</span>
+                              </h2>
+                              <div class="text16i retail-description">${apiList.titleDesc @ context = 'html'}
+                              </div>
+                            </div>
+                            <div class="bottom-content">
+                              <div class="bottom-content-inner bg-div" tab-wrapper="">
+                                <div class="media-top-tabs">
+                                  <ul class="tab-btn-group" tabMenu-wrap="">
+                                    <sly data-sly-list.apiInfoTab="${apiList.children}">
+                                      <sly data-sly-test="${apiInfoTab.name == 'blueTabMultifield'}">
+                                        <sly data-sly-list.apiInfoTab="${apiInfoTab.children}">
+                                          <sly
+                                            data-sly-test.tabList="${'tab-option-{0}{1}' @ format =[drop.name,apiInfoTabList.count]}">
+                                            <li class="tab-item">
+                                              <a href="javascript:void(0);"
+                                                class="tab-button js-tabClick ${apiInfoTab.tabActive ? 'active' : ''}"
+                                                tab-menu="${tabList}">${apiInfoTab.tabName}</a>
+                                            </li>
+                                          </sly>
+                                        </sly>
+                                      </sly>
+                                    </sly>
+                                  </ul>
+                                </div>
+                                <div class="api-mobinner-contents">
+                                  <div class="tab-content-wrap">
+                                    <sly data-sly-list.apiInfoTab="${apiList.children}">
+                                      <sly data-sly-test="${apiInfoTab.name == 'blueTabMultifield'}">
+                                        <sly data-sly-list.apiInfoTab="${apiInfoTab.children}">
+                                          <sly
+                                            data-sly-test.tabList="${'tab-option-{0}{1}' @ format =[drop.name,apiInfoTabList.count]}">
+                                            <div class="tab-inner ${apiInfoTab.tabActive ? '' : 'd-none'}"
+                                              tab-contnet="${tabList}">
+                                              <div
+                                                class="list-circle-ticks-voilet ${apiInfoTab.fullWidthText ? 'full-widths' : ''}">
+                                                ${apiInfoTab.titleDesc @ context = 'html'}
+                                              </div>
+                                              <sly data-sly-test="${apiInfoTab.tabImage}">
+                                                <div class="image-wrapper">
+                                                  <img src="${apiInfoTab.tabImage}" alt="img">
+                                                </div>
+                                              </sly>
+                                            </div>
+                                          </sly>
+                                        </sly>
+                                      </sly>
+                                  </div>
+                                  <sly data-sly-test="${apiList.btnText}">
+                                    <div class="partners-btn-wrap">
+                                      <a href="${apiList.btnTextLink}" class="btn-blue btn-large"
+                                        target="${apiList.newTab ? '_blank' : ''}">${apiList.btnText}</a>
+                                    </div>
+                                  </sly>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </sly>
+                        <sly data-sly-test="${apiList.insideListAcc}">
+                          <sly data-sly-list.apiAcco="${apiList.children}">
+                            <sly data-sly-test="${apiAcco.name == 'listInsideAccordion'}">
+                              <sly data-sly-list.apiAccoName="${apiAcco.children}">
+                                <sly
+                                  data-sly-test.tabList="${'{0}_{1}_{2}_{3}_{4}_{5}' @ format =[apiInformation.name,apiInfoTwoList.count,apiInfoList.name,apiListList.count, apiAcco.name, apiAccoNameList.count]}">
+                                  <div
+                                    class="retail-right-inner jsApiContentOuter ${apiAccoName.listActive ? '' : 'd-none'}"
+                                    id="${tabList}">
+                                    <div class="tops-heads">
+                                      <h2 class="retail-heading">
+                                        <span>${apiAccoName.titleRegTwo}</span>
+                                      </h2>
+                                      <div class="text16i retail-description">${apiAccoName.titleDescTwo @ context =
+                                        'html'}
+                                      </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                      <div class="bottom-content-inner bg-div" tab-wrapper="">
+                                        <div class="media-top-tabs">
+                                          <ul class="tab-btn-group" tabMenu-wrap="">
+                                            <sly data-sly-list.apiInfoTab="${apiAccoName.children}">
+                                              <sly data-sly-test="${apiInfoTab.name == 'blueTabMultifield'}">
+                                                <sly data-sly-list.apiInfoTab="${apiInfoTab.children}">
+                                                  <sly
+                                                    data-sly-test.tabList="${'tab-option-{0}{1}' @ format =[drop.name,apiInfoTabList.count]}">
+                                                    <li class="tab-item">
+                                                      <a href="javascript:void(0);"
+                                                        class="tab-button js-tabClick ${apiInfoTab.tabActive ? 'active' : ''}"
+                                                        tab-menu="${tabList}">${apiInfoTab.tabName}</a>
+                                                    </li>
+                                                  </sly>
+                                                </sly>
+                                              </sly>
+                                            </sly>
+                                          </ul>
+                                        </div>
+                                        <div class="api-mobinner-contents">
+                                          <div class="tab-content-wrap">
+                                            <sly data-sly-list.apiInfoTab="${apiAccoName.children}">
+                                              <sly data-sly-test="${apiInfoTab.name == 'blueTabMultifield'}">
+                                                <sly data-sly-list.apiInfoTab="${apiInfoTab.children}">
+                                                  <sly
+                                                    data-sly-test.tabList="${'tab-option-{0}{1}' @ format =[drop.name,apiInfoTabList.count]}">
+                                                    <div class="tab-inner ${apiInfoTab.tabActive ? '' : 'd-none'}"
+                                                      tab-contnet="${tabList}">
+                                                      <div
+                                                        class="list-circle-ticks-voilet ${apiInfoTab.fullWidthText ? 'full-widths' : ''}">
+                                                        ${apiInfoTab.titleDesc @ context = 'html'}
+                                                      </div>
+                                                      <sly data-sly-test="${apiInfoTab.tabImage}">
+                                                        <div class="image-wrapper">
+                                                          <img src="${apiInfoTab.tabImage}" alt="img">
+                                                        </div>
+                                                      </sly>
+                                                    </div>
+                                                  </sly>
+                                                </sly>
+                                              </sly>
+                                          </div>
+                                          <sly data-sly-test="${apiAccoName.btnText}">
+                                            <div class="partners-btn-wrap">
+                                              <a href="${apiAccoName.btnTextLink}" class="btn-blue btn-large"
+                                                target="${apiAccoName.newTab ? '_blank' : ''}">${apiAccoName.btnText}</a>
+                                            </div>
+                                          </sly>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </sly>
+                              </sly>
+                            </sly>
+                          </sly>
+                        </sly>
+                      </sly>
+                    </sly>
+                  </sly>
+                </sly>
+                <sly data-sly-test="${apiInfoTwo.noDropDown}">
+                  <sly data-sly-test="${apiInfoList.name == 'dropdownList1'}">
+                    <sly data-sly-list.apiList="${apiInfoList.children}">
+                      <sly data-sly-test.tabList="${'{0}_{1}' @ format =[apiInformation.name,apiInfoTwoList.count]}">
+                        <div class="retail-right-inner jsApiContentOuter ${apiList.contentActive ? '' : 'd-none'}"
+                          id="${tabList}">
+                          <div class="tops-heads">
+                            <h2 class="retail-heading">
+                              <span>${apiList.titleReg}</span>
+                            </h2>
+                            <div class="text16i retail-description">${apiList.titleDesc @ context = 'html'}
+                            </div>
+                          </div>
+                          <div class="bottom-content">
+                            <div class="bottom-content-inner bg-div" tab-wrapper="">
+                              <div class="media-top-tabs">
+                                <ul class="tab-btn-group" tabMenu-wrap="">
+                                  <sly data-sly-list.apiInfoTab="${apiList.children}">
+                                    <sly data-sly-test="${apiInfoTab.name == 'blueTabMultifield'}">
+                                      <sly data-sly-list.apiInfoTab="${apiInfoTab.children}">
+                                        <sly
+                                          data-sly-test.tabList="${'tab-option-{0}{1}' @ format =[drop.name,apiInfoTabList.count]}">
+                                          <li class="tab-item">
+                                            <a href="javascript:void(0);"
+                                              class="tab-button js-tabClick ${apiInfoTab.tabActive ? 'active' : ''}"
+                                              tab-menu="${tabList}">${apiInfoTab.tabName}</a>
+                                          </li>
+                                        </sly>
+                                      </sly>
+                                    </sly>
+                                  </sly>
+                                </ul>
+                              </div>
+                              <div class="api-mobinner-contents">
+                                <div class="tab-content-wrap">
+                                  <sly data-sly-list.apiInfoTab="${apiList.children}">
+                                    <sly data-sly-test="${apiInfoTab.name == 'blueTabMultifield'}">
+                                      <sly data-sly-list.apiInfoTab="${apiInfoTab.children}">
+                                        <sly
+                                          data-sly-test.tabList="${'tab-option-{0}{1}' @ format =[drop.name,apiInfoTabList.count]}">
+                                          <div class="tab-inner ${apiInfoTab.tabActive ? '' : 'd-none'}"
+                                            tab-contnet="${tabList}">
+                                            <div
+                                              class="list-circle-ticks-voilet ${apiInfoTab.fullWidthText ? 'full-widths' : ''}">
+                                              ${apiInfoTab.titleDesc @ context = 'html'}
+                                            </div>
+                                            <sly data-sly-test="${apiInfoTab.tabImage}">
+                                              <div class="image-wrapper">
+                                                <img src="${apiInfoTab.tabImage}" alt="img">
+                                              </div>
+                                            </sly>
+                                          </div>
+                                        </sly>
+                                      </sly>
+                                    </sly>
+                                </div>
+                                <sly data-sly-test="${apiList.btnText}">
+                                  <div class="partners-btn-wrap">
+                                    <a href="${apiList.btnTextLink}" class="btn-blue btn-large"
+                                      target="${apiList.newTab ? '_blank' : ''}">${apiList.btnText}</a>
+                                  </div>
+                                </sly>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </sly>
+                    </sly>
+                  </sly>
+                </sly>
+              </sly>
+            </sly>
+          </sly>
+        </sly>
+      </div>
+    </div>
+  </div>
+</div>

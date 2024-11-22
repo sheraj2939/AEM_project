@@ -1,0 +1,28 @@
+<div class="top-outer-policies mob-tab-accord">
+    <sly data-sly-list.loginLinks="${resource.listChildren}">
+        <sly data-sly-test="${loginLinks.name == 'twoRowsList'}">
+            <sly data-sly-list.rowList="${loginLinks.listChildren}">
+                <div class="footer-row ${rowListList.count == 1 ? 'footer-cal-row' : ''}">
+                    <div class="footer-col">
+                        <p class="footer-headings" data-footer="footerAnalyticData-${rowList.menutittle}">${rowList.menutittle}</p>
+                        <div class="footer-body">
+                            <div class="footer-body-inner">
+                                <ul class="footer-links">
+                                    <sly data-sly-list.submenudata="${rowList.children}">
+                                        <sly data-sly-test="${submenudata.name == 'twoRowsLinks'}">
+                                            <sly data-sly-list.subMenulist="${submenudata.children}">
+                                                <li><a href="${subMenulist.redirectionLink}"
+                                                        target="${subMenulist.redirectionLink ? '_blank' : ''}" data-footer="footerAnalyticData-${rowList.menutittle}">${subMenulist.heading}</a>
+                                                </li>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </sly>
+        </sly>
+    </sly>
+</div>

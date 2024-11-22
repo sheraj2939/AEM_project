@@ -1,0 +1,155 @@
+<div class="top-outer-policies first-child">
+    <div class="footer-main-flex">
+        <div class="footer-inner-lc footer-row">
+            <div class="footer-col">
+                <p class="footer-headings" data-footer="footerAnalyticData-${properties.importantInfotittle}">${properties.importantInfotittle}</p>
+                <div class="footer-body">
+                    <ul class="footer-body-links">
+
+                        <sly data-sly-list.loginLinks="${resource.listChildren}">
+                            <sly data-sly-test="${loginLinks.name == 'importantInfoList'}">
+                                <sly data-sly-list.importantInfoList="${loginLinks.listChildren}">
+                                    <sly data-sly-test="${importantInfoList.languagePopup}">
+                                        <li><a data-popovermodalmitc2="#language-notification2"
+                                                href="${importantInfoList.redirectionLink}"
+                                                target="${importantInfoList.redirectionLink ? '_blank' : ''}" data-footer="footerAnalyticData-${properties.importantInfotittle}">${importantInfoList.heading}</a>
+                                        </li>
+                                    </sly>
+                                    <sly data-sly-test="${!importantInfoList.languagePopup}">
+                                        <li><a href="${importantInfoList.redirectionLink}"
+                                                target="${importantInfoList.redirectionLink ? '_blank' : ''}" data-footer="footerAnalyticData-${properties.importantInfotittle}">${importantInfoList.heading}</a>
+                                        </li>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </sly>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-inner-lc footer-row">
+            <div class="footer-col">
+                <p class="footer-headings" data-footer="footerAnalyticData-${properties.investmentInfotittle}">${properties.investmentInfotittle}</p>
+                <div class="footer-body">
+                    <ul class="footer-body-links">
+                        <sly data-sly-list.loginLinks="${resource.listChildren}">
+                            <sly data-sly-test="${loginLinks.name == 'investorInfo'}">
+                                <sly data-sly-list.otherSolution="${loginLinks.listChildren}">
+                                    <li><a href="${otherSolution.redirectionLink}"
+                                            target="${otherSolution.redirectionLink ? '_blank' : ''}" data-footer="footerAnalyticData-${properties.investmentInfotittle}">${otherSolution.heading}</a>
+                                    </li>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </ul>
+
+                    <div class="footer-logo-visits visible-sm">
+                        <a href="javascript:void(0)" target="${properties.logoNewTab ? '_blank' : ''}"
+                            class="visit-logo-img" data-footer="footerAnalyticData-${properties.investmentInfotittle}">
+                            <img class="lozad" data-src="javascript:void(0)" alt="">
+                        </a>
+                        <div class="text-visits">
+                            <span>${properties.visitUs}</span>
+                            <a href="${properties.redirectionLink}"
+                                target="${properties.openInNewTab ? '_blank' : ''}" data-footer="footerAnalyticData-${properties.investmentInfotittle}">${properties.linkTittle}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-inner-lc footer-row">
+            <div class="footer-col">
+                <p class="footer-headings" data-footer="footerAnalyticData-${properties.otherInformationtittle}">
+                    <a href="${properties.otherInformationLink}" class="text-black2">${properties.otherInformationtittle}</a>
+                </p>
+                <div class="footer-body">
+                    <ul class="footer-body-links">
+                        <sly data-sly-list.loginLinks="${resource.listChildren}">
+                            <sly data-sly-test="${loginLinks.name == 'otherInformation'}">
+                                <sly data-sly-list.otherSolution="${loginLinks.listChildren}">
+                                    <li><a href="${otherSolution.redirectionLink}"
+                                            target="${otherSolution.redirectionLink ? '_blank' : ''}" data-footer="footerAnalyticData-${properties.otherInformationtittle}" rel="nofollow">${otherSolution.heading}</a>
+                                    </li>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-inner-lc footer-row">
+            <div class="footer-col">
+                <p class="footer-headings" data-footer="footerAnalyticData-${properties.amalgamatedtittle}">
+                    <a href="${properties.otherInformationLink}" class="text-black2">${properties.amalgamatedtittle}</a>
+                </p>
+                <div class="footer-body">
+                    <ul class="footer-body-links">
+                        <sly data-sly-list.loginLinks="${resource.listChildren}">
+                            <sly data-sly-test="${loginLinks.name == 'amalgamatedcompanies'}">
+                                <sly data-sly-list.amalgamated="${loginLinks.listChildren}">
+                                    <li><a href="${amalgamated.redirectionLink}"
+                                            target="${amalgamated.redirectionLink ? '_blank' : ''}" data-footer="footerAnalyticData-${properties.amalgamatedtittle}">${amalgamated.heading}</a>
+                                    </li>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-inner-lc">
+            <div class="footer-col">
+                <h6 class="footer-headings no-brancharrows" data-footer="footerAnalyticData-${properties.topBranchesTitle}">
+                    <a href="${properties.topBranchesLink}" target="${properties.openInNewTab ? '_blank' : ''}" class="text-black2" rel="nofollow">${properties.topBranchesTitle}</a>
+                </h6>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--home loan modal -->
+<div class="popover-modal modals-blue fade popover-show" id="language-notification2">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md2">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content prefrence-language-content">
+                <button data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></button>    
+                <div class="popover-modal-body">                      
+                    <div class="modal-body-inner">      
+                        <div class="prefrence-mx">                
+                            <img data-src="/content/dam/tata-capital-web/Tc-footer-images/mic.svg" alt="" class="lozad pdf-imgs">
+                            <div class="strongCss">
+                                <strong class="heading20"><span>Most Important Terms & Conditions - Home Loans</span></strong>
+                            </div>
+                            <p>Download in your preferred language</p>
+                            <div class="mx-314">
+                                <div class="custom-select2 select2-white">
+                                    <select class="js-select2" id="mitc-language-dropdown-investor" data-type2="language" data-placeholder="Language">
+                                        <option value="none" data-pdf="" class="optInvisible" data-parent=" ">Select an Option</option>
+                                <option value="English" data-pdf="/content/dam/tata-capital/pdf/imp/Tata-code-of-conduct.pdf" class="optInvisible" data-parent="Tata Code of Conduct">English</option>
+                                <option value="Bengali" data-pdf="/content/dam/tata-capital/pdf/tcl/Bengali-Tata-Code-of-Conduct.pdf" class="optInvisible" data-parent="Tata Code of Conduct" >Bengali</option>
+                                <option value="Gujarati" data-pdf="/content/dam/tata-capital/pdf/tcl/Gujarati-Tata-Code-of-Conduct.pdf" class="optInvisible" data-parent="Tata Code of Conduct">Gujarati</option>
+                                <option value="Telugu" data-pdf="/content/dam/tata-capital/pdf/tcl/TELUGU-Tata-Code-of-Conduct.pdf" class="optInvisible" data-parent="Tata Code of Conduct">Telugu</option>
+                                <option value="Punjabi" data-pdf="/content/dam/tata-capital/pdf/tcl/Punjabi-Tata-Code-of-Conduct.pdf" class="optInvisible" data-parent="Tata Code of Conduct">Punjabi</option>
+                                <option value="Hindi" data-pdf="/content/dam/tata-capital/pdf/imp/Hindi-Tata-Code-of-Conduct.pdf" class="optInvisible" data-parent="Tata Code of Conduct">Hindi</option>
+                                <option value="Marathi" data-pdf="/content/dam/tata-capital/pdf/imp/Marathi-Tata-Code-of-Conduct.pdf" class="optInvisible" data-parent="Tata Code of Conduct">Marathi</option>
+                                <option value="Tamil" data-pdf="/content/dam/tata-capital/pdf/imp/Tamil-Tata-Code-of-Conduct.pdf" class="optInvisible" data-parent="Tata Code of Conduct">Tamil</option>
+                                <option value="Malayalam" data-pdf="/content/dam/tata-capital/pdf/tcl/tcoc-Malayalam.pdf" class="optInvisible" data-parent="Tata Code of Conduct">Malayalam</option>
+                                <option value="Kannada" data-pdf="/content/dam/tata-capital/pdf/tcl/tcoc-Kannada.pdf" class="optInvisible" data-parent="Tata Code of Conduct">Kannada</option>                             
+                                    </select>
+                                </div>                        
+                            </div>
+                            <a href="" id="mitc-language-download-btn-investor" download class="btn-link btn-big btn-with-card-bg min-w149 btn-xs-full disabled" data-popoverclose="popover-modal">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--home loan modal -->

@@ -1,0 +1,58 @@
+.tata-whatsapp-box {
+    background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.67) 99.11%);
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.01), 5px 0px 10px rgba(0, 0, 0, 0.01), 0px -5px 10px rgba(0, 0, 0, 0.01), 0px 5px 10px rgba(0, 0, 0, 0.01);
+    backdrop-filter: blur(9px);
+    border-radius: 20px;
+    padding: 21px 40px;
+    border: 1px solid #fff;
+  }
+  .tata-whatsapp-box .whatsapp-left {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .tata-whatsapp-box .whatsapp-left .whatsapp {
+    width: 40px;
+    min-width: 40px;
+    margin-right: 20px;
+  }
+  .tata-whatsapp-box .whatsapp-inner {
+    position: relative;
+    padding-right: 210px;
+  }
+  .tata-whatsapp-box .apply-whatsapp {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @media (max-width: 1199px) {
+    .tata-whatsapp-box {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+}
+@media (max-width: 767px) {
+    
+  .tata-whatsapp-box {
+    padding: 24px;
+  }
+  .tata-whatsapp-box .whatsapp-inner {
+    padding-right: 0px;
+  }
+  .tata-whatsapp-box .whatsapp-left {
+    margin-bottom: 20px;
+  }
+  .tata-whatsapp-box .apply-whatsapp {
+    position: static;
+    transform: translateY(0);
+    max-width: 260px;
+    margin: auto;
+    text-align: center;
+  }
+  .tata-whatsapp-box .apply-whatsapp .btn-blue {
+    width: 100%;
+    display: block;
+  }
+
+}

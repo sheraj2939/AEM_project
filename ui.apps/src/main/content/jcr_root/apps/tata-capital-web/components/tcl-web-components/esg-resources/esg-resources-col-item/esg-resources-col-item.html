@@ -1,0 +1,15 @@
+<div data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-use.imageTemplate="image.html"
+     data-sly-use.pretitleTemplate="pretitle.html"
+     data-sly-use.titleTemplate="title.html"
+     data-sly-use.descriptionTemplate="description.html"
+     data-sly-use.actionsTemplate="actions.html"
+     data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+     id="${teaser.id}"
+     class="cmp-teaser${!wcmmode.disabled && teaser.imageResource ? ' cq-dd-image' : ''} resource-list-content"
+     data-cmp-data-layer="${teaser.data.json}">
+     	<h3 class="text16i"><span>${teaser.title}</span></h3>
+		<sly data-sly-call="${actionsTemplate.actions @ teaser=teaser}"></sly>
+</div>
+<sly data-sly-call="${templates.placeholder @ isEmpty=!hasContent, classAppend='cmp-teaser'}"></sly>

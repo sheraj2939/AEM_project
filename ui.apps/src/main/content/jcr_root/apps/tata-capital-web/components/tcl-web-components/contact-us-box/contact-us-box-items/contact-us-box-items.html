@@ -1,0 +1,26 @@
+<div class="bottom-content-col bg-div">
+    <div class="top-content">
+        <h3 class="heading20">
+            <span>
+                ${properties.headingGreen}
+            </span>
+        </h3>
+    </div>
+    <div class="bottom-content">
+        <div class="bottom-cont-inners">
+            <div class="text16i">
+                ${properties.contactUsRte @ context = 'html'}
+            </div>
+        </div>
+        <div class="bottom-cont-bot" data-sly-test="${properties.linkText || properties.rdrLink}">
+            <sly data-sly-test="${properties.linkType =='numLink'}">
+                <p class="heading20 semibold"><a href="${properties.rdrLink}"
+                        class="text-suchsia" target="${properties.newTab ? '_blank': ''}">${properties.linkText}</a></p>
+            </sly>
+            <sly data-sly-test="${properties.linkType =='redirectionLink'}">
+                <a href="${properties.rdrLink}"  target="${properties.newTab ? '_blank': ''}" class="btn-links link-with-arrow">${properties.linkText} <span
+                        class="icon-arrow-right arros"></span></a>
+            </sly>
+        </div>
+    </div>
+</div>

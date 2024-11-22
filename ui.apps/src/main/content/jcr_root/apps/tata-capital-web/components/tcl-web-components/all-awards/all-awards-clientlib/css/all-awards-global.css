@@ -1,0 +1,73 @@
+/*10-01-2023*/
+.custom-dropdown-wrap .custom-dropdown-btn {
+    background: radial-gradient(50.79% 52.48% at 48.36% 50.79%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.72) 100%);
+    padding: 14px 32px 14px 14px;
+    border-radius: 8px;
+    font-family: "OpenSans-Bold";
+    font-size: 13px;
+    color: #333333;
+    line-height: 17px;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+  }
+  .custom-dropdown-wrap .custom-dropdown-btn:after {
+    font-family: "icomoon";
+    content: "";
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 8px;
+  }
+  .custom-dropdown-wrap .custom-dropdown-btn.active {
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0px 7px 24px rgba(0, 0, 0, 0.2);
+  }
+  .custom-dropdown-wrap .custom-dropdown-btn.active:after {
+    content: "";
+  }
+  .custom-dropdown-wrap .custom-dropdown-block {
+    min-width: 260px;
+    display: none;
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 7px 24px rgba(0, 0, 0, 0.2);
+    padding: 6px 16px;
+    z-index: 1;
+    border-radius: 8px 0 8px 8px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+  }
+  .custom-dropdown-wrap .custom-dropdown-block.show {
+    display: block;
+  }
+  .custom-dropdown-wrap .custom-dropdown-block .custom-dropdown-list {
+    max-height: 230px;
+  }
+  .custom-dropdown-wrap .custom-dropdown-block .custom-dropdown-list .list {
+    padding: 10px 0;
+    border-bottom: 1px solid #E0E9F1;
+    transition: all 0.2s;
+  }
+  .custom-dropdown-wrap .custom-dropdown-block .custom-dropdown-list .list:hover {
+    background-color: #E1F4FF;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .custom-dropdown-wrap .custom-dropdown-block .custom-dropdown-list .list label {
+    display: block;
+  }
+  .custom-dropdown-wrap .custom-dropdown-block .custom-dropdown-list .list:nth-last-child(1) {
+    border-bottom: none;
+  }
+  .custom-padding {
+    padding: 20px 20px 2px !important;
+  }
+   .padding-for-box {
+    padding: 40px 0;
+  }
+
+  /*10-01-2023*/
+  

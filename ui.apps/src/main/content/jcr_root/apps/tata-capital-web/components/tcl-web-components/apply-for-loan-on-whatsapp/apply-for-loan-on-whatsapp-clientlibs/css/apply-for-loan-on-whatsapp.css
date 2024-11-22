@@ -1,0 +1,342 @@
+.loan-whatsapp-box {
+	margin-top: 10px;
+	padding-bottom: 40px;
+  }
+  .loan-whatsapp-box .tops-heads {
+	text-align: left;
+	max-width: 100%;
+  }
+  .loan-whatsapp-box .loan-whatsapp-head h1 {
+	margin-bottom: 40px;
+  }
+  .loan-whatsapp-box .loan-whatsapp-cards {
+	display: flex;
+  }
+  .loan-whatsapp-box .loan-whatsapp-cards .loan-whatsapp-col {
+	width: 50%;
+	padding: 0 18px;
+  }
+  .loan-whatsapp-box .loan-whatsapp-cards .loan-whatsapp-col:nth-child(1) {
+	padding-left: 0;
+  }
+  .loan-whatsapp-box .loan-whatsapp-cards .loan-whatsapp-col:nth-last-child(1) {
+	padding-right: 0;
+  }
+  .loan-whatsapp-box .loan-whatsapp-item {
+	padding: 25px 40px;
+	height: 100%;
+	border-radius: 40px;
+	position: relative;
+	/*3-1-2023*/
+	/*3-1-2023*/
+  }
+  .loan-whatsapp-box .loan-whatsapp-item .whatsapp-logo {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 2px;
+  }
+  .loan-whatsapp-box .loan-whatsapp-item .loan-whatsapp-item-top {
+	margin-bottom: 26px;
+  }
+  .loan-whatsapp-box .loan-whatsapp-item .loan-whatsapp-item-top p {
+	color: #000000;
+	line-height: 22px;
+	letter-spacing: 0.02em;
+  }
+  .loan-whatsapp-box .loan-whatsapp-item .loan-whatsapp-item-top p a {
+	color: #1961AC;
+	font-family: "OpenSans-SemiBold";
+  }
+  .loan-whatsapp-box .loan-whatsapp-item .loan-whatsapp-item-mid {
+	display: flex;
+	align-items: center;
+	margin-bottom: 26px;
+  }
+  .loan-whatsapp-box .loan-whatsapp-item .loan-whatsapp-item-mid .heading20 {
+	color: #A9A9A9;
+	margin: 0 10px;
+  }
+  .loan-whatsapp-box .loan-whatsapp-item .loan-whatsapp-item-bottom {
+	display: flex;
+	align-items: center;
+  }
+  .loan-whatsapp-box .loan-whatsapp-item .loan-whatsapp-item-bottom p {
+	line-height: 22px;
+	letter-spacing: 0.02em;
+  }
+  .loan-whatsapp-box .loan-whatsapp-item .loan-whatsapp-item-bottom .whatsapp-loan-qr {
+	margin-left: 26px;
+  }
+  .loan-whatsapp-box .loan-whatsapp-item .loan-whatsapp-item-bottom .whatsapp-loan-qr img {
+	min-width: 130px;
+	max-width: 130px;
+	height: auto;
+  }
+  .loan-whatsapp-box .loan-whatsapp-item .form-textbox {
+	padding: 30px 0;
+  }
+  .loan-whatsapp-box .loan-whatsapp-item .form-textbox .label-name {
+	top: 40px;
+  }
+  .loan-whatsapp-box .loan-whatsapp-item .form-textbox.active .label-name {
+	top: 13px;
+  }
+  .loan-whatsapp-box .seperator {
+	width: 100%;
+	border-bottom: 1px solid #A9A9A9;
+  }
+  .loan-whatsapp-box .custom-checkbox {
+	margin-bottom: 40px;
+  }
+  
+  .whatsapp-success-mgs {
+	background-color: #fff;
+	border-radius: 40px;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	z-index: 2;
+	padding: 25px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*3-1-2023*/
+	/*3-1-2023*/
+  }
+  .whatsapp-success-mgs.unsuccessful-msg .success-inner {
+	max-width: 325px;
+  }
+  .whatsapp-success-mgs.unsuccessful-msg .btn-blue {
+	margin-top: 20px;
+  }
+  .whatsapp-success-mgs .mgs-closed {
+	font-size: 12px;
+	color: #333;
+	position: absolute;
+	right: 30px;
+	top: 25px;
+	font-weight: bold;
+  }
+  .whatsapp-success-mgs .ticks-img {
+	margin: 0 auto 12px;
+  }
+  .whatsapp-success-mgs h2 {
+	margin-bottom: 20px;
+  }
+  .whatsapp-success-mgs .success-inner {
+	max-width: 315px;
+	margin: auto;
+  }
+  
+  /*3-1-2023*/
+  .whatsapp-otp-wrap {
+	margin-top: 30px;
+  }
+  .whatsapp-otp-wrap .enter-otp-block {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-top: 22px;
+  }
+  .whatsapp-otp-wrap .enter-otp-block .otp-col {
+	display: flex;
+	justify-content: center;
+  }
+  .whatsapp-otp-wrap .enter-otp-block .otp-col .input-textbox {
+	width: 30px;
+	height: 22px;
+	font-size: 16px;
+	line-height: 21px;
+	margin-left: 12px;
+	text-align: center;
+  }
+  .whatsapp-otp-wrap .enter-otp-block .otp-col .input-textbox:nth-child(1) {
+	margin-left: 0;
+  }
+  .whatsapp-otp-wrap .otp-controls {
+	margin-top: 65px;
+  }
+  .whatsapp-otp-wrap .otp-controls .btn-blue {
+	margin-right: 20px;
+  }
+  .whatsapp-otp-wrap .count-text {
+	font-family: "OpenSans-SemiBold";
+	font-size: 16px;
+	line-height: 21px;
+	color: #1268B3;
+	margin-left: 30px;
+  }
+  
+  /*3-1-2023*/
+  @media (max-width: 991px) {
+	.loan-whatsapp-box {
+	  margin-top: 13px;
+	  padding-bottom: 25px;
+	}
+	.loan-whatsapp-box .tops-heads {
+	  text-align: center;
+	}
+	.loan-whatsapp-box .loan-whatsapp-head h1 {
+	  margin-bottom: 30px;
+	  text-align: center;
+	}
+	.loan-whatsapp-box .loan-whatsapp-cards {
+	  flex-direction: column;
+	}
+	.loan-whatsapp-box .loan-whatsapp-cards .loan-whatsapp-col {
+	  width: 100%;
+	  padding: 25px 0;
+	}
+	.loan-whatsapp-box .loan-whatsapp-cards .loan-whatsapp-col:nth-child(1) {
+	  padding-top: 0;
+	}
+	.loan-whatsapp-box .loan-whatsapp-cards .loan-whatsapp-col:nth-last-child(1) {
+	  padding-bottom: 0;
+	}
+	.loan-whatsapp-box .loan-whatsapp-item {
+	  padding: 24px;
+	  height: 100%;
+	  border-radius: 24px;
+	}
+	.loan-whatsapp-box .loan-whatsapp-item .loan-whatsapp-item-top {
+	  margin-bottom: 20px;
+	}
+	.loan-whatsapp-box .loan-whatsapp-item .loan-whatsapp-item-top p {
+	  color: #636363;
+	}
+	.loan-whatsapp-box .loan-whatsapp-item .loan-whatsapp-item-mid {
+	  margin-bottom: 20px;
+	}
+	.loan-whatsapp-box .loan-whatsapp-item .loan-whatsapp-item-bottom {
+	  flex-direction: column;
+	}
+	.loan-whatsapp-box .loan-whatsapp-item .loan-whatsapp-item-bottom p {
+	  color: #636363;
+	  width: 100%;
+	  text-align: left;
+	}
+	.loan-whatsapp-box .loan-whatsapp-item .loan-whatsapp-item-bottom .whatsapp-loan-qr {
+	  margin-left: 0;
+	  margin-top: 20px;
+	}
+	.loan-whatsapp-box .loan-whatsapp-item .form-textbox {
+	  padding-bottom: 20px;
+	}
+	.loan-whatsapp-box .seperator {
+	  width: 100%;
+	  border-bottom: 1px solid #A9A9A9;
+	}
+	.loan-whatsapp-box .custom-checkbox {
+	  margin-bottom: 20px;
+	}
+  
+	/*3-1-2023*/
+	.whatsapp-success-mgs {
+	  position: relative;
+	  padding: 0;
+	}
+	.whatsapp-success-mgs .mgs-closed {
+	  top: 0;
+	  right: 0;
+	}
+	.whatsapp-success-mgs .success-inner {
+	  min-height: 210px;
+	}
+	.whatsapp-success-mgs .ticks-img {
+	  margin-top: 19px;
+	  height: 40px;
+	  width: auto;
+	}
+  
+	/*3-1-2023*/
+  }
+  @media (max-width: 767px) {
+	.loan-whatsapp-box .custom-checkbox .error-msgs {
+	  font-family: "OpenSans-Regular";
+	}
+	.loan-whatsapp-box .loan-whatsapp-head h1 {
+	  font-size: 32px;
+	  line-height: 42px;
+	}
+	.loan-whatsapp-box .loan-whatsapp-item .loan-whatsapp-item-top p {
+	  font-size: 13px;
+	  line-height: 18px;
+	}
+	.loan-whatsapp-box .loan-whatsapp-item .loan-whatsapp-item-bottom p {
+	  font-size: 13px;
+	  line-height: 140%;
+	}
+  
+	.whatsapp-success-mgs {
+	  /*3-1-2023*/
+	}
+	.whatsapp-success-mgs .success-inner {
+	  /*3-1-2023*/
+	}
+	.whatsapp-success-mgs .success-inner h2 {
+	  font-size: 22px;
+	  line-height: 29px;
+	  letter-spacing: 0.02em;
+	}
+	.whatsapp-success-mgs .text16i {
+	  font-size: 13px;
+	}
+  
+	/*3-1-2023*/
+	.whatsapp-otp-wrap {
+	  margin-top: 20px;
+	}
+	.whatsapp-otp-wrap .enter-otp-block {
+	  margin-top: 20px;
+	}
+	.whatsapp-otp-wrap .enter-otp-block .otp-col .input-textbox {
+	  width: 42px;
+	  height: 19px;
+	  font-size: 14px;
+	  line-height: 19px;
+	}
+	.whatsapp-otp-wrap .otp-controls {
+	  margin-top: 30px;
+	}
+	.whatsapp-otp-wrap .otp-controls .btn-blue {
+	  margin-right: 10px;
+	}
+	.whatsapp-otp-wrap .otp-controls .btn-blue, .whatsapp-otp-wrap .otp-controls .btn-link {
+	  font-size: 14px;
+	  line-height: 19px;
+	  padding: 12px;
+	}
+	.whatsapp-otp-wrap .count-text {
+	  font-family: "OpenSans-SemiBold";
+	  font-size: 16px;
+	  line-height: 21px;
+	  margin-left: 30px;
+	}
+  
+	.loan-whatsapp-box .loan-whatsapp-item .whatsapp-logo {
+	  height: 25px;
+	  width: auto;
+	}
+  
+	/*3-1-2023*/
+  }
+  /*3-1-2023*/
+  @media (max-width: 359px) {
+	.whatsapp-otp-wrap .enter-otp-block .otp-col .input-textbox {
+	  width: 30px;
+	}
+	.whatsapp-otp-wrap .otp-controls .btn-blue, .whatsapp-otp-wrap .otp-controls .btn-link {
+	  width: 100%;
+	}
+	.whatsapp-otp-wrap .otp-controls .btn-blue {
+	  margin-right: 0;
+	  margin-bottom: 10px;
+	}
+  }
+  /*3-1-2023*/
+  
+  /*# sourceMappingURL=style.css.map */
+  

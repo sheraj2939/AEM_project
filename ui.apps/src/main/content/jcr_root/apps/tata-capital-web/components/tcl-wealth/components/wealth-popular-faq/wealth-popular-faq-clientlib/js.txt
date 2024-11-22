@@ -1,0 +1,2 @@
+#base=js
+wealth-more-products.js

@@ -1,0 +1,110 @@
+<section data-sly-use.title="com.adobe.cq.wcm.core.components.models.Title"
+    data-sly-use.template="core/wcm/components/commons/v1/templates.html" data-sly-test.text="${title.text}"
+    data-cmp-data-layer="${title.data.json}" class="calculator-box space-tb40">
+    <div class="container">
+        <div class="mx-944">
+            <div class="tops-heads">
+                <div
+                    data-sly-resource="${'title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                </div>
+            </div>
+            <div class="calculator-content-wrap z-0" data-calc-name="${title.text}" data-calculator="stamp-duty">
+                <div class="calculator-inputs-wrap">
+                    <div class="calculator-inputs-inner">
+                        <!-- calculator row  -->
+                        <div class="calculator-details">
+                            <div class="calculator-dropdown-filter employer-dropdown zindex3">
+                                <div data-sly-resource="${'calculator-heading-state' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/calculators/calculator-field-heading'}"></div>
+                                <div class="calculator-textbox">
+                                    <div
+                                        class="custom-dropdown name-dropdown-filter close-on-outside js-searchDropdownWrap">
+                                        <a href="javascript:void(0)" class="dropdown-heading" data-rel="state">State</a>
+                                        <div class="dropdown-block dropdownmenu" id="state" data-search>
+                                            <div class="search-dropdown">
+                                                <div class="search-dropdown-inner">
+                                                    <input type="text" class="form-control" placeholder="Search"
+                                                        data-searchInput>
+                                                    <button type="button" class="btnsearch">
+                                                        <span class="icon-search"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <ul class="simple-bar state" data-list="name">
+                                                <!-- <li>
+                                                    <a href="javascript:void(0)">Maharashtra</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">Uttar Pradesh</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">Delhi</a>
+                                                </li> -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator-details">
+                            <div class="calculator-dropdown-filter employer-dropdown">
+                                <div data-sly-resource="${'calculator-heading-gender' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/calculators/calculator-field-heading'}"></div>
+
+                                <div class="calculator-textbox">
+                                    <div
+                                        class="custom-dropdown name-dropdown-filter close-on-outside js-searchDropdownWrap">
+                                        <a href="javascript:void(0)" class="dropdown-heading"
+                                            data-rel="gender">Gender</a>
+                                        <div class="dropdown-block dropdownmenu" id="gender" data-search>
+                                            <!-- <div class="search-dropdown">
+                                                <div class="search-dropdown-inner">
+                                                    <input type="text" class="form-control" placeholder="Search" data-searchInput>
+                                                    <button type="button" class="btnsearch">
+                                                        <span class="icon-search"></span>
+                                                    </button>
+                                                </div>
+                                            </div> -->
+                                            <ul class="simple-bar gender" data-list="name">
+                                                <!-- <li>
+                                                    <a href="javascript:void(0)">Male</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">Female</a>
+                                                </li> -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator-details-top">
+                            <div data-sly-resource="${'calculator-heading' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/calculators/calculator-field-heading'}"></div>
+                            <div class="calculator-textbox with-border">
+                                <div class="textbox-inner input-with-text prefix-text">
+                                    <span class="input-text">₹</span>
+                                    <input
+                                        class="input-textbox-calulator inputDecimal price-with-comma-js-input js-showCalulatorRangeValue"
+                                        type="text" data-fieldname="property-value" value="1,00,000">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-graph-wrap">
+                    <div class="calculator-graph-inner">
+                        <!--Class "no-column-mobile" for no column flex in mobile-->
+                        <div class="monthly-emi-row column-view">
+                            <div class="monthly-emi-col full-width">
+                                <p>Percentage Applicable</p>
+                                <h4 class="perc-val">0%</h4>
+                            </div>
+                            <div class="monthly-emi-col full-width">
+                                <p>Final Stamp Duty</p>
+                                <h4 class="final-stamp-duty">₹0</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

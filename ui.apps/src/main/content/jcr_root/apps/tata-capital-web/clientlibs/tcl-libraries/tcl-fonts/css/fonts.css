@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-Light.eot') format('eot'), url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-Light.woff2') format('woff2'), url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-Light.svg') format('svg'), url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-Light.woff') format('woff'),
+    /* Modern Browsers */
+    url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-Light.ttf') format('truetype');
+  /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-Regular.eot') format('eot'), url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-Regular.woff2') format('woff2'), url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-Regular.svg') format('svg'), url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-Regular.woff') format('woff'),
+    /*  Modern Browsers */
+    url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-Regular.ttf') format('truetype');
+  /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'OpenSansMedium';
+  src: url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSansMedium.eot');
+  src: url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSansMedium.eot') format('embedded-opentype'),
+       url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSansMedium.woff2') format('woff2'),
+       url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSansMedium.woff') format('woff'),
+       url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSansMedium.ttf') format('truetype'),
+       url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSansMedium.svg#OpenSansMedium') format('svg');
+}
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  src: url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-Semibold.eot') format('eot'), url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-Semibold.woff2') format('woff2'), url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-Semibold.svg') format('svg'), url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-Semibold.woff') format('woff'),
+    /* Modern Browsers */
+    url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-Semibold.ttf') format('truetype');
+  /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-Bold.eot') format('eot'), url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-Bold.woff2') format('woff2'), url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-Bold.svg') format('svg'), url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-Bold.woff') format('woff'),
+    /* Modern Browsers */
+    url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-Bold.ttf') format('truetype');
+  /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'OpenSans-ExtraBold';
+  src: url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-ExtraBold.eot') format('eot'), url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-ExtraBold.woff2') format('woff2'), url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-ExtraBold.svg') format('svg'), url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-ExtraBold.woff') format('woff'),
+    /* Modern Browsers */
+    url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSans-ExtraBold.ttf') format('truetype');
+  /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'OpenSansItalic';
+  src: url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSansItalic.eot');
+  src: url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSansItalic.eot') format('embedded-opentype'),
+    url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSansItalic.woff2') format('woff2'),
+    url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSansItalic.woff') format('woff'),
+    url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSansItalic.ttf') format('truetype'),
+    url('/content/dam/tata-capital-web/assets/fonts/open-sans/OpenSansItalic.svg#OpenSansItalic') format('svg');
+}
+@font-face {
+  font-family: 'IndianRupee';
+  src: url('/content/dam/tata-capital-web/assets/fonts/rupee/IndianRupee.eot');
+  src: url('/content/dam/tata-capital-web/assets/fonts/rupee/IndianRupee.eot') format('embedded-opentype'),
+    url('/content/dam/tata-capital-web/assets/fonts/rupee/IndianRupee.woff2') format('woff2'),
+    url('/content/dam/tata-capital-web/assets/fonts/rupee/IndianRupee.woff') format('woff'),
+    url('/content/dam/tata-capital-web/assets/fonts/rupee/IndianRupee.ttf') format('truetype'),
+    url('/content/dam/tata-capital-web/assets/fonts/rupee/IndianRupee.svg#IndianRupee') format('svg');
+}

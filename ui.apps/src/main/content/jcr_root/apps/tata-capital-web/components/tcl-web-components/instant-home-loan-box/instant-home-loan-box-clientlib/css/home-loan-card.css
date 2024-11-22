@@ -1,0 +1,77 @@
+.branch-instant-loan-cntr {
+  position: relative;
+  z-index: 1;
+}
+
+.branch-instant-loan-box {
+  display: flex;
+  align-items: center;
+  max-width: 835px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.branch-instant-loan-box .media-holder {
+  width: 300px;
+}
+.branch-instant-loan-box .media-holder img {
+  width: 100%;
+}
+.branch-instant-loan-box .instant-loan {
+  width: calc(100% - 300px);
+}
+
+.branch-preapproved-loan {
+  background: radial-gradient(50.79% 52.48% at 48.36% 50.79%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.72) 100%);
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.01), 5px 0px 10px rgba(0, 0, 0, 0.01), 0px -5px 10px rgba(0, 0, 0, 0.01), 0px 5px 10px rgba(0, 0, 0, 0.01);
+  border-radius: 0 40px 40px 0;
+  padding: 25px 40px 25px 55px;
+  border: 1px solid #ffffff;
+  border-left: 0;
+  position: relative;
+}
+
+.approved-candidate .info h2 {
+  margin-bottom: 10px;
+}
+.approved-candidate .info .text16i {
+  margin-bottom: 10px;
+}
+.approved-candidate .btn-blue {
+  margin-top: 30px;
+}
+
+@media (max-width: 991px) {
+  .branch-preapproved-loan {
+    border-radius: 0 24px 24px 0;
+    padding: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .branch-instant-loan-box {
+    flex-direction: column;
+  }
+  .branch-instant-loan-box .media-holder {
+    max-width: calc(100% - 48px);
+    margin-bottom: -70px;
+    z-index: 1;
+  }
+  .branch-instant-loan-box .instant-loan {
+    width: 100%;
+  }
+
+  .branch-preapproved-loan {
+    border-radius: 24px;
+    padding: 94px 24px 24px;
+  }
+
+  .approved-candidate .info h2 {
+    margin-bottom: 4px;
+  }
+  .approved-candidate .btn-blue {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

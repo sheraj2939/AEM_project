@@ -1,0 +1,17 @@
+.personal-loan-box .personal-cards .heading20 {
+    font-family: "OpenSans-SemiBold";
+    margin-bottom: 30px;
+}
+@media (max-width: 1199px){
+    .year-month-btn-squared
+    {
+        min-width: 39px;
+        padding: 4px 5px;
+    }
+}
+@media (max-width: 767px){
+    .year-month-btn-squared
+    {
+        min-width: 48px;
+    }
+}

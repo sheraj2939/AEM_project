@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <product-select
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        fieldLabel="Select Product"
+                        name="./productSelect">
+                        <items jcr:primaryType="nt:unstructured">
+                            <all
+                                jcr:primaryType="nt:unstructured"
+                                name="./all"
+                                text="All"
+                                value=""/>
+                            <personal-loan
+                                jcr:primaryType="nt:unstructured"
+                                name="./pl"
+                                text="Personal Loan"
+                                value="Personal Loan"/>
+                            <home-loan
+                                jcr:primaryType="nt:unstructured"
+                                name="./hl"
+                                text="Home Loan"
+                                value="Home Loan"/>
+                            <business-loan
+                                jcr:primaryType="nt:unstructured"
+                                name="./bl"
+                                text="Business Loan"
+                                value="Business Loan"/>
+                            <used-car-loan
+                                jcr:primaryType="nt:unstructured"
+                                name="./ucl"
+                                text="Used Car Loan"
+                                value="Used Car Loan"/>
+                            <two-wheeler-loan
+                                jcr:primaryType="nt:unstructured"
+                                name="./twl"
+                                text="Two Wheeler Loan"
+                                value="Two Wheeler Loan"/>
+                            <loan-against-property
+                                jcr:primaryType="nt:unstructured"
+                                name="./lap"
+                                text="Loan Against Property"
+                                value="Loan Against Property"/>
+                            <credit-cards
+                                jcr:primaryType="nt:unstructured"
+                                name="./cc"
+                                text="Credit Cards"
+                                value="Credit Cards"/>
+                            <loan-against-securities
+                                jcr:primaryType="nt:unstructured"
+                                name=".las"
+                                text="Loan Against Securities"
+                                value="Loan Against Securities"/>
+                            <consumer-durable-loan
+                                jcr:primaryType="nt:unstructured"
+                                name="./cdl"
+                                text="Consumer Durable Loan"
+                                value="Consumer Durable Loan"/>
+                            <wealth-management
+                                jcr:primaryType="nt:unstructured"
+                                name="./wm"
+                                text="Wealth Management"
+                                value="Wealth Management"/>
+                            <insurance
+                                jcr:primaryType="nt:unstructured"
+                                name="./in"
+                                text="Insurance"
+                                value="Insurance"/>
+                        </items>
+                    </product-select>
+                    <videoTestimonial
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        composite="{Boolean}true"
+                        name="./videoTestimonial"
+                        text="Video Testimonial"
+                        value="true"/>
+                    <appRating
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        composite="{Boolean}true"
+                        name="./appRating"
+                        text="Need App Rating Schema"
+                        value="true"/>
+                    <need-download-app
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        composite="{Boolean}true"
+                        name="./downloadApp"
+                        text="Download App Icon"
+                        value="true"/>
+                    <videoSrc
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Enter Video Link"
+                        name="./videoSrc"/>
+                    <authorName
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Enter Author Name"
+                        name="./authorName"/>
+                    <loan
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Enter Product Name"
+                        name="./loan"/>
+                    <btn-text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Enter Button Text"
+                        name="./btnText"/>
+                    <videoImg
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                        fieldLabel="Enter Video Image"
+                        name="./videoImg"/>
+                    <btn-link
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathbrowser"
+                        fieldLabel="Enter Button Link"
+                        name="./btnLink"/>
+                    <bottomHeadingTag
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/select"
+                        fieldLabel="Bottom Heading Tag "
+                        name="./bottomTag">
+                        <items jcr:primaryType="nt:unstructured">
+                            <deafult
+                                jcr:primaryType="nt:unstructured"
+                                text="default"
+                                value=""/>
+                            <h3
+                                jcr:primaryType="nt:unstructured"
+                                text="H3"
+                                value="bottomTagH6"/>
+                            <p
+                                jcr:primaryType="nt:unstructured"
+                                text="P"
+                                value="bottomTagP"/>
+                        </items>
+                    </bottomHeadingTag>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

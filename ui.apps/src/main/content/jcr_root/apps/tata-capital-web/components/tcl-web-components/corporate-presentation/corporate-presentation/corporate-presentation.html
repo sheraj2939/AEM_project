@@ -1,0 +1,32 @@
+<section class="personal-loan-box space-tb40" data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+    data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-use.imageTemplate="image.html"
+    data-sly-use.pretitleTemplate="pretitle.html" data-sly-use.titleTemplate="title.html"
+    data-sly-use.descriptionTemplate="description.html" data-sly-use.actionsTemplate="actions.html"
+    data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+    id="${teaser.id}" data-cmp-data-layer="${teaser.data.json}">
+    <div class="way-service-options-col">
+        <div class="container">
+            <div class="mx-944">            
+                <div class="overview-media-split left-img-split">
+                    <div class="overview-media-img-mob  d-lg-none d-block">
+                        <img src="${properties.fileReference}" class="left-img" alt="thematic-area2">
+                    </div>
+                    <div class="bg-div personal-cards">
+                        <sly
+            data-sly-resource="${'popupbtn1' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+        </sly>
+                        <div class="personal-para">
+                            <p class="text16i">${teaser.description @ context = 'html'}</p>
+
+                           <sly class="icon-arrow-right" data-sly-call="${actionsTemplate.actions @ teaser=teaser}"> </sly>
+                        </div>
+                    </div>
+                    <div class="overview-media-right d-lg-block d-none">
+                        <img src="${properties.fileReference}" class="left-img" alt="thematic-area2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- personal-loan box-->

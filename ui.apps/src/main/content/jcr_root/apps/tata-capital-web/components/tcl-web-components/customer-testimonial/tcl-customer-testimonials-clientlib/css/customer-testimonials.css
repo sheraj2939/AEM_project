@@ -1,0 +1,201 @@
+.customer-say-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.customer-say-box h2 {
+  margin-bottom: 50px;
+}
+.customer-say-box .customer-col {
+  padding: 0 10px;
+  height: 100%;
+}
+.customer-say-box .slick-dots {
+  bottom: -42px;
+}
+.customer-say-box .customer-say-details {
+  background: radial-gradient(50.79% 52.48% at 48.36% 50.79%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.72) 100%);
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.01), 5px 0px 10px rgba(0, 0, 0, 0.01), 0px -5px 10px rgba(0, 0, 0, 0.01), 0px 5px 10px rgba(0, 0, 0, 0.01);
+  border: 1px solid #FFFFFF;
+  border-radius: 40px;
+  padding: 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.customer-say-box .customer-say-details .customer-top {
+  flex-grow: 1;
+  max-height: 114px;
+}
+.customer-say-box .customer-say-details .customer-top p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #333;
+  margin-bottom: 10px;
+}
+.customer-say-box .customer-say-details .customer-bottom {
+  position: relative;
+  padding-top: 15px;
+  padding-right: 40px;
+}
+.customer-say-box .customer-say-details .customer-bottom h6 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+.customer-say-box .customer-say-details .customer-bottom .loan-date {
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 0px;
+  color: rgba(51, 51, 51, 0.8);
+}
+.customer-say-box .customer-say-details .customer-bottom .loan-date span {
+  color: rgba(18, 111, 179, 0.8);
+  font-family: "OpenSans-Bold";
+}
+.customer-say-box .customer-say-details .downloads-stores {
+  width: 32px;
+  position: absolute;
+  right: 0px;
+  bottom: -8px;
+}
+.customer-say-box .customer-say-details .list-star {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px -3px 0;
+}
+.customer-say-box .customer-say-details .list-star img {
+  margin: 0 3px;
+}
+.customer-say-box .say-btn {
+  text-align: center;
+  padding-top: 43px;
+}
+.customer-say-box.new-customer-says .customer-col {
+  padding-bottom: 5px;
+}
+.customer-say-box.new-customer-says .customer-videos {
+  height: 100%;
+  position: relative;
+}
+.customer-say-box.new-customer-says .customer-videos .customer-say-details {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 0px;
+  height: auto;
+  z-index: 2;
+  background: #FAFBFC;
+  padding: 20px;
+}
+.customer-say-box.new-customer-says .customer-videos .customer-say-details .customer-bottom {
+  padding-top: 0px;
+}
+.customer-say-box.new-customer-says .testi-with-video {
+  position: relative;
+  margin-bottom: 40px;
+  height: calc(100% - 40px);
+}
+.customer-say-box.new-customer-says .testi-with-video img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.customer-say-box.new-customer-says .testi-with-video .testi-play-btn {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: url("/content/dam/tata-capital-web/customer-testimonial/testi-play-btn.svg") no-repeat center center;
+  z-index: 1;
+}
+.customer-say-box.new-customer-says .customer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.customer-say-box.new-customer-says .list-star {
+  margin-top: 0px;
+}
+.customer-say-box.new-customer-says .list-star img {
+  width: 14px;
+}
+.customer-say-box.new-customer-says .cust-bottom-left {
+  width: calc(100% - 95px);
+  padding-right: 10px;
+}
+.customer-say-box.new-customer-says .cust-bottom-right {
+  padding-top: 6px;
+}
+.customer-say-box.new-customer-says .customer-say-details {
+  border-radius: 30px;
+  padding: 32px 25px;
+}
+.customer-say-box.new-customer-says .customer-say-details .customer-top {
+  max-height: 130px;
+  position: relative;
+}
+.customer-say-box.new-customer-says .customer-say-details .customer-top:after {
+  content: "";
+  width: 46px;
+  height: 48px;
+  display: block;
+  background: url("../img/quotes-icons.svg") no-repeat top left;
+  position: absolute;
+  top: -8px;
+  left: 0px;
+}
+.customer-say-box.new-customer-says .customer-say-details .customer-top p {
+  position: relative;
+  z-index: 1;
+}
+.customer-say-box.new-customer-says .customer-say-details .customer-bottom h6 {
+  margin-bottom: 3px;
+}
+
+@media (max-width: 1199px) {
+  .customer-say-box.new-customer-says .customer-say-details .customer-bottom h6 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 991px) {
+  .customer-say-box h2 {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .customer-say-box .say-btn {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .customer-say-box .say-btn .btn-blue {
+    width: 100%;
+  }
+  .customer-say-box .customer-col {
+    padding: 0 7px;
+  }
+  .customer-say-box .mob-pd0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .customer-say-box .customer-say-details .customer-top p {
+    font-size: 13px;
+  }
+  .customer-say-box.new-customer-says .customer-videos .customer-say-details {
+    left: 15px;
+    right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .customer-say-box.new-customer-says .customer-videos .testi-with-video .testi-play-btn {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

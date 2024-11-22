@@ -1,0 +1,125 @@
+.header.nps-header {
+  padding-top: 55px !important;
+  width: 100%;
+}
+.header.nps-header .header-logos {
+  display: block;
+  width: 132px;
+}
+.header.nps-header .header-inner {
+  background: #1961AC;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 12;
+  min-height: 55px;
+  padding: 10px 0 9px;
+  display: flex;
+  align-items: center;
+}
+.header.nps-header.heading-black .header-inner {
+  background: #333333;
+}
+.header.nps-header.heading-lime .header-inner {
+  background: #DEDC00;
+}
+
+.main-wrapper {
+  min-height: calc(100vh - 55px);
+  position: relative;
+  padding-bottom: 53px;
+}
+
+.nps-footer-fix {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 53px;
+  margin-top: -53px;
+}
+
+.nps-footer-box {
+  padding: 15px 0;
+  background-color: #093B6F;
+}
+.nps-footer-box.nps-footer-black {
+  background-color: #333;
+}
+.nps-footer-box .row-flex {
+  justify-content: space-between;
+  align-items: center;
+}
+.nps-footer-box .row-flex .row-col-33 {
+  width: auto;
+}
+.nps-footer-box .nps-ft-text {
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.nps-footer-box .nps-social-list {
+  margin: 0 -10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.nps-footer-box .nps-social-list li {
+  padding: 0 10px;
+}
+.nps-footer-box .nps-social-list a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #fff;
+  display: block;
+}
+.nps-footer-box .list-nps-link {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+.nps-footer-box .list-nps-link li {
+  padding: 0 20px;
+}
+.nps-footer-box .list-nps-link a {
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .main-wrapper {
+    padding-bottom: 143px;
+  }
+
+  .nps-footer-fix {
+    height: 143px;
+    margin-top: -143px;
+  }
+
+  .nps-footer-box {
+    padding: 28px 0;
+  }
+  .nps-footer-box .row-flex {
+    display: block;
+  }
+  .nps-footer-box .nps-social-list {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .nps-footer-box .list-nps-link {
+    justify-content: center;
+    margin: 0 -9px 12px;
+  }
+  .nps-footer-box .list-nps-link li {
+    padding: 0 9px;
+  }
+  .nps-footer-box .nps-ft-text {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .header.nps-header .header-logos {
+    width: 110px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

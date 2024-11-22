@@ -1,0 +1,149 @@
+<!--  customersay box  -->
+<sly data-sly-use.model="${'com.tatacapital.web.core.models.CustomerSpeakModel' @ productName = properties.productSelect}"></sly>
+<section class="customer-say-box ${properties.videoTestimonial ? 'new-customer-says ' : ''}  space-tb40">                        
+    <div class="container">
+        <sly data-sly-resource="${'container-main' @ resourceType='/apps/core/wcm/components/container/v1/container'}"></sly>
+    </div>
+    <div class="">            
+        <div class="customer-say-inner">
+            <div class="container mob-pd0 relative">
+                <div class="say-blur"></div>
+                <div class="customer-say-slider flex-slider slider-dots slider-arrows jsCustomerSaySlider">
+                    <div class="customer-row" data-sly-test="${properties.videoTestimonial}">
+                        <div class="customer-col">
+
+                            <div class="customer-videos">
+                                <div class="testi-with-video">
+                                    <img src="${properties.videoImg}" alt="">
+                                    <a href="javascript:void(0)" class="testi-play-btn" data-popovermodal="popover-modal" data-target="#video-modal" video-source="${properties.videoSrc}"></a>
+                                </div>
+                                <div class="customer-say-details">                                                                        
+                                    <div class="customer-bottom">
+                                        <div class="cust-bottom-left">
+                                            <h6>${properties.authorName}</h6>
+                                            <p class="loan-date"><span>${properties.loan}</span></p>
+                                        </div>
+                                        <div class="cust-bottom-right">
+                                            <div class="list-star">
+                                                <img src="/content/dam/tata-capital-web/assets/img/star-fill.svg" alt="">
+                                                <img src="/content/dam/tata-capital-web/assets/img/star-fill.svg" alt="">
+                                                <img src="/content/dam/tata-capital-web/assets/img/star-fill.svg" alt="">
+                                                <img src="/content/dam/tata-capital-web/assets/img/star-fill.svg" alt="">
+                                                <img src="/content/dam/tata-capital-web/assets/img/star-fill.svg" alt="">
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--/*<sly data-sly-use.model="${'com.tatacapital.web.core.models.CustomerSpeakModel' @ productName = properties.productSelect}">*/-->
+                        <sly data-sly-list="${model.customerData}">
+                            <div class="customer-row">
+                                <div class="customer-col">
+                                    <div class="customer-say-details">
+                                        <div class="customer-top simple-bar">
+                                            <p>${item.reviewDescription}</p>
+                                        </div>
+                                        <div class="customer-bottom">
+                                            <sly data-sly-test="${properties.bottomTag=='bottomTagH6' || !properties.bottomTag}">
+                                                <h6>${item.customerName}</h6>
+                                             </sly>
+                                             <sly data-sly-test="${properties.bottomTag=='bottomTagP'}">
+                                                <p>${item.customerName}</p>
+                                             </sly>
+                                            <p class="loan-date"><span>${item.productName}</span> | ${item.date}</p>
+                                            <div class="list-star" data-rating="${item.starRating}">
+
+                                            </div>
+                                            <sly data-sly-test="${properties.downloadApp}">
+                                                <div class="downloads-stores">
+                                                    <img src="/content/dam/tata-capital-web/assets/img/app-store-img.svg" alt="">
+                                                    <img src="/content/dam/tata-capital-web/assets/img/play-store-img.svg" alt="">
+                                                </div>
+                                            </sly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </sly>
+                    </sly>
+                </div>
+                <div data-sly-test="${properties.btnLink}" class="say-btn">
+                    <a href="${properties.btnLink}" class="btn-blue btn-large" data-cta="Customer Testimonial">${properties.btnText ? properties.btnText : 'Read All' }</a>
+                </div>
+            </div>    
+        </div>
+    </div>
+</section>
+<sly data-sly-list="${model.customerData}"> </sly>
+<sly data-sly-test.testimonialSchema="${model.testimonialSchema}"></sly>
+<sly data-sly-test="${!PageProperties.fetchUrl}">
+    <sly data-sly-test="${!properties.appRating}">
+<script type="application/ld+json" data-sly-test.size="${model.size !='0'}">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Product",
+                    "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "${model.ratingValue @ context='scriptComment'}",
+                    "reviewCount": "${model.size @ context='scriptComment' }"
+                },
+                    "description": "${model.description @ context='scriptComment'}",
+                    "name": "${model.title @ context='scriptComment'}",
+                    "review" : ${testimonialSchema.toString @ context='scriptComment'}
+                }</script>
+            </sly>
+            <sly data-sly-test="${properties.appRating}">
+                <script type="application/ld+json" data-sly-test.size="${model.size !='0'}">
+                {
+                    "@context": "https://schema.org/", 
+                  "url": "https://www.tatacapital.com${request.pathInfo @context='html'}", 
+                  "@type": "Product", 
+                  "name": "${model.title @ context='scriptComment'}",
+                  "image": "https://www.tatacapital.com/content/dam/tata-capital-web/tc-header-images/tata-header-logo.svg",
+                  "description": "${model.description @ context='scriptComment'}",
+                  "brand": "Tata Capital",
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "${model.ratingValue @ context='scriptComment'}",
+                    "bestRating": "5"
+                  }
+                }
+                </script>
+            </sly>
+            </sly data-sly-test.size="${PageProperties.productSelect=='MI'}">
+                <script type="application/ld+json" data-sly-test.size="${model.size =='0'}">
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "Product",
+                        "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": 5,
+                        "reviewCount": 1
+                    },
+                        "description": "${model.description @ context='scriptComment'}",
+                        "name": "${model.title @ context='scriptComment'}",
+                        "review" :[{"@type":"Review",
+                        "author":{"@type":"Person","name":"Radha and Akash Kumar"},"datePublished":"07 May, 2025","reviewBody":"It was great dealing with Tata Capital. Thank you for the prompt response and solution.","reviewRating":{"@type":"Rating","bestRating":"5","ratingValue":"5","worstRating":"1"}}]
+                    }</script>
+            </sly>
+<!-- customersay box-->
+</sly>
+<!-- video modal -->
+<div class="popover-modal fade" id="video-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-lg2">
+        <div class="popover-modal-content video-modals">
+            <button data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></button>
+            <div class="popover-modal-body">
+                <div class="videos-outer">
+                    <iframe src class="frameSrc" title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- video modal -->

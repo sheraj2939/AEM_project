@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-12-01T15:33:02.797+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/tata-capital-web/settings/wcm/templates/tatacapital-web-footer-template"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Footer Experience Fragment"
+        sling:resourceType="tata-capital-web/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="tata-capital-web/components/container"
+            layout="responsiveGrid">
+            <footer_policies_docu
+                jcr:created="{Date}2022-11-24T12:24:18.570+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-11-29T18:46:25.595+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/Tc-Revamp/Tc-Footer/footer-policies-documents-accordian-exp"
+                openedAccordian="true"
+                otherDocHeading="Policies, Codes &amp; Other Documents"
+                policiesCodes="tab-11"
+                tittle="Tata Capital Limited">
+                <otherDocument jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        redirectionLink="#"
+                        tittle="Tata Code of Conduct"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        redirectionLink="#"
+                        tittle="Audit Committee Charter"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Affirmative Action Policy"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Whistleblower Policy"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Code Of Conduct For Non-Executive Directors"/>
+                    <item5
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Code Of Conduct For Non-Executive Directors"/>
+                    <item6
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Board Diversity Policy"/>
+                    <item7
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Code Of Corporate Disclosure Practices And Policy On Determination Of Legitimate Purpose For Communication Of UPSI"/>
+                    <item8
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Anti-Bribery And Anti-Corruption Policy"/>
+                    <item9
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Vigil Mechanism"/>
+                    <item10
+                        jcr:primaryType="nt:unstructured"
+                        tittle="CSR Policy"/>
+                    <item11
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Composition Of Committees"/>
+                    <item12
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Notice Of Hours Of Work, Rest-Interval, Weekly Holiday"/>
+                    <item13
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Fit &amp; Proper Policy"/>
+                    <item14
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Policy For Appointment Of Statutory Auditor"/>
+                    <item15
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Policy On Related Party Transactions"/>
+                    <item16
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Policy For Determining Material Subsidiaries"/>
+                </otherDocument>
+            </footer_policies_docu>
+        </root>
+    </jcr:content>
+</jcr:root>

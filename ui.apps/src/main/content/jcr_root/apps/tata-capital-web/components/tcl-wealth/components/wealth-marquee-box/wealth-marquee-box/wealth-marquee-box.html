@@ -1,0 +1,21 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='wealth-marquee-box'}"></sly>
+</sly>
+<div class="marquee-box">
+    <div class="marquee-inner container">
+        <ul class="jsMarquee">
+            <sly data-sly-list.marqueeItem="${resource.children}">
+                <sly data-sly-test="${marqueeItem.name == 'marqueeList'}">
+                    <sly data-sly-list.marquee="${marqueeItem.children}">
+                        <li>
+                            ${marquee.marqueeText @ context = 'html'}
+                        </li>
+                    </sly>
+                </sly>
+            </sly>
+        </ul>
+    </div>
+</div>
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories='wealth-marquee-box'}"></sly>
+</sly>

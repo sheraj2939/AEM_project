@@ -1,0 +1,108 @@
+.language-comminucation-rows {
+  margin-left: -12px;
+  margin-right: -12px;
+  margin-top: -24px;
+}
+
+.language-comminucation-rows .lang-comm-cols {
+  padding: 0 12px;
+  margin-top: 24px;
+}
+
+.language-comminucation-rows .lang-comm-list {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.0117647059), 0px -5px 10px 0px rgba(0, 0, 0, 0.0117647059), 5px 0px 10px 0px rgba(0, 0, 0, 0.0117647059), -5px 0px 10px 0px rgba(0, 0, 0, 0.0117647059);
+  background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.9) 99.11%);
+  border-radius: 16px;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.language-comminucation-rows .lang-comm-list .langs-radio {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.language-comminucation-rows .lang-comm-list .langs-radio:checked~label .langs-ticks {
+  border-color: #002EDC;
+}
+
+.language-comminucation-rows .lang-comm-list .langs-radio:checked~label .langs-ticks:after {
+  display: block;
+}
+
+.language-comminucation-rows .lang-comm-list label {
+  display: flex;
+  position: relative;
+  font-weight: normal;
+  margin: 0px;
+}
+
+.language-comminucation-rows .lang-comm-list .langs-texts {
+  font-size: 14px;
+  line-height: 18px;
+  color: #333;
+  font-family: "OpenSans-Bold";
+}
+
+.language-comminucation-rows .lang-comm-list .langs-ticks {
+  min-width: 18px;
+  max-width: 18px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #838383;
+  display: block;
+  position: relative;
+  margin-right: 8px;
+}
+
+.language-comminucation-rows .lang-comm-list .langs-ticks:after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #002EDC;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .language-comminucation-rows .lang-comm-cols {
+    width: 33.33%;
+  }
+
+  .language-comminucation-rows .lang-comm-list {
+    padding: 22px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .language-comminucation-rows {
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -16px;
+  }
+
+  .language-comminucation-rows .lang-comm-cols {
+    width: 50%;
+    padding: 0 8px;
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 479px) {
+  .language-comminucation-rows .lang-comm-cols {
+    width: 100%;
+  }
+}

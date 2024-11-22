@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Footer Authoring"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <importantInfo
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                        <items jcr:primaryType="nt:unstructured">
+                            <container
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Important Information"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <importantInfotittle
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Enter important Information heading"
+                                        name="./importantInfotittle"
+                                        useFixedInlineToolbar="{Boolean}true"/>
+                                    <important-info
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Important Information"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldLabel="Important information">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                            name="./importantInfoList">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <topHeading
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Enter heading"
+                                                            name="./heading"
+                                                            useFixedInlineToolbar="{Boolean}true"/>
+                                                        <link
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                            fieldLabel="Enter redirection link"
+                                                            name="./redirectionLink"
+                                                            rootPath="/content"/>
+                                                        <openinnewtab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                            composite="{Boolean}true"
+                                                            name="./openInNewTab"
+                                                            text="Check for open link in new tab"
+                                                            value="true"/>
+                                                        <languagepopup
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                            composite="{Boolean}true"
+                                                            name="./languagePopup"
+                                                            text="Enable MITC Language Pop-up"
+                                                            value="true"/>
+                                                        <languagedropdown
+                                                            jcr:primaryType="nt:unstructured"
+                                                            jcr:title="Language Dropdown"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                            composite="{Boolean}true"
+                                                            eaem-show-on-collapse="EAEM.showProductName"
+                                                            fieldLabel="Language Dropdown">
+                                                            <field
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                                eaem-nested="NODE_STORE"
+                                                                name="./mitcLanguageDropdown">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                    <column
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <language
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                fieldLabel="Language Name"
+                                                                                name="./languageName"/>
+                                                                            <pdfpath
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                fieldLabel="Language PDF Path"
+                                                                                name="./pdfPath"
+                                                                                rootPath="/content/"/>
+                                                                        </items>
+                                                                    </column>
+                                                                </items>
+                                                            </field>
+                                                        </languagedropdown>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </important-info>
+                                </items>
+                            </container>
+                        </items>
+                    </importantInfo>
+                    <investorInfo
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                        <items jcr:primaryType="nt:unstructured">
+                            <container
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Investor Information"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <investmentInfotittle
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Enter investment Information heading"
+                                        name="./investmentInfotittle"
+                                        useFixedInlineToolbar="{Boolean}true"/>
+                                    <investor-info
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Investor Information"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldLabel="Investor Information">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                            name="./investorInfo">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <topHeading
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Enter heading"
+                                                            name="./heading"
+                                                            useFixedInlineToolbar="{Boolean}true"/>
+                                                        <link
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                            fieldLabel="Enter redirection link"
+                                                            name="./redirectionLink"
+                                                            rootPath="/content"/>
+                                                        <openinnewtab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                            composite="{Boolean}true"
+                                                            name="./openInNewTab"
+                                                            text="Check for open link in new tab"
+                                                            value="true"/>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </investor-info>
+                                </items>
+                            </container>
+                        </items>
+                    </investorInfo>
+                    <otherInformation
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Other Solution"
+                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                        <items jcr:primaryType="nt:unstructured">
+                            <container
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Other Solution"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <otherInformationtittle
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Enter other Information heading"
+                                        name="./otherInformationtittle"
+                                        useFixedInlineToolbar="{Boolean}true"/>
+                                    <otherInformation
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Other Solution"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldLabel="Other Solution">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                            name="./otherInformation">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <topHeading
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Enter heading"
+                                                            name="./heading"
+                                                            useFixedInlineToolbar="{Boolean}true"/>
+                                                        <link
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                            fieldLabel="Enter redirection link"
+                                                            name="./redirectionLink"
+                                                            rootPath="/content"/>
+                                                        <openinnewtab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                            composite="{Boolean}true"
+                                                            name="./openInNewTab"
+                                                            text="Check for open link in new tab"
+                                                            value="true"/>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </otherInformation>
+                                    <branchLocator
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Branch locator heading"
+                                        name="./branchLocator"
+                                        useFixedInlineToolbar="{Boolean}true"/>
+                                    <link
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                        fieldLabel="Enter redirection link"
+                                        name="./breadCrumbLink"
+                                        rootPath="/content"/>
+                                    <openinnewtab
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        composite="{Boolean}true"
+                                        name="./breadcrumbnewTab"
+                                        text="Check for open link in new tab"
+                                        value="true"/>
+                                    <moneyfyList
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <container
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Moneyfy Redirection"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <image
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldLabel="Select Image"
+                                                        name="./image"
+                                                        rootPath="/content"/>
+                                                    <imagelink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldLabel="Logo redirection"
+                                                        name="./logoRedirection"
+                                                        rootPath="/content"/>
+                                                    <imageopeninnewtab
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        composite="{Boolean}true"
+                                                        name="./logoNewTab"
+                                                        text="Check for open link in new tab"
+                                                        value="true"/>
+                                                    <alternate-name
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Alternate Name of Image"
+                                                        name="./altName"
+                                                        useFixedInlineToolbar="{Boolean}true"/>
+                                                    <visitUs
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Visit us tittle"
+                                                        name="./visitUs"
+                                                        useFixedInlineToolbar="{Boolean}true"/>
+                                                    <linkText
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Link tittle"
+                                                        name="./linkTittle"
+                                                        useFixedInlineToolbar="{Boolean}true"/>
+                                                    <link
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldLabel="Enter redirection link"
+                                                        name="./redirectionLink"
+                                                        rootPath="/content"/>
+                                                    <openinnewtab
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        composite="{Boolean}true"
+                                                        name="./openInNewTab"
+                                                        text="Check for open link in new tab"
+                                                        value="true"/>
+                                                </items>
+                                            </container>
+                                        </items>
+                                    </moneyfyList>
+                                </items>
+                            </container>
+                        </items>
+                    </otherInformation>
+                    <amalgamated
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Amalgamated Companies"
+                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                        <items jcr:primaryType="nt:unstructured">
+                            <container
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Amalgamated Companies"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <amalgamated-tittle
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Enter amalgamated companies heading"
+                                        name="./amalgamatedtittle"
+                                        useFixedInlineToolbar="{Boolean}true"/>
+                                    <amalgamated
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="amalgamated companies"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldLabel="amalgamated companies">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                            name="./amalgamatedcompanies">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <topHeading
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Enter heading"
+                                                            name="./heading"
+                                                            useFixedInlineToolbar="{Boolean}true"/>
+                                                        <link
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                            fieldLabel="Enter redirection link"
+                                                            name="./redirectionLink"
+                                                            rootPath="/content"/>
+                                                        <openinnewtab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                            composite="{Boolean}true"
+                                                            name="./openInNewTab"
+                                                            text="Check for open link in new tab"
+                                                            value="true"/>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </amalgamated>
+                                    <branchLocator
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Branch locator heading"
+                                        name="./branchLocator"
+                                        useFixedInlineToolbar="{Boolean}true"/>
+                                    <link
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                        fieldLabel="Enter redirection link"
+                                        name="./breadCrumbLink"
+                                        rootPath="/content"/>
+                                    <openinnewtab
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        composite="{Boolean}true"
+                                        name="./breadcrumbnewTab"
+                                        text="Check for open link in new tab"
+                                        value="true"/>
+                                    <moneyfyList
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <container
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Moneyfy Redirection"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <image
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldLabel="Select Image"
+                                                        name="./image"
+                                                        rootPath="/content"/>
+                                                    <imagelink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldLabel="Logo redirection"
+                                                        name="./logoRedirection"
+                                                        rootPath="/content"/>
+                                                    <imageopeninnewtab
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        composite="{Boolean}true"
+                                                        name="./logoNewTab"
+                                                        text="Check for open link in new tab"
+                                                        value="true"/>
+                                                    <alternate-name
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Alternate Name of Image"
+                                                        name="./altName"
+                                                        useFixedInlineToolbar="{Boolean}true"/>
+                                                    <visitUs
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Visit us tittle"
+                                                        name="./visitUs"
+                                                        useFixedInlineToolbar="{Boolean}true"/>
+                                                    <linkText
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Link tittle"
+                                                        name="./linkTittle"
+                                                        useFixedInlineToolbar="{Boolean}true"/>
+                                                    <link
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldLabel="Enter redirection link"
+                                                        name="./redirectionLink"
+                                                        rootPath="/content"/>
+                                                    <openinnewtab
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        composite="{Boolean}true"
+                                                        name="./openInNewTab"
+                                                        text="Check for open link in new tab"
+                                                        value="true"/>
+                                                </items>
+                                            </container>
+                                        </items>
+                                    </moneyfyList>
+                                </items>
+                            </container>
+                        </items>
+                    </amalgamated>
+                    <topBranches
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Top Branches"
+                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                        <items jcr:primaryType="nt:unstructured">
+                            <container
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Top Branches"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <otherInformationtittle
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Enter heading"
+                                        name="./topBranchesTitle"
+                                        useFixedInlineToolbar="{Boolean}true"/>
+                                    <otherInfoLink
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                        fieldLabel="Enter redirection link"
+                                        name="./topBranchesLink"
+                                        rootPath="/content"/>
+                                    <openinnewtab
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        composite="{Boolean}true"
+                                        name="./openInNewTab"
+                                        text="Check for open link in new tab"
+                                        value="true"/>
+                                </items>
+                            </container>
+                        </items>
+                    </topBranches>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

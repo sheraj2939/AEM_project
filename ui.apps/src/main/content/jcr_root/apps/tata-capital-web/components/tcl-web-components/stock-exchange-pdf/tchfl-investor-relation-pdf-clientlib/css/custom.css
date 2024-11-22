@@ -1,0 +1,23 @@
+.general-info-box .general-info-list li.customborder{
+    border-bottom: none;
+}
+.general-info-box .general-info-list li a.disable-pdf-icon:before{
+    content: none;
+}
+.general-info-box .general-info-list li a.disable-pdf-icon{
+padding-left:0;
+}
+.openDisclaimer{
+    cursor: pointer;
+}
+/* .investor-info-pd-b0{
+    padding-bottom: 0px !important;
+} */
+.custom-dropdown-wrap .custom-dropdown-block .custom-dropdown-list.custom-dropdown-list-height{
+    max-height: 190px;
+}
+@media (max-width: 767px) {
+    .custom-dropdown-wrap .custom-dropdown-block .custom-dropdown-list.custom-dropdown-list-height{
+        max-height: 150px;
+    }
+}

@@ -1,0 +1,30 @@
+<div class="footer-inner-lc footer-row">
+    <div class="footer-col">
+        <p class="footer-headings">${properties.investmentInfotittle}</p>
+        <div class="footer-body">
+            <ul class="footer-body-links">
+                <sly data-sly-list.loginLinks="${resource.listChildren}">
+                    <sly data-sly-test="${loginLinks.name == 'investorInfo'}">
+                        <sly data-sly-list.otherSolution="${loginLinks.listChildren}">
+                            <li><a href="${otherSolution.redirectionLink}"
+                                    target="${otherSolution.redirectionLink ? '_blank' : ''}">${otherSolution.heading}</a>
+                            </li>
+                        </sly>
+                    </sly>
+                </sly>
+            </ul>
+
+            <div class="footer-logo-visits visible-sm">
+                <a href="${properties.logoRedirection}"
+                    target="${properties.logoNewTab ? '_blank' : ''}" class="visit-logo-img">
+                    <img src="${properties.image}" alt="">
+                </a>
+                <div class="text-visits">
+                    <span>${properties.visitUs}</span>
+                    <a href="${properties.redirectionLink}"
+                        target="${properties.openInNewTab ? '_blank' : ''}">${properties.linkTittle}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

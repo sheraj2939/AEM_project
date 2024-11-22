@@ -1,0 +1,28 @@
+.personal-loan-pro-box .item .text .hThree {
+    min-height: 42px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.hThree {
+    font-size: 16px;
+    line-height: 130%;
+    font-family: "OpenSans-SemiBold";
+}
+
+.personal-loan-pro-box .item:hover .text .hThree {
+    min-height: auto;
+}
+
+@media (max-width: 767px) {
+
+    .personal-loan-pro-box .item .text .hThree {
+        min-height: auto;
+    }
+
+    .personal-loan-pro-box .item .text .hThree br {
+        display: none;
+    }
+}

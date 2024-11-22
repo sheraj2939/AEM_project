@@ -1,0 +1,118 @@
+.vehicles-loan-box .vehicles-loan-card {
+  padding: 25px;
+  height: 100%;
+  position: relative;
+}
+
+.vehicles-loan-box .bottom-fixed-controls {
+  padding-bottom: 100px;
+}
+
+.vehicles-loan-box .bottom-fixed-controls .btn-holders {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  padding: 25px;
+}
+
+.vehicles-loan-box .bottom-fixed-controls .btn-holders .cta-gap {
+  margin-left: 8px;
+}
+
+.vehicles-loan-box .bottom-fixed-controls .btn-holders .cta-gap:first-child {
+  margin-left: 0px;
+}
+
+.vehicles-loan-box .vehicles-loan-img {
+  margin-bottom: 16px;
+}
+
+.vehicles-loan-box .vehicles-loan-img img {
+  width: 100%;
+}
+
+.vehicles-loan-box .heading20 {
+  margin-bottom: 16px;
+}
+
+.vehicles-loan-box .vehicle-infos {
+  margin-bottom: 16px;
+}
+
+.vehicles-loan-box .vehicles-info-lists {
+  background-color: #f2f2f2;
+  border-radius: 16px;
+  padding: 12px;
+}
+
+.vehicles-loan-box .vehicles-info-lists .list-circle-ticks-voilet li {
+  font-family: 'OpenSans-Regular';
+  margin-top: 10px;
+}
+
+.vehicles-loan-box .vehicles-info-lists .list-circle-ticks-voilet li:first-child {
+  margin-top: 0px;
+}
+
+@media (max-width: 991px) {
+  .vehicles-loan-box .vehicles-loan-card {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    border-radius: 24px;
+  }
+
+  .vehicles-loan-box .bottom-fixed-controls {
+    padding-bottom: 85px;
+  }
+
+  .vehicles-loan-box .bottom-fixed-controls .btn-holders {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .vehicles-loan-box .row-flex .cards-rows {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .vehicles-loan-box .row-flex .cards-rows:first-child {
+    margin-top: 0px;
+  }
+
+  .vehicles-loan-box .heading20 {
+    margin-bottom: 8px;
+  }
+
+  .vehicles-loan-box .vehicles-info-lists {
+    padding: 10px;
+  }
+
+  .vehicles-loan-box .list-circle-ticks-voilet li {
+    font-size: 13px;
+  }
+
+  .vehicles-loan-box .bottom-fixed-controls {
+    padding-bottom: 16px;
+  }
+
+  .vehicles-loan-box .bottom-fixed-controls .btn-holders {
+    position: static;
+    padding: 20px 0 0;
+  }
+
+  .vehicles-loan-box .bottom-fixed-controls .btn-holders .cta-gap {
+    width: 100%;
+    margin-top: 12px;
+    margin-left: 0px;
+  }
+
+  .vehicles-loan-box .bottom-fixed-controls .btn-holders .cta-gap:first-child {
+    margin-top: 0px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

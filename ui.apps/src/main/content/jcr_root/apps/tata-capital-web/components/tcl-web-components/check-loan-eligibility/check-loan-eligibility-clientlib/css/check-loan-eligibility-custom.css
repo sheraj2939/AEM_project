@@ -1,0 +1,22 @@
+.custom-block{
+    display:block !important;
+    min-height: 32px !important;
+    padding-left: 42px !important;
+}
+.check-eligibility-box .test-cols p{
+    color: black;
+}
+.custom-block .custom-h3-check-eligibility {
+    display: inline;
+    font-size: 14px !important;
+    line-height: 140%!important;
+    font-size: 14px !important;
+    letter-spacing: .02em !important;
+    color: black !important;
+    margin: 0 !important;
+    font-weight: bold;
+    font-family: "OpenSans-Bold";
+}
+.custom-pera-inline p{
+display: inline;
+}

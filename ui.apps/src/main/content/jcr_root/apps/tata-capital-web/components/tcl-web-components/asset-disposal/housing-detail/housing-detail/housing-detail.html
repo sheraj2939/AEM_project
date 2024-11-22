@@ -1,0 +1,686 @@
+<section class="space-tb40 pd-t0i">
+    <div class="container">
+        <div class="bg-div property-listing-box">
+            <div class="property-detail">
+                <div class="property-row-flex">
+                    <div class="property-row-left">
+                        <div class="property-gallery">
+                            <div class="big-media-holder one-big-img" id="propertyImage">
+                                <!-- <div class="big-media">
+                                    <img src="/content/dam/tata-capital/asset-disposal-new/property-listing-detail/property-img.png" alt="">
+
+                                    <a href="javascript:void(0)" id="propertySliderImg" class="total-pic" data-popovermodal="popover-modal" data-target="#partnerSliderModal">8 Photos</a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property-row-right services" data-propertyid='${pageProperties["contract-no-"]}' data-service='${pageProperties["services"]}'>
+                        <div class="content-detail">
+                            <div class="reference-id">
+                                <span class="number">#${pageProperties["contract-no-"]}</span>
+                            </div>
+                            <div class="property-title">
+                                <h2 class="heading36">${pageProperties["property-name"]}</h2>
+                            </div>
+                            <div class="location"><i class="icon-location"></i> ${pageProperties["property-address"]}
+                            </div>
+                            <sly data-sly-test="${pageProperties['non-sarfaesi'] == 'Yes'}">
+                                <div class="reserve-price">
+                                    <div class="price">
+                                        <p class="price-28 semibold text-gray">Negotiable price*</p>
+                                    </div>
+                                </div>
+                            </sly>
+                            <sly data-sly-test="${pageProperties['non-sarfaesi'] == 'No'}">
+                                <div class="reserve-price">
+                                    <span class="price-label">Reserve price*</span>
+                                    <div class="price">
+                                        <p class="price-28 bold" id="reservePrice">₹${pageProperties["reserve-price"]}*</p>
+                                        <h5 class="strike heading20" id="marketValue"> ₹${pageProperties["market-value"]}</h5>
+                                        <div class="auction" data-sly-test="${pageProperties['auction-date'] != '-' && pageProperties['auction-date'] != 'NA' && pageProperties['auction-date'] != '' }">
+                                            <div class="auction-date">
+                                                <span class="auction-label">Auction Date</span>
+                                                <span class="date">${pageProperties["auction-date"]}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </sly>
+
+                            <div class="construction-detail">
+                                <div class="row-flex row-flex-7">
+                                    <div class="col-sp7 row-col-33 cons-cols">
+                                        <div class="property-information">
+                                            <span class="property-label">Construction stage</span>
+                                            <div class="value">
+                                                <p>${pageProperties["construction-stage"].toLowerCase == '' || pageProperties["construction-stage"].toLowerCase == 'na' || pageProperties["construction-stage"] == '-' || !pageProperties["construction-stage"] ? '--' : pageProperties["construction-stage"]}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sp7 row-col-33 cons-cols">
+                                        <div class="property-information">
+                                            <span class="property-label">Landmark</span>
+                                            <div class="value">
+                                                <p id="landMark">
+                                                    ${pageProperties["land-mark-descriptive-"] == '' || pageProperties["land-mark-descriptive-"].toLowerCase == 'na' || pageProperties["land-mark-descriptive-"] == '-' || !pageProperties["land-mark-descriptive-"] ? '--' : pageProperties["land-mark-descriptive-"]}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sp7 row-col-33 cons-cols">
+                                        <div class="property-information">
+                                            <span class="property-label">Rooms</span>
+                                            <div class="value">
+                                                <p>${pageProperties.bhk.toUpperCase != 'NA' ? pageProperties.bhk : '-'}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sp7 row-col-33 cons-cols">
+                                        <div class="property-information">
+                                            <span class="property-label">Area</span>
+                                            <div class="value">
+                                                <p>${pageProperties["area-in-sq-ft"].toUpperCase != 'NA' ?
+                                                    pageProperties["area-in-sq-ft"] : '-'} SQ.FT.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sp7 row-col-33 cons-cols">
+                                        <div class="property-information">
+                                            <span class="property-label">Property Age</span>
+                                            <div class="value">
+                                                <sly data-sly-test="${pageProperties['property-age'] == 'U/c'}">
+                                                    <p> Under Construction </p>
+                                                </sly>
+                                                <sly data-sly-test="${pageProperties['property-age'] != 'U/c'}">
+                                                    <p>${pageProperties["property-age"].toUpperCase != 'NA' ?
+                                                        pageProperties["property-age"] : '-'}</p>
+                                                </sly>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sp7 row-col-33 cons-cols">
+                                        <div class="property-information">
+                                            <span class="property-label">Due diligence on legal & technical</span>
+                                            <div class="value">
+                                                <sly data-sly-test="${pageProperties['services'] != 'tcfsl'}">
+                                                    <p>By TCHFL</p>
+                                                </sly>
+                                                <sly data-sly-test="${pageProperties['services'] == 'tcfsl'}">
+                                                    <p>By TCL</p>
+                                                </sly>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-property-infos">
+                <h3 class="heading20"><span>About the Property</span></h3>
+                <p class="text16i">${pageProperties["combined-description"]}</p>
+            </div>
+
+            <div class="content-box-icon">
+                <h3 class="heading20"><span>Neighbourhood Advantages</span></h3>
+
+                <ul class="list-icon">
+                    <li class="item">
+                        <div class="media-holder">
+                            <span class="all-icon32 icon-school"></span>
+                        </div>
+                        <div class="text">
+                            <p class="text16">School</p>
+                            <p class="text-sm-info" id="School">
+                                ${pageProperties["school-in-km-"] == '' || pageProperties["school-in-km-"].toLowerCase == 'na' ? '--' : pageProperties["school-in-km-"]}</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="media-holder">
+                            <span class="all-icon32 icon-market"></span>
+                        </div>
+                        <div class="text">
+                            <p class="text16">Super Market</p>
+                            <p class="text-sm-info" id="superMarket">
+                                ${pageProperties["super-market-in-km-"] == '' || pageProperties["super-market-in-km-"].toLowerCase == 'na' ? '--' : pageProperties["super-market-in-km-"]}
+                            </p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="media-holder">
+                            <span class="all-icon32 icon-hospital"></span>
+                        </div>
+                        <div class="text">
+                            <p class="text16">Hospital</p>
+                            <p class="text-sm-info" id="hospital">
+                                ${pageProperties["hospital-in-km-"] == '' || pageProperties["hospital-in-km-"].toLowerCase == 'na' ? '--' : pageProperties["hospital-in-km-"]}
+                            </p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="media-holder">
+                            <span class="all-icon32 icon-mall"></span>
+                        </div>
+                        <div class="text">
+                            <p class="text16">Mall</p>
+                            <p class="text-sm-info" id="mall">
+                                ${pageProperties["mall-in-km-"] == '' || pageProperties["mall-in-km-"].toLowerCase == 'na' ? '--' : pageProperties["mall-in-km-"]}
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+           
+
+            <div class="content-box-icon">
+                <h2 class="heading20 semibold"><span>Transport connectivity</span></h2>
+                <ul class="list-icon">
+                    <li class="item">
+                        <div class="media-holder">
+                            <span class="all-icon32 icon-bus"></span>
+                        </div>
+                        <div class="text">
+                            <p class="text16">Bus Stand</p>
+                            <p class="text-sm-info transport-connectivity">${pageProperties['transport-connectivity'].toLowerCase == 'bus stand' ? pageProperties["transport-connectivity-distance"] : '--'}</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="media-holder">
+                            <span class="all-icon32 icon-airport"></span>
+                        </div>
+                        <div class="text">
+                            <p class="text16">Airport</p>
+                            <p class="text-sm-info transport-connectivity">${pageProperties['transport-connectivity'].toLowerCase == 'airport' ? pageProperties["transport-connectivity-distance"] : '--'}</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="media-holder">
+                            <span class="all-icon32 icon-highway"></span>
+                        </div>
+                        <div class="text">
+                            <p class="text16">Highway</p>
+                            <p class="text-sm-info transport-connectivity">
+                                ${pageProperties['transport-connectivity'].toLowerCase == 'highway' ? pageProperties["transport-connectivity-distance"] : '--'}</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="media-holder">
+                            <span class="all-icon32 icon-metro"></span>
+                        </div>
+                        <div class="text">
+                            <p class="text16">Metro</p>
+                            <p class="text-sm-info transport-connectivity">
+                                ${pageProperties['transport-connectivity'].toLowerCase == 'metro station' ? pageProperties["transport-connectivity-distance"] : '--'}</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="media-holder">
+                            <span class="all-icon32 icon-rail"></span>
+                        </div>
+                        <div class="text">
+                            <p class="text16">Railway</p>
+                            <p class="text-sm-info transport-connectivity">
+                                ${pageProperties['transport-connectivity'].toLowerCase == 'railway station' ? pageProperties["transport-connectivity-distance"] : '--'}</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="inspection-checkbox">
+                <label class="custom-checkbox-label">
+                    <span class="custom-checkbox-new">
+                        <input type="checkbox" data-popovermodal="popover-modal" data-target="#bookInspection">
+                        <span class="checkbox-check"></span>
+                    </span>
+                    <span class="checkboxtext">Schedule an inspection </span>
+                </label>
+            </div>
+
+            <div class="action-holder">
+                <button class="btn-blue btn-large" data-popovermodal="popover-modal"
+                    data-target="#houseLoanInterested">I’m interested</button>
+                <button class="btn btn-link" data-popovermodal="popover-modal" data-target="#loanThroughBroker">Are you
+                    a broker? Click Here</button>
+            </div>
+
+            <div class="relationship-manager">
+                <div class="title-section">
+                    <h3 class="heading20"><span>Property Relationship Manager</span></h3>
+                </div>
+                <div class="manager-profile-box">
+                    <div class="avatar">
+                        <img src="/content/dam/tata-capital/asset-disposal-new/profile-pic.jpg" alt="" />
+                    </div>
+                    <div class="avatar-text">
+                        <div class="manager-profile profile-info">
+                            <div class="profile-text">
+                                <span class="profile-label">Name</span>
+                                <p class="text16i" id="rmName">
+                                 ${pageProperties["rm-name"].toLowerCase == "na" || pageProperties["rm-name"].toLowerCase == '' ||   !pageProperties["rm-name"] ? '--' : pageProperties["rm-name"]}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <div class="profile-text">
+                                <span class="profile-label">Email ID</span>
+                                <p class="text16i">
+                                    <a href="#" id="rmEmail" class="text-break">${pageProperties["rm-e-mail"]}</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <div class="profile-text">
+                                <span class="profile-label">Mobile number</span>
+                                <p class="text16i">
+                                    <a href="#" id="rmMobile">+91 ${pageProperties["rm-no"]}</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="map-view">
+                <h3 class="heading20"><span>Map view</span></h3>
+                <div id="googleMap" style="width:100%;height:400px;"></div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!--Thank you modal-->
+
+<div class="popover-modal modals-blue fade" id="houseLoanInterested">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md2">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content">
+                <button data-dismiss="popover-modal" class="popover-modal-close jsClosedModal"><i
+                        class="icon-close"></i></button>
+                <div class="popover-modal-body">
+                    <div class="thankyou-modal-inner d-none">
+                        <img src="/content/dam/tata-capital-web/Tc-footer-images/thanks.svg" alt=""
+                            class="thankyou-img">
+                        <p class="heading36">
+                            <span>
+                                Thank you for your interest
+                            </span>
+                        </p>
+                        <p class="text16i">
+                            Our Tata Capital customer service executive will contact you soon.
+                        </p>
+                    </div>
+                    <div class="thankyou-modal-inner failureMsg d-none">
+                        <img src="/content/dam/tata-capital-web/assets/img/error-icon-red.png" alt=""
+                            class="thankyou-img">
+                        <p class="heading36">
+                            <span>
+                                Opps!, something went wrong
+                            </span>
+                        </p>
+                        <p class="text16i">
+                            Please try again later.
+                        </p>
+                    </div>
+                    <div class="form-modal" id="housingForm">
+                        <p class="text16i mg-b10i">Property ID <span>${pageProperties["contract-no-"]}</span></p>
+                        <sly data-sly-test="${pageProperties['bhk'] == 'NA'}">
+                            <h3 class="heading20"><span>${pageProperties["property-name"]}</span></h3>
+                        </sly>
+                        <sly data-sly-test="${pageProperties['bhk'] != 'NA'}">
+                            <h3 class="heading20"><span>${pageProperties["property-name"]} - ${pageProperties["bhk"]}
+                                    Apartment</span></h3>
+                        </sly>
+                        <div class="row-flex">
+                            <div class="row-col-50 col-sp15">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">First name*</label>
+                                    <div class="textbox-inner">
+                                        <input type="text"
+                                            class="input-textbox alfaOnlyInput only-alpha-input jsValueOK disable-emoji"
+                                            placeholder="" data-type="fName" data-form="firstName">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-50 col-sp15">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Last name*</label>
+                                    <div class="textbox-inner">
+                                        <input type="text"
+                                            class="input-textbox alfaOnlyInput only-alpha-input jsValueOK disable-emoji"
+                                            placeholder="" data-type="lName" data-form="lastName">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-50 col-sp15">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Email ID*</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" class="input-textbox jsValueOK disable-emoji" placeholder=""
+                                            data-type="email" data-form="personalEmail">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-50 col-sp15">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Mobile number*</label>
+                                    <div class="textbox-inner">
+                                        <!--add "disable-emoji" class on input for emoji restrict-->
+                                        <input type="text" class="input-textbox allow-numeric jsValueOK disable-emoji"
+                                            placeholder="" data-type="mobile" maxlength="10" pattern="[0-9]*"
+                                            inputmode="numeric" data-form="mobile">
+                                        <!--add this for number pad keyboard on mobile-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-50 col-sp15">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Buyer quote</label>
+                                    <div class="textbox-inner">
+                                        <!--add "disable-emoji" class on input for emoji restrict-->
+                                        <input type="text" class="input-textbox only-numeric-decimal-input price-with-comma-form disable-emoji"
+                                            placeholder="" data-type="buyer-quote" data-form="buyer-quote"
+                                            inputmode="numeric">
+                                        <!--add this for number pad keyboard on mobile-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-controls">
+                            <button class="btn-link btn-big jsHousingSubmit btn-disabled">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popover-modal modals-blue fade" id="loanThroughBroker">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md2">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content">
+                <button data-dismiss="popover-modal" class="popover-modal-close jsClosedModal"><i
+                        class="icon-close"></i></button>
+                <div class="popover-modal-body">
+                    <div class="thankyou-modal-inner d-none">
+                        <img src="/content/dam/tata-capital-web/Tc-footer-images/thanks.svg" alt=""
+                            class="thankyou-img">
+                        <p class="heading36">
+                            <span>
+                                Thank you for time
+                            </span>
+                        </p>
+                        <p class="text16i">
+                            Our Tata Capital customer service executive will contact you soon.
+                        </p>
+                    </div>
+                    <div class="thankyou-modal-inner failureMsg d-none">
+                        <img src="/content/dam/tata-capital-web/assets/img/error-icon-red.png" alt=""
+                            class="thankyou-img">
+                        <p class="heading36">
+                            <span>
+                                Opps!, something went wrong
+                            </span>
+                        </p>
+                        <p class="text16i">
+                            Please try again later.
+                        </p>
+                    </div>
+                    <div class="form-modal" id="brokerHousingForm">
+                        <h3 class="heading20"><span>Share your info here</span></h3>
+                        <div class="row-flex">
+                            <div class="row-col-50 col-sp15">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">First name*</label>
+                                    <div class="textbox-inner">
+                                        <input type="text"
+                                            class="input-textbox alfaOnlyInput only-alpha-input jsValueOK disable-emoji"
+                                            placeholder="" data-type="fName" data-form="firstName">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-50 col-sp15">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Last name*</label>
+                                    <div class="textbox-inner">
+                                        <input type="text"
+                                            class="input-textbox alfaOnlyInput only-alpha-input jsValueOK disable-emoji"
+                                            placeholder="" data-type="lName" data-form="lastName">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-50 col-sp15">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Email ID*</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" class="input-textbox jsValueOK disable-emoji" placeholder=""
+                                            data-type="email" data-form="personalEmail">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-50 col-sp15">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Mobile number*</label>
+                                    <div class="textbox-inner">
+                                        <!--add "disable-emoji" class on input for emoji restrict-->
+                                        <input type="text" class="input-textbox allow-numeric jsValueOK disable-emoji"
+                                            placeholder="" data-type="mobile" maxlength="10" pattern="[0-9]*"
+                                            inputmode="numeric" data-form="mobile">
+                                        <!--add this for number pad keyboard on mobile-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-controls">
+                            <button class="btn-link btn-big jsHousingSubmit btn-disabled"  data-analyitcs="shareinfo">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popover-modal modals-blue fade" id="bookInspection">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md2">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content overflow-visible">
+                <button data-dismiss="popover-modal" class="popover-modal-close jsClosedModal"><i
+                        class="icon-close"></i></button>
+                <div class="popover-modal-body">
+                    <div class="thankyou-modal-inner d-none">
+                        <img src="/content/dam/tata-capital-web/Tc-footer-images/thanks.svg" alt=""
+                            class="thankyou-img">
+                        <p class="heading36">
+                            <span>
+                                Thank you for time
+                            </span>
+                        </p>
+                        <p class="text16i">
+                            Our customer service executive will contact you soon.
+                        </p>
+                    </div>
+                    <div class="thankyou-modal-inner failureMsg d-none">
+                        <img src="/content/dam/tata-capital-web/assets/img/error-icon-red.png" alt=""
+                            class="thankyou-img">
+                        <p class="heading36">
+                            <span>
+                                Opps!, something went wrong
+                            </span>
+                        </p>
+                        <p class="text16i">
+                            Please try again later.
+                        </p>
+                    </div>
+                    <div class="form-modal" id="bookInspectionForm">
+                        <h3 class="heading20 mg-b10i"><span>Block slot</span></h3>
+                        <p class="text16i">Property ID #${pageProperties["contract-no-"]} |
+                            ${pageProperties["property-name"]}</p>
+                        <div class="row-flex">
+                            <div class="row-col-50 col-sp15">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">First name*</label>
+                                    <div class="textbox-inner">
+                                        <input type="text"
+                                            class="input-textbox alfaOnlyInput only-alpha-input jsValueOK disable-emoji"
+                                            data-form="firstName" placeholder="" data-type="fName">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-50 col-sp15">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Last name*</label>
+                                    <div class="textbox-inner">
+                                        <input type="text"
+                                            class="input-textbox alfaOnlyInput only-alpha-input jsValueOK disable-emoji"
+                                            data-form="lastName" placeholder="" data-type="lName">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-50 col-sp15">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Email ID*</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" class="input-textbox jsValueOK disable-emoji" placeholder=""
+                                            data-form="personalEmail" data-type="email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-50 col-sp15">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Mobile number*</label>
+                                    <div class="textbox-inner">
+                                        <!--add "disable-emoji" class on input for emoji restrict-->
+                                        <input type="text" class="input-textbox allow-numeric jsValueOK disable-emoji"
+                                            placeholder="" data-type="mobile" maxlength="10" pattern="[0-9]*"
+                                            inputmode="numeric" data-form="mobile">
+                                        <!--add this for number pad keyboard on mobile-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-50 col-sp15">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Date of birth*</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" value="" class="input-textbox date-input jsValueOK"
+                                            placeholder="" data-type="dob" maxlength="10" data-form="dob">
+                                    </div>
+                                    <span class="text-infos">(dd/mm/yyyy)</span>
+                                </div>
+                            </div>
+                            <div class="row-col-50 col-sp15">
+                                <div class="form-textbox-new active">
+                                    <label class="label-name">Time slot*</label>
+                                    <div class="textbox-inner">
+                                        <div class="custom-select2 full-select2">
+                                            <select class="js-select3 jsValueOK" data-placeholder="Select" data-pla
+                                                data-type="timeslot" data-form="timeSlot">
+                                                <option value=""></option>
+                                                <option value="10:00AM - 11:00AM ">10:00AM - 11:00AM </option>
+                                                <option value="11:00AM - 12:00AM ">11:00AM - 12:00AM </option>
+                                                <option value="01:00PM - 02:00PM ">01:00PM - 02:00PM </option>
+                                                <option value="02:00PM - 03:00PM ">02:00PM - 03:00PM </option>
+                                                <option value="03:00PM - 04:00PM ">03:00PM - 04:00PM </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-controls">
+                            <button
+                                class="btn-link btn-big jsHousingSubmit jsBookInspectionSubmit btn-disabled">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Thank you modal-->
+
+<!-- more images slider -->
+<div class="popover-modal fade asset-disposal-modal channel-partner-modal" id="partnerSliderModal">
+    <button data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></button>
+    <div class="popover-modal-dialog popover-modal-dialog-centered">
+        <div class="popover-modal-content">
+
+            <div class="modal-more-slider slick-slider slider-dots slider-arrows" id="viewMoreSlider">
+                <!-- <div class="more-slider-row">
+                    <div class="more-slider-caption">
+                        <p class="heading20">Channel Partners Meet</p>
+                        <p class="dates-place">May 2022, Panaji, Goa</p>
+                        <div class="view-more-total"><span>1</span><span>/14</span></div>
+                    </div>
+                    <div class="more-slider-image">
+                        <img src="/content/dam/tata-capital/asset-disposal-new/channel-partner/more-slider-img1.png" alt="">
+                    </div>
+                </div>
+                <div class="more-slider-row">
+                    <div class="more-slider-caption">
+                        <p class="heading20">Channel Partners Meet</p>
+                        <p class="dates-place">May 2022, Panaji, Goa</p>
+                        <div class="view-more-total"><span>2</span>/14</div>
+                    </div>
+                    <div class="more-slider-image">
+                        <img src="/content/dam/tata-capital/asset-disposal-new/channel-partner/more-slider-img2.png" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+    </div>
+    <!-- more images slider -->
+
+    <script>
+        var googleCoordinates = '${pageProperties["google-co-ordinates"] @context="scriptString"}';
+        var propertyId = '${pageProperties["contract-no-"] @context="scriptString"}';
+        var propertyName = '${pageProperties["property-name"] @context="scriptString"}';
+        var propertyAge = '${pageProperties["property-age"] @context="scriptString"}';
+        var latitude = Number(googleCoordinates.split(",")[0]);
+        var longitude = Number(googleCoordinates.split(",")[1]);
+        var reservePrice = '${pageProperties["reserve-price"] @context="scriptString"}';
+        var marketValue = '${pageProperties["market-value"]  @context="scriptString"}';
+        var rmEmail = '${pageProperties["rm-e-mail"]  @context="scriptString"}';
+        var rmMobile = '${pageProperties["rm-no"]  @context="scriptString"}'
+    </script>
+    <script>
+        function initializeMap() {
+            if (typeof google === 'undefined' || typeof google.maps === 'undefined') {
+                console.error('Google Maps API is not loaded.');
+                return;
+            }
+
+            if (googleCoordinates !== '-') {
+                var mapProp = {
+                    center: new google.maps.LatLng(latitude, longitude),
+                    zoom: 5,
+                };
+                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(latitude, longitude),
+                    map: map
+                });
+            } else {
+                var mapView = document.querySelector(".map-view");
+                mapView.style.display = "none";
+            }
+        }
+
+        function loadGoogleMapsAPI() {
+            var script = document.createElement('script');
+            script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDrF-U0XoM3ne0IBgT2H9wwEJm2Q0ZGXcw&callback=initializeMap';
+            document.head.appendChild(script);
+        }
+
+        window.onload = function () {
+            loadGoogleMapsAPI();
+        };
+    </script>

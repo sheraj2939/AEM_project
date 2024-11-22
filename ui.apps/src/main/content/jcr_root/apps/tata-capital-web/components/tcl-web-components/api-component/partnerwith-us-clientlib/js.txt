@@ -1,0 +1,4 @@
+#base=js
+api.js
+biz.js
+partner-form-custom.js

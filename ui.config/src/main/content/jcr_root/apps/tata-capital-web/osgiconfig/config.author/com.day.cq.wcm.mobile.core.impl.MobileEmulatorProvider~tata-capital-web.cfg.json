@@ -1,0 +1,6 @@
+{
+  "mobile.resourceTypes": [
+    "tata-capital-web/components/page"
+  ],
+  "README": "Indicate which page resource types should display the mobile emulators."
+}

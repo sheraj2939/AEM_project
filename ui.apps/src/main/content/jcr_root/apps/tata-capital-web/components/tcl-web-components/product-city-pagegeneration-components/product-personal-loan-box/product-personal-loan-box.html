@@ -1,0 +1,51 @@
+<!--  personal-loan box  -->
+<section  data-sly-test="${!properties.dynamicPersonalLoanBox}"  class="personal-loan-box top-loan-space space-tb40">
+    <div class="container">
+        <div class="bg-div personal-cards personal-bottom-card">
+            <h2>Instant Personal Loan in <span class="upperFirstLatter">${PageProperties.cityName}</span></h2>
+            <div class="personal-para">
+                <p class="text16i">With a personal loan in <span class="upperFirstLatter">${PageProperties.cityName}?</span>, you can conveniently finance any big-ticket expenses-
+                    children's education, medical emergency, home renovation, family holiday, weddings and much more.
+                    Tata Capital brings to you multi-purpose personal loans with minimal documentation and an easy
+                    eligibility criterion.</p>
+                <p class="text16i">You can avail of a loan amount starting from Rs. 40,000 up to Rs. 35 lakhs with
+                    or pre-pay a portion of your loan amount at no extra charges.</p>
+                    flexible repayment tenure of up to 6 years. You can also increase your EMIs as your income increases
+                <p class="text16i">Tata Capital brings you the most affordable personal loan in <span class="upperFirstLatter">${PageProperties.cityName}?</span> with a quick and
+                    straightforward <a href="/content/tata-capital-web/en/personal-loan/application-process.html">personal loan application process</a>. Our quick turnaround period ensures your hefty payments are not
+                    delayed. Apply today.</p>
+            </div>
+        </div>
+        <div class="loan-details-outer">
+            <div class="loans-details-per">
+                <ul class="amount-info-pers">
+                    <li>
+                        <p class="text16i">Loan amount offered</p>
+                        <p class="heading20">₹ 40,000 - ₹ 35,00,000</p>
+                    </li>
+                    <li>
+                        <p class="text16i">Loan tenure</p>
+                        <p class="heading20">Upto 6 Years</p>
+                    </li>
+                    <li>
+                        <p class="text16i">Interest rate starting @</p>
+                        <div class="per-flex-text">
+                            <p class="heading20">11.99% p.a</p>
+                            <a class="btn-links views-links white-links"
+                                href="/content/tata-capital-web/en/personal-loan/rates-and-charges.html">View Rates &amp; Charges</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section data-sly-test="${properties.dynamicPersonalLoanBox}"  class="personal-loan-box top-loan-space space-tb40">
+    ${properties.dynamicPersonalLoanBox @ context  = 'html'}
+</section>
+
+<!-- personal-loan box-->

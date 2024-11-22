@@ -1,0 +1,56 @@
+<!--  customersay box  -->
+<sly data-sly-resource="${'container-main' @ resourceType='/apps/core/wcm/components/container/v1/container'}"></sly>
+<sly data-sly-use.model="${'com.tatacapital.web.core.models.CustomerSpeakModel' @ productName = properties.productSelect}">
+    <div class="customer-row" data-sly-test="${properties.videoTestimonial}">
+        <div class="customer-col">
+
+            <div class="customer-videos">
+                <div class="testi-with-video">
+                    <img src="${properties.videoImg}" alt="">
+                    <a href="javascript:void(0)" class="testi-play-btn" data-popovermodal="popover-modal" data-target="#video-modal" video-source="${properties.videoSrc}"></a>
+                </div>
+                <div class="customer-say-details">                                                                        
+                    <div class="customer-bottom">
+                        <div class="cust-bottom-left">
+                            <h6>${properties.authorName}</h6>
+                            <p class="loan-date"><span>${properties.loan}</span></p>
+                        </div>
+                        <div class="cust-bottom-right">
+                            <div class="list-star">
+                                <img src="/content/dam/tata-capital-web/assets/img/star-fill.svg" alt="">
+                                <img src="/content/dam/tata-capital-web/assets/img/star-fill.svg" alt="">
+                                <img src="/content/dam/tata-capital-web/assets/img/star-fill.svg" alt="">
+                                <img src="/content/dam/tata-capital-web/assets/img/star-fill.svg" alt="">
+                                <img src="/content/dam/tata-capital-web/assets/img/star-fill.svg" alt="">
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <sly data-sly-list="${model.customerData}">
+        <p>${item.reviewDescription}</p>
+        <h6>${item.customerName}</h6>
+        <p><span>${item.productName}</span> | ${item.date}</p>
+    </sly>
+</sly>
+<a href="${properties.btnLink}">Read All</a>
+<sly data-sly-list="${model.customerData}"> </sly>
+<sly data-sly-test.testimonialSchema="${model.testimonialSchema}"></sly>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "${model.ratingValue @ context='scriptComment'}",
+            "reviewCount": "${model.size @ context='scriptComment' }"
+        },
+        "description": "${model.description @ context='scriptComment'}",
+        "name": "${model.title @ context='scriptComment'}",
+        "review" : ${testimonialSchema.toString @ context='scriptComment'}
+    }
+</script>
+<!-- customersay box-->

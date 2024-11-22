@@ -1,0 +1,144 @@
+.key-people-box .key-people-cards {
+  padding: 25px;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(50.79% 52.48% at 48.36% 50.79%, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.98) 100%), radial-gradient(50.79% 52.48% at 48.36% 50.79%, rgba(18, 104, 179, 0.86) 0%, rgba(16, 141, 250, 0.95) 100%);
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.01), 5px 0px 10px rgba(0, 0, 0, 0.01), 0px -5px 10px rgba(0, 0, 0, 0.01), 0px 5px 10px rgba(0, 0, 0, 0.01);
+  border-radius: 30px;
+  transition: 0.2s all;
+}
+.key-people-box .key-people-cards:hover {
+  background: linear-gradient(134.06deg, rgba(18, 98, 167, 0.71) 0%, rgba(7, 125, 227, 0.95) 99.11%);
+  box-shadow: 0px 124px 49px rgba(15, 157, 245, 0.02), 0px 70px 42px rgba(15, 157, 245, 0.07), 0px 31px 31px rgba(15, 157, 245, 0.12), 0px 8px 17px rgba(15, 157, 245, 0.14), 0px 0px 0px rgba(15, 157, 245, 0.14);
+}
+.key-people-box .key-people-cards:hover .heading20, .key-people-box .key-people-cards:hover .text16i, .key-people-box .key-people-cards:hover .link-with-arrow {
+  color: #FFFFFF;
+}
+.key-people-box .key-people-cards:hover .text16i {
+  font-family: "OpenSans-SemiBold";
+}
+.key-people-box .key-people-cards:hover .key-people-bottom .logo-dsk {
+  display: none;
+}
+.key-people-box .key-people-cards:hover .key-people-bottom .logo-dsk-hover {
+  display: block;
+}
+.key-people-box .key-people-cards .key-people-top {
+  flex-grow: 1;
+}
+.key-people-box .key-people-cards .heading20 {
+  margin-bottom: 4px;
+}
+.key-people-box .key-people-cards .key-people-bottom {
+  padding-top: 30px;
+}
+.key-people-box .key-people-cards .key-people-bottom .comp-icon {
+  margin-bottom: 30px;
+}
+.key-people-box .key-people-cards .key-people-bottom .logo-dsk {
+  display: block;
+}
+.key-people-box .key-people-cards .key-people-bottom .logo-dsk-hover {
+  display: none;
+}
+.key-people-box .row-flex {
+  margin-top: -30px;
+}
+.key-people-box .row-flex .row-col-33 {
+  margin-top: 30px;
+}
+
+@media (max-width: 991px) {
+  .key-people-box .key-people-cards {
+    padding: 24px;
+    border-radius: 24px;
+  }
+  .key-people-box .key-people-cards .key-people-bottom {
+    padding-top: 20px;
+  }
+  .key-people-box .key-people-cards .key-people-bottom .comp-icon {
+    margin-bottom: 20px;
+  }
+  .key-people-box .row-flex .row-col-33 {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .key-people-box .key-people-cards .text16i {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .key-people-box .row-flex .row-col-33 {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
+custom-tab-dropdown {
+  position: relative;
+}
+.custom-tab-dropdown .custom-tab-drop-content {
+  padding-top: 20px;
+}
+.custom-tab-dropdown .custom-tab-drop-item {
+  display: none;
+}
+.custom-tab-dropdown .custom-tab-drop-item.active {
+  display: block;
+}
+.custom-tab-dropdown .custom-tab-drop-btn {
+  background: radial-gradient(50.79% 52.48% at 48.36% 50.79%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.72) 100%);
+  padding: 14px 28px 14px 14px;
+  box-shadow: 0px 7px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: inline-block;
+  font-family: "OpenSans-Bold";
+  font-size: 13px;
+  line-height: 17px;
+  color: #333333;
+  border-radius: 8px;
+}
+.custom-tab-dropdown .custom-tab-drop-btn.has-right-arrow {
+  position: relative;
+}
+.custom-tab-dropdown .custom-tab-drop-btn.has-right-arrow:after {
+  font-family: "icomoon";
+  content: "";
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 8px;
+}
+.custom-tab-dropdown .custom-tab-drop-btns {
+  position: relative;
+}
+.custom-tab-dropdown .custom-tab-drop-btns .custom-tab-drop-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.custom-tab-dropdown .custom-tab-drop-btns .custom-tab-drop-list .list {
+  margin-right: 20px;
+}
+.custom-tab-dropdown .custom-tab-drop-btns .custom-tab-drop-list .list:nth-last-child(1) {
+  margin-right: 0;
+}
+.custom-tab-dropdown .tab-drop-btn {
+  font-family: "OpenSans-SemiBold";
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: rgba(25, 97, 172, 0.6);
+  display: inline-block;
+}
+.custom-tab-dropdown .tab-drop-btn.active, .custom-tab-dropdown .tab-drop-btn:hover {
+  color: #FFFFFF;
+  background: linear-gradient(134.06deg, rgba(18, 104, 179, 0.71) 0%, rgba(16, 141, 250, 0.95) 99.11%);
+  box-shadow: 0px 124px 49px rgba(15, 157, 245, 0.02), 0px 70px 42px rgba(15, 157, 245, 0.07), 0px 31px 31px rgba(15, 157, 245, 0.12), 0px 8px 17px rgba(15, 157, 245, 0.14), 0px 0px 0px rgba(15, 157, 245, 0.14);
+}

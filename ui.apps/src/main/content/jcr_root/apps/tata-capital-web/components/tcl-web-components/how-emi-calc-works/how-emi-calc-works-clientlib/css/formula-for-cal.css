@@ -1,0 +1,107 @@
+.how-emi-calculated {
+	 position: relative;
+}
+ .how-emi-calculated .personal-cards {
+	 padding-right: 493px;
+	 max-width: 1012px;
+}
+ .how-emi-calculated .personal-cards .personal-para p {
+	 font-size: 14px;
+	 line-height: 20px;
+	 letter-spacing: 0.02em;
+}
+ .emi-calculation-details {
+	 position: absolute;
+	 right: 0;
+	 top: 50%;
+	 z-index: 1;
+	 transform: translateY(-50%);
+	 background: linear-gradient(134.06deg, rgba(18, 104, 179, 0.71) 0%, rgba(16, 141, 250, 0.95) 99.11%);
+	 backdrop-filter: blur(9px);
+	 border-radius: 30px;
+	 padding: 30px;
+	 min-width: 573px;
+	 width: 573px;
+}
+ .emi-calculation-details .sub-title {
+	 font-size: 13px;
+	 line-height: 17px;
+	 letter-spacing: 0;
+	 color: #fff;
+	 margin-bottom: 10px;
+}
+ .emi-calculation-details .heading20 {
+	 font-family: 'OpenSans-SemiBold';
+	 font-size: 20px;
+	 line-height: 27px;
+	 color: #fff;
+	 margin-bottom: 30px;
+}
+ .emi-calculation-details .unit-discription {
+	 display: flex;
+	 align-items: center;
+	 justify-content: space-between;
+}
+ .emi-calculation-details .unit-discription span {
+	 color: #fff;
+	 font-family: 'OpenSans-SemiBold';
+	 font-size: 16px;
+	 line-height: 21px;
+}
+ @media (max-width: 1199px) {
+	 .how-emi-calculated .personal-cards {
+		 max-width: 780px;
+	}
+}
+ @media (max-width: 991px) {
+	 .how-emi-calculated .personal-cards {
+		 padding-right: 40px;
+		 max-width: 780px;
+		 padding-bottom: 144px;
+	}
+	 .emi-calculation-details {
+		 position: static;
+		 transform: translateY(0);
+		 margin: -124px auto auto;
+		 max-width: 400px;
+		 min-width: fit-content;
+	}
+	 .emi-calculation-details .unit-discription {
+		 flex-direction: column;
+		 align-items: self-start;
+	}
+	 .emi-calculation-details .unit-discription span {
+		 margin-bottom: 4px;
+	}
+	 .emi-calculation-details .unit-discription span:nth-last-child(1) {
+		 margin-bottom: 0;
+	}
+}
+ @media (max-width: 767px) {
+	 .how-emi-calculated .personal-cards {
+		 padding-right: 24px;
+	}
+	 .how-emi-calculated .personal-cards .personal-para p {
+		 font-size: 13px;
+		 line-height: 18px;
+	}
+	 .emi-calculation-details {
+		 padding: 25px;
+		 width: 100%;
+		 min-width: auto;
+		 max-width: calc(100% - 48px);
+	}
+	 .emi-calculation-details .sub-title {
+		 line-height: 18px;
+	}
+	 .emi-calculation-details .heading20 {
+		 font-size: 14px;
+		 line-height: 18px;
+		 margin-bottom: 20px;
+	}
+	 .emi-calculation-details .unit-discription span {
+		 font-size: 14px;
+		 line-height: 18px;
+	}
+}
+ 

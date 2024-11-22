@@ -1,0 +1,6 @@
+.tab-btn-group .tab-item:nth-last-child(1) .tab-button{
+	margin-right:20px;
+}
+.custom-dropdown-list .simplebar-track .simplebar-scrollbar::before{
+	background: none;
+}

@@ -1,0 +1,84 @@
+<section class="credit-card-box space-tb40 space-b80">
+    <div class="container">
+        <div class="tops-heads">
+            <sly
+                data-sly-resource="${'cars-table-title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+            </sly>
+        </div>
+        <div class="bg-div credit-card-wrap">
+            <div class="table-outer-border-radius">
+                <div class="table-section">
+                    <div class="table-block" id="tablefixed-left">
+                        <table class="table-main striped-table w-100">
+                            <thead>
+                                <tr>
+                                    <sly data-sly-list.itemList="${resource.children}">
+                                        <sly data-sly-test="${itemList.name == 'theading'}">
+                                            <sly data-sly-list.thData="${itemList.children}">
+                                                <th scope="col">
+                                                    <sly data-sly-test="${thData.cardHeadImage}">
+                                                        <img src="${thData.cardHeadImage}" alt="${thData.cardAltImage}">
+                                                    </sly>
+                                                    ${thData.thdata}
+                                                </th>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <sly data-sly-list.itemList="${resource.children}">
+                                    <sly data-sly-test="${itemList.name == 'tableRow'}">
+                                        <sly data-sly-list.tablerow="${itemList.children}">
+                                            <tr>
+                                                <sly data-sly-list.trlist="${tablerow.children}">
+                                                    <sly data-sly-test="${trlist.name == 'trowdata'}">
+                                                        <sly data-sly-list.tr="${trlist.children}">
+                                                            <td>${tr.rowDescription @ context = 'html'}
+                                                                <sly data-sly-test="${tr.btnText}">
+                                                                    <div class="credit-btns">
+                                                                        <sly data-sly-test="${!tr.needPopup}">
+                                                                            <a href="${tr.btnUrl}"
+                                                                                class="btn-blue btn-large" target="${tr.newTab ? '_blank' : ' '}">${tr.btnText}</a>
+                                                                        </sly>
+                                                                        <sly data-sly-test="${tr.needPopup}">
+                                                                            <a data-btnurl="${tr.btnUrl}"
+                                                                            data-popovermodal="popover-modal" data-target="#thirdParty-modal" class="btn-blue btn-large jsOpenModal JsCreditCard">${tr.btnText}</a>
+                                                                        </sly>
+                                                                    </div>
+                                                                </sly>
+                                                            </td>
+                                                        </sly>
+                                                    </sly>
+                                                </sly>
+                                            </tr>
+                                        </sly>
+                                    </sly>
+                                </sly>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Third Party modal -->
+<div class="popover-modal fade" id="thirdParty-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md2">
+      <div class="popover-modal-content credit-cards-content">
+        <button data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></button>    
+        <div class="popover-modal-body">                      
+          <div class="modal-body-inner">
+            <p>You will now be redirected to www.tatacard.com website.</p> 
+            <p>
+                By proceeding, you are acknowledging the above & accepting the <a href="https://www.tatacapital.com/content/dam/tata-capital/credit-card-form-pdfs/TermsandConditionsSBIeapply.pdf" target="_self">Terms and Conditions</a> as specified here.
+            </p>
+            <a href="https://www.tatacard.com/" id="thirdPartyPopUpURL" class="btn-blue btn-large" data-header="headerAnalyticData-Header Credit Card Section" target="_blank">Proceed</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Third Party modal -->

@@ -1,0 +1,28 @@
+<div class="footer-inner-lc footer-row">
+    <div class="footer-col">
+        <p class="footer-headings">${properties.importantInfotittle}</p>
+        <div class="footer-body">
+            <ul class="footer-body-links">
+
+                <sly data-sly-list.loginLinks="${resource.listChildren}">
+                    <sly data-sly-test="${loginLinks.name == 'importantInfoList'}">
+                        <sly data-sly-list.importantInfoList="${loginLinks.listChildren}">
+                            <sly data-sly-test="${importantInfoList.languagePopup}">
+                                <li><a data-popovermodalmitc2="#language-notification2"
+                                        href="${importantInfoList.redirectionLink}"
+                                        target="${importantInfoList.redirectionLink ? '_blank' : ''}">${importantInfoList.heading}</a>
+                                </li>
+                            </sly>
+                            <sly data-sly-test="${!importantInfoList.languagePopup}">
+                                <li><a href="${importantInfoList.redirectionLink}"
+                                        target="${importantInfoList.redirectionLink ? '_blank' : ''}">${importantInfoList.heading}</a>
+                                </li>
+                            </sly>
+                        </sly>
+                    </sly>
+                </sly>
+
+            </ul>
+        </div>
+    </div>
+</div>

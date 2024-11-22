@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-12-16T11:16:39.296+05:30"
+        cq:lastModifiedBy="rinkal"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/tata-capital-web/settings/wcm/templates/tatacapital-web-footer-template"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Footer Experience Fragment"
+        sling:resourceType="tata-capital-web/components/xfpage">
+        <root
+            jcr:lastModified="{Date}2022-12-16T11:16:39.295+05:30"
+            jcr:lastModifiedBy="rinkal"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="tata-capital-web/components/container"
+            layout="responsiveGrid">
+            <footer_top_exp
+                jcr:created="{Date}2022-12-02T01:40:29.246+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-12-02T01:40:29.246+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/TC-Revamp/Tc-Footer/footer-top-exp">
+                <footerTopData jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        heading="About Us"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        heading="Careers"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        heading="Media Careers"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        heading="Sustainability"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        heading="Blog"/>
+                    <item5
+                        jcr:primaryType="nt:unstructured"
+                        heading="Contact us"/>
+                    <item6
+                        jcr:primaryType="nt:unstructured"
+                        heading="Branch Locator"/>
+                </footerTopData>
+            </footer_top_exp>
+        </root>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,159 @@
+.explore-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.explore-box h2 {
+  margin-bottom: 40px;
+}
+.explore-box .explore-col {
+  padding: 0 10px;
+}
+.explore-box .say-blur {
+  position: absolute;
+  right: 22%;
+  top: 64px;
+}
+.explore-box .explore-inner {
+  padding: 0 20px;
+}
+.explore-box .slider-arrows .slick-prev {
+  left: -50px;
+}
+.explore-box .slider-arrows .slick-next {
+  right: -50px;
+}
+.explore-box .explore-details {
+  background: radial-gradient(50.79% 52.48% at 48.36% 50.79%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.72) 100%);
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.01), 5px 0px 10px rgba(0, 0, 0, 0.01), 0px -5px 10px rgba(0, 0, 0, 0.01), 0px 5px 10px rgba(0, 0, 0, 0.01);
+  border: 1px solid #FFFFFF;
+  border-radius: 40px;
+  padding: 25px 25px 50px;
+  margin-bottom: 20px;
+  min-height: 205px;
+  position: relative;
+}
+.explore-box .explore-details h5 {
+  font-family: "OpenSans-SemiBold";
+}
+.explore-box .explore-details h5 a {
+  color: #333;
+  display: inline-block;
+  line-height: 24px;
+}
+.explore-box .explore-details h5 a:hover {
+  text-decoration: none;
+  color: #1961AC;
+}
+.explore-box .explore-details .explore-heading {
+  position: relative;
+  min-height: 47px;
+  display: flex;
+  align-items: center;
+  padding-left: 65px;
+  margin-bottom: 20px;
+}
+.explore-box .explore-details .explore-heading .img-icons {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.explore-box .explore-details p {
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: rgba(51, 51, 51, 0.6);
+  margin-bottom: 20px;
+}
+.explore-box .explore-details .btn-lists {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 25px;
+  padding: 0 25px;
+}
+.explore-box .explore-details .btn-lists .btn-links {
+  margin-left: 25px;
+}
+.explore-box .explore-details .btn-lists .btn-links:first-child {
+  margin-left: 0px;
+}
+
+@media (max-width: 1199px) {
+  .explore-box .explore-details .btn-lists {
+    bottom: 35px;
+  }
+}
+@media (max-width: 991px) {
+  .explore-box .slider-arrows .slick-prev {
+    left: -15px;
+  }
+  .explore-box .slider-arrows .slick-next {
+    right: -15px;
+  }
+  .explore-box .explore-inner {
+    padding: 0;
+  }
+  .explore-box .explore-details {
+    min-height: 212px;
+  }
+  .explore-box .explore-details .explore-heading {
+    min-height: 40px;
+    padding-left: 55px;
+  }
+  .explore-box .explore-details .explore-heading .img-icons {
+    width: 40px;
+  }
+  .explore-box .explore-details .heading20 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .explore-box .explore-details .btn-lists .btn-links {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+@media (max-width: 767px) {
+  .explore-box:before {
+    right: auto;
+    left: 158px;
+    top: -125px;
+  }
+  .explore-box:after {
+    display: none;
+  }
+  .explore-box .slick-list {
+    padding-left: 8px !important;
+  }
+  .explore-box h2 {
+    margin-bottom: 30px;
+  }
+  .explore-box .explore-details {
+    min-height: 220px;
+    height: 100%;
+    border-radius: 35px;
+  }
+  .explore-box .explore-details .btn-lists .btn-links {
+    font-family: "OpenSans-SemiBold";
+  }
+  .explore-box .explore-product-slider {
+    padding-bottom: 20px;
+  }
+  .explore-box .explore-col {
+    height: 100%;
+    padding: 0 7px;
+  }
+  .explore-box .mob-pd0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media (max-width: 359px) {
+  .explore-box .explore-details .btn-lists .btn-links {
+    margin-left: 12px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

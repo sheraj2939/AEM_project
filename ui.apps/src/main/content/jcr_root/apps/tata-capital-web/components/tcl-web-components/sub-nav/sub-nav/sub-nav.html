@@ -1,0 +1,177 @@
+<div class="overview-top-space">
+    <section class="overviews-tab-box js-floating">
+        <div class="custom-container">
+            <div class="np-inner">
+                <div class="overviews-row  ${properties.btnText ? '': 'with-no-btn'}">
+                    <!-- desktop view -->
+
+                    <sly data-sly-test="${!properties.backTabLink}">
+                        <div class="overviews-tab">
+                            <ul class="overviews-link">
+                                <sly data-sly-list="${resource.children}">
+                                    <sly data-sly-test="${item.name=='overviewsLinkField'}">
+                                        <sly data-sly-list.outernav="${item.children}">
+
+                                            <li
+                                                class="${outernav.accordionActive? 'active' : ''}${outernav.moreTab? ' show-dsk' : ''}">
+                                                <sly data-sly-test="${outernav.accordion}">
+                                                    <sly data-sly-test="${!outernav.ACLink}">
+                                                        <a href="javascript:void(0)"
+                                                            class="${outernav.accordion ? 'link-submenu' : ''}"
+                                                            target=" ${outernav.newTab ? '_blank' : '' }"
+                                                            data-subnav-click="sub-navigation-component">${outernav.overviewText}</a>
+                                                    </sly>
+                                                    <sly data-sly-test="${outernav.ACLink}">
+                                                        <a href="${outernav.overviewLink}"
+                                                            class="${outernav.accordion ? 'link-submenu' : ''}"
+                                                            target=" ${outernav.newTab ? '_blank' : '' }"
+                                                            data-subnav-click="sub-navigation-component">${outernav.overviewText}</a>
+                                                    </sly>
+                                                </sly>
+                                                <sly data-sly-test="${!outernav.accordion}">
+                                                    <a href="${outernav.overviewLink}"
+                                                        class="${outernav.accordion ? 'link-submenu' : ''}"
+                                                        target=" ${outernav.newTab ? '_blank' : '' }"
+                                                        data-subnav-click="sub-navigation-component">${outernav.overviewText}</a>
+                                                </sly>
+                                                <sly data-sly-test="${outernav.accordion}">
+                                                    <div class="overview-sub-menu">
+                                                        <ul>
+                                                            <sly data-sly-list="${outernav.children}">
+                                                                <sly data-sly-test="${item.name=='overviewSubMenu'}">
+                                                                    <sly data-sly-list.outernav2="${item.children}">
+                                                                        <sly
+                                                                            data-sly-test.activeInnerLink="${outernav2.overviewSubMenuLink==request.pathInfo.toString}">
+                                                                        </sly>
+                                                                        <li class="${activeInnerLink ? 'active' : ''}">
+                                                                            <a target=" ${outernav.newTab ? '_blank' : '' }"
+                                                                                href="${outernav2.overviewSubMenuLink}"
+                                                                                data-subnav-click="sub-navigation-component">${outernav2.overviewSubMenuText}</a>
+                                                                        </li>
+                                                                    </sly>
+                                                                </sly>
+                                                            </sly>
+
+
+                                                        </ul>
+                                                    </div>
+                                                </sly>
+                                            </li>
+                                        </sly>
+                                    </sly>
+                                </sly>
+                                <sly data-sly-test="${properties.moreTabActive}">
+                                    <li class="show-tabs${properties.activeMore? ' active' : ''}">
+                                        <a href="javascript:void(0)" class="link-submenu">More</a>
+                                        <div class="overview-sub-menu">
+                                            <ul>
+                                                <sly data-sly-list="${resource.children}">
+                                                    <sly data-sly-test="${item.name=='overviewsLinkField'}">
+                                                        <sly data-sly-list.outernav="${item.children}">
+                                                            <sly data-sly-test="${outernav.moreTab}">
+                                                                <li class="${outernav.accordionActive? 'active' : ''}">
+                                                                    <a href="${outernav.overviewLink}"
+                                                                        class="${outernav.accordion ? 'link-submenu' : ''}"
+                                                                        target=" ${outernav.newTab ? '_blank' : '' }"
+                                                                        data-subnav-click="sub-navigation-component">${outernav.overviewText}</a>
+                                                                </li>
+                                                            </sly>
+                                                        </sly>
+                                                    </sly>
+                                                </sly>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </sly>
+                            </ul>
+                        </div>
+                    </sly>
+                    <!-- desktop view -->
+                    <!-- Back to links -->
+                    <sly data-sly-test="${properties.backTabLink}">
+                        <div class="backtolinks">
+                            <a href="${properties.backLink}" class="backtos"><span
+                                    class="${properties.backIcon}"></span>${properties.backText}</a>
+                        </div>
+                    </sly>
+                    <!-- back to links -->
+                    <!-- tab and mobile -->
+                    <sly data-sly-test="${!properties.backTabLink}">
+                        <div class="mob-overviews-tab close-on-outside">
+                            <a href="${properties.mobTabLink}"
+                                class="overviews-links jsMobOverviewsLink">${properties.mobTabText}</a>
+                        </div>
+                    </sly>
+                    <!-- tab and mobile -->
+
+                    <sly data-sly-test="${properties.btnText}">
+                        <div class="apply-over-btn">
+                            <a type="button" class="btn-blue animated-btn" href="${properties.redirectionLink}"
+                                data-cta="sub-navigation-component"
+                                target=" ${properties.newTab ? '_blank' : '' }">${properties.btnText} <span>
+                                    ${properties.btnSpanText}</span></a>
+                        </div>
+                    </sly>
+
+                    <!-- tab and mobile -->
+                    <div class="mob-overviews-accodian close-on-outside">
+                        <div class="accord-overviews-outer jsNavAccordian">
+
+                            <sly data-sly-list="${resource.children}">
+                                <sly data-sly-test="${item.name=='overviewsLinkField'}">
+                                    <sly data-sly-list.outernav="${item.children}">
+
+
+                                        <sly data-sly-test="${outernav.accordion}">
+                                            <div class="accord-col" accod-row>
+                                                <div class="accord-heads sub-bg">
+                                                    <a href="${outernav.overviewLinkMobile}"
+                                                        class="submenu-head ${outernav.accordionActive? 'activeAccord' : ''}">${outernav.overviewText}</a>
+                                                    <span class="accord-head-arrow" accod-head></span>
+                                                </div>
+                                                <div class="accord-body" accod-body>
+                                                    <ul class="mob-sub-links">
+                                                        <sly data-sly-list="${outernav.children}">
+                                                            <sly data-sly-test="${item.name=='overviewSubMenu'}">
+                                                                <sly data-sly-list.outernav2="${item.children}">
+                                                                    <sly
+                                                                        data-sly-test.activeInnerLink="${outernav2.overviewSubMenuLink==request.pathInfo.toString}">
+                                                                    </sly>
+                                                                    <li class="${activeInnerLink ? 'active' : ''}">
+
+                                                                        <a href="${outernav2.overviewSubMenuLink}"
+                                                                            target=" ${outernav.newTab ? '_blank' : '' }"
+                                                                            class="submenu-head">${outernav2.overviewSubMenuText}</a>
+                                                                    </li>
+                                                                </sly>
+                                                            </sly>
+                                                        </sly>
+
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${!outernav.accordion}">
+                                            <sly
+                                                data-sly-test.activeLink="${outernav.overviewLink==request.pathInfo.toString}">
+                                            </sly>
+                                            <a href="${outernav.overviewLink}"
+                                                class="submenu-head sub-bg ${activeLink ? 'activelink': ''}"
+                                                target=" ${outernav.newTab ? '_blank' : '' }">${outernav.overviewText}</a>
+
+                                        </sly>
+                                    </sly>
+                                </sly>
+                            </sly>
+                            </sly>
+
+
+                        </div>
+                    </div>
+                    <!-- tab and mobile -->
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

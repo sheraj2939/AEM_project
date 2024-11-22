@@ -1,0 +1,339 @@
+<!--  banner cntr  start 2-2-2023 -->
+<section
+    class="banner-cntr-new  ${properties.bannerstyle} ${properties.tcclHome ? 'pd-t0i' : ''} ${properties.styleChange ? 'banner-height' : ' '} ${properties.topSpace ? 'banner-pdt28' : ''}">
+    <div class="custom-container">
+        <article class="banner-new-box ${properties.firstWhiteDots ? 'banner-white-dots': ' '}">
+            <div class="banner-slider-new ${properties.tcclHome ? 'homepage-banner' : ''} ${properties.bannerstyle ?' ': ' slider-dots'}"
+                id="${properties.bannerstyle ? ' ': 'jsNewBannerSlider'}">
+                <sly data-sly-list.banner="${resource.children}">
+                    <sly data-sly-test="${banner.name == 'bannerMultifield'}">
+                        <sly data-sly-list.bannerItem="${banner.children}">
+                            <!-- Banner white default -->
+                            <div class="banner-item-new">
+                                <div class="banner-wrap ${bannerItem.bannerThemeName} ${bannerItem.bannerDots} ${bannerItem.checkNewsList ? 'homeloans-contents' : ''}">
+                                    <div class="banner-text-new">
+                                        <div class="banner-captions">
+                                            <div class="main-title">
+                                                <div class="main-title-inner">
+                                                    <sly data-sly-test="${bannerItem.preTitle}">
+                                                        <p class="subheading13">${bannerItem.preTitle}</p>
+                                                    </sly>
+                                                    <sly data-sly-test="${bannerItem.selectBannerTitle =='hOne'}">
+                                                        <h1 class="heading-h1">${bannerItem.productName}
+                                                            <span class = "${bannerItem.newBoldLine?'new-line-bold':''}">${bannerItem.productTitle}</span>${bannerItem.afterBold}
+                                                        </h1>
+                                                    </sly>
+                                                    <sly data-sly-test="${bannerItem.selectBannerTitle =='hTwo'}">
+                                                        <h2 class="heading-h1">${bannerItem.productName}
+                                                            <span class = "${bannerItem.newBoldLine?'new-line-bold':''}">${bannerItem.productTitle}</span>${bannerItem.afterBold}
+                                                        </h2>
+                                                    </sly>
+                                                    <sly data-sly-test="${bannerItem.selectBannerTitle =='pTag'}">
+                                                        <p class="heading-h1">${bannerItem.productName}
+                                                            <span class = "${bannerItem.newBoldLine?'new-line-bold':''}">${bannerItem.productTitle}</span>${bannerItem.afterBold}
+                                                        </p>
+                                                    </sly>
+                                                </div>
+                                            </div>
+                                            <sly data-sly-test="${bannerItem.ratingOption}">
+                                                <sly
+                                                    data-sly-use.model="${'com.tatacapital.web.core.models.CustomerSpeakModel' @ productName = bannerItem.productRating}">
+                                                    <sly data-sly-test="${model.customerData}"></sly>
+                                                    <div class="banner-ratings-outer"
+                                                        data-product="${bannerItem.productRating}">
+                                                        <a href="/content/tata-capital-web/en/contact-us/customer-testimonials.html?activeProduct=${bannerItem.productRating}"
+                                                            class="banner-rating-review">
+                                                            <div class="banner-rating-star bannerStars"
+                                                                data-ratingavg='${model.getTotalAvgRatingValue}'>
+
+                                                            </div>
+                                                            <span
+                                                                class="rating-texts bold">${model.getTotalAvgRatingValue}/5</span>
+                                                            <span class="rating-texts">(
+                                                                ${model.getTotalCountOfReviews @
+                                                                context='scriptComment'} reviews)</span>
+                                                        </a>
+                                                    </div>
+                                                </sly>
+                                            </sly>
+                                            <sly data-sly-test="${bannerItem.subHeading}">
+                                                <div class="title-info">
+                                                    <p>${bannerItem.productDescription @ context = 'html'}</p>
+                                                </div>
+                                                <div data-sly-test="${bannerItem.checkNewsList}" class="banner-list-news">
+                                                    <div class="banner-list-ul">
+                                                        <sly data-sly-list.nweslist="${bannerItem.Children}">
+                                                            <sly data-sly-test="${nweslist.name == 'bannerListNews'}">
+                                                                <sly data-sly-list.nwesItem="${nweslist.children}">
+                                                                    <div class="banner-list-li">
+                                                                        <div class="bannr-text-img">
+                                                                            <span
+                                                                                class="custom-icons ${nwesItem.iconClassName ? nwesItem.iconClassName : ''} bg-light-purple"></span>
+                                                                            <div>${nwesItem.newsDescription @ context = 'html'}</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </sly>
+                                                            </sly>
+                                                        </sly>
+                                                    </div>
+                                                </div>
+                                            </sly>
+                                            <sly data-sly-test=" ${properties.bannerstyle == 'home-loan-overview'}">
+                                                <div class="banner-ratings-lists">
+                                                    <div class="shops-ratings-row">
+                                                        <div class="shops-cols">
+                                                            <p class="shops-ratings">${bannerItem.avgRating} <span class="icon-star"></span></p>
+                                                            <span class="shops-rating-review">${bannerItem.totalRating}</span>
+                                                        </div>
+                                                        <div class="shops-cols">
+                                                            <p class="shops-ratings">${bannerItem.customerCount}</p>
+                                                            <span class="shops-rating-review">${bannerItem.countText}</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="steps-downloads-store">
+                                                        <a href="${bannerItem.playStoreLink}" target="${bannerItem.openInNewTab ? '_blank':''}">
+                                                            <img src="${bannerItem.playStore}" alt="Play Store">
+                                                        </a>
+                                                        <a href="${bannerItem.appStoreLink}" target="${bannerItem.openInNewTab ? '_blank':''}">
+                                                            <img src="${bannerItem.appStore}" alt="App Icon">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </sly>
+                                            <!-- mobile banner -->
+                                            <div class="banner-img mob-banners d-block d-md-none">
+                                                <sly data-sly-test="${!bannerItem.lozadImage}">
+                                                    <picture>
+                                                        <source media="(max-width: 767px)"
+                                                            srcset="${bannerItem.mobileImage}">
+                                                        <img src alt="${bannerItem.ImageAltTitle}" class="banners-img"
+                                                            fetchpriority="high" decoding="sync">
+                                                    </picture>
+                                                </sly>
+                                                <sly data-sly-test="${bannerItem.lozadImage}">
+                                                    <picture class="lozad">
+                                                        <source media="(max-width: 767px)"
+                                                            srcset="${bannerItem.mobileImage}">
+                                                        <!-- <img src alt="" class="banners-img"> -->
+                                                    </picture>
+                                                </sly>
+                                                <sly data-sly-test='${bannerItem.bannerVideo}'>
+                                                    <a href="javascript:void(0)" class="banner-play-btn"
+                                                        data-videourl="${bannerItem.bannerVideo}"
+                                                        data-popovermodal="popover-modal" data-target="#player-modal">
+                                                        <img src="/content/dam/tata-capital-web/assets/img/youtube-play-btn.svg"
+                                                            alt="">
+                                                    </a>
+                                                </sly>
+                                            </div>
+                                            <div class="banner-list-info">
+                                                <div class="row-flex">
+                                                    <sly data-sly-list.bannerBox="${bannerItem.children}">
+                                                        <sly data-sly-test="${bannerBox.name == 'boxMultiFeild'}">
+                                                            <sly data-sly-list.bannerBoxItem="${bannerBox.children}">
+                                                                <div class="col-sp15 row-col-33">
+                                                                    <div class="banner-info-col">
+                                                                        <div class="info-tops">
+                                                                            <span class="all-icon32">
+                                                                                <span
+                                                                                    class="${bannerBoxItem.iconClass}"></span>
+                                                                            </span>
+                                                                            <p class="text16 semibold">
+                                                                                ${bannerBoxItem.boxTitle}</p>
+                                                                        </div>
+                                                                        <p class="text14i">${bannerBoxItem.boxDetails}
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </sly>
+                                                        </sly>
+                                                    </sly>
+                                                </div>
+                                            </div>
+                                            <!-- mobile banner -->
+                                            <div class="dsk-banner-cta btn-holder">
+                                                <sly data-sly-test="${bannerItem.primaryButtonTitle}">
+                                                    <sly
+                                                        data-sly-test="${!bannerItem.primaryPopupShow && !bannerItem.needPopup && !bannerItem.creditScoreBtn}">
+                                                        <a aria-label="link" href="${bannerItem.primaryButtonLink}"
+                                                            type="button"
+                                                            class="btn-blue btn-large cta-gap ${bannerItem.primaryButtonColor}"
+                                                            target="${bannerItem.primaryButtonLinkOpenInNewTab ? '_blank' : '' }">${bannerItem.primaryButtonTitle}</a>
+                                                    </sly>
+                                                    <sly data-sly-test="${bannerItem.primaryPopupShow }">
+                                                        <a href="javascript:void(0)" aria-label="link" type="button"
+                                                            data-popovermodal="popover-modal" data-widget="DownLoad App"
+                                                            data-target="${bannerItem.primaryPopup}"
+                                                            class="btn-blue btn-large cta-gap ${bannerItem.primaryButtonColor}">${bannerItem.primaryButtonTitle}</a>
+                                                    </sly>
+                                                    <sly data-sly-test="${bannerItem.needPopup}">
+                                                        <a href="javascript:void(0)" aria-label="link" type="button"
+                                                            data-popovermodal="popover-modal"
+                                                            data-target="#creditCards-modal-banner"
+                                                            class="jsOpenModal JsCreditCard"
+                                                            class="btn-blue btn-large cta-gap ${bannerItem.primaryButtonColor}">${bannerItem.primaryButtonTitle}</a>
+                                                    </sly>
+                                                    <sly data-sly-test="${bannerItem.creditScoreBtn}">
+                                                        <sly
+                                                            data-sly-use.tataCapitalWebConfiguration="com.tatacapital.web.core.services.TataCapitalWebConfiguration" />
+                                                        <a href="${tataCapitalWebConfiguration.config.checkCreditScoreDomainUrl @ context = 'uri'}/partner/int/creditscore/website/index.html?src=website&isExistingCustomer=false"
+                                                            target="${bannerItem.primaryButtonLinkOpenInNewTab ? '_blank' : '' }"
+                                                            aria-label="link" type="button"
+                                                            class="jsOpenModal JsCreditCard"
+                                                            class="btn-blue btn-large cta-gap ${bannerItem.primaryButtonColor}">${bannerItem.primaryButtonTitle}</a>
+                                                    </sly>
+                                                </sly>
+                                                <sly
+                                                    data-sly-test="${bannerItem.secondaryButtonTitle && !bannerItem.secondaryneedPopup && !bannerItem.secondaryCreditScoreBtn}">
+                                                    <sly data-sly-test="${!bannerItem.secondaryPopupShow}">
+                                                        <a href="${bannerItem.primaryButtonLink}" aria-label="link"
+                                                            href="${bannerItem.secondaryButtonLink}" type="button"
+                                                            class="btn-link btn-big cta-gap"
+                                                            target="${bannerItem.secondaryButtonLinkOpenInNewTab ? '_blank' : '' }">${bannerItem.secondaryButtonTitle}</a>
+                                                    </sly>
+                                                    <sly data-sly-test="${bannerItem.secondaryPopupShow}">
+                                                        <a href="javascript:void(0)" aria-label="link" type="button"
+                                                            data-popovermodal="popover-modal" data-widget="DownLoad App"
+                                                            data-target="${bannerItem.secondaryPopup}"
+                                                            class="btn-link btn-big cta-gap">${bannerItem.secondaryButtonTitle}</a>
+                                                    </sly>
+                                                    <sly data-sly-test="${bannerItem.secondaryneedPopup}">
+                                                        <a href="javascript:void(0)" aria-label="link" type="button"
+                                                            data-popovermodal="popover-modal"
+                                                            data-target="#creditCards-modal-banner"
+                                                            class="jsOpenModal JsCreditCard"
+                                                            class="btn-link btn-big cta-gap">${bannerItem.secondaryButtonTitle}</a>
+                                                    </sly>
+                                                </sly>
+                                                <sly data-sly-test="${bannerItem.secondaryCreditScoreBtn}">
+                                                    <sly
+                                                        data-sly-use.tataCapitalWebConfiguration="com.tatacapital.web.core.services.TataCapitalWebConfiguration" />
+                                                    <a href="${tataCapitalWebConfiguration.config.checkCreditScoreDomainUrl @ context = 'uri'}/partner/int/creditscore/website/index.html#/?src=website&isExistingCustomer=true"
+                                                        target="${bannerItem.primaryButtonLinkOpenInNewTab ? '_blank' : '' }"
+                                                        aria-label="link" type="button" class="jsOpenModal JsCreditCard"
+                                                        target="${bannerItem.secondaryButtonLinkOpenInNewTab ? '_blank' : '' }"
+                                                        class="btn-link btn-big cta-gap">${bannerItem.secondaryButtonTitle}</a>
+                                                </sly>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- desktop banner -->
+                                    <div class="banner-img d-none d-md-block">
+                                        <sly data-sly-test="${!bannerItem.lozadImage}">
+                                            <picture style="display: block; min-height: 1rem"
+                                                data-iesrc="${bannerItem.desktopImage}" data-alt="">
+                                                <source srcset="${bannerItem.desktopImage}" media="(min-width: 1200px)">
+                                                <source srcset="${bannerItem.tabImage}" media="(min-width: 768px)">
+                                                <img src alt="${bannerItem.ImageAltTitle}" class="banners-img"
+                                                    fetchpriority="high" decoding="sync">
+                                            </picture>
+                                        </sly>
+                                        <sly data-sly-test="${bannerItem.lozadImage}">
+                                            <picture class="lozad" style="display: block; min-height: 1rem"
+                                                data-iesrc="${bannerItem.desktopImage}" data-alt="">
+                                                <source srcset="${bannerItem.desktopImage}" media="(min-width: 1200px)">
+                                                <source srcset="${bannerItem.tabImage}" media="(min-width: 768px)">
+                                                <!-- <img src="${bannerItem.desktopImage}" alt="" class="banners-img">                                                 -->
+                                            </picture>
+                                        </sly>
+                                    </div>
+                                    <sly data-sly-test='${bannerItem.bannerVideo}'>
+                                        <a href="javascript:void(0)" class="banner-play-btn"
+                                            data-videourl="${bannerItem.bannerVideo}" data-popovermodal="popover-modal"
+                                            data-target="#player-modal">
+                                            <img src="/content/dam/tata-capital-web/assets/img/youtube-play-btn.svg"
+                                                alt="">
+                                        </a>
+                                    </sly>
+                                    <!-- desktop banner -->
+                                </div>
+                            </div>
+                            <!-- Banner white default -->
+                        </sly>
+                    </sly>
+                </sly>
+
+            </div>
+        </article>
+    </div>
+</section>
+<!-- banner cntr end 2-2-2023 -->
+
+<sly data-sly-test=${Properties.imageSchema}>
+<sly data-sly-use.model="com.tatacapital.web.core.models.ImageSchemaModel"/>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "ImageObject",
+          "description": "${model.imageDescription @context='scriptComment' || 'TATA CAPITAL DESCRIPTION'}",
+          "url": "${model.imageUrl @context='scriptComment' || 'TATA CAPITAL Url'}"
+        }
+    </script>
+</sly>
+
+
+<!-- video modal --> <!-- 27-10-2023 -->
+<div class="popover-modal fade" id="player-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-lg2">
+        <div class="popover-modal-content video-modals">
+            <button data-dismiss="popover-modal" class="popover-modal-close"><span class="icon-close"></span></button>
+            <div class="popover-modal-body">
+                <div class="videos-outer" id="videos-outer">
+                    <iframe src="" id="videoIframeLink" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; autostop; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- video modal --><!-- 27-10-2023 -->
+
+
+<script>
+    try {
+        var avgRating = parseFloat(document.querySelector('.bannerStars').getAttribute('data-ratingavg'));
+        var starsAppend = document.querySelector('.bannerStars');
+
+        for (var starsLoop = 1; starsLoop <= 5; starsLoop += 1) {
+            if (starsLoop <= avgRating) {
+                starsAppend.innerHTML += `<img width="16" height="15" src="/content/dam/tata-capital-web/assets/img/star-fill-2.svg" alt="">`;
+            } else {
+                var fractionalPart = avgRating - Math.floor(avgRating);
+                if (starsLoop - 1 === Math.floor(avgRating) && fractionalPart >= 0.1 && fractionalPart <= 0.4) {
+                    starsAppend.innerHTML += `<img width="16" height="15" src="/content/dam/tata-capital-web/assets/img/star-fill-fourth.svg" alt="">`;
+                }
+                else if (starsLoop - 1 === Math.floor(avgRating) && fractionalPart == 0.5) {
+                    starsAppend.innerHTML += `<img width="16" height="15" src="/content/dam/tata-capital-web/assets/img/star-fill-half.svg" alt="">`;
+                }
+                else if (starsLoop - 1 === Math.floor(avgRating) && fractionalPart > 0.5 && fractionalPart <= 0.9) {
+                    starsAppend.innerHTML += `<img width="16" height="15" src="/content/dam/tata-capital-web/assets/img/star-fill-one.svg" alt="">`;
+                } else {
+                    starsAppend.innerHTML += `<img width="16" height="15" src="/content/dam/tata-capital-web/assets/img/star-no-fill-2.svg" alt="">`;
+                }
+            }
+        }
+    } catch (e) {
+        console.log(e);
+    }
+</script>
+<sly data-sly-test.testimonialSchema="${model.testimonialSchema}"></sly>
+<sly data-sly-test="${PageProperties.fetchUrl}">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org/", 
+      "url": "https://www.tatacapital.com${request.pathInfo @context='html'}", 
+      "@type": "Product", 
+      "name": "${PageProperties.jcr:title @context='html'}",
+      "image": "https://www.tatacapital.com/content/dam/tata-capital-web/tc-header-images/tata-header-logo.svg",
+      "description": "${PageProperties.jcr:description @context='html'}",
+      "brand": "Tata Capital",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "${model.getTotalAvgRatingValue @ context='scriptComment' }",
+        "bestRating": "5",
+        "ratingCount": "${model.getTotalCountOfReviews @ context='scriptComment' }"
+      }
+    }
+    </script>
+</sly>

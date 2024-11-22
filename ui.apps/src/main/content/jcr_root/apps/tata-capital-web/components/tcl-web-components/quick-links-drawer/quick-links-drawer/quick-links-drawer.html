@@ -1,0 +1,13 @@
+<button data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button"
+  data-sly-use.iconTemplate="icon.html"
+  data-sly-element='a'
+  id="${button.id}"
+  class="cmp-button actions-toggle jsLeftSticky"
+  data-sly-attribute="${button.buttonLink.htmlAttributes}"
+  aria-label="${button.accessibilityLabel}"
+  data-cmp-clickable="${button.data ? true : false}"
+  data-cmp-data-layer="${button.data.json}">
+<sly data-sly-call="${iconTemplate.icon @ icon=button.icon}"></sly>
+<span data-sly-test="${button.text}" class="cmp-button__text">${button.text}<i class="icon-arrow-right icon"></i></span>
+</button>
+<sly data-sly-resource="${'quick-links-drawer-list' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></sly>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                <title
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Title"
+                                                    name="./title"
+                                                    useFixedInlineToolbar="{Boolean}true"/>
+                <pdf-year
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Pdf year"
+                                                    name="./pdfyear"
+                                                    useFixedInlineToolbar="{Boolean}true"/>
+                    <archive-for-newsletter
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Archives for Newletter"
+                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                        <items jcr:primaryType="nt:unstructured">
+                            <archive-for-newsletter
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Archive for Newsletter"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Archive for Newsletter">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                    name="./archiveforNewsletter">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <link-heading
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Link heading"
+                                                    name="./linkHeading"
+                                                    useFixedInlineToolbar="{Boolean}true"/>
+                                                <pdfs
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="Pdfs"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                    composite="{Boolean}true"
+                                                    fieldLabel="Pdfs">
+                                                    <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                        name="./pdfs">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <column
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                    <topHeading
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                        fieldLabel="Enter heading"
+                                                                        name="./heading"
+                                                                        useFixedInlineToolbar="{Boolean}true"/>
+                                                                    <link
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                        fieldLabel="Enter redirection link"
+                                                                        name="./redirectionLink"
+                                                                        rootPath="/content"/>
+                                                                    <openinnewtab
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                        composite="{Boolean}true"
+                                                                        name="./openInNewTab"
+                                                                        text="Check for open link in new tab"
+                                                                        value="true"/>
+                                                                    <link-text
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                        fieldLabel="Enter Link Text"
+                                                                        name="./linkText"
+                                                                        useFixedInlineToolbar="{Boolean}true"/>
+                                                                </items>
+                                                            </column>
+                                                        </items>
+                                                    </field>
+                                                </pdfs>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </archive-for-newsletter>
+                        </items>
+                    </archive-for-newsletter>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

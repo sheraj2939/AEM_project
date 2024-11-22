@@ -1,0 +1,14 @@
+<div class="how-apply-desc">
+    <sly data-sly-resource="${'who-can-take-loan-title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></sly>
+    <!-- <sly data-sly-resource="${'who-can-take-loan-tabs' @ resourceType='/apps/tata-capital-web/components/common/component-title'}"></sly> -->
+    <sly data-sly-test="${properties.howApplyList}">
+        <ul class="dot-list gray-dots how-apply-list">
+            <sly data-sly-resource="${'who-can-take-loan-list' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></sly>
+        </ul>
+    </sly>
+    <sly data-sly-test="${properties.balanceTransfer}">
+        <ul class="apply-step-lists">
+            <sly data-sly-resource="${'who-can-take-loan-list' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></sly>
+        </ul>
+    </sly>
+</div>

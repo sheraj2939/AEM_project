@@ -1,0 +1,143 @@
+.personal-loan-box .personal-cards {
+  padding: 25px 40px;
+}
+
+.personal-loan-box .personal-cards h2 {
+  margin-bottom: 26px;
+}
+
+.personal-loan-box .personal-cards .heading20 {
+  margin-bottom: 30px;
+}
+
+.personal-loan-box .personal-cards .heading20.mb-12 {
+  margin-bottom: 12px;
+}
+
+.personal-loan-box .personal-para.mb-40 {
+  margin-bottom: 40px;
+}
+
+.personal-loan-box .personal-para p {
+  margin-bottom: 25px;
+}
+
+.personal-loan-box .personal-para p:last-child {
+  margin-bottom: 0px;
+}
+
+.personal-loan-box .personal-btn {
+  margin-top: 30px;
+}
+
+.personal-loan-box .personal-btn .btn-blue {
+  margin-right: 20px;
+}
+
+.personal-loan-box .personal-btn .btn-blue:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.personal-loan-box .apply-now-btn {
+  margin-top: 26px;
+}
+
+.personal-loan-box .checklist-info {
+  margin-top: 26px;
+}
+
+.tata-ifc-look {
+  margin-top: 26px;
+  background: linear-gradient(90deg, #3B86BE 21.18%, #C3D6A5 51.56%, #DDE348 79.15%);
+  border-radius: 22px;
+  padding: 23px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.tata-ifc-look .ifc-left,
+.tata-ifc-look .ifc-center,
+.tata-ifc-look .ifc-right {
+  text-align: center;
+}
+
+.tata-ifc-look .ifc-left img,
+.tata-ifc-look .ifc-center img,
+.tata-ifc-look .ifc-right img {
+  margin: auto;
+}
+
+.tata-ifc-look .ifc-left {
+  width: 45%;
+}
+
+.tata-ifc-look .ifc-center {
+  width: 10%;
+}
+
+.tata-ifc-look .ifc-right {
+  width: 45%;
+}
+
+@media (max-width: 991px) {
+  .tata-ifc-look {
+    padding: 19px 10px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #418BC1 30.76%, #B9D1B2 53.43%, #DDE348 78.18%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  }
+
+  .tata-ifc-look .ifc-left img {
+    width: 103px;
+  }
+
+  .tata-ifc-look .ifc-center img {
+    width: 11px;
+  }
+
+  .tata-ifc-look .ifc-right img {
+    width: 51px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tata-ifc-look {
+    margin-top: 20px;
+  }
+
+  .personal-loan-box .personal-cards {
+    padding: 24px;
+  }
+
+  .personal-loan-box .personal-cards h2 {
+    margin-bottom: 12px;
+  }
+
+  .personal-loan-box .personal-cards .heading20 {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .personal-loan-box .personal-cards .heading20.mb-12 {
+    margin-bottom: 10px;
+  }
+
+  .personal-loan-box .personal-para.mb-40 {
+    margin-bottom: 20px;
+  }
+
+  .personal-loan-box .personal-para p {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .personal-loan-box .personal-para p.list-has-statement {
+    margin-bottom: 10px;
+  }
+
+  .personal-loan-box .checklist-info {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,144 @@
+.check-loan-eligibility-box-left {
+  margin-right: 10px;
+  padding-right: 100px;
+  width: 472px;
+}
+.check-loan-eligibility-box-left h2 {
+  margin-bottom: 10px;
+  max-width: 336px;
+}
+.check-loan-eligibility-box-left p {
+  margin-bottom: 30px;
+  letter-spacing: 0.02em;
+  color: #636363;
+}
+
+.check-loan-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.check-loan-eligibility-box-right {
+  width: calc(100% - 472px);
+}
+.check-loan-eligibility-box-right .heading20 {
+  margin-bottom: 20px;
+}
+.check-loan-eligibility-box-right .theme-card.card {
+  padding: 40px 40px 40px 220px;
+  max-width: 516px;
+  position: relative;
+  margin: 0 0 0 auto;
+  border-radius: 30px;
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.01), 5px 0px 10px rgba(0, 0, 0, 0.01), 0px -5px 10px rgba(0, 0, 0, 0.01), 0px 5px 10px rgba(0, 0, 0, 0.01);
+}
+.check-loan-eligibility-box-right .theme-card.card:before {
+  content: "";
+  position: absolute;
+  left: -121px;
+  bottom: -47px;
+  width: 210px;
+  height: 210px;
+  background: #907DDF;
+  opacity: 0.5;
+  filter: blur(85px);
+}
+.check-loan-eligibility-box-right .check-loan-img {
+  position: absolute;
+  left: -100px;
+  max-height: 350px;
+  width: auto;
+  bottom: -22px;
+}
+.check-loan-eligibility-box-right ul.check-loan-eligibility-points {
+  margin-bottom: 20px;
+}
+.check-loan-eligibility-box-right ul.check-loan-eligibility-points li {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 13px;
+  font-family: "OpenSans-Regular";
+  letter-spacing: 0.02em;
+  color: rgba(64, 64, 64, 0.9);
+}
+.check-loan-eligibility-box-right ul.check-loan-eligibility-points li:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.check-loan-eligibility-box-right .check-eligibility-btn {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+@media (max-width: 991px) {
+  .check-loan-wrap {
+    flex-direction: column;
+  }
+
+  .check-loan-eligibility-box-left {
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+    margin-bottom: 35px;
+  }
+  .check-loan-eligibility-box-left h2 {
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 29px;
+    max-width: 100%;
+  }
+  .check-loan-eligibility-box-left p {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .check-loan-eligibility-box-left .check-pre-approve-btn {
+    margin: 20px auto 0;
+    display: block;
+    width: 90%;
+  }
+
+  .check-loan-eligibility-box-right {
+    width: 100%;
+    padding-top: 232px;
+  }
+  .check-loan-eligibility-box-right .theme-card.card {
+    padding: 24px;
+    max-width: 100%;
+  }
+  .check-loan-eligibility-box-right .theme-card.card:before {
+    content: none;
+  }
+  .check-loan-eligibility-box-right .heading20 {
+    margin-bottom: 12px;
+  }
+  .check-loan-eligibility-box-right .check-loan-img {
+    max-height: 232px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(-100% - 17px);
+  }
+  .check-loan-eligibility-box-right .check-eligibility-btn {
+    width: 100%;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .check-loan-eligibility-box-right ul.check-loan-eligibility-points li {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .check-loan-eligibility-box-right .check-loan-img {
+    top: calc(-100% - 19px);
+  }
+}
+@media (max-width: 485px) {
+  .check-loan-eligibility-box-right .check-loan-img {
+    top: calc(-100% + 1px);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

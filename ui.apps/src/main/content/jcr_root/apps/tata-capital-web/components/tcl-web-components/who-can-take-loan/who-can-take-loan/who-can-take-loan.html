@@ -1,0 +1,26 @@
+<sly data-sly-test="${properties.canTakeLoanBox}">
+    <section class="can-take-loan-box space-tb40">
+        <div class="container">
+            <div class="mx-944">
+                <sly data-sly-resource="${'who-can-take-loan-tabs' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></sly>
+            </div>                
+        </div>
+    </section>
+</sly>
+
+<sly data-sly-test="${properties.findRightLoanBox}">
+    <section class="find-right-loan-box space-tb40">
+        <div class="container">
+            <sly data-sly-resource="${'find-right-loan-box-tabs' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></sly>
+        </div>
+    </section>
+</sly>
+<sly data-sly-test="${properties.howToApplyForLoan}">
+    <section class="how-apply-box space-tb40 space-tb40">
+        <div class="container">
+            <div class="mx-944">
+                <sly data-sly-resource="${'find-right-loan-box-tabs' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></sly>
+            </div>
+        </div>
+    </section>
+</sly>

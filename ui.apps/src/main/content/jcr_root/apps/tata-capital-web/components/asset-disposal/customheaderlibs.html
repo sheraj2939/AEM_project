@@ -1,0 +1,73 @@
+<meta name="google-site-verification" content="2cPBcBhKCgKg4Z38iOLf4nLI7GbBNQZb874qtg96h-o" />
+<link rel="icon" href="/content/dam/tata-capital/images/favicon.ico" type="image/x-icon">
+<link as="font" crossorigin="" href="/content/dam/tata-capital-web/assets/asset-disposal-fonts/open-sans-optimize/OpenSans-Light.woff2"
+  rel="preload" type="font/woff2" />
+<link as="font" crossorigin="" href="/content/dam/tata-capital-web/assets/asset-disposal-fonts/open-sans-optimize/OpenSans-Regular.woff2"
+  rel="preload" type="font/woff2" />
+<link as="font" crossorigin="" href="/content/dam/tata-capital-web/assets/asset-disposal-fonts/open-sans-optimize/OpenSansMedium.woff2"
+  rel="preload" type="font/woff2" />
+<link as="font" crossorigin="" href="/content/dam/tata-capital-web/assets/asset-disposal-fonts/open-sans-optimize/OpenSans-Semibold.woff2"
+  rel="preload" type="font/woff2" />
+<link as="font" crossorigin="" href="/content/dam/tata-capital-web/assets/asset-disposal-fonts/open-sans-optimize/OpenSans-Bold.woff2"
+  rel="preload" type="font/woff2" />
+<link as="font" crossorigin="" href="/content/dam/tata-capital-web/assets/asset-disposal-fonts/open-sans-optimize/OpenSansItalic.woff2"
+  rel="preload" type="font/woff2" />
+<link as="font" crossorigin="" href="/content/dam/tata-capital-web/assets/asset-disposal-fonts/icomoon.woff?xjpm7k" rel="preload"
+  type="font/woff" />
+<style>
+  @font-face{font-family:"OpenSans-Light";src:url(/content/dam/tata-capital-web/assets/asset-disposal-fonts/open-sans-optimize/OpenSans-Light.woff2) format("woff2"),url(/content/dam/tata-capital-web/assets/asset-disposal-fonts/open-sans-optimize/OpenSans-Light.woff) format("woff");font-display:swap}@font-face{font-family:"OpenSans-Regular";src:url(/content/dam/tata-capital-web/assets/asset-disposal-fonts/open-sans-optimize/OpenSans-Regular.woff2) format("woff2"),url(/content/dam/tata-capital-web/assets/asset-disposal-fonts/open-sans-optimize/OpenSans-Regular.woff) format("woff");font-display:swap}@font-face{font-family:"OpenSansMedium";src:url(/content/dam/tata-capital-web/assets/asset-disposal-fonts/open-sans-optimize/OpenSansMedium.woff2) format("woff2"),url(/content/dam/tata-capital-web/assets/asset-disposal-fonts/open-sans-optimize/OpenSansMedium.woff) format("woff");font-display:swap}@font-face{font-family:"OpenSans-SemiBold";src:url(/content/dam/tata-capital-web/assets/asset-disposal-fonts/open-sans-optimize/OpenSans-Semibold.woff2) format("woff2"),url(/content/dam/tata-capital-web/assets/asset-disposal-fonts/open-sans-optimize/OpenSans-Semibold.woff) format("woff");font-display:swap}@font-face{font-family:"OpenSans-Bold";src:url(/content/dam/tata-capital-web/assets/asset-disposal-fonts/open-sans-optimize/OpenSans-Bold.woff2) format("woff2"),url(/content/dam/tata-capital-web/assets/asset-disposal-fonts/open-sans-optimize/OpenSans-Bold.woff) format("woff");font-display:swap}@font-face{font-family:"OpenSansItalic";src:url(/content/dam/tata-capital-web/assets/asset-disposal-fonts/open-sans-optimize/OpenSansItalic.woff2) format("woff2"),url(/content/dam/tata-capital-web/assets/asset-disposal-fonts/open-sans-optimize/OpenSansItalic.woff) format("woff");font-display:swap}@font-face{font-family:'icomoon';src:url(/content/dam/tata-capital-web/assets/asset-disposal-fonts/icomoon.woff?xjpm7k) format('woff');font-weight:400;font-style:normal;font-display:block}
+</style>
+
+<script>
+  var productCodeId;
+  productCodeId = "${PageProperties.productSelect @context='html'}";
+  window.adobeDataLayer=window.adobeDataLayer||[];
+  document.addEventListener('DOMContentLoaded', function() {
+    var loginMethod = "";
+    var pageType = "${PageProperties.pageType @context='html'}";
+    var siteSection = "${currentPage.parent.title @context='html'}";
+    var siteSubSection ="${currentPage.title @context='html'}";
+    var locationPathName = window.location.pathname.split('/').map(htmlSplit);
+    if(siteSection == "Home")
+    {
+      var pageName = "${PageProperties.jcr:title @context='html'}"
+      var siteSubSection ="";
+    }else{
+      var pageName = siteSection+":"+siteSubSection ;
+    }
+    if(domUtils.getCookie('userLoggedIn') == "true" && localStorage.getItem('cData')){
+                var loginMethod = "loginMethod";
+                var loginStatus = true;//true or false
+                var userId = $(".avatar-email").text();//email id of the user
+    }else{
+      var loginMethod = ""
+      var loginStatus = false;//true or false
+      var userId = "" //email id of the user
+    }
+    if (siteSection == "Home") {
+      pageintialization(loginMethod, loginStatus, userId, pageName, pageType, siteSection, siteSubSection ? siteSubSection : '', productCodeId.toUpperCase());
+    } else {
+      pageintialization(loginMethod, loginStatus, userId, locationPathName.slice(-1)[0] ? locationPathName.slice(-1)[0] : 'Home', pageType, locationPathName[1] ?locationPathName[1] : '', locationPathName[2] ? locationPathName[2] : '', productCodeId.toUpperCase());
+    }
+  });
+  function htmlSplit(string) {
+      return string.split('.')[0]
+    }
+</script>
+<!--/*<sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>*/-->
+<sly data-sly-use.tataCapitalWebConfiguration="com.tatacapital.web.core.services.TataCapitalWebConfiguration"/>
+<script src="${tataCapitalWebConfiguration.config.tchflAnalyticsScript @ context = 'uri'}" async></script>
+<script>
+  var osgiConfigObj = {};
+  window.osgiConfigObj.calcApiDomain="${tataCapitalWebConfiguration.config.calculatorApiDomain @ context = 'uri'}";
+  window.osgiConfigObj.domainUrlApi="${tataCapitalWebConfiguration.config.apiDomain @ context = 'uri'}";
+  window.osgiConfigObj.jocataPlUrl="${tataCapitalWebConfiguration.config.jocataPlUrl @ context = 'uri'}";
+  window.osgiConfigObj.jocataBlUrl="${tataCapitalWebConfiguration.config.jocataBlUrl @ context = 'uri'}";
+  window.osgiConfigObj.appIdMoengage="${tataCapitalWebConfiguration.config.moEngageAppId @ context = 'scriptString'}";
+  window.osgiConfigObj.debugLogMoengage="${tataCapitalWebConfiguration.config.moEngageDebugLog @ context = 'scriptString'}";
+  window.osgiConfigObj.chatBotUrl="${tataCapitalWebConfiguration.config.tcChatBotHostUrl @ context = 'uri'}";
+  window.osgiConfigObj.chatBotDomain="${tataCapitalWebConfiguration.config.tcChatBotHostDomain @ context = 'unsafe'}";
+  window.osgiConfigObj.postApiDomain="${tataCapitalWebConfiguration.config.postApiDomain @ context = 'uri'}";
+
+
+</script>

@@ -1,0 +1,73 @@
+<div data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+    data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-use.imageTemplate="image.html"
+    data-sly-use.pretitleTemplate="pretitle.html" data-sly-use.titleTemplate="title.html"
+    data-sly-use.descriptionTemplate="description.html" data-sly-use.actionsTemplate="actions.html"
+    data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+    id="${teaser.id}" class="cmp-teaser${!wcmmode.disabled && teaser.imageResource ? ' cq-dd-image' : ''}"
+    data-cmp-data-layer="${teaser.data.json}">
+    <div class="${properties.rightVideo ? 'community-initiatives-wrap right-video' : 'community-initiatives-wrap'}">
+        <div class="community-initiative-left">
+            <h2 class="d-block d-lg-none"><span>${teaser.title}</span> ${teaser.pretitle}</h2>
+
+
+            <sly data-sly-test="${properties.videoLink}">
+                <iframe src="${properties.videoLink}" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </sly>
+
+            <sly data-sly-test="${!properties.videoLink}">
+                <div class="community-initiative-img">
+                    <img src="${properties.fileReference}" alt="${properties.alt}" />
+                </div>
+            </sly>
+
+        </div>
+        <div class="community-initiative-right">
+            <h2 class="d-none d-lg-block"><span>${teaser.title}</span> ${teaser.pretitle}</h2>
+            <div class="personal-para">
+                <div class="text16i">${teaser.description @ context = 'html'}</div>
+            </div>
+            <div class="btn-controls">
+                <sly class="icon-arrow-right" data-sly-call="${actionsTemplate.actions @ teaser=teaser}"> </sly>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<sly data-sly-test="${properties.silderId}">
+    <div class="popover-modal tccl-channel-partner fade channel-partner-modal" id="${properties.silderId}">
+        <button data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></button>
+        <div class="popover-modal-dialog popover-modal-dialog-centered">
+            <div class="popover-modal-content">
+                <div class="modal-more-slider slick-slider slider-dots slider-arrows viewMoreSlider">
+                    <sly data-sly-list.imageList="${resource.children}">
+                        <sly data-sly-test="${imageList.name == 'secondSliderField'}">
+                            <sly data-sly-list.innerSlider="${imageList.children}">
+                                <sly data-sly-test.imageListSize="${innerSliderList.count}" />
+                            </sly>
+                            <sly data-sly-list.innerSlider="${imageList.children}">
+                                <!-- Set a variable with innerSlider properties -->
+                                <sly data-sly-test="${innerSliderList.count == 1}"
+                                    data-sly-set.innerSlider="${innerSlider}" />
+                                <div class="more-slider-row">
+                                    <div class="more-slider-caption">
+                                        <p class="heading20">${innerSlider.title}</p>
+                                        <p class="dates-place">${innerSlider.placeDate}</p>
+                                        <div class="view-more-total">
+                                            <span>${innerSliderList.count}</span>/${imageListSize}</div>
+                                    </div>
+                                    <div class="more-slider-image">
+                                        <img src="${innerSlider.mainSliderImage}" alt="">
+                                    </div>
+                                </div>
+                            </sly>
+                        </sly>
+                    </sly>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</sly>

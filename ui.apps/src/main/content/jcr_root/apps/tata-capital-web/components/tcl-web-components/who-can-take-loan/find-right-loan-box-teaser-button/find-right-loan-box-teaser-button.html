@@ -1,0 +1,14 @@
+<button data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button"
+    data-sly-use.iconTemplate="icon.html"
+    data-sly-element="button"
+    id="${button.id}"
+    type="${button.buttonLink.valid ? '' : 'button'}" 
+    class="btn-blue btn-large know-more-btn"
+    data-sly-attribute="${button.buttonLink.htmlAttributes}"
+    aria-label="${button.accessibilityLabel}"
+    data-cmp-clickable="${button.data ? true : false}"
+    data-cta = "wts-tabs"
+    data-cmp-data-layer="${button.data.json}">
+    <sly data-sly-call="${iconTemplate.icon @ icon=button.icon}"></sly>
+    <span data-sly-test="${button.text}" class="cmp-button__text">${button.text}</span>
+</button>

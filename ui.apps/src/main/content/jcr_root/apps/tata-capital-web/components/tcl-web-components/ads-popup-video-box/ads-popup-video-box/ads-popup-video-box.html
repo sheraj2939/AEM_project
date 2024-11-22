@@ -1,0 +1,43 @@
+<sly data-sly-test="${properties.popupVideoUrl}">
+  <section class="space-tb40">
+    <div class="container">
+      <div class="ads-video-box">
+        <div class="ads-img">
+          <img src="${properties.popupThumbnailUrl}" alt="" />
+          <a
+            href="javascript:void(0)"
+            class="play-btn"
+            data-popovermodal="popover-modal"
+            data-target="#video-modal"
+            video-source="${properties.popupVideoUrl}"
+          >
+            <span class="icon-play"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</sly>
+
+<!-- video modal -->
+<div class="popover-modal fade" id="video-modal">
+  <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-lg2">
+    <div class="popover-modal-content video-modals">
+      <button data-dismiss="popover-modal" class="popover-modal-close">
+        <i class="icon-close"></i>
+      </button>
+      <div class="popover-modal-body">
+        <div class="videos-outer">
+          <iframe
+            src="https://www.youtube.com/embed/l0sOLzz6wlE"
+            class="i-frame"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- video modal -->

@@ -1,0 +1,514 @@
+.personal-loan-box.top-loan-space {
+  padding-top: 80px;
+}
+.personal-loan-box .personal-cards {
+  padding: 25px 40px;
+}
+.personal-loan-box .personal-cards h2 {
+  margin-bottom: 26px;
+}
+.personal-loan-box .personal-cards .heading20 {
+  margin-bottom: 30px;
+}
+.personal-loan-box .personal-cards .heading20.mb-12 {
+  margin-bottom: 12px;
+}
+.personal-loan-box .personal-cards.personal-bottom-card {
+  padding-bottom: 70px;
+}
+.personal-loan-box .personal-btn {
+  margin-top: 30px;
+}
+.personal-loan-box .personal-btn .btn-blue {
+  margin-right: 20px;
+}
+.personal-loan-box .personal-btn .btn-blue:nth-last-child(1) {
+  margin-right: 0;
+}
+.personal-loan-box .personal-para.mb-40 {
+  margin-bottom: 40px;
+}
+.personal-loan-box .personal-para p {
+  margin-bottom: 25px;
+}
+.personal-loan-box .personal-para p:last-child {
+  margin-bottom: 0px;
+}
+.personal-loan-box .apply-now-btn {
+  margin-top: 26px;
+}
+.personal-loan-box .per-loan-only-text .text16i {
+  color: rgba(255, 255, 255, 0.9);
+}
+.personal-loan-box .per-loan-only-text .button-wrap {
+  margin-top: 20px;
+}
+.personal-loan-box .per-loan-only-text .button-wrap a {
+  max-width: 191px;
+  display: block;
+  margin-bottom: 10px;
+}
+.personal-loan-box .per-loan-only-text .button-wrap a:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.personal-loan-box.pre-approved-box .personal-loan-outer {
+  position: relative;
+}
+.personal-loan-box.pre-approved-box .personal-cards {
+  max-width: 613px;
+  position: relative;
+  z-index: 1;
+}
+.personal-loan-box.pre-approved-box .personal-blue-card {
+  background: linear-gradient(134.06deg, rgba(18, 104, 179, 0.71) 0%, rgba(16, 141, 250, 0.95) 99.11%), linear-gradient(134.06deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.67) 99.11%);
+  backdrop-filter: blur(9px);
+  border-radius: 30px;
+  max-width: 355px;
+  width: 100%;
+  padding: 25px 40px 25px 70px;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+}
+.personal-loan-box.pre-approved-box .personal-blue-card p {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.what-per-loan {
+  position: relative;
+}
+.what-per-loan .personal-cards {
+  max-width: 1000px;
+  padding-right: 220px;
+}
+.what-per-loan.required-per-loan .personal-cards, .what-per-loan.check-eligibility-per .personal-cards {
+  max-width: 960px;
+  padding-right: 195px;
+}
+.what-per-loan.required-per-loan .instant-papers, .what-per-loan.required-per-loan .per-loan-pos, .what-per-loan.check-eligibility-per .instant-papers, .what-per-loan.check-eligibility-per .per-loan-pos {
+  max-width: 316px;
+}
+
+.per-loan-details {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+  background: linear-gradient(134.06deg, rgba(18, 104, 179, 0.71) 0%, rgba(16, 141, 250, 0.95) 99.11%);
+  backdrop-filter: blur(9px);
+  border-radius: 30px;
+  padding: 30px;
+  max-width: 286px;
+  width: 100%;
+}
+.per-loan-details .btn-links {
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+.per-loan-details.instant-papers h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.per-loan-details.instant-papers .btn-link {
+  margin-top: 20px;
+}
+.per-loan-details.instant-papers .list-circle-info {
+  padding-left: 0px;
+}
+.per-loan-details.instant-papers .list-circle-info li {
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 13px;
+}
+.per-loan-details.instant-papers .list-circle-info li:before {
+  top: 7px;
+  background-color: #fff;
+}
+.per-loan-details.instant-papers .list-circle-info li:last-child {
+  margin-bottom: 0px;
+}
+
+.amount-list-info li {
+  padding: 30px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.32);
+}
+.amount-list-info li:first-child {
+  border-top: none;
+  padding-top: 0px;
+}
+.amount-list-info li:last-child {
+  padding-bottom: 0px;
+}
+.amount-list-info .text13 {
+  font-size: 13px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+}
+.amount-list-info .text16 {
+  font-family: "OpenSans-SemiBold";
+  color: #fff;
+}
+
+.loan-details-outer {
+  padding: 0 40px;
+  margin-top: -48px;
+  position: relative;
+  z-index: 1;
+}
+
+.loans-details-per {
+  background: linear-gradient(134.06deg, rgba(18, 104, 179, 0.71) 0%, rgba(16, 141, 250, 0.95) 99.11%);
+  backdrop-filter: blur(9px);
+  border-radius: 20px;
+  padding: 20px 30px;
+}
+
+.amount-info-pers {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-right: -30px;
+  margin-top: -30px;
+}
+.amount-info-pers li {
+  border-left: 1px solid #E0E9F1;
+  padding: 0 30px;
+  width: 33.33%;
+  margin-top: 30px;
+}
+.amount-info-pers li:first-child {
+  border-left: none;
+}
+.amount-info-pers .heading20 {
+  color: #fff;
+  font-family: "OpenSans-SemiBold";
+}
+.amount-info-pers .text16i {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.amount-info-pers .per-flex-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.amount-info-pers .per-flex-text .heading20 {
+  padding-right: 12px;
+}
+.amount-info-pers .views-links {
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  display: inline-block;
+  font-family: "OpenSans-Regular";
+  text-decoration: underline;
+}
+
+.tata-whatsapp-box {
+  background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.67) 99.11%);
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.01), 5px 0px 10px rgba(0, 0, 0, 0.01), 0px -5px 10px rgba(0, 0, 0, 0.01), 0px 5px 10px rgba(0, 0, 0, 0.01);
+  backdrop-filter: blur(9px);
+  border-radius: 20px;
+  padding: 21px 40px;
+  border: 1px solid #fff;
+}
+.tata-whatsapp-box .whatsapp-left {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.tata-whatsapp-box .whatsapp-left .whatsapp {
+  width: 40px;
+  min-width: 40px;
+  margin-right: 20px;
+}
+.tata-whatsapp-box .whatsapp-inner {
+  position: relative;
+  padding-right: 210px;
+}
+.tata-whatsapp-box .apply-whatsapp {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 1199px) {
+  .tata-whatsapp-box {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .personal-loan-box.pre-approved-box .personal-blue-card {
+    padding: 30px 30px 30px 60px;
+  }
+
+  .what-per-loan .personal-cards {
+    max-width: 850px;
+    padding-right: 220px;
+  }
+  .what-per-loan.required-per-loan .personal-cards, .what-per-loan.check-eligibility-per .personal-cards {
+    max-width: 780px;
+  }
+
+  .amount-info-pers {
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -20px;
+  }
+  .amount-info-pers li {
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .what-personal-box {
+    padding-bottom: 60px;
+  }
+
+  .per-loan-details {
+    position: static;
+    transform: translateY(0);
+    margin: auto;
+    max-width: 400px;
+    margin-top: -180px;
+  }
+  .per-loan-details.instant-papers .btn-link {
+    display: block;
+    margin: 20px auto 0;
+  }
+
+  .personal-loan-box .per-loan-only-text .button-wrap {
+    text-align: center;
+  }
+  .personal-loan-box .per-loan-only-text .button-wrap a {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .personal-loan-box.top-loan-space {
+    padding-top: 0px;
+  }
+  .personal-loan-box .what-per-loan .personal-cards {
+    padding-right: 30px;
+    padding-bottom: 205px;
+  }
+  .personal-loan-box .what-per-loan.required-per-loan .instant-papers, .personal-loan-box .what-per-loan.required-per-loan .per-loan-pos, .personal-loan-box .what-per-loan.check-eligibility-per .instant-papers, .personal-loan-box .what-per-loan.check-eligibility-per .per-loan-pos {
+    max-width: 400px;
+    margin-top: -123px;
+  }
+  .personal-loan-box .what-per-loan.required-per-loan .personal-cards, .personal-loan-box .what-per-loan.check-eligibility-per .personal-cards {
+    padding-bottom: 150px;
+  }
+  .personal-loan-box.pre-approved-box .personal-cards {
+    max-width: 100%;
+    padding-bottom: 132px;
+  }
+  .personal-loan-box.pre-approved-box .personal-blue-card {
+    position: relative;
+    z-index: 2;
+    top: 0px;
+    right: inherit;
+    transform: translateY(0);
+    padding-left: 30px;
+    max-width: 400px;
+    margin: auto;
+    margin-top: -102px;
+  }
+  .personal-loan-box.pre-approved-box .personal-blue-card .btn-link {
+    display: block;
+    margin: auto;
+  }
+
+  .amount-info-pers .text16i {
+    font-size: 13px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
+  }
+  .amount-info-pers .heading20 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .amount-info-pers .views-links {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .personal-loan-box .personal-cards.personal-bottom-card {
+    padding-bottom: 164px;
+  }
+
+  .loan-details-outer {
+    margin-top: -141px;
+  }
+
+  .loans-details-per {
+    border-radius: 24px;
+    padding: 25px;
+  }
+  .loans-details-per .amount-info-pers {
+    display: block;
+    margin: 0px;
+  }
+  .loans-details-per .amount-info-pers li {
+    width: 100%;
+    margin: 0px;
+    padding: 20px 0px;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.32);
+  }
+  .loans-details-per .amount-info-pers li:first-child {
+    border-top: none;
+    padding-top: 0px;
+  }
+  .loans-details-per .amount-info-pers li:last-child {
+    padding-bottom: 0px;
+  }
+}
+@media (max-width: 767px) {
+  .what-personal-box {
+    padding-bottom: 50px;
+  }
+
+  .personal-loan-box .what-per-loan.required-per-loan .instant-papers {
+    margin-top: -110px;
+    max-width: 100%;
+  }
+  .personal-loan-box .what-per-loan.check-eligibility-per .personal-cards {
+    padding-bottom: 165px;
+  }
+  .personal-loan-box .what-per-loan.check-eligibility-per .per-loan-pos {
+    margin-top: -125px;
+    max-width: 100%;
+  }
+  .personal-loan-box.top-loan-space {
+    padding-top: 0px;
+  }
+  .personal-loan-box.pre-approved-box .personal-blue-card {
+    padding: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    width: auto;
+    max-width: 100%;
+  }
+  .personal-loan-box .personal-btn {
+    margin-top: 12px;
+  }
+  .personal-loan-box .personal-btn.btn-with-full {
+    margin-top: 30px;
+  }
+  .personal-loan-box .personal-btn.btn-with-full .btn-blue {
+    width: 100%;
+    margin: auto auto 10px;
+    display: block;
+  }
+  .personal-loan-box .personal-btn.btn-with-full .btn-blue:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+  .personal-loan-box .personal-cards {
+    padding: 24px;
+  }
+  .personal-loan-box .personal-cards h2 {
+    margin-bottom: 12px;
+  }
+  .personal-loan-box .personal-cards .heading20 {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .personal-loan-box .personal-cards .heading20.mob-heading22 {
+    font-family: "OpenSans-Bold";
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+  }
+  .personal-loan-box .personal-cards .heading20.mb-12 {
+    margin-bottom: 10px;
+  }
+  .personal-loan-box .personal-cards .heading20.base-text-mob {
+    margin-bottom: 20px;
+  }
+  .personal-loan-box .personal-para.mb-40 {
+    margin-bottom: 20px;
+  }
+  .personal-loan-box .personal-para p {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  .personal-loan-box .personal-para p.list-has-statement {
+    margin-bottom: 10px;
+  }
+
+  .amount-list-info li {
+    padding: 20px 0;
+  }
+
+  .per-loan-details {
+    max-width: inherit;
+    margin-left: 24px;
+    margin-right: 24px;
+    width: auto;
+    padding: 24px;
+  }
+  .per-loan-details .btn-links {
+    margin-top: 16px;
+  }
+  .per-loan-details.instant-papers h3 {
+    margin-bottom: 12px;
+  }
+
+  .tata-whatsapp-box {
+    padding: 24px;
+  }
+  .tata-whatsapp-box .whatsapp-inner {
+    padding-right: 0px;
+  }
+  .tata-whatsapp-box .whatsapp-left {
+    margin-bottom: 20px;
+  }
+  .tata-whatsapp-box .apply-whatsapp {
+    position: static;
+    transform: translateY(0);
+    max-width: 260px;
+    margin: auto;
+    text-align: center;
+  }
+  .tata-whatsapp-box .apply-whatsapp .btn-blue {
+    width: 100%;
+    display: block;
+  }
+
+  .personal-loan-box .personal-cards.personal-bottom-card {
+    padding-bottom: 180px;
+  }
+
+  .loan-details-outer {
+    margin-top: -160px;
+  }
+
+  .loan-details-outer {
+    padding: 0 24px;
+  }
+
+  .amount-info-pers .per-flex-text {
+    display: block;
+  }
+  .amount-info-pers .per-flex-text .heading20 {
+    padding-right: 0px;
+    padding-bottom: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

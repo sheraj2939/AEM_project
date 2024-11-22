@@ -1,0 +1,123 @@
+<div class="no-offer-box space-tb40">
+    <div class="container">
+        <div class="mx-944">
+            <div class="no-offer-wrap  bg-div">
+                <div class="no-offer-top">
+                    <img class="icon" src="/content/dam/tata-capital-web/assets/img/offers/gift-img.gif" />
+                    <div class="tops-heads">
+                        <h2>Sorry <span></span></h2>
+                        <p class="text16i">No offers found for you! Register below to be eligible for exclusive offers from Tata Capital.</p>
+                    </div>
+                </div>
+                <div class="no-offer-form" id="form-no-offers">
+                    <div class="row-flex">
+                        <div class="row-col-33 col-sp15">
+                            <div class="form-textbox-new">
+                                <label class="label-name">Full name*</label>
+                                <div class="textbox-inner">
+                                    <input type="text" class="input-textbox jsValueOK" placeholder="" data-type="name">
+                                </div>
+                                <span class="text-infos">Name (as per PAN Card)</span>
+                            </div>
+                        </div>
+                        <div class="row-col-33 col-sp15">
+                            <div class="form-textbox-new">
+                                <label class="label-name">Email ID*</label>
+                                <div class="textbox-inner">
+                                    <input type="text" class="input-textbox jsValueOK" placeholder="" data-type="email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-col-33 col-sp15">
+                            <div class="form-textbox-new">
+                                <label class="label-name">Mobile number*</label>
+                                <div class="textbox-inner">
+                                    <input type="text" class="input-textbox only-numeric-input jsValueOK" placeholder="" data-type="mobile" maxlength="10">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-col-33 col-sp15">
+                            <div class="form-textbox-new active">
+                                <label class="label-name">Select product*</label>
+                                <div class="textbox-inner">
+                                    <div class="custom-select2">
+                                        <select class="js-select2 jsValueOK" data-type="products">
+                                            <option value=""></option>
+                                            <option value="Personal Loan">Personal Loan</option>
+                                            <option value="Home Loan">Home Loan</option>
+                                            <option value="Business Loan">Business Loan</option>
+                                            <option value="Loan Against Property">Loan Against Property</option>
+                                            <option value="Two Wheeler Loan">Two Wheeler Loan</option>
+                                            <option value="Used Car Loan">Used Car Loan</option>
+                                            <option value="Consumer Durable Loan">Consumer Durable Loan</option>
+                                            <option value="Loan Against Securities">Loan Against Securities</option>
+                                            <option value="General Insurance">General Insurance</option>
+                                            <option value="Credit Cards">Credit Cards</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-col-33 col-sp15">
+                            <div class="form-textbox-new active">
+                                <label class="label-name">City*</label>
+                                <div class="textbox-inner">
+                                    <div class="custom-select2">
+                                        <select class="js-select2 jsValueOK city" data-type="city">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-col-33 col-sp15">
+                            <div class="form-textbox-new">
+                                <label class="label-name">PAN</label>
+                                <div class="textbox-inner">
+                                    <input type="text" class="input-textbox only-alpha-numeric-input" placeholder="" data-type="pan" maxlength="10">
+                                </div>
+                                <span class="text-infos">Required to check eligibility for special offers on loans.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-checkbox">
+                        <label class="custom-checkbox-label">
+                                                <span class="custom-checkbox-new">
+                                                    <input type="checkbox" id='iAgreeToContact' data-type="iAgree" checked>
+                                                    <span class="checkbox-check"></span>
+                                                </span>
+                            ${properties.checkboxDesc @ context='html'}
+                        </label>
+                    </div>
+                    <div class="btn-controls">
+                        <button class="btn-blue btn-large jsOffersFormSubmit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popover-modal modals-blue fade" id="thanks-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md2">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content">
+                <button data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></button>
+                <div class="popover-modal-body">
+                    <div class="thankyou-modal-inner">
+                        <div class="prefrence-mx">
+                            <img src="/content/dam/tata-capital-web/assets/img/offers/thankyou.svg" alt="" class="thankyou-img">
+                            <p class="heading36">
+                                    <span>
+                                        Thank you for sharing your details
+                                    </span>
+                            </p>
+                            <p class="text16i">
+                                Your special offers will be curated soon!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

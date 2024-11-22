@@ -1,0 +1,68 @@
+<!--  press release box  -->
+<section class="space-tb40">
+    <div class="container">
+        <div class="tops-heads">
+            <h2>${properties.regularTitle}<span>${properties.boldTitle}</span></h2>
+        </div>
+        <div class="press-release-cards jsAccordian">
+
+            <sly data-sly-list.cards="${resource.getChildren}">
+                <sly data-sly-test="${cards.name == 'multipleYear'}">
+                    <sly data-sly-list.cardsItem="${cards.children}">
+
+                        <div class="press-row" accod-row="accod-row">
+                            <a href="javascript:void(0)" class="press-links"
+                                accod-head="accod-head">${cardsItem.year}</a>
+                            <div class="press-body" accod-body="accod-body">
+                                <div class="press-release-list">
+                                    <div class="press-ul">
+
+                                        <sly data-sly-list.pdf="${cardsItem.getChildren}">
+                                            <sly data-sly-test="${pdf.name == 'multiplePdf'}">
+                                                <sly data-sly-list.pdfItems="${pdf.children}">
+
+                                                    <div class="press-li">
+                                                        <div class="press-release-col">
+                                                            <sly data-sly-test="${pdfItems.checkForIcon}">
+                                                                <span class="pdf-img">
+                                                                    <img src="/content/dam/pdf.svg" alt="">
+                                                                </span>
+                                                            </sly>
+                                                            <a href="${pdfItems.assetLink}" target="${pdfItems.linkNewTab ? '_blank' : ''}" class="text-decoration">
+                                                            <p class="text14">${pdfItems.description}</p>
+                                                            </a>
+                                                            <div class="press-bottom">
+                                                                <ul>
+                                                                    <sly data-sly-test="${pdfItems.date}">
+                                                                    <li>
+                                                                        <span
+                                                                            class="press-dates">${pdfItems.date}</span>
+                                                                    </li>
+                                                                    </sly>
+                                                                    <li>
+                                                                        <a href="${pdfItems.buttonLink}" target="${pdfItems.linkNewTab ? '_blank' : ''}"
+                                                                            class="btn-links with-left-icon"><span
+                                                                                class="icon-download-new lft-icon"></span>${pdfItems.buttonTitle}</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </sly>
+                                            </sly>
+                                        </sly>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </sly>
+                </sly>
+            </sly>
+
+        </div>
+    </div>
+</section>
+<!--  press release box  -->

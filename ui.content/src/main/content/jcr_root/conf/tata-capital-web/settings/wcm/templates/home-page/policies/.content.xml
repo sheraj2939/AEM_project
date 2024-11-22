@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-12-02T13:04:14.343+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2022-11-29T17:03:59.457+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:policy="tata-capital-web/components/page/policy"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:ReplicationStatus,mix:versionable]"
+        jcr:primaryType="nt:unstructured"
+        jcr:uuid="932c2357-e38d-452c-858a-4acc287f65fd"
+        sling:resourceType="wcm/core/components/policies/mappings">
+        <root
+            cq:policy="tata-capital-web/components/container/policy_1574694950110"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/core/components/policies/mapping">
+            <container
+                cq:policy="tata-capital-web/components/container/policy_1574695586800"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping">
+                <tata-capital-web jcr:primaryType="nt:unstructured">
+                    <components jcr:primaryType="nt:unstructured">
+                        <image
+                            cq:policy="tata-capital-web/components/image/policy_96697400689200"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                        <home-page jcr:primaryType="nt:unstructured">
+                            <Instant-loan jcr:primaryType="nt:unstructured">
+                                <instant-loan-inner-cont
+                                    cq:policy="tata-capital-web/components/home-page/Instant-loan/instant-loan-inner-cont/policy_97653942294100"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </Instant-loan>
+                        </home-page>
+                        <common jcr:primaryType="nt:unstructured">
+                            <component-title
+                                cq:policy="tata-capital-web/components/common/component-title/policy_469313645705200"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                        </common>
+                        <TC-Revamp jcr:primaryType="nt:unstructured">
+                            <banner jcr:primaryType="nt:unstructured">
+                                <banner-button
+                                    cq:policy="tata-capital-web/components/TC-Revamp/banner/banner-button/policy_1669289615692"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                                <rte
+                                    cq:policy="tata-capital-web/components/TC-Revamp/banner/rte/policy_1669811008413"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </banner>
+                            <customcontainer jcr:primaryType="nt:unstructured">
+                                <customcontainer
+                                    cq:policy="tata-capital-web/components/TC-Revamp/customcontainer/customcontainer/policy_1669360930885"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </customcontainer>
+                            <way-to-service jcr:primaryType="nt:unstructured">
+                                <way-to-service-section
+                                    cq:policy="tata-capital-web/components/TC-Revamp/way-to-service/way-to-service-section/policy_1669282573018"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                                <customcontainer-two
+                                    cq:policy="tata-capital-web/components/TC-Revamp/way-to-service/customcontainer-two/policy_1669655219488"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </way-to-service>
+                            <Copy_x0020_of_x0020_TrackMyApplication jcr:primaryType="nt:unstructured">
+                                <trackmyapplication
+                                    cq:policy="tata-capital-web/components/TC-Revamp/Copy of TrackMyApplication/trackmyapplication/policy_1669655722450"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </Copy_x0020_of_x0020_TrackMyApplication>
+                            <ExploreBox jcr:primaryType="nt:unstructured">
+                                <explore-button
+                                    cq:policy="tata-capital-web/components/TC-Revamp/ExploreBox/explore-button/policy_1669656510114"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                                <exploredetailscard
+                                    cq:policy="tata-capital-web/components/TC-Revamp/ExploreBox/exploredetailscard/policy_1669656668222"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </ExploreBox>
+                            <TrackMyApplication jcr:primaryType="nt:unstructured">
+                                <trackmyapplication
+                                    cq:policy="tata-capital-web/components/TC-Revamp/TrackMyApplication/trackmyapplication/policy_1669707329648"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                                <trackmyapplication-box
+                                    cq:policy="tata-capital-web/components/TC-Revamp/TrackMyApplication/trackmyapplication-box/policy_1669714040154"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </TrackMyApplication>
+                            <footer-right-sticky jcr:primaryType="nt:unstructured">
+                                <nav-tablist-button
+                                    cq:policy="tata-capital-web/components/TC-Revamp/footer-right-sticky/nav-tablist-button/policy_8768183196200"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </footer-right-sticky>
+                            <Instant-loan jcr:primaryType="nt:unstructured">
+                                <rte
+                                    cq:policy="tata-capital-web/components/TC-Revamp/Instant-loan/rte/policy_1669813869461"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </Instant-loan>
+                            <track-my-applications jcr:primaryType="nt:unstructured">
+                                <track-my-application
+                                    cq:policy="tata-capital-web/components/TC-Revamp/track-my-applications/track-my-application/policy_1669914017710"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </track-my-applications>
+                            <explore-our-products jcr:primaryType="nt:unstructured">
+                                <explore-our-product-button
+                                    cq:policy="tata-capital-web/components/TC-Revamp/explore-our-products/explore-our-product-button/policy_1669914617709"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </explore-our-products>
+                        </TC-Revamp>
+                        <text
+                            cq:policy="tata-capital-web/components/text/policy_94245291310700"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                        <title
+                            cq:policy="tata-capital-web/components/title/policy_94960476299800"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                        <PL-instant-loan-box jcr:primaryType="nt:unstructured">
+                            <instant-loan-box-card
+                                cq:policy="tata-capital-web/components/PL-instant-loan-box/instant-loan-box-card/policy_1669901743889"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                        </PL-instant-loan-box>
+                        <tcl-web-components jcr:primaryType="nt:unstructured">
+                            <instant-loan-box jcr:primaryType="nt:unstructured">
+                                <instant-loan-box-card
+                                    cq:policy="tata-capital-web/components/tcl-web-components/instant-loan-box/instant-loan-box-card/policy_1669965792363"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </instant-loan-box>
+                        </tcl-web-components>
+                    </components>
+                </tata-capital-web>
+                <weretail jcr:primaryType="nt:unstructured">
+                    <TC-Revamp jcr:primaryType="nt:unstructured">
+                        <TrackMyApplication jcr:primaryType="nt:unstructured">
+                            <trackmyapplication
+                                cq:policy="weretail/TC-Revamp/TrackMyApplication/trackmyapplication/policy_1669655610418"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                        </TrackMyApplication>
+                    </TC-Revamp>
+                </weretail>
+            </container>
+            <stickyactions jcr:primaryType="nt:unstructured">
+                <container-main
+                    cq:policy="/apps/core/wcm/components/container/v1/container/policy_1669663632732"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/core/components/policies/mapping"/>
+            </stickyactions>
+            <container_889372964
+                cq:policy="tata-capital-web/components/container/policy_8013301097600"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping"/>
+        </root>
+    </jcr:content>
+</jcr:root>

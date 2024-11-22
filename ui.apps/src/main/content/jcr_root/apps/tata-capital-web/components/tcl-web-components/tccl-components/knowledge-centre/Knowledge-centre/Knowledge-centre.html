@@ -1,0 +1,243 @@
+<!-- knowledge centre -->
+<section class="knowledge-centre-box space-tb40">
+        <div class="tops-heads">
+            <div
+                data-sly-resource="${'community-heading' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+            </div>
+        </div>
+        <div class="" tab-wrapper>
+            <div class="featured-tabs">
+                <ul class="tab-btn-group" tabMenu-wrap>
+                    <sly data-sly-list.tabButtonList="${resource.children}">
+                        <sly data-sly-test="${tabButtonList.name == 'tabButtonMulti'}">
+                            <sly data-sly-list.tabButtonItem="${tabButtonList.children}">
+                                <sly
+                                    data-sly-test.tabList="${'{0}_{1}' @ format =[tabButtonList.name,tabButtonItemList.count]}">
+                                    <li class="tab-item">
+                                        <a href="javascript:void(0);"
+                                            class="tab-button js-tabClick ${tabButtonItem.checkActive ? 'active' : ''}"
+                                            tab-menu="${tabList}">${tabButtonItem.tabButtonName}</a>
+                                    </li>
+                                    <!-- <li class="tab-item">
+                                        <a href="javascript:void(0);" class="tab-button js-tabClick"
+                                            tab-menu="tab-reports">Reports</a>
+                                    </li> -->
+                                </sly>
+                            </sly>
+                        </sly>
+                    </sly>
+                </ul>
+            </div>
+            <div class="dropdown-right">
+                <div class="custom-dropdown-wrap min-width-auto filter-drop-wrap close-on-outside"
+                    data-sly-test="${properties.defaultYear}">
+                    <a href="javascript:void(0);" class="custom-dropdown-btn jsShowDrop"
+                        data-defaultYear="${properties.defaultYear}" data-rel="fy-1">${properties.defaultYear}</a>
+                    <div class="custom-dropdown-block jsDropdownBlock" id="fy-1">
+                        <ul class="custom-dropdown-list simple-bar jsGetValue">
+                            <sly data-sly-list.yearFilterList="${resource.children}">
+                                <sly data-sly-test="${yearFilterList.name == 'rightFilterYear'}">
+                                    <sly data-sly-list.yearFilterItem="${yearFilterList.children}">
+                                        <li class="list" data-year="${yearFilterItem.filterItemsData}">
+                                            <label class="custom-checkbox-label">
+                                                ${yearFilterItem.filterItemsText}
+                                            </label>
+                                        </li>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </ul>
+                    </div>
+                </div>
+                <div class="custom-dropdown-wrap min-width-auto filter-drop-wrap close-on-outside"
+                    data-sly-test="${properties.defaultMonth}">
+                    <a href="javascript:void(0);" class="custom-dropdown-btn jsShowDrop"
+                        data-defaultMonth="${properties.defaultMonth}" data-rel="fy-2">${properties.defaultMonth}</a>
+                    <div class="custom-dropdown-block jsDropdownBlock" id="fy-2">
+                        <ul class="custom-dropdown-list simple-bar jsGetValue">
+                            <sly data-sly-list.monthFilterList="${resource.children}">
+                                <sly data-sly-test="${monthFilterList.name == 'filterMonths'}">
+                                    <sly data-sly-list.monthFilterItem="${monthFilterList.children}">
+                                        <li class="list" data-month="${monthFilterItem.filterItemsData}">
+                                            <label class="custom-checkbox-label">
+                                                ${monthFilterItem.filterItemsText}
+                                            </label>
+                                        </li>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="knowledge-centre-wrap">
+
+                <sly data-sly-list.tabButtonList="${resource.children}">
+                    <sly data-sly-test="${tabButtonList.name == 'tabButtonMulti'}">
+                        <sly data-sly-list.tabButtonItem="${tabButtonList.children}">
+                            <sly
+                                data-sly-test.tabList="${'{0}_{1}' @ format =[tabButtonList.name,tabButtonItemList.count]}">
+                                <div class="${tabButtonItem.checkActive ? '' : 'd-none'}" tab-contnet="${tabList}">
+                                    <sly data-sly-list.tabContentList="${tabButtonItem.children}">
+                                        <sly data-sly-test="${tabContentList.name == 'tabContentMulti'}">
+                                            <sly data-sly-list.tabContentItem="${tabContentList.children}">
+
+                                                <div class="bg-div knowledge-cards ${tabContentItem.marginBottom ? 'mg-b30' : ''}"
+                                                    data-year="${tabContentItem.pdfYear}"
+                                                    data-month="${tabContentItem.pdfMonth}">
+                                                    <div class="knowledge-top-row">
+                                                        <div class="knowledge-top-right d-lg-none">
+                                                            <p class="text13 semibold">
+                                                                ${tabContentItem.pdfMonth} ${tabContentItem.pdfYear}
+                                                            </p>
+                                                            <h3 class="heading20">
+                                                                <span>${tabContentItem.pdfTitle}</span>
+                                                            </h3>
+                                                        </div>
+                                                        <div class="knowledge-top-left">
+                                                            <img src="${tabContentItem.img}"
+                                                                alt="${tabContentItem.altText}">
+                                                        </div>
+                                                        <div class="knowledge-top-right">
+                                                            <div class="d-lg-block d-none">
+                                                                <p class="text13 semibold">
+                                                                    ${tabContentItem.pdfMonth} ${tabContentItem.pdfYear}
+                                                                </p>
+                                                                <h3 class="heading20">
+                                                                    <span>${tabContentItem.pdfTitle}</span>
+                                                                </h3>
+                                                            </div>
+                                                            <div class="text14i">
+                                                                ${tabContentItem.description @ context = 'html'}
+                                                            </div>
+                                                            <a data-sly-test="${tabContentItem.readmoreButtonText}" href="${tabContentItem.readmoreLink}"
+                                                                target="${tabContentItem.checkNewTab ? '_blank' : ''}"
+                                                                class="btn-links link-with-arrow">
+                                                                ${tabContentItem.readmoreButtonText}
+                                                                <span class="icon-arrow-right arros"></span>
+                                                            </a>
+                                                            <div class="button-holder">
+                                                                <a data-sly-test="${tabContentItem.webinarButtonText}" href="${tabContentItem.webinarBtnLink}"
+                                                                    target="${tabContentItem.checkNewTab2 ? '_blank' : ''}"
+                                                                    class="btn btn-blue btn-big">
+                                                                    ${tabContentItem.webinarButtonText}
+                                                                </a>
+                                                                <sly
+                                                                    data-sly-test.offerid="${tabContentItemList.count}">
+                                                                    <a href="javascript:void(0)"
+                                                                        data-link="pdf_${offerid}"
+                                                                        pdf_url="${tabContentItem.pdfBtnLink}"
+                                                                        class="btn-links link-with-arrow">
+                                                                        ${tabContentItem.pdfButtonText}
+                                                                        <span class="icon-arrow-right arros"></span>
+                                                                    </a>
+                                                                </sly>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </div>
+                            </sly>
+                        </sly>
+                    </sly>
+                </sly>
+            </div>
+
+
+
+        </div>
+
+</section>
+
+<div class="popover-modal modals-blue fade" id="pdf-notify">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-lg">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content">
+                <button data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></button>
+                <div class="popover-modal-body">
+                    <div class="download-modal-infos">
+                        <img src="/content/dam/tata-capital-web/assets/img/download-img.svg" alt="" class="download-img">
+                        <p class="heading20 semibold">
+                            Please fill in the following information to download the report
+                        </p>
+                        <div class="download-form-row form-modal" id="jsDownloadForm">
+                            <div class="row-flex row-flex-20">
+                                <div class="row-col-50 col-sp20">
+                                    <div class="form-textbox-new">
+                                        <label class="label-name">First Name</label>
+                                        <div class="textbox-inner">
+                                            <input type="text" data-type="firstname" data-form="firstName"
+                                                class="input-textbox disable-emoji only-alpha-input alfaOnlyInput"
+                                                placeholder="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row-col-50 col-sp20">
+                                    <div class="form-textbox-new">
+                                        <label class="label-name">Last Name</label>
+                                        <div class="textbox-inner">
+                                            <input type="text" data-type="lastname" data-form="lastName"
+                                                class="input-textbox disable-emoji only-alpha-input alfaOnlyInput"
+                                                placeholder="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row-col-50 col-sp20">
+                                    <div class="form-textbox-new">
+                                        <label class="label-name">Email</label>
+                                        <div class="textbox-inner">
+                                            <input type="text" data-form="email" class="input-textbox disable-emoji"
+                                                placeholder="" data-type="email" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row-col-50 col-sp20">
+                                    <div class="form-textbox-new">
+                                        <label class="label-name">Company</label>
+                                        <div class="textbox-inner">
+                                            <input type="text" data-form="company"
+                                                class="input-textbox alpha-numeric-input disable-emoji"
+                                                placeholder="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center pd-t10">
+                                <button type="button" class="btn-link btn-big jsDownloadBtn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popover-modal modals-blue fade" id="pdf-success-notify">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md2">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content">
+                <button data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></button>
+                <div class="popover-modal-body">
+                    <div class="thankyou-modal-inner">
+                        <div class="prefrence-mx">
+                            <img src="/content/dam/tata-capital-web/assets/img/thanks.svg" alt="" class="thankyou-img">
+                            <p class="heading36">
+                                <span>
+                                    THANK YOU FOR SUBMITTING THE DETAILS
+                                </span>
+                            </p>
+                            <p class="text16i">
+                                Your download will start automatically.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

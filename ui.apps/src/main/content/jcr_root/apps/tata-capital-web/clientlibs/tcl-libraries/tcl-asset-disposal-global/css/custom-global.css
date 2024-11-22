@@ -1,0 +1,93 @@
+/*# Custom Global CSS */
+.root.container.responsivegrid{
+	padding:0px;
+    max-width:100%;
+	overflow:hidden;
+}
+.container.responsivegrid{
+  padding:0px;
+  max-width:100%;
+}
+a{
+  color: #1961AC;
+  }
+
+  @media (max-width: 767px) {
+    p {
+      font-size: 13px;
+    }
+  }  
+div.simplebar-scrollbar:before {
+  opacity: 0 !important;
+  background: #c0d2e3;
+}
+
+.prefrence-language-content .prefrence-mx {
+  max-width: 494px;
+  margin: auto;
+  text-align: center;
+}
+
+.prefrence-language-content .pdf-imgs {
+  margin: 0 auto 20px;
+}
+
+.prefrence-language-content h3 {
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.prefrence-language-content p {
+  margin-bottom: 30px;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: .02em;
+  color: #fff;
+}
+
+.mx-314 {
+  max-width: 314px;
+  margin: auto;
+}
+
+.prefrence-language-content .custom-select2 {
+  margin-bottom: 30px;
+}
+
+.custom-select2.select2-white .select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #fff;
+}
+
+.custom-select2.select2-white .select2-container--default .select2-selection--single .select2-selection__arrow:before {
+  color: #fff;
+}
+
+
+.deal-img-out.no-image {
+  background-size: contain !important;
+  background-position: center !important;
+  width: 100%;
+  border-radius: 20px;
+  height: 180px;
+}
+.big-media-holder .big-media.no-image{
+  background-position: center !important;
+  background-size: 100% 100% !important;
+}
+
+.asset-disposal-modal .slick-slide img {
+  height:580px;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .asset-disposal-modal .slick-slide img {
+    height:380px;
+  }
+}
+
+@media (max-width:991px) {
+  .big-media.deal-img{
+    background-size: 750px !important;
+  }
+}

@@ -1,0 +1,112 @@
+<!--  banner cntr  start 2-2-2023 -->
+<section
+    class="banner-cntr-new  ${properties.bannerstyle} ${properties.styleChange ? 'banner-height' : ' '} ${properties.topSpace ? 'banner-pdt28' : ''}">
+    <div class="custom-container">
+        <article class="banner-new-box ${properties.firstWhiteDots ? 'banner-white-dots': ' '}">
+            <div class="banner-slider-new ${properties.bannerstyle ?' ': ' slider-dots'}"
+                id="${properties.bannerstyle ? ' ': 'jsNewBannerSlider'}">
+                <sly data-sly-list.banner="${resource.children}">
+                    <sly data-sly-test="${banner.name == 'bannerMultifield'}">
+                        <sly data-sly-list.bannerItem="${banner.children}">
+                            <!-- Banner white default -->
+                            <div class="banner-item-new">
+                                <div class="banner-wrap ${bannerItem.bannerThemeName} ${bannerItem.bannerDots}">
+                                    <div class="banner-text-new">
+                                        <div class="banner-captions">
+                                            <div class="main-title">
+                                                <div class="main-title-inner">
+                                                    <sly data-sly-test="${bannerItem.preTitle}">
+                                                        <p class="subheading13">${bannerItem.preTitle}</p>
+                                                    </sly>
+                                                    <sly data-sly-test="${bannerItem.selectBannerTitle =='hOne'}">
+                                                        <h1 class="heading-h1">${bannerItem.productName}
+                                                            <span>${bannerItem.productTitle}</span>
+                                                        </h1>
+                                                    </sly>
+                                                    <sly data-sly-test="${bannerItem.selectBannerTitle =='hTwo'}">
+                                                        <h2 class="heading-h1">${bannerItem.productName}
+                                                            <span>${bannerItem.productTitle}</span>
+                                                        </h2>
+                                                    </sly>
+                                                    <sly data-sly-test="${bannerItem.selectBannerTitle =='pTag'}">
+                                                        <p class="heading-h1">${bannerItem.productName}
+                                                            <span>${bannerItem.productTitle}</span>
+                                                        </p>
+                                                    </sly>
+                                                </div>
+                                            </div>
+                                            <sly data-sly-test="${bannerItem.subHeading}">
+                                                <div class="title-info">
+                                                    <p>${bannerItem.productDescription @ context = 'html'}</p>
+                                                </div>
+                                            </sly>
+                                            <!-- mobile banner -->
+                                            <div class="banner-img mob-banners d-block d-md-none">
+                                                <sly data-sly-test="${!bannerItem.lozadImage}">
+                                                    <picture>
+                                                        <source media="(max-width: 767px)"
+                                                            srcset="${bannerItem.mobileImage}">
+                                                        <img src alt="${bannerItem.ImageAltTitle}" class="banners-img"
+                                                            fetchpriority="high" decoding="sync">
+                                                    </picture>
+                                                </sly>
+                                                <sly data-sly-test="${bannerItem.lozadImage}">
+                                                    <picture class="lozad">
+                                                        <source media="(max-width: 767px)"
+                                                            srcset="${bannerItem.mobileImage}">
+                                                        <!-- <img src alt="" class="banners-img"> -->
+                                                    </picture>
+                                                </sly>
+                                            </div>
+                                            <!-- mobile banner -->
+                                            <div class="dsk-banner-cta btn-holder">
+                                                <sly data-sly-test="${bannerItem.primaryButtonTitle}">
+                                                    <sly
+                                                        data-sly-test="${bannerItem.primaryButtonColor != 'btn-dangers'}">
+                                                        <a aria-label="link" href="${bannerItem.primaryButtonLink}"
+                                                            type="button"
+                                                            class="btn-blue btn-large cta-gap ${bannerItem.primaryButtonColor}"
+                                                            target="${bannerItem.primaryButtonLinkOpenInNewTab ? '_blank' : '' }">${bannerItem.primaryButtonTitle}</a>
+                                                    </sly>
+                                                    <sly
+                                                        data-sly-test="${bannerItem.primaryButtonColor == 'btn-dangers'}">
+                                                        <a aria-label="link" href="${bannerItem.primaryButtonLink}"
+                                                            type="button"
+                                                            class="btn-large cta-gap ${bannerItem.primaryButtonColor}"
+                                                            target="${bannerItem.primaryButtonLinkOpenInNewTab ? '_blank' : '' }">${bannerItem.primaryButtonTitle}</a>
+                                                    </sly>
+                                                </sly>
+                                                <sly data-sly-test="${bannerItem.secondaryButtonTitle}">
+                                                    <sly data-sly-test="${!bannerItem.secondaryPopupShow}">
+                                                        <a href="${bannerItem.primaryButtonLink}" aria-label="link"
+                                                            href="${bannerItem.secondaryButtonLink}" type="button"
+                                                            class="btn-link btn-big cta-gap"
+                                                            target="${bannerItem.secondaryButtonLinkOpenInNewTab ? '_blank' : '' }">${bannerItem.secondaryButtonTitle}</a>
+                                                    </sly>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- desktop banner -->
+                                    <div class="banner-img d-none d-md-block">
+                                        <sly data-sly-test="${!bannerItem.lozadImage}">
+                                            <picture style="display: block; min-height: 1rem"
+                                                data-iesrc="${bannerItem.desktopImage}" data-alt="">
+                                                <source srcset="${bannerItem.desktopImage}" media="(min-width: 1200px)">
+                                                <source srcset="${bannerItem.tabImage}" media="(min-width: 768px)">
+                                                <img src alt="${bannerItem.ImageAltTitle}" class="banners-img"
+                                                    fetchpriority="high" decoding="sync">
+                                            </picture>
+                                        </sly>
+                                    </div>
+                                    <!-- desktop banner -->
+                                </div>
+                            </div>
+                            <!-- Banner white default -->
+                        </sly>
+                    </sly>
+                </sly>
+            </div>
+        </article>
+    </div>
+</section>
+<!-- banner cntr end 2-2-2023 -->

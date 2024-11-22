@@ -1,0 +1,71 @@
+<!-- Customer segments box -->
+<div class="capabilities-box segments-box space-tb40">
+    <div class="container">
+        <sly
+            data-sly-resource="${'our-segments-title' @ resourceType='/apps/tata-capital-web/components/tcl-wealth/components/wealth-component-title/component-title'}">
+        </sly>
+    </div>
+
+    <div>
+        <div class="" tab-wrapper="">
+            <ul class="tab-btn-group" tabmenu-wrap="">
+                <sly data-sly-list.ourSegment="${resource.children}">
+                    <sly data-sly-test="${ourSegment.name == 'tabFeild'}">
+                        <sly data-sly-list.tabListText="${ourSegment.children}">
+                            <sly data-sly-test.tabList="${'{0}-{1}' @ format =[ourSegment.name,tabListTextList.count]}">
+                                <li class="tab-item">
+                                    <a href="javascript:void(0);"
+                                        class="tab-button js-tabClick ${tabListText.activeTab ? 'active' : ''}"
+                                        tab-menu="${tabList}">${tabListText.tabText}</a>
+                                </li>
+                            </sly>
+                        </sly>
+                    </sly>
+                </sly>
+            </ul>
+            <div class="">
+                <sly data-sly-list.ourSegment="${resource.children}">
+                    <sly data-sly-test="${ourSegment.name == 'tabFeild'}">
+                        <sly data-sly-list.tabListText="${ourSegment.children}">
+                            <sly data-sly-test.tabList="${'{0}-{1}' @ format =[ourSegment.name,tabListTextList.count]}">
+                                <div class="${tabListText.cardWrap ? '' : 'd-none'}" tab-contnet="${tabList}">
+                                    <div class="container mob-pd0">
+                                        <div class="capabilities-slider customers-segments flex-slider-mob slider-dots"
+                                            id="${tabListText.tabCategory}">
+                                            <sly data-sly-list.tabCards="${tabListText.children}">
+                                                <sly data-sly-test="${tabCards.name == 'tabCards'}">
+                                                    <sly data-sly-list.cardContent="${tabCards.children}">
+                                                        <div class="capabilities-row">
+                                                            <div class="capabilities-col">
+                                                                <div
+                                                                    class="capabilities-div bg-div radius30 bg-img-right">
+                                                                    <span class="all-icon47">
+                                                                        <span class="inner-icon">
+                                                                            <span
+                                                                                class="${cardContent.classIcon}"></span>
+                                                                        </span>
+                                                                    </span>
+                                                                    <p class="heading20 semibold">
+                                                                        ${cardContent.cardHeading}
+                                                                    </p>
+                                                                    <div class="text14i">${cardContent.cardDescription @context = 'html'}
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </sly>
+                                                </sly>
+                                            </sly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </sly>
+                        </sly>
+                    </sly>
+                </sly>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- Customer segments box -->

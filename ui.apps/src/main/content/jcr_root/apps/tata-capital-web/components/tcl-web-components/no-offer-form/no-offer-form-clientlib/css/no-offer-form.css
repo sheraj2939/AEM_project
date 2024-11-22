@@ -1,0 +1,49 @@
+.no-offer-box .no-offer-wrap {
+    padding: 25px 40px;
+  }
+  .no-offer-box .no-offer-top .icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+  }
+  .no-offer-box .no-offer-top .tops-heads {
+    max-width: 744px;
+    margin-bottom: 10px;
+  }
+  .no-offer-box .no-offer-form .form-textbox-new {
+    margin-bottom: 10px;
+  }
+  .no-offer-box .no-offer-form .form-checkbox {
+    margin-bottom: 24px;
+    position: relative;
+  }
+  .no-offer-box .no-offer-form .form-checkbox .custom-checkbox-label {
+    letter-spacing: 0.02em;
+    font-family: "OpenSans-Regular";
+  }
+  .no-offer-box .no-offer-form .form-checkbox .custom-checkbox-label a {
+    color: #126FB3;
+  }
+  .no-offer-box .btn-controls {
+    margin-top: 4px;
+  }
+  
+  @media (max-width: 1199px) {
+    .no-offer-box .no-offer-form .row-flex .row-col-33 {
+      width: 50%;
+    }
+  }
+  @media (max-width: 767px) {
+    .no-offer-box .no-offer-wrap {
+      padding: 24px;
+    }
+    .no-offer-box .no-offer-form .row-flex .row-col-33 {
+      width: 100%;
+    }
+    .no-offer-box .btn-controls .btn-blue {
+      width: 100%;
+    }
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+  

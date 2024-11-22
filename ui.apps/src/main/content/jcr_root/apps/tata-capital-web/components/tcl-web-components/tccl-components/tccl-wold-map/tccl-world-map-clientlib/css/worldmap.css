@@ -1,0 +1,569 @@
+.finance-member-listbox-desktop {
+  position: relative;
+  margin-top: 20px;
+}
+
+.finance-member-listbox-desktop .map-image {
+  width: 100%;
+}
+
+.map-cntr.world .tops-heads {
+  max-width: none;
+  padding: 24px 40px;
+}
+
+.member-card {
+  background-color: #62A7DB;
+  border-radius: 5px;
+  padding: 7px 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  position: absolute;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.4s;
+}
+
+.member-card::before {
+  position: absolute;
+  content: " ";
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid #62A7DB;
+  left: 50px;
+  transform: translateX(-50%);
+}
+
+.member-card:hover .country-name p {
+  display: none;
+}
+
+.member-card:hover .country-detail {
+  display: flex;
+}
+
+.member-card:hover .country-detail * {
+  margin-right: 3px;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+
+.member-card:hover .country-detail *:last-child {
+  margin-right: 0;
+}
+
+.member-card.india:hover .country-detail {
+  display: flex;
+}
+
+.member-card.india:hover .country-detail * {
+  background-color: #62A7DB;
+}
+
+.member-card .country-name {
+  margin-left: 5px;
+}
+
+.member-card .country-name p {
+  font-size: 12px;
+  line-height: 130%;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.member-card .country-detail {
+  margin-left: 5px;
+  display: none;
+}
+
+.member-card.usa {
+  top: 25%;
+  left: 11%;
+  z-index: 1;
+}
+
+.member-card.new-york {
+  top: 18.7%;
+  left: 20.5%;
+}
+
+.member-card.united-kingdom {
+  top: 11.7%;
+  left: 40.5%;
+}
+
+.member-card.eearsf {
+  top: 18%;
+  left: 49%;
+}
+
+.member-card.india {
+  top: 26.5%;
+  left: 65.5%;
+}
+
+.member-card.japan {
+  top: 25.7%;
+  left: 81.5%;
+}
+
+.member-card.malasia {
+  top: 39.5%;
+  left: 78.3%;
+}
+
+.member-card.australia {
+  top: 57%;
+  left: 85%;
+}
+
+.member-card:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.member-card:hover.india {
+  z-index: 15;
+}
+
+.finance-member-listbox-mobile {
+  display: none;
+}
+
+.finance-member-listbox-mobile .map-image {
+  width: 100%;
+}
+
+.nav-tabs-dropdown {
+  display: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.nav-tabs-dropdown:before {
+  content: "\e90e";
+  font-family: "icomoon" !important;
+  position: absolute;
+  right: 20px;
+  color: #15649F;
+}
+
+.our-presence-tab-list.nav-tabs {
+  display: flex;
+  flex-direction: column;
+  border-bottom: none;
+}
+
+.our-presence-tab-list.nav-tabs>li {
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.our-presence-tab-list.nav-tabs>li:last-child {
+  margin-bottom: 0;
+}
+
+.our-presence-tab-list.nav-tabs>li::before {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.our-presence-tab-list.nav-tabs>li.uttar-pradesh::before {
+  background-color: #1465A1;
+}
+
+.our-presence-tab-list.nav-tabs>li.karnataka::before {
+  background-color: #186EAE;
+}
+
+.our-presence-tab-list.nav-tabs>li.maharashtra::before {
+  background-color: #327AAF;
+}
+
+.our-presence-tab-list.nav-tabs>li.haryana::before {
+  background-color: #3A87C0;
+}
+
+.our-presence-tab-list.nav-tabs>li.rajasthan::before {
+  background-color: #2B81C1;
+}
+
+.our-presence-tab-list.nav-tabs>li.madhyaPradesh::before {
+  background-color: #2E89CC;
+}
+
+.our-presence-tab-list.nav-tabs>li.tamilNadu::before {
+  background-color: #3E99DC;
+}
+
+.our-presence-tab-list.nav-tabs>li.odisha::before {
+  background-color: #45A4EA;
+}
+
+.our-presence-tab-list.nav-tabs>li.andhraPradesh::before {
+  background-color: #4FABEF;
+}
+
+.our-presence-tab-list.nav-tabs>li.jammuKashmir::before {
+  background-color: #83B5DA;
+}
+
+.our-presence-tab-list.nav-tabs>li.gujarat::before {
+  background-color: #85B9DF;
+}
+
+.our-presence-tab-list.nav-tabs>li.westBengal::before {
+  background-color: #88BDE4;
+}
+
+.our-presence-tab-list.nav-tabs>li.chhattisgarh::before {
+  background-color: #95C6EA;
+}
+
+.our-presence-tab-list.nav-tabs>li.himanchalPradesh::before {
+  background-color: #80BEEB;
+}
+
+.our-presence-tab-list.nav-tabs>li a {
+  display: block;
+  padding: 0;
+  color: #667A80;
+  font-size: 13px;
+  line-height: 22px;
+  margin: 0;
+  border: 0;
+  font-weight: 600;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.our-presence-tab-list.nav-tabs>li a:hover {
+  background-color: transparent;
+  color: #667A80;
+  font-family: "OpenSans-Bold";
+}
+
+.our-presence-tab-list.nav-tabs>li.active a {
+  border: none;
+  color: #333333;
+  font-size: 13px;
+  line-height: 22px;
+  font-family: "OpenSans-Bold";
+}
+
+/* Responsive Media Screen */
+@media (max-width: 1199px) {
+  .member-card.usa {
+    top: 23%;
+    left: 11%;
+  }
+
+  .member-card.new-york {
+    top: 16.7%;
+    left: 19.5%;
+  }
+
+  .member-card.united-kingdom {
+    top: 10%;
+    left: 39.7%;
+  }
+
+  .member-card.eearsf {
+    top: 16.5%;
+    left: 48.3%;
+  }
+
+  .member-card.india {
+    top: 25%;
+    left: 65%;
+  }
+
+  .member-card.japan {
+    top: 25%;
+    left: 80%;
+  }
+
+  .member-card.malasia {
+    top: 37%;
+    left: 77%;
+  }
+
+  .member-card.australia {
+    top: 55%;
+    left: 84%;
+  }
+}
+
+@media (max-width: 991px) {
+  .map-cntr.world .tops-heads {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .map-cntr.world .button-holder.pd-b40 {
+    padding-top: 40px;
+  }
+
+  .finance-member-listbox-desktop {
+    display: none;
+  }
+
+  .nav-mobile-image .tab-pane {
+    height: 295px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    position: relative;
+  }
+
+  .finance-member-section {
+    position: relative;
+  }
+
+  .finance-member-listbox-mobile {
+    display: block;
+    position: relative;
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .finance-member-listbox-mobile .default-nav-img {
+    height: 295px;
+    background-repeat: no-repeat;
+  }
+
+  .finance-member-listbox-mobile .usa-img {
+    height: 295px;
+    background-repeat: repeat-x;
+    background-position: -58px 0px;
+  }
+
+  .finance-member-listbox-mobile .usa-img .member-card.usa {
+    top: 85px;
+    left: 40px;
+  }
+
+  .finance-member-listbox-mobile .new-york-img .member-card.new-york {
+    top: 52px;
+    left: 226px;
+  }
+
+  .finance-member-listbox-mobile .united-kingdom-img {
+    background-position: -370px 0;
+  }
+
+  .finance-member-listbox-mobile .united-kingdom-img .member-card.united-kingdom {
+    top: 17px;
+    left: 90px;
+  }
+
+  .finance-member-listbox-mobile .eearsf-img {
+    background-position: -400px 0;
+  }
+
+  .finance-member-listbox-mobile .eearsf-img .member-card.eearsf {
+    top: 48px;
+    left: 160px;
+  }
+
+  .finance-member-listbox-mobile .india-img {
+    background-position: -635px 0;
+  }
+
+  .finance-member-listbox-mobile .india-img .member-card.india {
+    top: 90px;
+    left: 107px;
+  }
+
+  .finance-member-listbox-mobile .japan-img {
+    background-position: -725px 0;
+  }
+
+  .finance-member-listbox-mobile .japan-img .member-card .country-flag {
+    min-width: 35px;
+  }
+
+  .finance-member-listbox-mobile .japan-img .member-card.japan {
+    top: 87px;
+    left: 214px;
+  }
+
+  .finance-member-listbox-mobile .malasia-img {
+    background-position: -714px -34px;
+  }
+
+  .finance-member-listbox-mobile .malasia-img .member-card.malasia {
+    top: 115px;
+    left: 175px;
+  }
+
+  .finance-member-listbox-mobile .australia-img {
+    background-position: -470px -71px;
+  }
+
+  .finance-member-listbox-mobile .australia-img .member-card.australia {
+    top: 170px;
+    left: auto;
+    right: 65px;
+  }
+
+  .finance-member-dropdown {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+  }
+
+  .tab-drodown-button {
+    padding: 11px 30px 11px 0px;
+    background-color: transparent;
+    color: #333333;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    display: block;
+    position: relative;
+    border-bottom: 1px solid #C7C7C7;
+  }
+
+  .our-presence-tab-list.nav-tabs {
+    background-color: #fff;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    max-height: 200px;
+    overflow-y: scroll;
+    position: absolute;
+    left: 15px;
+    top: 100%;
+    width: calc(100% - 30px);
+    z-index: 2;
+    display: none;
+  }
+
+  .our-presence-tab-list.nav-tabs>li {
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .our-presence-tab-list.nav-tabs>li::before {
+    content: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .finance-member-listbox-mobile {
+    display: block;
+    position: relative;
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .finance-member-listbox-mobile .default-nav-img {
+    height: 295px;
+    background-repeat: no-repeat;
+  }
+
+  .finance-member-listbox-mobile .usa-img {
+    height: 295px;
+    background-repeat: repeat-x;
+  }
+
+  .finance-member-listbox-mobile .usa-img .member-card.usa {
+    top: 85px;
+    left: 40px;
+  }
+
+  .finance-member-listbox-mobile .new-york-img .member-card.new-york {
+    top: 52px;
+    left: 226px;
+  }
+
+  .finance-member-listbox-mobile .united-kingdom-img {
+    background-position: -370px 0;
+  }
+
+  .finance-member-listbox-mobile .united-kingdom-img .member-card.united-kingdom {
+    top: 17px;
+    left: 90px;
+  }
+
+  .finance-member-listbox-mobile .eearsf-img {
+    background-position: -400px 0;
+  }
+
+  .finance-member-listbox-mobile .eearsf-img .member-card.eearsf {
+    top: 48px;
+    left: 160px;
+  }
+
+  .finance-member-listbox-mobile .india-img {
+    background-position: -635px 0;
+  }
+
+  .finance-member-listbox-mobile .india-img .member-card.india {
+    top: 90px;
+    left: 107px;
+  }
+
+  .finance-member-listbox-mobile .japan-img {
+    background-position: -725px 0;
+  }
+
+  .finance-member-listbox-mobile .japan-img .member-card .country-flag {
+    min-width: 35px;
+  }
+
+  .finance-member-listbox-mobile .japan-img .member-card.japan {
+    top: 87px;
+    left: 214px;
+  }
+
+  .finance-member-listbox-mobile .malasia-img {
+    background-position: -714px -34px;
+  }
+
+  .finance-member-listbox-mobile .malasia-img .member-card.malasia {
+    top: 115px;
+    left: 175px;
+  }
+
+  .finance-member-listbox-mobile .australia-img {
+    background-position: 100% 109%;
+  }
+
+  .finance-member-listbox-mobile .australia-img .member-card.australia {
+    top: 170px;
+    left: auto;
+    right: 65px;
+  }
+}
+
+@media (min-width: 992px) {
+  #nav-tabs-wrapper.finnce-member-tab-list {
+    display: none !important;
+  }
+}
+
+.tab-content .tab-pane {
+  display: none;
+}
+
+.tab-content .active {
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */

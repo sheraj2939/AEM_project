@@ -1,0 +1,39 @@
+<div class="board-director-box space-tb40 space-b80">
+    <div class="container">
+        <div class="board-director-inner">
+            <div class="board-directors-left tab-left">
+                <sly data-sly-list.redirecionList="${resource.children}">
+                    <sly data-sly-test="${redirecionList.name == 'linksMultifield'}">
+                        <sly data-sly-list.links="${redirecionList.children}">
+                            <a href="${links.Redirectionlink}" class="tabs-button tabScrollCenter tablinks has-right-arrow ${links.activeTabEle?'active':''}">${links.linkLabel}</a>
+                        </sly>
+                    </sly>
+                </sly>
+            </div>
+            <div class="board-directors-right">
+                <div class=" key-people-details-box">
+                        <div class="directors-team-top">
+                            <div class="teams-lefts">
+                                <img data-sly-test="${properties.dstpImage}" src="${properties.dstpImage}"
+                                    alt="rajiv" class="profile-pic">
+                            </div>
+                            <div class="teams-right">
+                                <p class="heading24 bold people-name">${properties.name}</p>
+                                <p class="text16i people-profile semibold">${properties.designation}</p>
+                                <img data-sly-test="${!properties.hideLogo}" src="/content/dam/tata-capital-web/key-people/tata-big.svg" alt="rajiv"
+                                    class="logo-tata">
+                            </div>
+                        </div>
+                        <div class="directors-infoes">
+                            <div class="teams-profile-mob">
+                                <img data-sly-test="${properties.mblImage}" src="${properties.mblImage}"
+                                    alt="rajiv" class="profile-pic-mob">
+                            </div>
+                            <div class="text14i">${properties.description @ context='html'}</div>
+                            <a data-sly-test="${properties.Profilelink}" type="button" class="btn-links link-with-arrow" href="${properties.Profilelink}">View Next Profile <span class="icon-arrow-right arros"></span></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

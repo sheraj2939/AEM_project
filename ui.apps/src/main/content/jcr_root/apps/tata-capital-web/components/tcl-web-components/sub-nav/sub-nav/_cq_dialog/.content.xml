@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Sub Nav Authoring"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <sub-nav
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                        <items jcr:primaryType="nt:unstructured">
+                            <container
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Sub-Nav Authoring"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <button-text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Enter Text for button component"
+                                        fieldLabel="Enter Button Text"
+                                        name="./btnText"/>
+                                    <button-span
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Enter Span Text for button component"
+                                        fieldLabel="Enter Button Span Text"
+                                        name="./btnSpanText"/>
+                                    <redirection-link
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                        fieldDescription="Enter link to be redirected on button click"
+                                        fieldLabel="Enter Button Redirection Link"
+                                        name="./redirectionLink"/>
+                                    <new-tab-checkbox
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Check to Open Links in New Tab"
+                                        name="./newTab"
+                                        text="New Tab"
+                                        value="{Boolean}true"/>
+                                    <mob-overviews-tab-text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Enter Text to be displayed at mobile view for the sub nav accordion"
+                                        fieldLabel="Mobile Tab Text"
+                                        name="./mobTabText"/>
+                                    <mob-overviews-tab-link
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                        fieldDescription="Enter link to be displayed at mobile view for the sub nav accordion"
+                                        fieldLabel="Enter Mobile Tab Link"
+                                        name="./mobTabLink"/>
+                                    <back-text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Enter Text for Back button link"
+                                        fieldLabel="Enter Back Text"
+                                        name="./backText"/>
+                                    <back-icon
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Enter Icon for Back button "
+                                        fieldLabel="Enter Back Icon"
+                                        name="./backIcon"/>
+                                    <back-link
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                        fieldDescription="Enter Link of previous page for Back button "
+                                        fieldLabel="Enter Back Page Link"
+                                        name="./backLink"/>
+                                    <back-tab-link-checkbox
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Check if you want to link this page to back page"
+                                        name="./backTabLink"
+                                        text="Link to Back Page"
+                                        value="{Boolean}true"/>
+                                    <overviews-links-multifield
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldLabel="Overviews Links">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                            aem_nested="NODE_STORE"
+                                            name="./overviewsLinkField">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <overviews-link-text
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Enter overviews link Text"
+                                                    fieldLabel="Enter Overviews Text"
+                                                    name="./overviewText"/>
+                                                <overview-link-desktop
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                    fieldDescription="Enter overviews link for Desktop view"
+                                                    fieldLabel="Enter Overviews Link for desktop"
+                                                    name="./overviewLink"/>
+                                                <overview-link-mobile
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                    fieldDescription="Enter overviews link for mobile view"
+                                                    fieldLabel="Overviews Link For mobile view"
+                                                    name="./overviewLinkMobile"/>
+                                                <new-tab-checkbox
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldDescription="Check to Open Links in New Tab"
+                                                    name="./newTab"
+                                                    text="New Tab"
+                                                    value="{Boolean}true"/>
+                                                <accordion-with-link
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldDescription="Check for accordion with link"
+                                                    name="./ACLink"
+                                                    text="Check for accordion with link"
+                                                    value="{Boolean}true"/>
+                                                <accordion-checkbox
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldDescription="Check if its an accordion"
+                                                    name="./accordion"
+                                                    text="Accordion"
+                                                    value="{Boolean}true"/>
+                                                <active-accordion-checkbox
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldDescription="Check to apply active class for the current link"
+                                                    name="./accordionActive"
+                                                    text="Accordion Active"
+                                                    value="{Boolean}true"/>
+                                                <more-tab
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldDescription="Check to move in More tab"
+                                                    name="./moreTab"
+                                                    text="Move to More Tab"
+                                                    value="{Boolean}true"/>
+                                                <overview-sub-menus
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                    composite="{Boolean}true"
+                                                    fieldLabel="Overview Sub Menu">
+                                                    <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                        aem_nested="NODE_STORE"
+                                                        name="./overviewSubMenu">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <overview-sub-menu-link
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldDescription="Enter Link for sub menu"
+                                                                fieldLabel="Enter Sub Menu Link"
+                                                                name="./overviewSubMenuLink"/>
+                                                            <overview-sub-menu-text
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldDescription="Enter Text for sub menu"
+                                                                fieldLabel="Enter Sub Menu Text"
+                                                                name="./overviewSubMenuText"/>
+                                                        </items>
+                                                    </field>
+                                                </overview-sub-menus>
+                                            </items>
+                                        </field>
+                                    </overviews-links-multifield>
+                                    <more-tab
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Check for More tab"
+                                        name="./moreTabActive"
+                                        text="More Tab"
+                                        value="{Boolean}true"/>
+                                    <more-tab-active
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Check to Active More tab"
+                                        name="./activeMore"
+                                        text="Active More Tab"
+                                        value="{Boolean}true"/>
+                                </items>
+                            </container>
+                        </items>
+                    </sub-nav>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Common Title"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[core.wcm.components.title.v2.editor]"
+    helpPath="https://www.adobe.com/go/aem_cmp_title_v3"
+    trackingFeature="core-components:title:v3">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Leave empty to use the page title."
+                                                fieldLabel="Title"
+                                                name="./jcr:title"/>
+                                            <boldtitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Add text to display in bold font"
+                                                fieldLabel="Bold Title Term"
+                                                name="./boldTerm"/>
+                                            <spantagtitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Add text to display in span tag"
+                                                fieldLabel="Add text to display in span tag"
+                                                name="./spanTagTitle"/>
+                                            <title-variant-select
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="Select Title Variant according to the component"
+                                                fieldLabel="Select Title Variant"
+                                                name="./selectTitleVariant">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Default"/>
+                                                    <page-title
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Page Title"
+                                                        value="pageTitle"/>
+                                                    <common-title
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Common Title"
+                                                        value="commonTitle"/>
+                                                    <banner-title
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Banner Title"
+                                                        value="bannerTitle"/>
+                                                    <best-deals-heading
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Best Deals Heading"
+                                                        value="bestDealsHeading"/>
+                                                    <best-deals-heading-Ptag
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Best Deals Heading P Tag"
+                                                        value="bestDealsHeadingPtag"/>
+                                                    <preapprovedtitle
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Pre Approved Form Title"
+                                                        value="preApprovedFormTitle"/>
+                                                    <singlelinetitle
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Single Line Title"
+                                                        value="singleLineTitle"/>
+                                                    <singlelinetitlePtag
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Single Line Title P Tag"
+                                                        value="singleLineTitlePtag"/>
+                                                    <loan-information
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Loan Information"
+                                                        value="loanInformation"/>
+                                                    <loan-information-main-header
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Loan Information main header"
+                                                        value="liMainHeader"/>
+                                                    <why-to-choose-us-title
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Why to choose us title"
+                                                        value="whyChoose"/>
+                                                    <emi-options
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="EMI Options"
+                                                        value="emiOptions"/>
+                                                    <apply-on-whatsapp
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Apply On Whatsapp"
+                                                        value="applyOnWhatsapp"/>
+                                                    <apply-on-whatsapp-Ptag
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Apply On Whatsapp Heading Paragraph"
+                                                        value="applyOnWhatsappPtag"/>
+                                                    <newsletter-title
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Newsletter Title"
+                                                        value="newsletterTitle"/>
+                                                    <benefits-of-pre-pay
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Benefits of pre-pay"
+                                                        value="benefitsOfPrePay"/>
+                                                    <pre-approved-offer-title
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Pre Approved Offer Title"
+                                                        value="preApprovedOfferTitle"/>
+                                                    <ql-ways-to-service-title
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="QL Ways To Service Title"
+                                                        value="qlWaysToServiceTitle"/>
+                                                    <calculatortitle
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Calculator Title"
+                                                        value="calculatorTitle"/>
+                                                    <current-opportunities-desktop-title
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Current Opportunities Desktop Title"
+                                                        value="currentOpportunitiesDesktopTitle"/>
+                                                    <current-opportunities-mobile-title
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Current Opportunities Mobile Title"
+                                                        value="currentOpportunitiesMobileTitle"/>
+                                                    <hFourTag
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H4 Tag News Latter"
+                                                        value="hFourTagNewsLatter"/>
+                                                    <strong-tag
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Strong Tag Tittle"
+                                                        value="strongTag"/>
+                                                </items>
+                                            </title-variant-select>
+                                            <whatsapp-logo-checkbox
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                fieldDescription="Check to add whatsapp logo"
+                                                name="./whatsappLogoCheckbox"
+                                                text="Add Whatsapp Logo"
+                                                value="{Boolean}true"/>
+                                            <whatsapp-logo
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldDescription="Enter path for Whatsapp Logo image"
+                                                fieldLabel="Whatsapp Logo"
+                                                name="./whatsappLogo"/>
+                                            <margin-bottom
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                fieldDescription="Check for Margin Bottom 0px"
+                                                name="./marginBottom"
+                                                text="Check For Margin Bottom - 0px"
+                                                value="{Boolean}true"/>
+                                            <margin-bottom-twelve
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                fieldDescription="Check for margin bottom of 12 px"
+                                                name="./marginBottomTwelve"
+                                                text="Check For Margin Bottom - 12px"
+                                                value="{Boolean}true"/>
+                                            <next-line-common-title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                fieldDescription="d-block class in span tag"
+                                                name="./CommonTitleDBlock"
+                                                text="Check to show text in next line in Common Title"
+                                                value="{Boolean}true"/>
+                                            <types
+                                                granite:class="core-title-sizes"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:hideResource="{Boolean}true"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Type / Size"
+                                                name="./type">
+                                                <datasource
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="core/wcm/components/title/v1/datasource/allowedtypes"/>
+                                            </types>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                    <styletab
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"/>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

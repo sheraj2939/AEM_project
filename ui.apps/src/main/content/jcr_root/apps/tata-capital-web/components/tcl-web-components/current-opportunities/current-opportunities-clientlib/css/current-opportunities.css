@@ -1,0 +1,81 @@
+.current-opportunities-box .current-opportunities-inner {
+	 display: flex;
+	 flex-wrap: wrap;
+	 padding: 25px 40px;
+}
+ .current-opportunities-box .current-opportunities-left {
+	 width: calc(100% - 358px);
+	 padding-right: 40px;
+}
+ .current-opportunities-box .current-opportunities-right {
+	 width: 358px;
+}
+ .current-opportunities-box .heading36 {
+	 margin-bottom: 26px;
+}
+ .current-opportunities-box .mob-heading {
+	 display: none;
+}
+ .current-opportunities-box .opportunities-text {
+	 margin-bottom: 40px;
+}
+ .current-opportunities-box .image-wrapper {
+	 border-radius: 24px;
+}
+ .current-opportunities-box img {
+	 width: 100%;
+	 border-radius: inherit;
+}
+ .current-opportunities-box.chro-message-box .current-opportunities-inner {
+	 flex-direction: row-reverse;
+}
+ .current-opportunities-box.chro-message-box .current-opportunities-left {
+	 padding-left: 40px;
+	 padding-right: 0;
+}
+ .current-opportunities-box.chro-message-box .opportunities-text {
+	 margin-bottom: 20px;
+}
+ @media (max-width: 991px) {
+	 .current-opportunities-box .current-opportunities-inner {
+		 padding: 24px;
+	}
+	 .current-opportunities-box .current-opportunities-left {
+		 width: calc(100% - 272px);
+		 padding-right: 20px;
+	}
+	 .current-opportunities-box .current-opportunities-right {
+		 width: 272px;
+	}
+	 .current-opportunities-box .opportunities-text {
+		 margin-bottom: 24px;
+	}
+	 .current-opportunities-box .image-wrapper {
+		 border-radius: 12px;
+	}
+}
+ @media (max-width: 767px) {
+	 .current-opportunities-box .current-opportunities-right {
+		 order: 1;
+		 width: 100%;
+		 padding: 0 0 20px;
+	}
+	 .current-opportunities-box .current-opportunities-left {
+		 order: 2;
+		 width: 100%;
+		 padding-right: 0;
+	}
+	 .current-opportunities-box .desktop-heading {
+		 display: none;
+	}
+	 .current-opportunities-box .btn-blue {
+		 width: 100%;
+	}
+	 .current-opportunities-box.chro-message-box .heading36 {
+		 margin-bottom: 12px;
+	}
+	 .current-opportunities-box.chro-message-box .current-opportunities-left {
+		 padding-left: 0px;
+	}
+}
+ 

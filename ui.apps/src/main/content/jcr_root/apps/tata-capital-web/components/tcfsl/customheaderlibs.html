@@ -1,0 +1,325 @@
+<meta name="google-site-verification" content="2cPBcBhKCgKg4Z38iOLf4nLI7GbBNQZb874qtg96h-o" />
+<link rel="icon" href="/content/dam/tata-capital/images/favicon.ico" type="image/x-icon">
+<link as="font" crossorigin="" href="/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSans-Light.woff2"
+  rel="preload" type="font/woff2" />
+<link as="font" crossorigin="" href="/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSans-Regular.woff2"
+  rel="preload" type="font/woff2" />
+<link as="font" crossorigin="" href="/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSansMedium.woff2"
+  rel="preload" type="font/woff2" />
+<link as="font" crossorigin="" href="/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSans-Semibold.woff2"
+  rel="preload" type="font/woff2" />
+<link as="font" crossorigin="" href="/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSans-Bold.woff2"
+  rel="preload" type="font/woff2" />
+<link as="font" crossorigin="" href="/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSansItalic.woff2"
+  rel="preload" type="font/woff2" />
+<link as="font" crossorigin="" href="/content/dam/tata-capital-web/assets/fonts/icomoon.woff?xjpm7k" rel="preload"
+  type="font/woff" />
+<style>
+  @font-face{font-family:"OpenSans-Light";src:url(/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSans-Light.woff2) format("woff2"),url(/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSans-Light.woff) format("woff");font-display:swap}@font-face{font-family:"OpenSans-Regular";src:url(/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSans-Regular.woff2) format("woff2"),url(/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSans-Regular.woff) format("woff");font-display:swap}@font-face{font-family:"OpenSansMedium";src:url(/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSansMedium.woff2) format("woff2"),url(/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSansMedium.woff) format("woff");font-display:swap}@font-face{font-family:"OpenSans-SemiBold";src:url(/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSans-Semibold.woff2) format("woff2"),url(/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSans-Semibold.woff) format("woff");font-display:swap}@font-face{font-family:"OpenSans-Bold";src:url(/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSans-Bold.woff2) format("woff2"),url(/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSans-Bold.woff) format("woff");font-display:swap}@font-face{font-family:"OpenSansItalic";src:url(/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSansItalic.woff2) format("woff2"),url(/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSansItalic.woff) format("woff");font-display:swap}@font-face{font-family:'icomoon';src:url(/content/dam/tata-capital-web/assets/fonts/icomoon.woff?xjpm7k) format('woff');font-weight:400;font-style:normal;font-display:block}
+</style>
+
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-P93F4MN4');</script>
+  <!-- End Google Tag Manager -->
+
+<sly data-sly-test="${properties.enableNoIndexNoFollow}">
+  <meta name="robots" content="noindex, nofollow">
+</sly>
+
+<script>
+  var productCodeId;
+  productCodeId = "${PageProperties.productSelect @context='html'}";
+  window.adobeDataLayer=window.adobeDataLayer||[];
+  document.addEventListener('DOMContentLoaded', function() {
+    var loginMethod = "";
+    var pageType = "${PageProperties.pageType @context='html'}";
+    var siteSection = "${currentPage.parent.title @context='html'}";
+    var siteSubSection ="${currentPage.title @context='html'}";
+    var locationPathName = window.location.pathname.split('/').map(htmlSplit);
+    if(siteSection == "Home")
+    {
+      var pageName = "${PageProperties.jcr:title @context='html'}"
+      var siteSubSection ="";
+    }else{
+      var pageName = siteSection+":"+siteSubSection ;
+    }
+    if(domUtils.getCookie('userLoggedIn') == "true" && localStorage.getItem('cData')){
+                var loginMethod = "loginMethod";
+                var loginStatus = true;//true or false
+                var userId = $(".avatar-email").text();//email id of the user
+    }else{
+      var loginMethod = ""
+      var loginStatus = false;//true or false
+      var userId = "" //email id of the user
+    }
+    if (siteSection == "Home") {
+      pageintialization(loginMethod, loginStatus, userId, pageName, pageType, siteSection, siteSubSection ? siteSubSection : '', productCodeId.toUpperCase());
+    } else {
+      pageintialization(loginMethod, loginStatus, userId, locationPathName.slice(-1)[0] ? locationPathName.slice(-1)[0] : 'Home', pageType, locationPathName[1] ?locationPathName[1] : '', locationPathName[2] ? locationPathName[2] : '', productCodeId.toUpperCase());
+    }
+  });
+  function htmlSplit(string) {
+      return string.split('.')[0]
+    }
+</script>
+
+<!--Organizational Schema-->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Tata Capital",
+    "url": "https://www.tatacapital.com/",
+    "sameAs": [
+      "https://www.facebook.com/tatacapital/",
+      "https://twitter.com/tatacapital",
+      "https://www.instagram.com/tatacapital/",
+      "https://www.youtube.com/channel/UCCLXn_znjOupIWJ8502cUtg",
+      "https://www.linkedin.com/company/tata-capital/",
+      "https://play.google.com/store/apps/details?id=com.snapwork.tcl",
+      "https://apps.apple.com/in/app/tata-capital-loan-wealth-app/id1451688163"
+    ],
+    "logo": "https://www.tatacapital.com/apps/tata-capital-website/clientlibs/main/resources/assets/images/tata-capital-logo.svg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "1860 267 6060",
+      "contactType": "customer service",
+      "email": "customercare@tatacapital.com"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "11th Floor, Tower A, Peninsula Business Park, Ganpatrao Kadam Marg",
+      "addressLocality": "Lower Parel, Mumbai",
+      "addressRegion": "Maharashtra",
+      "postalCode": "400013",
+      "addressCountry": "India"
+    }
+  }
+</script>
+<!--Organizational Schema-->
+
+<!--Product Schema-->
+<sly data-sly-use.model="com.tatacapital.web.core.models.ProductSchemaModel" />
+<sly data-sly-test="${model.showSchema}">
+  <sly data-sly-test="${model.showProductSchema}">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "LoanOrCredit",
+        "name": "${model.pageTitle @context='scriptComment'}",
+        "description": "${model.description @context='scriptComment'}",
+        "brand": {
+          "@type": "Brand",
+          "name": "Tata Capital"
+        }
+      }
+    </script>
+  </sly>
+  <sly data-sly-test="${model.showInsuranceSchema}">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "FinancialProduct",
+        "name": "${model.pageTitle @context='scriptComment'}",
+        "brand":"Tata Capital Limited",
+        "description": "${model.description @context='scriptComment'}"
+      }
+    </script>
+  </sly>
+</sly>
+<!--Product Schema-->
+<!--/*<sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>*/-->
+<sly data-sly-use.tataCapitalWebConfiguration="com.tatacapital.web.core.services.TataCapitalWebConfiguration"/>
+<script src="${tataCapitalWebConfiguration.config.tcfslAnalyticsScript @ context = 'uri'}" async></script>
+<script>
+  var osgiConfigObj = {};
+  window.osgiConfigObj.calcApiDomain="${tataCapitalWebConfiguration.config.calculatorApiDomain @ context = 'uri'}";
+  window.osgiConfigObj.domainUrlApi="${tataCapitalWebConfiguration.config.apiDomain @ context = 'uri'}";
+  window.osgiConfigObj.jocataPlUrl="${tataCapitalWebConfiguration.config.jocataPlUrl @ context = 'uri'}";
+  window.osgiConfigObj.jocataBlUrl="${tataCapitalWebConfiguration.config.jocataBlUrl @ context = 'uri'}";
+  window.osgiConfigObj.appIdMoengage="${tataCapitalWebConfiguration.config.moEngageAppId @ context = 'scriptString'}";
+  window.osgiConfigObj.debugLogMoengage="${tataCapitalWebConfiguration.config.moEngageDebugLog @ context = 'scriptString'}";
+  window.osgiConfigObj.chatBotUrl="${tataCapitalWebConfiguration.config.tcChatBotHostUrl @ context = 'uri'}";
+  window.osgiConfigObj.chatBotDomain="${tataCapitalWebConfiguration.config.tcChatBotHostDomain @ context = 'unsafe'}";
+  window.osgiConfigObj.seCodeTsssForm="${tataCapitalWebConfiguration.config.seCodeTsssForm @ context = 'scriptString'}";
+  window.osgiConfigObj.checkCreditScoreDomainUrl="${tataCapitalWebConfiguration.config.checkCreditScoreDomainUrl @ context = 'uri'}";
+  window.osgiConfigObj.postApiDomain="${tataCapitalWebConfiguration.config.postApiDomain @ context = 'uri'}";
+
+</script>
+<sly data-sly-test="${properties.enableAlternate}">
+  <link rel="alternate" hreflang="x-default" href="https://www.tatacapital.com/" />
+  <link rel="alternate" href="https://www.tatacapital.com/" hreflang="en-in" />
+  <link rel="alternate" href="https://www.tatacapital.com/hi" hreflang="hi-in" />
+</sly>
+<sly data-sly-test="${!properties.enableAlternate}">
+  <link rel="alternate" hreflang="x-default" href="${request.requestURL.toString}" />
+  <link rel="alternate" href="${request.requestURL.toString}" hreflang="en-in" />
+  <link rel="alternate" href="${request.scheme}://${request.serverName}/hi${request.pathInfo}" hreflang="hi-in" />
+</sly>
+<script>
+  document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+</script>
+<sly data-sly-test="${properties.schemaForPLTravel}">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "HowTo",
+      "name": "How to apply for a Personal Loan for Travel?",
+      "description": "Tata Capital app offers an easy and simple online application process to avail of a personal loan for travel. Just follow these steps-",
+      "step": [{
+        "@type": "HowToStep",
+        "text": "Click on ‘Apply Now’"
+      },{
+        "@type": "HowToStep",
+        "text": "Enter the name and number on your PAN card"
+      },{
+        "@type": "HowToStep",
+        "text": "Fill in the application by entering your personal, banking, and loan details"
+      },{
+        "@type": "HowToStep",
+        "text": "Upload the necessary documents and submit your application"
+      },{
+        "@type": "HowToStep",
+        "text": "You can also visit your nearest branch and complete the application process offline"
+      }]    
+    }
+    </script>
+</sly>
+
+<sly data-sly-test="${properties.schemaForRGRHCL}">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/", 
+      "@type": "HowTo", 
+      "name": "How to Apply for RGRHCL",
+      "step": [{
+        "@type": "HowToStep",
+        "text": "Before you begin the application process, make sure you have all the necessary documents. These may include proof of identity, proof of residence, income certificates, and other supporting documents as specified by the RGRHCL.",
+        "name": "Gather Required Documents"
+      },{
+        "@type": "HowToStep",
+        "text": "Locate the nearest RGRHCL office in your area and visit it in person. The officials at the office will guide you through the application process and provide you with the necessary forms.",
+        "name": "Visit the Nearest RGRHCL Office"
+      },{
+        "@type": "HowToStep",
+        "text": "Carefully fill out the application form, providing accurate and up-to-date information. Double-check all the details before submitting the form to avoid any delays or rejections.",
+        "name": "Fill Out the Application Form"
+      },{
+        "@type": "HowToStep",
+        "text": "Once you have filled out the form, submit it along with all the required documents to the RGRHCL office. Make sure to keep copies of all the documents for your reference.",
+        "name": "Submit the Application"
+      },{
+        "@type": "HowToStep",
+        "text": "After submitting your application, the RGRHCL officials will conduct a thorough verification process to ensure that you meet the eligibility criteria. This may involve a visit to your residence for inspection and verification of the documents submitted.",
+        "name": "Wait for Verification"
+      },{
+        "@type": "HowToStep",
+        "text": "If your application is approved, you will receive a confirmation letter stating that you have been selected as an RGRHCL beneficiary. This letter will also contain details about the next steps you need to take.",
+        "name": "Receive Confirmation"
+      }]    
+    }
+    </script>
+</sly>
+<sly data-sly-test="${properties.schemaForBtCalculator}">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "HowTo",
+      "name": "How to Use a Home Loan Balance Transfer and Top Up Calculator",
+      "description": "You can use a home loan balance transfer and top up calculator to gauge your eligibility for availing of a home loan balance transfer facility and home loan top-up facility. Our home loan top up calculator also displays the maximum top-up loan you can avail of on your existing home loan and the EMIs that you will have to pay for it.
+    To use our home loan top up EMI calculator, you will have to input the following details in it",
+      "step": [{
+        "@type": "HowToStep",
+        "text": "You can use the slider or type the value in the given box to enter the home loan amount taken by you at the time of your loan application.",
+        "name": "Requested Loan Amount"
+      },{
+        "@type": "HowToStep",
+        "text": "Home loan tenure refers to the duration for which you’ve taken your home loan. You can enter your home loan tenure in months by using the slider or typing the value.",
+        "name": "Requested Tenure"
+      },{
+        "@type": "HowToStep",
+        "text": "Enter your take-home salary or annual income after deducting the taxes and investments",
+        "name": "Net Salary or Income"
+      },{
+        "@type": "HowToStep",
+        "text": "You will have to calculate and enter your fixed monthly obligations at the time of applying for the home loan balance transfer. Your monthly obligations may include your contributions towards PF, insurance premiums, recurring deposits, mutual fund SIPs, and professional taxes, among others.",
+        "name": "Monthly Obligations"
+      },{
+        "@type": "HowToStep",
+        "text": "The cost of the property will determine the maximum home loan amount you can avail of from Tata Capital. You will need to calculate the total purchase price of your housing property by adding its current market value and other necessary expenses.",
+        "name": "Cost of Property"
+      },{
+        "@type": "HowToStep",
+        "text": "Here, you will have to enter your outstanding home loan principal amount in the housing loan balance transfer calculator. This is the total home loan amount that you will have to repay to your existing lender, excluding the interest.",
+        "name": "Loan Principal Outstanding"
+      },{
+        "@type": "HowToStep",
+        "text": "Lastly, you will be required to enter your current home loan EMI. This is the fixed amount that you’re paying to your lender every month for the repayment of your home loan.
+    After entering these values in our home top up loan calculator, the following details will be displayed within a few seconds:
+    Your balance transfer amount
+    Your total savings
+    EMI of final eligibility
+    Final total eligibility
+    The top-up loan amount you’re eligible for, and
+    Your monthly savings",
+        "name": "Existing EMI"
+      }]
+    }
+    </script>
+    
+</sly>
+<sly data-sly-test="${properties.schemaForRGRHCL2}">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/", 
+      "@type": "HowTo", 
+      "name": "How to Check Your RGRHCL Beneficiary Status Online",
+      "description": "Once you have applied for the RGRHCL, you can easily check your beneficiary status online. The RGRHCL website provides a user-friendly portal where you can track the progress of your application and find out whether you have been selected as a beneficiary.",
+      "step": [{
+        "@type": "HowToStep",
+        "text": "Go to the official RGRHCL website and navigate to the beneficiary status section.",
+        "name": "Visit the RGRHCL Website"
+      },{
+        "@type": "HowToStep",
+        "text": "Enter the required details, such as your application number or registered mobile number, to access your beneficiary status.",
+        "name": "Enter Your Application Details"
+      },{
+        "@type": "HowToStep",
+        "text": "Once you have entered the necessary information, your beneficiary status will be displayed on the screen. You will be able to see whether your application is under review, approved, or rejected.",
+        "name": "View Your Status"
+      }]    
+    }
+    </script>
+</sly>
+<sly data-sly-test="${properties.schemaForStampDuty}">
+  <script type="application/ld+json">
+    {
+     "@context": "https://schema.org/", 
+     "@type": "HowTo", 
+     "name": "How to Use Stamp Duty Calculator?",
+     "description": "With Tata Capital's Stamp Duty Calculator, you can evaluate your stamp duty in the following steps:",
+     "step": [{
+      "@type": "HowToStep",
+      "text": "Select the state where your property is located from the dropdown list.",
+      "name": "Step 1"
+     },{
+      "@type": "HowToStep",
+      "text": "Select the gender of the property owner from the dropdown list. The property can be in the name of a male, female, or joint ownership.",
+      "name": "Step 2"
+     },{
+      "@type": "HowToStep",
+      "text": "Enter the area value or market value of your property in Rupees.",
+      "name": "Step 3"
+     }]  
+    }
+    </script>
+</sly>

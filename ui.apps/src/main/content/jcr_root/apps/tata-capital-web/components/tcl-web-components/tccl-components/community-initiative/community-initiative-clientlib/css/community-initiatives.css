@@ -1,0 +1,112 @@
+.community-initiatives-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.community-initiatives-wrap.right-video {
+  flex-direction: row-reverse;
+}
+
+.community-initiatives-wrap.right-video .community-initiative-right {
+  padding-right: 40px;
+  padding-left: 0;
+}
+
+.community-initiatives-wrap .community-initiative-left {
+  width: 359px;
+}
+
+.community-initiatives-wrap .community-initiative-left iframe {
+  border-radius: 24px;
+  width: 100%;
+  min-height: 230px;
+}
+
+.community-initiatives-wrap .community-initiative-img {
+  height: 230px;
+}
+
+.community-initiatives-wrap .community-initiative-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+.community-initiatives-wrap .community-initiative-right {
+  padding-left: 40px;
+  width: calc(100% - 359px);
+}
+
+.community-initiatives-wrap .community-initiative-right .btn-controls {
+  padding-top: 16px;
+}
+
+.community-initiative-cards .personal-cards {
+  margin-bottom: 40px;
+}
+
+.community-initiative-cards .personal-cards:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+  .vision-purpose-box {
+    margin-top: -30px !important;
+  }
+
+  .vision-purpose-box .row-col-50 {
+    padding-top: 30px;
+    width: 100%;
+  }
+
+  .community-initiatives-wrap.right-video .community-initiative-right {
+    padding-right: 0;
+  }
+
+  .community-initiatives-wrap .community-initiative-left {
+    position: static;
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .community-initiatives-wrap .community-initiative-left iframe {
+    min-height: 300px;
+    border-radius: 16px;
+  }
+
+  .community-initiatives-wrap .community-initiative-img {
+    height: 300px;
+  }
+
+  .community-initiatives-wrap .community-initiative-img img {
+    border-radius: 16px;
+  }
+
+  .community-initiatives-wrap .community-initiative-right {
+    padding-left: 0;
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .community-initiatives-wrap .community-initiative-right .btn-controls {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .community-initiatives-wrap .community-initiative-left {
+    min-height: 200px;
+  }
+
+  .community-initiatives-wrap .community-initiative-left iframe {
+    min-height: 150px;
+  }
+
+  .community-initiatives-wrap .community-initiative-img {
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    allowProxy="{Boolean}true"
+    categories="tcl-tchfl-global-clientlibs"
+    embed="[tcl-icomoon,tcl-jquery,tcl-select2,tatacapital.api_web,tcl-site-loader,tcl-lozad,tcl-slick,tcl-ion-slider,tcl-simplebar,tcl-tchfl-global,tcl-google-offer-popup,tcl-tchfl-analytics-clientlibs]"/>

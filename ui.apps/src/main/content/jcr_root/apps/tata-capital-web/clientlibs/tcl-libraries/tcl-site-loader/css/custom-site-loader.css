@@ -1,0 +1,30 @@
+.hide-loader{
+    display: none;
+}
+/*body.bg-loader{
+    position:relative;
+    overflow-y: hidden;
+}*/
+/*.loader{
+    position:fixed;
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: 999999999999999;
+}*/
+
+.loader{
+    z-index: 999999999999999;
+}
+
+.custom-loader {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1055;
+    background: rgba(0,0,0,.8);
+}

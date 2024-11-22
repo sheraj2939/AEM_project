@@ -1,0 +1,22 @@
+<div class="top-outer-policies mob-tab-accord">
+    <div class="footer-row">
+        <div class="footer-col">
+            <p class="footer-headings" data-footer="footerAnalyticData-Solutions fo Corporates">${properties.corporateHeading}</p>
+            <div class="footer-body">
+                <div class="footer-body-inner">
+                    <ul class="footer-links">
+                        <sly data-sly-list.loginLinks="${resource.listChildren}">
+                            <sly data-sly-test="${loginLinks.name == 'corporateList'}">
+                                <sly data-sly-list.corpotateList="${loginLinks.listChildren}">
+                                    <li><a href="${corpotateList.redirectionLink}"
+                                            target="${corpotateList.redirectionLink ? '_blank' : ''}" data-footer="footerAnalyticData-Solutions fo Corporates">${corpotateList.heading}</a>
+                                    </li>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

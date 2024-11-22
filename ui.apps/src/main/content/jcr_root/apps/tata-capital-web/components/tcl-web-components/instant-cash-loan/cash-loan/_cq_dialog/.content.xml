@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Container"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[core.wcm.components.container.v1.editor]"
+    helpPath="https://www.adobe.com/go/aem_cmp_container_v1"
+    trackingFeature="core-components:container:v1">
+    <content
+        granite:class="cmp-container__editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <key-features-varient
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                fieldDescription="Check for Key Features Component"
+                                                name="./keyFeatures"
+                                                text="Key Features Component"
+                                                value="{Boolean}true"/>
+                                            <avail-personal-loan
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                fieldDescription="Check for Avail Personal Loan"
+                                                name="./availPersonalLoan"
+                                                text="Check for Avail Personal Loan"
+                                                value="{Boolean}true"/>
+                                            <section-variant
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="Select Variant"
+                                                fieldLabel="Select Variant"
+                                                name="./CardVariant">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="space-tb-40 only"
+                                                        value="space-tb40"/>
+                                                    <document-one
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="One Card in Row"
+                                                        value="emi-option-box document-required-box document-one space-tb40"/>
+                                                    <document-two
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Two Cards in Row"
+                                                        value="emi-option-box document-required-box document-two space-tb40"/>
+                                                    <document-three
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Three Cards in Row"
+                                                        value="emi-option-box document-required-box space-tb40"/>
+                                                    <document-four
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Four Cards in Row"
+                                                        value="emi-option-box document-required-box document-four space-tb40"/>
+                                                </items>
+                                            </section-variant>
+                                            <max-width-title-div
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="Select Max-width"
+                                                fieldLabel="Select Max-width for Title Div"
+                                                name="./maxWidthTitleDiv">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Default"
+                                                        value=" "/>
+                                                    <mx-944
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="944"
+                                                        value="mx-944"/>
+                                                    <mx-1060
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="1060"
+                                                        value="mx-1060"/>
+                                                </items>
+                                            </max-width-title-div>
+                                            <max-width-card-div
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="Select Max-width"
+                                                fieldLabel="Select Max-width for Card Div"
+                                                name="./maxWidthCardDiv">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Default"
+                                                        value=" "/>
+                                                    <mx-944
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="944"
+                                                        value="mx-944"/>
+                                                    <mx-1060
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="1060"
+                                                        value="mx-1060"/>
+                                                </items>
+                                            </max-width-card-div>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                    <cq:styles
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"/>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

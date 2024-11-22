@@ -1,0 +1,2314 @@
+<section class="loan-against-prop-box space-tb40" id="leadForms">
+    <div class="container">
+        <div class="tops-heads ${!properties.backBtn ? 'has-only-back-btn' : ''}">
+                <sly data-sly-test="${!properties.backBtn}">
+                    <div class="comp-back-to">
+                        <a href="JavaScript:void(0);" class="formBackBtn"><span class="icon-arrow-tail-left"></span>Back</a>
+                    </div>
+                </sly>
+                <sly
+                    data-sly-resource="${'form-upper-heading' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                </sly>
+            </div>
+        <div class="loan-against-form-wrap">
+            <input type="text" id="" name="lname" class="hidden disable-emoji" data-loanOnCar="productName" value="${properties.loanOnCar ? 'true' : 'false'}">
+            <div class="loan-against-header">
+                <h4>${properties.greenFeildHeading @ context = 'html'}</h4>
+                <div class="clear-btn">
+                    <a href="javascript:void(0)" class="link jsClearLoanDeatils">Clear <span
+                            class="icon-clear"></span></a>
+                </div>
+                <div class="loan-againstclose-btn d-none">
+                    <a href="javascript:void(0)" class="link jsCloseLaonAgainstMgs"> <span
+                            class="icon-close"></span></a>
+                </div>
+            </div>
+            <div class="loan-against-body">
+                <img src="${properties.cornerImage}" class="form-bottom-right-img" alt="${properties.formAltImage}">
+                <div class="loan-against-form" id="loan-against-property">
+                    <sly data-sly-test="${properties.noteText}">
+                        <div class="notes-text">
+                            <p class="text-12">${properties.noteText}</p>
+                        </div>
+                    </sly>
+                    <sly data-sly-list.inputList="${resource.children}">
+                        <sly data-sly-test="${inputList.name == 'inputFeild'}">
+                            <sly data-sly-list.inputChecks="${inputList.children}">
+                                <div class="loan-against-form-wrapper">
+                                    <h3 class="form-heading">${inputChecks.headingOne}</h3>
+                                    <div class="row-flex row-flex-30">
+                                        <sly data-sly-test="${inputChecks.firstName}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">First name</label>
+                                                    <div class="textbox-inner">                                                
+                                                        <input type="text" class="input-textbox jsValueOK disable-emoji only-alpha-input" placeholder="" data-form="firstname" data-type="firstname">                                                
+                                                    </div>
+                                                    <!-- <span class="text-infos">Name (as per PAN Card)</span> -->
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.middleName}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Middle name</label>
+                                                    <div class="textbox-inner">                                                
+                                                        <input type="text" class="input-textbox disable-emoji only-alpha-input" data-form="middlename" data-eduinti="middlename" placeholder="">                                                
+                                                    </div>                                            
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.lastName}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Last name</label>
+                                                    <div class="textbox-inner">                                                
+                                                        <input type="text" class="input-textbox jsValueOK disable-emoji only-alpha-input" placeholder="" data-form="lastname" data-type="lastname">                                                
+                                                    </div>                                            
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.fullName}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Full Name</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" class="input-textbox jsValueOK only-alpha-input disable-emoji"
+                                                            placeholder="" data-type="name" data-form="customerName">
+                                                    </div>
+                                                    <span class="text-infos">Name (as per PAN Card)</span>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.email}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Email ID</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" class="input-textbox jsValueOK disable-emoji"
+                                                            placeholder="" data-type="email" data-form="personalEmail">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.mobileNumber}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Mobile Number</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text"
+                                                            class="input-textbox only-numeric-input jsValueOK disable-emoji"
+                                                            placeholder="" data-type="mobile" maxlength="10" data-form="mobile" pattern="[0-9]*" inputmode="numeric">
+                                                    </div>
+                                                    <span class="text-infos">OTP will be sent after you click
+                                                        'Apply'</span>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.selectCity}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">City of Residence</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK city" data-type="city" data-form="city">
+                                                                <option value=""></option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.eliteNoYes}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name"> Are you a part of the Elite program?</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-type="elite" data-form="elite">
+                                                                <option value=""></option>
+                                                                <option value="Yes">Yes</option>
+                                                                <option value="No">No</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.eliteLoanNum}">
+                                            <div class="row-col-33 col-sp30 eliteClass d-none">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Tata Capital Loan account Number</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" class="input-textbox jsValueOK disable-emoji"
+                                                            placeholder="" data-type="loan-number" data-form="loan-number">
+                                                    </div>
+                                                    <span class="text-infos">Please enter your Tata Capital Loan account Number</span>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.birthDate}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Date of Birth</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" value=""
+                                                            class="input-textbox date-input jsValueOK disable-emoji" placeholder=""
+                                                            data-type="dob" data-form="birthDate">
+                                                    </div>
+                                                    <span class="text-infos">(dd/mm/yyyy)</span>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.panDetails}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">PAN details</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" class="input-textbox jsValueOK only-alpha-numeric-input disable-emoji"
+                                                            placeholder="" data-type="pan" maxlength="10" data-form="panNumber">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.panDetailsNon}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">PAN details</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" class="input-textbox only-alpha-numeric-input disable-emoji"
+                                                            placeholder="" data-nonmandatory="pan" data-eduinti="panNon" maxlength="10" data-form="panNumber">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.currentROI}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Current ROI</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text"
+                                                               class="input-textbox only-numeric-decimal-input jsValueOK disable-emoji"
+                                                               placeholder="" data-type="current-roi"
+                                                               pattern="[0-9]*" inputmode="numeric"  data-form="currentROI">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.btAmount}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name text-ellipsis">Principal Outstanding/Balance Transfer Amount</label>
+                                                    <div class="textbox-inner">
+                                                        <span class="icon-rupee d-none"></span>
+                                                        <input type="text"
+                                                               class="input-textbox only-numeric-decimal-input price-with-comma-form jsValueOK disable-emoji"
+                                                               placeholder="" data-type="balance-transfer-amount"
+                                                               pattern="[0-9]*" inputmode="numeric" data-form="btAmount">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.currentBank}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Current Bank or Financial Institution</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-form="currentBank" data-type="current-bank">
+                                                                <option value=""></option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row-col-33 col-sp30 hidden" data-other-institution>
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Others Current Bank or Financial Institution</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" class="input-textbox disable-emoji alfaOnlyInput jsValueOK" placeholder=""
+                                                        data-type="otherInstitution" data-form="otherInstitution">
+                                                    </div>
+                                                    <span class="text-infos">Enter your Current Bank or Financial Institution here</span>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.topupLoan}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Top-Up Loan Required?</label>
+                                                    <ul class="list-radio-ul jsRadio">
+                                                        <li class="list-radio-li">
+                                                            <label class="custom-radiobox-label">
+                                                                <span class="custom-radio">
+                                                                    <input type="radio" name="topuploan" value="yes">
+                                                                    <span class="radiobox-check"></span>
+                                                                </span>
+                                                                Yes
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-radio-li">
+                                                            <label class="custom-radiobox-label">
+                                                                <span class="custom-radio radio-center">
+                                                                    <input type="radio" name="topuploan" value="no"
+                                                                        checked="">
+                                                                    <span class="radiobox-check"></span>
+                                                                </span>
+                                                                No
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.topupAmount}">
+                                            <div class="row-col-33 col-sp30 d-none">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Top-Up Loan Amount</label>
+                                                    <div class="textbox-inner">
+                                                        <span class="icon-rupee d-none"></span>
+                                                        <input type="text"
+                                                               class="input-textbox only-numeric-decimal-input price-with-comma-form jsValueOK disable-emoji"
+                                                               placeholder="" data-type="top-up-loan-amount"
+                                                               pattern="[0-9]*" inputmode="numeric" data-form="topupAmount">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.nationalityBtTopup}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Nationality (NRI or Resident Indian)</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-type="product" data-form="nationality">
+                                                                <option value=""></option>
+                                                                <option value="Indian Resident">Indian Resident</option>
+                                                                <option value="NRI">NRI</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.propertyTypeBtTopup}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Property Type (Ready or Under Construction)</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK"
+                                                                data-type="property-type" data-form="propertyType">
+                                                                <option value=""></option>
+                                                                <option value="Ready">Ready</option>
+                                                                <option value="Under Construction">Under Construction</option>
+                                                            </select>
+                                                            <!--/*<span class="text-infos truncate-with-tooltip"><span
+                                                                    class="before-text">*We
+                                                                    do not fund the following inputChecks:</span>
+                                                                <span class="custom-tooltip bottom-placement">
+                                                                    <i class="tooltip-icon icon-info-alt"></i>
+                                                                    <span class="tooltip-text">Gram Panchayat,B-Khata(non-converted), Multi-tenanted(more than 8 units), Guntevari property, Open plots,Property Outside GEO limts, Society patta, Unauthorized colony, Non-regularizrd property, Village property, Under construction, Rented Industrial, Vacant industrial, Vacant Commercial property.</span>
+                                                                </span>
+                                                            </span>*/-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.selectGender}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Gender</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-type="gender" data-form="gender">
+                                                                <option value=""></option>
+                                                                <option value="Male">Male</option>
+                                                                <option value="Female">Female</option>
+                                                                <option value="Other">Other</option>
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.propertiyValue}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Property value</label>
+                                                    <div class="textbox-inner">
+                                                        <span class="icon-rupee d-none"></span>
+                                                        <input type="text"
+                                                            class="input-textbox only-numeric-decimal-input price-with-comma-form jsValueOK disable-emoji"
+                                                            placeholder="" data-type="property-value" data-form="propertyValue">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.countryStudy}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Country of study</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-form="countryStudy" data-type="countryStudy">
+                                                               
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.educationalInstitute}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Educational institute name</label>
+                                                    <div class="textbox-inner">
+                                                        <a href="javascript:void(0)" class="jsEducationClosed select2-closed icon-close d-none"></a>
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsEducationalInti" data-eduinti="educationalInti" data-form="educationalInti">
+                                                                <option value=""></option>
+                                                            </select>
+                                                        </div>
+                                                        <span class="text-infos">If you are undecided, please leave this field blank</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.entranceExam}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Entrance exam</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-form="entranceExam" data-type="entranceExam">
+                                                                <option value=""></option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.entExamScore}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Entrance exam score</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" class="input-textbox only-numeric-decimal-input jsValueOK" placeholder=""
+                                                            data-type="entExamScore" data-form="entExamScore">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.courseType}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Course type</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-form="courseType" data-type="courseType">
+                                                                <option value=""></option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.othersCourseType}">
+                                        <div class="row-col-33 col-sp30 hidden" data-other-program>
+                                            <div class="form-textbox-new">
+                                                <label class="label-name">Others Course type</label>
+                                                <div class="textbox-inner">
+                                                    <input type="text" class="input-textbox disable-emoji alfaOnlyInput jsValueOK" placeholder=""
+                                                           data-type="otherCourseType" data-form="otherCourseType">
+                                                </div>
+                                                <span class="text-infos">Enter your course type here</span>
+                                            </div>
+                                        </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.studyPeriod}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Study period</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-form="studyPeriod" data-type="studyPeriod">
+                                                                <option value=""></option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                       
+                                        <sly data-sly-test="${inputChecks.admissionStatus}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Admission status</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-form="admissionStatus" data-type="admissionStatus">
+                                                                <option value=""></option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                       
+                                        <sly data-sly-test="${inputChecks.languageExam}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Language exam</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-form="languageExam" data-type="languageExam">
+                                                                <option value=""></option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.languageExamScore}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Language exam score</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" class="input-textbox only-numeric-decimal-input jsValueOK" placeholder=""
+                                                            data-type="languageExamScore" data-form="languageExamScore">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.requiredLoanType}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Required loan type</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-form="requiredLoanType" data-type="requiredLoanType">
+                                                                <option value=""></option>
+                                                                <option data-productcode="EDUSLOAN" value="secured">Secured</option>
+                                                                <option data-productcode="EDUC" value="unsecured">Unsecured</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.portfolioValueEduction}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Required loan amount</label>
+                                                    <div class="textbox-inner">
+                                                        <span class="icon-rupee d-none"></span>
+                                                        <input type="text"
+                                                            class="input-textbox only-numeric-decimal-input price-with-comma-form jsValueOK disable-emoji"
+                                                            placeholder="" data-form="requiredLoanAmount" data-type="requiredLoanAmount" pattern="[0-9]*"
+                                                            inputmode="numeric">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.requiredAmount}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Required Loan Amount</label>
+                                                    <div class="textbox-inner">
+                                                        <span class="icon-rupee d-none"></span>
+                                                        <input type="text"
+                                                            class="input-textbox only-numeric-decimal-input price-with-comma-form jsValueOK disable-emoji"
+                                                            placeholder="" data-type="requireLoanAmount" data-form="requiredLoanAmount">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.propertyType}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Property type</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK"
+                                                                data-type="property-type" data-form="propertyType">
+                                                                <option value=""></option>
+                                                                <option value="Residential Occupied">Residential Occupied</option>
+                                                                <option value="Residential Rented">Residential Rented</option>
+                                                                <option value="Residential Plot">Residential Plot</option>
+                                                                <option value=" Commercial Occupied"> Commercial Occupied</option>
+                                                                <option value="Commercial Rented">Commercial Rented</option>
+                                                            </select>
+                                                            <span class="text-infos truncate-with-tooltip"><span
+                                                                    class="before-text">*We
+                                                                    do not fund the following properties:</span>
+                                                                <span class="custom-tooltip bottom-placement">
+                                                                    <i class="tooltip-icon icon-info-alt"></i>
+                                                                    <span class="tooltip-text">Gram Panchayat,B-Khata(non-converted), Multi-tenanted(more than 8 units), Guntevari property, Open plots,Property Outside GEO limts, Society patta, Unauthorized colony, Non-regularizrd property, Village property, Under construction, Rented Industrial, Vacant industrial, Vacant Commercial property.</span>
+                                                                </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.reasonLap}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Reason for LAP</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK"
+                                                                data-type="lap-reasons" data-form="reasonForLap">
+                                                                <option value=""></option>
+                                                                <option value="Loan on a debt-free property">Loan on a debt-free property</option>
+                                                                <option value="Business purpose">Business purpose</option>
+                                                                <option value="Home Extension/Improvement">Home Extension/Improvement</option>
+                                                                <option value="Marriage">Marriage</option>
+                                                                <option value="Higher Education">Higher Education</option>
+												                <option value="Balance Transfer of an existing LAP">Balance Transfer of an existing LAP</option>
+												                <option value="LAP Balance Transfer and Top Up">LAP Balance Transfer and Top Up</option>
+												                <option value="Home Loan Balance Transfer and Top Up">Home Loan Balance Transfer and Top Up</option>
+                                                                <option value="Balance Transfer of an existing Home Loan">Home Loan Balance Transfer</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.portfolioValue}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Portfolio value</label>
+                                                    <div class="textbox-inner">
+                                                        <span class="icon-rupee d-none"></span>
+                                                        <input type="text"
+                                                            class="input-textbox only-numeric-decimal-input price-with-comma-form jsValueOK disable-emoji"
+                                                            placeholder="" data-type="portfolio-value" data-form="totalPortFolioValue">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.typeSecurities}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Types of Securities</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK"
+                                                                data-type="security-type" data-form="security">
+                                                                <option value=""></option>
+                                                                <option value="MutualFunds">Mutual Funds</option>
+                                                                <option value="Shares">Shares</option>
+                                                                <!-- <option value="Bond">Bond</option> -->
+                                                               <!--/* <option value="Fixed Maturity Plan">Fixed Maturity Plan
+                                                                </option>*/-->
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.preferredTime}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Preferred Time to Contact</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK"
+                                                                data-type="pref-contact-time" data-form="preferredTimeToCall">
+                                                                <option value=""></option>
+                                                                <option value="9am - 12pm">9am - 12pm</option>
+                                                                <option value="12am - 3pm">12pm - 3pm</option>
+                                                                <option value="3am - 6pm">3pm - 6pm</option>
+                                                                <option value="6am - 9pm">6pm - 9pm</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.occupation}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Occupation</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-type="occupation" data-form="occupation">
+                                                                <option value=""></option>
+                                                                <option value="Salaried">Salaried</option>
+                                                                <option value="SelfEmployed">Self Employed</option>
+                                                                <option value="Professional">Professional</option>
+                                                                <option value="Housewife">Housewife</option>
+                                                                <option value="Others">Others</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.insurer}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Insurer</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK productInsurer" data-type="insurer" data-form="companyName">
+                                                                <option value=""></option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.visitPurpose}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Purpose of Visit</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK"
+                                                                data-type="entity-type" data-form="purpose">
+                                                                <option value=""></option>
+                                                                <option value="Leisure">Leisure</option>
+                                                                <option value="Business">Business</option>
+                                                                <option value="Studies">Studies</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.familyMembers}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Select Family Members</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK"
+                                                                data-type="entity-type" data-form="familyMember">
+                                                                <option value=""></option>
+                                                                <option value="Me">Me</option>
+                                                                <option value="My Spouse">My Spouse</option>
+                                                                <option value="My Son">My Son</option>
+                                                                <option value="My Daughter">My Daughter</option>
+                                                                <option value="My Father">My Father</option>
+                                                                <option value="My Mother">My Mother</option>
+                                                                <option value="Others">Others</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.travelTo}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Travel To</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-type="travel" data-form="travel">
+                                                                <option value=""></option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.startDate}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Trip Start Date</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" value=""
+                                                            class="input-textbox date-input jsValueOK disable-emoji" placeholder=""
+                                                            data-type="tripStartDate" data-form="tripStartDate">
+                                                    </div>
+                                                    <span class="text-infos">(dd/mm/yyyy)</span>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.endDate}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Trip End Date</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" value=""
+                                                            class="input-textbox date-input jsValueOK disable-emoji" placeholder=""
+                                                            data-type="tripEndDate" data-form="tripEndDate">
+                                                    </div>
+                                                    <span class="text-infos">(dd/mm/yyyy)</span>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.medicalCondition}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div
+                                                    class="custom-multiselect-dropdown jsMultiDropdown form-textbox-new close-on-outside active">
+                                                    <label class="label-name">Medical Conditions</label>
+                                                    <div class="multiselect-dropdown-button js-filterBtn">
+                                                        <a href="javascript:void(0);"
+                                                            data-multiselect="multiselect-drop">Select</a>
+                                                        <input type="text"
+                                                            class="input-textbox jsValueOK jsMulitSelectValue d-none disable-emoji"
+                                                            data-type="multiple-dropVal" data-form="medical"/>
+                                                    </div>
+                                                    <div class="multiselect-dropdown-card jsMultiDropdown"
+                                                        id="multiselect-drop">
+                                                        <div class="dropdown-card-inner">
+                                                            <div class="filter-card">
+                                                                <div class="dropdown-content">
+                                                                    <div class="amc-filter-list">
+                                                                        <div
+                                                                            class="simple-bar multiple-select-scrollbar">
+                                                                            <ul
+                                                                                class="multiple-select-list jsMultiSelectList">
+                                                                                <li class="select-item"
+                                                                                    data-item="none">
+                                                                                    <label
+                                                                                        class="custom-checkbox-label">
+                                                                                        <span
+                                                                                            class="custom-checkbox-new">
+                                                                                            <input type="checkbox"
+                                                                                                data-event="none"
+                                                                                                class="js-filterCheck">
+                                                                                            <span
+                                                                                                class="checkbox-check"></span>
+                                                                                        </span>
+                                                                                        <span
+                                                                                            class="checkboxtext">None</span>
+                                                                                    </label>
+                                                                                </li>
+                                                                                <li class="select-item"
+                                                                                    data-item="arthritis">
+                                                                                    <label
+                                                                                        class="custom-checkbox-label">
+                                                                                        <span
+                                                                                            class="custom-checkbox-new">
+                                                                                            <input type="checkbox"
+                                                                                                data-event="arthritis"
+                                                                                                class="js-filterCheck">
+                                                                                            <span
+                                                                                                class="checkbox-check"></span>
+                                                                                        </span>
+                                                                                        <span
+                                                                                            class="checkboxtext">Arthritis</span>
+                                                                                    </label>
+                                                                                </li>
+                                                                                <li class="select-item"
+                                                                                    data-item="copd">
+                                                                                    <label
+                                                                                        class="custom-checkbox-label">
+                                                                                        <span
+                                                                                            class="custom-checkbox-new">
+                                                                                            <input type="checkbox"
+                                                                                                data-event="copd"
+                                                                                                class="js-filterCheck">
+                                                                                            <span
+                                                                                                class="checkbox-check"></span>
+                                                                                        </span>
+                                                                                        <span
+                                                                                            class="checkboxtext">COPD</span>
+                                                                                    </label>
+                                                                                </li>
+                                                                                <li class="select-item"
+                                                                                    data-item="kidney-failure-dialysis">
+                                                                                    <label
+                                                                                        class="custom-checkbox-label">
+                                                                                        <span
+                                                                                            class="custom-checkbox-new">
+                                                                                            <input type="checkbox"
+                                                                                                data-event="kidney-failure-dialysis"
+                                                                                                class="js-filterCheck">
+                                                                                            <span
+                                                                                                class="checkbox-check"></span>
+                                                                                        </span>
+                                                                                        <span
+                                                                                            class="checkboxtext">Kidney failure, Dialysis</span>
+                                                                                    </label>
+                                                                                </li>
+                                                                                <li class="select-item"
+                                                                                    data-item="liver-cirrhosis-hepatitis-b-or-c">
+                                                                                    <label
+                                                                                        class="custom-checkbox-label">
+                                                                                        <span
+                                                                                            class="custom-checkbox-new">
+                                                                                            <input type="checkbox"
+                                                                                                data-event="liver-cirrhosis-hepatitis-b-or-c"
+                                                                                                class="js-filterCheck">
+                                                                                            <span
+                                                                                                class="checkbox-check"></span>
+                                                                                        </span>
+                                                                                        <span class="checkboxtext">Liver Cirrhosis/Hepatitis B or C</span>
+                                                                                    </label>
+                                                                                </li>
+                                                                                <li class="select-item"
+                                                                                    data-item="cancer">
+                                                                                    <label
+                                                                                        class="custom-checkbox-label">
+                                                                                        <span
+                                                                                            class="custom-checkbox-new">
+                                                                                            <input type="checkbox"
+                                                                                                data-event="cancer"
+                                                                                                class="js-filterCheck">
+                                                                                            <span
+                                                                                                class="checkbox-check"></span>
+                                                                                        </span>
+                                                                                        <span class="checkboxtext">Cancer</span>
+                                                                                    </label>
+                                                                                </li>
+                                                                                <li class="select-item"
+                                                                                    data-item="HIV-AIDs-STDs">
+                                                                                    <label
+                                                                                        class="custom-checkbox-label">
+                                                                                        <span
+                                                                                            class="custom-checkbox-new">
+                                                                                            <input type="checkbox"
+                                                                                                data-event="HIV-AIDs-STDs"
+                                                                                                class="js-filterCheck">
+                                                                                            <span
+                                                                                                class="checkbox-check"></span>
+                                                                                        </span>
+                                                                                        <span class="checkboxtext">HIV/AIDs/STDs</span>
+                                                                                    </label>
+                                                                                </li>
+                                                                                <li class="select-item"
+                                                                                    data-item="Stroke-Epilepsy-Paralysis">
+                                                                                    <label
+                                                                                        class="custom-checkbox-label">
+                                                                                        <span
+                                                                                            class="custom-checkbox-new">
+                                                                                            <input type="checkbox"
+                                                                                                data-event="Stroke-Epilepsy-Paralysis"
+                                                                                                class="js-filterCheck">
+                                                                                            <span
+                                                                                                class="checkbox-check"></span>
+                                                                                        </span>
+                                                                                        <span class="checkboxtext">Stroke,Epilepsy,Paralysis</span>
+                                                                                    </label>
+                                                                                </li>
+                                                                                <li class="select-item"
+                                                                                    data-item="Psychiatric-Mental-Illness-disorder">
+                                                                                    <label
+                                                                                        class="custom-checkbox-label">
+                                                                                        <span
+                                                                                            class="custom-checkbox-new">
+                                                                                            <input type="checkbox"
+                                                                                                data-event="Psychiatric-Mental-Illness-disorder"
+                                                                                                class="js-filterCheck">
+                                                                                            <span
+                                                                                                class="checkbox-check"></span>
+                                                                                        </span>
+                                                                                        <span class="checkboxtext">Psychiatric,Mental Illness or disorder</span>
+                                                                                    </label>
+                                                                                </li>
+                                                                                <li class="select-item"
+                                                                                    data-item="Ulcerative-Colitis-Crohn-disease">
+                                                                                    <label
+                                                                                        class="custom-checkbox-label">
+                                                                                        <span
+                                                                                            class="custom-checkbox-new">
+                                                                                            <input type="checkbox"
+                                                                                                data-event="Ulcerative-Colitis-Crohn-disease"
+                                                                                                class="js-filterCheck">
+                                                                                            <span
+                                                                                                class="checkbox-check"></span>
+                                                                                        </span>
+                                                                                        <span class="checkboxtext">Ulcerative Colitis/Crohn's disease</span>
+                                                                                    </label>
+                                                                                </li>
+                                                                                <li class="select-item"
+                                                                                    data-item="Auto-immune-diseases">
+                                                                                    <label
+                                                                                        class="custom-checkbox-label">
+                                                                                        <span
+                                                                                            class="custom-checkbox-new">
+                                                                                            <input type="checkbox"
+                                                                                                data-event="Auto-immune-diseases"
+                                                                                                class="js-filterCheck">
+                                                                                            <span
+                                                                                                class="checkbox-check"></span>
+                                                                                        </span>
+                                                                                        <span class="checkboxtext">Auto-immune diseases</span>
+                                                                                    </label>
+                                                                                </li>
+                                                                                <li class="select-item"
+                                                                                    data-item="others">
+                                                                                    <label
+                                                                                        class="custom-checkbox-label">
+                                                                                        <span
+                                                                                            class="custom-checkbox-new">
+                                                                                            <input type="checkbox"
+                                                                                                data-event="others"
+                                                                                                class="js-filterCheck">
+                                                                                            <span
+                                                                                                class="checkbox-check"></span>
+                                                                                        </span>
+                                                                                        <span class="checkboxtext">Others</span>
+                                                                                    </label>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.planSelection}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div
+                                                    class="custom-multiselect-dropdown jsMultiDropdown form-textbox-new close-on-outside active">
+                                                    <label class="label-name">Plan Selection</label>
+                                                    <div class="multiselect-dropdown-button js-filterBtn">
+                                                        <a href="javascript:void(0);"
+                                                            data-multiselect="multiselect-drop">Select</a>
+                                                        <input type="text"
+                                                            class="input-textbox jsValueOK jsMulitSelectValue d-none disable-emoji"
+                                                            data-type="multiple-dropVal" data-form="planSelection"/>
+                                                    </div>
+                                                    <div class="multiselect-dropdown-card jsMultiDropdown"
+                                                        id="multiselect-drop">
+                                                        <div class="dropdown-card-inner">
+                                                            <div class="filter-card">
+                                                                <div class="dropdown-content">
+                                                                    <div class="amc-filter-list">
+                                                                        <div
+                                                                            class="simple-bar multiple-select-scrollbar">
+                                                                            <ul
+                                                                                class="multiple-select-list jsMultiSelectList">
+                                                                                <li class="select-item"
+                                                                                    data-item="IHO2500">
+                                                                                    <label
+                                                                                        class="custom-checkbox-label">
+                                                                                        <span
+                                                                                            class="custom-checkbox-new">
+                                                                                            <input type="checkbox"
+                                                                                                data-event="IHO2500"
+                                                                                                class="js-filterCheck">
+                                                                                            <span
+                                                                                                class="checkbox-check"></span>
+                                                                                        </span>
+                                                                                        <span
+                                                                                            class="checkboxtext">IHO2500</span>
+                                                                                    </label>
+                                                                                </li>
+                                                                                <li class="select-item"
+                                                                                    data-item="IHO5500">
+                                                                                    <label
+                                                                                        class="custom-checkbox-label">
+                                                                                        <span
+                                                                                            class="custom-checkbox-new">
+                                                                                            <input type="checkbox"
+                                                                                                data-event="IHO5500"
+                                                                                                class="js-filterCheck">
+                                                                                            <span
+                                                                                                class="checkbox-check"></span>
+                                                                                        </span>
+                                                                                        <span
+                                                                                            class="checkboxtext">IHO5500</span>
+                                                                                    </label>
+                                                                                </li>
+                                                                                <li class="select-item"
+                                                                                data-item="IHO11500">
+                                                                                <label
+                                                                                    class="custom-checkbox-label">
+                                                                                    <span
+                                                                                        class="custom-checkbox-new">
+                                                                                        <input type="checkbox"
+                                                                                            data-event="IHO11500"
+                                                                                            class="js-filterCheck">
+                                                                                        <span
+                                                                                            class="checkbox-check"></span>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="checkboxtext">IHO11500</span>
+                                                                                </label>
+                                                                            </li>
+                                                                            <li class="select-item"
+                                                                            data-item="IHO50000">
+                                                                            <label
+                                                                                class="custom-checkbox-label">
+                                                                                <span
+                                                                                    class="custom-checkbox-new">
+                                                                                    <input type="checkbox"
+                                                                                        data-event="IHO50000"
+                                                                                        class="js-filterCheck">
+                                                                                    <span
+                                                                                        class="checkbox-check"></span>
+                                                                                </span>
+                                                                                <span
+                                                                                    class="checkboxtext">IHO50000</span>
+                                                                            </label>
+                                                                        </li>
+                                                                        <li class="select-item"
+                                                                            data-item="IHO75000">
+                                                                            <label
+                                                                                class="custom-checkbox-label">
+                                                                                <span
+                                                                                    class="custom-checkbox-new">
+                                                                                    <input type="checkbox"
+                                                                                        data-event="IHO75000"
+                                                                                        class="js-filterCheck">
+                                                                                    <span
+                                                                                        class="checkbox-check"></span>
+                                                                                </span>
+                                                                                <span
+                                                                                    class="checkboxtext">IHO75000</span>
+                                                                            </label>
+                                                                        </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.sumInsured}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Sum Insured</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" value=""
+                                                            class="input-textbox only-numeric-decimal-input price-with-comma-form jsValueOK"
+                                                            placeholder="" data-type="sumInsured" data-form="sumInsured">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.tenure}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Tenure (years)</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" value=""
+                                                            class="input-textbox only-numeric-input jsValueOK disable-emoji"
+                                                            placeholder="" data-type="tenure" maxlength="2" data-form="tenure" pattern="[0-9]*" inputmode="numeric">
+                                                    </div>
+                                                    <!--/*<span class="text-infos">(dd/mm/yyyy)</span>*/-->
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.smoke}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Smokers</label>
+                                                    <ul class="list-radio-ul jsRadio">
+                                                        <li class="list-radio-li">
+                                                            <label class="custom-radiobox-label">
+                                                                <span class="custom-radio">
+                                                                    <input type="radio" name="smoke" value="yes">
+                                                                    <span class="radiobox-check"></span>
+                                                                </span>
+                                                                Yes
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-radio-li">
+                                                            <label class="custom-radiobox-label">
+                                                                <span class="custom-radio radio-center">
+                                                                    <input type="radio" name="smoke" value="no"
+                                                                        checked="">
+                                                                    <span class="radiobox-check"></span>
+                                                                </span>
+                                                                No
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.occupationDetails}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Occupation Details</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-type="occupation" data-form="occupation">
+                                                                <option value=""></option>
+                                                                <option value="Salaried">Salaried</option>
+                                                                <option value="SelfEmployed">Self Employed</option>
+                                                                <option value="Professional">Professional</option>
+                                                                <option value="Housewife">Housewife</option>
+                                                                <option value="Others">Others</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.noOfAdults}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">No. of Adults</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK"
+                                                                data-type="adults-number" data-form="noofAdults">
+                                                                <option value=""></option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                                <option value="9">9</option>
+                                                                <option value="10">10</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.noOfChild}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">No. of Children</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK"
+                                                                data-type="children-number" data-form="noofChildren">
+                                                                <option value=""></option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                                <option value="9">9</option>
+                                                                <option value="10">10</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.existingAilment}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Any Existing Ailment ?</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" class="input-textbox only-alpha-input jsValueOK disable-emoji"
+                                                            placeholder="" data-type="anyExistingAilment" data-form="anyExistingAilment">
+                                                    </div>
+                                                    <span class="text-infos">if yes please mention the Ailment</span>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.nationality}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Nationality</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-type="product" data-form="nationality">
+                                                                <option value=""></option>
+                                                                <option value="Indian Resident">Indian Resident</option>
+                                                                <option value="NRI">NRI</option>
+                                                                <option value="Others">Others</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.dependsFamily}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">No. of dependents/family members</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK"
+                                                                data-type="entity-type" data-form="noOfMembers">
+                                                                <option value=""></option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                                <option value="9">9</option>
+                                                                <option value="10">10</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.coverageAmount}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Coverage Amount</label>
+                                                    <div class="textbox-inner">
+                                                        <span class="icon-rupee d-none"></span>
+                                                        <input type="text"
+                                                            class="input-textbox only-numeric-decimal-input  price-with-comma-form jsValueOK disable-emoji"
+                                                            placeholder="" data-type="coverage-amount" data-form="coverageAmount" pattern="[0-9]*" inputmode="numeric">
+                                                    </div>
+                                                    <span class="text-infos">Coverage Amount</span>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.lifeInsuranceRadio}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Existing Life Insurance</label>
+                                                    <ul class="list-radio-ul jsRadio">
+                                                        <li class="list-radio-li">
+                                                            <label class="custom-radiobox-label">
+                                                                <span class="custom-radio">
+                                                                    <input type="radio" name="existing-insurance"
+                                                                        value="yes">
+                                                                    <span class="radiobox-check"></span>
+                                                                </span>
+                                                                Yes
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-radio-li">
+                                                            <label class="custom-radiobox-label">
+                                                                <span class="custom-radio">
+                                                                    <input type="radio" name="existing-insurance"
+                                                                        value="no" checked="">
+                                                                    <span class="radiobox-check"></span>
+                                                                </span>
+                                                                No
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                    <!--                                    <span class="error-msgs">Invalid date</span>-->
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.vehicleManufacturer}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Vehicle Manufacturer</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" id="quick-apply-select-manufacturer"
+                                                                data-type="vehicle-manufacturer" data-form="make">
+                                                                <option value=""></option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.vhModel}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Vehicle Model</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK"
+                                                                data-type="vehicle-model" data-form="model" id="quick-apply-select-model">
+                                                                <option value=""></option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.vehicleVariant}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Vehicle Variant</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK"
+                                                                data-type="vehicle-variant" data-form="variant" id="quick-apply-select-vehicle-variant">
+                                                                <option value=""></option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.selectProductType}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Product Type</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK productType" data-type="productType" data-form="productType" id="myfunc">
+                                                                <option value=""></option>
+                                                                <option value="Used car Loan">Used car Loan</option>
+                                                                <option value="Loan on Car">Loan on Car</option> 
+
+                                                            </select>
+                                                            <span class="text-infos"><span
+                                                                class="before-text">Know more about the Products</span>
+                                                            <span class="custom-tooltip bottom-placement">
+                                                                <i class="tooltip-icon icon-info-alt"></i>
+                                                                <span class="tooltip-text">- Select <b>Used Car Loan</b> if you want a loan to purchase a Used Car.<br>
+                                                                    - Select <b>Loan on Car</b> if you want to take a loan/borrow against your existing car.</span>
+                                                            </span>
+                                                        </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.yearManufacturer}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Year of Manufacture</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text"
+                                                            class="input-textbox only-numeric-input jsValueOK disable-emoji"
+                                                            placeholder="" data-type="manufacture-year" maxlength="4" data-form="yearOfManufacture" pattern="[0-9]*" inputmode="numeric">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.uniqueIdentifier}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Unique Identifier</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK"
+                                                                data-type="vehicle-variant" data-form="uniqueIdentifier">
+                                                                <option value=""></option>
+                                                                <option value="PAN">PAN</option>
+                                                                <option value="Voter Id">Voter Id</option>
+                                                                <option value="Driving License">Driving License</option>
+                                                                <option value="Passport">Passport</option>
+                                                                <option value="Aadhar">Aadhar</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <span class="text-infos">Select any one document you'd like to submit</span>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.regDate}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Vehicle Registration Date</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" value=""
+                                                            class="input-textbox date-input jsValueOK disable-emoji" placeholder=""
+                                                            data-type="vehicleRegistrationDate" data-form="vehicleRegisterationDate">
+                                                    </div>
+                                                    <span class="text-infos">(dd/mm/yyyy)</span>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.pinCode}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Pincode</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text"
+                                                            class="input-textbox only-numeric-decimal-input jsValueOK disable-emoji"
+                                                            placeholder="" data-form="pinCode" data-type="pinCode" maxlength="6"
+                                                            name="pincode">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.eductionPincode}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Pincode</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-form="pinCode" data-type="pinCode">
+                                                                    <option value=""></option>
+                                                                    <option value="721663">721663</option>
+                                                                    <option value="743411">743411</option>
+                                                                    <option value="741161">741161</option>
+                                                                    <option value="635130">635130</option>
+                                                                    <option value="401105">401105</option>
+                                                                    <option value="144501">144501</option>
+                                                                    <option value="142035">142035</option>
+                                                                    <option value="440019">440019</option>
+                                                                    <option value="678007">678007</option>
+                                                                    <option value="688014">688014</option>
+                                                                    <option value="581438">581438</option>
+                                                                    <option value="421501">421501</option>
+                                                                    <option value="570028">570028</option>
+                                                                    <option value="832111">832111</option>
+                                                                    <option value="362021">362021</option>
+                                                                    <option value="535220">535220</option>
+                                                                </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.state}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">State</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-form="state" data-type="state">
+                                                            
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.city}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">City</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK city" data-form="city" data-type="city">
+                                                               
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.entityType}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Entity Type</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK"
+                                                                data-type="entity-type">
+                                                                <option value=""></option>
+                                                                <option value="Delhi">Proprietorship</option>
+                                                                <option value="Agra">Partnership</option>
+                                                                <option value="Gurgaun">Private Limited</option>
+                                                                <option value="Allahabad">Public Limited</option>
+                                                                <option value="Hisar">Others</option>
+                                                            </select>
+                                                            <span class="text-infos truncate-with-tooltip"><span
+                                                                    class="before-text">*We
+                                                                    do not fund the following entity:</span>
+                                                                <span class="custom-tooltip bottom-placement">
+                                                                    <i class="tooltip-icon icon-info-alt"></i>
+                                                                    <span class="tooltip-text">Lorem ipsum dolor sit
+                                                                        amet
+                                                                        consectetur.
+                                                                        Morbi egestas donec praesent ut habitasse amet.
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.noOfMember}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">No. of member</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK"
+                                                                data-type="entity-type">
+                                                                <option value=""></option>
+                                                                <option value="1 Adult">1 Adult</option>
+                                                                <option value="1 Adult + 1 Child">1 Adult + 1 Child
+                                                                </option>
+                                                                <option value="1 Adult + 2 Child">1 Adult + 2 Child
+                                                                </option>
+                                                                <option value="1 Adult + 3 Child">1 Adult + 3 Child
+                                                                </option>
+                                                                <option value="1 Adult + 3 Child">1 Adult + 3 Child
+                                                                </option>
+                                                                <option value="2 Adult">2 Adult</option>
+                                                                <option value="2 Adult + 1 Child">2 Adult + 1 Child
+                                                                </option>
+                                                                <option value="2 Adult + 2 Child">2 Adult + 2 Child
+                                                                </option>
+                                                                <option value="2 Adult + 3 Child">2 Adult + 3 Child
+                                                                </option>
+                                                                <option value="2 Adult + 4 Child">2 Adult + 4 Child
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.noCards}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Total No. of Cards</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" class="input-textbox jsValueOK disable-emoji"
+                                                            placeholder="" data-type="" data-form="totalNoofCards">
+                                                    </div>
+                                                    <span class="text-infos">Total No. of Cards</span>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.existingPetAilment}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Does the Pet have Existing Ailment</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" class="input-textbox jsValueOK disable-emoji"
+                                                            placeholder="" data-type="name">
+                                                    </div>
+                                                    <span class="text-infos">if yes please mention the Ailment</span>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.totalWorkExp}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Total Work Experience</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text"
+                                                            class="input-textbox  only-numeric-input jsValueOK  disable-emoji"
+                                                            placeholder="" data-type="" pattern="[0-9]*" inputmode="numeric">
+                                                        <span class="text-infos">Number should be greater than or equal
+                                                            to 1
+                                                            year</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.annualBuisness}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Annual Business Income</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text"
+                                                            class="input-textbox  only-numeric-input price-with-comma-form jsValueOK disable-emoji"
+                                                            placeholder="" data-type="number" pattern="[0-9]*" inputmode="numeric">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.emiMonth}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Existing EMIs per month</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text"
+                                                            class="input-textbox  only-numeric-input price-with-comma-form jsValueOK disable-emoji"
+                                                            placeholder="" data-type="number" pattern="[0-9]*" inputmode="numeric">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.timeSince}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Time Since Purchase (Months)</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text"
+                                                            class="input-textbox only-numeric-decimal-input jsValueOK  disable-emoji"
+                                                            placeholder="" data-type="purchaseTime">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.costTwoWheeler}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Cost of Two Wheeler</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text"
+                                                            class="input-textbox only-numeric-decimal-input price-with-comma-form jsValueOK disable-emoji"
+                                                            placeholder="" data-type="price">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.monthlyLiabilities}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Monthly Liabilities</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text"
+                                                            class="input-textbox only-numeric-decimal-input price-with-comma-form jsValueOK disable-emoji"
+                                                            placeholder="" data-type="price">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.companyName}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Company Name</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" class="input-textbox jsValueOK disable-emoji"
+                                                            placeholder="" data-type="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.monthlySalary}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Salary (Monthly income)</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text"
+                                                            class="input-textbox only-numeric-decimal-input price-with-comma-form jsValueOK disable-emoji"
+                                                            placeholder="" data-type="price">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.regNo}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Reg. No. (MH01AB1234)</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" class="input-textbox  jsValueOK disable-emoji"
+                                                            placeholder="" data-type="price">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.workForce}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Work Force</label>
+                                                    <div class="textbox-inner">
+                                                        <span class="icon-rupee d-none"></span>
+                                                        <input type="text" class="input-textbox jsValueOK disable-emoji"
+                                                            placeholder="" data-type="require-loan-amount">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.specificRequirement}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Any specific requirement</label>
+                                                    <div class="textbox-inner">
+                                                        <textarea type="text"
+                                                            class="input-textbox form-textarea jsValueOK"
+                                                            placeholder="Type" data-type="message"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.natureBuisness}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Nature of Business</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-type="amount">
+                                                                <option value=""></option>
+                                                                <option value="Manufacturer">Manufacturer</option>
+                                                                <option value="Trader">Trader</option>
+                                                                <option value="Retail">Retail</option>
+                                                                <option value="Service Provider">Service Provider
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.annualIncome}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Annual Income</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text"
+                                                            class="input-textbox only-numeric-decimal-input price-with-comma-form jsValueOK disable-emoji"
+                                                            placeholder="" data-type="price">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.yearBuisness}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Years In Business</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK"
+                                                                data-type="years-buisness">
+                                                                <option value=""></option>
+                                                                <option value="Delhi">
+                                                                    < 3 Years </option>
+                                                                <option value="Agra">3-5</option>
+                                                                <option value="Gurgaun">More than 5 Years</option>
+                                                            </select>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.residenceOwn}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Residence Owner</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK"
+                                                                data-type="years-buisness">
+                                                                <option value=""></option>
+                                                                <option value="Delhi">
+                                                                    Owned</option>
+                                                                <option value="Agra">Rented</option>
+                                                            </select>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.officeOwn}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Office Ownership</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK"
+                                                                data-type="years-buisness">
+                                                                <option value=""></option>
+                                                                <option value="Owned">
+                                                                    Owned</option>
+                                                                <option value="Rented">Rented</option>
+                                                            </select>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.itrIncome}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">ITR Income</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-type="turn-over">
+                                                                <option value=""></option>
+                                                                <option value="Less than 2 Lacs">
+                                                                    Less than 2 Lacs</option>
+                                                                <option value="2 Lacs to 5 Lacs"> 2 Lacs to 5 Lacs
+                                                                </option>
+                                                                <option value="More than 5 Lacs">More than 5 Lacs
+                                                                </option>
+                                                            </select>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.gstReg}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">GST Registration</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-type="turn-over">
+                                                                <option value=""></option>
+                                                                <option value="Yes">
+                                                                    Yes</option>
+                                                                <option value="No">No</option>
+
+                                                            </select>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.turnOver}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Turnover in last FY</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-type="turn-over">
+                                                                <option value=""></option>
+                                                                <option value="Less than 20 Lacs">
+                                                                    Less than 20 Lacs </option>
+                                                                <option value="20 Lacs to 50 Lacs">20 Lacs to 50 Lacs
+                                                                </option>
+                                                                <option value="More than 1 Cr">More than 1 Cr</option>
+                                                            </select>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.idProof}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Id proof</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-type="id-proof">
+                                                                <option value=""></option>
+                                                                <option value="PAN">PAN</option>
+                                                                <option value="Voter ID">Voter ID</option>
+                                                                <option value="Driving License">Driving License</option>
+                                                                <option value="Passport">Passport</option>
+                                                                <option value="Adhar">Adhar</option>
+                                                            </select>
+                                                            <span class="text-infos"><span
+                                                                    class="before-text">Identification
+                                                                    document
+                                                                    to be submitted at the time of application</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.product}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Product</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-type="product">
+                                                                <option value=""></option>
+                                                                <option value="Mutual Funds">Mutual Funds</option>
+                                                                <option value="PMS">PMS</option>
+                                                                <option value="Alternative Investments">Alternative
+                                                                    Investments
+                                                                </option>
+                                                                <option value="NCD/Bonds">NCD/Bonds</option>
+                                                                <option value="Home Loan">Home Loan</option>
+                                                                <option value="Corporate Finance">Corporate Finance
+                                                                </option>
+                                                                <option value="Consumer Loans">Consumer Loans</option>
+                                                                <option value="Life Insurance"> Life Insurance</option>
+                                                                <option value="Others">Others</option>
+                                                            </select>
+                                                            <span class="text-infos"><span
+                                                                    class="before-text">Identification
+                                                                    document
+                                                                    to be submitted at the time of application</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.manyAppliances}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">How many appliances do you want to
+                                                        insure?</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select
+                                                                class="js-select2 jsValueOK select2-hidden-accessible"
+                                                                data-type="appliance-numbers" tabindex="-1"
+                                                                aria-hidden="true">
+                                                                <option value=""></option>
+                                                                <option value="one">Gadget Serv (1
+                                                                    AC)</option>
+                                                                <option value="two">GadgetServ
+                                                                    Power (1 AC + 1 Refridgerator)</option>
+                                                                <option value="six">GadgetServ
+                                                                    Power (2 AC + 4 others)</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.manyAppliances}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">How many appliances do you want to
+                                                        insure?</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select
+                                                                class="js-select2 jsValueOK select2-hidden-accessible"
+                                                                data-type="appliance-numbers" tabindex="-1"
+                                                                aria-hidden="true">
+                                                                <option value=""></option>
+                                                                <option value="one">Gadget Serv (1
+                                                                    AC)</option>
+                                                                <option value="two">GadgetServ
+                                                                    Power (1 AC + 1 Refridgerator)</option>
+                                                                <option value="six">GadgetServ
+                                                                    Power (2 AC + 4 others)</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.productCDL}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Product</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-type="product">
+                                                                <option value=""></option>
+                                                                <option value="Home Appliances">Home Appliances</option>
+                                                                <option value="Modular Kitchen">Modular Kitchen</option>
+                                                                <option value="Driving License">Electronics</option>
+                                                                <option value="Furniture">Furniture</option>
+                                                                <option value="Others">Others</option>
+                                                            </select>
+                                                            <span class="text-infos"><span
+                                                                    class="before-text">Identification
+                                                                    document
+                                                                    to be submitted at the time of application</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.salaryCredit}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Salary Credit By</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-type="amount">
+                                                                <option value=""></option>
+                                                                <option value="Direct Credit to Bank Ac">Direct Credit
+                                                                    to Bank Ac
+                                                                </option>
+                                                                <option value="By Cheque">By Cheque</option>
+                                                                <option value="By Cash">By Cash</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.applcWarranty}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Appliance in Warranty</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-type="amount">
+                                                                <option value=""></option>
+                                                                <option value="In Warranty">In Warranty</option>
+                                                                <option value="Out of Warranty">Out of Warranty</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.premiumPaid}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Premium to be paid</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" value=""
+                                                            class="input-textbox only-numeric-decimal-input price-with-comma-form jsValueOK disable-emoji"
+                                                            placeholder="" data-type="premium">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.currentResidence}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Current Residence</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" value="" class="input-textbox jsValueOK disable-emoji"
+                                                            placeholder="" data-type="residence">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+
+                                        <sly data-sly-test="${inputChecks.petBreed}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Pet Breed</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-type="product">
+                                                                <option value=""></option>
+                                                                <option value="Small">Small</option>
+                                                                <option value="Medium">Medium</option>
+                                                                <option value="Large">Large</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.query}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Query</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-type="query">
+                                                                <option value=""></option>
+                                                                <option value="Delhi">Mumbai</option>
+                                                                <option value="Agra">Pune</option>
+                                                                <option value="Gurgaun">Ahmedabad</option>
+                                                                <option value="Allahabad">Indore</option>
+                                                                <option value="Hisar">Delhi</option>
+                                                                <option value="Faridabad">Faridabad</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.writeMsg}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Write your message</label>
+                                                    <div class="textbox-inner">
+                                                        <textarea type="text"
+                                                            class="input-textbox form-textarea jsValueOK"
+                                                            placeholder="Type your message here"
+                                                            data-type="message"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.attachment}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Attachment</label>
+                                                    <div class="textbox-inner custom-file-input">
+                                                        <input class="input-filebox" data-file='fileInput' type="file"
+                                                            id="formFile">
+                                                        <div class="custom-file">
+                                                            <img class="iconfile"
+                                                                src="/content/dam/tata-capital-web/assets/img/file-input-icon.svg"
+                                                                alt="fileinputicon">
+                                                            <span>Choose a file</span>
+                                                        </div>
+                                                        <span class="no-file-text">No file chosen</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.termsConditionsBtTopup}">
+                                            <div class="row-col-100 col-sp30">
+                                                <div class="relative">
+                                                    <label class="custom-checkbox-label la-agree-btn regular pb-20">
+                                                            <span class="custom-checkbox-new">
+                                                                <input type="checkbox" id="iAgreeTerms" data-type="iAgree" checked>
+                                                                <span class="checkbox-check"></span>
+                                                            </span>
+                                                        I agree to the Terms & Conditions as specified<a href="/content/tata-capital-web/en/disclaimer.html"> here.</a>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                    </div>
+                                </div>
+                            </sly>
+                        </sly>
+                    </sly>
+                    <div class="btn-controls">
+                        <button class="btn-blue btn-large jsApplyLoanAgainstProp btn-disabled" data-track="${properties.needFormTracking ? 'tracking' : '' }">Apply</button>
+                        ${properties.formDescription @ context = 'html'}
+                    </div>
+                </div>
+                <div class="loan-against-otp-wrap d-none" id="loan-against-otp">
+                    <h3 class="form-heading">Apply Now</h3>
+                    <div class="row-flex row-flex-30">
+                        <div class="row-col-33 col-sp30">
+                            <div class="otp-name-pt">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Mobile number</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" class="input-textbox only-numeric-input disable-emoji" placeholder=""
+                                            data-type="otp-send-number" maxlength="10" pattern="[0-9]*" inputmode="numeric">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-col-66 col-sp30">
+                            <div class="otp-outer-box">
+                                <div class="loan-aganist-otp-wrap">
+                                    <p class="text16i jsOtpHeading">Generate a 4 digit OTP to verify your mobile
+                                        number.</p>
+                                    <div class="loan-aganist-otp jsOTPInputBox d-none"> <!--d-none-->
+                                        <p class="text-12">Enter OTP</p>
+                                        <div class="loan-aganist-enter-otp">
+                                            <div class="otp-col js-OtpBox">
+                                                <input class="input-textbox only-numeric-input disable-emoji" type="text"
+                                                    maxlength="1" placeholder="" pattern="[0-9]*" inputmode="numeric"/>
+                                                <input class="input-textbox only-numeric-input pointer-none disable-emoji" type="text"
+                                                    maxlength="1" placeholder="" pattern="[0-9]*" inputmode="numeric"/>
+                                                <input class="input-textbox only-numeric-input pointer-none disable-emoji" type="text"
+                                                    maxlength="1" placeholder="" pattern="[0-9]*" inputmode="numeric"/>
+                                                <input class="input-textbox only-numeric-input pointer-none disable-emoji" type="text"
+                                                    maxlength="1" placeholder="" pattern="[0-9]*" inputmode="numeric"/>
+                                            </div>
+                                        </div>
+                                        <!-- otp timer -->
+                                        <div class="loan-otp-timers">
+                                            <div class="otp-timers-row">
+                                                <div class="otp-timers-col">
+                                                    <p class="text16i" id="timer">03:00</p>
+                                                </div>
+                                                <div class="otp-timers-col">
+                                                    <a href="javascript:void(0)" class="btn-links d-none jsOnGetCall jsOnGetCallButton">Get OTP via call</a>
+                                                    <p class="text16i jsGetCalling d-none">Calling <span class="semibold">+91 XXXXXXXXXX</span> <span
+                                                            class="otp-number-dot dot-animation"><img
+                                                                src="/content/dam/tata-capital-web/assets/img/lead-form/dot-img.gif" alt=""></span></p>
+                                                    <p class="text16i jsGetOTPSent d-none">OTP sent via call</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- otp timer -->
+                                        <sly data-sly-test="${properties.otpTerms}">
+                                            <div class="row-col-100 col-sp30 custom-row-col">
+                                                <div class="relative custom-relative-checkbox">
+                                                    <label class="custom-checkbox-label la-agree-btn regular pb-20 form-pdr">
+                                                        <span class="custom-checkbox-new">
+                                                            <input type="checkbox" id="iAgreeTerms" data-type="iAgree">
+                                                            <span class="checkbox-check"></span>
+                                                        </span>
+                                                        <p>${properties.otpTerms @ context= 'html'}</p>
+                                        
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-controls otp-btn">
+                        <button class="btn-blue btn-large jsLoanAgainstSendOTP">Send OTP</button>
+                        <button class="btn-blue btn-large jsLoanAgainstSubmitOTP btn-disabled d-none">Submit
+                        </button>
+                        <button class="btn-link btn-big jsLoanAgainstResendOTP d-none">Resend OTP</button>
+                        <button class="btn-link btn-big jsLoadingBtn d-none">
+                            <img src="/content/dam/tata-capital-web/assets/img/lead-form/loader-img.gif" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="loan-against-sucess-msg jsMsgLoanAgainst jsSuccessOTPVarification d-none">
+                    <a href="javascript:void(0)" class="msg-closed jsCloseLaonAgainstMgs"><span
+                            class="icon-close"></span></a>
+
+                    <!-- 14-2-2023 -->
+                    <div class="success-inner">
+                        <img src="/content/dam/tata-capital-web/assets/img/lead-form/ticks.svg" alt="" class="ticks-img">
+                        <h2>THANK YOU FOR YOUR <span id="leadIdText"></span></h2>
+                        <p class="heading20 application-id">Your application ID is <span id="leadId"></span></p>
+                        <p class="text16i">We have received your details. Our sales representative will get in touch with you shortly.</p>
+                    </div>
+                    <!-- 14-2-2023 -->
+                </div>
+                <div class="loan-against-sucess-msg jsMsgLoanAgainst jsFailLeaApi d-none">
+                    <a href="javascript:void(0)" class="msg-closed jsCloseLaonAgainstMgs"><span
+                            class="icon-close"></span></a>
+                    <div class="success-inner">
+                        <img src="/content/dam/tata-capital-web/assets/img/lead-form/unsuccesful.svg" alt="" class="ticks-img">
+                        <h2>Thank you for sharing your details. Unfortunately, we cannot process your
+                            loan application.</h2>
+                        <p>To know more, please call us on 1860 267 6060 or write to
+                            contactus@tatacapital.com.<br><span id="leadIdTextFailure"></span></p>
+                    </div>
+                </div>
+                <div class="loan-against-sucess-msg jsMsgLoanAgainst jsFailOTPVarification d-none">
+                    <a href="javascript:void(0)" class="msg-closed jsCloseLaonAgainstMgs"><span
+                            class="icon-close"></span></a>
+                    <!-- 14-2-2023 -->
+                    <div class="success-inner">
+                        <img src="/content/dam/tata-capital-web/assets/img/lead-form/unsuccesful.svg" alt="" class="ticks-img">
+                        <h2>Incorrect <span>OTP</span></h2>
+                        <p class="text16i">OTP once used cannot be reused. Please resend OTP to try again.</p>
+                        <button class="btn-blue btn-large jsLoanAgainstTryAgain">Resend OTP</button>
+                    </div>
+                    <!-- 14-2-2023 -->
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    </div>
+    </div>
+    </div>
+</section>
+
+<!--home loan modal -->
+<div class="popover-modal modals-blue fade" id="thankyou-modal-shares">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md5">
+        <div class="modal-tb-content">
+            <!-- 10-2-2023 -->
+            <div class="modal-yellow-blue">        
+                <button data-dismiss="popover-modal" class="popover-modal-close">
+                    <i class="icon-close"></i>
+                </button>    
+                <div class="popover-top-heads">
+                    <img src="/content/dam/tata-capital-web/assets/img/tata-logo-blue.svg" alt="" class="images-logo">
+                </div>
+                <div class="popover-modal-content">                    
+                    <div class="popover-modal-body">
+                        <div class="apply-thanks-popup">
+                            <img src="/content/dam/tata-capital-web/assets/img/mutual-fund-icon.svg" alt="" class="infoes-imgs">
+                            <p class="heading20 semibold apply-texts">To apply for a Loan Against Shares</p>
+                            <div class="apply-btns">
+                                <a href="https://www.las.tatacapital.com/online/loans/las/apply-now-las-loan#!" class="btn-link btn-big min-w149 las-investment" target="_blank">Click Here</a>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 10-2-2023 -->
+        </div>
+    </div>
+</div>
+<!--home loan modal -->
+
+<!--home loan modal -->
+<div class="popover-modal modals-blue fade" id="thankyou-modal-mutualFunds">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md5">
+        <div class="modal-tb-content">
+            <!-- 10-2-2023 -->
+            <div class="modal-yellow-blue">        
+                <button data-dismiss="popover-modal" class="popover-modal-close">
+                    <i class="icon-close"></i>
+                </button>    
+                <div class="popover-top-heads">
+                    <img src="/content/dam/tata-capital-web/assets/img/tata-logo-blue.svg" alt="" class="images-logo">
+                </div>
+                <div class="popover-modal-content">                    
+                    <div class="popover-modal-body">
+                        <div class="apply-thanks-popup">
+                            <img src="/content/dam/tata-capital-web/assets/img/mutual-fund-icon.svg" alt="" class="infoes-imgs">
+                            <p class="heading20 semibold apply-texts">To apply for a Loan Against Mutual Funds</p>
+                            <div class="apply-btns">
+                                <a href="https://www.las.tatacapital.com/online/loans/las/apply-now-las-loan#!" class="btn-link btn-big min-w149 las-investment" target="_blank">Click Here</a>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 10-2-2023 -->
+        </div>
+    </div>
+</div>
+<!--home loan modal -->

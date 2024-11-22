@@ -1,0 +1,144 @@
+<section class="loan-against-prop-box pd-t50">
+    <div class="container">
+        <div class="loan-against-form-wrap">
+            <div class="loan-against-header">
+                <h4>Please provide the information below to partner with us</h4>
+                <div class="clear-btn">
+                    <a href="javascript:void(0)" class="link jsClearLoanDeatils">Clear <span
+                            class="icon-clear"></span></a>
+                </div>
+                <div class="loan-againstclose-btn d-none">
+                    <a href="javascript:void(0)" class="link jsCloseLaonAgainstMgs"> <span
+                            class="icon-close"></span></a>
+                </div>
+            </div>
+            <div class="loan-against-body">
+                <div class="loan-against-form" id="partner-with-us">
+                    <div class="loan-against-form-wrapper">
+                        <div class="row-flex row-flex-30">
+
+                            <div class="row-col-33 col-sp30">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Full name</label>
+                                    <div class="textbox-inner">
+                                        <input type="text"
+                                            class="input-textbox jsValueOK disable-emoji alfaOnlyInput only-alpha-input"
+                                            placeholder="" data-type="name">
+                                    </div>
+                                    <span class="text-infos">Name (as per PAN Card)</span>
+                                </div>
+                            </div>
+                            <div class="row-col-33 col-sp30">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Company name</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" class="input-textbox jsValueOK disable-emoji" placeholder=""
+                                            data-type="companyname">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-33 col-sp30">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Email ID</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" class="input-textbox jsValueOK disable-emoji" placeholder=""
+                                            data-type="email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-33 col-sp30">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Mobile no.</label>
+                                    <div class="textbox-inner">
+                                        <input type="text"
+                                            class="input-textbox only-numeric-input jsValueOK disable-emoji"
+                                            placeholder="" data-type="mobile" maxlength="10" pattern="[0-9]*"
+                                            inputmode="numeric">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-33 col-sp30">
+                                <div class="form-textbox-new active">
+                                    <label class="label-name">City of residence</label>
+                                    <div class="textbox-inner">
+                                        <div class="custom-select2">
+                                            <select class="js-select2 jsValueOK" data-type="city">
+                                                <option value=""></option>
+                                                <!-- <option value="Delhi">Mumbai</option>
+                                                <option value="Agra">Pune</option>
+                                                <option value="Gurgaun">Ahmedabad</option>
+                                                <option value="Allahabad">Indore</option>
+                                                <option value="Hisar">Delhi</option>
+                                                <option value="Faridabad">Faridabad</option> -->
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-33 col-sp30">
+                                <div class="form-textbox-new active">
+                                    <label class="label-name">Product category</label>
+                                    <div class="textbox-inner">
+                                        <div class="custom-select2">
+                                            <select class="js-select2 jsValueOK" data-type="product-category">
+                                                <option value=""></option>
+                                                <option value="Retail">Retail</option>
+                                                <option value="Commercial">Commercial</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-33 col-sp30">
+                                <div class="form-textbox-new active">
+                                    <label class="label-name">Role type</label>
+                                    <div class="textbox-inner">
+                                        <div class="custom-select2">
+                                            <select class="js-select2 jsValueOK" data-type="role-type">
+                                                <option value=""></option>
+                                                <option value="DSA">DSA</option>
+                                                <option value="Developer">Developer</option>
+                                                <option value="Fintech/Partnership">Fintech/Partnership</option>
+                                                <option value="Product manager">Product manager</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="btn-controls">
+                        <button class="btn-blue btn-large jsApplyLoanAgainstProp btn-disabled">Submit</button>
+                    </div>
+                </div>
+
+                <div class="loan-against-sucess-msg jsMsgLoanAgainst jsSuccessOTPVarification d-none">
+                    <a href="javascript:void(0)" class="msg-closed jsCloseLaonAgainstMgs">
+                        <span class="icon-close"></span>
+                    </a>
+                    <div class="success-inner">
+                        <img src="/content/dam/tata-capital-web/assets/img/thanks.svg" alt="" class="ticks-img">
+                        <h2><span>Thank you for showing interest to partner with us</span></h2>
+                        <p class="text16i">One of our representatives will get back to you soon</p>
+                        <div class="mg-t30 mg-b10i">
+                            <a href="/content/tata-capital-web/en/tata-capital-api.html"
+                                class="btn-blue btn-large backToCatalogue">Go back to catalogue</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="loan-against-sucess-msg jsMsgLoanAgainst jsFailLeaApi d-none">
+                    <a href="javascript:void(0)" class="msg-closed jsCloseLaonAgainstMgs"><span
+                            class="icon-close"></span></a>
+                    <div class="success-inner">
+                        <img src="/content/dam/tata-capital-web/assets/img/lead-form/unsuccesful.svg" alt=""
+                            class="ticks-img">
+                        <h2>Somthing Went Wrong</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,104 @@
+.personal-two-loan-box {
+    display: flex;
+  }
+  .personal-two-loan-box .personal-loan-row {
+    width: 50%;
+    padding: 0 18px;
+  }
+  .personal-two-loan-box .personal-loan-row .personal-cards {
+    min-height: 100%;
+    padding: 25px 40px;
+  }
+  .personal-two-loan-box .personal-loan-row .personal-cards h2 {
+    margin-bottom: 26px;
+  }
+  .personal-two-loan-box .personal-loan-row .personal-para p {
+    margin-bottom: 25px;
+  }
+  .personal-two-loan-box .personal-loan-row .personal-para p:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+  .personal-two-loan-box .personal-loan-row:nth-last-child(1) {
+    padding-right: 0;
+  }
+  .personal-two-loan-box .personal-loan-row:nth-child(1) {
+    padding-left: 0;
+  }
+  .personal-two-loan-box .personal-loan-row.has-fixed-controls .personal-cards {
+    padding-bottom: 106px;
+    position: relative;
+  }
+  .personal-two-loan-box .personal-loan-row.has-fixed-controls .personal-btn {
+    position: absolute;
+    bottom: 25px;
+    left: 40px;
+  }
+  .personal-two-loan-box .personal-loan-row .personal-btn {
+    margin-top: 30px;
+  }
+  
+  @media (max-width: 991px) {
+    .personal-two-loan-box {
+      display: block;
+    }
+    .personal-two-loan-box .personal-loan-row {
+      width: 100%;
+      padding: 25px 0;
+    }
+    .personal-two-loan-box .personal-loan-row:nth-last-child(1) {
+      padding-bottom: 0;
+    }
+    .personal-two-loan-box .personal-loan-row:nth-child(1) {
+      padding-top: 0;
+    }
+    .personal-two-loan-box .personal-loan-row.has-fixed-controls .personal-cards {
+      padding-bottom: 24px;
+    }
+    .personal-two-loan-box .personal-loan-row.has-fixed-controls .personal-btn {
+      position: initial;
+      margin-top: 20px;
+    }
+  }
+  @media (max-width: 767px) {
+    .personal-two-loan-box .personal-loan-row .personal-cards {
+      padding: 24px;
+    }
+    .personal-two-loan-box .personal-loan-row .personal-cards h2 {
+      margin-bottom: 12px;
+    }
+    .personal-two-loan-box .personal-loan-row .personal-para p {
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+    .personal-two-loan-box .personal-loan-row .personal-para .dot-list li {
+      letter-spacing: 0.02em;
+      font-size: 13px;
+      line-height: 140%;
+    }
+    .personal-two-loan-box .personal-loan-row .personal-para .dot-list li.has-title span {
+      letter-spacing: 0.02em;
+      font-size: 13px;
+      line-height: 140%;
+      font-family: "OpenSans-Light";
+    }
+    .personal-two-loan-box .personal-loan-row .personal-para .dot-list li.has-title:before {
+      top: 8px;
+    }
+    .personal-two-loan-box .personal-loan-row .personal-para:nth-last-child(1) {
+      padding-bottom: 0;
+    }
+    .personal-two-loan-box .personal-loan-row .personal-para:nth-child(1) {
+      padding-top: 0;
+    }
+    .personal-two-loan-box .personal-loan-row .personal-btn.btn-with-full .btn-blue, .personal-two-loan-box .personal-loan-row .personal-btn.btn-with-full .btn-link {
+      width: 100%;
+      margin: auto auto 10px;
+      display: block;
+    }
+    .personal-two-loan-box .personal-loan-row .personal-btn.btn-with-full .btn-blue:nth-last-child(1), .personal-two-loan-box .personal-loan-row .personal-btn.btn-with-full .btn-link:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+  

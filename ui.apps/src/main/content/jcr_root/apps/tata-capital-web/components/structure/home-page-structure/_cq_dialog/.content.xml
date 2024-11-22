@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    mode="edit">
+    <content jcr:primaryType="nt:unstructured">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                granite:class="cq-siteadmin-admin-properties-tabs"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                overflow="inherit"
+                size="L">
+                <items jcr:primaryType="nt:unstructured">
+                    <seoTag
+                        cq:showOnCreate="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="SEO Tags"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        overflow="inherit">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <ogsection
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="OG Tags"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <ogtags
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Shop Product"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                eaem-show-on-collapse="EAEM.showProductName">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                    eaem-nested="NODE_STORE"
+                                                    name="./ogTags">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <ogtag
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="OG Tags Name"
+                                                                    name="./propertyName"/>
+                                                                <ogcontent
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="OG Tags Content"
+                                                                    name="./ogContent"/>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                            </ogtags>
+                                        </items>
+                                    </ogsection>
+                                    <seo
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="SEO Configuration"
+                                        sling:orderBefore="cloudservices"
+                                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <container
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <canonical
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldLabel="Canonical url"
+                                                        name="./canonical"/>
+                                                    <pageKeywords
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                                        fieldLabel="Enter keywords for SEO"
+                                                        name="./pageKeywords"
+                                                        predicate="hierarchy"/>
+                                                    <faqschema
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="breadcrumbs schema"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                        fieldLabel="FAQ schema"
+                                                        name="./faqschema"
+                                                        text="FAQ schema"/>
+                                                    <blogschema
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="blog schema"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                        fieldLabel="BLOG schema"
+                                                        name="./blogschema"
+                                                        text="blog schema"/>
+                                                    <organizationschema
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="organization schema"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                        fieldLabel="organization schema"
+                                                        name="./organizationschema"
+                                                        text="organization schema"/>
+                                                    <breadcrumbschema
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="breadcrumbs schema"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                        fieldLabel="breadcrumbs schema"
+                                                        name="./breadcrumbsschema"
+                                                        text="breadscrumb schema"/>
+                                                    <productschema
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="product schema"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                        fieldLabel="product schema"
+                                                        name="./productschema"
+                                                        text="product schema"/>
+                                                    <videoschemaone
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="video schema"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <videotags
+                                                                jcr:primaryType="nt:unstructured"
+                                                                jcr:title="video schema"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                composite="{Boolean}true"
+                                                                eaem-show-on-collapse="EAEM.showProductName">
+                                                                <field
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                                    eaem-nested="NODE_STORE"
+                                                                    name="./videoschema">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <column
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <video
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                                                    fieldLabel="Upload video"
+                                                                                    name="./video"/>
+                                                                            </items>
+                                                                        </column>
+                                                                    </items>
+                                                                </field>
+                                                            </videotags>
+                                                        </items>
+                                                    </videoschemaone>
+                                                </items>
+                                            </container>
+                                        </items>
+                                    </seo>
+                                    <metasection
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Meta Tags"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <metatags
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Shop Product"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                eaem-show-on-collapse="EAEM.showProductName">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                    eaem-nested="NODE_STORE"
+                                                    name="./metaTags">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <metaname
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Meta Tags Name"
+                                                                    name="./metaName"/>
+                                                                <metacontent
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Meta Tags Content"
+                                                                    name="./metaContent"/>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                            </metatags>
+                                        </items>
+                                    </metasection>
+                                    <section
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Robot Tag"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <noindex
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                name="./noindex"
+                                                text="No Index"
+                                                value="{Boolean}true"/>
+                                            <nofollow
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                name="./nofollow"
+                                                text="No Follow"
+                                                value="{Boolean}true"/>
+                                        </items>
+                                    </section>
+                                </items>
+                            </column>
+                        </items>
+                    </seoTag>
+                    <pagedefault
+                        cq:showOnCreate="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Page Default"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        overflow="inherit">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <section
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Select Article Creators"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <dateTime
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                                displayedFormat="MMMM DD, YYYY hh:mm a"
+                                                fieldDescription="Date Test"
+                                                fieldLabel="Date "
+                                                name="./articalPublishDate"
+                                                renderReadOnly="{Boolean}false"
+                                                type="datetime"/>
+                                            <views
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Enter Views"
+                                                name="./views"/>
+                                            <articleimage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Select Article Image"
+                                                name="./articleimage"
+                                                rootPath="/content/dam/hdfclifeinsurancecompany"/>
+                                            <categoryselect
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Select Category Page"
+                                                name="./categoryPage"
+                                                rootPath="/content/hdfclifeinsurancecompany"/>
+                                        </items>
+                                    </section>
+                                </items>
+                            </column>
+                        </items>
+                    </pagedefault>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

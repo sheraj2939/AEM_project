@@ -1,0 +1,10 @@
+.new-tab-sliders .tabs-row.cmp-tabs__tab--active a.tab-button{
+    background: linear-gradient(134.06deg, rgba(18, 104, 179, 0.71) 0%, rgba(16, 141, 250, 0.95) 99.11%);
+    color: #fff;
+}
+.faq-box .faq-row .faq-heading{
+    cursor: pointer;
+}
+.new-tab-sliders .tab-button.custom-tab-btn {
+    padding: 10px 17px !important;
+}

@@ -1,0 +1,21 @@
+<div class="digitals-box space-tb40">
+    <div class="container">
+        <sly
+            data-sly-resource="${'what-we-do-title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+        </sly>
+    </div>
+    <div class="container mob-pd0">
+        <div class="">
+            <sly
+                data-sly-resource="${'what-we-do-cards' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+            </sly>
+        </div>
+    </div>
+    <sly data-sly-test="${properties.aboutUsDescription}">
+        <div class="container">
+            <div class="about-text-center">
+                <div class="text16i">${properties.aboutUsDescription @ context = 'html'}</div>
+            </div>
+        </div>
+    </sly>
+</div>

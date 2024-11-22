@@ -1,0 +1,203 @@
+.resource-box {
+    background-image: url("/content/dam/tata-capital-web/img/sustainabiliy/resource-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 543px;
+    padding: 38px;
+    border-radius: 30px;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .resource-content-box {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 -9px;
+  }
+  .resource-content-box .resource-item {
+    padding: 0 9px;
+  }
+  .resource-content-box .resource-left {
+    background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.97) 0%, rgba(255, 255, 255, 0.95) 99.11%);
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.01), 5px 0px 10px rgba(0, 0, 0, 0.01), 0px -5px 10px rgba(0, 0, 0, 0.01), 0px 5px 10px rgba(0, 0, 0, 0.01);
+    border-radius: 30px;
+    padding: 25px;
+    width: 458px;
+  }
+  .resource-content-box .resource-left.has-fixed-button {
+    position: relative;
+    padding-bottom: 100px;
+  }
+  .resource-content-box .resource-left.has-fixed-button .btn-controls {
+    position: absolute;
+    bottom: 25px;
+  }
+  .resource-content-box .resource-left .heading20 {
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  .resource-content-box .resource-left .text16i {
+    margin-bottom: 10px;
+  }
+  .resource-content-box .resource-left .text16i:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+  .resource-content-box .resource-right {
+    height: 100%;
+    width: calc(100% - 458px);
+    padding-left: 18px;
+  }
+  .resource-content-box .resource-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -9px;
+    height: 100%;
+  }
+  .resource-content-box .resource-row .resource-col {
+    padding: 9px;
+    width: 50%;
+  }
+  .resource-content-box .resource-row .resource-col:nth-child(1), .resource-content-box .resource-row .resource-col:nth-child(2) {
+    padding-top: 0;
+  }
+  .resource-content-box .resource-row .resource-col:nth-child(3), .resource-content-box .resource-row .resource-col:nth-child(4) {
+    padding-bottom: 0;
+  }
+  .resource-content-box .resource-list-content {
+    background: linear-gradient(134.06deg, rgba(18, 104, 179, 0.71) 0%, rgba(16, 141, 250, 0.95) 99.11%);
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #FFFFFF;
+    height: 100%;
+    transition: -webkit-transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  }
+  .resource-content-box .resource-list-content:hover {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    background: linear-gradient(134.06deg, rgba(6, 79, 142, 0.99) 0%, rgba(9, 105, 188, 0.97) 99.11%);
+    box-shadow: 0px 124px 49px rgba(255, 255, 255, 0.02), 0px 70px 42px rgba(255, 255, 255, 0.07), 0px 31px 31px rgba(255, 255, 255, 0.12), 0px 8px 30px rgba(255, 255, 255, 0.2), 0px 0px 0px rgba(255, 255, 255, 0.14);
+  }
+  .resource-content-box .resource-list-content .btn-links {
+    font-family: "OpenSans-Regular";
+  }
+  .resource-content-box .resource-list-content .btn-links:hover .arros {
+    transform: translateX(0px);
+  }
+  .resource-content-box .resource-list-content .text16i {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 1200px) {
+    .resource-box {
+      min-height: 543px;
+      padding: 30px;
+    }
+  
+    .resource-content-box .resource-left {
+      width: 350px;
+    }
+    .resource-content-box .resource-right {
+      width: calc(100% - 350px);
+    }
+    .resource-content-box .resource-row .resource-col {
+      padding: 9px;
+      width: 50%;
+    }
+    .resource-content-box .resource-row .resource-col:nth-child(1), .resource-content-box .resource-row .resource-col:nth-child(2) {
+      padding-top: 0;
+    }
+    .resource-content-box .resource-row .resource-col:nth-child(3), .resource-content-box .resource-row .resource-col:nth-child(4) {
+      padding-bottom: 0;
+    }
+    .resource-content-box .resource-list-content {
+      background: linear-gradient(134.06deg, rgba(18, 104, 179, 0.71) 0%, rgba(16, 141, 250, 0.95) 99.11%);
+      border-radius: 20px;
+      padding: 20px;
+      border: 1px solid #FFFFFF;
+      height: 100%;
+    }
+    .resource-content-box .resource-list-content .text16i {
+      color: #FFFFFF;
+      margin-bottom: 10px;
+    }
+  }
+  @media (max-width: 991px) {
+    .resource-box {
+      height: auto;
+      padding: 20px;
+      border-radius: 24px;
+    }
+  
+    .resource-content-box {
+      flex-direction: column;
+      margin: 0;
+    }
+    .resource-content-box .resource-item {
+      padding: 0;
+    }
+    .resource-content-box .resource-left {
+      border-radius: 24px;
+      padding: 20px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .resource-content-box .resource-left .text16i {
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+    .resource-content-box .resource-left .heading20 {
+      margin-bottom: 4px;
+    }
+    .resource-content-box .resource-left.has-fixed-button {
+      position: relative;
+      padding-bottom: 20px;
+    }
+    .resource-content-box .resource-left.has-fixed-button .btn-controls {
+      position: relative;
+      bottom: auto;
+    }
+    .resource-content-box .resource-left.has-fixed-button .btn-controls .btn-blue {
+      width: 100%;
+    }
+    .resource-content-box .resource-right {
+      height: auto;
+      width: 100%;
+      padding-left: 0;
+    }
+    .resource-content-box .resource-row {
+      margin: -5px 0;
+      height: auto;
+    }
+    .resource-content-box .resource-row .resource-col {
+      padding: 5px 0;
+      width: 100%;
+    }
+    .resource-content-box .resource-row .resource-col:nth-child(1), .resource-content-box .resource-row .resource-col:nth-child(2) {
+      padding-top: 5px;
+    }
+    .resource-content-box .resource-row .resource-col:nth-child(3), .resource-content-box .resource-row .resource-col:nth-child(4) {
+      padding-bottom: 5px;
+    }
+    .resource-content-box .resource-list-content:hover {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    .resource-content-box .resource-list-content .text16i {
+      font-size: 16px;
+      line-height: 140%;
+      margin-bottom: 8px;
+    }
+  }
+  @media (max-width: 767px) {
+    .resource-box {
+      background-image: url("/content/dam/tata-capital-web/img/sustainabiliy/resource-bg-xs.png");
+    }
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+  

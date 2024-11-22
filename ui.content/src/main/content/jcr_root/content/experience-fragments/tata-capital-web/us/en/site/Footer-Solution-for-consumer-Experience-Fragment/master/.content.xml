@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-12-02T01:46:16.378+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/tata-capital-web/settings/wcm/templates/tatacapital-web-footer-template"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Footer Experience Fragment"
+        sling:resourceType="tata-capital-web/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="tata-capital-web/components/container"
+            layout="responsiveGrid">
+            <solution_for_consume
+                jcr:created="{Date}2022-12-02T01:46:16.374+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-12-02T01:46:16.374+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/TC-Revamp/Tc-Footer/solution-for-consumer-exp"
+                consumerSolHead="Solutions For Consumers">
+                <solutionConsumer jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        tittle=" Personal Loans">
+                        <subLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Personal Loans"
+                                subMenuLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Overdraft Personal Loan"
+                                subMenuLink="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Instant Personal Loan"
+                                subMenuLink="#"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Wedding Loan"
+                                subMenuLink="#"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Medical Loan"
+                                subMenuLink="#"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Education Loan"
+                                subMenuLink="#"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Travel Loan"
+                                subMenuLink="#"/>
+                            <item7
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Home Renovation"
+                                subMenuLink="#"/>
+                            <item8
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Loan For Govt Employee"
+                                subMenuLink="#"/>
+                            <item9
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Loan For Women"
+                                subMenuLink="#"/>
+                            <item10
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Loan For Salaried"
+                                subMenuLink="#"/>
+                            <item11
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Loan For Self Employed"
+                                subMenuLink="#"/>
+                            <item12
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Loan For Pensioners"
+                                subMenuLink="#"/>
+                        </subLinks>
+                    </item0>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Home Loans">
+                        <subLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Home Loan"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Quick cash"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Home Extension Loan"
+                                subMenuLink="#"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Affordable Housing"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="PMAY"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="RERA"/>
+                        </subLinks>
+                    </item1>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Business Loans">
+                        <subLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Business Loan"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Business Loan For Women"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Machinery Loan"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="MSME/SME Loan"/>
+                        </subLinks>
+                    </item2>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Vehicle Loan">
+                        <subLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Used Car Loan"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Two Wheeler Loan"/>
+                        </subLinks>
+                    </item3>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        tittle="More Products">
+                        <subLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Loan Against Property"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Loan Against Securities"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Loan Against Securities"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Insurance"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Credit Cards"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Mutual Fund"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Eclgs"/>
+                            <item7
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Loan Restructuring"/>
+                            <item8
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Microfinance"/>
+                            <item9
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Credit Score"/>
+                        </subLinks>
+                    </item4>
+                </solutionConsumer>
+            </solution_for_consume>
+        </root>
+    </jcr:content>
+</jcr:root>

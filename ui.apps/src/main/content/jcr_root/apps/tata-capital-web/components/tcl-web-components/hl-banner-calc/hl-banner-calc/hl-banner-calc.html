@@ -1,0 +1,220 @@
+<!--  banner cntr  -->
+<sly data-sly-use.obj="${'com.tatacapital.web.core.models.CustomerSpeakModel' @ productName = 'Home Loan'}">
+    <sly data-sly-test="${obj.customerData}"></sly>
+</sly>
+<section class="calc-banner-center ${properties.selectBannerVariation}"
+    data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+    data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-use.imageTemplate="image.html"
+    data-sly-use.pretitleTemplate="pretitle.html" data-sly-use.titleTemplate="title.html"
+    data-sly-use.descriptionTemplate="description.html" data-sly-use.actionsTemplate="actions.html"
+    data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+    id="${teaser.id}" data-cmp-data-layer="${teaser.data.json}">
+    <div class="custom-container banner-calc-custom" data-calc-name="hl-banner-calc">
+        <article class="calc-banner-box">
+            <sly data-sly-test="${properties.selectBannerVariation != 'calc-banner-new'}">
+                <img src="${properties.fileReference}" alt="Banner"
+                    class="banner-clip-img ${properties.selectBannerVariation == 'calc-banner-new' ? 'dsk' : ' ' }"
+                    fetchpriority="high" decoding="sync" />
+            </sly>
+            <sly data-sly-test="${properties.selectBannerVariation == 'calc-banner-new'}">
+                <picture style="display: block; min-height: 1rem" class="banner-clip-img">
+                    <source media="(min-width: 1200px)" srcset="${properties.fileReference}">
+                    <source media="(min-width: 768px)" srcset="${properties.mobImgAsset}">
+                    <source media="(max-width: 767px)" srcset="${properties.mobImgAsset}">
+                    <img src alt="" class="banners-img" fetchpriority="high" decoding="sync">
+                </picture>
+            </sly>
+            <div>
+                <div class="calc-banner-item"> 
+                    <div class="banner-calc-main-wrap">
+                        <div class="calc-banner-text">
+                            <div class="title-main">
+                                <sly
+                                    data-sly-resource="${'container-title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                                </sly>
+                            </div>
+                            <div class="info-title">
+                                <p>${teaser.description @ context = 'html'}</p>
+                            </div>
+                            <sly data-sly-test="${properties.ratingOption}">
+                                    <div class="banner-ratings-outer"
+                                        data-product="${properties.productRating}">
+                                        <a href="/content/tata-capital-web/en/contact-us/customer-testimonials.html?activeProduct=${properties.productRating}"
+                                            class="banner-rating-review">
+                                            <div class="banner-rating-star bannerStars"
+                                                data-ratingavg=${obj.getTotalAvgRatingValue}>
+                                               
+                                                </div>
+                                                <span class="rating-texts bold">${obj.getTotalAvgRatingValue}/5</span>
+                                                <span class="rating-texts">(
+                                                    ${obj.getTotalCountOfReviews @
+                                                    context='scriptComment'} reviews)</span>
+                                        </a>
+                                    </div>
+                            </sly>
+                        </div>
+                        <div class="banner-calc-wrap ${properties.selectBannertype}">
+                            <!--add "blue-bg" class for blue banner in this line-->
+                            <div class="banner-calc-input-top">
+                                <div class="banner-calc-details-top">
+                                    <sly data-sly-test="${properties.selectCalcInputHeadingTag=='calcBannerTagP'}">
+                                        <p class="banner-calc-heading">Loan amount</p>
+                                     </sly>
+                                     <sly data-sly-test="${properties.selectCalcInputHeadingTag=='calcH6' || !properties.selectCalcInputHeadingTag }">
+                                        <h6 class="banner-calc-heading">Loan amount</h6>
+                                     </sly>
+                                    <div class="banner-calc-textbox with-border">
+                                        <div class="textbox-inner input-with-text prefix-text">
+                                            <span class="input-text">₹</span>
+                                            <input
+                                                class="banner-input-text-calc disable-emoji price-with-comma-js-input-banner js-showCalulatorRangeValue-banner"
+                                                type="text" data-fieldname="bannerLA" data-field="loanAmount" value="1,00,00,000">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="banner-month-year-wrap" yearMonth-tab-wrapper>
+                                    <div class="banner-month-year-tab-wrap">
+                                        <ul class="banner-month-year-tab-box">
+                                            <li class="banner-year-month-item">
+                                                <a href="javascript:void(0);"
+                                                    class="banner-year-month-btn-squared active"
+                                                    yearMonth-tab-menu="year-tab">
+                                                    Yr
+                                                </a>
+                                            </li>
+                                            <li class="banner-year-month-item">
+                                                <a href="javascript:void(0);" class="banner-year-month-btn-squared"
+                                                    yearMonth-tab-menu="month-tab">
+                                                    Mo
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="calculator-details" yearMonth-tab-contnet="year-tab" id="years">
+                                        <div class="banner-calc-details-top">
+                                            <sly data-sly-test="${properties.selectCalcInputHeadingTag=='calcBannerTagP'}">
+                                                <p class="banner-calc-heading">Loan duration</p>
+                                             </sly>
+                                             <sly data-sly-test="${properties.selectCalcInputHeadingTag=='calcH6' || !properties.selectCalcInputHeadingTag}">
+                                                <h6 class="banner-calc-heading">Loan duration</h6>
+                                             </sly>
+                                            <div class="banner-calc-textbox with-border">
+                                                <div class="textbox-inner input-with-text year-month-input">
+                                                    <input
+                                                        class="banner-input-text-calc disable-emoji only-numeric-input-banner js-showCalulatorRangeValue-banner"
+                                                        type="text" data-month-or-year="hl-banner-calcYear"
+                                                        data-field="tenure" data-fieldname="tenure" value="10">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="calculator-details d-none" yearMonth-tab-contnet="month-tab"
+                                        id="months">
+                                        <div class="banner-calc-details-top">
+                                            <sly data-sly-test="${properties.selectCalcInputHeadingTag=='calcBannerTagP'}">
+                                                <p class="banner-calc-heading">Loan duration</p>
+                                             </sly>
+                                             <sly data-sly-test="${properties.selectCalcInputHeadingTag=='calcH6' || !properties.selectCalcInputHeadingTag}">
+                                                <h6 class="banner-calc-heading">Loan duration</h6>
+                                             </sly>
+                                            <div class="banner-calc-textbox with-border">
+                                                <div class="textbox-inner input-with-text year-month-input">
+                                                    <input
+                                                        class="banner-input-text-calc disable-emoji  only-numeric-input-banner js-showCalulatorRangeValue-banner"
+                                                        type="text" data-month-or-year="hl-banner-calcMonth" value="10">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="banner-calc-details-top">
+                                    <sly data-sly-test="${properties.selectCalcInputHeadingTag=='calcBannerTagP'}">
+                                        <p class="banner-calc-heading">Rate of interest</p>
+                                     </sly>
+                                     <sly data-sly-test="${properties.selectCalcInputHeadingTag=='calcH6' || !properties.selectCalcInputHeadingTag}">
+                                        <h6 class="banner-calc-heading">Rate of interest</h6>
+                                     </sly>
+                                    <div class="banner-calc-textbox with-border">
+                                        <div class="textbox-inner input-with-text suffix-text">
+                                            <span class="input-text">%</span>
+                                            <input
+                                                class="banner-input-text-calc disable-emoji only-numeric-decimal-js-input-banner js-showCalulatorRangeValue-banner"
+                                                type="text" data-fieldname="bannerROI" value="8.70" data-field="rateOfInterest">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="banner-calc-bottom">
+                                <div class="input-with-apply-btn">
+                                    <div class="apply-input-wrap">
+                                        <label class="static-label">Monthly EMI</label>
+                                        <div class="apply-input-withrupee">
+                                            <span class="rupee-sign icon-rupee"></span>
+                                            <input type="text"
+                                                class="input-textbox disable-emoji only-numeric-decimal-input price-with-comma"
+                                                value="1,25,058" data-field="bannerMonthlyEMI" disabled />
+                                        </div>
+                                    </div>
+                                    <sly
+                                        data-sly-resource="${'banner-calc-button' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/best-deals/white-blue-button'}">
+                                    </sly>
+                                </div>
+                                <div class="text-center">
+                                    <sly class="icon-arrow-right"
+                                        data-sly-call="${actionsTemplate.actions @ teaser=teaser}"></sly>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+<!-- banner cntr end -->
+<script>
+    try{
+    var avgRating = parseFloat(document.querySelector('.bannerStars').getAttribute('data-ratingavg'));
+    var starsAppend = document.querySelector('.bannerStars');
+
+    for (var starsLoop = 1; starsLoop <= 5; starsLoop += 1) {
+        if (starsLoop <= avgRating) {
+            starsAppend.innerHTML += `<img width="16" height="15" src="/content/dam/tata-capital-web/assets/img/star-fill-2.svg" alt="">`;
+        } else {
+            var fractionalPart = avgRating - Math.floor(avgRating);
+            if (starsLoop - 1 === Math.floor(avgRating) && fractionalPart >= 0.1 && fractionalPart <= 0.4) {
+                starsAppend.innerHTML += `<img width="16" height="15" src="/content/dam/tata-capital-web/assets/img/star-fill-fourth.svg" alt="">`;
+            }
+            else if (starsLoop - 1 === Math.floor(avgRating) && fractionalPart == 0.5) {
+                starsAppend.innerHTML += `<img width="16" height="15" src="/content/dam/tata-capital-web/assets/img/star-fill-half.svg" alt="">`;
+            }
+            else if (starsLoop - 1 === Math.floor(avgRating) && fractionalPart > 0.5 && fractionalPart <= 0.9) {
+                starsAppend.innerHTML += `<img width="16" height="15" src="/content/dam/tata-capital-web/assets/img/star-fill-one.svg" alt="">`;
+            } else {
+                starsAppend.innerHTML += `<img width="16" height="15" src="/content/dam/tata-capital-web/assets/img/star-no-fill-2.svg" alt="">`;
+            }
+        }
+    }}catch(e){
+        console.log(e);
+    }
+</script>
+<sly data-sly-test="${PageProperties.fetchUrl}">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/", 
+          "url": "https://www.tatacapital.com${request.pathInfo @context='html'}", 
+          "@type": "Product", 
+          "name": "${PageProperties.jcr:title @context='html'}",
+          "image": "https://www.tatacapital.com/content/dam/tata-capital-web/tc-header-images/tata-header-logo.svg",
+          "description": "${PageProperties.jcr:description @context='html'}",
+          "brand": "Tata Capital",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "${obj.getTotalAvgRatingValue @ context='scriptComment' }",
+            "bestRating": "5",
+            "ratingCount": "${obj.getTotalCountOfReviews @ context='scriptComment' }"
+          }
+        }
+        </script>
+    </sly>

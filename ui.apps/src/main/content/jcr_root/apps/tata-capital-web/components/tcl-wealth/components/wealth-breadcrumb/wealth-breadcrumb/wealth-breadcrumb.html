@@ -1,0 +1,44 @@
+<div class="breadcrumb" data-sly-use.breadcrumb="com.adobe.cq.wcm.core.components.models.Breadcrumb"
+    data-sly-use.template="core/wcm/components/commons/v1/templates.html" class="container"
+    data-sly-test="${breadcrumb.items.size > 0}">
+    <ul class="cmp-breadcrumb__list" data-sly-list.navItem="${breadcrumb.items}">
+        <li data-sly-test="${navItemList.count!=0}" class="item ${navItem.active ? 'active' : ''}">
+            <sly data-sly-test="${cntIndex == navItemList.count}">
+                <a id="navItemParent" href="${navItem.URL}" data-sly-unwrap="${navItem.active}"
+                    class="cmp-breadcrumb__item-link">${navItem.title}</a>
+            </sly>
+            <sly data-sly-test="${cntIndex != navItemList.count}">
+                <a href="${navItem.URL}" data-sly-unwrap="${navItem.active}"
+                    class="cmp-breadcrumb__item-link">${navItem.title}</a>
+            </sly>
+        </li>
+    </ul>
+</div>
+
+<!--/* Breadcrumb Schema Start*/ -->
+<sly data-sly-test="${!properties.hideSchema}">
+    <sly data-sly-use.breadcrumb="com.adobe.cq.wcm.core.components.models.Breadcrumb"
+        data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+        data-sly-test="${breadcrumb.items.size > 0}">
+        <sly data-sly-list="${breadcrumb.items}">
+            <sly
+                data-sly-set.url="${request.scheme @context='unsafe'}://${request.serverName @context='unsafe'}${item.path @context='unsafe'}" />
+            <sly data-sly-use.oghead="${'header.js' @pagepath=url}"></sly>
+            ${itemList.first ? '
+            <script type="application/ld+json">':'' @context='unsafe'}
+            ${itemList.first ? ' {"@context": "https://schema.org/",
+                "@type": "BreadcrumbList",
+                "itemListElement": [' : '' @context='unsafe'}
+                    {
+                        "@type": "ListItem",
+                        "position": "${itemList.count @context='unsafe'}",
+                        "name": "${item.title @context='unsafe'}",
+                        "item": "${oghead.url @extension='html',context='unsafe'}"
+                        ${itemList.last ? '}' :'},' @context='unsafe'}
+                    ${itemList.last ? ']}' :'' @context='unsafe'}
+                    ${itemList.last ? '</script>' :'' @context='unsafe'}
+        </sly>
+    </sly>
+</sly>
+<!-- /*Breadcrumb Schema End*/ -->
+<sly data-sly-call="${template.placeholder @ isEmpty=breadcrumb.items.size == 0, classAppend='cmp-breadcrumb'}"></sly>

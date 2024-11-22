@@ -1,0 +1,36 @@
+<section data-sly-test="${!properties.dynamicAboutProduct}" class="personal-loan-box space-tb40">
+    <div class="container">
+        <div class="about-product-big-div title">
+            <div class="bg-div personal-cards jsParaOuter">
+                <div class="personal-para">
+                    <div class="component-title title">
+                        <h2 class="main-heading">Eligibility Criteria for a Personal Loan in <span class="upperFirstLatter">${PageProperties.cityName}</span></h2>
+                    </div>
+                    <div class="rte title">
+                        <p>Before understanding how to get an instant personal loan, you must check the eligibility.
+                            Your eligibility depends on various factors, including a fixed monthly income, age, nature
+                            of employment, CIBIL score, professional experience, etc. For an instant personal loan from
+                            Tata Capital, you must fulfil the easy-to-meet eligibility criteria. You also need to share
+                            personal details including your PAN number, CIBIL score & KYC documents.</p>
+                        <p>Eligibility for salaried individuals:</p>
+                        <ul class="list-circle-info">
+                            <li>
+                                <p>Age should be between 22 to 58 years</p>
+                            </li>
+                            <li>
+                                <p>The minimum monthly income should be ₹ 15,000</p>
+                            </li>
+                            <li>
+                                <p>Minimum of one year of work experience</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-sly-test="${properties.dynamicAboutProduct}" class="personal-loan-box space-tb40">
+    ${properties.dynamicAboutProduct @ context = 'html'}
+</section>

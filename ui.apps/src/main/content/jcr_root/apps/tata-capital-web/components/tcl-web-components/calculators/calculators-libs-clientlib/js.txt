@@ -1,0 +1,4 @@
+#base=js
+highcharts.js
+variable-pie.js
+global-calc.js

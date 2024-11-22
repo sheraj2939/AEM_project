@@ -1,0 +1,300 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='wealth-refer-earn-clientlib'}"></sly>
+</sly>
+
+<!-- conversation box -->
+<div class="conversation-box space-tb40 jsReferTopMatch">
+    <div class="container">
+        <div class="bg-div conversation-start bg-with-img">
+            <!-- conversation form start -->
+            <div class="refer-earn-tops">
+                <div class="tops-heads">
+                    <h2><span>${properties.boldTitle}</span> ${properties.title}</h2>
+                </div>
+                <!-- refer form start -->
+                <div class="form-wizard" id="mobileVerifyForm">
+                    <div class="form-step">
+                        <div class="mg-b20">
+                            ${properties.description @context = 'html'}
+                        </div>
+                        <!-- radio button -->
+                        <div>
+                            <ul class="list-radio-ul jsIndentityTab">
+                                <li class="list-radio-li">
+                                    <label class="custom-radiobox-label bold active" datas-tab="mobile">
+                                        <span class="custom-radio">
+                                            <input type="radio" name="radio1" checked>
+                                            <span class="radiobox-check"></span>
+                                        </span>
+                                        Mobile Number
+                                    </label>
+                                </li>
+                                <li class="list-radio-li">
+                                    <label class="custom-radiobox-label bold" datas-tab="pancard">
+                                        <span class="custom-radio">
+                                            <input type="radio" name="radio1">
+                                            <span class="radiobox-check"></span>
+                                        </span>
+                                        PAN Number
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- radio button -->
+
+                        <!-- tab content -->
+                        <div class="js-tab-row" id="mobile">
+                            <div class="row-flex">
+                                <div class="row-col-33 col-sp15">
+                                    <div class="form-textbox-new">
+                                        <label class="label-name">Mobile number*</label>
+                                        <div class="textbox-inner">
+                                            <input type="text" class="input-textbox allow-numeric disable-emoji"
+                                                maxlength="10" pattern="[0-9]*" inputmode="numeric" placeholder=""
+                                                data-type="mobile">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pd-t20i">
+                                <button type="button" class="btn-dangers btn-big min-w115 js-verifyMobile"
+                                    data-next="form02">Verify</button>
+                            </div>
+                        </div>
+                        <div class="js-tab-row d-none" id="pancard">
+                            <div class="row-flex">
+                                <div class="row-col-33 col-sp15">
+                                    <div class="form-textbox-new">
+                                        <label class="label-name">PAN number*</label>
+                                        <div class="textbox-inner">
+                                            <input type="text" class="input-textbox alpha-numeric-input" maxlength="10"
+                                                placeholder="" data-type="pan-number">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pd-t20i">
+                                <button type="button" class="btn-dangers btn-big min-w115 js-verifyPan"
+                                    data-next="form02">Verify</button>
+                            </div>
+                        </div>
+                        <!-- tab content -->
+                    </div>
+
+                    <!-- refer form success -->
+                    <div class="refer-earn-success mobileSuccessForm form-step hidden" id="form02">
+                        <h3 class="heading20 referreName semibold">Welcome, <span class="w-xs-100"></span></h3>
+                        <ul>
+                            <li class="referreEmail">
+                                <p>poojan.shah@teknopoint.in</p>
+                            </li>
+                            <li class="jsMobileShow">
+                                <p>+91 <span class="getNumber">8779805049</span></p>
+                            </li>
+                            <li class="jsPanShow hidden">
+                                <p><span class="getNumber">9993647588</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- refer form success-->
+                </div>
+                <!-- refer form end -->
+
+            </div>
+            <!-- conversation form  end-->
+        </div>
+    </div>
+</div>
+<!-- conversation box -->
+
+<section class="loan-against-prop-box space-tb40" id="ScrollElement">
+    <div class="container relative">
+        <div class="page-disabled"></div>
+
+        <div class="loan-against-form-wrap journey-cards jsReferFornss">
+            <div class="loan-against-header">
+                <h4>Refer To Your Friends</h4>
+            </div>
+            <div class="loan-against-body">
+
+                <div class="loan-against-form refer-friends-forms">
+                    <div class="loan-against-form-wrapper">
+                        <div id="add-moreform">
+                            <div class="form-row">
+                                <div class="row-flex row-flex-30">
+
+                                    <div class="row-col-33 col-sp30">
+                                        <div class="row-flex name-with-title">
+                                            <div class="row-col-33 name-title-col">
+                                                <div class="form-textbox-new fixed-active">
+                                                    <label class="label-name">Title</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2" data-title="title">
+                                                                <option value=""></option>
+                                                                <option value="Mr">Mr</option>
+                                                                <option value="Miss">Miss</option>
+                                                                <option value="Mrs">Mrs</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row-col-66 name-title-col">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">First name</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text"
+                                                            class="input-textbox disable-emoji alfaOnlyInput only-alpha-input"
+                                                            placeholder="" data-type="firstname">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row-col-33 col-sp30">
+                                        <div class="form-textbox-new">
+                                            <label class="label-name">Last name</label>
+                                            <div class="textbox-inner">
+                                                <input type="text"
+                                                    class="input-textbox disable-emoji alfaOnlyInput only-alpha-input"
+                                                    placeholder="" data-type="lastname">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row-col-33 col-sp30">
+                                        <div class="form-textbox-new">
+                                            <label class="label-name">Email ID</label>
+                                            <div class="textbox-inner">
+                                                <input type="text" class="input-textbox disable-emoji" placeholder=""
+                                                    data-type="email">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row-col-33 col-sp30">
+                                        <div class="form-textbox-new">
+                                            <label class="label-name">Mobile no.</label>
+                                            <div class="textbox-inner">
+                                                <input type="text" class="input-textbox allow-numeric disable-emoji"
+                                                    placeholder="" data-type="mobile" data-object="referrer"
+                                                    maxlength="10" pattern="[0-9]*" inputmode="numeric">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row-col-33 col-sp30">
+                                        <div class="form-textbox-new fixed-active">
+                                            <label class="label-name">City</label>
+                                            <div class="textbox-inner">
+
+                                                <div class="custom-select2">
+                                                    <select class="js-select2 firstFormCity" data-type="city">
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-controls btn-referal-list">
+                        <button class="btn-dangers btn-large btn-outline js-addmore-referral">+ Add Row</button>
+                        <button class="btn-dangers btn-large js-invite-earn">Invite and Earn</button>
+                    </div>
+
+                    <div class="add-refferals-text">
+                        <p>*You can add up to 10 referrals!</p>
+                    </div>
+
+                    <div class="row-col-100 col-sp30">
+                        <div class="relative">
+                            <label class="custom-checkbox-label la-agree-btn regular checkBox-error mg-b20">
+                                <span class="custom-checkbox-new pointer-none">
+                                    <input type="checkbox" id="termcondition" checked>
+                                    <span class="checkbox-check"></span>
+                                </span>
+                                I have read and accept the <a
+                                    href="/content/dam/tata-capital/wealth-management/wealth-referral-images/Refer_and_Win_Terms_and_Conditions.pdf"
+                                    class="semibold">Terms &
+                                    Conditions</a> specified
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="loan-against-sucess-msg refer-mgs-thanks bg-div bg-with-img hidden jsReferThankyou">
+            <!-- <a href="javascript:void(0)" class="msg-closed jsCloseLaonAgainstMgs">
+                    <span class="icon-close"></span>
+                </a>                         -->
+            <div class="success-inner">
+                <img src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/success-hand.svg" alt=""
+                    class="ticks-img">
+                <h3 class="heading20 semibold">CONGRATULATIONS!</h3>
+                <p class="text16i">Thank you for referring Tata Capital Wealth to your friends/family. You now stand a
+                    chance to win exciting Assured Rewards worth up to Rs. 10000/-. T&Cs Apply*</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- interest modal -->
+<div class="popover-modal fade" id="del-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md6">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content bg-with-img">
+                <button data-dismiss="popover-modal" class="popover-modal-close"><span
+                        class="icon-close"></span></button>
+                <div class="popover-modal-body">
+                    <div class="subscribe-thakyou">
+                        <img src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/errors.svg" alt=""
+                            class="thanks-imgs">
+                        <p class="heading20 semibold">Are you sure you want delete the row?</p>
+                        <div class="sure-out-btn">
+                            <button type="button" class="btn-dangers btn-outline btn-big"
+                                data-dismiss="popover-modal">No</button>
+                            <button type="button" class="btn-dangers btn-big jsDeleteRows"
+                                data-dismiss="popover-modal">Yes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- interest modal -->
+
+<!-- Discontinuation Popup 26-9-24-->
+<div class="popover-modal fade popover-show" id="discontinuation-modal" style="display: block;">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md3">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content bg-with-img">
+                <a href="/content/tata-capital-web/en/wealth.html"
+                    class="popover-modal-close"><span class="icon-close"></span></a>
+                <div class="popover-modal-body">
+                    <div class="subscribe-thakyou">
+                        <img src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/hand-img.svg" alt=""
+                            class="thanks-imgs">
+                        <p class="heading20 semibold">Thank You for Your Interest in the Refer & Win Program</p>
+                        <p class="text16i">Unfortunately, the program is temporarily closed.</p>
+                        <p class="text16i">We will notify you once it restarts. Stay tuned!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Discontinuation Popup 6-6-24-->
+
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories='wealth-refer-earn-clientlib'}"></sly>
+</sly>

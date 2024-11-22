@@ -1,0 +1,36 @@
+<div 
+data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+data-sly-use.imageTemplate="image.html"
+data-sly-use.pretitleTemplate="pretitle.html"
+data-sly-use.titleTemplate="title.html"
+data-sly-use.descriptionTemplate="description.html"
+data-sly-use.actionsTemplate="actions.html"
+data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+id="${teaser.id}"
+class="${!wcmmode.disabled && teaser.imageResource ? ' cq-dd-image' : ''} leadership-cards"
+data-cmp-data-layer="${teaser.data.json}">
+    <div class="leadership-img">
+        <img src="${properties.fileReference}" alt="${properties.alt}" class="dsk-img">
+        <img src="${properties.fileReferenceMob}" alt="${properties.altMob}" class="mob-img">
+    </div>
+    <div class="leadership-content">
+        <div class="leadership-inner">
+            <div class="leadership-tops">
+                <p class="text16i bold team-name">${teaser.title}</p>
+                <div class="team-profile">${teaser.description @ context='html'}</div>   
+            </div>                                                
+            <div class="team-logos">
+                <img src="${properties.fileReferenceLogo}" alt="${properties.altLogo}" class="logo-dsk">
+                <img src="${properties.fileReferenceLogoMob}" alt="${properties.altLogoMob}" class="logo-mob">
+            </div>
+            <div class="team-btn-view">
+                <a 
+                    data-sly-attribute="${teaser.link.htmlAttributes}"
+                    data-sly-unwrap="${!teaser.link.valid || !teaser.actions.empty}"
+                    data-cmp-clickable="${teaser.data ? true : false}"
+                    type="button" class="btn-link btn-big w-100">${teaser.pretitle}</a>
+            </div>
+        </div>
+    </div>  
+</div>

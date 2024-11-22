@@ -1,0 +1,88 @@
+.space-tb40 {
+    padding: 40px 0;
+}
+
+.loan-against-form-wrap {
+    background: linear-gradient(134.06deg,rgba(255,255,255,0.71) 0,rgba(255,255,255,0.95) 99.11%);
+    border-radius: 30px;
+    margin-bottom: 80px;
+    position: relative;
+    min-height: 368px;
+        padding: 24px 40px;
+}
+.emi-header {
+    padding: 24px 40px;
+}
+span.noteAdd {
+    font-weight: bold;
+}
+.btn-controls {
+    margin-top: 14px;
+}
+.loan-against-sucess-msg {
+    border-radius: 30px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.loan-against-sucess-msg .msg-closed {
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    right: 40px;
+    top: 23px;
+    font-weight: bold;
+    background: #64b48c;
+}
+.icon-close:before {
+    content: "\e910";
+}
+
+.loan-against-sucess-msg {
+    background: linear-gradient(134.06deg,rgba(255,255,255,0.71) 0,rgba(255,255,255,0.95) 99.11%);
+    border-radius: 30px;
+    margin-bottom: 80px;
+    position: relative;
+    min-height: 368px;
+}
+.loan-against-sucess-msg .ticks-img {
+    margin: 0 auto 20px;
+}
+.loan-against-sucess-msg .success-inner {
+    margin: auto;
+}
+.loan-against-sucess-msg h2 {
+    margin-bottom: 10px;
+}
+.loan-against-sucess-msg .application-id {
+    font-family: "OpenSans-SemiBold";
+    padding-top: 10px;
+}
+.disabled {
+    opacity: .5;
+    pointer-events: none;
+  }
+
+  @media (max-width: 767px){
+    .loan-against-form-wrap .row-flex .col-sp30 {
+        padding: 0;
+    }
+  }
+
+@media (max-width: 767px){
+    .loan-against-form-wrap .row-flex .row-col-33 {
+        width: 100%;
+    }
+}
+@media (max-width: 767px){
+    .loan-against-form-wrap .row-flex {
+        margin: 0;
+    }
+}

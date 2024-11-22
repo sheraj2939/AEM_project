@@ -1,0 +1,144 @@
+.all-alliances-box .all-alliances-row {
+  padding-top: 25px;
+}
+.all-alliances-box .all-alliances-row:first-child {
+  padding-top: 0;
+}
+.all-alliances-box .all-alliances-col {
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.all-alliances-box .left-col {
+  max-width: 120px;
+  padding: 7px;
+  height: 120px;
+  width: 100%;
+  background-color: #edf8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+}
+.all-alliances-box .right-col {
+  width: calc(100% - 120px);
+  position: relative;
+  padding-left: 20px;
+}
+.all-alliances-box .heading20 {
+  color: #000;
+  margin-bottom: 10px;
+}
+.all-alliances-box .text14i {
+  color: #000;
+}
+.all-alliances-box .view-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-left: 20px;
+}
+.all-alliances-box .view-more-btn {
+  padding-top: 40px;
+  text-align: center;
+}
+.all-alliances-box.our-partners-box .right-col {
+  padding-bottom: 30px;
+}
+.all-alliances-box.our-partners-box .left-col {
+  padding: 11px;
+}
+.all-alliances-box.our-partners-box .left-col img {
+  max-height: 78px;
+  height: 100%;
+  max-width: 112px;
+  object-fit: contain;
+}
+.all-alliances-box.partners-details-box .all-alliances-col {
+  display: block;
+}
+.all-alliances-box.partners-details-box .col-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.all-alliances-box.partners-details-box .lender-name {
+  margin-bottom: 4px;
+  color: #333;
+}
+.all-alliances-box.partners-details-box a {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.all-alliances-box.partners-details-box .bottom-content {
+  padding-top: 30px;
+}
+.all-alliances-box.partners-details-box .top-heading {
+  margin-bottom: 4px;
+  color: #333;
+}
+@media (max-width: 767px) {
+  .all-alliances-box .all-alliances-row {
+    padding-top: 20px;
+ }
+  .all-alliances-box .all-alliances-col {
+    padding: 24px;
+ }
+  .all-alliances-box .left-col {
+    max-width: 100%;
+    height: 100px;
+    padding: 15px;
+ }
+  .all-alliances-box .left-col img {
+    height: 60px;
+ }
+  .all-alliances-box .right-col {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 15px;
+ }
+  .all-alliances-box .heading20 {
+    margin-bottom: 4px;
+ }
+  .all-alliances-box .view-details {
+    padding-left: 0;
+    position: static;
+    padding-top: 20px;
+ }
+  .all-alliances-box .view-more-btn {
+    padding-top: 30px;
+ }
+  .all-alliances-box.our-partners-box .right-col {
+    padding-bottom: 0;
+ }
+  .all-alliances-box.our-partners-box .left-col {
+    padding: 11px;
+ }
+  .all-alliances-box.our-partners-box .left-col img {
+    max-height: 78px;
+    height: 100%;
+    max-width: 112px;
+    object-fit: contain;
+ }
+  .all-alliances-box.our-partners-box .right-col {
+    padding-top: 20px;
+ }
+  .all-alliances-box.partners-details-box .left-col img {
+    max-width: 197px;
+    height: auto;
+    width: 100%;
+ }
+  .all-alliances-box.partners-details-box .right-col {
+    padding-top: 10px;
+ }
+  .all-alliances-box.partners-details-box .bottom-content {
+    padding-top: 20px;
+ }
+  .all-alliances-box.partners-details-box .bottom-content p {
+    color: #000;
+ }
+  .all-alliances-box.partners-details-box .top-heading {
+    color: #000;
+ }
+}

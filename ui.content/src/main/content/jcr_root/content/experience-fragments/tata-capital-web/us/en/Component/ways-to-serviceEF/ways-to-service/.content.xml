@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-12-21T16:21:47.840+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/tata-capital-web/settings/wcm/templates/xf-web-variation"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="ways-to-serviceEF"
+        sling:resourceType="tata-capital-web/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="tata-capital-web/components/container"
+            layout="responsiveGrid">
+            <ways_to_service_copy
+                jcr:created="{Date}2022-12-03T14:35:47.500+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-12-03T14:35:47.500+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/tcl-web-components/ways-to-service/ways-to-service">
+                <loan-information-main-title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                    <customcontainer
+                        jcr:created="{Date}2022-12-03T15:41:28.293+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-12-03T15:45:29.258+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer"
+                        className="tops-heads">
+                        <component_title
+                            jcr:created="{Date}2022-12-03T15:45:35.731+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-12-03T15:47:31.019+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Access your loan information"
+                            sling:resourceType="tata-capital-web/components/common/component-title"
+                            boldTerm="with ease!"
+                            liMainHeader="true"
+                            linkTarget="_self"
+                            type="h1"/>
+                        <component_title_9075
+                            jcr:created="{Date}2022-12-14T20:43:07.572+05:30"
+                            jcr:createdBy="tejas"
+                            jcr:lastModified="{Date}2022-12-14T20:47:19.578+05:30"
+                            jcr:lastModifiedBy="tejas"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Access your loan information"
+                            sling:resourceType="tata-capital-web/components/tcl-web-components/component-title/component-title"
+                            boldTerm="with ease!"
+                            linkTarget="_self"
+                            preApprovedFormTitle="true"
+                            type="h1"/>
+                        <text
+                            jcr:created="{Date}2022-12-03T15:47:36.902+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-12-03T15:47:58.740+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="tata-capital-web/components/text"
+                            text="&lt;p>Get all the information for your Tata Capital Loan through any of the platforms below&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                    </customcontainer>
+                    <customcontainer_2007001535
+                        jcr:created="{Date}2022-12-03T15:43:02.722+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-12-03T15:43:02.722+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                        <wts_tabs
+                            jcr:created="{Date}2022-12-03T15:49:38.031+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-12-14T20:48:57.351+05:30"
+                            jcr:lastModifiedBy="tejas"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="tata-capital-web/components/tcl-web-components/ways-to-service/wts-tabs">
+                            <item_1670062797308
+                                cq:panelTitle="Mobile Apps"
+                                jcr:description="&lt;p>Now, you can experience the benefits of online banking anywhere and anytime, without the need of a computer.&lt;/p>&#xd;&#xa;"
+                                jcr:lastModified="{Date}2022-12-03T15:52:04.969+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="tata-capital-web/components/tcl-web-components/ways-to-service/wts-tabs-teaser"
+                                alt="android"
+                                altValueFromDAM="false"
+                                descriptionFromPage="false"
+                                fileReference="/content/dam/tata-capital-web/assets/img/way-to-service/android-phone.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                titleFromPage="true">
+                                <ways-to-service-teaser-buttons
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                                    <wts_tabs_teaser_butt
+                                        jcr:created="{Date}2022-12-03T15:53:29.046+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-03T15:55:42.403+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title=" Download on the App Store"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/ways-to-service/wts-tabs-teaser-button"
+                                        iconClass="icon-apple icon"
+                                        linkClass="true"
+                                        linkTarget="_self"
+                                        marginClass="mg-b15 download-playstore-btn"/>
+                                    <wts_tabs_teaser_butt_361887012
+                                        jcr:created="{Date}2022-12-03T15:53:38.904+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-03T15:54:57.758+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title=" Get it on Google Play"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/ways-to-service/wts-tabs-teaser-button"
+                                        iconClass="icon-playstore icon"
+                                        linkClass="true"
+                                        linkTarget="_self"/>
+                                </ways-to-service-teaser-buttons>
+                                <sub-header
+                                    jcr:lastModified="{Date}2022-12-03T15:58:10.166+05:30"
+                                    jcr:lastModifiedBy="admin"
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Stay connected through "
+                                    sling:resourceType="tata-capital-web/components/common/component-title"
+                                    boldTerm="Mobile Apps"
+                                    linkTarget="_self"
+                                    loanInformation="true"
+                                    type="h1"/>
+                            </item_1670062797308>
+                            <item_1670062802331
+                                cq:panelTitle="Tia Chatbot"
+                                jcr:description="&lt;p>TIA is smart, fast and available to answer all your servicing queries 24X7. Interact with TIA to know more about Tata Capital's products and services.&lt;/p>&#xd;&#xa;"
+                                jcr:lastModified="{Date}2022-12-03T16:00:24.890+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="tata-capital-web/components/tcl-web-components/ways-to-service/wts-tabs-teaser"
+                                alt="chat bot"
+                                altValueFromDAM="false"
+                                descriptionFromPage="false"
+                                fileReference="/content/dam/tata-capital-web/assets/img/way-to-service/chat-bot.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                titleFromPage="true">
+                                <ways-to-service-teaser-buttons
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                                    <key_features_card_co jcr:primaryType="nt:unstructured"/>
+                                    <wts_tabs_teaser_butt
+                                        jcr:created="{Date}2022-12-03T16:00:47.938+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-03T16:01:02.556+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Know More"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/ways-to-service/wts-tabs-teaser-button"
+                                        iconClass="Default"
+                                        linkTarget="_self"/>
+                                </ways-to-service-teaser-buttons>
+                                <sub-header
+                                    jcr:lastModified="{Date}2022-12-03T16:02:00.967+05:30"
+                                    jcr:lastModifiedBy="admin"
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Stay connected through  "
+                                    sling:resourceType="tata-capital-web/components/common/component-title"
+                                    boldTerm="TIA Chatbot"
+                                    linkTarget="_self"
+                                    loanInformation="true"
+                                    type="h1"/>
+                            </item_1670062802331>
+                            <item_1670062806731
+                                cq:panelTitle="WhatsApp"
+                                jcr:description="&lt;p>Tata Capital is introducing servicing via WhatsApp to keep you updated on the go. Through our Whatsapp account, you get 24x7 access to a host of services and can retrieve your loan documents as well!&lt;/p>&#xd;&#xa;"
+                                jcr:lastModified="{Date}2022-12-03T16:56:48.547+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="tata-capital-web/components/tcl-web-components/ways-to-service/wts-tabs-teaser"
+                                alt="whatsapp"
+                                altValueFromDAM="false"
+                                altValueFromPageImage="true"
+                                descriptionFromPage="false"
+                                fileReference="/content/dam/tata-capital-web/assets/img/way-to-service/watsapp-tab.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                titleFromPage="true">
+                                <sub-header
+                                    jcr:lastModified="{Date}2022-12-03T16:55:39.831+05:30"
+                                    jcr:lastModifiedBy="admin"
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Stay connected through  "
+                                    sling:resourceType="tata-capital-web/components/common/component-title"
+                                    boldTerm="Whatsapp"
+                                    linkTarget="_self"
+                                    loanInformation="true"
+                                    type="h1"/>
+                                <ways-to-service-teaser-buttons
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                                    <wts_tabs_teaser_butt
+                                        jcr:created="{Date}2022-12-03T16:56:58.175+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-03T16:57:04.916+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Know More"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/ways-to-service/wts-tabs-teaser-button"
+                                        iconClass="Default"
+                                        linkTarget="_self"/>
+                                </ways-to-service-teaser-buttons>
+                            </item_1670062806731>
+                            <item_1670062812492
+                                cq:panelTitle="SMS"
+                                jcr:description="&lt;p>Now, you can experience the benefits of online banking anywhere and anytime, without the need of a computer.&lt;/p>&#xd;&#xa;"
+                                jcr:lastModified="{Date}2022-12-03T16:57:57.716+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="tata-capital-web/components/tcl-web-components/ways-to-service/wts-tabs-teaser"
+                                alt="sms"
+                                altValueFromDAM="false"
+                                descriptionFromPage="false"
+                                fileReference="/content/dam/tata-capital-web/assets/img/way-to-service/sms-mobile.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                titleFromPage="true">
+                                <sub-header
+                                    jcr:lastModified="{Date}2022-12-03T16:58:22.590+05:30"
+                                    jcr:lastModifiedBy="admin"
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Stay connected through "
+                                    sling:resourceType="tata-capital-web/components/common/component-title"
+                                    boldTerm="SMS"
+                                    linkTarget="_self"
+                                    loanInformation="true"
+                                    type="h1"/>
+                                <ways-to-service-teaser-buttons
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                                    <wts_tabs_teaser_butt
+                                        jcr:created="{Date}2022-12-03T17:00:06.599+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-03T17:00:48.927+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Stay connected through"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/ways-to-service/wts-tabs-teaser-button"
+                                        iconClass="icon-apple icon"
+                                        linkClass="true"
+                                        linkTarget="_self"
+                                        marginClass="mg-b15 download-playstore-btn"/>
+                                    <wts_tabs_teaser_butt_1347407720
+                                        jcr:created="{Date}2022-12-03T17:00:52.725+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-03T17:01:09.933+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title=" Get it on Google Play"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/ways-to-service/wts-tabs-teaser-button"
+                                        iconClass="icon-playstore icon"
+                                        linkClass="true"
+                                        linkTarget="_self"/>
+                                </ways-to-service-teaser-buttons>
+                            </item_1670062812492>
+                            <item_1670063621517
+                                cq:panelTitle="Google Assistant"
+                                jcr:description="&lt;p>TIA, Tata Capital's Virtual Assistant is now accessible on Google Assistant.&lt;/p>&#xd;&#xa;"
+                                jcr:lastModified="{Date}2022-12-03T17:02:01.459+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="tata-capital-web/components/tcl-web-components/ways-to-service/wts-tabs-teaser"
+                                alt="alexa"
+                                altValueFromDAM="false"
+                                descriptionFromPage="false"
+                                fileReference="/content/dam/tata-capital-web/assets/img/way-to-service/google-assistant.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                titleFromPage="true">
+                                <sub-header
+                                    jcr:lastModified="{Date}2022-12-03T17:02:16.881+05:30"
+                                    jcr:lastModifiedBy="admin"
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Stay connected through "
+                                    sling:resourceType="tata-capital-web/components/common/component-title"
+                                    boldTerm="Google Assistant"
+                                    linkTarget="_self"
+                                    loanInformation="true"
+                                    type="h1"/>
+                                <ways-to-service-teaser-buttons
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                                    <wts_tabs_teaser_butt
+                                        jcr:created="{Date}2022-12-03T17:02:33.886+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-03T17:02:40.175+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Know More"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/ways-to-service/wts-tabs-teaser-button"
+                                        iconClass="Default"
+                                        linkTarget="_self"/>
+                                </ways-to-service-teaser-buttons>
+                            </item_1670063621517>
+                            <item_1670063652361
+                                cq:panelTitle="Alexa"
+                                jcr:description="&lt;p>Tata Capital is delighted to present TIA on Alexa. TIA enables you to avail services instantly on Alexa-enabled devices, such as Amazon dot, using a range of voice-based commands.&lt;/p>&#xd;&#xa;"
+                                jcr:lastModified="{Date}2022-12-14T20:47:46.345+05:30"
+                                jcr:lastModifiedBy="tejas"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="tata-capital-web/components/tcl-web-components/ways-to-service/wts-tabs-teaser"
+                                alexaTeaser="true"
+                                alt="alexa"
+                                altValueFromDAM="false"
+                                descriptionFromPage="false"
+                                fileReference="/content/dam/tata-capital-web/assets/img/way-to-service/alexa.png"
+                                imageFromPageImage="false"
+                                isDecorative="false"
+                                linkTarget="_self"
+                                textIsRich="true"
+                                titleFromPage="true">
+                                <ways-to-service-teaser-buttons
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                                    <wts_tabs_teaser_butt
+                                        jcr:created="{Date}2022-12-03T17:03:38.898+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-03T17:03:44.620+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Know More"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/ways-to-service/wts-tabs-teaser-button"
+                                        iconClass="Default"
+                                        linkTarget="_self"/>
+                                </ways-to-service-teaser-buttons>
+                                <sub-header
+                                    jcr:lastModified="{Date}2022-12-03T17:04:03.152+05:30"
+                                    jcr:lastModifiedBy="admin"
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Stay connected through"
+                                    sling:resourceType="tata-capital-web/components/common/component-title"
+                                    boldTerm="Alexa"
+                                    linkTarget="_self"
+                                    loanInformation="true"
+                                    type="h1"/>
+                            </item_1670063652361>
+                        </wts_tabs>
+                    </customcontainer_2007001535>
+                    <customcontainer_1712437347
+                        jcr:created="{Date}2022-12-03T15:43:09.451+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-12-14T20:49:13.239+05:30"
+                        jcr:lastModifiedBy="tejas"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer"
+                        className="way-to-service-options">
+                        <wts_card
+                            cq:styleIds="[1670064203114]"
+                            jcr:created="{Date}2022-12-03T16:12:32.363+05:30"
+                            jcr:createdBy="admin"
+                            jcr:description="&lt;p>Access our Self-Service portals for all your Loan requirements&lt;/p>&#xd;&#xa;"
+                            jcr:lastModified="{Date}2022-12-03T16:18:13.901+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Service Portals"
+                            sling:resourceType="tata-capital-web/components/tcl-web-components/ways-to-service/wts-card"
+                            alt="service icon"
+                            altValueFromDAM="false"
+                            classNameForLink="way-service-options-links"
+                            descriptionFromPage="false"
+                            fileReference="/content/dam/tata-capital-web/ways-to-service/home-loan.svg"
+                            imageFromPageImage="false"
+                            isDecorative="false"
+                            linkTarget="_self"
+                            textIsRich="true"
+                            titleFromPage="false">
+                            <actions jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    link="#"
+                                    linkTarget="_self"
+                                    selectCustom="big-text"
+                                    text="Retail customer portal"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    link="#"
+                                    linkTarget="_self"
+                                    selectCustom="big-text"
+                                    text="Corporate customer portal"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    link="#"
+                                    linkTarget="_self"
+                                    selectCustom="big-text"
+                                    text="My Wealth account"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    link="#"
+                                    linkTarget="_self"
+                                    selectCustom="big-text"
+                                    text="Dropline overdraft loan"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    link="#"
+                                    linkTarget="_self"
+                                    selectCustom="big-text"
+                                    text="Moneyfy"/>
+                            </actions>
+                        </wts_card>
+                        <wts_card_copy
+                            cq:styleIds="[1670064203114]"
+                            jcr:created="{Date}2022-12-03T16:12:32.363+05:30"
+                            jcr:createdBy="admin"
+                            jcr:description="&lt;p>Avail tata capital services on the go. Get in touch today&lt;/p>&#xd;&#xa;"
+                            jcr:lastModified="{Date}2022-12-03T16:21:55.704+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Contact us"
+                            sling:resourceType="tata-capital-web/components/tcl-web-components/ways-to-service/wts-card"
+                            alt="service icon"
+                            altValueFromDAM="false"
+                            classNameForLink="way-service-options-links"
+                            descriptionFromPage="false"
+                            fileReference="/content/dam/tata-capital-web/ways-to-service/personal-loan.svg"
+                            imageFromPageImage="false"
+                            isDecorative="false"
+                            linkTarget="_self"
+                            textIsRich="true"
+                            titleFromPage="false">
+                            <actions jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    link="#"
+                                    linkTarget="_self"
+                                    selectCustom="big-text"
+                                    text="View all contact info"/>
+                            </actions>
+                            <popupbtn1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                                <wts_card_big_text
+                                    jcr:created="{Date}2022-12-03T16:22:28.973+05:30"
+                                    jcr:createdBy="admin"
+                                    jcr:lastModified="{Date}2022-12-03T16:23:26.795+05:30"
+                                    jcr:lastModifiedBy="admin"
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="1860 267 6060 "
+                                    sling:resourceType="tata-capital-web/components/tcl-web-components/ways-to-service/wts-card-big-text"
+                                    icon="icon-phone-fill"
+                                    linkTarget="_self"
+                                    linkURL="#"/>
+                            </popupbtn1>
+                        </wts_card_copy>
+                        <wts_card_copy_1949877993
+                            cq:styleIds="[1670064203114]"
+                            jcr:created="{Date}2022-12-03T16:12:32.363+05:30"
+                            jcr:createdBy="admin"
+                            jcr:description="&lt;p>Visit our branch and talk to our lending expert today.&lt;/p>&#xd;&#xa;"
+                            jcr:lastModified="{Date}2022-12-16T11:03:15.430+05:30"
+                            jcr:lastModifiedBy="rinkal"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Locate Us"
+                            sling:resourceType="tata-capital-web/components/tcl-web-components/ways-to-service/wts-card"
+                            alt="service icon"
+                            altValueFromDAM="false"
+                            classNameForLink="way-service-options-links"
+                            descriptionFromPage="false"
+                            fileReference="/content/dam/tata-capital-web/ways-to-service/home-loan.svg"
+                            imageFromPageImage="false"
+                            isDecorative="false"
+                            linkTarget="_self"
+                            textIsRich="true"
+                            titleFromPage="false">
+                            <actions jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    link="#"
+                                    linkTarget="_self"
+                                    selectCustom="big-text"
+                                    text="Locate our branches"/>
+                            </actions>
+                        </wts_card_copy_1949877993>
+                    </customcontainer_1712437347>
+                </loan-information-main-title>
+            </ways_to_service_copy>
+        </root>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,22 @@
+<div data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+    data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-use.imageTemplate="image.html"
+    data-sly-use.pretitleTemplate="pretitle.html" data-sly-use.titleTemplate="title.html"
+    data-sly-use.descriptionTemplate="description.html" data-sly-use.actionsTemplate="actions.html"
+    data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+    id="${teaser.id}" data-cmp-data-layer="${teaser.data.json}">
+                    <div class="suitable-emi-options-col">
+                        <div class="suitable-emi-options-card bg-div">
+                            <div class="suitable-emi-top">
+                                <img src="${properties.fileReference}" alt="...">
+                                <h3 class="heading20"><span>${teaser.title}</span></h3>
+                            </div>
+                            <div class="suitable-emi-mid">
+                     <div data-sly-resource="${'middel-content' @ resourceType='/apps/core/wcm/components/container/v1/container'}"></div>
+                            </div>
+                            <div class="suitable-emi-bottom">
+                                <div data-sly-resource="${'suitable-emi-options-card-btn' @ resourceType='/apps/core/wcm/components/container/v1/container'}"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+

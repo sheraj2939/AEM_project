@@ -1,0 +1,67 @@
+<div class="filter-dropdowns">
+    <!-- <p class="text16i bold filter-labels">Filter by</p> -->
+    <div class="filter-rows">
+        <div class="custom-dropdown-wrap filter-drop-wrap close-on-outside">
+            <a href="javascript:void(0);" class="custom-dropdown-btn" data-rel="Year${properties.filterNum}">Year</a>
+            <div class="custom-dropdown-block jsDropdownBlock" id="Year${properties.filterNum}">
+                <ul class="custom-dropdown-list simple-bar" id="filerList">
+                    <li class="list">
+                        <label class="custom-checkbox-label" data-filtyear="All">
+                            All
+                        </label>
+                    </li>
+                    <sly data-sly-list.year="${resource.children}">
+                        <sly data-sly-test="${year.name == 'filterFeildYear'}">
+                            <sly data-sly-list.tabContentYear="${year.children}">
+                                <sly
+                                    data-sly-test.tabList="${'{0}-{1}' @ format =[ourSegment.name,tabListTextList.count]}">
+                                    <li class="list">
+                                        <label class="custom-checkbox-label customLabel">
+                                            <span class="custom-checkbox-new">
+                                                <input type="checkbox" name="Year${properties.filterNum}"
+                                                    class="filterSelectedId"
+                                                    data-filtyear="${tabContentYear.filterYear}">
+                                                <span class="checkbox-check"></span>
+                                            </span>
+                                            ${tabContentYear.filterYear}
+                                        </label>
+                                    </li>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </sly>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="filter-rows">
+        <div class="custom-dropdown-wrap filter-drop-wrap close-on-outside">
+            <a href="javascript:void(0);" class="custom-dropdown-btn" data-rel="Month${properties.filterNum}">Month</a>
+            <div class="custom-dropdown-block jsDropdownBlock" id="Month${properties.filterNum}">
+                <ul class="custom-dropdown-list simple-bar" id="filerList">
+                    <li class="list">
+                        <label class="custom-checkbox-label" data-filtmonth="All">
+                            All
+                        </label>
+                    </li>
+                    <sly data-sly-list.filterContent="${resource.children}">
+                        <sly data-sly-test="${filterContent.name == 'filterFeildMonth'}">
+                            <sly data-sly-list.tabContentMonth="${filterContent.children}">
+                                <li class="list">
+                                    <label class="custom-checkbox-label" data-filtmonth="${tabContentMonth.filterMonth}">
+                                        <span class="custom-checkbox-new">
+                                            <input type="checkbox" name="Month${properties.filterNum}"
+                                                class="filterSelectedId2" data-inputMonth="${tabContentMonth.filterMonth}">
+                                            <span class="checkbox-check"></span>
+                                        </span>
+                                        ${tabContentMonth.filterMonth}
+                                    </label>
+                                </li>
+                            </sly>
+                        </sly>
+                    </sly>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,508 @@
+<section class="loan-against-prop-box space-tb40" id="contactusForm">
+    <div class="container">
+        <div class="tops-heads has-only-back-btn">
+        <div class="comp-back-to">
+                <a href="JavaScript:void(0);" class="formBackBtn"><span class="icon-arrow-tail-left"></span>Back</a>
+             </div>
+            <sly
+                data-sly-resource="${'form-upper-heading' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+            </sly>
+        </div>
+        <div class="loan-against-form-wrap">
+            <div class="loan-against-header">
+                <h4>${properties.greenFeildHeading @ context = 'html'}</h4>
+                <div class="clear-btn">
+                    <a href="javascript:void(0)" class="link jsClearLoanDeatils">Clear <span
+                            class="icon-clear"></span></a>
+                </div>
+                <div class="loan-againstclose-btn d-none">
+                    <a href="javascript:void(0)" class="link jsCloseLaonAgainstMgs"> <span
+                            class="icon-close"></span></a>
+                </div>
+            </div>
+            <div class="loan-against-body">
+                <img src="${properties.cornerImage}" class="form-bottom-right-img" alt="Contact Us From">
+                <div class="loan-against-form " id="loan-against-property">
+                    <sly data-sly-list.inputList="${resource.children}">
+                        <sly data-sly-test="${inputList.name == 'inputFeild'}">
+                            <sly data-sly-list.inputChecks="${inputList.children}">
+                                <div class="loan-against-form-wrapper">
+                                    <h3 class="form-heading">${inputChecks.headingOne}</h3>
+                                    <div class="row-flex row-flex-30">
+                                        <sly data-sly-test="${inputChecks.fullName}">
+                                            <div class="row-col-33 col-sp30" data-form="contactus">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Full Name*</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" class="input-textbox jsValueOK only-alpha-input"
+                                                            placeholder="" data-type="name" data-form="customerName">
+                                                    </div>
+                                                    <span class="text-infos">Name (as per PAN Card)</span>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <!-- <sly data-sly-test="${inputChecks.concern}">
+                                            <div class="row-col-33 col-sp30" data-form="contactus">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Type of Concern*</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK"
+                                                                data-type="concern" data-form="concernForm">
+                                                                <option value=""></option>
+                                                                <option value="Query">Query</option>
+                                                                <option value="Complaint">Complaint</option>
+                                                                <option value="Raise Service Request">Raise Service Request</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly> -->
+                                        <sly data-sly-test="${inputChecks.email}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Email ID*</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" class="input-textbox jsValueOK"
+                                                            placeholder="" data-type="email" data-form="personalEmail">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.mobileNumber}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Mobile Number*</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text"
+                                                            class="input-textbox only-numeric-input jsValueOK"
+                                                            placeholder="" data-type="mobile" maxlength="10" data-form="mobile">
+                                                    </div>
+                                                    <span class="text-infos">OTP will be sent after you click
+                                                        '${properties.SubmitButton? 'Submit' : 'Apply' }'</span>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.lanNum}">
+                                            <div class="row-col-33 col-sp30" data-form="contactus">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">LAN No/Loan Application ID/Service Request number</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text"
+                                                            class="input-textbox only-alpha-numeric-input"
+                                                            placeholder="" data-type="lanNum" maxlength="25" data-form="lanNum">
+                                                    </div>
+                                                    <span class="text-infos italic">(If applicable)</span>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.selectCity}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">City of Residence</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK city" data-type="city" data-form="city">
+                                                                <option value=""></option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.birthDate}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Date of Birth</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" value=""
+                                                            class="input-textbox date-input jsValueOK" placeholder=""
+                                                            data-type="dob" data-form="birthDate">
+                                                    </div>
+                                                    <span class="text-infos">(dd/mm/yyyy)</span>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.panDetails}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">PAN details</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" class="input-textbox jsValueOK only-alpha-numeric-input"
+                                                            placeholder="" data-type="pan" maxlength="10" data-form="panNumber">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.selectGender}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Gender</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-type="gender" data-form="gender">
+                                                                <option value=""></option>
+                                                                <option value="Male">Male</option>
+                                                                <option value="Female">Female</option>
+                                                                <option value="Other">Other</option>
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.product}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Product</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-type="product">
+                                                                <option value=""></option>
+                                                                <option value="Mutual Funds">Mutual Funds</option>
+                                                                <option value="PMS">PMS</option>
+                                                                <option value="Alternative Investments">Alternative
+                                                                    Investments
+                                                                </option>
+                                                                <option value="NCD/Bonds">NCD/Bonds</option>
+                                                                <option value="Home Loan">Home Loan</option>
+                                                                <option value="Corporate Finance">Corporate Finance
+                                                                </option>
+                                                                <option value="Consumer Loans">Consumer Loans</option>
+                                                                <option value="Life Insurance"> Life Insurance</option>
+                                                                <option value="Others">Others</option>
+                                                            </select>
+                                                            <span class="text-infos"><span
+                                                                    class="before-text">Identification
+                                                                    document
+                                                                    to be submitted at the time of application</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.categoryContact}">
+                                            <div class="row-col-33 col-sp30" data-form="contactus">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Category*</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK custom-select"
+                                                                data-type="category" data-form="category" jsname="js-Category">
+                                                                <option value=""></option>
+                                                                <option value="Application Status - I want to know status of my Loan application">Application Status - I want to know status of my Loan application</option>
+                                                                <option value="Unable to complete Loan Application journey">Unable to complete Loan Application journey</option>
+                                                                <option value="Loan closure related">Loan closure related</option>
+                                                                <option value="Customer Service Related issues">Customer Service Related issues</option>
+                                                                <option value="Mobile App & Web Portal services/features">Mobile App & Web Portal services/features</option>
+                                                                <option value="Not a customer, still received Call/Email from Tata Capital">Not a customer, still received Call/Email from Tata Capital</option>
+                                                                <option value="Nearest Tata Capital branch">Nearest Tata Capital branch</option>
+                                                                <option value="How to Apply for a new Loan?">How to Apply for a new Loan?</option>
+                                                                <option value="Apply for DND from Tata Capital promotional calls or Emails">Apply for DND from Tata Capital promotional calls or Emails</option>
+                                                                <option value="Fraud Related - Documents Misused / Loan fraud">Fraud Related - Documents Misused / Loan fraud</option>
+                                                                <option value="Not taken any loan but receiving calls for repayment from agents">Not taken any loan but receiving calls for repayment from agents</option>
+                                                                <option value="NOC for loan - as my loan is closed">NOC for loan - as my loan is closed</option>
+                                                                <option value="Statement for Loan required">Statement for Loan required</option>
+                                                                <option value="Loan documents required">Loan documents required</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.query}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Query</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-type="query" jsname="contact-us-form">
+                                                                <option value=""></option>
+                                                                <option value="Application Status - I want to know status of my Loan application">Application Status - I want to know status of my Loan application</option>
+                                                                <option value="Unable to complete Loan Application journey">Unable to complete Loan Application journey</option>
+                                                                <option value="Loan closure related">Loan closure related</option>
+                                                                <option value="Customer Service Related issues">Customer Service Related issues</option>
+                                                                <option value="Mobile App & Web Portal services/features">Mobile App & Web Portal services/features</option>
+                                                                <option value="Not a customer, still received Call/Email from Tata Capital">Not a customer, still received Call/Email from Tata Capital</option>
+                                                                <option value="Nearest Tata Capital branch">Nearest Tata Capital branch</option>
+                                                                <option value="How to Apply for a new Loan?">How to Apply for a new Loan?</option>
+                                                                <option value="Apply for DND from Tata Capital promotional calls or Emails">Apply for DND from Tata Capital promotional calls or Emails</option>
+                                                                <option value="Fraud Related - Documents Misused / Loan fraud">Fraud Related - Documents Misused / Loan fraud</option>
+                                                                <option value="Not taken any loan but receiving calls for repayment from agents">Not taken any loan but receiving calls for repayment from agents</option>
+                                                                <option value="NOC for loan - as my loan is closed">NOC for loan - as my loan is closed</option>
+                                                                <option value="Statement for Loan required">Statement for Loan required</option>
+                                                                <option value="Loan documents required">Loan documents required</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.writeMsg}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Write your message*</label>
+                                                    <div class="textbox-inner">
+                                                        <textarea type="text"
+                                                            class="input-textbox form-textarea jsValueOK customBoxCss"
+                                                            placeholder="Type your message here"
+                                                            data-type="message"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.attachment}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Attachment</label>
+                                                    <div class="textbox-inner custom-file-input">
+                                                        <input class="input-filebox" data-file='fileInput' type="file"
+                                                            id="formFile">
+                                                        <div class="custom-file">
+                                                            <img class="iconfile"
+                                                                src="/content/dam/tata-capital-web/assets/img/file-input-icon.svg"
+                                                                alt="fileinputicon">
+                                                            <span>Choose a file</span>
+                                                        </div>
+                                                        <span class="no-file-text">No file chosen</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                    </div>
+                                </div>
+                            </sly>
+                        </sly>
+                    </sly>
+                    <div class="btn-controls">
+                        <button class="btn-blue btn-large jsApplyLoanAgainstProp btn-disabled" data-popup="yes">${properties.SubmitButton? 'Submit' : 'Apply' }</button>
+                        ${properties.formDescription @ context = 'html'}
+                    </div>
+                </div>
+                <div class="loan-against-otp-wrap d-none" id="loan-against-otp">
+                    <h3 class="form-heading">Apply Now</h3>
+                    <div class="row-flex row-flex-30">
+                        <div class="row-col-33 col-sp30">
+                            <div class="otp-name-pt">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Mobile number</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" class="input-textbox only-numeric-input" placeholder=""
+                                            data-type="otp-send-number" maxlength="10">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-col-66 col-sp30">
+                            <div class="otp-outer-box">
+                                <div class="loan-aganist-otp-wrap">
+                                    <p class="text16i jsOtpHeading">Generate a 4 digit OTP to verify your mobile
+                                        number.</p>
+                                    <div class="loan-aganist-otp jsOTPInputBox d-none"> <!--d-none-->
+                                        <p class="text-12">Enter OTP</p>
+                                        <div class="loan-aganist-enter-otp">
+                                            <div class="otp-col js-OtpBox">
+                                                <input class="input-textbox only-numeric-input" type="text"
+                                                    maxlength="1" placeholder="" />
+                                                <input class="input-textbox only-numeric-input pointer-none" type="text"
+                                                    maxlength="1" placeholder="" />
+                                                <input class="input-textbox only-numeric-input pointer-none" type="text"
+                                                    maxlength="1" placeholder="" />
+                                                <input class="input-textbox only-numeric-input pointer-none" type="text"
+                                                    maxlength="1" placeholder="" />
+                                            </div>
+                                        </div>
+                                        <!-- otp timer -->
+                                        <div class="loan-otp-timers">
+                                            <div class="otp-timers-row">
+                                                <div class="otp-timers-col">
+                                                    <p class="text16i" id="timer">03:00</p>
+                                                </div>
+                                                <div class="otp-timers-col">
+                                                    <a href="javascript:void(0)" class="btn-links d-none jsOnGetCall jsOnGetCallButton">Get OTP via
+                                                        call</a>
+                                                    <p class="text16i jsGetCalling d-none">Calling <span class="semibold">+91 XXXXXXXXXX</span> <span
+                                                            class="otp-number-dot dot-animation"><img
+                                                                src="/content/dam/tata-capital-web/assets/img/lead-form/dot-img.gif" alt=""></span></p>
+                                                    <p class="text16i jsGetOTPSent d-none">OTP sent via call</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- otp timer -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-controls otp-btn">
+                        <button class="btn-blue btn-large jsLoanAgainstSendOTP">Send OTP</button>
+                        <button class="btn-blue btn-large jsLoanAgainstSubmitOTP btn-disabled d-none">Submit
+                        </button>
+                        <button class="btn-link btn-big jsLoanAgainstResendOTP d-none">
+                            <span class="text-resend">Resend OTP</span>
+                        </button>
+                        <button class="btn-link btn-big jsLoadingBtn d-none">
+                            <img src="/content/dam/tata-capital-web/assets/img/lead-form/loader-img.gif" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="loan-against-sucess-msg jsMsgLoanAgainst jsSuccessOTPVarification d-none">
+                    <a href="javascript:void(0)" class="msg-closed jsCloseLaonAgainstMgs"><span
+                            class="icon-close"></span></a>
+
+                    <!-- 14-2-2023 -->
+                    <div class="success-inner">
+                        <img src="/content/dam/tata-capital-web/assets/img/lead-form/ticks.svg" alt="ticks" class="ticks-img">
+                        <h2>THANK YOU FOR REACHING OUT TO US.<span id="leadIdText"></span></h2>
+                        <!-- <p class="heading20 application-id">Your request ID is <span id="leadId"></span></p> -->
+                        <p class="text16i">Our representative will get in touch with you shortly.</p>
+                    </div>
+                    <!-- 14-2-2023 -->
+                </div>
+                <div class="loan-against-sucess-msg jsMsgLoanAgainst jsFailLeaApi d-none">
+                    <a href="javascript:void(0)" class="msg-closed jsCloseLaonAgainstMgs"><span
+                            class="icon-close"></span></a>
+                    <div class="success-inner">
+                        <img src="/content/dam/tata-capital-web/assets/img/lead-form/unsuccesful.svg" alt="unsuccesful" class="ticks-img">
+                        <h2>Thank you for sharing your details. Unfortunately, we cannot process your
+                            loan application.</h2>
+                        <p>To know more, please call us on 1800 209 6060 or write to
+                            contactus@tatacapital.com.<br><span id="leadIdTextFailure"></span></p>
+                    </div>
+                </div>
+                <div class="loan-against-sucess-msg jsMsgLoanAgainst jsFailOTPVarification d-none">
+                    <a href="javascript:void(0)" class="msg-closed jsCloseLaonAgainstMgs"><span
+                            class="icon-close"></span></a>
+                    <!-- 14-2-2023 -->
+                    <div class="success-inner">
+                        <img src="/content/dam/tata-capital-web/assets/img/lead-form/unsuccesful.svg" alt="unsuccesful" class="ticks-img">
+                        <h2>Incorrect <span>OTP</span></h2>
+                        <p class="text16i">OTP once used cannot be reused. Please resend OTP to try again.</p>
+                        <button class="btn-blue btn-large jsLoanAgainstTryAgain">Resend OTP</button>
+                    </div>
+                    <!-- 14-2-2023 -->
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    </div>
+    </div>
+    </div>
+</section>
+
+<!--home loan modal -->
+<div class="popover-modal modals-blue fade" id="thankyou-modal-shares">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md5">
+        <div class="modal-tb-content">
+            <!-- 10-2-2023 -->
+            <div class="modal-yellow-blue">        
+                <button data-dismiss="popover-modal" class="popover-modal-close">
+                    <i class="icon-close"></i>
+                </button>    
+                <div class="popover-top-heads">
+                    <img src="/content/dam/tata-capital-web/assets/img/tata-logo-blue.svg" alt="Tata Logo Blue" class="images-logo">
+                </div>
+                <div class="popover-modal-content">                    
+                    <div class="popover-modal-body">
+                        <div class="apply-thanks-popup">
+                            <img src="/content/dam/tata-capital-web/assets/img/mutual-fund-icon.svg" alt="Mutual Fund Icon" class="infoes-imgs">
+                            <p class="heading20 semibold apply-texts">To apply for a Loan Against Shares</p>
+                            <div class="apply-btns">
+                                <a href="https://www.las.tatacapital.com/online/loans/las/apply-now-las-loan#!" class="btn-link btn-big min-w149 las-investment" target="_blank">Click Here</a>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 10-2-2023 -->
+        </div>
+    </div>
+</div>
+<!--home loan modal -->
+
+<!--home loan modal -->
+<div class="popover-modal modals-blue fade" id="thankyou-modal-mutualFunds">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md5">
+        <div class="modal-tb-content">
+            <!-- 10-2-2023 -->
+            <div class="modal-yellow-blue">        
+                <button data-dismiss="popover-modal" class="popover-modal-close">
+                    <i class="icon-close"></i>
+                </button>    
+                <div class="popover-top-heads">
+                    <img src="/content/dam/tata-capital-web/assets/img/tata-logo-blue.svg" alt="Tata Logo Blue" class="images-logo">
+                </div>
+                <div class="popover-modal-content">                    
+                    <div class="popover-modal-body">
+                        <div class="apply-thanks-popup">
+                            <img src="/content/dam/tata-capital-web/assets/img/mutual-fund-icon.svg" alt="Mutual Fund Icon" class="infoes-imgs">
+                            <p class="heading20 semibold apply-texts">To apply for a Loan Against Mutual Funds</p>
+                            <div class="apply-btns">
+                                <a href="https://www.las.tatacapital.com/online/loans/las/apply-now-las-loan#!" class="btn-link btn-big min-w149 las-investment" target="_blank">Click Here</a>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 10-2-2023 -->
+        </div>
+    </div>
+</div>
+<!--home loan modal -->
+<!-- Modal -->
+<div class="popover-modal modals-blue fade" id="reach-out-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md5">
+        <div class="modal-tb-content">
+            <div class="reachout-modal">
+                <div class="popover-modal-content">
+                    <button data-dismiss="popover-modal" class="popover-modal-close"><span
+                            class="icon-close"></span></button>
+                    <div class="popover-modal-body">
+                        <div class="reachout-modal-inner">
+                            <p class="heading20 semibold">
+                                LAN No/ Loan Application ID/ Service Request number is missing. Providing this detail can process your request
+                                faster. Do you still want to proceed ?
+                            </p>
+                            <div class="default-duttons">
+                                <ul class="btn-list">
+                                    <li>
+                                        <label class="custom-radiobox-label custom-white-radiobox jsRadioBtnContact"
+                                            data-href="https://retailonline.tatacapital.com/#/login" data-name="yes">
+                                            <span class="custom-radio custom-white-radio">
+                                                <input type="radio" name="radio1" value="yes">
+                                                <span class="radiobox-check"></span>
+                                            </span>
+                                            Yes
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="custom-radiobox-label custom-white-radiobox jsRadioBtnContact"
+                                            data-href="/content/tata-capital-web/en/contact-us/contact-us-form.html"
+                                            data-name="no">
+                                            <span class="custom-radio custom-white-radio">
+                                                <input type="radio" name="radio1" value="no">
+                                                <span class="radiobox-check"></span>
+                                            </span>
+                                            No
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn-link btn-14 btn-with-card-bg btn-disabled jsProceedBtnContact"
+                                target="_blank">Proceed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->

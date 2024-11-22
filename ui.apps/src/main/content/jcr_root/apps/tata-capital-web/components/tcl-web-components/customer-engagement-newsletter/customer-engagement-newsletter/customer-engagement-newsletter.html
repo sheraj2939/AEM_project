@@ -1,0 +1,66 @@
+<div class="general-info-box space-tb40 space-b80">
+    <div class="container">
+        <div class="tops-heads">
+            <h2>${properties.title}</h2>
+        </div>
+        <div class="general-info-inner">
+            <div class="general-info-top">
+                <div class="top-left">
+                    <div class="custom-dropdown-wrap filter-drop-wrap close-on-outside">
+                        <a href="javascript:void(0);" class="custom-dropdown-btn jsShowDrop" data-rel="fy-1">${properties.pdfyear}</a>
+                        <div class="custom-dropdown-block jsDropdownBlock" id="fy-1">
+                            <ul class="custom-dropdown-list simple-bar jsGetValue">
+                                <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                    <sly data-sly-test="${loginLinks.name == 'archiveforNewsletter'}">
+                                        <sly data-sly-list.navList="${loginLinks.listChildren}">
+                                            <sly data-sly-test.subNavigationId="${'{0}_{1}_{2}_{3}' @ format =[navList.name]}">
+                                                <li class="list" data-id=${subNavigationId}>
+                                                    <label class="custom-checkbox-label">                                                
+                                                     ${navList.linkHeading}
+                                                     </label>
+                                                 </li>
+                                            </sly>
+                                        </sly>
+                                    </sly>  
+                                </sly>                                      
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="general-info-bottom">
+                <div class="bg-div general-info-content"> 
+                    <sly data-sly-list.loginLinks="${resource.listChildren}">
+                        <sly data-sly-test="${loginLinks.name == 'archiveforNewsletter'}">
+                            <sly data-sly-list.navList="${loginLinks.listChildren}">
+                                <sly data-sly-test.subNavigationId="${'{0}_{1}_{2}_{3}' @ format =[navList.name]}">
+                                    <ul class="general-info-list jsNewsLetterList"  id=${subNavigationId}>
+                                        <sly data-sly-list.loginLinksSub="${navList.listChildren}">
+                                            <sly data-sly-test="${loginLinksSub.name == 'pdfs'}">
+                                                <sly data-sly-list.navListSub="${loginLinksSub.listChildren}">
+                                                    <li class="jsNewsLetterListli">
+                                                        <div class="general-cols">
+                                                            <a href="javascript:void(0)">${navListSub.heading}</a>
+                                                            <div class="general-download">
+                                                                <a href="${navListSub.redirectionLink}" class="download-text">${navListSub.linkText}</a>
+                                                            </div>                                        
+                                                        </div>                                    
+                                                    </li>
+                                                </sly>
+                                            </sly>
+                                        </sly>
+                                    </ul>
+                                </sly>
+                            </sly>
+                        </sly>   
+                    </sly>                    
+                </div>
+            </div>
+            <div class="general-info-load">
+                <button type="button" class="btn-blue btn-large" id="jsGeneralInfoLoadMore">Load More</button>
+                <button type="button" class="btn-blue btn-large d-none" id="jsGeneralInfoLoadLess">Load Less</button>
+            </div>
+        </div>           
+        
+    </div>
+</div>

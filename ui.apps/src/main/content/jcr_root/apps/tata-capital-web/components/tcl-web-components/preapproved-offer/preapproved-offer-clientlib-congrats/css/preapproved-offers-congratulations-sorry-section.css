@@ -1,0 +1,170 @@
+.preapproved-offers-wrapper {
+  padding-top: 16px;
+}
+
+.preapproved-wrapper-inner {
+  padding: 0;
+}
+.preapproved-wrapper-inner .heading36 {
+  margin-bottom: 10px;
+}
+.preapproved-wrapper-inner.congratulation-inner {
+  padding: 0px;
+}
+.preapproved-wrapper-inner.congratulation-inner .wrapper-inner-content {
+  background-image: url("/content/dam/tata-capital-web/preapproved-offer/preapproved-congratulations-bg.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 30px;
+}
+.preapproved-wrapper-inner.sorry-inner {
+  padding: 40px;
+}
+.preapproved-wrapper-inner.sorry-inner img {
+  margin: 0 auto 10px;
+}
+
+.preapproved-offers-content {
+  padding-bottom: 20px;
+}
+.preapproved-offers-content .preapproved-offers-inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.preapproved-offers-content .preapproved-offers-row {
+  width: 50%;
+  padding: 0 10px 20px;
+}
+.preapproved-offers-content .preapproved-offers-col {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(134.06deg, rgba(56, 151, 235, 0.88) 0%, rgba(16, 141, 250, 0.95) 99.11%);
+  box-shadow: 0px 29px 12px rgba(0, 0, 0, 0.01), 0px 16px 10px rgba(0, 0, 0, 0.04), 0px 7px 7px rgba(0, 0, 0, 0.07), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 0px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 30px;
+  padding: 22px;
+  height: 100%;
+}
+.preapproved-offers-content .preapproved-offers-col .col-left-content {
+  width: 224px;
+}
+.preapproved-offers-content .preapproved-offers-col .col-left-content .preapproved-image-wrapper {
+  border-radius: 23px;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.preapproved-offers-content .preapproved-offers-col .col-left-content .preapproved-image-wrapper img {
+  border-radius: 23px;
+  height: 100%;
+  width: 100%;
+  transition: all 0.2s linear;
+}
+.preapproved-offers-content .preapproved-offers-col .col-left-content .preapproved-image-wrapper img:hover {
+  transform: scale(1.1);
+}
+.preapproved-offers-content .preapproved-offers-col .col-left-content .preapproved-image-wrapper .offer-dsk-img {
+  display: block;
+}
+.preapproved-offers-content .preapproved-offers-col .col-left-content .preapproved-image-wrapper .offer-mob-img {
+  display: none;
+}
+.preapproved-offers-content .preapproved-offers-col .col-right-content {
+  width: calc(100% - 224px);
+  padding-bottom: 70px;
+  padding-left: 19px;
+  position: relative;
+}
+.preapproved-offers-content .preapproved-offers-col .col-right-content h3 {
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.preapproved-offers-content .preapproved-offers-col .col-right-content .preapproved-points li {
+  color: #FFFFFF;
+  position: relative;
+  padding-left: 12px;
+  padding-bottom: 3px;
+}
+.preapproved-offers-content .preapproved-offers-col .col-right-content .preapproved-points li::before {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  left: 0;
+  top: 7px;
+}
+.preapproved-offers-content .preapproved-offers-col .col-right-content .apply-now-btn-wrapper {
+  position: absolute;
+  left: 19px;
+  bottom: 0;
+}
+
+@media (max-width: 1199px) {
+  .preapproved-offers-content .preapproved-offers-row {
+    width: 50%;
+  }
+  .preapproved-offers-content .preapproved-offers-col .col-left-content {
+    width: 100%;
+  }
+  .preapproved-offers-content .preapproved-offers-col .col-right-content {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 10px;
+  }
+  .preapproved-offers-content .preapproved-offers-col .col-right-content .apply-now-btn-wrapper {
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  .preapproved-offers-content .preapproved-offers-col .col-right-content .apply-now-btn-wrapper a {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .preapproved-wrapper-inner.congratulation-inner .wrapper-inner-content {
+    background-image: url("/content/dam/tata-capital-web/preapproved-offer/preapproved-congratulations-mob-bg.svg");
+    padding: 40px;
+  }
+  .preapproved-wrapper-inner.sorry-inner {
+    padding: 30px;
+  }
+  .preapproved-wrapper-inner.sorry-inner img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .preapproved-offers-content .preapproved-offers-inner {
+    margin: 0px;
+  }
+  .preapproved-offers-content .preapproved-offers-row {
+    width: 100%;
+    padding: 0 0 20px;
+  }
+  .preapproved-offers-content .preapproved-offers-col {
+    padding: 16px;
+  }
+  .preapproved-offers-content .preapproved-offers-col .col-left-content {
+    width: 100%;
+  }
+  .preapproved-offers-content .preapproved-offers-col .col-left-content .preapproved-image-wrapper .offer-dsk-img {
+    display: none;
+  }
+  .preapproved-offers-content .preapproved-offers-col .col-left-content .preapproved-image-wrapper .offer-mob-img {
+    display: block;
+  }
+  .preapproved-offers-content .preapproved-offers-col .col-right-content {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 10px;
+  }
+  .preapproved-offers-content .preapproved-offers-col .col-right-content .apply-now-btn-wrapper {
+    padding-top: 20px;
+  }
+  .preapproved-offers-content .preapproved-offers-col .col-right-content .apply-now-btn-wrapper a {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

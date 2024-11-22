@@ -1,0 +1,145 @@
+<sly data-sly-test="${properties.keyFeatures}">
+	<section class="what-personal-box space-tb40">  
+		<div class="container">
+			<sly class="main-container" data-sly-resource="${'key-benefits-section-title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></sly>
+		</div>            
+		<div class="container mob-pd0">
+			<sly class="main-container" data-sly-resource="${'instant-personal-slider' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></sly>
+		</div>            
+	</section>
+</sly>
+
+<sly data-sly-test="${properties.availPersonalLoan}">
+	<section class="${properties.CardVariant}">  
+		<div class="container">
+			<div class="${properties.maxWidthTitleDiv}">
+				<sly class="main-container" data-sly-resource="${'key-benefits-section-title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></sly>
+			</div>
+		</div>            
+		<div class="container mob-pd0">
+			<div class="${properties.maxWidthCardDiv}">
+				<sly class="main-container" data-sly-resource="${'instant-personal-slider' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></sly>
+			</div>
+		</div>            
+	</section>
+</sly>
+
+<!-- key pdf language popover modal -->
+<div  class="popover-modal modals-blue fade popover-show"
+  id="keyPdfLanguageModal">
+  <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md2">
+    <div class="modal-tb-content">
+      <div class="popover-modal-content prefrence-language-content">
+        <button data-dismiss="popover-modal" class="popover-modal-close">
+          <i class="icon-close"></i>
+        </button>
+        <div class="popover-modal-body">
+          <div class="modal-body-inner">
+            <div class="prefrence-mx">
+              <img data-src="/content/dam/tata-capital-web/Tc-footer-images/mic.svg" alt="" class="lozad pdf-imgs">
+              <h3 class="heading20">
+                <span>JLG/Microfinance</span>
+              </h3>
+              <p>Download in your preferred language</p>
+              <div class="mx-314">
+                <div class="custom-select2 select2-white">
+                  <select class="js-select2" id="keyPdfLanguageSelect" data-investor="language" data-placeholder="Language">
+                    <option value="English">Select an option</option>
+                  </select>
+                </div>
+              </div>
+              <a href="" id="keyPdfLanguageDownloadBtn" download
+                class="btn-link btn-big btn-with-card-bg min-w149 btn-xs-full disabled"
+                data-popoverclose="popover-modal">
+                Download
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<sly data-sly-test="${properties.secondHand}">
+  <script type="application/ld+json">
+  {
+   "@context": "https://schema.org/", 
+   "@type": "HowTo", 
+   "name": "How to Get a Second hand Car Loan?",
+   "description": "Looking to get a second-hand car on EMI? Apply instantly with these 4 simple steps-",
+   "step": [{
+   "@type": "HowToStep",
+   "text": "Apply for used car financing by filling out a simple application form online or offline.",
+   "name": "Simple application form"
+   },{
+   "@type": "HowToStep",
+   "text": "Submit or upload the right documents for your used car loan online approval.",
+   "name": "Minimal Documentation"
+   },{
+   "@type": "HowToStep",
+   "text": "We will verify your application and eligibility for the loan.",
+   "name": "Verification"
+   },{
+   "@type": "HowToStep",
+   "text": "After successful verification, we will sanction your loan and disburse the amount directly to your bank account within 24 to 36 hours from document submission.",
+   "name": "Loan Sanctioning and Disbursal"
+   }] 
+  }
+  </script>
+</sly>
+<sly data-sly-test="${properties.appEasy}">
+  <script type="application/ld+json">
+    {
+     "@context": "https://schema.org/", 
+     "@type": "HowTo", 
+     "name": "How to make car loan application easy?",
+     "description": "Availing of finance for used cars? Here are some tips you can follow for a smooth application process-",
+     "step": [{
+     "@type": "HowToStep",
+     "text": "Compare eligibility conditions, interest rates, processing time, fees, and charges of different lenders to find the best deal before applying.",
+     "name": "Conduct thorough market research"
+     },{
+     "@type": "HowToStep",
+     "text": "Apply for used car loans online to reduce your processing time and to get quick loan approval.",
+     "name": "Apply online"
+     },{
+     "@type": "HowToStep",
+     "text": "Keep all relevant documents for your application ready to avoid any last-minute hassle.",
+     "name": "Prepare the documents"
+     },{
+     "@type": "HowToStep",
+     "text": "Use an online EMI calculator to get a rough estimate of your potential EMIs.",
+     "name": "Use an EMI calculator"
+     },{
+     "@type": "HowToStep",
+     "text": "Finally, look for a lender who is credible and transparent before you apply. Tata Capital assures you of only the best deals, making us your best option to secure finance for used cars.",
+     "name": "Choose the lender carefully"
+     }] 
+    }
+    </script>
+</sly>
+
+<sly data-sly-test="${properties.carEmi}">
+  <script type="application/ld+json">
+      {
+       "@context": "https://schema.org/", 
+       "@type": "HowTo", 
+       "name": "How to Use Used Car Loan EMI Calculator for Calculating EMI?",
+       "description": "EMI calculators are excellent tools for determining the best loan plan that fits your requirements. A used car loan EMI calculator gives you instant and accurate results. All you need to do is enter the following details–",
+       "step": [{
+       "@type": "HowToStep",
+       "text": "This is the total loan amount that you borrow.",
+       "name": "Principal Loan Amount"
+       },{
+       "@type": "HowToStep",
+       "text": "This is the interest you must pay on your principal loan amount.",
+       "name": "Rate of Interest"
+       },{
+       "@type": "HowToStep",
+       "text": "This is the total duration (in months or years) within which you must repay your used car loan.",
+       "name": "Loan Tenure"
+       }] 
+      }
+      </script>
+</sly>

@@ -1,0 +1,93 @@
+.instant-personal-slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -30px;
+}
+.instant-personal-slider .slick-dots {
+  bottom: -30px;
+}
+.instant-personal-slider .instant-per-row {
+  width: 33.33%;
+}
+.instant-personal-slider .instant-per-col {
+  padding: 30px 15px 0;
+  height: 100%;
+}
+.instant-personal-slider .instant-per-div {
+  height: 100%;
+  padding: 25px;
+}
+.instant-personal-slider .instant-per-div .left-number {
+  min-width: 32px;
+  font-family: "OpenSans-Bold";
+  font-size: 54.1063px;
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #71161F;
+  margin-right: 29px;
+}
+.instant-personal-slider .instant-per-div .instant-top {
+  position: relative;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1199px) {
+  .instant-personal-slider .instant-per-div .left-number {
+    margin-right: 18px;
+  }
+  .instant-personal-slider .instant-per-div .instant-top .heading20 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 991px) {
+  .instant-personal-slider {
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -20px;
+  }
+  .instant-personal-slider.flex-slider {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .instant-personal-slider .instant-per-col {
+    padding: 20px 10px 0;
+  }
+  .instant-personal-slider .instant-per-div .instant-top .heading20 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .instant-personal-slider {
+    margin-left: -7px;
+    margin-right: -7px;
+    margin-top: -14px;
+  }
+  .instant-personal-slider .slick-list {
+    padding-left: 15px !important;
+  }
+  .instant-personal-slider .instant-per-col {
+    padding: 14px 7px 0;
+  }
+  .instant-personal-slider .instant-per-div {
+    padding: 24px;
+  }
+  .instant-personal-slider .instant-per-div .instant-top {
+    min-height: 37px;
+  }
+  .instant-personal-slider .instant-per-div .instant-top .heading20 {
+    font-size: 16px;
+  }
+  .instant-personal-slider .instant-per-div .left-number {
+    font-size: 37px;
+    line-height: 37px;
+    min-width: 25px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

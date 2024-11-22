@@ -1,0 +1,17 @@
+/* .about-emi-calc{
+    margin-top: -25px;
+} */
+.personal-loan-box .personal-btn {
+	margin-top:0px;
+}
+.personal-loan-box .personal-para .last-para p {
+    margin-bottom: 0px;
+}
+.last-para p {
+    margin-bottom: 0px;
+}
+@media (max-width: 767px) {
+    .space-tb40.space-t80 {
+        padding-top: 50px;
+    }
+}

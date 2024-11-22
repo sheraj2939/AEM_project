@@ -1,0 +1,38 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='TC-pl-by-tata'}"></sly>
+</sly>
+
+<main class="main-content">
+    <!--  personal-loan box  -->
+    <section class="personal-loan-box top-loan-space space-tb40">
+        <div class="container">
+            <sly data-sly-resource="${'container-main' @resourceType='/apps/tata-capital-web/components/personal-loan/PL-by-tata-capital/container'}" />
+            <div class="loan-details-outer">
+                <div class="loans-details-per">
+                    <ul class="amount-info-pers">
+                        <li>
+                            <p class="text16i">Loan amount offered</p>
+                            <p class="heading20">₹ 75,000 - ₹ 35,00,000</p>
+                        </li>
+                        <li>
+                            <p class="text16i">Loan tenure</p>
+                            <p class="heading20">Upto 6 Years</p>
+                        </li>
+                        <li>
+                            <p class="text16i">Interest rate starting @</p>
+                            <div class="per-flex-text">
+                                <p class="heading20">10.99% p.a</p>
+                                <a href="javascript:void(0)" class="btn-links views-links">View Rates & Charges</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- personal-loan box-->
+</main>
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories='TC-pl-by-tata'}"></sly>
+</sly>

@@ -1,0 +1,69 @@
+<div class="pd-t50 ${properties.mobDrop? ' ':'pd-b10'}">
+    <div class="container">
+        <div class="media-top-tabs ${properties.mobDrop? ' ':'new-mob-dropdowns jsTabDropdown close-on-outside'}">
+            <sly data-sly-test="${!properties.mobDrop}">
+                <a href="javascript:void(0)" class="mob-drop-heads" data-tab="tab-dropdown">${properties.accessibilityLabel}</a>
+            </sly>
+            <ul
+                data-sly-resource="${'about-dropdown-buttons' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+            </ul>
+            <sly data-sly-test="${properties.filterNeed}">
+            <div class="custom-dropdown-wrap filter-drop-wrap close-on-outside">
+                <a href="javascript:void(0);" class="custom-dropdown-btn" data-rel="filer">${properties.filterheading}</a>
+                <div class="custom-dropdown-block jsDropdownBlock" id="filer">
+                    <ul class="custom-dropdown-list simple-bar" id="filerList" data-simplebar="init">
+                        <div class="simplebar-wrapper" style="margin: 0px;">
+                            <div class="simplebar-height-auto-observer-wrapper">
+                                <div class="simplebar-height-auto-observer"></div>
+                            </div>
+                            <div class="simplebar-mask">
+                                <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                                    <div class="simplebar-content-wrapper" style="height: auto; overflow: hidden;">
+                                        <div class="simplebar-content" style="padding: 0px;">
+                                            <li class="list">
+                                                <label class="custom-checkbox-label">
+                                                    <span class="custom-checkbox-new">
+                                                        <input type="checkbox" id="filterSelectall">
+                                                        <span class="checkbox-check"></span>
+                                                    </span>
+                                                    <p>ALL</p>
+                                                </label>
+                                            </li>
+                                            <sly data-sly-list.itemList="${resource.children}">
+                                                <sly data-sly-test="${itemList.name == 'filterItemsField'}">
+                                                    <sly data-sly-list.thData="${itemList.children}">
+                                                        <sly
+                                                            data-sly-test.filterId="${'{0}_{1}_{2}_{3}' @ format =[thData.name]}">
+                                                            <li class="list">
+                                                                <label class="custom-checkbox-label">
+                                                                    <span class="custom-checkbox-new">
+                                                                        <input type="checkbox" class="filterSelectedId">
+                                                                        <span class="checkbox-check"></span>
+                                                                    </span>
+                                                                    ${thData.filterItemsData @ context = 'html'}
+                                                                </label>
+                                                            </li>
+                                                        </sly>
+                                                    </sly>
+                                                </sly>
+                                            </sly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="simplebar-placeholder" style="width: 0px; height: 0px;"></div>
+                        </div>
+                        <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+                            <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
+                        </div>
+                        <div class="simplebar-track simplebar-vertical" style="visibility: hidden;">
+                            <div class="simplebar-scrollbar"
+                                style="height: 0px; display: none; transform: translate3d(0px, 0px, 0px);"></div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </sly>
+        </div>
+    </div>
+</div>

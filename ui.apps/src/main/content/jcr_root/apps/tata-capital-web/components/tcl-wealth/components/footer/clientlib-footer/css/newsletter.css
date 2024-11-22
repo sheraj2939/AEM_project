@@ -1,0 +1,88 @@
+.subscribe-box {
+    position: relative;
+    padding-bottom: 0px;
+    z-index: 1;
+  }
+  .subscribe-box:before {
+    content: "";
+    height: 64px;
+    background-color: #640811;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
+  .subscribe-box .subscribe-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+    margin: auto;
+    background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.89) 0%, rgba(255, 255, 255, 0.95) 99.11%), linear-gradient(134.06deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.67) 99.11%);
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.01), 5px 0px 10px rgba(0, 0, 0, 0.01), 0px -5px 10px rgba(0, 0, 0, 0.01), 0px 5px 10px rgba(0, 0, 0, 0.01);
+    border-radius: 30px;
+    padding: 48px;
+  }
+  .subscribe-box .form-textbox.textboxerror .error-msgs {
+    top: 100%;
+  }
+  .subscribe-box .subscribe-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .subscribe-box .subscribe-row .subscribe-left {
+    width: 268px;
+  }
+  .subscribe-box .subscribe-row .subscribe-right {
+    width: calc(100% - 268px);
+    padding-left: 30px;
+  }
+  .subscribe-box .subscribe-form {
+    position: relative;
+    padding-right: 200px;
+  }
+  .subscribe-box .btn-subscribes {
+    position: absolute;
+    right: 0px;
+    top: 12px;
+  }
+  
+  @media (max-width: 991px) {
+    .subscribe-box .subscribe-inner {
+      padding: 40px;
+      border-radius: 20px;
+    }
+    .subscribe-box .subscribe-row .subscribe-left {
+      width: 100%;
+    }
+    .subscribe-box .subscribe-row .subscribe-left h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .subscribe-box .subscribe-row .subscribe-right {
+      padding-left: 0px;
+      width: 100%;
+    }
+  }
+  @media (max-width: 767px) {
+    .subscribe-box .row-flex .row-col-50 {
+      width: 100%;
+    }
+    .subscribe-box .subscribe-inner {
+      padding: 24px;
+    }
+    .subscribe-box .subscribe-row .subscribe-left h2 {
+      margin-bottom: 20px;
+    }
+    .subscribe-box .subscribe-form {
+      padding-right: 0px;
+    }
+    .subscribe-box .btn-subscribes {
+      position: static;
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+  

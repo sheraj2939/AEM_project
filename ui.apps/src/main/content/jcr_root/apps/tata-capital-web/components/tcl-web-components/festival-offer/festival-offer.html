@@ -1,0 +1,26 @@
+<!-- festival offer 14-10-2024-->
+<section
+    class="${properties.topMargin ? 'top-loan-space': ''} ${properties.space ? '': 'space-tb40'} ${properties.tslVariation ? 'space-t80': ''}">
+    <div class="container">
+        <div class="festival-offer-box">
+            <picture class="lozad" style="display: block; min-height: 1rem" data-iesrc="${properties.desktopImage}"
+                data-alt="${properties.ImageAltTitle}">
+                <source media="(min-width: 1200px)" srcset="${properties.desktopImage}">
+                <source media="(min-width: 768px)" srcset="${properties.desktopImage}">
+                <source media="(max-width: 767px)" srcset="${properties.mobileImage}">
+                <img src="${properties.desktopImage}" alt="${properties.ImageAltTitle}" class="offer-img">
+            </picture>
+            <div class="offer-captions">
+                <p class="offer-txts">${properties.heading}</p>
+                <img src="${properties.rateImage}" alt="${properties.rateImageAltTitle}">
+                <a data-sly-test="${properties.buttonLink}" href="${properties.buttonLink}"
+                    target="${properties.openInNewTab ? '_blank' : '' }" class="btn-link">${properties.buttonTitle}</a>
+                <a data-sly-test="${!properties.buttonLink}" href="javascript:void(0)"
+                    class="btn-link">${properties.buttonTitle}</a>
+            </div>
+            <span class="offer-conditions">${properties.leftText}</span>
+            <span class="offer-conditions offer-right">${properties.rightText}</span>
+        </div>
+    </div>
+</section>
+<!-- festival offer 14-10-2024-->

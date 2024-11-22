@@ -1,0 +1,189 @@
+<!-- Header -->
+<header class="header">
+    <div class="header-inner">
+        <div class="header-top">
+            <div class="header-container">
+                <div class="header-slider-contact-wrap">
+                    <div class="right-col">
+                        <div class="header-top-ul">
+                            <sly data-sly-list.topNavContent="${resource.children}">
+                                <sly data-sly-test="${topNavContent.name == 'topNavMultifeild'}">
+                                    <sly data-sly-list.topNavItem="${topNavContent.children}">
+                                        <sly data-sly-test="${!topNavItem.checkDropDown}">
+                                            <div class="header-top-li">
+                                                <a href="${topNavItem.contentLink}" target="${topNavItem.newTab ? 'blank' : ''}" class="text-icon-link blog-link">
+                                                    <span
+                                                        class="${topNavItem.contentIcon}"></span>${topNavItem.contentText}
+                                                </a>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${topNavItem.checkDropDown}">
+                                            <div class="header-top-li">
+                                                <div class="contactus-dropdown">
+                                                    <a href="${topNavItem.contentLink}"
+                                                        class="text-icon-link blog-link textarrow" target="${topNavItem.newTab ? 'blank' : ''}">
+                                                        <span
+                                                            class="${topNavItem.contentIcon}"></span>${topNavItem.contentText}
+                                                    </a>
+                                                    <div class="contactus-popup">
+                                                        <div class="dropdown-cnt-inners">
+                                                            <ul>
+                                                                <sly data-sly-list.dropDown="${topNavItem.children}">
+                                                                    <sly
+                                                                        data-sly-test="${dropDown.name == 'dropDownList'}">
+                                                                        <sly
+                                                                            data-sly-list.dropDownItem="${dropDown.children}">
+                                                                            <li>
+                                                                                <a href="${dropDownItem.textLink}" target="${dropDownItem.newTab ? 'blank' : ''}">
+                                                                                    <span class="all-icon32">
+                                                                                        <span
+                                                                                            class="${dropDownItem.itemIcon}"></span>
+                                                                                    </span>
+                                                                                    ${dropDownItem.listText}
+                                                                                </a>
+                                                                            </li>
+                                                                        </sly>
+                                                                    </sly>
+                                                                </sly>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-navbar">
+            <div class="header-container">
+                <div class="header-navbar-inner">
+                    <div class="header-logo">
+                        <sly data-sly-test="${properties.headerType == 'withDropDown'}">
+                            <div class="mobile-tab-menu d-lg-none">
+                                <div class="hamburger-menu" data-menu="menu" data-target="hamburgerMenu">
+                                    <div class="first-sub-bar"></div>
+                                    <div class="second-sub-bar"></div>
+                                    <div class="third-sub-bar"></div>
+                                </div>
+                            </div>
+                        </sly>
+                        <a href="${properties.logoLink}" class="logos">
+                            <img src="${properties.headerImg}" alt="${properties.imgAlt}" />
+                        </a>
+                    </div>
+                    <sly data-sly-test="${properties.headerType == 'withDropDown'}">
+                        <div class="header-menu-wrap">
+                            <ul class="header-menu">
+                                <sly data-sly-list.btNavContent="${resource.children}">
+                                    <sly data-sly-test="${btNavContent.name == 'bottomNavMultifeild'}">
+                                        <sly data-sly-list.btNavItem="${btNavContent.children}">
+                                            <li class="menu-item">
+                                                <a href="${btNavItem.contentLink}"
+                                                    class="nav-link ${btNavItem.checkDropDown?'nav-link-dropdown' : ' '}" target="${btNavItem.newTab ? 'blank' : ''}">
+                                                    ${btNavItem.navText}
+                                                </a>
+                                                <sly data-sly-test="${btNavItem.checkDropDown}">
+                                                    <div
+                                                        class="dropdown-content-wrap ${btNavItem.clacWidth ? 'calc-width' : ' '}">
+                                                        <div class="dropdown-cnt-inners">
+                                                            <ul>
+                                                                <sly data-sly-list.dropDownList="${btNavItem.children}">
+                                                                    <sly
+                                                                        data-sly-test="${dropDownList.name == 'navDropDownList'}">
+                                                                        <sly
+                                                                            data-sly-list.dropDownListItem="${dropDownList.children}">
+                                                                            <li>
+                                                                                <a href="${dropDownListItem.textLink}" target="${dropDownListItem.newTab ? 'blank' : ''}">
+                                                                                    <span class="all-icon32">
+                                                                                        <span
+                                                                                            class="inner-icon ${dropDownListItem.itemIcon}"></span>
+                                                                                    </span>
+                                                                                    ${dropDownListItem.listText}
+                                                                                </a>
+                                                                            </li>
+                                                                        </sly>
+                                                                    </sly>
+                                                                </sly>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </sly>
+                                            </li>
+                                        </sly>
+                                    </sly>
+                                </sly>
+                            </ul>
+                        </div>
+                    </sly>
+                    <div class="login-search-wrap">
+                        <ul class="login-search-menu">
+                            <li class="login-search-item">
+                                <a href="${properties.buttonLink}"
+                                    class="login-btn animated-btn" target="${btNavItem.newTab ? 'blank' : ''}"><i>${properties.btnText}</i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile header -->
+        <div class="mob-header">
+            <div class="mob-inner-header">
+                <!-- mob main menu -->
+                <div class="mob-fixscrollmain">
+                    <!-- Accrodian menu-->
+                    <div class="accordian-mobsubmenu js-mobsubmenu active">
+                        <sly data-sly-test="${properties.headerType == 'withDropDown'}">
+                            <sly data-sly-list.btNavContent="${resource.children}">
+                                <sly data-sly-test="${btNavContent.name == 'bottomNavMultifeild'}">
+                                    <sly data-sly-list.btNavItem="${btNavContent.children}">
+                                        <sly data-sly-test="${btNavItem.checkDropDown}">
+                                            <div class="accord-col js-accord-col-mob">
+                                                <div class="submenu-head">
+                                                    <a href="javascript:void(0)">${btNavItem.navText}</a>
+                                                    <span class="submenu-head-arrow"></span>
+                                                </div>
+                                                <sly data-sly-test="${btNavItem.checkDropDown}">
+                                                    <div class="accord-body">
+                                                        <ul class="mob-sub-menu">
+                                                            <sly data-sly-list.dropDownList="${btNavItem.children}">
+                                                                <sly
+                                                                    data-sly-test="${dropDownList.name == 'navDropDownList'}">
+                                                                    <sly
+                                                                        data-sly-list.dropDownListItem="${dropDownList.children}">
+                                                                        <li>
+                                                                            <a href="${dropDownListItem.textLink}"
+                                                                                class="menu-sub-items" target="${dropDownListItem.newTab ? 'blank' : ''}">${dropDownListItem.listText}</a>
+                                                                        </li>
+                                                                    </sly>
+                                                                </sly>
+                                                            </sly>
+                                                        </ul>
+                                                    </div>
+                                                </sly>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${!btNavItem.checkDropDown}">
+                                            <a href="${btNavItem.contentLink}"
+                                                class="submenu-head" target="${btNavItem.newTab ? 'blank' : ''}">${btNavItem.navText}</a>
+                                        </sly>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </div>
+                </div>
+                <!-- mob main menu -->
+            </div>
+        </div>
+        <!-- mobile header -->
+    </div>
+</header>
+<!-- Header -->

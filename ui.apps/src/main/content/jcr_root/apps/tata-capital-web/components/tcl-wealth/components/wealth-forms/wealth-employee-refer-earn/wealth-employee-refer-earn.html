@@ -1,0 +1,412 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='wealth-employee-refer-earn-clientlib'}"></sly>
+</sly>
+
+<!-- conversation box -->
+<div class="conversation-box space-tb40 jsReferTopMatch">
+    <div class="container">
+        <div class="bg-div conversation-start bg-with-img">
+            <!-- conversation form start -->
+            <div class="refer-earn-tops">
+                <div class="tops-heads">
+                    <h2><span>${properties.boldTitle}</span> ${properties.title}</h2>
+                </div>
+                <!-- refer form start -->
+                <div class="form-wizard" id="mobileVerifyForm">
+                    <div class="form-step">
+                        <div class="mg-b20">
+                            ${properties.description @context = 'html'}
+                        </div>
+                        <!-- radio button -->
+                        <div>
+                            <ul class="list-radio-ul jsIndentityTab">
+                                <li class="list-radio-li">
+                                    <label class="custom-radiobox-label bold active" datas-tab="empCode">
+                                        <span class="custom-radio">
+                                            <input type="radio" name="radio1" checked>
+                                            <span class="radiobox-check"></span>
+                                        </span>
+                                        Employee Code
+                                    </label>
+                                </li>
+                                <!--/* <li class="list-radio-li">
+                                    <label class="custom-radiobox-label bold" datas-tab="pancard">
+                                        <span class="custom-radio">
+                                            <input type="radio" name="radio1">
+                                            <span class="radiobox-check"></span>
+                                        </span>
+                                        PAN Number
+                                    </label>
+                                </li>*/-->
+                            </ul>
+                        </div>
+                        <!-- radio button -->
+
+                        <!-- tab content -->
+                        <div class="js-tab-row" id="mobile">
+                            <div class="row-flex">
+                                <div class="row-col-33 col-sp15">
+                                    <div class="form-textbox-new">
+                                        <label class="label-name">Employee Code*</label>
+                                        <div class="textbox-inner">
+                                            <input type="text" class="input-textbox allow-numeric disable-emoji"
+                                                maxlength="10" inputmode="numeric" placeholder="" data-type="empmobile">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pd-t20i">
+                                <button type="button" class="btn-dangers btn-big min-w115 js-verifyMobile"
+                                    data-next="form02">Verify</button>
+                            </div>
+                        </div>
+                        <!--/*<div class="js-tab-row d-none" id="pancard">
+                            <div class="row-flex">
+                                <div class="row-col-33 col-sp15">
+                                    <div class="form-textbox-new">
+                                        <label class="label-name">PAN number*</label>
+                                        <div class="textbox-inner">
+                                            <input type="text" class="input-textbox alpha-numeric-input" maxlength="10"
+                                                placeholder="" data-type="pan-number">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pd-t20i">
+                                <button type="button" class="btn-dangers btn-big min-w115 js-verifyPan"
+                                    data-next="form02">Verify</button>
+                            </div>
+                        </div>*/-->
+                        <!-- tab content -->
+                    </div>
+
+                    <!-- refer form success -->
+                    <div class="refer-earn-success mobileSuccessForm form-step hidden" id="form02">
+                        <h3 class="heading20 referreName semibold">Welcome, <span class="w-xs-100 WlEmpName"></span>
+                        </h3>
+                        <ul class="custom-css-employee">
+                            <li>
+                                <p><b>Employee name:- </b><span class="empName"></span></p>
+                            </li>
+                            <li class="custom-emp-number d-none">
+                                <p><b>Employee Mobile:- </b><span class="employeemobile"></span></p>
+                            </li>
+                            <li>
+                                <p><b>Employee Email:- </b><span class="employeeemail"></span></p>
+                            </li>
+                            <li>
+                                <p><b>Employee designation:- </b><span class="empDesignation"></span></p>
+                            </li>
+                            <li>
+                                <p><b>Employee business unit:- </b><span class="empUnit"></span></p>
+                            </li>
+                            <li>
+                                <p><b>Employee business Sub vertical:- </b><span class="subVertical"></span>
+                                </p>
+                            </li>
+                            <li>
+                                <p><b>Employee business vertical:- </b><span class="vertical"></span></p>
+                            </li>
+                            <li>
+                                <p><b>Employee Department:- </b><span class="empDepartment"></span></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- refer form success-->
+                </div>
+                <!-- refer form end -->
+
+            </div>
+            <!-- conversation form  end-->
+        </div>
+    </div>
+</div>
+<!-- conversation box -->
+
+<section class="loan-against-prop-box space-tb40" id="ScrollElement">
+    <div class="container relative">
+        <div class="page-disabled"></div>
+
+        <div class="loan-against-form-wrap journey-cards jsReferFornss">
+            <div class="loan-against-header">
+                <h4>Refer To Your Friends</h4>
+            </div>
+            <div class="loan-against-body">
+
+                <div class="loan-against-form refer-friends-forms">
+                    <div class="loan-against-form-wrapper">
+                        <div id="add-moreform">
+                            <div class="form-row">
+                                <div class="row-flex row-flex-30">
+
+                                    <div class="row-col-33 col-sp30">
+                                        <div class="row-flex name-with-title">
+                                            <div class="row-col-33 name-title-col">
+                                                <div class="form-textbox-new fixed-active">
+                                                    <label class="label-name">Title</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2">
+                                                                <option value=""></option>
+                                                                <option value="Mr">Mr</option>
+                                                                <option value="Miss">Miss</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row-col-66 name-title-col">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">First name</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text"
+                                                            class="input-textbox disable-emoji alfaOnlyInput only-alpha-input"
+                                                            placeholder="" data-type="firstname">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row-col-33 col-sp30">
+                                        <div class="form-textbox-new">
+                                            <label class="label-name">Last name</label>
+                                            <div class="textbox-inner">
+                                                <input type="text"
+                                                    class="input-textbox disable-emoji alfaOnlyInput only-alpha-input"
+                                                    placeholder="" data-type="lastname">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row-col-33 col-sp30">
+                                        <div class="form-textbox-new">
+                                            <label class="label-name">Email ID</label>
+                                            <div class="textbox-inner">
+                                                <input type="text" class="input-textbox disable-emoji" placeholder=""
+                                                    data-type="email">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row-col-33 col-sp30">
+                                        <div class="form-textbox-new">
+                                            <label class="label-name">Mobile no.</label>
+                                            <div class="textbox-inner">
+                                                <input type="text" class="input-textbox allow-numeric disable-emoji"
+                                                    placeholder="" data-type="mobile" data-object="referrer"
+                                                    maxlength="10" pattern="[0-9]*" inputmode="numeric">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row-col-33 col-sp30">
+                                        <div class="form-textbox-new fixed-active">
+                                            <label class="label-name">Pincode</label>
+                                            <div class="textbox-inner">
+
+                                                <div class="custom-select2">
+                                                    <select class="js-select2 firstFormPincode" data-type="pincode">
+                                                        <option value=""></option>
+                                                        <option value="721663">721663</option>
+                                                        <option value="743411">743411</option>
+                                                        <option value="741161">741161</option>
+                                                        <option value="635130">635130</option>
+                                                        <option value="401105">401105</option>
+                                                        <option value="144501">144501</option>
+                                                        <option value="142035">142035</option>
+                                                        <option value="440019">440019</option>
+                                                        <option value="678007">678007</option>
+                                                        <option value="688014">688014</option>
+                                                        <option value="581438">581438</option>
+                                                        <option value="421501">421501</option>
+                                                        <option value="570028">570028</option>
+                                                        <option value="832111">832111</option>
+                                                        <option value="362021">362021</option>
+                                                        <option value="535220">535220</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row-col-33 col-sp30">
+                                        <div class="form-textbox-new fixed-active">
+                                            <label class="label-name">City</label>
+                                            <div class="textbox-inner">
+
+                                                <div class="custom-select2">
+                                                    <select class="js-select2 firstFormCity" data-type="city">
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row-col-33 col-sp30">
+                                        <div class="form-textbox-new fixed-active">
+                                            <label class="label-name">State</label>
+                                            <div class="textbox-inner">
+
+                                                <div class="custom-select2">
+                                                    <select class="js-select2 firstFormState" data-type="state">
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row-col-33 col-sp30">
+                                        <div class="form-textbox-new fixed-active">
+                                            <label class="label-name">Select Product Category</label>
+                                            <div class="textbox-inner">
+
+                                                <div class="custom-select2">
+                                                    <select class="js-select2 firstFormProduct" data-type="product">
+                                                        <option value=""></option>
+                                                        <option value="Mutual Funds">Mutual Funds</option>
+                                                        <option value="Corporate Fixed Deposits">Corporate Fixed
+                                                            Deposits</option>
+                                                        <option value="Portfolio Management Services">Portfolio
+                                                            Management Services</option>
+                                                        <option value="NCD/Bonds">NCD/Bonds</option>
+                                                        <option value="Alternate Investment Funds">Alternate Investment
+                                                            Funds</option>
+                                                        <option value="Structured Products">Structured Products</option>
+                                                        <option value="Global Investments">Global Investments
+                                                        </option>
+                                                        <option value="Life Insurance">Life Insurance</option>
+                                                        <option value="General insurance">General insurance</option>
+                                                        <option value="Real Estate">Real Estate</option>
+                                                        <option value="Inheritance & Succession Planning">Inheritance &
+                                                            Succession Planning</option>
+                                                        <option value="Unlisted Equity">Unlisted Equity</option>
+                                                        <option value="Others (text field if chosen others)">Others
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row-col-33 col-sp30">
+                                        <div class="form-textbox-new fixed-active">
+                                            <label class="label-name">Date of meeting</label>
+                                            <div class="textbox-inner">
+                                                <input type="date" style="text-transform: uppercase; color: #333333;" class="input-textbox disable-emoji" placeholder=""
+                                                    data-type="date" data-object="referrer" inputmode="">
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row-col-33 col-sp30">
+                                        <div class="form-textbox-new">
+                                            <label class="label-name">Background on referral Profile</label>
+                                            <div class="textbox-inner">
+                                                <input type="text"
+                                                    class="input-textbox disable-emoji alfaOnlyInput only-alpha-input"
+                                                    placeholder="" data-type="profile">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row-col-33 col-sp30">
+                                        <div class="form-textbox-new">
+                                            <label class="label-name">Weath Manager Employee Code</label>
+                                            <div class="textbox-inner">
+                                                <input type="text" class="input-textbox disable-emoji" placeholder=""
+                                                    data-type="wm-rm-code">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row-col-33 col-sp30">
+                                        <div class="form-textbox-new">
+                                            <label class="label-name">Weath Manager Employee Name</label>
+                                            <div class="textbox-inner">
+                                                <input type="text"
+                                                    class="input-textbox disable-emoji alfaOnlyInput only-alpha-input"
+                                                    placeholder="" data-type="wm-rm-name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-controls btn-referal-list">
+                        <button class="btn-dangers btn-large btn-outline js-addmore-referral">+ Add Row</button>
+                        <button class="btn-dangers btn-large js-invite-earn">Invite and Earn</button>
+                    </div>
+
+                    <div class="add-refferals-text">
+                        <p>*You can add up to 10 referrals!</p>
+                    </div>
+
+                    <div class="row-col-100 col-sp30">
+                        <div class="relative">
+                            <label class="custom-checkbox-label la-agree-btn regular checkBox-error mg-b20">
+                                <span class="custom-checkbox-new pointer-none">
+                                    <input type="checkbox" id="termcondition" checked>
+                                    <span class="checkbox-check"></span>
+                                </span>
+                                I have read and accept the <a
+                                    href="/content/dam/tata-capital/wealth-management/wealth-referral-images/Refer_and_Win_Terms_and_Conditions.pdf"
+                                    class="semibold">Terms &
+                                    Conditions</a> specified
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="loan-against-sucess-msg refer-mgs-thanks bg-div bg-with-img hidden jsReferThankyou">
+            <!-- <a href="javascript:void(0)" class="msg-closed jsCloseLaonAgainstMgs">
+                    <span class="icon-close"></span>
+                </a>                         -->
+            <div class="success-inner">
+                <img src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/success-hand.svg" alt=""
+                    class="ticks-img">
+                <h3 class="heading20 semibold">CONGRATULATIONS!</h3>
+                <p class="text16i">Thank you for referring Tata Capital Wealth to your friends/family. You now stand a
+                    chance to win exciting Assured Rewards worth up to Rs. 10000/-. T&Cs Apply*</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- interest modal -->
+<div class="popover-modal fade" id="del-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md6">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content bg-with-img">
+                <button data-dismiss="popover-modal" class="popover-modal-close"><span
+                        class="icon-close"></span></button>
+                <div class="popover-modal-body">
+                    <div class="subscribe-thakyou">
+                        <img src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/errors.svg" alt=""
+                            class="thanks-imgs">
+                        <p class="heading20 semibold">Are you sure you want delete the row?</p>
+                        <div class="sure-out-btn">
+                            <button type="button" class="btn-dangers btn-outline btn-big"
+                                data-dismiss="popover-modal">No</button>
+                            <button type="button" class="btn-dangers btn-big jsDeleteRows"
+                                data-dismiss="popover-modal">Yes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- interest modal -->
+
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories='wealth-employee-refer-earn-clientlib'}"></sly>
+</sly>

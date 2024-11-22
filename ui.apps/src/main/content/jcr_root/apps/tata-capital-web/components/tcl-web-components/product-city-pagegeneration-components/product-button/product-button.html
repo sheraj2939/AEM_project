@@ -1,0 +1,10 @@
+<div data-sly-test="${!properties.dynamicProductButton}" class="text-center">
+    <div class="white-blue-button button">
+        <a class="btn-blue btn14" href="/content/tata-capital-web/en/personal-loan/emi-calculator.html">
+            Calculate Personal Loan EMI
+        </a>
+    </div>
+</div>
+<div data-sly-test="${properties.dynamicProductButton}"  class="text-center">
+    ${properties.dynamicProductButton @ context = 'html'}
+</div>

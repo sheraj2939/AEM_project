@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Report buttons"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="{Path}/mnt/overlay/wcm/core/content/sites/components/details.html/apps/tata-capital-website/components/content/wm/wm-footer/README.md">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <report-list
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Button Links"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldLabel="Button Links">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                            eaem-nested="NODE_STORE"
+                            name="./btnMulti">
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <btn-text
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Button Text"
+                                            name="./buttonText"
+                                            useFixedInlineToolbar="{Boolean}true"/>
+                                        <btn-link
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                            fieldLabel="Enter Button Link"
+                                            name="./btnLink"
+                                            rootPath="/content"/>
+                                        <newTab
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            composite="{Boolean}true"
+                                            name="./newTab"
+                                            text="Open Link in New Tab"
+                                            value="true"/>
+                                        <active-tab
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            composite="{Boolean}true"
+                                            name="./activeTab"
+                                            text="Active Tab"
+                                            value="true"/>
+                                    </items>
+                                </column>
+                            </items>
+                        </field>
+                    </report-list>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

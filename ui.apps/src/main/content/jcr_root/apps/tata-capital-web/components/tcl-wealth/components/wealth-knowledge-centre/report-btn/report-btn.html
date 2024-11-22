@@ -1,0 +1,41 @@
+<div class="knowledge-center-box segments-box space-tb40 pd-t50 space-b80">
+    <div class="container">
+        <sly
+            data-sly-resource="${'knowledge-center-title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+        </sly>
+    </div>
+
+    <div>
+        <div class="" tab-wrapper="">
+            <ul class="tab-btn-group" tabmenu-wrap="">
+                <sly data-sly-list.buttonLinks="${resource.children}">
+                    <sly data-sly-test="${buttonLinks.name == 'btnMulti'}">
+                        <sly data-sly-list.btnText="${buttonLinks.children}">
+                            <li class="tab-item">
+                                <a href="${btnText.btnLink}" target="${btnText.newTab ? '_blank' : ''}"
+                                    class="tab-button ${btnText.activeTab ? 'active' : ''}">${btnText.buttonText}</a>
+                            </li>
+                        </sly>
+                    </sly>
+                </sly>
+            </ul>
+            <div class="">
+
+                <div class="">
+                    <div class="container">
+                        <div class="general-info-box">
+                            <sly
+                                data-sly-resource="${'knowledge-center-box' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                            </sly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories='pdf-knowledge-center-clientlib'}"></sly>
+</sly>

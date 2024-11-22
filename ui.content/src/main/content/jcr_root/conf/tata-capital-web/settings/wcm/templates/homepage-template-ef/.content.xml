@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Template">
+    <jcr:content
+        cq:lastModified="{Date}2023-01-02T19:29:21.601+05:30"
+        cq:lastModifiedBy="admin"
+        cq:templateType="/conf/tata-capital-web/settings/wcm/template-types/page"
+        jcr:description="homepage template for experience fragment"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Homepage-template-EF"
+        status="enabled"/>
+</jcr:root>

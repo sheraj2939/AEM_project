@@ -1,0 +1,19 @@
+<sly data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+    data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-use.imageTemplate="image.html"
+    data-sly-use.pretitleTemplate="pretitle.html" data-sly-use.titleTemplate="title.html"
+    data-sly-use.descriptionTemplate="description.html" data-sly-use.actionsTemplate="actions.html"
+    data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+    id="${teaser.id}" data-cmp-data-layer="${teaser.data.json}">
+    <div class="bg-div found-products">
+        <div class="product-icon">
+            <span class="${properties.icoMoonClass}"></span>
+            <h3 class="heading20"><span>${teaser.title}</span></h3>
+            <div class="text14i">${teaser.description @ context = 'html'}</div>
+        </div>
+        <div class="btn-controls">
+            <sly
+                data-sly-resource="${'way-to-service-cards' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+            </sly>
+        </div>
+    </div>
+</sly>

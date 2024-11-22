@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    categories="contact-us-components-clientlibs"
+    embed="[tcl-testimonial-form,tcl-reach-out-officer,tcl-grievance-box,tcl-contact-infobox,tcl-consumer-finance-tabs]"/>

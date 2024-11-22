@@ -1,0 +1,56 @@
+<!--  wealth service  -->
+<section class="service-wealth-box space-tb40 space-b80">
+    <div class="container">
+        <div class="tops-heads mx-1060">
+            <sly
+                data-sly-resource="${'wealth-service-title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+            </sly>
+        </div>
+        <div class="wealth-service-card">
+            <div class="row-flex">
+                <sly data-sly-list.wealthService="${resource.children}">
+                    <sly data-sly-test="${wealthService.name == 'wealthBox'}">
+                        <sly data-sly-list.wealthServiceItems="${wealthService.children}">
+                            <div class="row-col-50 col-sp15">
+                                <div class="wealth-service-col">
+                                    <img src="${wealthServiceItems.bgImage}" alt="${wealthServiceItems.bgImgAlt}"
+                                        class="service-imgs">
+                                    <div class="wealth-service-main">
+                                        <img src="${wealthServiceItems.logoImage}" alt="${wealthServiceItems.logoAlt}">
+                                        <span class="wealth-squire">
+                                            <span class="icon-arrow-up-right"></span>
+                                        </span>
+                                    </div>
+                                    <div class="wealth-service-contents">
+                                        <div class="wealth-service-inner">
+                                            <img src="${wealthServiceItems.logoImage}"
+                                                alt="${wealthServiceItems.logoAlt}" class="imgs">
+                                            <h3 class="heading20"><span>${wealthServiceItems.boxTitle}</span></h3>
+                                            <p class="text12 semibold">${wealthServiceItems.semoBoldTitle}</p>
+                                            <ul class="list-wealth two-list">
+                                                <sly data-sly-list.welathList="${wealthServiceItems.children}">
+                                                    <sly data-sly-test="${welathList.name == 'boxListFeild'}">
+                                                        <sly data-sly-list.wealthListItem="${welathList.children}">
+                                                            <li>${wealthListItem.boxList}</li>
+                                                        </sly>
+                                                    </sly>
+                                                </sly>
+                                            </ul>
+                                            <div class="wealth-service-btn">
+                                                <a href="${wealthServiceItems.primaryButtonLink}"
+                                                    target="${wealthServiceItems.primaryButtonLinkOpenInNewTab ? '_blank' : ''}"
+                                                    class="btn-links link-with-arrow">${wealthServiceItems.primaryButtonTitle}
+                                                    <span class="icon-arrow-right arros"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </sly>
+                    </sly>
+                </sly>
+            </div>
+        </div>
+    </div>
+</section>
+<!--  wealth service  -->

@@ -1,0 +1,3 @@
+#base=css
+faq.css
+faq-accordion-vertical-tab-custom.css

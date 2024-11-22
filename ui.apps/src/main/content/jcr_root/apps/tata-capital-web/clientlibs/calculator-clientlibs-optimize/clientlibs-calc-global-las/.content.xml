@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    allowProxy="{Boolean}true"
+    categories="[tclweb.calc-global-opt-las]"
+    embed="[tcl-icomoon,tcl-jquery,tcl-las-calc-jquery,tatacapital.api_web,tcl-select2,tcl-site-loader,tcl-lozad,tcl-slick,tcl-simplebar,tcl-analyitcs-call,tcl-header-clientlib,tcl-global,tcl-google-offer-popup,tcl-newsletter-clientlib,tcl-download-widget-clientlib,tcl-footer-clientlib,tcl-analytics-load,tcl-quick-links-drawer-clientlib,tcl-moengage,tcl-calculators,tcl-calculators-libs]"/>

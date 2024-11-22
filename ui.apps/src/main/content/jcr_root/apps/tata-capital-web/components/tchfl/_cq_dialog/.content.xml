@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Page"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.common.wcm,core.wcm.components.page.v3.editor,cq.wcm.msm.properties,granite.contexthub.configuration,cq.siteadmin.admin.properties,core.wcm.components.image.v3.editor]"
+    helpPath="https://www.adobe.com/go/aem_cmp_page_v3"
+    mode="edit"
+    trackingFeature="core-components:page:v3">
+    <content
+        granite:class="cq-dialog-content-page"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                granite:class="cq-siteadmin-admin-properties-tabs"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                size="L">
+                <items jcr:primaryType="nt:unstructured">
+                    <basic
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Basic"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                                        path="/mnt/overlay/wcm/foundation/components/basicpage/v1/basicpage/tabs/basic/items/column/items/title"/>
+                                    <branding
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Branding"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <brandSlug
+                                                granite:class="cq-siteadmin-admin-properties-basic-brandSlug"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="core/wcm/components/commons/editor/dialog/inherited/v1/inherited"
+                                                heading="Brand Slug"
+                                                path="${empty param.item ? requestPathInfo.suffix : param.item}"
+                                                prop="brandSlug"/>
+                                        </items>
+                                    </branding>
+                                    <htmlid
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="HTML ID"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <id
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="HTML ID attribute to apply to the component."
+                                                fieldLabel="ID"
+                                                name="./id"/>
+                                        </items>
+                                    </htmlid>
+                                    <moretitles
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                                        path="/mnt/overlay/wcm/foundation/components/basicpage/v1/basicpage/tabs/basic/items/column/items/moretitles"/>
+                                    <onofftime
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                                        path="/mnt/overlay/wcm/foundation/components/basicpage/v1/basicpage/tabs/basic/items/column/items/onofftime"/>
+                                    <vanityurl
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                                        path="/mnt/overlay/wcm/foundation/components/basicpage/v1/basicpage/tabs/basic/items/column/items/vanityurl"/>
+                                </items>
+                            </column>
+                        </items>
+                    </basic>
+                    <thumbnail
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Images"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <featuredimage
+                                        granite:class="cmp-image__editor"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Featured Image"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <file
+                                                granite:class="cmp-image__editor-file-upload"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                allowDrop="{Boolean}false"
+                                                allowUpload="{Boolean}true"
+                                                class="cq-droptarget"
+                                                fieldDescription="Used in components referencing the page (e.g. teaser, list of pages)"
+                                                fieldLabel="Image"
+                                                fileNameParameter="./cq:featuredimage/fileName"
+                                                fileReferenceParameter="./cq:featuredimage/fileReference"
+                                                mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                                name="./cq:featuredimage/file"/>
+                                            <type
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                name="./cq:featuredimage/sling:resourceType"
+                                                value="core/wcm/components/image/v3/image"/>
+                                            <alternativeGroup
+                                                granite:class="cmp-image__editor-alt"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/well">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <alt
+                                                        granite:class="cmp-image__editor-alt-text"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Textual alternative of the meaning or function of the image, for visually impaired readers."
+                                                        fieldLabel="Alternative Text"
+                                                        name="./cq:featuredimage/alt"/>
+                                                    <altValueFromDAM
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="true"
+                                                        fieldDescription="When checked, populate the image's alt attribute with the value of the dc:description metadata in DAM."
+                                                        name="./cq:featuredimage/altValueFromDAM"
+                                                        text="Inherit - Value taken from the DAM asset"
+                                                        uncheckedValue="false"
+                                                        value="{Boolean}true"/>
+                                                </items>
+                                            </alternativeGroup>
+                                        </items>
+                                    </featuredimage>
+                                    <thumbnail
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Thumbnail"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <thumbnail
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/common/wcm/pagethumbnail"
+                                                page="${empty param.item ? requestPathInfo.suffix : param.item}"
+                                                quiet="{Boolean}true">
+                                                <upload
+                                                    granite:class="cq-wcm-fileupload"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/fileupload"
+                                                    async="{Boolean}true"
+                                                    autoStart="{Boolean}false"
+                                                    multiple="{Boolean}false"
+                                                    name="./image/file.sftmp"
+                                                    sizeLimit="100000000"
+                                                    text="Upload Image"
+                                                    uploadUrl="will_be_replaced">
+                                                    <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        cq-msm-lockable="./image"/>
+                                                </upload>
+                                                <assetpicker
+                                                    granite:class="js-browse-activator"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/button"
+                                                    text="Select Image">
+                                                    <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        cq-msm-lockable="./image"/>
+                                                </assetpicker>
+                                                <preview
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="cq/gui/components/siteadmin/admin/pagepreview"/>
+                                            </thumbnail>
+                                        </items>
+                                    </thumbnail>
+                                </items>
+                            </column>
+                        </items>
+                    </thumbnail>
+                    <pwa
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/mnt/overlay/wcm/foundation/components/basicpage/v1/basicpage/tabs/pwa"/>
+                    <product-items
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Page Configuration "
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <product-select
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        fieldLabel="Select Product"
+                                        name="./productSelect">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <all
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./all"
+                                                text="All"
+                                                value=""/>
+                                            <personal-loan
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./pl"
+                                                text="Personal Loan"
+                                                value="PL"/>
+                                            <home-loan
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./hl"
+                                                text="Home Loan"
+                                                value="HL"/>
+                                            <business-loan
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./bl"
+                                                text="Business Loan"
+                                                value="BL"/>
+                                            <used-car-loan
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./ucl"
+                                                text="Used Car Loan"
+                                                value="UCL"/>
+                                            <two-wheeler-loan
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./twl"
+                                                text="Two Wheeler Loan"
+                                                value="TWL"/>
+                                            <loan-against-property
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./lap"
+                                                text="Loan Against Property"
+                                                value="LAP"/>
+                                            <credit-cards
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./cc"
+                                                text="Credit Cards"
+                                                value="CC"/>
+                                            <loan-against-securities
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./las"
+                                                text="Loan Against Securities"
+                                                value="LAS"/>
+                                            <consumer-durable-loan
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./cdl"
+                                                text="Consumer Durable Loan"
+                                                value="CDL"/>
+                                            <wealth-management
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./wm"
+                                                text="Wealth Management"
+                                                value="WM"/>
+                                            <insurance
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./in"
+                                                text="Insurance"
+                                                value="IN"/>
+                                            <microfinance
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./mi"
+                                                text="Micro Finance"
+                                                value="MI"/>
+                                            <loan-restructuring
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./lr"
+                                                text="Loan Restructuring"
+                                                value="LR"/>
+                                            <protection-health-solution
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./pr105"
+                                                text="Protection and Health Solution"
+                                                value="PR105"/>
+                                            <saving-investment-solution
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./SITR107"
+                                                text="Savings and Investments"
+                                                value="SITR107"/>
+                                            <car-insurance
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./MO101"
+                                                text="Car Insurance"
+                                                value="MO101"/>
+                                            <bike-insurance
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./TW101"
+                                                text="Bike Insurance"
+                                                value="TW101"/>
+                                            <medical-insurance
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./HE103"
+                                                text="Medical Insurance"
+                                                value="HE103"/>
+                                            <cardiac-insurance
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./HE105"
+                                                text="Cardiac Insurance"
+                                                value="HE105"/>
+                                            <cancer-insurance
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./HE104"
+                                                text="Cancer Insurance"
+                                                value="HE104"/>
+                                            <accident-assitance
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./AA101"
+                                                text="Accident Assistance"
+                                                value="AA101"/>
+                                            <health-care-insurance
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./HC101"
+                                                text="Health Care Insurance"
+                                                value="HC101"/>
+                                            <card-safety
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./CS101"
+                                                text="Card and Safety"
+                                                value="CS101"/>
+                                            <retirement-solution
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./RS101"
+                                                text="Retirement Solutions"
+                                                value="RS101"/>
+                                            <chlid-plans-solution
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./CP101"
+                                                text="Child Plans"
+                                                value="CP101"/>
+                                            <wellness-solution
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./WS101"
+                                                text="Wellness Solutions"
+                                                value="WS101"/>
+                                            <travel-insurance
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./TR102"
+                                                text="Travel Insurance"
+                                                value="TR102"/>
+                                            <home-insurance
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./HO104"
+                                                text="Home Insurance"
+                                                value="HO104"/>
+                                        </items>
+                                    </product-select>
+                                    <page-type-select
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        fieldLabel="Select Page Type"
+                                        name="./pageType">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <Product_x0020_Page
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Product Page"
+                                                value="Product Page"/>
+                                            <Other_x0020_Page
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Other Page"
+                                                value="Other Page"/>
+                                        </items>
+                                    </page-type-select>
+                                    <canonical-configuration
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Canonical Configuration"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        name="./enableAlternate"
+                                        text="Show Alternate"
+                                        value="{Boolean}true"/>
+                                    <Dtm-configuration
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Disable DTM"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        name="./diableDTM"
+                                        text="Disable DTM"
+                                        value="{Boolean}true"/>
+                                    <disable-smartsearch
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Disable SmartSearch"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        name="./diableSmartSearch"
+                                        text="Disable Smart Search"
+                                        value="{Boolean}true"/>
+                                </items>
+                            </column>
+                        </items>
+                    </product-items>
+                    <website-configuration
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Website configuration"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        name="./disabledTia"
+                        text="Disabled TIA"
+                        value="{Boolean}true"/>
+                    <seoconfig
+                        cq:showOnCreate="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="SEO Config"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <section
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Product Attributes"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <testproperty
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Test Property"
+                                                name="./testproperty"/>
+                                            <isenablecanonical
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                checked="{Boolean}true"
+                                                name="./isEnableCanonical"
+                                                text="Show Canonical"
+                                                value="{Boolean}true"/>
+                                            <canonicalpath
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Canonical Path"
+                                                name="./canonicalpath"/>
+                                            <excludepage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                checked="{Boolean}true"
+                                                name="./excludePage"
+                                                text="Exclude Page from Sitemap"
+                                                value="{Boolean}true"/>
+                                            <lastmodified
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Page Last Modified Date"
+                                                name="./lastmodified"/>
+                                            <priority
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Page Priority"
+                                                name="./priority"/>
+                                            <changefrequency
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Change Frequency"
+                                                name="./changefrequency"/>
+                                            <metasection
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Meta Tags"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <metatags
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="Html Meta Tags"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                        composite="{Boolean}true"
+                                                        eaem-show-on-collapse="EAEM.showProductName">
+                                                        <field
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                            eaem-nested="NODE_STORE"
+                                                            name="./metatags">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <column
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <metaname
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                            fieldLabel="Meta Tags Name"
+                                                                            name="./nameProperty"/>
+                                                                        <metacontent
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                            fieldLabel="Meta Tags Content"
+                                                                            name="./contentProperty"/>
+                                                                    </items>
+                                                                </column>
+                                                            </items>
+                                                        </field>
+                                                    </metatags>
+                                                </items>
+                                            </metasection>
+                                            <ogsection
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="OG Tags"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <ogtag
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                        composite="{Boolean}true"
+                                                        eaem-show-on-collapse="EAEM.showProductName"
+                                                        fieldLabel="HTML OG Tags">
+                                                        <field
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                            emptyText="Enter a Og Tags Content"
+                                                            name="./ogtags">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <column
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <ogname
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                            fieldLabel="OG Tags Name"
+                                                                            name="./nameProperty"/>
+                                                                        <ogcontent
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                            fieldLabel="OG Tags Content"
+                                                                            name="./contentProperty"/>
+                                                                    </items>
+                                                                </column>
+                                                            </items>
+                                                        </field>
+                                                    </ogtag>
+                                                </items>
+                                            </ogsection>
+                                            <checkbox
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                                name="./isTwitterTag"
+                                                text="Twitter Tags"/>
+                                            <twitternotselected
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Html Meta Tags"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                eaem-show-on-collapse="EAEM.showProductName">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                    eaem-nested="NODE_STORE"
+                                                    name="./twitterNotSelected">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <istitle
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Title"
+                                                                    name="./titles"/>
+                                                                <twitterdropdown
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                                    id="dropdown"
+                                                                    name="./selected">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <option1
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            image="/content/dam/bajajfinserv/icons/personal-loan.png"
+                                                                            text="twitter-title"
+                                                                            value="twitter:title"/>
+                                                                        <option2
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            image="/content/dam/bajajfinserv/icons/personal-loan.png"
+                                                                            text="twitter-site"
+                                                                            value="twitter:site"/>
+                                                                        <option3
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            image="/content/dam/bajajfinserv/icons/personal-loan.png"
+                                                                            text="twitter:description"
+                                                                            value="twitter:description"/>
+                                                                        <option4
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            image="/content/dam/bajajfinserv/icons/personal-loan.png"
+                                                                            text="twitter:image"
+                                                                            value="twitter:image"/>
+                                                                        <option5
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            image="/content/dam/bajajfinserv/icons/personal-loan.png"
+                                                                            text="twitter-carcreatord"
+                                                                            value="twitter-carcreatord"/>
+                                                                        <option6
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            image="/content/dam/bajajfinserv/icons/personal-loan.png"
+                                                                            text="twitter:"
+                                                                            value="twitter:"/>
+                                                                    </items>
+                                                                </twitterdropdown>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                            </twitternotselected>
+                                            <enablenoindexnofollow
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                name="./enableNoIndexNoFollow"
+                                                text="Enable NoIndex/NoFollow"
+                                                value="{Boolean}true"/>
+                                        </items>
+                                    </section>
+                                </items>
+                            </column>
+                        </items>
+                    </seoconfig>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

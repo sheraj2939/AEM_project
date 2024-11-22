@@ -1,0 +1,17 @@
+<div class="footer-top-box">
+    <div class="footer-container">
+        <ul>
+            <sly data-sly-list.loginLinks="${resource.listChildren}">
+                <sly data-sly-test="${loginLinks.name == 'footerTopData'}">
+                    <sly data-sly-list.footerTopList="${loginLinks.listChildren}">
+                        <li class="${footerTopList.mobClass ? 'mob-none' : ''}"><a
+                                href="${footerTopList.redirectionLink}"
+                                target="${footerTopList.openInNewTab ? '_blank' : ''}"
+                                data-footer="footerAnalyticsData-Top Links">${footerTopList.heading}</a>
+                        </li>
+                    </sly>
+                </sly>
+            </sly>
+        </ul>
+    </div>
+</div>

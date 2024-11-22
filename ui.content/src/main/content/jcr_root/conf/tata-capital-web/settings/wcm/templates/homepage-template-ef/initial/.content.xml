@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/tata-capital-web/settings/wcm/templates/homepage-template-ef"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="tata-capital-web/components/page">
+        <root
+            jcr:lastModified="{Date}2022-12-29T13:25:52.659+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="tata-capital-web/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:created="{Date}2022-12-29T13:30:21.630+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-12-29T13:36:54.425+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/container"/>
+        </root>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,478 @@
+<section class="loan-against-prop-box space-tb40">
+    <div class="container">
+        <div class="tops-heads">
+            <sly
+                data-sly-resource="${'form-upper-heading' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+            </sly>
+        </div>
+        <div class="loan-against-form-wrap">
+            <input type="text" id="" name="lname" class="hidden" data-loanOnCar="productName"
+                value="${properties.loanOnCar ? 'true' : 'false'}">
+            <div class="loan-against-header">
+                <h4>${properties.greenFeildHeading @ context = 'html'}</h4>
+                <div class="clear-btn">
+                    <a href="javascript:void(0)" class="link jsClearLoanDeatils">Clear <span
+                            class="icon-clear"></span></a>
+                </div>
+                <div class="loan-againstclose-btn d-none">
+                    <a href="javascript:void(0)" class="link jsCloseLaonAgainstMgs"> <span
+                            class="icon-close"></span></a>
+                </div>
+            </div>
+            <div class="loan-against-body">
+                <img src="${properties.cornerImage}" class="form-bottom-right-img">
+                <div class="loan-against-form " id="loan-against-property">
+                    <sly data-sly-list.inputList="${resource.children}">
+                        <sly data-sly-test="${inputList.name == 'inputFeild'}">
+                            <sly data-sly-list.inputChecks="${inputList.children}">
+                                <div class="loan-against-form-wrapper">
+                                    <h3 class="form-heading">${inputChecks.headingOne}</h3>
+                                    <div class="row-flex row-flex-30">
+                                        <sly data-sly-test="${inputChecks.fullName}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Full Name</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text"
+                                                            class="input-textbox jsValueOK only-alpha-input disable-emoji"
+                                                            placeholder="" data-type="name" data-form="customerName">
+                                                    </div>
+                                                    <span class="text-infos">Name (as per PAN Card)</span>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.mobileNumber}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Mobile Number</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text"
+                                                            class="input-textbox only-numeric-input jsValueOK disable-emoji"
+                                                            placeholder="" data-type="mobile" maxlength="10"
+                                                            data-form="mobile" pattern="[0-9]*" inputmode="numeric">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.altMobileNumber}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Alternate Contact Number</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text"
+                                                            class="input-textbox only-numeric-input jsValueOK disable-emoji"
+                                                            placeholder="" data-type="mobile" maxlength="10"
+                                                            data-form="altMobile">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.email}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Email ID</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" class="input-textbox jsValueOK disable-emoji"
+                                                            placeholder="" data-type="email" data-form="personalEmail">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.selectProduct}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Product</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-type="product"
+                                                                jsname="productName">
+                                                                <option value=""></option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+
+                                        <div class="row-col-33 col-sp30">
+                                            <div class="form-textbox-new active">
+                                                <label class="label-name">Pincode</label>
+                                                <div class="textbox-inner">
+                                                    <div class="custom-select2">
+                                                        <select class="js-select2 jsValueOK" data-form="pinCode" data-type="pinCode" data-select="email-campaign">
+                                                            <option value=""></option>    
+                                                            <option value="721663">721663</option>
+                                                                <option value="721663">721641</option>
+                                                                <option value="721663">721627</option>
+                                                                <option value="721663">721518</option>
+                                                                <option value="721663">721517</option>
+                                                                <option value="721663">721516</option>
+                                                            </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <sly data-sly-test="${inputChecks.selectForeclosureProduct}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Product</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK" data-type="forclosureProduct"
+                                                                jsname="forclosureProductName" data-form="forclosureProductName">
+                                                                <option value=""></option>
+                                                                <option value="Product">Product</option>
+                                                                <option value="HL">Home Loan</option>
+                                                                <option value="LAP">Home Equity</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.selectCity}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">${inputChecks.selectForeclosureCity ?'Property Location': 'City'}</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 city" data-type="city"
+                                                                data-form="city">
+                                                                <option value=""></option>
+                                                            </select>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.requiredAmount}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Required Loan Amount</label>
+                                                    <div class="textbox-inner">
+                                                        <span class="icon-rupee d-none"></span>
+                                                        <input type="text"
+                                                            class="input-textbox only-numeric-decimal-input price-with-comma-form jsValueOK disable-emoji"
+                                                            placeholder="" data-type="require-loan-amount" data-form="requiredLoanAmount" pattern="[0-9]*" inputmode="numeric">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.merid}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">MID (Merchant ID)</label>
+                                                    <div class="textbox-inner">
+                                                        <span class="icon-rupee d-none"></span>
+                                                        <input type="text"
+                                                            class="input-textbox jsValueOK disable-emoji"
+                                                            placeholder="" data-type="Merchant-ID" data-form="merchantID">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.angelId}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Angel Client ID</label>
+                                                    <div class="textbox-inner">
+                                                        <span class="icon-rupee d-none"></span>
+                                                        <input type="text"
+                                                            class="input-textbox jsValueOK disable-emoji"
+                                                            placeholder="" data-type="Merchant-ID" data-form="merchantID">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.selectFinancer}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Current Home Loan Financer</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK financer"
+                                                                data-type="financer" data-form="financer">
+                                                                <option value=""></option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.selectCompany}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new active">
+                                                    <label class="label-name">Company Name</label>
+                                                    <div class="textbox-inner">
+                                                        <div class="custom-select2">
+                                                            <select class="js-select2 jsValueOK company"
+                                                                data-type="company" data-form="company">
+                                                                <option value=""></option>
+                                                            </select>
+                                                        </div>
+                                                        <input type="text"
+                                                            class="input-textbox only-alpha-input disable-emoji d-none"
+                                                            placeholder="" data-type="other" data-form="other-company">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.homeLoanValue}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Current Home Loan O/S</label>
+                                                    <div class="textbox-inner">
+                                                        <span class="icon-rupee d-none"></span>
+                                                        <input type="text"
+                                                            class="input-textbox only-numeric-decimal-input price-with-comma-form jsValueOK disable-emoji"
+                                                            placeholder="" data-type="homeLoanValue" data-form="homeLoanValue">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.propertyAddress}">
+                                                <div class="row-col-66 col-sp30">
+                                                    <label class="label-name custom-text-area-label">Complete Property Address</label>
+                                                    <div class="form-textbox-new textarea-error custom-text-area">
+                                                        <div class="textbox-inner">
+                                                            <textarea class="input-textbox form-textarea jsValueOK disable-emoji" maxlength="2000"
+                                                                data-type="property-address" style="height: 107px;"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.panDetails}">
+                                            <div class="row-col-33 col-sp30">
+                                                <div class="form-textbox-new">
+                                                    <label class="label-name">Pan Card No.</label>
+                                                    <div class="textbox-inner">
+                                                        <input type="text" class="input-textbox jsValueOK only-alpha-numeric-input disable-emoji"
+                                                            placeholder="" data-type="pan" maxlength="10" data-form="panNumber">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                    <sly data-sly-test="${inputChecks.termCheckBox}">
+                                        <div class="row-col-100 col-sp30">
+                                            <div class="relative">
+                                                <label class="custom-checkbox-label la-agree-btn regular pb-20">
+                                                    <span class="custom-checkbox-new">
+                                                        <input type="checkbox" id="iAgreeTerms" data-type="iAgree"
+                                                            checked="">
+                                                        <span class="checkbox-check"></span>
+                                                    </span>
+                                                    I agree to the Terms &amp; Conditions as specified<a
+                                                        href="${properties.tncPdf}"> here.</a>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </sly>
+                                    <sly data-sly-test="${properties.formDescription}">
+                                        <div class="row-col-100 col-sp30">
+                                            <div class="relative">
+                                                <label class="custom-checkbox-label la-agree-btn regular pb-20 ${properties.pdrZero ? 'form-pdr': ''}">
+                                                    <span class="custom-checkbox-new">
+                                                        <input type="checkbox" id="iAgreeTerms" data-type="iAgree"
+                                                            checked="">
+                                                        <span class="checkbox-check"></span>
+                                                    </span>
+                                                    ${properties.formDescription @ context = 'html'}
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </sly>
+                                    </div>
+                                </div>
+
+                <sly data-sly-test="${inputChecks.campaignType=='emailCampaign'}">
+                    <div class="btn-controls">
+                        <button class="btn-blue btn-large jsApplyLoanAgainstProp btn-disabled"
+                            data-track="${properties.needFormTracking ? 'tracking' : '' }">Apply</button>
+                    </div>
+                </sly>
+                <sly data-sly-test="${inputChecks.campaignType=='sugamCampaign'}">
+                    <div class="btn-controls">
+                        <button class="btn-blue btn-large jsSugamCampaignSubmit btn-disabled"
+                            data-track="${properties.needFormTracking ? 'tracking' : '' }">Submit</button>
+                    </div>
+                </sly>
+                <sly data-sly-test="${inputChecks.campaignType=='foreclosureCampaign'}">
+                    <div class="btn-controls">
+                        <button class="btn-blue btn-large jsForeClosureReferBtn btn-disabled"
+                            data-track="${properties.needFormTracking ? 'tracking' : '' }">REFER NOW</button>
+                    </div>
+                </sly>
+                <sly data-sly-test="${inputChecks.campaignType=='fiservBl'}">
+                    <div class="btn-controls">
+                        <button class="btn-blue btn-large jsFiservBusinessBtn btn-disabled"
+                            data-track="${properties.needFormTracking ? 'tracking' : '' }">Submit</button>
+                    </div>
+                </sly>
+            </sly>
+        </sly>
+    </sly>
+                </div>
+                <div class="loan-against-otp-wrap d-none" id="loan-against-otp">
+                    <h3 class="form-heading">Apply Now</h3>
+                    <div class="row-flex row-flex-30">
+                        <div class="row-col-33 col-sp30">
+                            <div class="otp-name-pt">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Mobile number</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" class="input-textbox only-numeric-input" placeholder=""
+                                            data-type="otp-send-number" maxlength="10">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="loan-against-sucess-msg jsMsgLoanAgainst jsSuccessOTPVarification d-none">
+                    <a href="javascript:void(0)" class="msg-closed jsCloseLaonAgainstMgs"><span
+                            class="icon-close"></span></a>
+
+                    <!-- 14-2-2023 -->
+                    <div class="success-inner">
+                        <img src="/content/dam/tata-capital-web/assets/img/lead-form/ticks.svg" alt=""
+                            class="ticks-img">
+                        <h2>THANK YOU ! <span id="leadIdText"></span></h2>
+                        <p class="heading20 application-id">Your application ID is <span id="leadId"></span></p>
+                        <p class="text16i">By submitting the application details given below, I agree and accept the
+                            Terms and Conditions as specified <a href="https://www.tatacapital.com/disclaimer.html">here</a></p>
+                    </div>
+                    <!-- 14-2-2023 -->
+                </div>
+                <div class="loan-against-sucess-msg jsMsgLoanAgainst jsSuccessForeClosure d-none">
+                    <a href="javascript:void(0)" class="msg-closed jsCloseLaonAgainstMgs"><span
+                            class="icon-close"></span></a>
+
+                    <!-- 14-2-2023 -->
+                    <div class="success-inner">
+                        <img src="/content/dam/tata-capital-web/assets/img/lead-form/ticks.svg" alt=""
+                            class="ticks-img">
+                        <h2>THANK YOU FOR SHARING THE LEAD DETAILS</h2>
+                        <p class="heading20 application-id">Your Lead ID Is <span id="leadId"></span></p>
+                        
+                    </div>
+                    <!-- 14-2-2023 -->
+                </div>
+                <div class="loan-against-sucess-msg jsMsgLoanAgainst jsSuccessFiserv d-none">
+                    <a href="javascript:void(0)" class="msg-closed jsCloseLaonAgainstMgs"><span
+                            class="icon-close"></span></a>
+
+                    <!-- 14-2-2023 -->
+                    <div class="success-inner">
+                        <img src="/content/dam/tata-capital-web/assets/img/lead-form/ticks.svg" alt=""
+                            class="ticks-img">
+                        <h2>Thank you!</h2>
+                        <p class="heading20 application-id">Your Application ID is <span id="leadId2"></span></p>
+                        <p class="text16i">By submitting the application details given below, I agree and accept the
+                            Terms and Conditions as specified <a href="https://www.tatacapital.com/disclaimer.html">here.</a></p>
+                        
+                    </div>
+                    <!-- 14-2-2023 -->
+                </div>
+                <div class="loan-against-sucess-msg jsMsgLoanAgainst jsSuccessSugam d-none">
+                    <a href="javascript:void(0)" class="msg-closed jsCloseLaonAgainstMgs"><span
+                            class="icon-close"></span></a>
+
+                    <!-- 14-2-2023 -->
+                    <div class="success-inner">
+                        <img src="/content/dam/tata-capital-web/assets/img/lead-form/ticks.svg" alt=""
+                            class="ticks-img">
+                        <h2>Thank you for sharing your details. Our Home Loan representative will contact you shortly.</h2>
+                    </div>
+                    <!-- 14-2-2023 -->
+                </div>
+                <div class="loan-against-sucess-msg jsMsgLoanAgainst jsFailLeaApi d-none">
+                    <a href="javascript:void(0)" class="msg-closed jsCloseLaonAgainstMgs"><span
+                            class="icon-close"></span></a>
+                    <div class="success-inner">
+                        <img src="/content/dam/tata-capital-web/assets/img/lead-form/unsuccesful.svg" alt=""
+                            class="ticks-img">
+                        <h2>Thank you for sharing your details. Unfortunately, we cannot process your
+                            loan application.</h2>
+                        <p>To know more, please call us on 1860 267 6060 or write to
+                            contactus@tatacapital.com.<br><span id="leadIdTextFailure"></span></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    </div>
+    </div>
+    </div>
+</section>
+
+<!--home loan modal -->
+<div class="popover-modal modals-blue fade" id="thankyou-modal-shares">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md5">
+        <div class="modal-tb-content">
+            <!-- 10-2-2023 -->
+            <div class="modal-yellow-blue">
+                <button data-dismiss="popover-modal" class="popover-modal-close">
+                    <i class="icon-close"></i>
+                </button>
+                <div class="popover-top-heads">
+                    <img src="/content/dam/tata-capital-web/assets/img/tata-logo-blue.svg" alt="" class="images-logo">
+                </div>
+                <div class="popover-modal-content">
+                    <div class="popover-modal-body">
+                        <div class="apply-thanks-popup">
+                            <img src="/content/dam/tata-capital-web/assets/img/mutual-fund-icon.svg" alt=""
+                                class="infoes-imgs">
+                            <p class="heading20 semibold apply-texts">To apply for a Loan Against Shares</p>
+                            <div class="apply-btns">
+                                <a href="https://www.las.tatacapital.com/online/loans/las/apply-now-las-loan#!"
+                                    class="btn-link btn-big min-w149 las-investment" target="_blank">Click Here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 10-2-2023 -->
+        </div>
+    </div>
+</div>
+<!--home loan modal -->
+
+<!--home loan modal -->
+<div class="popover-modal modals-blue fade" id="thankyou-modal-mutualFunds">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md5">
+        <div class="modal-tb-content">
+            <!-- 10-2-2023 -->
+            <div class="modal-yellow-blue">
+                <button data-dismiss="popover-modal" class="popover-modal-close">
+                    <i class="icon-close"></i>
+                </button>
+                <div class="popover-top-heads">
+                    <img src="/content/dam/tata-capital-web/assets/img/tata-logo-blue.svg" alt="" class="images-logo">
+                </div>
+                <div class="popover-modal-content">
+                    <div class="popover-modal-body">
+                        <div class="apply-thanks-popup">
+                            <img src="/content/dam/tata-capital-web/assets/img/mutual-fund-icon.svg" alt=""
+                                class="infoes-imgs">
+                            <p class="heading20 semibold apply-texts">To apply for a Loan Against Mutual Funds</p>
+                            <div class="apply-btns">
+                                <a href="https://www.las.tatacapital.com/online/loans/las/apply-now-las-loan#!"
+                                    class="btn-link btn-big min-w149 las-investment" target="_blank">Click Here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 10-2-2023 -->
+        </div>
+    </div>
+</div>
+<!--home loan modal -->

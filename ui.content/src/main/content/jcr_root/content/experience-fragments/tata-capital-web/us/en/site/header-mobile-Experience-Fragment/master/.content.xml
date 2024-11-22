@@ -1,0 +1,1172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-12-09T15:06:50.073+05:30"
+        cq:lastModifiedBy="nikita"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/tata-capital-web/settings/wcm/templates/tatacapital-web-footer-template"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Footer Experience Fragment"
+        sling:resourceType="tata-capital-web/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="tata-capital-web/components/container"
+            layout="responsiveGrid">
+            <mobile_header
+                jcr:created="{Date}2022-11-30T12:33:27.888+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-12-01T13:36:07.795+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/Tc-Revamp/Tc-header/mobile-header"
+                insuranceapplyNowloanInfoDetailButton="Apply Now"
+                insurancecalculator="true"
+                insurancecalculatorTitle="Calculator"
+                insuranceknowMoreButtonloanInfoDetailOpeninNewTab="true"
+                insuranceknowMoreLoanInfoDetailButton="Know More"
+                insuranceloanForYourNeedCOmpoent="true"
+                insuranceloanForYourNeedTitle="Bestselling insurance solutions"
+                insuranceloanInfoDetailTitle="Insurance"
+                insuranceneedKnowBox="true"
+                insuranceneedLoanInfoDetailCOmpoent="true"
+                insuranceTitle="Insurance"
+                loanforBusinessTitle="Loans for Business"
+                loanforInvestmentTitle="Investment"
+                loanforYouTitle="Loan For You"
+                quickLinksTitle="Apply"
+                redirectionCallLink="[,]"
+                redirectionContactUsLink="[,]"
+                textIsRich="[true,true,true,true,true,true]"
+                topLinkBlogSelect="icon-phone-fill"
+                topLinkContactUsSelect="[icon-phone-fill,icon-phone-fill]"
+                topLinksCallSelect="icon-phone-fill">
+                <tabMenuLoanForYousection jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        applyNowloanInfoDetailButton="Apply Now"
+                        calculator="true"
+                        calculatorTitle="Calculator"
+                        knowMoreLoanInfoDetailButton="Know More"
+                        loanForYourNeedCOmpoent="true"
+                        loanForYourNeedTitle="Personal loans for all your needs"
+                        loanInfoDetailDescription="&lt;h3>Personal loans&lt;/h3>&#xd;&#xa;"
+                        needKnowBox="true"
+                        needKnowBoxTitle="                 "
+                        needLoanInfoDetailCOmpoent="true"
+                        tabMenuItemTitle="Personal Loan">
+                        <needKnowBoxLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="How to Apply "/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="How to Apply "/>
+                        </needKnowBoxLinks>
+                        <loanList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Instant Personal Loan"/>
+                        </loanList>
+                        <loanListCalc jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="Instant Personal Loan"/>
+                        </loanListCalc>
+                    </item0>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        applyNowloanInfoDetailButton="Apply Now"
+                        calculator="true"
+                        calculatorTitle="Calculators"
+                        knowMoreLoanInfoDetailButton="Know More "
+                        loanForYourNeedCOmpoent="true"
+                        loanForYourNeedTitle="Home loans for all your needs"
+                        loanInfoDetailDescription="&lt;h3>Home Loan&lt;/h3>&#xd;&#xa;"
+                        needKnowBox="true"
+                        needLoanInfoDetailCOmpoent="true"
+                        tabMenuItemTitle="Home Loan">
+                        <needKnowBoxLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="How to Apply"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="How to Apply"/>
+                        </needKnowBoxLinks>
+                        <loanList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Home Extension Loan"/>
+                        </loanList>
+                        <loanListCalc jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="EMI Calculator"/>
+                        </loanListCalc>
+                    </item1>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        needAccordian="true"
+                        tabMenuItemTitle="Vehicle Loan">
+                        <innertabMenuLoanForYousection jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                applyNowloanInfoDetailButton="Apply Now"
+                                calculator="true"
+                                calculatorTitle="Calculator"
+                                innertabMenuItemTitle="Used Car LOan"
+                                knowMoreLoanInfoDetailButton="Know More"
+                                loanForYourNeedCOmpoent="true"
+                                loanForYourNeedTitle="Used Car Loan for you"
+                                loanInfoDetailTitle="User Car Loan"
+                                needKnowBox="true"
+                                needKnowBoxTitle="How to Apply"
+                                needLoanInfoDetailCOmpoent="true"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                innertabMenuItemTitle="Two wheeler Loan"/>
+                        </innertabMenuLoanForYousection>
+                    </item2>
+                </tabMenuLoanForYousection>
+                <insuranceneedKnowBoxLinks jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        insuranceredirectionLink="#"
+                        insurancesubMenuHead="Apply Now"/>
+                </insuranceneedKnowBoxLinks>
+                <insuranceloanList jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        insuranceloanListHeading="Motor Insurance"
+                        insuranceredirectionLink="#"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        insuranceloanListHeading="Life Insurance"
+                        insuranceredirectionLink="#"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        insuranceloanListHeading="Health Insurance"
+                        insuranceredirectionLink="#"/>
+                </insuranceloanList>
+                <tabMenuQuciLinksection jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        tabMenuItemTitle="Quick Links for loans">
+                        <quickLinkItem jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Loan Restructuring"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Consumer Durable Loan"
+                                redirectionLink="#"/>
+                        </quickLinkItem>
+                    </item0>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        tabMenuItemTitle="Quick Links for insurance">
+                        <quickLinkItem jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Car Insurance"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Domestic pets"
+                                redirectionLink="#"/>
+                        </quickLinkItem>
+                    </item1>
+                </tabMenuQuciLinksection>
+            </mobile_header>
+            <mobile_header_copy
+                jcr:created="{Date}2022-12-06T16:08:45.618+05:30"
+                jcr:createdBy="nikita"
+                jcr:lastModified="{Date}2022-12-09T15:06:49.992+05:30"
+                jcr:lastModifiedBy="nikita"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/tcl-web-components/header/mobile-header"
+                insuranceapplyNowloanInfoDetailButton="Apply Now"
+                insuranceknowMoreLoanInfoDetailButton="Know More"
+                insuranceloanForYourNeedCOmpoent="true"
+                insuranceloanForYourNeedTitle="Bestselling insurance solutions"
+                insuranceloanInfoDetailTitle="Insurance"
+                insuranceneedLoanInfoDetailCOmpoent="true"
+                insuranceredirectionLinkApplyNow="#"
+                insuranceredirectionLinkKnowMore="#"
+                insuranceTitle="Insurance"
+                loanforBusinessTitle="Loans for Business"
+                loanforInvestmentTitle="Investment"
+                loanforYouTitle="Loan For You"
+                quickLinksTitle="Apply"
+                textIsRich="[true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true]">
+                <tabMenuLoanForYousection jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        applyNowloanInfoDetailButton="Apply Now"
+                        calculator="true"
+                        calculatorTitle="Calculators"
+                        knowMoreLoanInfoDetailButton="Know More"
+                        loanForYourNeedCOmpoent="true"
+                        loanForYourNeedTitle="Personal loans for all your needs"
+                        loanInfoDetailDescription="&lt;h3>Personal loans&lt;/h3>&#xd;&#xa;"
+                        needKnowBox="true"
+                        needLoanInfoDetailCOmpoent="true"
+                        redirectionLinkApplyNow="#"
+                        redirectionLinkKnowMore="#"
+                        tabMenuItemTitle="Personal Loan">
+                        <needKnowBoxLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="How to Apply"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="Rates &amp; Charges"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="Documents Required"/>
+                        </needKnowBoxLinks>
+                        <loanList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Personal loans for all your needs"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Overdraft Loan"
+                                redirectionLink="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Personal Loan for Education"
+                                redirectionLink="#"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Personal Loan for Travel"
+                                redirectionLink="#"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Personal Loan for Medical"
+                                redirectionLink="#"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Personal Loan for Marriage"
+                                redirectionLink="#"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Personal Loan for Home Renovation"
+                                redirectionLink="#"/>
+                        </loanList>
+                        <loanListCalc jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="EMI Calculator"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="Pre-payment Calculator"
+                                redirectionLink="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="Eligibility Calculator"
+                                redirectionLink="#"/>
+                        </loanListCalc>
+                    </item0>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        applyNowloanInfoDetailButton="Apply Now"
+                        calculator="true"
+                        calculatorTitle="Calculators"
+                        knowMoreLoanInfoDetailButton="Know More"
+                        loanForYourNeedCOmpoent="true"
+                        loanForYourNeedTitle="Home loans for all your needs"
+                        loanInfoDetailDescription="&lt;h3>Home Loan&lt;/h3>&#xd;&#xa;"
+                        needKnowBox="true"
+                        needLoanInfoDetailCOmpoent="true"
+                        redirectionLinkApplyNow="#"
+                        redirectionLinkKnowMore="#"
+                        tabMenuItemTitle="Home Loan">
+                        <needKnowBoxLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead=" How to Apply"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="Rates &amp; Charges"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="Documents Required"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="Home Loan Online"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="RERA"/>
+                        </needKnowBoxLinks>
+                        <loanList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Home Extension Loan"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Affordable Housing Loan"
+                                redirectionLink="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="PMAY"
+                                redirectionLink="#"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Overdraft Loan"
+                                redirectionLink="#"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Quick Cash"
+                                redirectionLink="#"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Plot &amp; Construction Loan"
+                                redirectionLink="#"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Special Purpose Loan"
+                                redirectionLink="#"/>
+                            <item7
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Balance Transfer"
+                                redirectionLink="#"/>
+                            <item8
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Home Loan Top Up"
+                                redirectionLink="#"/>
+                        </loanList>
+                        <loanListCalc jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="EMI Calculator"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="PMAY Calculator"
+                                redirectionLink="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="Balance Transfer &amp; Top-up Calculator"
+                                redirectionLink="#"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="Eligibility Calculator"
+                                redirectionLink="#"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="Area Conversion Calculator"
+                                redirectionLink="#"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="Stamp Duty Calculator"
+                                redirectionLink="#"/>
+                        </loanListCalc>
+                    </item1>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        needAccordian="true"
+                        tabMenuItemTitle="Vehicle Loan">
+                        <innertabMenuLoanForYousection jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                applyNowloanInfoDetailButton="Apply Now"
+                                calculator="true"
+                                calculatorTitle="Calculator"
+                                innertabMenuItemTitle="Used Car Loan"
+                                knowMoreLoanInfoDetailButton="Know More"
+                                loanForYourNeedCOmpoent="true"
+                                loanForYourNeedTitle="Explore Used car loans"
+                                loanInfoDetailDescription="&lt;h3>Used Car Loan&lt;/h3>&#xd;&#xa;"
+                                needKnowBox="true"
+                                needLoanInfoDetailCOmpoent="true"
+                                redirectionLinkApplyNow="#"
+                                redirectionLinkKnowMore="#">
+                                <needKnowBoxLinks jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        redirectionLink="#"
+                                        subMenuHead="How to Apply"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        redirectionLink="#"
+                                        subMenuHead="Rates &amp; Charges"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        redirectionLink="#"
+                                        subMenuHead="Documents Required"/>
+                                </needKnowBoxLinks>
+                                <loanList jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        loanListHeading="Overdraft Loan"
+                                        redirectionLink="#"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        loanListHeading="Loan Against Car"
+                                        redirectionLink="#"/>
+                                </loanList>
+                                <loanListCalc jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        loanListCalcTitle="EMI Calculator"
+                                        redirectionLink="#"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        loanListCalcTitle="Vehicle Value Check"
+                                        redirectionLink="#"/>
+                                </loanListCalc>
+                            </item0>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                applyNowloanInfoDetailButton="Apply Now"
+                                calculator="true"
+                                calculatorTitle="Calculators"
+                                innertabMenuItemTitle="Two wheeler Loan"
+                                knowMoreLoanInfoDetailButton="Know More"
+                                loanInfoDetailDescription="&lt;h3>Two Wheeler Loan&lt;/h3>&#xd;&#xa;"
+                                needKnowBox="true"
+                                needLoanInfoDetailCOmpoent="true"
+                                redirectionLinkApplyNow="#"
+                                redirectionLinkKnowMore="#">
+                                <needKnowBoxLinks jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        redirectionLink="#"
+                                        subMenuHead="How to Apply"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        redirectionLink="#"
+                                        subMenuHead="Rates &amp; Charges"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        redirectionLink="#"
+                                        subMenuHead="Documents Required"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        redirectionLink="#"
+                                        subMenuHead="Home Loan Online"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        redirectionLink="#"
+                                        subMenuHead="RERA"/>
+                                </needKnowBoxLinks>
+                                <loanListCalc jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        loanListCalcTitle="EMI Calculator"
+                                        redirectionLink="#"/>
+                                </loanListCalc>
+                            </item1>
+                        </innertabMenuLoanForYousection>
+                    </item2>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        applyNowloanInfoDetailButton="Apply Now"
+                        calculator="true"
+                        calculatorTitle="Calculators"
+                        knowMoreLoanInfoDetailButton="Know More"
+                        loanForYourNeedCOmpoent="true"
+                        loanForYourNeedTitle="Business loans for all your needs"
+                        loanInfoDetailDescription="&lt;h3>Business Loan&lt;/h3>&#xd;&#xa;"
+                        needKnowBox="true"
+                        needLoanInfoDetailCOmpoent="true"
+                        redirectionLinkApplyNow="#"
+                        redirectionLinkKnowMore="#"
+                        tabMenuItemTitle="Business Loan">
+                        <needKnowBoxLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="How to Apply"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="Rates &amp; Charges"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="Documents Required"/>
+                        </needKnowBoxLinks>
+                        <loanList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Overdraft Loan"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Machinery Loan"
+                                redirectionLink="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="MSME Loan"
+                                redirectionLink="#"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Small Business Loan"
+                                redirectionLink="#"/>
+                        </loanList>
+                        <loanListCalc jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="EMI Calculator"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="Pre-payment Calculator"
+                                redirectionLink="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="GST Calculator"
+                                redirectionLink="#"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="Foreclosure Calculator"
+                                redirectionLink="#"/>
+                        </loanListCalc>
+                    </item3>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        applyNowloanInfoDetailButton="Apply Now"
+                        calculator="true"
+                        calculatorTitle=" Calculators"
+                        knowMoreLoanInfoDetailButton="Know More"
+                        loanForYourNeedCOmpoent="true"
+                        loanForYourNeedTitle="Explore Loan Against Securities"
+                        loanInfoDetailDescription="&lt;h3>Loan Against Securities&lt;/h3>&#xd;&#xa;"
+                        needKnowBox="true"
+                        needLoanInfoDetailCOmpoent="true"
+                        redirectionLinkApplyNow="#"
+                        redirectionLinkKnowMore="#"
+                        tabMenuItemTitle="Loan Against Securities">
+                        <needKnowBoxLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="How to Apply"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="Rate &amp; Charges"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="Documents Required"/>
+                        </needKnowBoxLinks>
+                        <loanList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Loan Against Shares"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Loan Against Mutual Funds"
+                                redirectionLink="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="LAS Digital Journey"
+                                redirectionLink="#"/>
+                        </loanList>
+                        <loanListCalc jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle=" EMI Calculator"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="LAS Calculator"
+                                redirectionLink="#"/>
+                        </loanListCalc>
+                    </item4>
+                    <item5
+                        jcr:primaryType="nt:unstructured"
+                        applyNowloanInfoDetailButton="Apply Now"
+                        calculator="true"
+                        calculatorTitle="Calculators"
+                        knowMoreLoanInfoDetailButton="Know More"
+                        loanForYourNeedCOmpoent="true"
+                        loanForYourNeedTitle="Loans for all your needs"
+                        loanInfoDetailDescription="&lt;h3>Loan Against Property&lt;/h3>&#xd;&#xa;"
+                        needKnowBox="true"
+                        needLoanInfoDetailCOmpoent="true"
+                        redirectionLinkApplyNow="#"
+                        redirectionLinkKnowMore="#"
+                        tabMenuItemTitle="Loan Against Property">
+                        <needKnowBoxLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="How to Apply"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="Rates &amp; Charges"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="Documents Required"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="EMI Options"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="FAQs"/>
+                        </needKnowBoxLinks>
+                        <loanList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Overdraft Loan"
+                                redirectionLink="#"/>
+                        </loanList>
+                        <loanListCalc jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="EMI Calculator"
+                                redirectionLink="#"/>
+                        </loanListCalc>
+                    </item5>
+                    <item6
+                        jcr:primaryType="nt:unstructured"
+                        applyNowloanInfoDetailButton="Apply Now"
+                        calculator="true"
+                        calculatorTitle="Calculators"
+                        knowMoreLoanInfoDetailButton="Know More"
+                        loanForYourNeedCOmpoent="true"
+                        loanForYourNeedTitle="Loans for all your needs"
+                        loanInfoDetailDescription="&lt;h3>Consumer Durable Loan&lt;/h3>&#xd;&#xa;"
+                        needKnowBox="true"
+                        needKnowBoxTitle="Loans for all your needs"
+                        needLoanInfoDetailCOmpoent="true"
+                        redirectionLinkApplyNow="#"
+                        redirectionLinkKnowMore="#"
+                        tabMenuItemTitle="Consumer Durable Loan">
+                        <needKnowBoxLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="How to Apply"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="Rates &amp; Charges"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="Documents Required"/>
+                        </needKnowBoxLinks>
+                        <loanList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="A/C on EMI"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Refrigerator on EMI"
+                                redirectionLink="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Washing Machine on EMI"
+                                redirectionLink="#"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Mobile on EMI"
+                                redirectionLink="#"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Camera on EMI"
+                                redirectionLink="#"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Laptop on EMI"
+                                redirectionLink="#"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Electronics on EMI"
+                                redirectionLink="#"/>
+                            <item7
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Home Appliances on EMI"
+                                redirectionLink="#"/>
+                            <item8
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Television on EMI"
+                                redirectionLink="#"/>
+                        </loanList>
+                        <loanListCalc jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="EMI Calculator"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="LAS Calculator"
+                                redirectionLink="#"/>
+                        </loanListCalc>
+                    </item6>
+                    <item7
+                        jcr:primaryType="nt:unstructured"
+                        needPopupforMobile="true"
+                        tabMenuItemTitle="Credit Cards"/>
+                    <item8
+                        jcr:primaryType="nt:unstructured"
+                        applyNowloanInfoDetailButton="Apply Now"
+                        calculator="true"
+                        calculatorTitle=" Calculators"
+                        knowMoreLoanInfoDetailButton="Know More"
+                        loanInfoDetailDescription="&lt;h3>Loan Restructuring&lt;/h3>&#xd;&#xa;"
+                        needKnowBox="true"
+                        needLoanInfoDetailCOmpoent="true"
+                        redirectionLinkApplyNow="#"
+                        redirectionLinkKnowMore="#"
+                        tabMenuItemTitle="Loan Restructuring">
+                        <needKnowBoxLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="Who We Are"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="Terms &amp; Conditions"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="Contact Us"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="Download Forms"/>
+                        </needKnowBoxLinks>
+                        <loanListCalc jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="EMI Calculator"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="Eligibility Calculator"
+                                redirectionLink="#"/>
+                        </loanListCalc>
+                    </item8>
+                    <item9
+                        jcr:primaryType="nt:unstructured"
+                        applyNowloanInfoDetailButton="Apply Now"
+                        calculator="true"
+                        calculatorTitle="Calculators"
+                        knowMoreLoanInfoDetailButton="Know More"
+                        loanForYourNeedCOmpoent="true"
+                        loanForYourNeedTitle="Explore products"
+                        loanInfoDetailDescription="&lt;h3>Microfinance&lt;/h3>&#xd;&#xa;"
+                        needKnowBox="true"
+                        needLoanInfoDetailCOmpoent="true"
+                        redirectionLinkApplyNow="#"
+                        redirectionLinkKnowMore="#"
+                        tabMenuItemTitle="Microfinance">
+                        <needKnowBoxLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="How to Apply"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="Rates &amp; Charges"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="Documents Required"/>
+                        </needKnowBoxLinks>
+                        <loanList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Joint Liability Group Loans"
+                                redirectionLink="#"/>
+                        </loanList>
+                        <loanListCalc jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="EMI Calculator"
+                                redirectionLink="#"/>
+                        </loanListCalc>
+                    </item9>
+                </tabMenuLoanForYousection>
+                <tabMenuLoanForBusinesssection jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        applyNowloanInfoDetailButton="Apply Now"
+                        knowMoreLoanInfoDetailButton="Know More"
+                        loanForYourNeedCOmpoent="true"
+                        loanForYourNeedTitle="Most Popular products"
+                        loanInfoDetailDescription="&lt;h3>Working Capital Loans&lt;/h3>&#xd;&#xa;"
+                        needLoanInfoDetailCOmpoent="true"
+                        redirectionLinkApplyNow="#"
+                        redirectionLinkKnowMore="#"
+                        tabMenuItemTitle="Working Capital Loans">
+                        <loanList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Channel Financing"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Invoice Discounting"
+                                redirectionLink="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Purchase Order Funding"
+                                redirectionLink="#"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Working Capital Demand Loan"
+                                redirectionLink="#"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="GST Loan"
+                                redirectionLink="#"/>
+                        </loanList>
+                    </item0>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        applyNowloanInfoDetailButton="Apply Now"
+                        knowMoreLoanInfoDetailButton="Know More"
+                        loanForYourNeedCOmpoent="true"
+                        loanForYourNeedTitle="Most Popular products"
+                        loanInfoDetailDescription="&lt;h3>Structured Products&lt;/h3>&#xd;&#xa;"
+                        needLoanInfoDetailCOmpoent="true"
+                        redirectionLinkApplyNow="#"
+                        redirectionLinkKnowMore="#"
+                        tabMenuItemTitle="Structured Products">
+                        <loanList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Loan Against Securities"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Structured Investment"
+                                redirectionLink="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Debt Syndication"
+                                redirectionLink="#"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Letter of Credit"
+                                redirectionLink="#"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Lease Rental Discounting"
+                                redirectionLink="#"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Loan Against Property"
+                                redirectionLink="#"/>
+                        </loanList>
+                    </item1>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        loanForYourNeedTitle="Most Popular products"
+                        loanInfoDetailDescription="&lt;h3>Term Loans&lt;/h3>&#xd;&#xa;"
+                        needLoanInfoDetailCOmpoent="true"
+                        tabMenuItemTitle="Term Loans">
+                        <needKnowBoxLinks jcr:primaryType="nt:unstructured">
+                            <item0 jcr:primaryType="nt:unstructured"/>
+                        </needKnowBoxLinks>
+                        <loanList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Eligibility Calculator"/>
+                        </loanList>
+                    </item2>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        applyNowloanInfoDetailButton="Apply Now"
+                        knowMoreLoanInfoDetailButton="Know More"
+                        loanForYourNeedCOmpoent="true"
+                        loanForYourNeedTitle="Most Popular products"
+                        loanInfoDetailDescription="&lt;h3>Equipment Financing &amp;amp; Leasing&lt;/h3>&#xd;&#xa;"
+                        needLoanInfoDetailCOmpoent="true"
+                        redirectionLinkApplyNow="#"
+                        redirectionLinkKnowMore="#"
+                        tabMenuItemTitle="Equipment Financing &amp; Leasing">
+                        <loanList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Eligibility Calculator"
+                                redirectionLink="#"/>
+                        </loanList>
+                    </item3>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        applyNowloanInfoDetailButton="Apply Now"
+                        knowMoreLoanInfoDetailButton="Know More "
+                        loanForYourNeedCOmpoent="true"
+                        loanForYourNeedTitle="Most Popular products"
+                        loanInfoDetailDescription="&lt;h3>Construction Financing&lt;/h3>&#xd;&#xa;"
+                        needLoanInfoDetailCOmpoent="true"
+                        redirectionLinkApplyNow="#"
+                        redirectionLinkKnowMore="#"
+                        tabMenuItemTitle="Construction Financing ">
+                        <loanList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Construction Finance"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Construction Equipment Finance"
+                                redirectionLink="#"/>
+                        </loanList>
+                    </item4>
+                </tabMenuLoanForBusinesssection>
+                <tabMenuInvestmentsection jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        applyNowloanInfoDetailButton="Apply Now"
+                        knowMoreLoanInfoDetailButton="Know More"
+                        loanInfoDetailDescription="&lt;h3>Wealth Services by Tata Capital&lt;/h3>&#xd;&#xa;"
+                        needKnowBox="true"
+                        needLoanInfoDetailCOmpoent="true"
+                        redirectionLinkApplyNow="#"
+                        redirectionLinkKnowMore="#"
+                        tabMenuItemTitle="Wealth Services by Tata Capital">
+                        <needKnowBoxLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="Reports"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="Download forms"/>
+                        </needKnowBoxLinks>
+                        <loanList jcr:primaryType="nt:unstructured">
+                            <item0 jcr:primaryType="nt:unstructured"/>
+                        </loanList>
+                    </item0>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        applyNowloanInfoDetailButton="Download App "
+                        calculator="true"
+                        calculatorTitle="Calculator"
+                        knowMoreLoanInfoDetailButton="Visit Website"
+                        loanInfoDetailTitle="Moneyfy"
+                        needLoanInfoDetailCOmpoent="true"
+                        redirectionLinkApplyNow="#"
+                        redirectionLinkKnowMore="#"
+                        tabMenuItemTitle="Moneyfy">
+                        <needKnowBoxLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Blogs"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Videos"/>
+                        </needKnowBoxLinks>
+                        <loanListCalc jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="EMI Calculator"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="FD Calculator"
+                                redirectionLink="#"/>
+                        </loanListCalc>
+                    </item1>
+                </tabMenuInvestmentsection>
+                <insuranceloanList jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        insuranceloanListHeading="Motor Insurance"
+                        insuranceredirectionLink="#"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        insuranceloanListHeading="Life Insurance"
+                        insuranceredirectionLink="#"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        insuranceloanListHeading="Health Insurance"
+                        insuranceredirectionLink="#"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        insuranceloanListHeading="Child Insurance Plans"
+                        insuranceredirectionLink="#"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        insuranceloanListHeading="Home Insurance"
+                        insuranceredirectionLink="#"/>
+                    <item5
+                        jcr:primaryType="nt:unstructured"
+                        insuranceloanListHeading="Commercial Insurance  Solutions"
+                        insuranceredirectionLink="#"/>
+                    <item6
+                        jcr:primaryType="nt:unstructured"
+                        insuranceloanListHeading="Travel Insurance"
+                        insuranceredirectionLink="#"/>
+                    <item7
+                        jcr:primaryType="nt:unstructured"
+                        insuranceloanListHeading="Wellnes Insurance"
+                        insuranceredirectionLink="#"/>
+                    <item8
+                        jcr:primaryType="nt:unstructured"
+                        insuranceloanListHeading="Protection Plan &amp; other solutions"
+                        insuranceredirectionLink="#"/>
+                    <item9
+                        jcr:primaryType="nt:unstructured"
+                        insuranceloanListHeading="Retirement Solutions &amp; Child Plan"
+                        insuranceredirectionLink="#"/>
+                    <item10
+                        jcr:primaryType="nt:unstructured"
+                        insuranceloanListHeading="Pocket Friendly Insurance"
+                        insuranceredirectionLink="#"/>
+                </insuranceloanList>
+                <tabMenuQuciLinksection jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        tabMenuItemTitle="Quick Links for loans">
+                        <quickLinkItem jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Personal Loan"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Loan Restructuring"
+                                redirectionLink="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Consumer Durable Loan"
+                                redirectionLink="#"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Loan Against Securities"
+                                redirectionLink="#"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Business Loan"
+                                redirectionLink="#"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Vehicle Loan"
+                                redirectionLink="#"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Home Loan"
+                                redirectionLink="#"/>
+                            <item7
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Credit Cards"
+                                redirectionLink="#"/>
+                        </quickLinkItem>
+                    </item0>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        tabMenuItemTitle="Quick Links for insurance">
+                        <quickLinkItem jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Car Insurance"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Two wheeler insurance"
+                                redirectionLink="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Term insurance"
+                                redirectionLink="#"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Savings &amp; investments"
+                                redirectionLink="#"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Medical insurance"
+                                redirectionLink="#"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Cardiac care"
+                                redirectionLink="#"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Cancer care"
+                                redirectionLink="#"/>
+                            <item7
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Wellness solutions"
+                                redirectionLink="#"/>
+                            <item8
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Protection Plans"
+                                redirectionLink="#"/>
+                            <item9
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Home appliances"
+                                redirectionLink="#"/>
+                            <item10
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Accident assistance"
+                                redirectionLink="#"/>
+                            <item11
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Healthcare"
+                                redirectionLink="#"/>
+                            <item12
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Domestic pets"
+                                redirectionLink="#"/>
+                            <item13
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Card safety"
+                                redirectionLink="#"/>
+                            <item14
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Wallet protection"
+                                redirectionLink="#"/>
+                            <item15
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Retirement Solutions &amp; Child Plans"
+                                redirectionLink="#"/>
+                            <item16
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Home &amp; Travel Insurance"
+                                redirectionLink="#"/>
+                            <item17
+                                jcr:primaryType="nt:unstructured"
+                                quickLinkItemTitle="Commercial Insurance Solutions"
+                                redirectionLink="#"/>
+                        </quickLinkItem>
+                    </item1>
+                </tabMenuQuciLinksection>
+                <otherLinkItem jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        otherLinkItemTitle="Offers"
+                        redirectionLink="#"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        otherLinkItemTitle="Quick Pay"
+                        redirectionLink="#"/>
+                </otherLinkItem>
+            </mobile_header_copy>
+        </root>
+    </jcr:content>
+</jcr:root>

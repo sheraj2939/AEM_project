@@ -1,0 +1,135 @@
+/*dialogbox css*/
+/*.coral-FixedColumn-column.u-coral-padding.u-coral-noMargin {
+    background: url(https://tclu.tatacapital.com/content/dam/tata-capital-web/assets/img/bg-length-desktop.svg) no-repeat;
+    background-position-x: center;
+    background-position-y: 100%;
+}*/
+.coral3-Dialog-wrapper{
+	border: 3px solid black;
+}
+
+form.coral-Form--vertical.cq-dialog.foundation-form.foundation-layout-form {
+    background: url(https://tclu.tatacapital.com/content/dam/tata-capital-web/assets/img/bg-length-desktop.svg) no-repeat;
+}
+coral-dialog-header {
+    font-weight: 900;
+ color: #fff;
+}
+.coral3-Dialog-header{
+   height:auto
+
+    }
+.coral-Form-fieldlabel {
+        color: rgb(1 88 153);}
+
+.coral-Button--square .coral-Icon {
+    color: #D8E024;
+}
+.coral-InputGroup-button:last-child > .coral-Button{
+               background: #005899;
+        }
+.coral-Button:not(:disabled):not(.is-disabled):hover{
+      background-color: #005899;
+}
+coral-icon.coral3-Icon.coral3-Icon--sizeS.coral3-Icon--delete {
+    color: #005899;
+}
+.cq-Dialog[fullscreen] .cq-RichText .cq-RichText-editable,
+.scaffold-host-wizard .cq-RichText .rte-sourceEditor,
+.cq-Dialog[fullscreen] .cq-RichText .rte-sourceEditor {
+  height: auto;
+}
+.coral3-Multifield-item {
+
+    margin-bottom: 6.625rem;
+}
+ .coral3-Dialog-title {
+    line-height: 4.125rem;
+    background: #1961AC;
+    color: white;
+}
+.coral3-Dialog--fullscreen .coral3-Dialog-header{
+    background-color: #1961AC}
+
+.cq-dialog-header-action {
+    color: #d8e024;
+}
+.cq-dialog-header-action:hover {
+    color:#D7DF23 !important;
+}
+coral-multifield-item-content {
+
+    padding-bottom: 5rem;
+}
+
+.coral3-Multifield {
+
+    background: #87beff36;
+    border: 1px solid black;
+    border-radius:24px;
+
+}
+
+.coral3-Button--minimal:not(:disabled):not(.is-disabled):focus, .coral3-Button--minimal:not(:disabled):not(.is-disabled).is-focused{
+	color: #fff;
+	border: 0.0625rem solid #fff;
+}
+
+.coral3-Dialog-footer {
+
+	font-weight: 900;
+	background: #1961AC;
+ 	color: #fff;
+    height: 70px;
+    font-size: 1.25rem;
+}
+
+
+.coral3-Dialog-footer:before {
+    content: url('/content/dam/tata-capital-web/imageedit_1_9469382423.png');
+    position: absolute;
+    left: 15%;
+    top: 62%;
+	transform: scale(.4);
+}
+/*.coral3-Dialog-footer:after {
+    content: url('/content/dam/teknopoint-logo.png');
+    position: absolute;
+    left: 30%;
+    top: 86%;
+    transform: scale(.3);
+}*/
+
+button.coral3-Button[coral-multifield-add] {
+    background-color: #1961AC;
+    color: #fff;
+    border-radius: 12px;
+}
+
+.coral3-Button[coral-multifield-add]:not(:disabled):not(.is-disabled):hover {
+     background: #165ca4;
+    box-shadow: 0 38px 15px rgb(30 109 194 / 2%), 0 21px 13px rgb(30 109 194 / 8%), 0 9px 9px rgb(30 109 194 / 13%), 0 2px 5px rgb(30 109 194 / 15%), 0 0 0 rgb(30 109 194 / 15%);
+}
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #1961AC; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1961AC; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1961AC; 
+}

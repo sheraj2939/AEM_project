@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-11-29T19:01:24.879+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/tata-capital-web/settings/wcm/templates/tatacapital-web-footer-template"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Footer Experience Fragment"
+        sling:resourceType="tata-capital-web/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="tata-capital-web/components/container"
+            layout="responsiveGrid">
+            <footer_follow_box_ex
+                jcr:created="{Date}2022-11-29T11:21:17.965+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-11-29T19:01:24.873+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/Tc-Revamp/Tc-Footer/footer-follow-box-exp"
+                followheading="Follow Us">
+                <footorMainlogo jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        image="/content/dam/tata-capital-web/Tc-footer-images/tata-footer-logo.svg"
+                        redirectionLink="#">
+                        <subLogoList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/tata-capital-web/Tc-footer-images/app-store.svg"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/tata-capital-web/Tc-footer-images/google-play.svg"/>
+                        </subLogoList>
+                    </item0>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        image="/content/dam/tata-capital-web/Tc-footer-images/footer-logo-mn.svg">
+                        <subLogoList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/tata-capital-web/Tc-footer-images/app-store.svg"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/tata-capital-web/Tc-footer-images/google-play.svg"/>
+                        </subLogoList>
+                    </item1>
+                </footorMainlogo>
+                <socialMedia jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        imagePath="/content/dam/tata-capital-web/Tc-footer-images/twitter.svg"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        imagePath="/content/dam/tata-capital-web/Tc-footer-images/instagram.svg"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        imagePath="/content/dam/tata-capital-web/Tc-footer-images/linkedin.svg"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        imagePath="/content/dam/tata-capital-web/Tc-footer-images/whatsapp.svg"/>
+                </socialMedia>
+            </footer_follow_box_ex>
+        </root>
+    </jcr:content>
+</jcr:root>

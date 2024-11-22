@@ -1,0 +1,163 @@
+<div class="general-info-box space-tb40 investor-info-pd-b0">
+  <div class="container">
+    <div class="general-info-inner">
+      <div data-sly-test="${!properties.disableFilter}" class="general-info-top">
+          <div class="top-left">
+              <div class="custom-dropdown-wrap filter-drop-wrap close-on-outside">
+            <a href="javascript:void(0);" class="custom-dropdown-btn jsShowDrop stock-exchange-filter">${dropname}</a>
+            <div class="custom-dropdown-block jsDropdownBlock">
+                <ul class="custom-dropdown-list custom-dropdown-list-height simple-bar jsGetValue">
+                  <sly data-sly-list.investorField="${resource.children}">
+                    <sly data-sly-test="${investorField.name == 'investorMultifield'}">
+                      <sly data-sly-list.fieldItem="${investorField.children}">
+                        <sly data-sly-test.dropdownId="${'{0}_{1}' @ format =[investorField.name, fieldItemList.count]}">
+                        <li class="list" data-sly-test="${fieldItem.dropdownItem}">
+                          <label class="custom-checkbox-label" data-filterItem="${dropdownId}">                                                
+                            ${fieldItem.dropdownItem}
+                            </label>
+                        </li>
+                      </sly>
+                    </sly>
+                  </sly>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="general-info-bottom">
+        <div class="bg-div general-info-content">
+        <sly data-sly-list.investorField="${resource.children}">
+          <sly data-sly-test="${investorField.name == 'investorMultifield'}">
+            <sly data-sly-list.fieldItem="${investorField.children}">
+              <sly data-sly-test.dropdownId="${'{0}_{1}' @ format =[investorField.name, fieldItemList.count]}">
+                  <sly data-sly-list.pdfField="${fieldItem.children}">
+                    <sly data-sly-test="${pdfField.name == 'pdfcontainer'}">
+                        <sly data-sly-list.fieldItem2="${pdfField.children}">
+                          <h3 data-sly-test="${fieldItem2.pdfListTitle}" class="heading20 hideTitle"><span>${fieldItem2.pdfListTitle}</span></h3>
+                          <ul class="general-info-list">
+                            <sly data-sly-list.pdfLinks="${fieldItem2.children}">
+                              <sly data-sly-test="${pdfLinks.name == 'pdfLinks'}">
+                                <sly data-sly-list.fieldItem3="${pdfLinks.children}">
+                                      <sly
+                                              data-sly-test.productModelId="${'{0}_{1}_{2}_{3}_{4}_{5}' @ format =[investorField.name, fieldItemList.count, pdfField.name, fieldItem2List.count, pdfLinks.name, fieldItem3List.count]}"></sly>
+                                  <li data-sly-test="${fieldItem3.pdfLinkTitle && !fieldItem3.languagePopup}">
+                                      <a class="${fieldItem3.disablePdfIcon?'disable-pdf-icon':''} ${fieldItem3.discalimerPopup?'openDisclaimer':''}" href="${fieldItem3.discalimerPopup ? 'javascript:void(0)' : fieldItem3.pdfLink }" target="${fieldItem3.pdfLinkOption? '_blank':''}" data-pdfFilterData="${dropdownId}">${fieldItem3.pdfLinkTitle}</a>
+                                    </li>
+                                   
+                                    <li class="investorLanguageList" data-sly-test="${fieldItem3.languagePopup}">
+                                      <a class="${fieldItem3.disablePdfIcon?'disable-pdf-icon':''} ${fieldItem3.discalimerPopup?'openDisclaimer':''}"
+                                        href="javascript:void(0);" data-pdfFilterData="${dropdownId}"
+                                        data-investorModalMITC="#investorLanguageModal">${fieldItem3.pdfLinkTitle}</a>
+                                    </li>
+                                     
+                                    <sly data-sly-test="${fieldItem3.discalimerPopup}">
+                                      <div class="popover-modal modals-blue fade" id="thankyou-modal">
+                                        <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md2">
+                                          <div class="modal-tb-content">
+                                            <div class="popover-modal-content ">
+                                              <button data-dismiss="popover-modal" class="popover-modal-close jsThanksModalClose"><i
+                                                  class="icon-close"></i></button>
+                                              <div class="popover-modal-body">
+                                                <div class="modal-body-inner disclaimer-importants">
+                                                  <h3 class="heading20 text-white"><span>${fieldItem3.disclaimerTitle}</span></h3>
+                                                  <div class="disclaimer-scoll simple-bar">
+                                                    <div class="disclaimer-inner">
+                                                      <div class="text14i">${fieldItem3.popupDescription @ context = 'html'}</div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="mg-t20 text-center">
+                                                    <a type="button" target="${fieldItem3.newTab? '_blank':''}" href="${fieldItem3.pdfLink}" class="btn-link btn-big min-w149 btn-with-card-bg jsDiskPop">${fieldItem3.dclBtn}</a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </sly>
+                                </sly>
+                              </sly>
+                            </sly>
+                          </ul>
+                      </sly>
+                    </sly>
+                  </sly>
+              </sly>
+            </sly>
+          </sly>
+        </sly>
+      </div>
+      </div>
+    </div>              
+  </div>
+</div> 
+
+<!-- investor mitc popover modal -->
+
+<div data-sly-test="${properties.mitcPopoverShow}" class="popover-modal modals-blue fade popover-show"
+  id="investorLanguageModal">
+  <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md2">
+    <div class="modal-tb-content">
+      <div class="popover-modal-content prefrence-language-content">
+        <button data-dismiss="popover-modal" class="popover-modal-close">
+          <i class="icon-close"></i>
+        </button>
+        <div class="popover-modal-body">
+          <div class="modal-body-inner">
+            <div class="prefrence-mx">
+              <img data-src="/content/dam/tata-capital-web/Tc-footer-images/mic.svg" alt="" class="lozad pdf-imgs">
+              <h3 class="heading20">
+                <span>Most Important Terms & Conditions - Home Loans</span>
+              </h3>
+              <p>Download in your preferred language</p>
+              <div class="mx-314">
+                <div class="custom-select2 select2-white">
+                  <select class="js-select2" id="investorMitcLanguageSelect" data-investor="language" data-placeholder="Language">
+                    <option value="English">Select an option</option>
+                  </select>
+                </div>
+              </div>
+              <a href="" id="investorLanguageDownloadBtn" download
+                class="btn-link btn-big btn-with-card-bg min-w149 btn-xs-full disabled"
+                data-popoverclose="popover-modal">
+                Download
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<sly data-sly-list.investorField="${resource.children}">
+  <sly data-sly-test="${investorField.name == 'investorMultifield'}">
+    <sly data-sly-list.fieldItem="${investorField.children}">
+      <sly data-sly-test.dropdownId="${'{0}_{1}' @ format =[investorField.name, fieldItemList.count]}">
+        <sly data-sly-list.pdfField="${fieldItem.children}">
+          <sly data-sly-test="${pdfField.name == 'pdfcontainer'}">
+            <sly data-sly-list.fieldItem2="${pdfField.children}">
+              <sly data-sly-list.pdfLinks="${fieldItem2.children}">
+                <sly data-sly-test="${pdfLinks.name == 'pdfLinks'}">
+                  <sly data-sly-list.fieldItem3="${pdfLinks.children}">
+                    <sly data-sly-list.nestedmulti="${fieldItem3.children}">
+                      <sly data-sly-test="${nestedmulti.name == 'mitcLanguageDropdown'}">
+                        <sly data-sly-list.mitcItem="${nestedmulti.children}">
+                          <option class="investor-language-pdf-text d-none" value="${mitcItem.languageName}"
+                            data-pdf="${mitcItem.pdfPath}" data-parent="${fieldItem3.pdfLinkTitle}">
+                            ${mitcItem.languageName}
+                          </option>
+                        </sly>
+                      </sly>
+                    </sly>
+                  </sly>
+                </sly>
+              </sly>
+            </sly>
+          </sly>
+        </sly>
+      </sly>
+    </sly>
+  </sly>
+</sly>
+<!-- investor mitc popover modal -->

@@ -1,0 +1,169 @@
+<section class="cross-sell-box">
+    <div class="container relative">
+        <!-- <a href="javascript:void(0)" class="btn-back-links"><span class="icon-arrow-tail-left"></span>Back</a> -->
+        <div class="tops-heads">
+            <h2>${properties.titleReg}<span>${properties.titleBold}</span></h2>
+        </div>
+
+        <div class="cross-search-outer">
+            <div class="search-box jsSearchBox">
+                <input type="text" class="form-control jsSearchTextBox"
+                    placeholder="Search for Products or Partners...">
+                <button type="button" class="btn-blue">
+                    <span class="icon-search"></span>
+                </button>
+
+                <div class="search-resultss">
+                    <!-- search result -->
+                    <div class="searches-list">
+                        <ul>
+                            <li>
+                                <div class="searches-img">
+                                    <img src="assets/img/cross-sell/cross-icon.svg" alt="">
+                                </div>
+                                <p>One Assist Multi - Annual Maintenance Cover</p>
+                            </li>
+                            <li>
+                                <div class="searches-img">
+                                    <img src="assets/img/cross-sell/cross-icon.svg" alt="">
+                                </div>
+                                <p>One Assist Multi - Annual Maintenance Cover</p>
+                            </li>
+                            <li>
+                                <div class="searches-img">
+                                    <img src="assets/img/cross-sell/cross-icon.svg" alt="">
+                                </div>
+                                <p>One Assist Multi - Annual Maintenance Cover</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- search result -->
+
+                    <!-- no result found -->
+                    <div class="no-results-founds d-none">
+                        <img src="assets/img/cross-sell/no-search.svg" alt="">
+                        <p>No results found for ‘<span class="jsShowSearchText">kyjgtfyrvufgkibhnloij</span>’</p>
+                    </div>
+                    <!-- no result found -->
+
+                </div>
+            </div>
+        </div>
+
+        <div tab-wrapper>
+            <ul class="tab-btn-group tab-btn-lists" tabMenu-wrap>
+                <sly data-sly-list.crossCampaignTab="${resource.children}">
+                    <sly data-sly-test="${crossCampaignTab.name == 'campaignTab'}">
+                        <sly data-sly-list.campaignTab="${crossCampaignTab.children}">
+                            <sly
+                                data-sly-test.tabCampaign="${'{0}_{1}' @ format =[crossCampaignTab.name,campaignTabList.count]}">
+                                <li class="tab-item">
+                                    <a href="javascript:void(0);"
+                                        class="tab-button js-tabClick ${campaignTab.tabActive ? 'active' :''}"
+                                        tab-menu="${tabCampaign}">${campaignTab.tabName}</a>
+                                </li>
+                            </sly>
+                        </sly>
+                    </sly>
+                </sly>
+            </ul>
+            <div class="">
+                <sly data-sly-list.crossCampaignTab="${resource.children}">
+                    <sly data-sly-test="${crossCampaignTab.name == 'campaignTab'}">
+                        <sly data-sly-list.campaignTab="${crossCampaignTab.children}">
+                            <sly
+                                data-sly-test.tabCampaign="${'{0}_{1}' @ format =[crossCampaignTab.name,campaignTabList.count]}">
+                                <div class="${campaignTab.tabActive ? '' :'d-none'}" tab-contnet="${tabCampaign}">
+                                    <sly data-sly-list.cardSection="${campaignTab.children}">
+                                        <sly data-sly-test="${cardSection.name == 'nineCard'}">
+                                            <sly data-sly-list.nineCards="${cardSection.children}">
+                                                <div class="wellness-row" data-section="1">
+                                                    <sly data-sly-list.cardInfo="${nineCards.children}">
+                                                        <sly data-sly-test="${cardInfo.name == 'cardInfo'}">
+                                                            <sly data-sly-list.cardContent="${cardInfo.children}">
+                                                                <div class="wellness-cols"
+                                                                    data-title="${cardContent.cardTit}">
+                                                                    <div class="bg-div wellness-outer">
+                                                                        <div class="wellness-grow">
+                                                                            <div class="wellness-tops">
+                                                                                <img src="${cardContent.cardImage}"
+                                                                                    alt="Whatsapp">
+                                                                            </div>
+                                                                            <h6>${cardContent.cardTit}</h6>
+                                                                            ${cardContent.cardDesc @ context = 'html'}
+                                                                        </div>
+
+                                                                        <div class="wellness-bottom">
+                                                                            <a href="${cardContent.btnTextLink}"
+                                                                                target="${cardContent.newTab}"
+                                                                                type="button" class="btn-blue btn14">
+                                                                                ${cardContent.btnText}</a>
+                                                                            <div
+                                                                                class="new-share-bundle js-close-outside">
+                                                                                <button
+                                                                                    class="btn-white js-shares-btn">Share
+                                                                                    <span
+                                                                                        class="icon-share"></span></button>
+                                                                                <div class="share-bundle-menu">
+                                                                                    <a target="_blank"
+                                                                                        href="https://api.whatsapp.com/send?text=${cardContent.btnTextLink}"
+                                                                                        type="button" class="social-btn"
+                                                                                        data-shareurl="${cardContent.btnTextLink}">
+                                                                                        <img src="/content/dam/tata-capital-web/assets/img/whatsapp-colored.svg"
+                                                                                            alt="Whatsapp">
+                                                                                    </a>
+                                                                                    <button
+                                                                                        data-shareurl="${cardContent.btnTextLink}"
+                                                                                        class="social-btn jsCopyLink">
+                                                                                        <span
+                                                                                            class="icon-copy icon"></span>
+                                                                                        <span
+                                                                                            class="text-copy">Copy</span>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </sly>
+                                                        </sly>
+                                                    </sly>
+                                                </div>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                    <sly data-sly-test="${campaignTab.noProduct}">
+                                        <div class="bg-div comming-soon-box">
+                                            <div class="comming-soon-ins">
+                                                <img src="/content/dam/tata-capital-web/assets/img/coming-loader.svg" alt="coming loader">
+                                                <p class="heading20 semibold">Products coming soon...</p>
+                                                <p>We're currently preparing exciting new products for you. There's
+                                                    nothing to display right now, but please check back again soon!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </sly>
+                                </div>
+                            </sly>
+                        </sly>
+                    </sly>
+                </sly>
+            </div>
+        </div>
+
+        <div class="new-paginations d-none">
+            <ul class="paginations-list">
+                <li class="page-item disabled"><a class="page-link" href="javascript:void(0)"><span
+                            class="icon-arrow-left"></span></a></li>
+                <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0)">...</a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0)">10</a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0)"><span
+                            class="icon-arrow-right"></span></a></li>
+            </ul>
+        </div>
+
+    </div>
+</section>

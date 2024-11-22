@@ -1,0 +1,2119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-12-20T17:27:54.721+05:30"
+        cq:lastModifiedBy="nikita"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/tata-capital-web/settings/wcm/templates/tatacapital-web-footer-template"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Footer Experience Fragment"
+        sling:resourceType="tata-capital-web/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="tata-capital-web/components/container"
+            layout="responsiveGrid">
+            <footer
+                jcr:created="{Date}2022-11-20T12:42:49.254+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-11-23T14:14:16.596+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/Tc-Revamp/Tc-Footer/footer"
+                branchLocator="Top Branches"
+                consumerSolHead="Solutions For Consumers"
+                corporateHeading="Solutions For Corporates"
+                description="&lt;p>Copyright © 2022 Tata Capital Financial Services Limited&lt;/p>&#xd;&#xa;"
+                followheading="Follow Us"
+                image="/content/dam/tata-capital-web/Tc-footer-images/footer-logo-mn.svg"
+                importantInfotittle="Important Information"
+                investmentInfotittle="Investor Information"
+                linkTittle="www.tatacapital.com/moneyfy/"
+                otherDocHeading="Policies, Codes &amp; Other Documents"
+                otherInformationtittle="Other Solutions"
+                otherSubsheading="Our Subsidiaries"
+                textIsRich="[true,true,true,true]"
+                visitUs="Visit us on:"
+                websiteHeading="Our Other Websites">
+                <footerTopData jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        heading="About Us"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        heading="Careers"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        heading="Media Careers"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        heading="Sustainability"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        heading="Blog"/>
+                    <item5
+                        jcr:primaryType="nt:unstructured"
+                        heading="Contact us"/>
+                    <item6
+                        jcr:primaryType="nt:unstructured"
+                        heading="Branch Locator"/>
+                </footerTopData>
+                <footerOtherWebsite jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        heading="Tata Group"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        heading="Tata AIG"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        heading="Tata AIA"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        heading="Tata Mutual Fund"/>
+                </footerOtherWebsite>
+                <otherSubscriber jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        heading="&lt;p>Tata Capital Financial Services Limited&lt;/p>&#xd;&#xa;"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        heading="&lt;p>Tata Capital Housing Finance Limited&lt;/p>&#xd;&#xa;"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        heading="&lt;p>Tata Cleantech Capital Limited&lt;/p>&#xd;&#xa;"/>
+                </otherSubscriber>
+                <solutionConsumer jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        tittle=" Personal Loans">
+                        <subLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Personal Loans"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Overdraft Personal Loan"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Instant Personal Loan"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Wedding Loan"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Medical Loan"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Education Loan"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Travel Loan"/>
+                            <item7
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Home Renovation"/>
+                            <item8
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Loan For Govt Employee"/>
+                            <item9
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Loan For Women"/>
+                            <item10
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Loan For Salaried"/>
+                            <item11
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Loan For Self Employed"/>
+                            <item12
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Loan For Pensioners"/>
+                        </subLinks>
+                    </item0>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Home Loans">
+                        <subLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Home Loan"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Quick cash"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Home Loan Online"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Affordable Housing"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="PMAY"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="RERA"/>
+                        </subLinks>
+                    </item1>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Business Loans">
+                        <subLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Business Loan"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Business Loan For Women"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Machinery Loan"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="MSME/SME Loan"/>
+                        </subLinks>
+                    </item2>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Vehicle Loan">
+                        <subLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Used Car Loan"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Two Wheeler Loan"/>
+                        </subLinks>
+                    </item3>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        tittle=" More Products">
+                        <subLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Loan Against Property"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Loan Against Securities"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Consumer Durable Loan"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Insurance"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Credit Cards"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Mutual Fund"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Eclgs"/>
+                            <item7
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Loan Restructuring"/>
+                            <item8
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Microfinance"/>
+                            <item9
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Credit Score"/>
+                        </subLinks>
+                    </item4>
+                </solutionConsumer>
+                <corporateList jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        heading="Working Capital Loans"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        heading="Term Loans"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        heading="Structured Loans"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        heading="Construction Finance"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        heading="Equipment Financing &amp; Leasing"/>
+                    <item5
+                        jcr:primaryType="nt:unstructured"
+                        heading="Commercial Vehicle Finance"/>
+                    <item6
+                        jcr:primaryType="nt:unstructured"
+                        heading="Construction Equipment Finance"/>
+                </corporateList>
+                <importantInfoList jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        heading="Tata Code of Conduct"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        heading="Master Terms &amp; Conditions"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        heading="Vendor Feedback Form"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        heading="Rate History"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        heading="Ways to Service"/>
+                    <item5
+                        jcr:primaryType="nt:unstructured"
+                        heading="Our Partners"/>
+                </importantInfoList>
+                <investorInfo jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        heading="Tata Capital"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        heading="Tata Capital Financial Services Limited"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        heading="Tata Capital Housing Finance Limited"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        heading="Tata Cleantech Capital Limited"/>
+                </investorInfo>
+                <otherInformation jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        heading="Private Equity"/>
+                </otherInformation>
+                <twoRowsList jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        menutittle="Calculators">
+                        <twoRowsLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                heading="PL EMI Calculator"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                heading="PL Pre Payment Calculator"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                heading="Home Loan EMI Calculator"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                heading="OMAY Calculator"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                heading="BalanceTransfer Top Up Calculators"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                heading="Home Loan Eligibility Calculator"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                heading="Area Conversion Calculator"/>
+                            <item7
+                                jcr:primaryType="nt:unstructured"
+                                heading="Stamp Duty Calculator"/>
+                            <item8
+                                jcr:primaryType="nt:unstructured"
+                                heading="Business Loan EMI Calculator"/>
+                            <item9
+                                jcr:primaryType="nt:unstructured"
+                                heading="GST Calculator"/>
+                            <item10
+                                jcr:primaryType="nt:unstructured"
+                                heading="Foreclosure Calculator"/>
+                            <item11
+                                jcr:primaryType="nt:unstructured"
+                                heading="Business Loan Pre Payment Calculator"/>
+                            <item12
+                                jcr:primaryType="nt:unstructured"
+                                heading="Loan Against Propert EMI Calculator"/>
+                            <item13
+                                jcr:primaryType="nt:unstructured"
+                                heading="Vehicle Loan EMI Calculator"/>
+                        </twoRowsLinks>
+                    </item0>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        menutittle="Rates &amp; Charges">
+                        <twoRowsLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                heading="Personal Loan Rates And Charges"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                heading="Home Loan Rates And Charges"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                heading="Business Loan Fees And Charges"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                heading="Laon Against Property Fees And Charges"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                heading="Vehicle Loan Rates And Charges"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                heading="Loan Against Securities Fees And Charges"/>
+                        </twoRowsLinks>
+                    </item1>
+                </twoRowsList>
+                <otherDocument jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Tata Capital limited">
+                        <otherDocList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Tata Code Of Conduct"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Audit Committee Charter"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Affirmative Action Policy"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Whistleblower Policy"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Code Of Conduct For Non-Executive Directors"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Remuneration Policy"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Board Diversity Policy"/>
+                            <item7
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Code Of Corporate Disclosure Practices And Policy On Determination Of Legitimate Purpose For Communication Of UPSI"/>
+                            <item8
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Anti-Bribery And Anti-Corruption Policy"/>
+                            <item9
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Vigil Mechanism"/>
+                            <item10
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="CSR Policy"/>
+                            <item11
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Composition Of Committees"/>
+                            <item12
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Notice Of Hours Of Work, Rest-Interval, Weekly Holiday"/>
+                            <item13
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Fit &amp; Proper Policy"/>
+                            <item14
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Policy For Appointment Of Statutory Auditor"/>
+                            <item15
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Policy On Related Party Transactions"/>
+                            <item16
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Policy For Determining Material Subsidiaries"/>
+                            <item17
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Policy On Archival Of Documents"/>
+                            <item18
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Familiarisation Programme"/>
+                        </otherDocList>
+                    </item0>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Tata Capital Housing Finance Limited">
+                        <otherDocList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Tata Code Of Conduct"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Fair Practice Code"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Fair Practice Code - Micro Finance."/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Code Of Conduct For Non-Executive Directors"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Internal Guidelines On Corporate Governance For TCFSL"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="TCFSL - Audit Committee Charter"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="CSR Policy"/>
+                            <item7
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Composition Of Committees"/>
+                            <item8
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="RPT Policy"/>
+                            <item9
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Affirmative Action Policy"/>
+                            <item10
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Anti-Bribery &amp; Anti-Corruption Policy"/>
+                            <item11
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Whistle Blower Policy"/>
+                            <item12
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Code Of Corporate Disclosure Practices And Policy For Determination Of Legitimate Purpose For Communications Of UPSI"/>
+                            <item13
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Investor Information And Financials"/>
+                            <item14
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Board Diversity Policy And Director Attributes"/>
+                            <item15
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Remuneration Policy"/>
+                            <item16
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Form MGT 9"/>
+                            <item17
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Auction Terms &amp; Conditions"/>
+                            <item18
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Notice Of Hours Of Work, Rest-Interval, Weekly Holiday"/>
+                            <item19
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Vigil Mechanism"/>
+                            <item20
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Policy On Resolution Framework 2.0"/>
+                            <item21
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Policy For Appointment Of Statutory Auditor"/>
+                            <item22
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="RBI Circular On Provisioning"/>
+                            <item23
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Policy On Archival Of Documents"/>
+                            <item24
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Grievance Redressal Policy"/>
+                            <item25
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Familiarisation Programme"/>
+                            <item26
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="List Of Terminated Vendors"/>
+                        </otherDocList>
+                    </item1>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Tata Capital Financial Services Limited "/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Tata Cleantech Capital limited "/>
+                </otherDocument>
+                <footorMainlogo jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        image="/content/dam/tata-capital-web/Tc-footer-images/tata-footer-logo.svg">
+                        <subLogoList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/tata-capital-web/Tc-footer-images/google-play.svg"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/tata-capital-web/Tc-footer-images/app-store.svg"/>
+                        </subLogoList>
+                    </item0>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        image="/content/dam/tata-capital-web/Tc-footer-images/footer-logo-mn.svg">
+                        <subLogoList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/tata-capital-web/Tc-footer-images/google-play.svg"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/tata-capital-web/Tc-footer-images/footer-logo-mn.svg"/>
+                        </subLogoList>
+                    </item1>
+                </footorMainlogo>
+                <socialMedia jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        imagePath="/content/dam/tata-capital-web/Tc-footer-images/twitter.svg"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        imagePath="/content/dam/tata-capital-web/Tc-footer-images/instagram.svg"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        imagePath="/content/dam/tata-capital-web/Tc-footer-images/linkedin.svg"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        imagePath="/content/dam/tata-capital-web/Tc-footer-images/whatsapp.svg"/>
+                </socialMedia>
+                <copyRight jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        heading="Legal disclaimer"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        heading="Privacy Commitment"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        heading="Fraud Advisory"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        heading="Sitemap"/>
+                </copyRight>
+                <container-main3
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                <container-main2
+                    jcr:lastModified="{Date}2022-11-28T22:02:27.720+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="tata-capital-web/components/Tc-Revamp/Tc-Footer/footer-policies-documents-exp"
+                    policiesCodes="tab-12"
+                    tittle="Tata Housing Finance"/>
+                <container-main5
+                    jcr:lastModified="{Date}2022-11-28T22:02:45.880+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="tata-capital-web/components/Tc-Revamp/Tc-Footer/footer-policies-documents-accordian-exp"
+                    policiesCodes="tab-11"
+                    tittle="Tata Capital">
+                    <experiencefragment
+                        jcr:created="{Date}2022-11-24T12:29:58.721+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-11-24T12:30:15.006+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/tata-capital-web/us/en/site/Footer-Policies-Codes-Doc-Accordian-Experience-Fragment/master"/>
+                </container-main5>
+                <container-main4
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/responsivegrid">
+                    <experiencefragment
+                        jcr:created="{Date}2022-11-24T12:16:25.617+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-11-24T12:16:53.052+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/tata-capital-web/us/en/site/Footer-Policies-Codes-Doc-Experience-Fragment/V2"/>
+                </container-main4>
+                <container-main
+                    jcr:lastModified="{Date}2022-11-28T22:02:03.781+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="tata-capital-web/components/Tc-Revamp/Tc-Footer/footer-policies-documents-exp"
+                    policiesCodes="tab-11"
+                    tittle="Tata Capital">
+                    <experiencefragment
+                        jcr:created="{Date}2022-11-24T11:22:30.832+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-11-24T11:23:17.353+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/tata-capital-web/us/en/site/Footer-Policies-Codes-Doc-Experience-Fragment/master"/>
+                </container-main>
+                <container-main6
+                    jcr:lastModified="{Date}2022-11-28T22:03:01.453+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="tata-capital-web/components/Tc-Revamp/Tc-Footer/footer-policies-documents-accordian-exp"
+                    policiesCodes="tab-12"
+                    tittle="Tata Housing Finance">
+                    <experiencefragment
+                        jcr:created="{Date}2022-11-24T12:30:32.992+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-11-24T12:30:41.831+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/tata-capital-web/us/en/site/Footer-Policies-Codes-Doc-Accordian-Experience-Fragment/V2"/>
+                </container-main6>
+                <container-main-top-footer
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/responsivegrid">
+                    <experiencefragment
+                        jcr:created="{Date}2022-11-28T23:24:17.847+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-11-28T23:24:26.006+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/tata-capital-web/us/en/site/Footer-top-Experience-Fragment/master"/>
+                    <experiencefragment_1364221778
+                        jcr:created="{Date}2022-11-29T00:11:16.056+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-11-29T00:11:24.671+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/tata-capital-web/us/en/site/Footer-Other-doc-Subsidiary-Experience-Fragment/master"/>
+                    <experiencefragment_1385675583
+                        jcr:created="{Date}2022-11-29T00:11:31.539+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-11-29T00:11:53.420+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/tata-capital-web/us/en/site/Footer-main-content-Fragment/master"/>
+                    <experiencefragment_706460516
+                        jcr:created="{Date}2022-11-29T11:22:35.499+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-11-29T14:39:51.382+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/tata-capital-web/us/en/site/Footer-follow-box-Experience-Fragment/master"/>
+                    <experiencefragment_2031209327
+                        jcr:created="{Date}2022-11-29T11:26:38.817+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-11-29T11:26:46.051+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/tata-capital-web/us/en/site/Footer-Copy-right-Experience-Fragment/master"/>
+                </container-main-top-footer>
+            </footer>
+            <footer_1589161391
+                jcr:created="{Date}2022-12-02T15:19:39.030+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-12-02T15:19:39.030+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/tcl-web-components/footer/footer">
+                <container-main-top-footer
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/responsivegrid">
+                    <footer_top_exp
+                        jcr:created="{Date}2022-12-02T15:21:28.894+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-12-14T19:18:26.707+05:30"
+                        jcr:lastModifiedBy="rinkal"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/tcl-web-components/footer/footer-top-exp">
+                        <footerTopData jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                heading="About Us"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                heading="Careers"
+                                redirectionLink="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                heading="Media Center"
+                                redirectionLink="#"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                heading="Sustainability"
+                                redirectionLink="#"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                heading="Blog"
+                                redirectionLink="#"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                heading="Contact us"
+                                redirectionLink="#"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                heading="Branch Locator"
+                                redirectionLink="#"/>
+                        </footerTopData>
+                    </footer_top_exp>
+                    <footer_other_website
+                        jcr:created="{Date}2022-12-02T15:52:52.592+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-12-09T15:44:58.728+05:30"
+                        jcr:lastModifiedBy="rinkal"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/tcl-web-components/footer/footer-other-website-subsidiaries-exp"
+                        otherSubsheading="OUR SUBSIDIARIES"
+                        textIsRich="[true,true,true]"
+                        websiteHeading="Our Other Websites">
+                        <footerOtherWebsite jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                heading="Tata Group"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                heading="Tata AIG"
+                                redirectionLink="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                heading="Tata AIA"
+                                redirectionLink="#"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                heading="Tata Mutual Fund"
+                                redirectionLink="#"/>
+                        </footerOtherWebsite>
+                        <otherSubscriber jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                heading="&lt;p>Tata Capital Financial Services Limited&lt;/p>&#xd;&#xa;"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                heading="&lt;p>Tata Capital Housing Finance Limited&lt;/p>&#xd;&#xa;"
+                                redirectionLink="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                heading="&lt;p>Tata Cleantech Capital Limited&lt;/p>&#xd;&#xa;"
+                                redirectionLink="#"/>
+                        </otherSubscriber>
+                    </footer_other_website>
+                    <footer_main_content
+                        jcr:created="{Date}2022-12-02T15:55:12.390+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-12-02T15:55:12.390+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/tcl-web-components/footer/footer-main-content">
+                        <container-main-content-footer
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <solution_for_consume
+                                jcr:created="{Date}2022-12-02T15:55:30.612+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-12-16T15:06:29.746+05:30"
+                                jcr:lastModifiedBy="rinkal"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="tata-capital-web/components/tcl-web-components/footer/solution-for-consumer-exp"
+                                consumerSolHead="Solutions For Consumers">
+                                <solutionConsumer jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        tittle=" Personal Loan">
+                                        <subLinks jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Personal Loans"
+                                                subMenuLink="#"/>
+                                            <item1
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Overdraft Personal Loan"
+                                                subMenuLink="#"/>
+                                            <item2
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Instant Personal Loan"
+                                                subMenuLink="#"/>
+                                            <item3
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Wedding Loan"
+                                                subMenuLink="#"/>
+                                            <item4
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Medical Loan"
+                                                subMenuLink="#"/>
+                                            <item5
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Education Loan"
+                                                subMenuLink="#"/>
+                                            <item6
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Travel Loan"
+                                                subMenuLink="#"/>
+                                            <item7
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Home Renovation"
+                                                subMenuLink="#"/>
+                                            <item8
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Loan For Govt Employee"
+                                                subMenuLink="#"/>
+                                            <item9
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Loan For Women"
+                                                subMenuLink="#"/>
+                                            <item10
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Loan For Salaried"
+                                                subMenuLink="#"/>
+                                            <item11
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Loan For Self Employed"
+                                                subMenuLink="#"/>
+                                            <item12
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Loan For Pensioners"
+                                                subMenuLink="#"/>
+                                        </subLinks>
+                                    </item0>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        tittle="Home Loan">
+                                        <subLinks jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Home Loan"
+                                                subMenuLink="#"/>
+                                            <item1
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Quick cash"
+                                                subMenuLink="#"/>
+                                            <item2
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Home Loan Online"
+                                                subMenuLink="#"/>
+                                            <item3
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Home Extension Loan"
+                                                subMenuLink="#"/>
+                                            <item4
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Affordable Housing"
+                                                subMenuLink="#"/>
+                                            <item5
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="PMAY"
+                                                subMenuLink="#"/>
+                                            <item6
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="RERA"
+                                                subMenuLink="#"/>
+                                        </subLinks>
+                                    </item1>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        tittle="Business Loan">
+                                        <subLinks jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Business Loan"
+                                                subMenuLink="#"/>
+                                            <item1
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Business Loan For Women"
+                                                subMenuLink="#"/>
+                                            <item2
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Machinery Loan"
+                                                subMenuLink="#"/>
+                                            <item3
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="MSME/SME Loan"
+                                                subMenuLink="#"/>
+                                        </subLinks>
+                                    </item2>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        tittle="Vehicle Loan">
+                                        <subLinks jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Used Car Loan"
+                                                subMenuLink="#"/>
+                                            <item1
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Two Wheeler Loan"
+                                                subMenuLink="#"/>
+                                        </subLinks>
+                                    </item3>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        tittle="More Products">
+                                        <subLinks jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Loan Against Property"
+                                                subMenuLink="#"/>
+                                            <item1
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Loan Against Securities"
+                                                subMenuLink="#"/>
+                                            <item2
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Loan Against Securities"
+                                                subMenuLink="#"/>
+                                            <item3
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Insurance"
+                                                subMenuLink="#"/>
+                                            <item4
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Credit Cards"
+                                                subMenuLink="#"/>
+                                            <item5
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Mutual Fund"
+                                                subMenuLink="#"/>
+                                            <item6
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Eclgs"
+                                                subMenuLink="#"/>
+                                            <item7
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Loan Restructuring"
+                                                subMenuLink="#"/>
+                                            <item8
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Microfinance"
+                                                subMenuLink="#"/>
+                                            <item9
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Credit Score"
+                                                subMenuLink="#"/>
+                                        </subLinks>
+                                    </item4>
+                                </solutionConsumer>
+                            </solution_for_consume>
+                            <footer_corporate_exp
+                                jcr:created="{Date}2022-12-02T16:04:59.420+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-12-09T15:54:21.530+05:30"
+                                jcr:lastModifiedBy="rinkal"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="tata-capital-web/components/tcl-web-components/footer/footer-corporate-exp"
+                                corporateHeading="Solutions For Corporates">
+                                <corporateList jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        heading="Working Capital Loans"
+                                        redirectionLink="#"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        heading="Term Loans"
+                                        redirectionLink="#"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        heading="Structured Loans"
+                                        redirectionLink="#"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        heading="Construction Finance"
+                                        redirectionLink="#"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        heading="Equipment Financing &amp; Leasing"
+                                        redirectionLink="#"/>
+                                    <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        heading="Commercial Vehicle Finance"
+                                        redirectionLink="#"/>
+                                    <item6
+                                        jcr:primaryType="nt:unstructured"
+                                        heading="Construction Equipment Finance"
+                                        redirectionLink="#"/>
+                                </corporateList>
+                            </footer_corporate_exp>
+                            <footer_important_inf
+                                jcr:created="{Date}2022-12-02T16:06:44.739+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-12-09T15:54:56.230+05:30"
+                                jcr:lastModifiedBy="rinkal"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="tata-capital-web/components/tcl-web-components/footer/footer-important-info-investor-info-exp"
+                                branchLocator="Top Branches"
+                                breadCrumbLink="#"
+                                image="/content/dam/tata-capital-web/Tc-footer-images/footer-logo-mn.svg"
+                                importantInfotittle="Important Information"
+                                investmentInfotittle="Investor Information"
+                                linkTittle="www.tatacapital.com/moneyfy/"
+                                logoRedirection="#"
+                                otherInformationtittle="Other Solutions"
+                                redirectionLink="#"
+                                visitUs="Visit us on:">
+                                <importantInfoList jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        heading="Tata Code of Conduct"
+                                        redirectionLink="#"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        heading="Master Terms &amp; Conditions"
+                                        redirectionLink="#"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        heading="Vendor Feedback Form"
+                                        redirectionLink="#"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        heading="Rate History"
+                                        redirectionLink="#"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        heading="Ways to Service"
+                                        redirectionLink="#"/>
+                                    <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        heading="Our Partners"
+                                        redirectionLink="#"/>
+                                </importantInfoList>
+                                <investorInfo jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        heading="Tata Capital"
+                                        redirectionLink="#"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        heading="Tata Capital Financial Services Limited"
+                                        redirectionLink="#"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        heading="Tata Capital Housing Finance Limited"
+                                        redirectionLink="#"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        heading="Tata Cleantech Capital Limited"
+                                        redirectionLink="#"/>
+                                </investorInfo>
+                                <otherInformation jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        heading="Private Equity"
+                                        redirectionLink="#"/>
+                                </otherInformation>
+                            </footer_important_inf>
+                            <footer_calculators_r
+                                jcr:created="{Date}2022-12-02T16:08:48.347+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-12-14T11:08:51.157+05:30"
+                                jcr:lastModifiedBy="rinkal"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="tata-capital-web/components/tcl-web-components/footer/footer-calculators-rates-charges-exp">
+                                <twoRowsList jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        menutittle="Calculators">
+                                        <twoRowsLinks jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                jcr:primaryType="nt:unstructured"
+                                                heading="Personal Loan EMI Calculator"
+                                                redirectionLink="#"/>
+                                            <item1
+                                                jcr:primaryType="nt:unstructured"
+                                                heading="Personal Loan Pre Payment Calculator"
+                                                redirectionLink="#"/>
+                                            <item2
+                                                jcr:primaryType="nt:unstructured"
+                                                heading="Home Loan EMI Calculator"
+                                                redirectionLink="#"/>
+                                            <item3
+                                                jcr:primaryType="nt:unstructured"
+                                                heading="PMAY Calculator"
+                                                redirectionLink="#"/>
+                                            <item4
+                                                jcr:primaryType="nt:unstructured"
+                                                heading="BalanceTransfer Top Up Calculators"
+                                                redirectionLink="#"/>
+                                            <item5
+                                                jcr:primaryType="nt:unstructured"
+                                                heading="Home Loan Eligibility Calculator"
+                                                redirectionLink="#"/>
+                                            <item6
+                                                jcr:primaryType="nt:unstructured"
+                                                heading="Area Conversion Calculator"
+                                                redirectionLink="#"/>
+                                            <item7
+                                                jcr:primaryType="nt:unstructured"
+                                                heading="Stamp Duty Calculator"
+                                                redirectionLink="#"/>
+                                            <item8
+                                                jcr:primaryType="nt:unstructured"
+                                                heading="Business Loan EMI Calculator"
+                                                redirectionLink="#"/>
+                                            <item9
+                                                jcr:primaryType="nt:unstructured"
+                                                heading="GST Calculator"
+                                                redirectionLink="#"/>
+                                            <item10
+                                                jcr:primaryType="nt:unstructured"
+                                                heading="Foreclosure Calculator"
+                                                redirectionLink="#"/>
+                                            <item11
+                                                jcr:primaryType="nt:unstructured"
+                                                heading="Business Loan Pre Payment Calculator"
+                                                redirectionLink="#"/>
+                                            <item12
+                                                jcr:primaryType="nt:unstructured"
+                                                heading="Loan Against Property EMI Calculator"
+                                                redirectionLink="#"/>
+                                            <item13
+                                                jcr:primaryType="nt:unstructured"
+                                                heading="Vehicle Loan EMI Calculator"
+                                                redirectionLink="#"/>
+                                        </twoRowsLinks>
+                                    </item0>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        menutittle="Rates &amp; Charges">
+                                        <twoRowsLinks jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                jcr:primaryType="nt:unstructured"
+                                                heading="Personal Loan Rates And Charges"
+                                                redirectionLink="#"/>
+                                            <item1
+                                                jcr:primaryType="nt:unstructured"
+                                                heading="Home Loan Rates And Charges"
+                                                redirectionLink="#"/>
+                                            <item2
+                                                jcr:primaryType="nt:unstructured"
+                                                heading="Business Loan Fees And Charges"
+                                                redirectionLink="#"/>
+                                            <item3
+                                                jcr:primaryType="nt:unstructured"
+                                                heading="Loan Against Property Fees And Charges"
+                                                redirectionLink="#"/>
+                                            <item4
+                                                jcr:primaryType="nt:unstructured"
+                                                heading="Vehicle Loan Rates And Charges"
+                                                redirectionLink="#"/>
+                                            <item5
+                                                jcr:primaryType="nt:unstructured"
+                                                heading="Loan Against Securities Fees And Charges"
+                                                redirectionLink="#"/>
+                                        </twoRowsLinks>
+                                    </item1>
+                                </twoRowsList>
+                            </footer_calculators_r>
+                            <footer_policies_docu
+                                jcr:created="{Date}2022-12-02T17:00:24.282+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-12-20T17:27:54.632+05:30"
+                                jcr:lastModifiedBy="nikita"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="tata-capital-web/components/tcl-web-components/footer/footer-policies-documents-parent-exp"
+                                otherDocHeading="Policies, Codes &amp; Other Documents">
+                                <otherDocument jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        tittle="Tata Capital Limited">
+                                        <otherDocList jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                jcr:primaryType="nt:unstructured"
+                                                languagePopup="true"
+                                                subMenuHead="Tata Code Of Conduct"
+                                                subMenuLink="#">
+                                                <mitcLanguageDropdown jcr:primaryType="nt:unstructured">
+                                                    <item0
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="English"
+                                                        pdfPath="/content/dam/tata-capital/pdf/imp/Tata-code-of-conduct.pdf"/>
+                                                    <item1
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Bengali"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/Bengali-Tata-Code-of-Conduct.pdf"/>
+                                                    <item2
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Gujarati"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/Gujarati-Tata-Code-of-Conduct.pdf"/>
+                                                    <item3
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Telugu"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/TELUGU-Tata-Code-of-Conduct.pdf"/>
+                                                    <item4
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Punjabi"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/Punjabi-Tata-Code-of-Conduct.pdf"/>
+                                                    <item5
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Hindi"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/Hindi-Tata-Code-of-Conduct.pdf"/>
+                                                    <item6
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Marathi"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/Marathi-Tata-Code-of-Conduct.pdf"/>
+                                                    <item7
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Tamil"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/Tamil-Tata-Code-of-Conduct.pdf"/>
+                                                    <item8
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Malayalam"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/tcoc-Malayalam.pdf"/>
+                                                    <item9
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Kannada"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/tcoc-Kannada.pdf"/>
+                                                </mitcLanguageDropdown>
+                                            </item0>
+                                            <item1
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Audit Committee Charter"
+                                                subMenuLink="#"/>
+                                            <item2
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Affirmative Action Policy"
+                                                subMenuLink="#"/>
+                                            <item3
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Whistleblower Policy"
+                                                subMenuLink="#"/>
+                                            <item4
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Code Of Conduct For Non-Executive Directors"
+                                                subMenuLink="#"/>
+                                            <item5
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Remuneration Policy"
+                                                subMenuLink="#"/>
+                                            <item6
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Board Diversity Policy"
+                                                subMenuLink="#"/>
+                                            <item7
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Code Of Corporate Disclosure Practices And Policy On Determination Of Legitimate Purpose For Communication Of UPSI"
+                                                subMenuLink="#"/>
+                                            <item8
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Anti-Bribery And Anti-Corruption Policy"
+                                                subMenuLink="#"/>
+                                            <item9
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Vigil Mechanism"
+                                                subMenuLink="#"/>
+                                            <item10
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="CSR Policy"
+                                                subMenuLink="#"/>
+                                            <item11
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Composition Of Committees"
+                                                subMenuLink="#"/>
+                                            <item12
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Notice Of Hours Of Work, Rest-Interval, Weekly Holiday"
+                                                subMenuLink="#"/>
+                                            <item13
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Fit &amp; Proper Policy"
+                                                subMenuLink="#"/>
+                                            <item14
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Policy For Appointment Of Statutory Auditor"
+                                                subMenuLink="#"/>
+                                            <item15
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Policy On Related Party Transactions"
+                                                subMenuLink="#"/>
+                                            <item16
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Policy For Determining Material Subsidiaries"
+                                                subMenuLink="#"/>
+                                            <item17
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Policy On Archival Of Documents"
+                                                subMenuLink="#"/>
+                                            <item18
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Familiarisation Programme"
+                                                subMenuLink="#"/>
+                                        </otherDocList>
+                                    </item0>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        tittle="Tata Capital Housing Finance Limited">
+                                        <otherDocList jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                jcr:primaryType="nt:unstructured"
+                                                languagePopup="true"
+                                                subMenuHead="Tata Code Of Conduct"
+                                                subMenuLink="#">
+                                                <mitcLanguageDropdown jcr:primaryType="nt:unstructured">
+                                                    <item0
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="English"
+                                                        pdfPath="/content/dam/tata-capital/pdf/imp/Tata-code-of-conduct.pdf"/>
+                                                    <item1
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Bengali"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/Bengali-Tata-Code-of-Conduct.pdf"/>
+                                                    <item2
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Gujarati"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/Gujarati-Tata-Code-of-Conduct.pdf"/>
+                                                    <item3
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Telugu"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/TELUGU-Tata-Code-of-Conduct.pdf"/>
+                                                    <item4
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Punjabi"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/TELUGU-Tata-Code-of-Conduct.pdf"/>
+                                                    <item5
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Hindi"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/Hindi-Tata-Code-of-Conduct.pdf"/>
+                                                    <item6
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Marathi"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/Marathi-Tata-Code-of-Conduct.pdf"/>
+                                                    <item7
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Tamil"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/Tamil-Tata-Code-of-Conduct.pdf"/>
+                                                    <item8
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Malayalam"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/tcoc-Malayalam.pdf"/>
+                                                    <item9
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Kannada"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/tcoc-Kannada.pdf"/>
+                                                </mitcLanguageDropdown>
+                                            </item0>
+                                            <item1
+                                                jcr:primaryType="nt:unstructured"
+                                                languagePopup="true"
+                                                subMenuHead="Fair Practice Code"
+                                                subMenuLink="#">
+                                                <mitcLanguageDropdown jcr:primaryType="nt:unstructured">
+                                                    <item0
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="English"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/fpc/Fair%20Practices%20Code-English.pdf"/>
+                                                    <item1
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Hindi"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/fpc/Fair%20Practices%20Code-Hindi.pdf"/>
+                                                    <item2
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Bengali"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/fpc/Fair%20Practices%20Code-Bengali.pdf"/>
+                                                    <item3
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Gujarati"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/fpc/Fair%20Practices%20Code-Gujarati.pdf"/>
+                                                    <item4
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Kannada"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/fpc/Fair%20Practices%20Code-Kannada.pdf"/>
+                                                    <item5
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Malayalam"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/fpc/Fair%20Practices%20Code-Malayalam.pdf"/>
+                                                    <item6
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Marathi"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/fpc/Fair%20Practices%20Code-Marathi.pdf"/>
+                                                    <item7
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Oriya"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/fpc/Fair%20Practices%20Code-Oriya.pdf"/>
+                                                    <item8
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Urdu"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/fpc/Fair%20Practices%20Code-Urdu.pdf"/>
+                                                    <item9
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Punjabi"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/fpc/Fair%20Practices%20Code-Punjabi.pdf"/>
+                                                    <item10
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Telugu"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/fpc/Fair%20Practices%20Code-Telugu.pdf"/>
+                                                    <item11
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Kokani"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/fpc/Fair%20Practices%20Code-Konkani.pdf"/>
+                                                    <item12
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Tamil"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/fpc/Fair%20Practices%20Code-Tamil.pdf"/>
+                                                    <item13
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Assamese"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/fpc/fair-practice-code-as.pdf"/>
+                                                </mitcLanguageDropdown>
+                                            </item1>
+                                            <item2
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Fair Practice Code - Micro Finance."
+                                                subMenuLink="#"/>
+                                            <item3
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Code Of Conduct For Non-Executive Directors"
+                                                subMenuLink="#"/>
+                                            <item4
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Internal Guidelines On Corporate Governance For TCFSL"
+                                                subMenuLink="#"/>
+                                            <item5
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="TCFSL - Audit Committee Charter"
+                                                subMenuLink="#"/>
+                                            <item6
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="CSR Policy"
+                                                subMenuLink="#"/>
+                                            <item7
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Composition Of Committees"
+                                                subMenuLink="#"/>
+                                            <item8
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="RPT Policy"
+                                                subMenuLink="#"/>
+                                            <item9
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Affirmative Action Policy"
+                                                subMenuLink="#"/>
+                                            <item10
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Anti-Bribery &amp; Anti-Corruption Policy"
+                                                subMenuLink="#"/>
+                                            <item11
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Whistle Blower Policy"
+                                                subMenuLink="#"/>
+                                            <item12
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Code Of Corporate Disclosure Practices And Policy For Determination Of Legitimate Purpose For Communications Of UPSI"
+                                                subMenuLink="#"/>
+                                            <item13
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Investor Information And Financials"/>
+                                            <item14
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Board Diversity Policy And Director Attributes"/>
+                                            <item15
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Remuneration Policy"/>
+                                            <item16
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Form MGT 9"/>
+                                            <item17
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead=" Auction Terms &amp; Conditions"
+                                                subMenuLink="#"/>
+                                            <item18
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Notice Of Hours Of Work, Rest-Interval, Weekly Holiday"
+                                                subMenuLink="#"/>
+                                            <item19
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead=" Vigil Mechanism"
+                                                subMenuLink="#"/>
+                                            <item20
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Policy On Resolution Framework 2.0"
+                                                subMenuLink="#"/>
+                                            <item21
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Policy For Appointment Of Statutory Auditor"
+                                                subMenuLink="#"/>
+                                            <item22
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="RBI Circular On Provisioning"
+                                                subMenuLink="#"/>
+                                            <item23
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Policy On Archival Of Documents"
+                                                subMenuLink="#"/>
+                                            <item24
+                                                jcr:primaryType="nt:unstructured"
+                                                languagePopup="true"
+                                                subMenuHead="Grievance Redressal Policy"
+                                                subMenuLink="#">
+                                                <mitcLanguageDropdown jcr:primaryType="nt:unstructured">
+                                                    <item0
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="English"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/Customer_Grievance_Redressal_Policy.pdf"/>
+                                                    <item1
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Hindi"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/customer-grievance-redressal-policy-hindi-d1.pdf"/>
+                                                    <item2
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Bengali"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/customer-grievance-redressal-policy-bengali-d1.pdf"/>
+                                                    <item3
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Gujarati"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/customer-grievance-redressal-policy-gujaratid1.pdf"/>
+                                                    <item4
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Kannada"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/customer-grievance-redressal-policy-kannada-d1.pdf"/>
+                                                    <item5
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Malayalam"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/customer-grievance-redressal-policy-malayalam-d1.pdf"/>
+                                                    <item6
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Marathi"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/customer-grievance-redressal-policy-marathi-d1.pdf"/>
+                                                    <item7
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Oriya"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/customer-grievance-redressal-policy-oriya-d1.pdf"/>
+                                                    <item8
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Urdu"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/customer-grievance-redressal-policy-urdu.pdf"/>
+                                                    <item9
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Punjabi"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/customer-grievance-redressal-policy-punjabi-d1.pdf"/>
+                                                    <item10
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Telugu"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/customer-grievance-redressal-policy-telugu-d1.pdf"/>
+                                                    <item11
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Konkani"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/customer-grievance-redressal-policy-ko.pdf"/>
+                                                    <item12
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Tamil"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/customer-grievance-redressal-policy-tamil-d1.pdf"/>
+                                                    <item13
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Assamese"
+                                                        pdfPath="/content/dam/tata-capital/tchfl/customer-grievance-redressal-policy-assamese-d1.pdf"/>
+                                                </mitcLanguageDropdown>
+                                            </item24>
+                                            <item25
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Familiarisation Programme"
+                                                subMenuLink="#"/>
+                                            <item26
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="List Of Terminated Vendors"
+                                                subMenuLink="#"/>
+                                        </otherDocList>
+                                    </item1>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        tittle="Tata Capital Financial Services Limited ">
+                                        <otherDocList jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                jcr:primaryType="nt:unstructured"
+                                                languagePopup="true"
+                                                subMenuHead="Tata Code Of Conduct"
+                                                subMenuLink="#">
+                                                <mitcLanguageDropdown jcr:primaryType="nt:unstructured">
+                                                    <item0
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="English"
+                                                        pdfPath="/content/dam/tata-capital/pdf/imp/Tata-code-of-conduct.pdf"/>
+                                                    <item1
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Bengali"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/Bengali-Tata-Code-of-Conduct.pdf"/>
+                                                    <item2
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Gujarati"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/Gujarati-Tata-Code-of-Conduct.pdf"/>
+                                                    <item3
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Telugu"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/TELUGU-Tata-Code-of-Conduct.pdf"/>
+                                                    <item4
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Punjabi"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/Punjabi-Tata-Code-of-Conduct.pdf"/>
+                                                    <item5
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Hindi"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/Hindi-Tata-Code-of-Conduct.pdf"/>
+                                                    <item6
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Marathi"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/Marathi-Tata-Code-of-Conduct.pdf"/>
+                                                    <item7
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Tamil"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/Tamil-Tata-Code-of-Conduct.pdf"/>
+                                                    <item8
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Malayalam"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/tcoc-Malayalam.pdf"/>
+                                                    <item9
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Kannada"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/tcoc-Kannada.pdf"/>
+                                                </mitcLanguageDropdown>
+                                            </item0>
+                                            <item1
+                                                jcr:primaryType="nt:unstructured"
+                                                languagePopup="true"
+                                                subMenuHead="Fair Practices Code"
+                                                subMenuLink="#">
+                                                <mitcLanguageDropdown jcr:primaryType="nt:unstructured">
+                                                    <item0
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="English"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcfsl/regulatory-policies/fair-practices-code-tcfl-english.pdf"/>
+                                                    <item1
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Hindi"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcfsl/regulatory-policies/fair-practices-code-tcfl-hindi.pdf"/>
+                                                    <item2
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Bengali"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcfsl/regulatory-policies/fair-practices-code-tcfl-bengali.pdf"/>
+                                                    <item3
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Gujarati"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcfsl/regulatory-policies/fair-practices-code-tcfl-gujarati.pdf"/>
+                                                    <item4
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Kannada"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcfsl/regulatory-policies/fair-practices-code-tcfl-kannada.pdf"/>
+                                                    <item5
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Malayalam"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcfsl/regulatory-policies/fair-practices-code-tcfl-malaya.pdf"/>
+                                                    <item6
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="marathi"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcfsl/regulatory-policies/fair-practices-code-tcfl-marathi.pdf"/>
+                                                    <item7
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Odiya"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcfsl/regulatory-policies/fair-practices-code-tcfl-odiya.pdf"/>
+                                                    <item8
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Urdu"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcfsl/regulatory-policies/fair-practices-code-tcfl-urdu.pdf"/>
+                                                    <item9
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Punjabi"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcfsl/regulatory-policies/fair-practices-code-tcfl-punjabi.pdf"/>
+                                                    <item10
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Telugu"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcfsl/regulatory-policies/fair-practices-code-tcfl-telugu.pdf"/>
+                                                    <item11
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Konkani"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcfsl/regulatory-policies/fair-practices-code-tcfl-konkani.pdf"/>
+                                                    <item12
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Tamil"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcfsl/regulatory-policies/fair-practices-code-tcfl-tamil.pdf"/>
+                                                    <item13
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Assamese"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcfsl/regulatory-policies/fair-practices-code-tcfl-assamese.pdf"/>
+                                                </mitcLanguageDropdown>
+                                            </item1>
+                                            <item2
+                                                jcr:primaryType="nt:unstructured"
+                                                languagePopup="true"
+                                                subMenuHead="Fair Practices Code - Micro Finance."
+                                                subMenuLink="#">
+                                                <mitcLanguageDropdown jcr:primaryType="nt:unstructured">
+                                                    <item0
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="English"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcfsl/regulatory-policies/fpcv-1.pdf"/>
+                                                    <item1
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Hindi"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcfsl/regulatory-policies/fair-practice-code-microfinance-hindi.pdf"/>
+                                                    <item2
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Gujarati"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcfsl/regulatory-policies/fair-practice-code-microfinance-gujarati.pdf"/>
+                                                    <item3
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Tamil"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcfsl/regulatory-policies/fair-practice-code-microfinance-tamil.pdf"/>
+                                                </mitcLanguageDropdown>
+                                            </item2>
+                                            <item3
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="NHB Registration Certificate"
+                                                subMenuLink="#"/>
+                                            <item4
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="KYC Pamphlet"
+                                                subMenuLink="#"/>
+                                            <item5
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Most Important Terms &amp; Conditions - Home Loans"
+                                                subMenuLink="#"/>
+                                            <item6
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Most Important Terms &amp; Conditions - Home Equity"
+                                                subMenuLink="#"/>
+                                            <item7
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Most Important Terms &amp; Conditions - Quick Cash"
+                                                subMenuLink="#"/>
+                                            <item8
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Most Important Terms &amp; Conditions - GECL"
+                                                subMenuLink="#"/>
+                                            <item9
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="GST Details"
+                                                subMenuLink="#"/>
+                                            <item10
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Customer Grievance Redressal Policy"
+                                                subMenuLink="#"/>
+                                            <item11
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Recovery Agents List"
+                                                subMenuLink="#"/>
+                                            <item12
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Legal Disclaimer"
+                                                subMenuLink="#"/>
+                                            <item13
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Privacy Commitment"
+                                                subMenuLink="#"/>
+                                            <item14
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Investor Information And Financials"
+                                                subMenuLink="#"/>
+                                            <item15
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Guidelines On Corporate Governance"
+                                                subMenuLink="#"/>
+                                            <item16
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Anti-Bribery &amp; Anti-Corruption Policy"
+                                                subMenuLink="#"/>
+                                            <item17
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="CSR Policy"
+                                                subMenuLink="#"/>
+                                            <item18
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Composition Of Committees"
+                                                subMenuLink="#"/>
+                                            <item19
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="RPT Policy"
+                                                subMenuLink="#"/>
+                                            <item20
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Whistle Blower Policy"
+                                                subMenuLink="#"/>
+                                            <item21
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Policy Board Diversity Policy And Director Attributes"
+                                                subMenuLink="#"/>
+                                            <item22
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Remuneration Policy"
+                                                subMenuLink="#"/>
+                                            <item23
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Form MGT 9"
+                                                subMenuLink="#"/>
+                                            <item24
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="TCHFL Audit Committee Charter"
+                                                subMenuLink="#"/>
+                                            <item25
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Affirmative Action Policy"
+                                                subMenuLink="#"/>
+                                            <item26
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Code Of Conduct For Non-Executive Directors"
+                                                subMenuLink="#"/>
+                                            <item27
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Code Of Corporate Disclosure Pracrtices And Policy On Determination Of Legitimate Purpose"
+                                                subMenuLink="#"/>
+                                            <item28
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="List Of Terminated Channel Partners"
+                                                subMenuLink="#"/>
+                                            <item29
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Vigil Mechanism"
+                                                subMenuLink="#"/>
+                                            <item30
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Policy On Resolution Framework 2.0"
+                                                subMenuLink="#"/>
+                                            <item31
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Policy For Appointment Of Statutory Auditor"
+                                                subMenuLink="#"/>
+                                            <item32
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="RBI Circular On Provisioning"
+                                                subMenuLink="#"/>
+                                            <item33
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Policy For Use Of Unparliamentary Language By Customers"
+                                                subMenuLink="#"/>
+                                            <item34
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Policy On Archival Of Documents"
+                                                subMenuLink="#"/>
+                                            <item35
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Policy For Determining Interest Rates And Other Charges"
+                                                subMenuLink="#"/>
+                                            <item36
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Familiarisation Programme"
+                                                subMenuLink="#"/>
+                                        </otherDocList>
+                                    </item2>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        tittle="Tata Cleantech Capital Limited ">
+                                        <otherDocList jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                jcr:primaryType="nt:unstructured"
+                                                languagePopup="true"
+                                                subMenuHead="Tata Code Of Conduct"
+                                                subMenuLink="#">
+                                                <mitcLanguageDropdown jcr:primaryType="nt:unstructured">
+                                                    <item0
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="English"
+                                                        pdfPath="/content/dam/tata-capital/pdf/imp/Tata-code-of-conduct.pdf"/>
+                                                    <item1
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Bengali"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/Bengali-Tata-Code-of-Conduct.pdf"/>
+                                                    <item2
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Gujarati"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/Gujarati-Tata-Code-of-Conduct.pdf"/>
+                                                    <item3
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Telugu"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/TELUGU-Tata-Code-of-Conduct.pdf"/>
+                                                    <item4
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Punjabi"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/Punjabi-Tata-Code-of-Conduct.pdf"/>
+                                                    <item5
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Hindi"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/Hindi-Tata-Code-of-Conduct.pdf"/>
+                                                    <item6
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Marathi"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/Marathi-Tata-Code-of-Conduct.pdf"/>
+                                                    <item7
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Tamil"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/Tamil-Tata-Code-of-Conduct.pdf"/>
+                                                    <item8
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Malayalam"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/tcoc-Malayalam.pdf"/>
+                                                    <item9
+                                                        jcr:primaryType="nt:unstructured"
+                                                        languageName="Kannada"
+                                                        pdfPath="/content/dam/tata-capital/pdf/tcl/tcoc-Kannada.pdf"/>
+                                                </mitcLanguageDropdown>
+                                            </item0>
+                                            <item1
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Fair Practice Code"
+                                                subMenuLink="#"/>
+                                            <item2
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Investor Information And Financials"
+                                                subMenuLink="#"/>
+                                            <item3
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Code Of Conduct For Non-Executive Directors"
+                                                subMenuLink="#"/>
+                                            <item4
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Internal Guidelines On Corporate Governance"
+                                                subMenuLink="#"/>
+                                            <item5
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Board Audit Committee Charter"
+                                                subMenuLink="#"/>
+                                            <item6
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Customer Grievance Redressal"
+                                                subMenuLink="#"/>
+                                            <item7
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Form MGT 9"
+                                                subMenuLink="#"/>
+                                            <item8
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Whistle Blower Policy"
+                                                subMenuLink="#"/>
+                                            <item9
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Vigil Mechanism"
+                                                subMenuLink="#"/>
+                                            <item10
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Affirmative Action Policy"
+                                                subMenuLink="#"/>
+                                            <item11
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Anti-Bribery &amp; Anti-Corruption Policy"
+                                                subMenuLink="#"/>
+                                            <item12
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="CSR Policy"
+                                                subMenuLink="#"/>
+                                            <item13
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Composition Of Committees"
+                                                subMenuLink="#"/>
+                                            <item14
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Policy On Related Party Transactions"
+                                                subMenuLink="#"/>
+                                            <item15
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Policy For Determining Interest Rates, Processing And Other Charges"
+                                                subMenuLink="#"/>
+                                            <item16
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Code Of Corporate Disclosure Practices And Policy For Determination Of Legitimate Purpose For Communications Of UPSI"
+                                                subMenuLink="#"/>
+                                            <item17
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Auction Terms &amp; Conditions"
+                                                subMenuLink="#"/>
+                                            <item18
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Notice Of Hours Of Work, Rest-Interval, Weekly Holiday"
+                                                subMenuLink="#"/>
+                                            <item19
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Policy On Board Diversity And Director Attributes’ (Policies Section)"
+                                                subMenuLink="#"/>
+                                            <item20
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Remuneration Policy"
+                                                subMenuLink="#"/>
+                                            <item21
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Notice Of Hours Of Work, Rest-Interval, Weekly Holiday"
+                                                subMenuLink="#"/>
+                                            <item22
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Policy On Resolution Framework 2.0"
+                                                subMenuLink="#"/>
+                                            <item23
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Policy For Appointment Of Statutory Auditor"
+                                                subMenuLink="#"/>
+                                            <item24
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="RBI Circular On Provisioning"
+                                                subMenuLink="#"/>
+                                            <item25
+                                                jcr:primaryType="nt:unstructured"
+                                                subMenuHead="Policy On Archival Of Documents"
+                                                subMenuLink="#"/>
+                                        </otherDocList>
+                                    </item3>
+                                </otherDocument>
+                            </footer_policies_docu>
+                        </container-main-content-footer>
+                    </footer_main_content>
+                    <footer_follow_box_ex
+                        jcr:created="{Date}2022-12-02T16:12:02.195+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-12-16T19:07:02.318+05:30"
+                        jcr:lastModifiedBy="nikita"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/tcl-web-components/footer/footer-follow-box-exp"
+                        followheading="Follow Us">
+                        <footorMainlogo jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/tata-capital-web/Tc-footer-images/tata-footer-logo.svg"
+                                redirectionLink="#">
+                                <subLogoList jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        image="/content/dam/tata-capital-web/Tc-footer-images/google-play.svg"
+                                        redirectionLink="https://play.google.com/store/apps/details?id=com.snapwork.tcl&amp;hl=en_IN&amp;pli=1"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        image="/content/dam/tata-capital-web/Tc-footer-images/app-store.svg"
+                                        redirectionLink="https://apps.apple.com/in/app/tata-capital-mobile-app/id1451688163"/>
+                                </subLogoList>
+                            </item0>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                image="/content/dam/tata-capital-web/Tc-footer-images/footer-logo-mn.svg"
+                                redirectionLink="#">
+                                <subLogoList jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        image="/content/dam/tata-capital-web/Tc-footer-images/google-play.svg"
+                                        redirectionLink="https://play.google.com/store/apps/details?id=com.tatacapital.moneyfy&amp;hl=en"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        image="/content/dam/tata-capital-web/Tc-footer-images/app-store.svg"
+                                        redirectionLink="https://apps.apple.com/in/app/tata-capital-moneyfy/id1479549912"/>
+                                </subLogoList>
+                            </item1>
+                        </footorMainlogo>
+                        <socialMedia jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                imagePath="/content/dam/tata-capital-web/Tc-footer-images/twitter.svg"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                imagePath="/content/dam/tata-capital-web/Tc-footer-images/instagram.svg"
+                                redirectionLink="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                imagePath="/content/dam/tata-capital-web/Tc-footer-images/linkedin.svg"
+                                redirectionLink="#"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                imagePath="/content/dam/tata-capital-web/Tc-footer-images/whatsapp.svg"
+                                redirectionLink="#"/>
+                        </socialMedia>
+                    </footer_follow_box_ex>
+                    <footer_copy_right_ex
+                        jcr:created="{Date}2022-12-02T16:12:39.571+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-12-09T15:59:43.401+05:30"
+                        jcr:lastModifiedBy="rinkal"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/tcl-web-components/footer/footer-copy-right-exp"
+                        description="&lt;p>Copyright © 2022 Tata Capital Financial Services Limited&lt;/p>&#xd;&#xa;"
+                        textIsRich="true">
+                        <copyRight jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                heading="Legal disclaimer"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                heading="Privacy Commitment"
+                                redirectionLink="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                heading="Fraud Advisory"
+                                redirectionLink="#"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                heading="Sitemap"
+                                redirectionLink="#"/>
+                        </copyRight>
+                    </footer_copy_right_ex>
+                </container-main-top-footer>
+            </footer_1589161391>
+        </root>
+    </jcr:content>
+</jcr:root>

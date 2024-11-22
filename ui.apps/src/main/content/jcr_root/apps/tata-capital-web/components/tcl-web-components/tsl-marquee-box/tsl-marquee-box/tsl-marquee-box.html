@@ -1,0 +1,15 @@
+<div class="marquee-box space-tb40">
+    <div class="marquee-inner">
+        <ul class="jsMarquee">
+            <sly data-sly-list.marqueeItem="${resource.children}">
+                <sly data-sly-test="${marqueeItem.name == 'marqueeList'}">
+                    <sly data-sly-list.marquee="${marqueeItem.children}">
+                        <li>
+                            ${marquee.marqueeText @ context='html'}
+                        </li>
+                    </sly>
+                </sly>
+            </sly>
+        </ul>
+    </div>
+</div>

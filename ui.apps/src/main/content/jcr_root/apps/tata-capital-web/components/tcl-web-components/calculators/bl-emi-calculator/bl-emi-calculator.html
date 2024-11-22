@@ -1,0 +1,59 @@
+
+<section data-sly-use.title="com.adobe.cq.wcm.core.components.models.Title"
+     data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-test.text="${title.text}"
+     data-cmp-data-layer="${title.data.json}"
+     class="calculator-box space-tb40">
+    <div class="container">
+        <div class="mx-944">
+            <div class="tops-heads">
+                <div
+                    data-sly-resource="${'title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                </div>
+
+            </div>
+    	   <div class="calculator-content-wrap" data-calc-name="${title.text}">
+                <div class="calculator-inputs-wrap">
+
+                    <sly
+                        data-sly-resource="${'container-main' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                    </sly>
+
+
+                </div>
+                <div class="calculator-graph-wrap">
+                    <div class="calculator-graph-inner">
+                        <div class="calculate-price">
+                            <p>Monthly EMI</p>
+                            <h4 class="calculated-emi"></h4>
+                        </div>
+
+                        <div class="d-none d-md-block">
+                            <div class="calculator-graph">
+                                <div id="${title.text}" class="graph-chart-box"></div>
+                            </div>
+                        </div>
+                        <div class="d-md-none">
+                            <div class="amountPayable-interestPayable-wrap">
+                                <div class="amountPayable-interestPayable-col tap">
+                                    <p>Total Amount Payable</p>
+                                    <h3 class="calculated-tap"></h3>
+                                </div>
+                                <div class="amountPayable-interestPayable-col tip">
+                                    <p>Total Interest Payable</p>
+                                    <h3 class="calculated-tip"></h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="calculate-btn-wrap">
+                            <a href="javascript:void(0);" class="calculate-btn btn-blue btn-large">
+                                Apply Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

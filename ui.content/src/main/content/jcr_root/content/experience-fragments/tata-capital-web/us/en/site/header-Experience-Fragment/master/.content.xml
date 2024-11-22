@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-12-09T13:16:14.107+05:30"
+        cq:lastModifiedBy="nikita"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/tata-capital-web/settings/wcm/templates/tatacapital-web-footer-template"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Footer Experience Fragment"
+        sling:resourceType="tata-capital-web/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="tata-capital-web/components/container"
+            layout="responsiveGrid">
+            <header
+                jcr:created="{Date}2022-11-29T14:49:34.163+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-11-30T20:09:13.157+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/Tc-Revamp/Tc-header/header"
+                blogTittle="Blog"
+                callTittle="1860 267 6060"
+                contactUsTittle="CONTACT US"
+                headerTopHeading="&lt;p>Presenting Tata Capital's Flexi Plus Loans. Gain more freedom and flexibility. &lt;a href=&quot;#&quot;>Apply Today&lt;/a>&lt;/p>&#xd;&#xa;"
+                languageTittle="English"
+                loginTitle="Login"
+                logoImage="/content/dam/tata-capital-web/tc-header-images/tata-header-logo.svg"
+                notificationTitle="Offers &amp; Updates"
+                redirectionBlogLink="#"
+                redirectionCallLink="[#,#,#]"
+                redirectionContactUsLink="[#,#]"
+                textIsRich="[true,true,true]"
+                topLinkBlogSelect="icon-blog"
+                topLinkContactUsSelect="[icon-phone-fill,icon-phone-fill]"
+                topLinksCallSelect="icon-phone-fill">
+                <_x0031_
+                    jcr:lastModified="{Date}2022-11-29T15:10:29.633+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="core/wcm/components/container/v1/container"
+                    layout="responsiveGrid">
+                    <experiencefragment
+                        jcr:created="{Date}2022-11-29T15:10:40.993+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-11-29T15:11:17.960+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/tata-capital-web/us/en/site/Header-Loan-for-You-Experience-Fragment/master"/>
+                </_x0031_>
+                <_x0032_
+                    jcr:lastModified="{Date}2022-12-01T20:02:31.453+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="core/wcm/components/container/v1/container"
+                    layout="responsiveGrid">
+                    <experiencefragment
+                        jcr:created="{Date}2022-11-29T15:14:55.943+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-12-01T20:03:08.786+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/tata-capital-web/us/en/site/Header-Loan-for-Business-Experience-Fragment/master"/>
+                </_x0032_>
+                <content-main-mob
+                    jcr:lastModified="{Date}2022-11-29T15:15:56.667+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="core/wcm/components/container/v1/container">
+                    <experiencefragment
+                        jcr:created="{Date}2022-11-30T12:33:56.274+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-11-30T12:34:06.168+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/tata-capital-web/us/en/site/header-mobile-Experience-Fragment/master"/>
+                </content-main-mob>
+                <_x0034_
+                    jcr:lastModified="{Date}2022-11-29T15:16:59.961+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="core/wcm/components/container/v1/container"
+                    layout="responsiveGrid">
+                    <experiencefragment
+                        jcr:created="{Date}2022-11-29T15:17:06.172+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-11-29T15:17:20.409+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/tata-capital-web/us/en/site/Header-Loan-for-You-Experience-Fragment/master"/>
+                </_x0034_>
+                <_x0033_
+                    jcr:lastModified="{Date}2022-11-30T12:34:23.719+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="core/wcm/components/container/v1/container"
+                    layout="responsiveGrid">
+                    <experiencefragment
+                        jcr:created="{Date}2022-11-29T15:34:37.141+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-11-29T15:34:45.605+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/tata-capital-web/us/en/site/header-invesment-Experience-Fragment/master"/>
+                </_x0033_>
+                <headerNavList jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        navDropdownClass="true"
+                        navHeading="Loans for You"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        navDropdownClass="true"
+                        navHeading="Loans for Business"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        navDropdownClass="true"
+                        navHeading="Investment"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        navDropdownClass="true"
+                        navHeading="More"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        navDropdownClass="true"
+                        navHeading="Insurance"/>
+                    <item5
+                        jcr:primaryType="nt:unstructured"
+                        navDropdownClass="true"
+                        navHeading="Apply"/>
+                    <item6
+                        jcr:primaryType="nt:unstructured"
+                        navHeading="Offers"
+                        redirectionLink="#"/>
+                    <item7
+                        jcr:primaryType="nt:unstructured"
+                        navHeading="Quick Pay"
+                        redirectionLink="#"/>
+                </headerNavList>
+                <notificationList jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        description="&lt;p>Be investment ready in minutes&lt;/p>&#xd;&#xa;"
+                        notificationTitleHeading="Download the Moneyfy App"
+                        notificationTitleLink="Download Moneyfy App"
+                        redirectionLink="#"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        description="&lt;p>Lowest interest rates starting at 8.10%*&lt;/p>&#xd;&#xa;"
+                        notificationTitleHeading="Take a Tata Capital Home Loan"
+                        notificationTitleLink="Apply for Home Loan"
+                        redirectionLink="#"/>
+                </notificationList>
+                <loginList jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        loginTitleLink="Retail Customer Login"
+                        redirectionLink="#"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        loginTitleLink="Corporate Customer Login"
+                        redirectionLink="#"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        loginTitleLink="My Wealth Account"
+                        redirectionLink="#"/>
+                </loginList>
+                <_x0035_
+                    jcr:lastModified="{Date}2022-12-01T20:27:44.493+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="core/wcm/components/container/v1/container"
+                    layout="responsiveGrid">
+                    <experiencefragment
+                        jcr:created="{Date}2022-12-01T20:27:51.625+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-12-01T20:28:01.668+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/tata-capital-web/us/en/site/Header-insurance-Experience-Fragment/master"/>
+                </_x0035_>
+                <_x0036_
+                    jcr:lastModified="{Date}2022-12-01T20:39:00.790+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="core/wcm/components/container/v1/container"
+                    layout="responsiveGrid">
+                    <experiencefragment
+                        jcr:created="{Date}2022-12-01T20:39:06.753+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-12-01T20:39:15.884+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/tata-capital-web/us/en/site/Header-Apply-Experience-Fragment/master"/>
+                </_x0036_>
+            </header>
+            <header_2138754318
+                jcr:created="{Date}2022-12-04T21:07:04.253+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-12-09T13:16:14.088+05:30"
+                jcr:lastModifiedBy="nikita"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/tcl-web-components/header/header"
+                blogTittle="Blogs"
+                callTittle="1860 267 6060"
+                contactUsTittle="CONTACT US"
+                headerTopHeading="Presenting Tata Capital's Flexi Plus Loans. Gain more freedom and flexibility. "
+                loginTitle="Login"
+                logoImage="/content/dam/tata-capital-web/tc-header-images/tata-header-logo.svg"
+                notificationTitle="Offers &amp; Updates"
+                redirectionBlogLink="#"
+                redirectionCallLink="[https://www.tatacapital.com]"
+                redirectionContactUsLink="[#]"
+                redirectionLogoLink="#"
+                textIsRich="[true,true,true]"
+                topLinkBlogSelect="icon-blog"
+                topLinkContactUsSelect="[icon-phone-fill,icon-phone-fill]"
+                topLinksCallSelect="icon-phone-fill"
+                topRedirectionLink="#"
+                topRedirectionTitle="Apply Today">
+                <content-main-mob
+                    jcr:lastModified="{Date}2022-12-06T16:10:31.351+05:30"
+                    jcr:lastModifiedBy="nikita"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="core/wcm/components/container/v1/container"
+                    layout="responsiveGrid">
+                    <experiencefragment
+                        jcr:created="{Date}2022-12-06T16:10:40.209+05:30"
+                        jcr:createdBy="nikita"
+                        jcr:lastModified="{Date}2022-12-06T16:11:09.141+05:30"
+                        jcr:lastModifiedBy="nikita"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/experience-fragments/editor/components/experiencefragment"
+                        fragmentPath="/content/experience-fragments/tata-capital-web/us/en/site/header-mobile-Experience-Fragment/master"
+                        text="Loan For You Personal Loan Home Loan Vehicle Loan Used Car Loan Two wheeler Loan Business Loan Loan Against Securities Loan Against Property Consumer Durable Loan Credit Cards Loan Restructuring Microfinance Loans for Business Working Capital Loans Structured Products Term Loans Equipment Financing &amp; Leasing Construction Financing Investment Wealth Services by Tata Capital Moneyfy Insurance Apply Quick Links for loans Personal Loan Loan Restructuring Consumer Durable Loan Loan Against Securities Business Loan Vehicle Loan Home Loan Credit Cards Quick Links for insurance Car Insurance Two wheeler insurance Term insurance Savings &amp; investments Medical insurance Cardiac care Cancer care Wellness solutions Protection Plans Home appliances Accident assistance Healthcare Domestic pets Card safety Wallet protection Retirement Solutions &amp; Child Plans Home &amp; Travel Insurance Commercial Insurance Solutions Offers Quick Pay Back Personal loans Know More Apply Now How to Apply Rates &amp; Charges Documents Required Personal loans for all your needs Personal loans for all your needs Overdraft Loan Personal Loan for Education Personal Loan for Travel Personal Loan for Medical Personal Loan for Marriage Personal Loan for Home Renovation Calculators EMI Calculator Pre-payment Calculator Eligibility Calculator Back Home Loan Know More Apply Now How to Apply Rates &amp; Charges Documents Required Home Loan Online RERA Home loans for all your needs Home Extension Loan Affordable Housing Loan PMAY Overdraft Loan Quick Cash Plot &amp; Construction Loan Special Purpose Loan Balance Transfer Home Loan Top Up Calculators EMI Calculator PMAY Calculator Balance Transfer &amp; Top-up Calculator Eligibility Calculator Area Conversion Calculator Stamp Duty Calculator Back Used Car Loan Know More Apply Now How to Apply Rates &amp; Charges Documents Required Explore Used car loans Overdraft Loan Loan Against Car Calculator EMI Calculator Vehicle Value Check Back Two Wheeler Loan Know More Apply Now How to Apply Rates &amp; Charges Documents Required Home Loan Online RERA Calculators EMI Calculator Back Business Loan Know More Apply Now How to Apply Rates &amp; Charges Documents Required Business loans for all your needs Overdraft Loan Machinery Loan MSME Loan Small Business Loan Calculators EMI Calculator Pre-payment Calculator GST Calculator Foreclosure Calculator Back Loan Against Securities Know More Apply Now How to Apply Rate &amp; Charges Documents Required Explore Loan Against Securities Loan Against Shares Loan Against Mutual Funds LAS Digital Journey Calculators EMI Calculator LAS Calculator Back Loan Against Property Know More Apply Now How to Apply Rates &amp; Charges Documents Required EMI Options FAQs Loans for all your needs Overdraft Loan Calculators EMI Calculator Back Consumer Durable Loan Know More Apply Now Loans for all your needs How to Apply Rates &amp; Charges Documents Required Loans for all your needs A/C on EMI Refrigerator on EMI Washing Machine on EMI Mobile on EMI Camera on EMI Laptop on EMI Electronics on EMI Home Appliances on EMI Television on EMI Calculators EMI Calculator LAS Calculator Back Back Loan Restructuring Know More Apply Now Who We Are Terms &amp; Conditions Contact Us Download Forms Calculators EMI Calculator Eligibility Calculator Back Microfinance Know More Apply Now How to Apply Rates &amp; Charges Documents Required Explore products Joint Liability Group Loans Calculators EMI Calculator Back Working Capital Loans Know More Apply Now Most Popular products Channel Financing Invoice Discounting Purchase Order Funding Working Capital Demand Loan GST Loan Back Structured Products Know More Apply Now Most Popular products Loan Against Securities Structured Investment Debt Syndication Letter of Credit Lease Rental Discounting Loan Against Property Back Term Loans Back Equipment Financing &amp; Leasing Know More Apply Now Most Popular products Eligibility Calculator Back Construction Financing Know More Apply Now Most Popular products Construction Finance Construction Equipment Finance Back Wealth Services by Tata Capital Know More Apply Now Reports Download forms Back Moneyfy Visit Website Download App Calculator EMI Calculator FD Calculator Back Insurance Know More Apply Now Bestselling insurance solutions Motor Insurance Life Insurance Health Insurance Child Insurance Plans Home Insurance Commercial Insurance Solutions Travel Insurance Wellnes Insurance Protection Plan &amp; other solutions Retirement Solutions &amp; Child Plan Pocket Friendly Insurance"/>
+                </content-main-mob>
+                <_x0035_
+                    jcr:lastModified="{Date}2022-12-04T21:25:42.472+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="core/wcm/components/container/v1/container"
+                    layout="responsiveGrid">
+                    <experiencefragment
+                        jcr:created="{Date}2022-12-04T21:27:02.972+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-12-04T21:27:09.835+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/tata-capital-web/us/en/site/Header-insurance-Experience-Fragment/master"/>
+                </_x0035_>
+                <_x0031_
+                    jcr:lastModified="{Date}2022-12-05T11:46:48.645+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="core/wcm/components/container/v1/container"
+                    layout="responsiveGrid">
+                    <experiencefragment
+                        jcr:created="{Date}2022-12-05T11:46:53.730+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-12-05T11:47:09.709+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/tata-capital-web/us/en/site/Header-Loan-for-You-Experience-Fragment/master"/>
+                </_x0031_>
+                <_x0032_
+                    jcr:lastModified="{Date}2022-12-05T13:08:49.831+05:30"
+                    jcr:lastModifiedBy="nikita"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="core/wcm/components/container/v1/container"
+                    layout="responsiveGrid">
+                    <experiencefragment
+                        jcr:created="{Date}2022-12-05T13:09:24.519+05:30"
+                        jcr:createdBy="nikita"
+                        jcr:lastModified="{Date}2022-12-05T13:10:51.723+05:30"
+                        jcr:lastModifiedBy="nikita"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/tata-capital-web/us/en/site/Header-Loan-for-Business-Experience-Fragment/master"/>
+                </_x0032_>
+                <_x0033_
+                    jcr:lastModified="{Date}2022-12-05T13:11:13.123+05:30"
+                    jcr:lastModifiedBy="nikita"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="core/wcm/components/container/v1/container"
+                    layout="responsiveGrid">
+                    <experiencefragment
+                        jcr:created="{Date}2022-12-05T13:11:26.724+05:30"
+                        jcr:createdBy="nikita"
+                        jcr:lastModified="{Date}2022-12-05T13:12:02.543+05:30"
+                        jcr:lastModifiedBy="nikita"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/tata-capital-web/us/en/site/header-invesment-Experience-Fragment/master"/>
+                </_x0033_>
+                <_x0036_
+                    jcr:lastModified="{Date}2022-12-05T13:13:02.333+05:30"
+                    jcr:lastModifiedBy="nikita"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="core/wcm/components/container/v1/container"
+                    layout="responsiveGrid">
+                    <experiencefragment
+                        jcr:created="{Date}2022-12-05T13:13:10.318+05:30"
+                        jcr:createdBy="nikita"
+                        jcr:lastModified="{Date}2022-12-05T13:13:30.286+05:30"
+                        jcr:lastModifiedBy="nikita"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/tata-capital-web/us/en/site/Header-Apply-Experience-Fragment/master"/>
+                </_x0036_>
+                <headerNavList jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        navDropdownClass="true"
+                        navHeading="Loans for You"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        navDropdownClass="true"
+                        navHeading="Loans for Business"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        navDropdownClass="true"
+                        navHeading="Investment"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        navDropdownClass="true"
+                        navHeading="More"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        navDropdownClass="true"
+                        navHeading="Insurance"/>
+                    <item5
+                        jcr:primaryType="nt:unstructured"
+                        navDropdownClass="true"
+                        navHeading="Apply"/>
+                    <item6
+                        jcr:primaryType="nt:unstructured"
+                        navHeading="Offers"
+                        redirectionLink="#"/>
+                    <item7
+                        jcr:primaryType="nt:unstructured"
+                        navHeading="Quick Pay"
+                        redirectionLink="#"/>
+                </headerNavList>
+                <notificationList jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        description="&lt;p>Be investment ready in minutes&lt;/p>&#xd;&#xa;"
+                        notificationTitleHeading="Download the Moneyfy App"
+                        notificationTitleLink="Download Moneyfy App"
+                        redirectionLink="#"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        description="&lt;p>Be investment ready in minutes&lt;/p>&#xd;&#xa;"
+                        notificationTitleHeading="Take a Tata Capital Home Loan"
+                        notificationTitleLink="Apply for Home Loan"
+                        redirectionLink="#"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        description="&lt;p>Get benefits worth Rs. 18,000*&lt;/p>&#xd;&#xa;"
+                        notificationTitleHeading=" Apply for a Tata Card"
+                        notificationTitleLink="Apply Now"
+                        redirectionLink="#"/>
+                </notificationList>
+                <loginList jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        loginTitleLink="Retail Customer Login"
+                        redirectionLink="#"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        loginTitleLink="Corporate Customer Login"
+                        redirectionLink="#"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        loginTitleLink="My Wealth Account"
+                        redirectionLink="#"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        loginTitleLink="Dropline Overdraft Loan"
+                        redirectionLink="#"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        loginTitleLink="Moneyfy"
+                        redirectionLink="#"/>
+                </loginList>
+            </header_2138754318>
+        </root>
+    </jcr:content>
+</jcr:root>

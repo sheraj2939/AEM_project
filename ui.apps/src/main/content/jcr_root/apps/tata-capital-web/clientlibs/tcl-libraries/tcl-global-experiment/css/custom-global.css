@@ -1,0 +1,67 @@
+/*# Custom Global CSS */
+.root.container.responsivegrid{
+	padding:0px;
+    max-width:100%;
+	overflow:hidden;
+}
+.container.responsivegrid{
+  padding:0px;
+  max-width:100%;
+}
+a{
+  color: #1961AC;
+  }
+/* otp timer */
+.loan-otp-timers {
+  margin-top: 20px;
+}
+
+.loan-otp-timers .text16i {
+  margin-bottom: 0px !important;
+}
+
+.loan-otp-timers .btn-links {
+  font-size: 15px;
+}
+
+.loan-otp-timers .otp-timers-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+}
+
+.loan-otp-timers .otp-timers-row .otp-timers-col {
+  padding: 0 12px;
+}
+
+.loan-against-body .btn-controls .btn-link {
+  margin-left: 20px;
+  height: 51px;
+  min-width: 163px;
+}
+
+button.jsLoadingBtn img {
+  margin: auto;
+  width: 24px;
+}
+
+.otp-number-dot.dot-animation {
+  display: inline-block;
+  width: 16px;
+  vertical-align: bottom;
+}
+
+@media (max-width: 575px) {
+  .loan-against-otp-wrap .btn-controls .btn-link {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .loan-otp-timers .btn-links {
+    font-size: 14px;
+  }
+}
+
+/* otp timer */

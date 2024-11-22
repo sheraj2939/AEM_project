@@ -1,0 +1,153 @@
+<!-- Calculator Section -->
+<section class="calculator-wrapper space-tb40 pd-t0i" id="goal-sip">
+    <div class="container">
+        <div class="tops-heads mx-1060">
+            <div class="tops-heads-inner">
+                <h1>${properties.headingNormal} <strong>${properties.headingBold}</strong></h1>
+                ${properties.description @ context = 'html'}
+            </div>
+        </div>
+        <div class="bg-div bg-with-img calculator-wrapper--box mx-944">
+            <h2 class="heading36">Financial Goal <strong>Calculator</strong></h2>
+
+            <div id="financialGoalForm" class="form-wizard" data-calc="financialgoal">
+                <div class="calculator-forms" id="step-one" data-target="step">
+                    <div class="hidden-xs btn-clearposition">
+                        <button type="button" class="btn-link btn-clear" data-clear="step-one">Clear <i
+                                class="icon-clear"></i></button>
+                    </div>
+                    <div class="calculator-row">
+                        <div class="calculator-col">
+                            <label>I am</label>
+                            <div class="textbox-outer">
+                                <input type="text" data-type="years"
+                                    class="input-textbox text-center width50 only-numeric-input" maxlength="3"
+                                    data-value="20" value="20" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="calculator-col">
+                            <label>Years to achieve my financial goal of</label>
+                            <div class="textbox-outer">
+                                <div class="rupee-symbol">
+                                    <label class="rupee"><i class="icon-rupee"></i></label>
+                                    <input type="text" data-type="amount"
+                                        class="input-textbox width110 price-only-comma only-numeric-input"
+                                        maxlength="10" data-value="1,00,000" value="1,00,000" autocomplete="off"
+                                        data-id="amountValue">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator-col">
+                            <label>I have saved</label>
+                            <div class="textbox-outer">
+                                <div class="rupee-symbol">
+                                    <label class="rupee"><i class="icon-rupee"></i></label>
+                                    <input type="text" data-type="amount"
+                                        class="input-textbox width110 price-only-comma only-numeric-input"
+                                        maxlength="10" data-value="10,000" value="10,000" autocomplete="off"
+                                        data-id="amountSavedValue">
+                                </div>
+                            </div>
+                            <label class="text-wrapper">to achieve my goal</label>
+                        </div>
+                    </div>
+                    <div class="calculator-row">
+                        <div class="calculator-col">
+                            <label>Assuming the inflation during the period to be at</label>
+                            <div class="textbox-outer">
+                                <div class="range-textbox">
+                                    <button class="btn-dangers btn-count minus" data-count="count" type="button"><i
+                                            class="icon-minus"></i></button>
+                                    <div class="text-group">
+                                        <input type="text" class="input-textbox text-center only-numeric-input"
+                                            data-type="percentage" data-value="5" value="5" data-maxvalue="13"
+                                            data-minvalue="1" autocomplete="off" data-input="inflation">
+                                    </div>
+                                    <button class="btn-dangers btn-count plus" data-count="count" type="button"><i
+                                            class="icon-plus"></i></button>
+                                </div>
+                                <label>% pa</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculator-row">
+                        <div class="calculator-col">
+                            <label>and I expect to achieve my goal at a rate of return of</label>
+                            <div class="textbox-outer">
+                                <div class="range-textbox">
+                                    <button class="btn-dangers btn-count minus" data-count="count" type="button"><i
+                                            class="icon-minus"></i></button>
+                                    <div class="text-group">
+                                        <input type="text" class="input-textbox text-center only-numeric-input"
+                                            data-type="percentage" data-value="10" value="10" data-maxvalue="20"
+                                            data-minvalue="1" autocomplete="off" data-input="return">
+                                    </div>
+                                    <button class="btn-dangers btn-count plus" data-count="count" type="button"><i
+                                            class="icon-plus"></i></button>
+                                </div>
+                                <label>%</label>
+                            </div>
+                            <label class="text-wrapper">per annum on my savings.</label>
+                        </div>
+                    </div>
+                    <div class="calculator-forms-button">
+                        <ul>
+                            <li><a class="btn-link btn-big" href="#"><i class="icon-arrow-tail-left"></i> Back</a></li>
+                            <li><button class="btn-dangers btn-big" type="button" data-stepper="step"
+                                    data-next="step-two" data-current="step-one"
+                                    data-calculate="financial-goal">Next</button></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="calculator-forms hidden" id="step-two" data-target="step" data-calcType="goal-calculator">
+                    <!-- <div class="hidden-xs btn-clearposition">
+                                <button type="button" class="btn-link btn-clear" data-clear="step-two">Clear <i class="icon-clear"></i></button>
+                            </div> -->
+                    <div class="calculator-information">
+                        <div class="final-amount">
+                            <p class="customPtag">You will have to start a SIP of <span id="goalSip">₹5,672*/ Month</span></p>
+                        </div>
+                        <div class="monthly-expenditure">
+                            <div class="money-info d-flex">
+                                <p>The Goal value will become in Goal Year <span class="amount"
+                                        id="goalValue">₹26,53,298*</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculator-forms-button">
+                        <ul>
+                            <li>
+                                <button class="btn-link btn-big" type="button" data-stepper="step" data-prev="step-one"
+                                    data-current="step-two">
+                                    <i class="icon-arrow-tail-left"></i> Back
+                                </button>
+                            </li>
+                            <li>
+                                <a href="/content/tata-capital-web/en/wealth/request-callback.html"
+                                    class="btn-dangers btn-big request-callback-btn" type="button">Request Callback</a>
+                            </li>
+                            <li>
+                                <button type="button" class="btn-dangers btn-big btn-outline btn-apps"
+                                    data-popovermodal="popover-modal" data-target="#whatsapp-email-modal">
+                                    Get this result on <img
+                                        src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/what-app.svg"
+                                        alt=""> &amp; <img
+                                        src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/email-circle.svg"
+                                        alt="">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="calculator-pagination">
+                <p class="counters"><span class="numbers">1</span> / <span class="total-val">3</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Calculator Section -->
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories='financial-calculator-clientlib'}"></sly>
+</sly>

@@ -1,0 +1,3 @@
+#base=js
+all-awards.js
+custom.js

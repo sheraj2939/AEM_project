@@ -1,0 +1,141 @@
+@charset "UTF-8";
+.press-release-cards {
+  padding: 0 40px;
+  background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.71) 0%, rgba(255, 255, 255, 0.95) 99.11%), linear-gradient(134.06deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.67) 99.11%);
+  border-radius: 30px;
+}
+.press-release-cards .press-row {
+  padding: 30px 0;
+  border-top: 1px solid #BFD4E2;
+}
+.press-release-cards .press-row:first-child {
+  border-top: none;
+}
+.press-release-cards .press-links {
+  font-family: "OpenSans-SemiBold";
+  font-size: 20px;
+  line-height: 23px;
+  color: #333333;
+  display: block;
+  position: relative;
+  padding-right: 20px;
+}
+.press-release-cards .press-links:before {
+  content: "";
+  font-family: "icomoon";
+  font-size: 12px;
+  font-weight: normal;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.press-release-cards .press-links.active:before {
+  content: "";
+}
+.press-release-cards .press-body {
+  display: none;
+}
+.press-release-cards .press-release-list {
+  padding-top: 20px;
+}
+.press-release-cards .press-ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -30px;
+}
+.press-release-cards .press-ul .press-li {
+  width: 33.33%;
+  padding: 0 15px;
+  margin-top: 30px;
+}
+
+.press-release-col {
+  position: relative;
+  padding-bottom: 26px;
+  height: 100%;
+}
+.press-release-col .pdf-img {
+  height: 30px;
+  display: block;
+  margin-bottom: 8px;
+}
+.press-release-col .pdf-img img {
+  max-height: 100%;
+}
+.press-release-col .text14 {
+  font-family: "OpenSans-Bold";
+  margin-bottom: 10px;
+}
+.press-release-col .press-bottom {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+.press-release-col .press-bottom ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.press-release-col .press-bottom ul li {
+  width: 50%;
+  text-align: center;
+}
+.press-release-col .press-dates {
+  display: block;
+  background: #FFEEFD;
+  border: 1px solid #FFE9FD;
+  border-radius: 63px;
+  padding: 3px 14px;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  text-align: center;
+}
+
+@media (max-width: 1199px) {
+  .press-release-col .press-dates {
+    font-size: 11px;
+    padding: 3px 10px;
+  }
+}
+@media (max-width: 991px) {
+  .press-release-cards .press-ul .press-li {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .press-release-cards {
+    padding: 0 24px;
+    border-radius: 24px;
+  }
+  .press-release-cards .press-ul .press-li {
+    width: 100%;
+  }
+  .press-release-cards .press-links {
+    font-size: 16px;
+  }
+  .press-release-cards .press-row {
+    padding: 20px 0;
+  }
+
+  .press-release-col {
+    padding-bottom: 0px;
+  }
+  .press-release-col .press-bottom {
+    position: static;
+  }
+  .press-release-col .pdf-img {
+    height: 24px;
+  }
+  .press-release-col .press-dates {
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

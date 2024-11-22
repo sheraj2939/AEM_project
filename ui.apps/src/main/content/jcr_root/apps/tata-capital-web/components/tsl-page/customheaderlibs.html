@@ -1,0 +1,148 @@
+<meta name="google-site-verification" content="2cPBcBhKCgKg4Z38iOLf4nLI7GbBNQZb874qtg96h-o" />
+<link rel="icon" href="/content/dam/tata-capital/images/favicon.ico" type="image/x-icon">
+<link as="font" crossorigin="" href="/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSans-Light.woff2"
+  rel="preload" type="font/woff2" />
+<link as="font" crossorigin="" href="/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSans-Regular.woff2"
+  rel="preload" type="font/woff2" />
+<link as="font" crossorigin="" href="/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSansMedium.woff2"
+  rel="preload" type="font/woff2" />
+<link as="font" crossorigin="" href="/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSans-Semibold.woff2"
+  rel="preload" type="font/woff2" />
+<link as="font" crossorigin="" href="/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSans-Bold.woff2"
+  rel="preload" type="font/woff2" />
+<link as="font" crossorigin="" href="/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSansItalic.woff2"
+  rel="preload" type="font/woff2" />
+<link as="font" crossorigin="" href="/content/dam/tata-capital-web/assets/fonts/icomoon.woff?xjpm7k" rel="preload"
+  type="font/woff" />
+<style>
+  @font-face{font-family:"OpenSans-Light";src:url(/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSans-Light.woff2) format("woff2"),url(/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSans-Light.woff) format("woff");font-display:swap}@font-face{font-family:"OpenSans-Regular";src:url(/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSans-Regular.woff2) format("woff2"),url(/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSans-Regular.woff) format("woff");font-display:swap}@font-face{font-family:"OpenSansMedium";src:url(/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSansMedium.woff2) format("woff2"),url(/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSansMedium.woff) format("woff");font-display:swap}@font-face{font-family:"OpenSans-SemiBold";src:url(/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSans-Semibold.woff2) format("woff2"),url(/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSans-Semibold.woff) format("woff");font-display:swap}@font-face{font-family:"OpenSans-Bold";src:url(/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSans-Bold.woff2) format("woff2"),url(/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSans-Bold.woff) format("woff");font-display:swap}@font-face{font-family:"OpenSansItalic";src:url(/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSansItalic.woff2) format("woff2"),url(/content/dam/tata-capital-web/assets/fonts/open-sans-optimize/OpenSansItalic.woff) format("woff");font-display:swap}@font-face{font-family:'icomoon';src:url(/content/dam/tata-capital-web/assets/fonts/icomoon.woff?xjpm7k) format('woff');font-weight:400;font-style:normal;font-display:block}
+</style>
+
+<script>
+  var productCodeId;
+  productCodeId = "${PageProperties.productSelect @context='html'}";
+  window.adobeDataLayer=window.adobeDataLayer||[];
+  document.addEventListener('DOMContentLoaded', function() {
+    var loginMethod = "";
+    var pageType = "${PageProperties.pageType @context='html'}";
+    var siteSection = "${currentPage.parent.title @context='html'}";
+    var siteSubSection ="${currentPage.title @context='html'}";
+    var locationPathName = window.location.pathname.split('/').map(htmlSplit);
+    if(siteSection == "Home")
+    {
+      var pageName = "${PageProperties.jcr:title @context='html'}"
+      var siteSubSection ="";
+    }else{
+      var pageName = siteSection+":"+siteSubSection ;
+    }
+    if(domUtils.getCookie('userLoggedIn') == "true" && localStorage.getItem('cData')){
+                var loginMethod = "loginMethod";
+                var loginStatus = true;//true or false
+                var userId = $(".avatar-email").text();//email id of the user
+    }else{
+      var loginMethod = ""
+      var loginStatus = false;//true or false
+      var userId = "" //email id of the user
+    }
+    if (siteSection == "Home") {
+      pageintialization(loginMethod, loginStatus, userId, pageName, pageType, siteSection, siteSubSection ? siteSubSection : '', productCodeId.toUpperCase());
+    } else {
+      pageintialization(loginMethod, loginStatus, userId, locationPathName.slice(-1)[0] ? locationPathName.slice(-1)[0] : 'Home', pageType, locationPathName[1] ?locationPathName[1] : '', locationPathName[2] ? locationPathName[2] : '', productCodeId.toUpperCase());
+    }
+  });
+    function htmlSplit(string) {
+      return string.split('.')[0]
+    }
+</script>
+
+<!--Organizational Schema-->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Tata Capital",
+    "url": "https://www.tatacapital.com/",
+    "sameAs": [
+      "https://www.facebook.com/tatacapital/",
+      "https://twitter.com/tatacapital",
+      "https://www.instagram.com/tatacapital/",
+      "https://www.youtube.com/channel/UCCLXn_znjOupIWJ8502cUtg",
+      "https://www.linkedin.com/company/tata-capital/",
+      "https://play.google.com/store/apps/details?id=com.snapwork.tcl",
+      "https://apps.apple.com/in/app/tata-capital-loan-wealth-app/id1451688163"
+    ],
+    "logo": "https://www.tatacapital.com/apps/tata-capital-website/clientlibs/main/resources/assets/images/tata-capital-logo.svg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "1860 267 6060",
+      "contactType": "customer service",
+      "email": "customercare@tatacapital.com"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "11th Floor, Tower A, Peninsula Business Park, Ganpatrao Kadam Marg",
+      "addressLocality": "Lower Parel, Mumbai",
+      "addressRegion": "Maharashtra",
+      "postalCode": "400013",
+      "addressCountry": "India"
+    }
+  }
+</script>
+<!--Organizational Schema-->
+
+<!--Product Schema-->
+<sly data-sly-use.model="com.tatacapital.web.core.models.ProductSchemaModel" />
+<sly data-sly-test="${model.showSchema}">
+  <sly data-sly-test="${model.showProductSchema}">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "LoanOrCredit",
+        "name": "${model.pageTitle @context='scriptComment'}",
+        "description": "${model.description @context='scriptComment'}",
+        "brand": {
+          "@type": "Brand",
+          "name": "Tata Capital"
+        }
+      }
+    </script>
+  </sly>
+  <sly data-sly-test="${model.showInsuranceSchema}">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "FinancialProduct",
+        "name": "${model.pageTitle @context='scriptComment'}",
+        "brand":"Tata Capital Limited",
+        "description": "${model.description @context='scriptComment'}"
+      }
+    </script>
+  </sly>
+</sly>
+<!--Product Schema-->
+<!--/*<sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>*/-->
+<sly data-sly-use.tataCapitalWebConfiguration="com.tatacapital.web.core.services.TataCapitalWebConfiguration"/>
+<script src="${tataCapitalWebConfiguration.config.tchflAnalyticsScript @ context = 'uri'}" async></script>
+<script>
+  var osgiConfigObj = {};
+  window.osgiConfigObj.calcApiDomain="${tataCapitalWebConfiguration.config.calculatorApiDomain @ context = 'uri'}";
+  window.osgiConfigObj.domainUrlApi="${tataCapitalWebConfiguration.config.apiDomain @ context = 'uri'}";
+  window.osgiConfigObj.jocataPlUrl="${tataCapitalWebConfiguration.config.jocataPlUrl @ context = 'uri'}";
+  window.osgiConfigObj.jocataBlUrl="${tataCapitalWebConfiguration.config.jocataBlUrl @ context = 'uri'}";
+  window.osgiConfigObj.appIdMoengage="${tataCapitalWebConfiguration.config.moEngageAppId @ context = 'scriptString'}";
+  window.osgiConfigObj.debugLogMoengage="${tataCapitalWebConfiguration.config.moEngageDebugLog @ context = 'scriptString'}";
+  window.osgiConfigObj.chatBotUrl="${tataCapitalWebConfiguration.config.tcChatBotHostUrl @ context = 'uri'}";
+  window.osgiConfigObj.chatBotDomain="${tataCapitalWebConfiguration.config.tcChatBotHostDomain @ context = 'unsafe'}";
+  window.osgiConfigObj.postApiDomain="${tataCapitalWebConfiguration.config.postApiDomain @ context = 'uri'}";
+
+</script>
+<!--/*<sly data-sly-test="${properties.enableAlternate}">
+  <link rel="alternate" hreflang="x-default" href="https://www.tatacapital.com/" />
+  <link rel="alternate" href="https://www.tatacapital.com/" hreflang="en-in" />
+  <link rel="alternate" href="https://www.tatacapital.com/hi" hreflang="hi-in" />
+</sly>
+<sly data-sly-test="${!properties.enableAlternate}">
+  <link rel="alternate" hreflang="x-default" href="${request.requestURL.toString}" />
+  <link rel="alternate" href="${request.requestURL.toString}" hreflang="en-in" />
+  <link rel="alternate" href="${request.scheme}://${request.serverName}/hi${request.pathInfo}" hreflang="hi-in" />
+</sly>*/-->

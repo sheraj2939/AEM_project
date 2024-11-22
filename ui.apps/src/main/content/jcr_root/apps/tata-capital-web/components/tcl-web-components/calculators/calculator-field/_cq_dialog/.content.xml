@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Calculator Field Selection"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[core.wcm.components.title.v2.editor]"
+    helpPath="https://www.adobe.com/go/aem_cmp_title_v3"
+    trackingFeature="core-components:title:v3">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <title-variant-select
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="Select Calculator Field required"
+                                                fieldLabel="Select Calculator Field"
+                                                name="./selectCalculatorField">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="None"/>
+                                                    <loan-amount
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Amount"
+                                                        value="loanAmount"/>
+                                                    <loan-duration
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Duration"
+                                                        value="loanDuration"/>
+                                                    <roi
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Interest Rate"
+                                                        value="roi"/>
+                                                    <microfinance-checkbox-button
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Checkbox Button Wrapper"
+                                                        value="checkbox-btn"/>
+                                                    <loan-amount-tooltip-text
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Amount With Tooltip"
+                                                        value="loanAmountWithTooltip"/>
+                                                    <loan-duration-only-month
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Loan Duration Only Month"
+                                                        value="loanDurationOnlyMonth"/>
+                                                </items>
+                                            </title-variant-select>
+                                            <tooltipsClass
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Tooltips Class (eg class : loan-tooltips)"
+                                                fieldLabel="Class"
+                                                name="./tooltipsClass"/>
+                                            <loan-amount-step
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Incremental Change in Scroller (Number)"
+                                                fieldLabel="Data Step"
+                                                name="./dataStep"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

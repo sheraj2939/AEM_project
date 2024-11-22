@@ -1,0 +1,18 @@
+<div data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+    data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-use.imageTemplate="image.html"
+    data-sly-use.pretitleTemplate="pretitle.html" data-sly-use.titleTemplate="title.html"
+    data-sly-use.descriptionTemplate="description.html" data-sly-use.actionsTemplate="actions.html"
+    data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+    id="${teaser.id}"
+    class="cmp-teaser${!wcmmode.disabled && teaser.imageResource ? ' cq-dd-image' : ''} bg-div strategic-item"
+    data-cmp-data-layer="${teaser.data.json}">
+    <div class="strategic-top">
+        <img src="${properties.fileReference}" alt="${properties.alt}" />
+    </div>
+    <div class="strategic-bottom">
+        <h3 class="heading20"><span>${teaser.title}</span></h3>
+        <div class="strategic-para">
+            <div class="text14i">${teaser.description @ context = 'html'}</div>
+        </div>
+    </div>
+</div>

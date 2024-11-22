@@ -1,0 +1,32 @@
+<div data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+data-sly-use.imageTemplate="image.html"
+data-sly-use.pretitleTemplate="pretitle.html"
+data-sly-use.titleTemplate="title.html"
+data-sly-use.descriptionTemplate="description.html"
+data-sly-use.actionsTemplate="actions.html"
+data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+id="${teaser.id}"
+class="right-loan-tabs"
+data-cmp-data-layer="${teaser.data.json}">
+<sly data-sly-test="${!properties.strongTag}">
+    <h3 class="heading20"><span>${teaser.title}</span></h3>
+</sly>
+<sly data-sly-test="${properties.strongTag}">
+    <div class="strongTag">
+        <strong class="heading20"><span>${teaser.title}</span></strong>
+    </div>
+</sly>
+    <sly data-sly-call="${descriptionTemplate.description @ teaser=teaser}"></sly>
+    <sly data-sly-resource="${'find-right-loan-box-teaser-button' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></sly>
+</div>
+<div class="right-loan-img">
+    <sly data-sly-test="${properties.mobilePtag}">
+        <p class="heading20"><span>${teaser.title}</span></p>
+    </sly>
+    <div class="img-wrapper">
+        <img src="${properties.fileReference}" alt="${properties.alt}" class="desktop-img lozad" loading="lazy">
+        <img src="${properties.mobImage}" alt="${properties.alt}" class="mob-img lozad" loading="lazy">
+    </div>
+</div>
+<sly data-sly-call="${templates.placeholder @ isEmpty=!hasContent, classAppend='cmp-teaser'}"></sly>

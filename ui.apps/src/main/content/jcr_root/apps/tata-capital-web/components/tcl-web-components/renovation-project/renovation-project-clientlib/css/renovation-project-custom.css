@@ -1,0 +1,10 @@
+.accordion-card .accordion-row .accordion-heading{
+    cursor: pointer;
+}
+ .pl-factors-wrap .custom-accordion {
+	 width: 100%;
+     margin-top: inherit;
+}
+.custom-renovation-accordion .personal-btn.btn-with-full {
+    margin-top: 0px;
+}

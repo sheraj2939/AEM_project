@@ -1,0 +1,18 @@
+<section class="${properties.rightHorizontalCard ? 'personal-loan-box space-tb40':'personal-loan-box right-section-relative space-tb40'}">
+        <div class="container">
+            <div class="${properties.rightHorizontalCard ? 'how-emi-calculated':'what-per-loan check-eligibility-per'}">
+                <div class="bg-div personal-cards">
+                    <div data-sly-resource="${'title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></div>
+                    <div class="personal-para">
+                        <div data-sly-resource="${'text-main' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></div>
+                    </div>
+                </div>
+                <div class="${properties.rightHorizontalCard ? 'emi-calculation-details' : 'per-loan-details per-loan-only-text per-loan-pos'}">
+                    <div data-sly-resource="${'text-blue' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></div>
+                    <div class="">
+				<div data-sly-resource="${'blue-rte' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

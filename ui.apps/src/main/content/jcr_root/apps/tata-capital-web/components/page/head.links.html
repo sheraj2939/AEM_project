@@ -1,0 +1,12 @@
+<sly data-sly-use.page="com.adobe.cq.wcm.core.components.models.Page"/>
+<link rel="canonical" data-sly-test="${properties.enableAlternate}" href="https://www.tatacapital.com">
+<sly data-sly-test="${!properties.enableAlternate}">
+    <sly data-sly-test="${page.canonicalLink != request.pathInfo}">
+    <link rel="canonical" href="${page.canonicalLink}">
+    </sly>
+    <sly data-sly-test="${page.canonicalLink == request.pathInfo}">
+    <link rel="canonical" href="https://www.tatacapital.com${request.pathInfo}">
+    </sly>
+</sly>
+<link data-sly-test="${page.alternateLanguageLinks}" data-sly-repeat="${page.alternateLanguageLinks.entrySet}"
+    rel="alternate" hreflang="${item.key.toLanguageTag}" href="${item.value}">

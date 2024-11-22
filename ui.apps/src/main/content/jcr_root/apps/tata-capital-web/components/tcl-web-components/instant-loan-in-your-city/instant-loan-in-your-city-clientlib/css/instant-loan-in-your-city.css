@@ -1,0 +1,56 @@
+.instant-slider-box .tops-heads {
+	 max-width: 753px;
+}
+ .instant-slider-box .tops-heads p {
+	 color: #636363;
+}
+ .instant-slider-box .instant-slider .instant-col {
+	 padding: 0 15px;
+	 height: 100%;
+}
+ .instant-slider-box .instant-slider .instant-card {
+	 padding: 25px 25px 70px;
+	 height: 100%;
+	 transition: all 0.2s;
+	 cursor: pointer;
+	 position: relative;
+}
+ .instant-slider-box .instant-slider .instant-card h3 {
+	 margin-bottom: 12px;
+	 transition: all 0.1s;
+}
+ .instant-slider-box .instant-slider .instant-card p {
+	 letter-spacing: 0.02em;
+	 transition: all 0.1s;
+}
+ .instant-slider-box .instant-slider .instant-card .instant-bottom-btn {
+	 position: absolute;
+	 left: 0px;
+	 right: 0px;
+	 bottom: 0px;
+	 padding: 0 25px 23px;
+}
+ .instant-slider-box .instant-slider .instant-card:hover {
+	 background: linear-gradient(134.06deg, rgba(18, 104, 179, 0.71) 0%, rgba(16, 141, 250, 0.95) 99.11%), linear-gradient(134.06deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.67) 99.11%);
+}
+ .instant-slider-box .instant-slider .instant-card:hover h3, .instant-slider-box .instant-slider .instant-card:hover p, .instant-slider-box .instant-slider .instant-card:hover .btn-links {
+	 color: #fff;
+}
+ @media (max-width: 767px) {
+	 .instant-slider-box .slick-list {
+		 padding-left: 8px !important;
+	}
+	 .instant-slider-box .instant-slider .instant-col {
+		 padding: 0 7px;
+	}
+	 .instant-slider-box .instant-slider .instant-col h3 {
+		 margin-bottom: 10px;
+	}
+	 .instant-slider-box .instant-slider .instant-col p {
+		 font-size: 13px;
+		 line-height: 18px;
+	}
+	 .instant-slider-box .instant-slider .instant-card {
+		 padding: 24px 24px 60px;
+	}
+}

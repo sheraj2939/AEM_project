@@ -1,0 +1,17 @@
+<div data-sly-use.title="com.adobe.cq.wcm.core.components.models.Title"
+     data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-test.text="${title.text}"
+     data-cmp-data-layer="${title.data.json}"
+     class="form-textbox">
+       <label class="label-name">${title.text}</label>
+        <sly data-sly-test="${!properties.input}">
+          <div class="textbox-inner">
+                <input type="text" class="input-textbox" placeholder="" data-type="${title.id}">
+          </div>
+        </sly>
+        <sly data-sly-test="${properties.input}">
+          <div class="textbox-inner">
+                <input type="text" class="input-textbox only-numeric-input"  maxlength="10" placeholder="" data-type="${title.id}" pattern="[0-9]*" inputmode="numeric">
+          </div>
+        </sly>
+</div>

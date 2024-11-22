@@ -1,0 +1,89 @@
+<sly data-sly-test="${properties.selectTitleVariant=='singleLineTitle'}">
+   <div class="container">
+      <h2 class="text-center">${properties.jcr:title} <span>${properties.boldTerm}</span></h2>
+   </div>
+</sly>
+<sly data-sly-test="${properties.selectTitleVariant=='singleLineTitlePtag'}">
+   <div class="container">
+      <p class="text-center">${properties.jcr:title} <span>${properties.boldTerm}</span></p>
+   </div>
+</sly>
+<sly data-sly-test="${properties.selectTitleVariant=='commonTitle'}">
+   <div class="main-title">
+      <h1>${properties.jcr:title} <span class="${properties.CommonTitleDBlock ? 'd-block' : ''}">${properties.spanTagTitle} <strong>${properties.boldTerm}</strong></span></h1>
+   </div>
+</sly>
+<sly>
+   <sly data-sly-test="${properties.selectTitleVariant=='preApprovedFormTitle'}">
+      <h2>${properties.jcr:title}<span class="d-block">${properties.boldTerm}</span></h2>
+   </sly>
+   <sly data-sly-test="${properties.selectTitleVariant=='newsletterTitle'}">
+      <div class="subscribe-left">
+         <h2>${properties.jcr:title}<span>${properties.boldTerm}</span></h2>
+      </div>
+   </sly>
+   <sly data-sly-test="${properties.selectTitleVariant=='liMainHeader'}">
+      <h2>${properties.jcr:title}<span class="d-lg-block">${properties.boldTerm}</span></h2>
+   </sly>
+  <sly data-sly-test="${properties.selectTitleVariant=='loanInformation'}">
+      <h2 class="main-heading ${properties.marginBottom ? 'mg-b0' : ''}">${properties.jcr:title} <span>${properties.boldTerm}</span></h2>
+   </sly>
+   <sly data-sly-test="${properties.selectTitleVariant=='whyChoose'}">
+      <h2><span>${properties.boldTerm}</span> ${properties.jcr:title}</h2>
+   </sly>
+   <sly data-sly-test="${properties.selectTitleVariant=='emiOptions'}">
+      <h2>${properties.jcr:title} <span class="d-block">${properties.boldTerm}</span></h2>
+   </sly>
+   <sly data-sly-test="${properties.selectTitleVariant=='applyOnWhatsapp'}">
+      <h3 class="heading20 ${properties.marginBottomTwelve ? 'mb-12' : ''}">${properties.jcr:title} <span>${properties.boldTerm}</span></h3>
+   </sly>
+   <sly data-sly-test="${properties.selectTitleVariant=='applyOnWhatsappPtag'}">
+      <p class="heading20 ${properties.marginBottomTwelve ? 'mb-12' : ''}">${properties.jcr:title} <span>${properties.boldTerm}</span></p>
+   </sly>
+   <sly data-sly-test="${properties.selectTitleVariant=='bestDealsHeading'}">
+      <h2>${properties.jcr:title} <span>${properties.boldTerm}</span>
+      <sly data-sly-test="${properties.whatsappLogoCheckbox}">
+      	<img class="whatsapp-logo" src="${properties.whatsappLogo}">
+      </sly>
+      </h2>
+   </sly>
+   <sly data-sly-test="${properties.selectTitleVariant=='bestDealsHeadingPtag'}">
+      <p>${properties.jcr:title} <span>${properties.boldTerm}</span>
+      <sly data-sly-test="${properties.whatsappLogoCheckbox}">
+      	<img class="whatsapp-logo" src="${properties.whatsappLogo}">
+      </sly>
+   </p>
+   </sly>
+   <sly data-sly-test="${properties.selectTitleVariant=='bannerTitle'}">
+      <p class="heading-h1">${properties.jcr:title} <span>${properties.boldTerm}</span></p>
+   </sly>
+    <sly data-sly-test="${properties.selectTitleVariant=='pageTitle'}">
+      <h1>${properties.jcr:title} <strong class="semibold">${properties.boldTerm}</strong></h1>
+   </sly>
+
+   <sly data-sly-test="${properties.selectTitleVariant=='benefitsOfPrePay'}">
+<h2>${properties.jcr:title} <span>${properties.boldTerm} </span>${properties.spanTagTitle}</h2>
+</sly>
+<sly data-sly-test="${properties.selectTitleVariant=='preApprovedOfferTitle'}">
+      <h1>${properties.jcr:title}<span class="d-block">${properties.boldTerm}</span></h1>
+   </sly>
+<sly data-sly-test="${properties.selectTitleVariant=='qlWaysToServiceTitle'}">
+       <h2 class="heading36">${properties.jcr:title} <span>${properties.boldTerm}</span></h2>
+</sly>
+<sly data-sly-test="${properties.selectTitleVariant=='calculatorTitle'}">
+       <h2 class="text-center"> ${properties.jcr:title}<span>${properties.boldTerm}</span></h2>
+</sly>
+<sly data-sly-test="${properties.selectTitleVariant=='currentOpportunitiesDesktopTitle'}">
+     <h2 class="heading36 d-md-block d-none"> ${properties.jcr:title}<span>${properties.boldTerm}</span></h2>
+</sly>
+<sly data-sly-test="${properties.selectTitleVariant=='currentOpportunitiesMobileTitle'}">
+     <h2 class="heading36 d-md-none d-block"> ${properties.jcr:title}<span>${properties.boldTerm}</span></h2>
+</sly>
+<sly data-sly-test="${properties.selectTitleVariant=='hFourTagNewsLatter'}">
+   <div class="subscribe-left">
+      <h4>${properties.jcr:title} <span>${properties.boldTerm}</span></h4>
+   </div>
+</sly>
+<sly data-sly-test="${properties.selectTitleVariant=='strongTag'}">
+      <strong class="customeStrongTag">${properties.boldTerm}</strong>
+</sly>

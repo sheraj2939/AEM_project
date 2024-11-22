@@ -1,0 +1,41 @@
+        <!-- related video desktop -->
+<section class="related-video-cntr space-tb40">
+            <div class="container">
+                <div class="tops-heads">
+                    <div data-sly-resource="${'component-title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></div>
+                </div>
+                <div class="">
+                    <div class="">
+                        <div data-sly-resource="${'related-videos' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    <!-- video modal -->
+    <div class="popover-modal fade" id="video-modal">
+        <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-lg2">
+          <div class="popover-modal-content video-modals">
+            <button data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></button>    
+            <div class="popover-modal-body">                      
+              <div class="videos-outer">
+                <iframe src="${properties.videoLink}" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- video modal -->
+
+    <!--/*<script type="application/ld+json">
+        {
+           "@context": "https://schema.org/",
+           "@type": "VideoObject",
+           "name": "${properties.videotitle @context='html'}",
+           "contentUrl": "https://www.youtube.com/watch?time_continue=9&v=${properties.youtubelink @context='html'}&feature=emb_title",
+           "duration": "${properties.youtubeVideoTime @context='html'}",
+           "thumbnailUrl": "${properties.thumnailUrl @context='html'}",
+           "uploadDate": "${properties.youtubeUploadDate @context='html'}",
+           "description": "${properties.videodecsription @context='html' || 'TATA CAPITAL DESCRIPTION'}", "embedUrl": "${properties.embedUrl @context='html'}"
+        },
+    </script>*/-->

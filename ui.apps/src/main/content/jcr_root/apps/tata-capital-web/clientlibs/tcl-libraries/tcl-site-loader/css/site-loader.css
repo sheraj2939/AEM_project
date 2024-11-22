@@ -1,0 +1,118 @@
+.bg-loader {
+  background: rgba(0, 0, 0, 1);
+}
+
+.loader {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.loader .logo {
+  display: table;
+  width: 300px;
+  height: 75px;
+  position: relative;
+}
+.loader .logo .logo-image {
+  position: relative;
+  opacity: 1;
+  height: 75px;
+  overflow: hidden;
+  -webkit-animation: logo_animate 3s infinite ease-in;
+  animation: logo_animate 3s infinite ease-in;
+}
+.loader .logo .logo-image::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.loader .logo .logo-image .image {
+  width: 300px;
+  height: 75px;
+}
+.loader .logo .arrow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  padding: 0 4px;
+  -webkit-animation: gap_animate 3s infinite ease-in;
+  animation: gap_animate 3s infinite ease-in;
+}
+.loader .logo .arrow .lines {
+  width: 25%;
+  height: 12px;
+  background-color: #d7df38;
+}
+.loader .logo .arrow .lines.line-1 {
+  -webkit-animation: dot-jump 1.5s ease-in alternate infinite;
+  animation: dot-jump 1.5s ease-in alternate infinite;
+}
+.loader .logo .arrow .lines.line-2 {
+  -webkit-animation: dot-jump 1.5s 0.2s ease-in alternate infinite;
+  animation: dot-jump 1.5s 0.2s ease-in alternate infinite;
+}
+.loader .logo .arrow .lines.line-3 {
+  -webkit-animation: dot-jump 1.5s 0.4s ease-in alternate infinite;
+  animation: dot-jump 1.5s 0.4s ease-in alternate infinite;
+}
+.loader .logo .arrow .lines.line-4 {
+  -webkit-animation: dot-jump 1.5s 0.6s ease-in alternate infinite;
+  animation: dot-jump 1.5s 0.6s ease-in alternate infinite;
+}
+@media screen and (max-width: 480px) {
+  .loader .logo {
+    transform: scale(0.6);
+  }
+}
+
+@keyframes dot-jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-30px);
+  }
+}
+@keyframes logo_animate {
+  0% {
+    height: 0px;
+    opacity: 0;
+  }
+  10%, 30% {
+    height: 75px;
+    opacity: 1;
+  }
+  40%, 100% {
+    height: 0px;
+    opacity: 0;
+  }
+}
+@keyframes gap_animate {
+  0% {
+    gap: 10px;
+    padding: 0 4px;
+  }
+  10%, 20% {
+    gap: 0;
+    padding: 0 0;
+  }
+  30%, 100% {
+    gap: 10px;
+    padding: 0 4px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Blogs"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <titleLight
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Title Light"
+                        name="./titleLight"/>
+                    <titleBold
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Title Bold"
+                        name="./titleBold"/>
+                    <h3-tag
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        name="./hThree"
+                        text="Need h3 Tag"
+                        value="{Boolean}true"/>
+                    <blogsField
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Blogs Multifield"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        eaem-show-on-collapse="EAEM.showProductName">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                            eaem-nested="NODE_STORE"
+                            name="./blogsFeild">
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <new-tab
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            name="./newTab"
+                                            text="Check For Open In New Tab"
+                                            value="{Boolean}true"/>
+                                        <hashTag
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Hash Tag"
+                                            name="./hashTag"/>
+                                        <blogTitle
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Blog Title"
+                                            name="./blogTitle"/>
+                                        <blogImage
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                            fieldLabel="Blog Image"
+                                            name="./blogImage"
+                                            rootPath="/content/dam/tata-capital"/>
+                                        <blog-image-text
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Blog Alt Text"
+                                            name="./blogImgAlt"/>
+                                        <blogLink
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Blog Link"
+                                            name="./blogLink"/>
+                                        <postDate
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Blog Post Date"
+                                            name="./postDate"/>
+                                    </items>
+                                </column>
+                            </items>
+                        </field>
+                    </blogsField>
+                    <btnText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Button Text"
+                        name="./btnText"/>
+                    <btnLink
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                        fieldLabel="Button Link"
+                        name="./btnLink"
+                        rootPath="/content/dam/tata-capital"/>
+                    <newTab
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        fieldDescription="Open link in new tab"
+                        name="./newTab"
+                        text="Open link in new tab"
+                        value="{Boolean}true"/>
+                    <space-remove
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        fieldDescription="Padding 30px"
+                        name="./spaceRemove"
+                        text="Padding 30px"
+                        value="{Boolean}true"/>
+                    <without-slider
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        fieldDescription="Check for without slider blogs"
+                        name="./noSlider"
+                        text="Check for without slider blogs"
+                        value="{Boolean}true"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

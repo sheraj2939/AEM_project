@@ -1,0 +1,37 @@
+.secure-box {
+  padding: 25px 40px;
+}
+.secure-box h2 {
+  margin-bottom: 25px;
+}
+.secure-box .btns-tops {
+  padding-top: 26px;
+}
+
+.service-list-details li {
+  margin-bottom: 50px;
+}
+.service-list-details li:last-child {
+  margin-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+  .secure-box {
+    padding: 32px 24px;
+  }
+  .secure-box h2 {
+    margin-bottom: 10px;
+  }
+  .secure-box .btns-tops {
+    padding-top: 20px;
+  }
+  .service-list-details li {
+    padding: 15px 0;
+    margin-bottom: 0px;
+  }
+  .services-individual-details .tops-heads {
+    margin-bottom: 5px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

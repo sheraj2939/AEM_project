@@ -1,0 +1,42 @@
+<sly data-sly-test="${wcmmode.edit}">
+    <style>
+        .popover-modal.modals-blue.fade.popover-show{
+            display:block;
+        }
+    </style>
+</sly>
+<!-- News Letter Popup modal -->
+<div class="popover-modal modals-blue fade popover-show" id="subscribe-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-lg2">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content subscribes-content">
+                <button data-dismiss="popover-modal" class="popover-modal-close jsSubscribeClose"><i class="icon-close"></i></button>    
+                <div class="popover-modal-body">                      
+                <div class="modal-body-inner">      
+                    <sly data-sly-resource="${'popover-modal-title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></sly>
+                </div>
+                </div>            
+            </div>
+            <div class="pro-links-subscribe">
+                <div class="explore-pro-links">
+                    <sly data-sly-resource="${'popover-modal-list' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></sly>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- News Letter Popup modal -->
+
+<div class="loader hide-loader custom-loader">
+    <div class="logo">
+        <div class="logo-image">
+            <img class="image" src="/content/dam/tata-capital-web/img/TCL-Logo-OnlyText.svg" alt="Logo" />
+        </div>
+        <div class="arrow arrow-loader">
+                <span class="lines line-1"></span>
+                <span class="lines line-2"></span>
+                <span class="lines line-3"></span>
+                <span class="lines line-4"></span>
+            </div>
+    </div>
+  </div>

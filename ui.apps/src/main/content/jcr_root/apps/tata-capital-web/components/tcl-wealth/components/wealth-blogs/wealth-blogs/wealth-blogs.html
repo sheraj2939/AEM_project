@@ -1,0 +1,79 @@
+<sly
+    data-sly-use.blogList="${'com.tatacapital.web.core.models.BlogModel' @ perPage='4', categoryId=properties.productMapValue}">
+</sly>
+<!-- financial insights -->
+<section class="financial-insights-wrap space-tb40">
+    <div class="financial-inner">
+        <div class="container">
+            <sly
+                data-sly-resource="${'container-main' @ resourceType='/apps/core/wcm/components/container/v1/container'}">
+            </sly>
+        </div>
+        <div class="container mob-px-0">
+            <div class="js-fi-slider slider-dots financial-insights-slider-dots slider-arrows">
+                <sly data-sly-list="${blogList.blogDetails}">
+                    <div class="financial-insights-slider">
+                        <div class="financial-insights-item jsTranslateBack">
+                            <div class="fi-thumbnail-img">
+                                <img src="${item.blogImage}" alt="${item.blogProductName}" class="lozad" loading="lazy">
+                            </div>
+                            <a href="${item.blogLink}" target="_blank" class="fi-overlay-card"
+                                data-cta="Financial Insight">
+                                <div class="fi-card-top">
+                                    <span class="fi-insight-tag">
+                                        ${item.blogProductName}
+                                    </span>
+                                    <span class="icon-arrow-up-right arrow-icon"></span>
+                                </div>
+                                <div class="fi-card-mid">
+
+                                    <sly
+                                        data-sly-test="${properties.insightTag=='insightTagH6' || !properties.insightTag}">
+                                        <h6>${item.blogTitle @context='unsafe'}</h6>
+                                    </sly>
+                                    <sly data-sly-test="${properties.insightTag=='insightTagP'}">
+                                        <p>${item.blogTitle @context='unsafe'}</p>
+                                    </sly>
+                                </div>
+                                <div class="fi-card-bottom">
+                                    <span class="time-stamp">${item.blogDate}</span>
+                                    <div class="share-bundle close-on-outside">
+                                        <button class="btn-white js-fi-share-btn" id="js-fi-share-menu1"
+                                            data-share-icon="Financial Insights">Share <span
+                                                class="icon-share"></span></button>
+                                        <div class="share-bundle-menu js-fi-share-menu1">
+                                            <button type="button" class="social-btn" data-shareurl="${item.blogLink}"
+                                                data-share='whatsapp-icon'>
+                                                <img class="lozad"
+                                                    data-src="/content/dam/tata-capital-web/assets/img/whatsapp-colored.svg"
+                                                    alt="whatsapp-icon">
+                                            </button>
+                                            <button type="button" class="social-btn" data-shareurl="${item.blogLink}"
+                                                data-share="facebook-icon">
+                                                <img class="lozad"
+                                                    data-src="/content/dam/tata-capital-web/assets/img/facebook-colored.svg"
+                                                    alt="facebook-icon">
+                                            </button>
+                                            <button type="button" class="social-btn" data-shareurl="${item.blogLink}"
+                                                data-share="twitter-share">
+                                                <img class="lozad"
+                                                    data-src="/content/dam/tata-capital-web/assets/img/twitter-x.svg"
+                                                    alt="twitter-icon">
+                                            </button>
+                                            <button type="button" class="social-btn jsCopyLink"
+                                                data-shareurl="${item.blogLink}">
+                                                <span class="icon-copy icon"></span>
+                                                <span class="text-copy">Copy</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </sly>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- financial insights -->

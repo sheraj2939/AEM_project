@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/tata-capital-web" mode="merge"/>
+    <filter root="/content/tata-capital-web" mode="merge"/>
+    <filter root="/content/dam/tata-capital-web/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/tata-capital-web" mode="merge"/>
+</workspaceFilter>

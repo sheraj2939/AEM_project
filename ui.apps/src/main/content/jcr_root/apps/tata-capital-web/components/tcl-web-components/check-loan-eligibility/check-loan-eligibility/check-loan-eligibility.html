@@ -1,0 +1,17 @@
+<!--  check eligibility box  -->
+       <section class="check-eligibility-box space-tb40">
+            <div class="container">
+                <div class="tops-heads ${properties.classNameSpace}">
+                    <sly data-sly-resource="${'heading' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/component-title/component-title'}"/>
+                    <sly data-sly-resource="${'description' @ resourceType='/apps/core/wcm/components/text/v2/text'}"/>
+                </div>
+
+                <div class="bg-div eligibility-cards">
+                    <sly data-sly-test="${!properties.headingNotRequire}" data-sly-resource="${'only-heading' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/component-title/component-title'}"></sly> 
+                    <ul>
+                        <sly data-sly-resource="${'items' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></sly>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- check eligibility box-->

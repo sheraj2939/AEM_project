@@ -1,0 +1,267 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='wealth.footer'}"></sly>
+</sly>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-inner">
+        <!-- footer-top-box-->
+        <div class="footer-top-box">
+            <div class="footer-container">
+                <ul>
+                    <sly data-sly-list.multi="${resource.children}">
+                        <sly data-sly-test="${multi.name == 'footer-top-box'}">
+                            <sly data-sly-list.footerTop="${multi.children}">
+                                <li><a href="${footerTop.link}"
+                                        target="${footerTop.target ? '_blank':''}">${footerTop.redirectTitle}</a></li>
+                            </sly>
+                        </sly>
+                    </sly>
+                </ul>
+            </div>
+        </div>
+        <!-- footer-top-box-->
+
+        <!-- our-other-websites-->
+        <div class="our-other-websites jsAccordian">
+            <div class="footer-container">
+                <div class="row-flex">
+                    <div class="col-sp15 row-col-40" accod-row>
+                        <div class="accordian-panel">
+                            <sly data-sly-list.multi="${resource.children}">
+                                <sly data-sly-test="${multi.name == 'footer-left-column'}">
+                                    <sly data-sly-list.ourOtherSites="${multi.children}">
+                                        <a href="${ourOtherSites.link}" class="footer-headings"
+                                            accod-head>${ourOtherSites.title}</a>
+                                        <div class="our-websites-inner" accod-body>
+                                            <ul class="footer-links mob-foot-link">
+                                                <sly data-sly-list.nestedmulti="${ourOtherSites.children}">
+                                                    <sly data-sly-test="${nestedmulti.name == 'ourOtherSitesInner'}">
+                                                        <sly data-sly-list.ourOtherSite="${nestedmulti.children}">
+                                                            <li><a href="${ourOtherSite.otherSiteLink}"
+                                                                    target="${ourOtherSite.otherSiteTarget ? '_blank':''}">${ourOtherSite.otherSiteTitle}</a>
+                                                            </li>
+                                                        </sly>
+                                                    </sly>
+                                                </sly>
+                                            </ul>
+                                        </div>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </div>
+                    </div>
+                    <div class="col-sp15 row-col-60" accod-row>
+                        <div class="accordian-panel no-border-bottom">
+                            <sly data-sly-list.multi="${resource.children}">
+                                <sly data-sly-test="${multi.name == 'footer-right-column'}">
+                                    <sly data-sly-list.ourSubsidiaries="${multi.children}">
+                                        <a href="${ourSubsidiaries.link}" class="footer-headings"
+                                            accod-head>${ourSubsidiaries.title}</a>
+                                        <div class="our-websites-inner" accod-body>
+                                            <ul class="footer-links mob-foot-link three-col">
+                                                <sly data-sly-list.nestedmulti="${ourSubsidiaries.children}">
+                                                    <sly data-sly-test="${nestedmulti.name == 'subsidiaries-inner'}">
+                                                        <sly data-sly-list.subsidiary="${nestedmulti.children}">
+                                                            <li><a href="${subsidiary.subsidiaryLink}"
+                                                                    target="${subsidiary.subsidiaryTarget ? '_blank':''}">${subsidiary.subsidiaryTitle}</a>
+                                                            </li>
+                                                        </sly>
+                                                    </sly>
+                                                </sly>
+                                            </ul>
+                                        </div>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- our-other-websites-->
+
+        <!-- footer-main-content-->
+        <sly data-sly-list.multi="${resource.children}">
+            <sly data-sly-test="${multi.name == 'footer-bottom-main-content'}">
+                <sly data-sly-list.bottomMain="${multi.children}">
+                    <div class="footer-main-content">
+                        <div class="footer-container">
+                            <div class="top-outer-policies">
+                                <p class="footer-headings no-arrows">${bottomMain.policiesTitle}</p>
+                                <div class="policies-tabnav accrodian" id="policies-codes2">
+                                    <div class="hidden-xs policies-tab-top">
+                                        <ul class="tablist-nav navTab">
+                                            <sly data-sly-list.nestedmulti="${bottomMain.children}">
+                                                <sly data-sly-test="${nestedmulti.name == 'policiesTopTabs'}">
+                                                    <sly data-sly-list.topTabs="${nestedmulti.children}">
+                                                        <li class="nav-tablist"><a href="${topTabs.link}"
+                                                                class="nav-link" data-collapse="collapse"
+                                                                data-target="tab-1${topTabsList.count}">${topTabs.title}</a>
+                                                        </li>
+                                                    </sly>
+                                                </sly>
+                                            </sly>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content">
+                                        <sly data-sly-list.nestedmulti="${bottomMain.children}">
+                                            <sly data-sly-test="${nestedmulti.name == 'accordionTabContent'}">
+                                                <sly data-sly-list.accordionTabContent="${nestedmulti.children}">
+                                                    <div class="accordian-content">
+                                                        <div class="tab-accordian visible-xs">
+                                                            <a class="tab-title" href="javascript:void(0)"
+                                                                data-toggle="collapse" aria-expanded="false"
+                                                                data-target="tab-${accordionTabContentList.index}${accordionTabContentList.count}">${accordionTabContent.title}</a>
+                                                        </div>
+                                                        <div class="tab-panel collapse"
+                                                            id="tab-1${accordionTabContentList.count}">
+                                                            <ul class="footer-links">
+                                                                <sly
+                                                                    data-sly-list.nestedmulti="${accordionTabContent.children}">
+                                                                    <sly
+                                                                        data-sly-test="${nestedmulti.name == 'tab-inner-content'}">
+                                                                        <sly
+                                                                            data-sly-list.tabInner="${nestedmulti.children}">
+                                                                            <sly data-sly-test="${!tabInner.mitcPopup}">
+                                                                                <li><a href="${tabInner.link}"
+                                                                                        target="${tabInner.pdfInnewTab ? 'blank' : ''}">${tabInner.linkTitle}</a>
+                                                                                </li>
+                                                                            </sly>
+                                                                            <sly data-sly-test="${tabInner.mitcPopup}">
+                                                                                <li><a href="javascript:void(0);"
+                                                                                        data-popovermodalMITC="#prefrencelang-modal">${tabInner.linkTitle}</a>
+                                                                                </li>
+                                                                            </sly>
+                                                                        </sly>
+                                                                    </sly>
+                                                                </sly>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </sly>
+                                            </sly>
+                                        </sly>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="disclaimer-box">
+                                <p class="footer-headings no-arrows">${bottomMain.disclaimerTitle}</p>
+                                <div class="disclaimer-inner">
+                                    <div class="disclaimer-text">
+                                        ${bottomMain.disclaimer @context = 'html'}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </sly>
+            </sly>
+        </sly>
+        <!-- footer-main-content-->
+
+        <!-- copyright-box-->
+        <sly data-sly-list.multi="${resource.children}">
+            <sly data-sly-test="${multi.name == 'footer-bottom-strip'}">
+                <sly data-sly-list.bottomStrip="${multi.children}">
+                    <div class="copyright-box">
+                        <div class="footer-container">
+                            <div class="copyright-inn-right">
+                                <div class="copyright-inner">
+                                    <div class="footer-social-media">
+                                        <p class="heading14 follow-heads">${bottomStrip.socialMediaHeading}</p>
+                                        <div class="socal-lists">
+                                            <sly data-sly-list.nestedmulti="${bottomStrip.children}">
+                                                <sly data-sly-test="${nestedmulti.name == 'footerSocialMedia'}">
+                                                    <sly data-sly-list.socialMedia="${nestedmulti.children}">
+                                                        <a href="${socialMedia.link}"
+                                                            target="${socialMedia.target ? '_blank':''}">
+                                                            <img src="${socialMedia.icon}"
+                                                                alt="${socialMedia.altTitle}">
+                                                        </a>
+                                                    </sly>
+                                                </sly>
+                                            </sly>
+                                        </div>
+                                    </div>
+                                    <div class="copyright-links">
+                                        <ul>
+                                            <sly data-sly-list.nestedmulti="${bottomStrip.children}">
+                                                <sly data-sly-test="${nestedmulti.name == 'footerCopyrightLinks'}">
+                                                    <sly data-sly-list.copyrightLinks="${nestedmulti.children}">
+                                                        <li><a href="${copyrightLinks.link}"
+                                                                target="${copyrightLinks.target ? '_blank':''}">${copyrightLinks.linkTitle}</a>
+                                                        </li>
+                                                    </sly>
+                                                </sly>
+                                            </sly>
+                                        </ul>
+                                    </div>
+                                    <div class="copyright-text">
+                                        <p>${bottomStrip.copyrightText}</p>
+                                    </div>
+                                </div>
+                                <div class="footer-logos">
+                                    <img src="${bottomStrip.footerLogo}" alt="${bottomStrip.footerLogoAltTitle}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </sly>
+            </sly>
+        </sly>
+        <!-- copyright-box-->
+    </div>
+</footer>
+<!-- Footer -->
+
+<div class="popover-modal modals-blue fade popover-show" id="prefrencelang-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md2">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content prefrence-language-content">
+                <button data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></button>
+                <div class="popover-modal-body">
+                    <div class="modal-body-inner">
+                        <div class="prefrence-mx">
+                            <img src="/content/dam/tata-capital-web/Tc-footer-images/mic.svg" alt=""
+                                class="lozad pdf-imgs">
+                            <p class="heading20 customTandC"><span>Most Important Terms & Conditions - Home Loans</span></p>
+                            <p>Download in your preferred language</p>
+                            <div class="mx-314">
+                                <div class="custom-select2">
+                                    <select class="js-select2" id="mitc-language-dropdown" data-type="language"
+                                        data-placeholder="Select an Option">
+                                        <option value="Select an Option">Select an Option</option>
+                                        <sly data-sly-list.multi="${resource.children}">
+                                            <sly data-sly-test="${multi.name == 'otherDocList'}">
+                                                <sly data-sly-list.bottomMain="${multi.children}">
+                                                    <sly data-sly-list.mitcLanguage="${bottomMain.children}">
+                                                        <sly
+                                                            data-sly-test="${mitcLanguage.name == 'mitcLanguageDropdown'}">
+                                                            <sly
+                                                                data-sly-list.mitcLanguageItem="${mitcLanguage.children}">
+                                                                <option value="${mitcLanguageItem.languageName}"
+                                                                    data-pdf="${mitcLanguageItem.pdfPath}"
+                                                                    class="optInvisible"
+                                                                    data-parent="${bottomMain.subMenuHead}">
+                                                                    ${mitcLanguageItem.languageName}
+                                                                </option>
+                                                            </sly>
+                                                        </sly>
+                                                    </sly>
+                                                </sly>
+                                            </sly>
+                                        </sly>
+                                    </select>
+                                </div>
+                            </div>
+                            <a href="" id="mitc-language-download-btn" download
+                                class="btn-dangers btn-big js-proceed-btn w-xs-100 disabled"
+                                data-popoverclose="popover-modal">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

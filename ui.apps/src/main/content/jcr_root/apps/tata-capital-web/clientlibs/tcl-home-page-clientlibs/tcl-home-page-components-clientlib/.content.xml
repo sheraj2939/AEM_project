@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    allowProxy="{Boolean}true"
+    categories="tcl-home-page-components-clientlib"
+    embed="[tcl-banner-clientlib,tcl-way-to-service-clientlib,tcl-explore-products-clientlib,tcl-customer-testimonials-clientlib,tcl-financial-insight-clientlib,tcl-instant-loan-clientlib,tcl-loan-information-clientlibs,tcl-track-my-application-clientlib,tcl-pre-approved-offer-clientlib]"/>

@@ -1,0 +1,46 @@
+<!-- our-other-websites-->
+<div class="${properties.footerstyle==' tchflOtherWebsiteBlue' ? 'our-other-websites other-websites-blue jsAccordian' : 'our-other-websites jsAccordian'}">
+    <div class="footer-container">
+        <div class="row-flex">
+            <div class="col-sp15 row-col-50" accod-row>
+                <div class="accordian-panel">
+                    <a href="javascript:void(0)" class="footer-headings" accod-head data-footer="footerAnalyticData-Our Subsidiaries">Our Subsidiaries</a>
+                    <div class="our-websites-inner" accod-body>
+                        <ul class="footer-links mob-foot-link three-col">
+                            <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                <sly data-sly-test="${loginLinks.name == 'footerOtherWebsite'}">
+                                    <sly data-sly-list.footerTopList="${loginLinks.listChildren}">
+                                        <li><a data-footer="footerAnalyticsData"
+                                                href="${footerTopList.redirectionLink}"
+                                                target="${footerTopList.openInNewTab ? '_blank' : ''}" data-footer="footerAnalyticData-Our Subsidiaries">${footerTopList.heading}</a>
+                                        </li>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sp15 row-col-50" accod-row>
+                <div class="accordian-panel no-border-bottom">
+                    <a href="javascript:void(0)" class="footer-headings" accod-head data-footer="footerAnalyticData-Our Other Websites">Our Other Websites</a>
+                    <div class="our-websites-inner" accod-body>
+                        <ul class="footer-links mob-foot-link">
+                            <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                <sly data-sly-test="${loginLinks.name == 'otherSubscriber'}">
+                                    <sly data-sly-list.footerTopList="${loginLinks.listChildren}">
+                                        <li><a data-footer="footerAnalyticsData"
+                                                href="${footerTopList.redirectionLink}"
+                                                target="${footerTopList.openInNewTab ? '_blank' : ''}" rel="nofollow" data-footer="footerAnalyticData-Our Other Websites">${footerTopList.heading
+                                                @context='html'}</a></li>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- our-other-websites-->

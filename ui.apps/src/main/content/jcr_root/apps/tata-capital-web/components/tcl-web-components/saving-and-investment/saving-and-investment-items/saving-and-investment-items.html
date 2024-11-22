@@ -1,0 +1,38 @@
+
+    <div 
+
+	data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-use.imageTemplate="image.html"
+     data-sly-use.pretitleTemplate="pretitle.html"
+     data-sly-use.titleTemplate="title.html"
+     data-sly-use.descriptionTemplate="description.html"
+     data-sly-use.actionsTemplate="actions.html"
+     data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+     id="${teaser.id}"
+     data-cmp-data-layer="${teaser.data.json}"
+    class="savings-investment-col bg-div" data-card-name="${properties.productName}">
+        <div class="col-top-content">
+
+            <img src="${properties.fileReference}" alt="${properties.alt}">
+        </div>
+        <div class="col-bottom-content">
+            <p class="text14i">
+                ${teaser.description @ context = 'html'}
+            </p>
+            <h4>
+                ${teaser.title}
+            </h4>
+            <div class="investement-details">
+                <sly
+                    data-sly-resource="${'saving-and-investment-list' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                </sly>
+            </div>
+        </div>
+        <div class="investment-button-wrapper">
+            <sly
+                data-sly-resource="${'saving-and-investment-button' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+            </sly>
+            <sly class="icon-arrow-right" data-sly-call="${actionsTemplate.actions @ teaser=teaser}"> </sly>
+        </div>
+    </div>

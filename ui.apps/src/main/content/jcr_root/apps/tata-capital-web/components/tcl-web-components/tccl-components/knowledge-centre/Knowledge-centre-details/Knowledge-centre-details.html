@@ -1,0 +1,41 @@
+<!-- knowledge centre -->
+<section data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+    data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-use.imageTemplate="image.html"
+    data-sly-use.pretitleTemplate="pretitle.html" data-sly-use.titleTemplate="title.html"
+    data-sly-use.descriptionTemplate="description.html" data-sly-use.actionsTemplate="actions.html"
+    data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+    id="${teaser.id}"
+    class="cmp-teaser${!wcmmode.disabled && teaser.imageResource ? ' cq-dd-image' : ''} knowledge-centre-box space-tb40 space-b80"
+    data-cmp-data-layer="${teaser.data.json}">
+    <div class="container">
+        <div class="knowledge-centre-wrap">
+            <div class="bg-div knowledge-cards">
+                <div class="knowledge-top-row left-lg">
+                    <div class="knowledge-top-right d-lg-none">
+                        <p class="text13 semibold">${teaser.pretitle}</p>
+                        <h3 class="heading20"><span>${teaser.title}</span></h3>
+                    </div>
+                    <div class="knowledge-top-left">
+                        <img src="${properties.fileReference}" alt="${properties.alt}">
+                    </div>
+                    <div class="knowledge-top-right">
+                        <div class="d-lg-block d-none">
+                            <p class="text13 semibold">${teaser.pretitle}</p>
+                            <h3 class="heading20"><span>${teaser.title}</span></h3>
+                        </div>
+                        <div class="text14i">${teaser.description @ context = 'html'}</div>
+                        <div class="button-holder">
+                            <sly data-sly-call="${actionsTemplate.actions @ teaser=teaser}"> </sly>
+                            <a data-sly-test="${properties.buttonText}" href="${properties.buttonLink}"
+                                target=" ${properties.checkNewTab ? '_blank' : ''}"
+                                class="btn-links link-with-arrow">${properties.buttonText}
+                                <span class="icon-arrow-right arros"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- knowledge centre -->

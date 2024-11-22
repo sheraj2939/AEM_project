@@ -1,0 +1,123 @@
+<div class="general-info-box space-tb40 space-b80 pd-t50">
+  <div class="container">
+    <sly data-sly-list.StockExchange="${resource.children}">
+      <sly data-sly-test="${StockExchange.name == 'stockExchange'}">
+        <sly data-sly-list.Stock="${StockExchange.children}">
+          <sly data-sly-test.tabMenu="${'fy-{0}{1}' @ format =[drop.name,StockList.count]}"></sly>
+          <div class="general-info-inner">
+            <sly data-sly-test="${!Stock.disableFilterButton}">
+              <div class="general-info-top">
+                  <div class="top-left">
+                      <div class="custom-dropdown-wrap filter-drop-wrap close-on-outside">
+                    <a href="javascript:void(0);" class="custom-dropdown-btn jsShowDrop" data-rel="${tabMenu}"></a>
+                    <div class="custom-dropdown-block jsDropdownBlock" id="${tabMenu}">
+                        <ul class="custom-dropdown-list simple-bar jsGetValue">
+                          <sly data-sly-list.filterIt="${Stock.children}">
+                            <sly data-sly-test="${filterIt.name == 'filterItem'}">
+                              <sly data-sly-list.filterItem="${filterIt.children}">
+                                <li class="list" data-sly-test="${filterItem.filterTitle}">
+                                  <label class="custom-checkbox-label" data-filterItem="${filterItem.filterData}">                                                
+                                    ${filterItem.filterTitle}
+                                    </label>
+                                </li>
+                              </sly>
+                            </sly>
+                          </sly>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </sly>
+            <div class="general-info-bottom">
+                <div class="bg-div general-info-content">
+                    <h3 class="heading20 hideTitle"><span>${Stock.pdfTitle}</span></h3>
+                    <ul class="general-info-list">
+                      <sly data-sly-list.pDf="${Stock.children}">
+                        <sly data-sly-test="${pDf.name == 'pdfs'}">
+                          <sly data-sly-list.pdfFile="${pDf.children}">
+                            <li data-sly-test="${pdfFile.pdfTitle}">
+                                <a class="${pdfFile.disablePdfIcon?'disable-pdf-icon':''} ${pdfFile.discalimerPopup ? 'openDisclaimer' : ''}" href="${pdfFile.discalimerPopup ? 'javascript:void(0)' : pdfFile.pdfLink}" target="${pdfFile.newTab? '-blank':''}" data-pdfFilterData="${pdfFile.pdfData}">${pdfFile.pdfTitle}</a>
+                              </li>
+                              <sly data-sly-test="${pdfFile.discalimerPopup}">
+                                <div class="popover-modal modals-blue fade" id="thankyou-modal">
+                                  <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md2">
+                                    <div class="modal-tb-content">
+                                      <div class="popover-modal-content ">
+                                        <button data-dismiss="popover-modal" class="popover-modal-close jsThanksModalClose"><i
+                                            class="icon-close"></i></button>
+                                        <div class="popover-modal-body">
+                                          <div class="modal-body-inner disclaimer-importants">
+                                            <h3 class="heading20 text-white"><span>${pdfFile.disclaimerTitle}</span></h3>
+                                            <div class="disclaimer-scoll simple-bar">
+                                              <div class="disclaimer-inner">
+                                                <div class="text14i">${pdfFile.popupDescription @ context = 'html'}</div>
+                                              </div>
+                                            </div>
+                                            <div class="mg-t20 text-center">
+                                              <a type="button" target="${pdfFile.newTab? '-blank':''}" href="${pdfFile.pdfLink}" class="btn-link btn-big min-w149 btn-with-card-bg jsDiskPop">${pdfFile.dclBtn}</a>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </sly>
+                          </sly>
+                        </sly>
+                      </sly>
+                    </ul>
+                    <sly data-sly-list.pDfSecondry="${Stock.children}">
+                      <sly data-sly-test="${pDfSecondry.name == 'pdfSecondry'}">
+                        <sly data-sly-list.pdfSec="${pDfSecondry.children}">
+                          <div class="pd-t15">
+                            <h3 class="heading20 hideTitle"><span>${pdfSec.secondryTitle}</span></h3>
+                            <ul class="general-info-list">
+                              <sly data-sly-list.pDf="${pdfSec.children}">
+                                <sly data-sly-test="${pDf.name == 'pdfs'}">
+                                  <sly data-sly-list.pdfFile="${pDf.children}">
+                                    <li data-sly-test="${pdfFile.pdfTitle}">
+                                        <a class="${pDf.disablePdfIconSec?'disable-pdf-icon':''} ${pdfFile.discalimerPopup ? 'openDisclaimer' : ''}" href="${pdfFile.discalimerPopup ? 'javascript:void(0)' : pdfFile.pdfLink}" target="${pdfFile.newTab? '_blank':''}" data-pdfFilterData="${pdfFile.pdfData}">${pdfFile.pdfTitle}</a>
+                                      </li>
+                                      <sly data-sly-test="${pdfFile.discalimerPopup}">
+                                        <div class="popover-modal modals-blue fade" id="thankyou-modal">
+                                          <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md2">
+                                            <div class="modal-tb-content">
+                                              <div class="popover-modal-content ">
+                                                <button data-dismiss="popover-modal" class="popover-modal-close jsThanksModalClose"><i
+                                                    class="icon-close"></i></button>
+                                                <div class="popover-modal-body">
+                                                  <div class="modal-body-inner disclaimer-importants">
+                                                    <h3 class="heading20 text-white"><span>${pdfFile.disclaimerTitle}</span></h3>
+                                                    <div class="disclaimer-scoll simple-bar">
+                                                      <div class="disclaimer-inner">
+                                                        <div class="text14i">${pdfFile.popupDescription @ context = 'html'}</div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="mg-t20 text-center">
+                                                      <a type="button" href="${pdfFile.pdfLink}" target="${pdfFile.newTab? '-blank':''}" class="btn-link btn-big min-w149 btn-with-card-bg jsDiskPop">${pdfFile.dclBtn}</a>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </sly>
+                                  </sly>
+                                </sly>
+                              </sly>
+                            </ul>
+                        </div>
+                      </sly>
+                    </sly>
+                  </sly>
+                </div>
+            </div>
+          </div>                
+        </sly>
+      </sly>
+    </sly>
+  </div>
+</div> 

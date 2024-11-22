@@ -1,0 +1,113 @@
+<sly data-sly-test="${!properties.availPersonalLoan}">
+<div data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+    data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+    data-sly-use.imageTemplate="image.html"
+    data-sly-use.pretitleTemplate="pretitle.html"
+    data-sly-use.titleTemplate="title.html"
+    data-sly-use.descriptionTemplate="description.html"
+    data-sly-use.actionsTemplate="actions.html"
+    data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+    id="${teaser.id}"
+    class="cmp-teaser${!wcmmode.disabled && teaser.imageResource ? ' cq-dd-image' : ''} instant-per-col"
+    data-cmp-data-layer="${teaser.data.json}">
+        <div class="instant-per-div bg-div ${properties.bottomButton ? 'suitable-emi-options-card': ''}">
+            <sly data-sly-test="${!properties.textOnlyVariation}">
+            <sly data-sly-test="${properties.whenCanITakePersonalLoanyBenefits}">
+                <div class="instant-top insta-top-one">
+                    <span class="${properties.iconClass}">${properties.iconNumber}</span>
+                    <sly data-sly-test="${!properties.needStrongTag}">
+                        <h3 class="heading20">
+                            <span>${teaser.title}
+                                <sly data-sly-test="${properties.homeRenovationNextLine}">
+                                    <br>${properties.homeRenovationText}
+                                </sly>
+                            </span>
+                        </h3>
+                    </sly>
+                    <sly data-sly-test="${properties.needStrongTag}">
+                        <strong class="heading20">
+                            <span class="customStrong">${teaser.title}
+                                <sly data-sly-test="${properties.homeRenovationNextLine}">
+                                    <br>${properties.homeRenovationText}
+                                </sly>
+                            </span>
+                        </strong>
+                    </sly>
+                </div>
+            </sly>
+            <sly data-sly-test="${properties.keyFeatures}">
+                <div class="instant-top">
+                    <span class="${properties.iconClass}">${properties.iconNumber}</span>
+                </div>
+                <sly data-sly-test="${properties.titleHeadingTag=='titleTagH3' || !properties.titleHeadingTag}">
+                <h3 class="heading20"><span>${teaser.title}
+                    <sly data-sly-test="${properties.homeRenovationNextLine}">
+                        <br>${properties.homeRenovationText}
+                    </sly>
+                </span></h3>
+                </sly>
+                <sly data-sly-test="${properties.titleHeadingTag=='titleTagP'}">
+                    <p class="heading20"><span>${teaser.title}
+                        <sly data-sly-test="${properties.homeRenovationNextLine}">
+                            <br>${properties.homeRenovationText}
+                        </sly>
+                    </span></p>
+                    </sly>
+            </sly>
+            </sly>
+            <sly data-sly-call="${descriptionTemplate.description @ teaser=teaser}"></sly>
+			${properties.extraContent @ context  = 'html'}
+        </div>
+</div>
+</sly>
+<sly data-sly-test="${properties.availPersonalLoan}">
+    <div data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+    data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+    data-sly-use.imageTemplate="image.html"
+    data-sly-use.pretitleTemplate="pretitle.html"
+    data-sly-use.titleTemplate="title.html"
+    data-sly-use.descriptionTemplate="description.html"
+    data-sly-use.actionsTemplate="actions.html"
+    data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+    id="${teaser.id}"
+    class="cmp-teaser h-100 ${!wcmmode.disabled && teaser.imageResource ? ' cq-dd-image' : ''}"
+    data-cmp-data-layer="${teaser.data.json}">
+        <div class="bg-div option-col ${properties.bottomButton ? 'suitable-emi-options-card': ''}">
+            <div class="option-icon"
+                data-sly-test="${!properties.textOnlyVariation}">
+                <span class="${properties.iconClass}">${properties.iconNumber}</span>
+                <h3 class="heading20">
+                    <span>${teaser.title}
+                        <sly data-sly-test="${properties.homeRenovationNextLine}">
+                            <br>${properties.homeRenovationText}
+                        </sly>
+                    </span>
+                </h3>
+            </div>
+            <sly data-sly-call="${descriptionTemplate.description @ teaser=teaser}"></sly>
+            <sly data-sly-test="${!properties.languagePopup}">
+			${properties.extraContent @ context  = 'html'}
+            </sly>
+            <sly data-sly-test="${properties.languagePopup}">
+            <p class="mg-t15 keyLanguageButton"><a href="javascript:void(0)" data-keyModalMITC="#keyPdfLanguageModal" class="btn-blue btn-large">${properties.buttonText? properties.buttonText : 'Download'}</a>
+            </p>
+            </sly>
+        </div>
+</div>
+</sly>
+
+<sly data-sly-test="${properties.languagePopup}">
+<sly data-sly-list.keyFeaturePdfList="${resource.children}">
+    <sly data-sly-test="${keyFeaturePdfList.name == 'keyPdfLanguageDropdown'}">
+        <sly data-sly-list.mitcItem="${keyFeaturePdfList.children}">
+            <sly data-sly-test.dropdownId="${'{0}_{1}' @ format =[keyFeaturePdfList.name, fieldItemList.count]}">
+                <option class="key-language-pdf-text d-none" value="${mitcItem.languageName}"
+                    data-pdf="${mitcItem.pdfPath}" data-parent="${teaser.title}">
+                    ${mitcItem.languageName}
+                </option>
+            </sly>
+        </sly>
+    </sly>
+</sly>
+</sly>
+<!-- key pdf language popover modal -->

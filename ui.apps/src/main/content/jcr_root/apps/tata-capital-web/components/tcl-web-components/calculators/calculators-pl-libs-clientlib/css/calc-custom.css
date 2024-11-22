@@ -1,0 +1,71 @@
+ul.simple-bar {
+  overflow-y: auto;
+  height: 100px;
+}
+.text-red {
+  color: #FF3A44 !important;
+}
+.las .row-flex .row-col-45 {
+  width: 45%;
+}
+.las .row-flex .row-col-25 {
+  width: 25%;
+}
+.las .row-flex .row-col-30 {
+  width: 30%;
+}
+.z-10{
+  z-index: 10;
+}
+.las .form-textbox-new {
+  position: relative;
+  padding: 20px 0px;
+  margin-bottom: 20px;
+}
+.las .form-textbox-new.calc-textbox-new {
+  padding-bottom: 0px;
+  padding-top: 22px;
+  margin-bottom: 0px;
+}
+.las .form-textbox-new .label-name {
+  display: block;
+  font-weight: normal;
+  margin-bottom: 0px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #9D9D9D;
+  position: absolute;
+  left: 0px;
+  top: 33px;
+  transition: all 0.4s;
+}
+.las .form-textbox-new.active .label-name {
+  font-size: 12px;
+  line-height: 16px;
+  top: 10px;
+}
+.las .form-textbox-new.calc-textbox-new .label-name {
+  top: 26px;
+  font-size: 13px;
+  color: #333;
+}
+
+.las .form-textbox-new.calc-textbox-new.active .label-name {
+  top: 2px;
+  font-size: 12px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.z-0{
+  position: relative;
+  z-index: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

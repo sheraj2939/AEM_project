@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Header Quick Link Section Authoring"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <tab-item-content
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                        <items jcr:primaryType="nt:unstructured">
+                            <container
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Investment Content Authoring"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <tab-item-content-left
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <container
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Investment Left Card Content Authoring"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <title
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Title"
+                                                        name="./quickLinkTopHeadingLeft"
+                                                        useFixedInlineToolbar="{Boolean}true"/>
+                                                    <subLink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <subLink
+                                                                jcr:primaryType="nt:unstructured"
+                                                                jcr:title="Important Points"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                composite="{Boolean}true"
+                                                                fieldLabel="Important Points">
+                                                                <field
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                                    name="./quickLinksLeft">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <column
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <topHeading
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                    fieldLabel="Enter List Point"
+                                                                                    name="./quickLinkTitleLeft"
+                                                                                    useFixedInlineToolbar="{Boolean}true"/>
+                                                                                <iconClass
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                    fieldLabel="Enter class of icon"
+                                                                                    name="./iconClass"
+                                                                                    useFixedInlineToolbar="{Boolean}true"/>
+                                                                                <link
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                    fieldLabel="Enter redirection link"
+                                                                                    name="./redirectionLink"
+                                                                                    rootPath=""/>
+                                                                                <redirection-link-open-new-Tab
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                                    composite="{Boolean}true"
+                                                                                    name="./redirectionLinkOpeninNewTab"
+                                                                                    text="Open in New Tab"
+                                                                                    value="true"/>
+                                                                            </items>
+                                                                        </column>
+                                                                    </items>
+                                                                </field>
+                                                            </subLink>
+                                                        </items>
+                                                    </subLink>
+                                                </items>
+                                            </container>
+                                        </items>
+                                    </tab-item-content-left>
+                                    <tab-item-content-right
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <container
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Investment Right Card Authoring"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <title
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Enter Title"
+                                                        name="./quickLinkTopHeadingRight"
+                                                        useFixedInlineToolbar="{Boolean}true"/>
+                                                    <subLink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <subLink
+                                                                jcr:primaryType="nt:unstructured"
+                                                                jcr:title="Top row Authoring"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                composite="{Boolean}true"
+                                                                fieldLabel="Top row Authoring">
+                                                                <field
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                                    name="./quickLinksRightTopRow">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <column
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <topHeading
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                    fieldLabel="Enter List Point"
+                                                                                    name="./quickLinkTitleRight"
+                                                                                    useFixedInlineToolbar="{Boolean}true"/>
+                                                                                <iconClass
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                    fieldLabel="Enter class of icon"
+                                                                                    name="./iconClass"
+                                                                                    useFixedInlineToolbar="{Boolean}true"/>
+                                                                                <link
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                    fieldLabel="Enter redirection link"
+                                                                                    name="./redirectionLink"
+                                                                                    rootPath=""/>
+                                                                                <redirection-link-open-new-Tab
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                                    composite="{Boolean}true"
+                                                                                    name="./redirectionLinkOpeninNewTab"
+                                                                                    text="Open in New Tab"
+                                                                                    value="true"/>
+                                                                                <subLink
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                                        <subLink
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            jcr:title="Important Points"
+                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                                            composite="{Boolean}true"
+                                                                                            fieldLabel="Important Points">
+                                                                                            <field
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                                                                name="./quickLinksRightInnerField">
+                                                                                                <items jcr:primaryType="nt:unstructured">
+                                                                                                    <column
+                                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                                                            <topHeading
+                                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                                                fieldLabel="Enter List Point"
+                                                                                                                name="./quickLinkTitleRightInner"
+                                                                                                                useFixedInlineToolbar="{Boolean}true"/>
+                                                                                                            <iconClass
+                                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                                                fieldLabel="Enter class of icon"
+                                                                                                                name="./iconClass"
+                                                                                                                useFixedInlineToolbar="{Boolean}true"/>
+                                                                                                            <link
+                                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                                                fieldLabel="Enter redirection link"
+                                                                                                                name="./redirectionLinkInner"
+                                                                                                                rootPath=""/>
+                                                                                                            <redirection-link-open-new-Tab
+                                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                                                                composite="{Boolean}true"
+                                                                                                                name="./redirectionLinkInnerOpeninNewTab"
+                                                                                                                text="Open in New Tab"
+                                                                                                                value="true"/>
+                                                                                                        </items>
+                                                                                                    </column>
+                                                                                                </items>
+                                                                                            </field>
+                                                                                        </subLink>
+                                                                                    </items>
+                                                                                </subLink>
+                                                                            </items>
+                                                                        </column>
+                                                                    </items>
+                                                                </field>
+                                                            </subLink>
+                                                        </items>
+                                                    </subLink>
+                                                    <subLink-lower
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <subLink
+                                                                jcr:primaryType="nt:unstructured"
+                                                                jcr:title="Important Points Heading"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                composite="{Boolean}true"
+                                                                fieldLabel="Important Points Heading">
+                                                                <field
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                                    name="./quickLinksRight">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <column
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <topHeading
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                    fieldLabel="Enter List Point"
+                                                                                    name="./quickLinkTitleRight"
+                                                                                    useFixedInlineToolbar="{Boolean}true"/>
+                                                                                <iconClass
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                    fieldLabel="Enter class of icon"
+                                                                                    name="./iconClass"
+                                                                                    useFixedInlineToolbar="{Boolean}true"/>
+                                                                                <link
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                    fieldLabel="Enter redirection link"
+                                                                                    name="./redirectionLink"
+                                                                                    rootPath=""/>
+                                                                                <redirection-link-open-new-Tab
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                                    composite="{Boolean}true"
+                                                                                    name="./redirectionLinkOpeninNewTab"
+                                                                                    text="Open in New Tab"
+                                                                                    value="true"/>
+                                                                                <subLink
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                                        <subLink
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            jcr:title="Important Points"
+                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                                            composite="{Boolean}true"
+                                                                                            fieldLabel="Important Points">
+                                                                                            <field
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                                                                name="./quickLinksRightInnerField">
+                                                                                                <items jcr:primaryType="nt:unstructured">
+                                                                                                    <column
+                                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                                                            <topHeading
+                                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                                                fieldLabel="Enter List Point"
+                                                                                                                name="./quickLinkTitleRightInner"
+                                                                                                                useFixedInlineToolbar="{Boolean}true"/>
+                                                                                                            <iconClass
+                                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                                                fieldLabel="Enter class of icon"
+                                                                                                                name="./iconClass"
+                                                                                                                useFixedInlineToolbar="{Boolean}true"/>
+                                                                                                            <link
+                                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                                                fieldLabel="Enter redirection link"
+                                                                                                                name="./redirectionLinkInner"
+                                                                                                                rootPath=""/>
+                                                                                                            <redirection-link-open-new-Tab
+                                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                                                                composite="{Boolean}true"
+                                                                                                                name="./redirectionLinkInnerOpeninNewTab"
+                                                                                                                text="Open in New Tab"
+                                                                                                                value="true"/>
+                                                                                                        </items>
+                                                                                                    </column>
+                                                                                                </items>
+                                                                                            </field>
+                                                                                        </subLink>
+                                                                                    </items>
+                                                                                </subLink>
+                                                                            </items>
+                                                                        </column>
+                                                                    </items>
+                                                                </field>
+                                                            </subLink>
+                                                        </items>
+                                                    </subLink-lower>
+                                                </items>
+                                            </container>
+                                        </items>
+                                    </tab-item-content-right>
+                                </items>
+                            </container>
+                        </items>
+                    </tab-item-content>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

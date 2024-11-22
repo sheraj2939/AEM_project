@@ -1,0 +1,61 @@
+<!-- Specific box  -->
+<section class="space-tb40">
+    <div class="container">
+        <div class="mx-1012">
+            <sly data-sly-test="${properties.nomTitle}">
+                <div class="tops-heads">
+                    <h2>${properties.nomTitle}<span>${properties.titleBold}</span></h2>
+                </div>
+            </sly>
+            <div class="specific-box bg-div">
+                <div class="specific-steps-inner">
+                    <div class="specific-steps-left">
+                        <div class="specific-steps-ul">
+                            <sly data-sly-list.stepsMedia="${resource.children}">
+                                <sly data-sly-test="${stepsMedia.name == 'leftSteps'}">
+                                    <sly data-sly-list.stepsMediaContent="${stepsMedia.children}">
+                                        <div
+                                            class="specific-steps-li training-item ${stepsMediaContent.contentVisible ? 'active'  : ''}">
+                                            <div class="specific-li-left">
+                                                <div class="steps-icons">
+                                                    <img src="${stepsMediaContent.stepsIconImg}"
+                                                        alt="${stepsMediaContent.stepsIconAlt}" class="step-ticks-img">
+                                                </div>
+                                                <sly data-sly-test="${stepsMediaContent.stepDecsription}">
+                                                    <span
+                                                        class="heading20 semibold">${stepsMediaContent.stepsHeading}</span>
+                                                </sly>
+                                                <sly data-sly-test="${stepsMediaContent.stepDecsription}">
+                                                    <div class="steps-texts">${stepsMediaContent.stepDecsription @
+                                                        context =
+                                                        'html'}</div>
+                                                </sly>
+                                            </div>
+                                            <div class="progress-custom-container">
+                                                <div class="progressircle progressCircle conic-gradient-border"
+                                                    id="progressCircle">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </div>
+                    </div>
+                    <div class="specific-steps-right">
+                        <sly data-sly-list.stepsImg="${resource.children}">
+                            <sly data-sly-test="${stepsImg.name == 'rightImg'}">
+                                <sly data-sly-list.stepsImgContent="${stepsImg.children}">
+                                    <div class="media-holder-row ${stepsImgContent.imgShow ? '':'d-none'}">
+                                        <img src="${stepsImgContent.rightImg}" alt="${stepsImgContent.rightImgAlt}">
+                                    </div>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--  Specific box  -->

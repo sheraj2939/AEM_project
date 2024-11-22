@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:lastModified="{Date}2022-11-23T12:26:52.613+05:30"
+    jcr:mimeType="application/octet-stream"
+    jcr:primaryType="sling:Folder">
+    <jcr:content jcr:primaryType="nt:unstructured">
+        <folderThumbnail/>
+    </jcr:content>
+</jcr:root>

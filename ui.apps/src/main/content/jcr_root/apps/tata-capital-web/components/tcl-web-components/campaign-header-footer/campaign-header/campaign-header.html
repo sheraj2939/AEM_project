@@ -1,0 +1,17 @@
+    <!-- Header Blue Default-->
+    <header class="header nps-header ${properties.selectTheme}">
+        <div class="header-inner">        
+            <div class="header-container ${properties.secondImg ? 'd-flex align-item-center': ''}">
+                <a href="${properties.link ? properties.link : '/content/tata-capital-web/en.html'}" target="${properties.openInNewTab ? '_blank' : ''}" class="header-logos ${properties.secondImg ? 'custom-campaign-header': ''}">
+                    <img src="${properties.img}" alt="">
+                </a>
+                <sly data-sly-test = "${properties.secondImg}">                
+                <a href="/content/tata-capital-web/en.html" class="header-logos ${properties.secondImg ? 'custom-campaign-header': ''}">
+                    <img src="${properties.secondImg}" alt="">
+                </a>
+              </sly>
+                </div>                
+            </div>
+        </div>
+    </header>
+    <!-- Header Blue Default-->

@@ -1,0 +1,32 @@
+.main-title {
+    margin-bottom: 10px;
+}
+
+.banner-button.btn-blue a {
+    color: white;
+}
+.home-page-calculator-structure.calculatorEF{
+    position: relative;
+    z-index: 2;
+}
+.btn-link a,
+.btn-links a {
+    font-family: 'OpenSans-SemiBold';
+    font-size: 16px;
+    line-height: 19px;
+    color: #1961ac;
+    display: inline-flex;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    .explore-our-product-button a{
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+@media (max-width: 767px) {
+    .explore-our-product-button a{
+        font-size: 14px;
+    }
+}

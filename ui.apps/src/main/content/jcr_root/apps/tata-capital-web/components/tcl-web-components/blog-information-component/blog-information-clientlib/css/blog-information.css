@@ -1,0 +1,176 @@
+.informed-blog {
+  padding: 25px 25px 76px;
+  position: relative;
+  height: 100%;
+}
+.informed-blog .informed-top {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #CACACA;
+}
+.informed-blog .informed-bottom {
+  padding: 20px 0;
+}
+.informed-blog .informed-lists li {
+  margin-top: 20px;
+}
+.informed-blog .informed-lists li:first-child {
+  margin-top: 0px;
+}
+.informed-blog .informed-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.informed-blog .informed-row .informed-left {
+  width: 195px;
+}
+.informed-blog .informed-row .informed-right {
+  width: calc(100% - 195px);
+  padding: 0 30px 0 16px;
+}
+.informed-blog .informed-row.no-left-imgage .informed-right {
+  padding-left: 0px;
+  width: 100%;
+}
+.informed-blog .informed-row.no-left-imgage .informed-right .informed-text {
+  margin-bottom: 31px;
+}
+.informed-blog .informed-medias {
+  position: relative;
+  border-radius: 18.5px;
+  overflow: hidden;
+}
+.informed-blog .informed-medias .informed-play-btn {
+  width: 70px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.informed-blog .informed-article {
+  padding: 16px;
+  border-radius: 16px;
+  background: radial-gradient(73.03% 70.13% at 48.36% 50.79%, rgba(255, 255, 255, 0.88) 0%, #FFF 100%);
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.06);
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.informed-blog .informed-article:before {
+  content: "\e923";
+  font-family: "icomoon";
+  font-size: 16px;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  color: #BDC9D3;
+  transition: all 0.1s;
+}
+.informed-blog .informed-article:hover {
+  background: radial-gradient(73.03% 70.13% at 48.36% 50.79%, rgba(18, 104, 179, 0.86) 0%, rgba(16, 141, 250, 0.95) 100%), radial-gradient(73.03% 70.13% at 48.36% 50.79%, rgba(255, 255, 255, 0.88) 0%, #FFF 100%);
+  box-shadow: 0px 31px 31px 0px rgba(15, 157, 245, 0.12), 0px 124px 49px 0px rgba(15, 157, 245, 0.02), 0px 193px 54px 0px rgba(15, 157, 245, 0);
+}
+.informed-blog .informed-article:hover p {
+  color: #fff;
+}
+.informed-blog .informed-article:hover .informed-date {
+  color: #fff;
+}
+.informed-blog .informed-article:hover:before {
+  color: #fff;
+  transform: translateY(-50%) rotate(0deg);
+}
+.informed-blog .hash-tag span {
+  font-family: "OpenSans-SemiBold";
+  padding: 6px 10px;
+  border-radius: 16px;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.informed-blog .informed-text {
+  margin-bottom: 10px;
+}
+.informed-blog .informed-date {
+  color: #B369AB;
+}
+.informed-blog .informed-btn {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  padding: 0 25px 25px;
+}
+
+@media (max-width: 1199px) {
+  .informed-blog .informed-row .informed-left {
+    width: 130px;
+  }
+  .informed-blog .informed-row .informed-right {
+    width: calc(100% - 130px);
+  }
+  .informed-blog .informed-medias .informed-play-btn {
+    width: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .informed-blog-box .cards-rows {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .informed-blog-box .cards-rows:first-child {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 767px) {
+  .informed-blog .informed-lists li {
+    margin-top: 10px;
+  }
+  .informed-blog .informed-top {
+    padding-bottom: 12px;
+  }
+  .informed-blog .informed-article {
+    padding: 10px;
+  }
+  .informed-blog .informed-article:before {
+    content: none;
+  }
+  .informed-blog .informed-article:hover .informed-row .informed-right:before {
+    color: #fff;
+    transform: translateY(-50%) rotate(0deg);
+  }
+  .informed-blog .informed-row .informed-left {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .informed-blog .informed-row .informed-right {
+    width: 100%;
+    padding-left: 0px;
+    position: relative;
+  }
+  .informed-blog .informed-row .informed-right:before {
+    content: "\e923";
+    font-family: "icomoon";
+    font-size: 16px;
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    color: #BDC9D3;
+    transition: all 0.1s;
+  }
+  .informed-blog .informed-row.no-left-imgage .informed-right .informed-text {
+    margin-bottom: 8px;
+  }
+  .informed-blog .informed-text {
+    margin-bottom: 8px;
+  }
+  .informed-blog .informed-medias .informed-img {
+    width: 100%;
+  }
+  .informed-blog .informed-medias .informed-play-btn {
+    width: 70px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

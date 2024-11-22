@@ -1,0 +1,46 @@
+<div data-sly-test="${!properties.dynamicAboutProductSecond}" class="about-product">
+    <section class="personal-loan-box space-tb40">
+        <div class="container">
+            <div class="about-product-big-div title">
+                <div class="bg-div personal-cards jsParaOuter Personal Loan in Mumbai">
+                    <div class="personal-para">
+                        <div class="component-title title">
+                            <h2 class="main-heading">Documents Required to get a Personal Loan in
+                                <span class="upperFirstLatter">${PageProperties.cityName}</span>
+                            </h2>
+                        </div>
+                        <div class="rte title">
+                            <p>The following are the <a href="/content/tata-capital-web/en/personal-loan/documents-required.html">documents required
+                                    for getting an instant personal loan</a> with Tata Capital:</p>
+                            <ul class="list-circle-info">
+                                <li>
+                                    <p>Photo Identity Proof documents</p>
+                                </li>
+                                <li>
+                                    <p>Income Proof documents</p>
+                                </li>
+                                <li>
+                                    <p>Salary Slips</p>
+                                </li>
+                                <li>
+                                    <p>Address Proof documents and</p>
+                                </li>
+                                <li>
+                                    <p>Employment Certificate</p>
+                                </li>
+                            </ul>
+                            <p class="mt-10">To know the entire list of accepted documents, visit our documents page.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div data-sly-test="${properties.dynamicAboutProductSecond}" class="about-product">
+    <section class="personal-loan-box space-tb40">
+        ${properties.dynamicAboutProductSecond @ context = 'html'}
+    </section>
+</div>

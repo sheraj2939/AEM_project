@@ -1,0 +1,53 @@
+.emi-option-box.document-required-box .document-flex-row {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.instant-personal-slider .instant-per-div .left-number {
+    min-width: 32px;
+    font-family: 'OpenSans-Bold';
+    font-size: 54.1063px;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #b287d4;
+    margin-right: 29px;
+    margin-left: 9px;
+}
+
+@media (max-width: 1199px) {
+    .personal-loan-box.top-loan-space {
+        padding-top: 30px;
+    }
+
+    .loans-details-per {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .personal-loan-box .personal-cards.personal-bottom-card {
+        padding-bottom: 144px;
+    }
+
+    .emi-option-box.document-required-box .document-flex-row {
+        margin: 0px;
+    }
+
+    .instant-personal-slider .instant-per-div .left-number {
+        margin-right: 20px;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .personal-loan-box .personal-para p {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    .personal-loan-box .personal-para .last-para p {
+        margin-bottom: 0;
+    }
+    .personal-loan-box .personal-cards.personal-bottom-card {
+        padding-bottom: 180px;
+    }
+}

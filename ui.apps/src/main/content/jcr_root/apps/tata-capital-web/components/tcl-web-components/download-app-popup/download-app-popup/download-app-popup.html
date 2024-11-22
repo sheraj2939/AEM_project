@@ -1,0 +1,37 @@
+<sly data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+    data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-use.imageTemplate="image.html"
+    data-sly-use.pretitleTemplate="pretitle.html" data-sly-use.titleTemplate="title.html"
+    data-sly-use.descriptionTemplate="description.html" data-sly-use.actionsTemplate="actions.html"
+    data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+    id="bannerPopup" class="cmp-teaser${!wcmmode.disabled && teaser.imageResource ? ' cq-dd-image' : ''}"
+    data-cmp-data-layer="${teaser.data.json}">
+    <div class="popover-modal modal-popup fade" style="display: none" id="${properties.variation}">
+        <div class="popover-modal-dialog popover-modal-dialog-centered">
+            <div class="modalcontent">
+                <div class="popover-modal-body downloadpop-new">
+                    <button data-dismiss="popover-modal" class="popover-modal-close"><span
+                            class="icon-close"></span></button>
+                    <div class="tab-innerBox max-width-600">
+                        <div class="tableft">
+                            <img alt class="lozad" data-src="${properties.fileReference}">
+                        </div>
+                        <div class="tabright">
+                            <div class="tab-contentBox">
+                                <img alt="moneyfy" class="hidden-xs lozad" data-src="${properties.logoImage}">
+                                <h5 class="heading">${teaser.title}</h5>
+                                <p>
+                                    ${teaser.description @context='html'}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-subscribeBox">
+                        <sly
+                            data-sly-resource="${'popup-qr-blue' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                        </sly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</sly>

@@ -1,0 +1,67 @@
+<!-- contact information starts -->
+<div class="contact-info-box space-tb40 space-t80">
+    <div class="container">
+        <div class="contact-info-bottom">
+            <sly
+                data-sly-resource="${'contact-us' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+            </sly>
+        </div>
+        <div class="text-center mg-t30">
+            <sly
+                data-sly-resource="${'contact-us-button' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+            </sly>
+        </div>
+    </div>
+</div>
+<!-- contact information ends -->
+
+<div class="popover-modal fade" id="status-complaints-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-lg3">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content bg-with-img">
+                <button data-dismiss="popover-modal" class="popover-modal-close jsSubscribeClose"><span
+                        class="icon-close"></span></button>
+                <div class="popover-modal-body">
+                    <div class="status-complaints">
+                        <div class="status-center">
+                            <h2>${properties.titleReg}<span>${properties.titleBold}</span></h2>
+                            <div class="text16i">${properties.titleDesc @ context = 'html'}</div>
+                        </div>
+                        <div class="status-complaints-table">
+                            <div class="table-overflow">
+                                <table class="table custom-table" style="min-width: 850px;">
+                                    <thead>
+                                        <tr>
+                                            <sly data-sly-list.tableHeading="${resource.children}">
+                                                <sly data-sly-test="${tableHeading.name == 'tableHead'}">
+                                                    <sly data-sly-list.th="${tableHeading.children}">
+                                                        <th style="width: 25%;">
+                                                            ${th.text}
+                                                        </th>
+                                                    </sly>
+                                                </sly>
+                                            </sly>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <sly data-sly-list.tableRow="${resource.children}">
+                                                <sly data-sly-test="${tableRow.name == 'tableRow'}">
+                                                    <sly data-sly-list.tr="${tableRow.children}">
+                                                        <td>
+                                                            ${tr.rowContent @ context = 'html'}
+                                                        </td>
+                                                    </sly>
+                                                </sly>
+                                            </sly>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

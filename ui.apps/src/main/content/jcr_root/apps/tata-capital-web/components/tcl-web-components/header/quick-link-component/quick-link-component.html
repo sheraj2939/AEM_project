@@ -1,0 +1,102 @@
+<div class="dropdown-content-wrap maxWidth-1110">
+    <div class="dropdown-content-inner" tab-wrapper="">
+        <div class="loan-info-box quick-link-card-wrap">
+            <div class="link-card-left-col">
+                <div class="loan-card-wrap">
+                    <p class="load-card-head">
+                        ${properties.quickLinkTopHeadingLeft}
+                    </p>
+                    <div class="loan-card apply-loans-link apply-left-minh">
+                        <ul>
+                            <sly data-sly-list.loginLinksLeft="${resource.listChildren}">
+                                <sly data-sly-test="${loginLinksLeft.name == 'quickLinksLeft'}">
+                                    <sly data-sly-list.consumerListLeft="${loginLinksLeft.listChildren}">
+                                        <li class="loan-card-item">
+                                            <a href="${consumerListLeft.redirectionLink}" class="loan-card-link" data-header="headerAnalyticData-Quick Link Section" target="${consumerListLeft.redirectionLinkOpeninNewTab ? '_blank' : '' }">
+                                                <span class="${consumerListLeft.iconClass} head-icons"></span>
+                                                <p>${consumerListLeft.quickLinkTitleLeft}</p>
+                                            </a>
+                                        </li>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="link-card-right-col">
+                <div class="loan-card-wrap">
+                    <p class="load-card-head">
+                        ${properties.quickLinkTopHeadingRight}
+                    </p>      
+                    <div class="heads-rows">
+                        <div class="row-flex">
+                            <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                <sly data-sly-test="${loginLinks.name == 'quickLinksRightTopRow'}">
+                                    <sly data-sly-list.consumerList="${loginLinks.listChildren}">
+                                        <div class="row-col-50">
+                                            <div class="apply-loans-outer">
+                                                <div class="apply-rows-info">
+                                                    <div class="apply-info-headings">                                                                
+                                                        <span class="${consumerList.iconClass} head-icons"></span>
+                                                        <p>${consumerList.quickLinkTitleRight}</p>
+                                                    </div>
+                                                </div>                                                        
+                                                <div class="loan-card apply-loans-link">
+                                                    <ul class="apply-link-arrow">
+                                                        <sly data-sly-list.loginLinks="${consumerList.listChildren}">
+                                                            <sly data-sly-test="${loginLinks.name == 'quickLinksRightInnerField'}">
+                                                                <sly data-sly-list.consumerList="${loginLinks.listChildren}">
+                                                                    <li class="loan-card-item">
+                                                                        <a href="${consumerList.redirectionLinkInner}" class="loan-card-link" data-header="headerAnalyticData-Quick Link Section" target="${consumerList.redirectionLinkInnerOpeninNewTab ? '_blank' : '' }">
+                                                                            <p>${consumerList.quickLinkTitleRightInner}</p>
+                                                                        </a>
+                                                                    </li>
+                                                                </sly>
+                                                            </sly>
+                                                        </sly>                                                                                                                                           
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </div>
+                    </div>
+            
+                    <sly data-sly-list.loginLinks="${resource.listChildren}">
+                        <sly data-sly-test="${loginLinks.name == 'quickLinksRight'}">
+                            <sly data-sly-list.consumerList="${loginLinks.listChildren}">
+                                <div class="apply-loans-outer">                                                        
+                                    <div class="apply-rows-info">
+                                        <div class="apply-info-headings">                                                                
+                                            <span class="${consumerList.iconClass} head-icons"></span>
+                                            <p>${consumerList.quickLinkTitleRight}</p>
+                                        </div>
+                                    </div>                                                        
+                                    <div class="loan-card apply-loans-link">
+                                        <ul class="apply-link-arrow">
+                                            <sly data-sly-list.loginLinks="${consumerList.listChildren}">
+                                                <sly data-sly-test="${loginLinks.name == 'quickLinksRightInnerField'}">
+                                                    <sly data-sly-list.consumerList="${loginLinks.listChildren}">
+                                                        <li class="loan-card-item">
+                                                            <a href="${consumerList.redirectionLinkInner}" class="loan-card-link" data-header="headerAnalyticData-Quick Link Section" target="${consumerList.redirectionLinkInnerOpeninNewTab ? '_blank' : '' }">
+                                                                <p>${consumerList.quickLinkTitleRightInner}</p>
+                                                            </a>
+                                                        </li>
+                                                    </sly>
+                                                </sly>
+                                            </sly>                                                              
+                                        </ul>
+                                    </div>
+                                </div>
+                            </sly>
+                        </sly>
+                    </sly>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-12-02T01:49:14.703+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/tata-capital-web/settings/wcm/templates/tatacapital-web-footer-template"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Footer Experience Fragment"
+        sling:resourceType="tata-capital-web/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="tata-capital-web/components/container"
+            layout="responsiveGrid">
+            <footer_calculators_r
+                jcr:created="{Date}2022-12-02T01:49:14.700+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-12-02T01:49:14.700+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/TC-Revamp/Tc-Footer/footer-calculators-rates-charges-exp">
+                <twoRowsList jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        menutittle="Calculators">
+                        <twoRowsLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                heading="PL EMI Calculator"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                heading="PL Pre Payment Calculator"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                heading="Home Loan EMI Calculator"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                heading="OMAY Calculator"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                heading="BalanceTransfer Top Up Calculators"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                heading="Home Loan Eligibility Calculator"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                heading="Area Conversion Calculator"/>
+                            <item7
+                                jcr:primaryType="nt:unstructured"
+                                heading="Stamp Duty Calculator"/>
+                            <item8
+                                jcr:primaryType="nt:unstructured"
+                                heading="Business Loan EMI Calculator"/>
+                            <item9
+                                jcr:primaryType="nt:unstructured"
+                                heading="GST Calculator"/>
+                            <item10
+                                jcr:primaryType="nt:unstructured"
+                                heading="Foreclosure Calculator"/>
+                            <item11
+                                jcr:primaryType="nt:unstructured"
+                                heading="Business Loan Pre Payment Calculator"/>
+                            <item12
+                                jcr:primaryType="nt:unstructured"
+                                heading="Loan Against Propert EMI Calculator"/>
+                            <item13
+                                jcr:primaryType="nt:unstructured"
+                                heading="Vehicle Loan EMI Calculator"/>
+                        </twoRowsLinks>
+                    </item0>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        menutittle="Rates &amp; Charges">
+                        <twoRowsLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                heading="Personal Loan Rates And Charges"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                heading="Home Loan Rates And Charges"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                heading="Business Loan Fees And Charges"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                heading="Vehicle Loan Rates And Charges"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                heading="Loan Against Securities Fees And Charges"/>
+                        </twoRowsLinks>
+                    </item1>
+                </twoRowsList>
+            </footer_calculators_r>
+        </root>
+    </jcr:content>
+</jcr:root>

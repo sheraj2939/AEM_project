@@ -1,0 +1,194 @@
+<sly  
+    data-sly-use.title="com.adobe.cq.wcm.core.components.models.Title"
+    data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+    data-sly-test.text="${title.text}"
+    data-cmp-data-layer="${title.data.json}"
+>
+
+<sly data-sly-test="${properties.selectCalculatorField=='loanAmount'}">
+<div class="calculator-details">
+    <div class="calculator-details-top">
+        <div data-sly-resource="${'calculator-heading' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/calculators/calculator-field-heading'}"></div>
+        <div class="calculator-textbox with-border">
+            <div class="textbox-inner input-with-text prefix-text">
+                <span class="input-text">₹</span>
+                <input
+                    class="input-textbox-calulator disable-emoji inputDecimal price-with-comma-js-input js-showCalulatorRangeValue"
+                    type="text" data-jsname="${title.text}" value="1,00,000">
+            </div>
+        </div>
+    </div>
+
+    <div class="calculator-details-bottom">
+        <div class="custom-range-slider-wrap">
+            <input type="text" class="js-calculatorRangeSlider" name="my_range" value="" data-step="${properties.dataStep ? properties.dataStep :'1000'}" data-fieldname="${title.text}"/>
+            <div class="custom-range-label">
+                <span>₹75,000</span>
+                <span>₹35,00,000</span>
+            </div>
+        </div>
+    </div>
+</div>
+</sly>
+
+<sly data-sly-test="${properties.selectCalculatorField=='loanDuration'}">
+<div class="month-year-wrapper" yearMonth-tab-wrapper>
+    <div class="month-year-tab-wrap">
+        <ul class="month-year-tab-box">
+            <li class="year-month-item">
+                <a href="javascript:void(0);" class="year-month-btn-squared active" yearMonth-tab-menu="year-tab">
+                    Yr
+                </a>
+            </li>
+            <li class="year-month-item">
+                <a href="javascript:void(0);" class="year-month-btn-squared" yearMonth-tab-menu="month-tab">
+                    Mo
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="calculator-details js_col_months" yearMonth-tab-contnet="year-tab" id="years">
+        <div class="calculator-details-top">
+            <div data-sly-resource="${'calculator-heading-year' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/calculators/calculator-field-heading'}"></div>
+
+            <div class="calculator-textbox with-border">
+                <div class="textbox-inner input-with-text suffix-text year-month-input">
+                    <input class="input-textbox-calulator disable-emoji inputDecimal only-numeric-decimal-js-input js-showCalulatorRangeValue" type="text" data-jsYearName="${title.text}" value="5" jsname="yearInput">
+                </div>
+            </div>
+        </div>
+
+        <div class="calculator-details-bottom">
+            <div class="custom-range-slider-wrap">
+                <input type="text" class="js-calculatorRangeSlider" name="my_range" value="" data-step="1"
+                data-fieldname="${title.text}" data-month-or-year="${title.id}Year"/>
+                <div class="custom-range-label">
+                    <!-- <h1>${title.text}Month ${title.text}Year</h1> -->
+                    <span>1 Years</span>
+                    <span>6 Years</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="calculator-details js_col_months d-none" yearMonth-tab-contnet="month-tab" id="months">
+        <div class="calculator-details-top">
+            <div data-sly-resource="${'calculator-heading-month' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/calculators/calculator-field-heading'}"></div>
+
+            <div class="calculator-textbox with-border">
+                <div class="textbox-inner input-with-text suffix-text year-month-input">
+                    <input class="input-textbox-calulator disable-emoji inputDecimal  only-numeric-decimal-js-input js-showCalulatorRangeValue" type="text" data-jsMonthName="${title.text}" jsname="monthInput">
+                </div>
+            </div>
+        </div>
+
+        <div class="calculator-details-bottom">
+            <div class="custom-range-slider-wrap">
+                <input type="text" class="js-calculatorRangeSlider" name="my_range" value="" data-step="1" data-month-or-year="${title.id}Month"/>
+                <div class="custom-range-label">
+                    <span>12 Months</span>
+                    <span>72 Months</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</sly>
+
+<sly data-sly-test="${properties.selectCalculatorField=='roi'}">
+<div class="calculator-details">
+    <div class="calculator-details-top">
+        <div data-sly-resource="${'calculator-heading' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/calculators/calculator-field-heading'}"></div>
+
+        <div class="calculator-textbox with-border">
+            <div class="textbox-inner input-with-text suffix-text">
+                <span class="input-text">%</span>
+                <input class="input-textbox-calulator disable-emoji single-dot only-numeric-decimal-js-input js-showCalulatorRangeValue roi"
+                    type="text" value="5" data-jsname="${title.text}">
+            </div>
+        </div>
+    </div>
+
+    <div class="calculator-details-bottom">
+        <div class="custom-range-slider-wrap">
+            <input type="text" class="js-calculatorRangeSlider" name="my_range"  value="" data-step="${properties.dataStep ? properties.dataStep :'0.01'}"
+            data-fieldname="${title.text}" />
+            <div class="custom-range-label">
+                <span class="span1">10% p.a</span>
+                <span class="span2">19% p.a</span>
+            </div>
+        </div>
+    </div>
+</div>
+</sly>
+
+<sly data-sly-test="${properties.selectCalculatorField=='checkbox-btn'}">
+    <div class="calculator-details tenure-moths-wrapper">
+        <sly data-sly-resource="${'calculator-heading' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></sly>
+        <div class="months-details">
+            <ul>
+                <sly data-sly-resource="${'checkbox-button' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></sly>
+            </ul>
+        </div>
+    </div>
+</sly>
+
+<sly data-sly-test="${properties.selectCalculatorField=='loanAmountWithTooltip'}">
+    <div class="calculator-details">
+        <div class="calculator-details-top">
+            <div class="text-with-tooltips has-tooltip ${properties.tooltipsClass}">
+                <div data-sly-resource="${'calculator-heading' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/calculators/calculator-field-heading'}"></div>
+                <span class="custom-tooltip">
+                <i class="tooltip-icon icon-info-alt"></i>
+                <div data-sly-resource="${'tooltip-text' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/calculators/calculator-tooltip-text'}"></div>
+                </span>
+            </div>
+            <div class="calculator-textbox with-border">
+                <div class="textbox-inner input-with-text prefix-text">
+                    <span class="input-text">₹</span>
+                    <input
+                        class="input-textbox-calulator disable-emoji only-numeric-decimal-input price-with-comma js-showCalulatorRangeValue"
+                        type="text" data-jsname="${title.text}" value="40,000">
+                </div>
+            </div>
+        </div>
+    
+        <div class="calculator-details-bottom">
+            <div class="custom-range-slider-wrap">
+                <input type="text" class="js-calculatorRangeSlider" name="my_range" value="" data-step="1000" data-fieldname="${title.text}"/>
+                <div class="custom-range-label">
+                   <span>₹75,000</span>
+                    <span>₹35,00,000</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </sly>
+
+    
+<sly data-sly-test="${properties.selectCalculatorField=='loanDurationOnlyMonth'}">
+    <div class="calculator-details">
+        <div class="calculator-details-top">
+            <div data-sly-resource="${'calculator-heading' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/calculators/calculator-field-heading'}"></div>
+            <div class="calculator-textbox with-border mx-w120">
+                <div class="textbox-inner input-with-text suffix-text">
+                    <span class="input-text">Mo</span>
+                    <input
+                        class="input-textbox-calulator only-numeric-input js-showCalulatorRangeValue"
+                        type="text" data-fieldname="${title.text}" data-month="onlyMonth"  jsname="monthInput" value="1">
+                </div>
+            </div>
+        </div>
+
+        <div class="calculator-details-bottom">
+            <div class="custom-range-slider-wrap">
+                <input type="text" class="js-calculatorRangeSlider" name="my_range" value="" data-step="1" data-month-or-year="${title.id}Month" />
+                <div class="custom-range-label">
+                   <span>12 Months</span>
+                    <span>90 Months</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </sly>
+
+</sly>

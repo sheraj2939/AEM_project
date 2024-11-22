@@ -1,0 +1,115 @@
+<!--  loan-steps box  -->
+<section class="space-tb40">
+    <div class="container">
+        <div class="loan-steps-box bg-div">
+            <div class="loan-steps-inner">
+                <div class="loan-steps-left">
+
+                    <div class="loan-steps-ul" id="timeline-container">
+                        <sly data-sly-list.loanStepList="${resource.children}">
+                            <sly data-sly-test="${loanStepList.name == 'stepMulti'}">
+                                <sly data-sly-list.stepsNum="${loanStepList.children}">
+                                    <div class="loan-steps-li tl-item-flag">
+                                        <div class="steps-li-left">
+                                            <div class="progress-custom-container">
+                                                <div class="progressircle progressCircle" id="progressCircle"></div>
+                                            </div>
+                                            <div class="steps-icons">
+                                                <img src="/content/dam/tata-capital-web/assets/img/steps-green-ticks.svg"
+                                                    alt="" class="step-ticks-img">
+                                                <span class="steps-icon-in">
+                                                    <img src="${stepsNum.iconImg}" alt="steps-icon">
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="steps-li-right">
+                                            <span class="steps-number">${stepsNum.stepNum}</span>
+                                            <p class="heading20">${stepsNum.stepText}</p>
+                                        </div>
+                                    </div>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </div>
+
+                    <sly data-sly-test="${properties.applyBtn}">
+                        <div class="pd-t10 steps-apply-btn">
+                            <a href="${properties.applyNowLink}" target="${properties.openNewTab ? '_blank' : ''}"
+                                type="button" class="btn-blue btn-large mobile-w-100">${properties.applyBtn}</a>
+                        </div>
+                    </sly>
+
+                    <sly data-sly-test="${properties.googlePlayUrl}">
+                        <div class="pd-t10 steps-downloads-store">
+                            <a href="${properties.googlePlayUrl}"
+                                target="${properties.googleOpenNewTab ? '_blank' : ''}">
+                                <img src="${properties.googlePlayImg}" alt="Google Play Store">
+                            </a>
+                            <a href="${properties.appStoreUrl}"
+                                target="${properties.appStorePlayOpenNewTab ? '_blank' : ''}">
+                                <img src="${properties.appStoreImg}" alt="App Store">
+                            </a>
+                        </div>
+                    </sly>
+                </div>
+                
+                <div class="loan-steps-right">
+                    <div class="video-imgs">
+                        <img src="${properties.thumbnailImageRight}" alt="Video-image-thumbnail"
+                            class="step-video-poster">
+                        <a href="javascript:void(0)" class="step-play-btn" video-source="${properties.VideoSrc}"
+                            data-popovermodal="popover-modal-step" data-target="#step-video-modal">
+                            <img src="/content/dam/tata-capital-web/assets/img/step-video-play.svg" alt="Play-button">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--  loan-steps box  -->
+<!-- video modal -->
+<div class="popover-modal fade" id="step-video-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-lg2">
+        <div class="popover-modal-content video-modals">
+            <button data-dismiss="popover-step" class="popover-modal-close"><i class="icon-close"></i></button>
+            <div class="popover-modal-body">
+                <div class="videos-outer">
+                    <iframe src class="frameSrc" title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- video modal -->
+
+<script data-sly-test="${properties.howToSchema}" type="application/ld+json">
+    {
+      "@context": "https://schema.org/", 
+      "@type": "HowTo", 
+      "name": "How to Apply for Home Loan",
+      "step": [{
+        "@type": "HowToStep",
+        "text": "Enter your basic details",
+        "name": "Step 1"
+      },{
+        "@type": "HowToStep",
+        "text": "Check your eligibility",
+        "name": "Step 2"
+      },{
+        "@type": "HowToStep",
+        "text": "Pay the processing fee",
+        "name": "Step 3"
+      },{
+        "@type": "HowToStep",
+        "text": "Upload Documents",
+        "name": "Step 4"
+      },{
+        "@type": "HowToStep",
+        "text": "Get Provisional Sanction",
+        "name": "Step 5"
+      }]    
+    }
+    </script>

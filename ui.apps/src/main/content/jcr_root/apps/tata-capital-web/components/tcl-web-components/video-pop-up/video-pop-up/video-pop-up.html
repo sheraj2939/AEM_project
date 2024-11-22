@@ -1,0 +1,40 @@
+<button
+		data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button"
+        data-sly-use.iconTemplate="icon.html"
+        data-sly-element="${button.buttonLink.valid ? 'a' : 'button'}"
+        type="${button.buttonLink.valid ? '' : 'button'}"
+        id="${button.id}"
+        data-sly-attribute="${button.buttonLink.htmlAttributes}"
+        aria-label="${button.accessibilityLabel}"
+        data-cmp-clickable="${button.data ? true : false}"
+        data-cmp-data-layer="${button.data.json}" 
+type="button" class="btn-blue btn-large" data-popovermodal="popover-modal" data-target="${button.accessibilityLabel}">${button.text}</button>
+
+    <div class="modal-backdrop"></div>
+  <!--personal loan modal -->
+    <div class="popover-modal fade popover-show" id="video-popup-modal" style="display: block">
+        <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-xl1">
+            <div class="modal-tb-content">
+                <div class="video-pop-up-modal">
+                    <div class="popover-modal-content">
+                        <button data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></button>    
+                        <div class="popover-modal-body">                      
+                            <div class="video-modal-inner">      
+                                <div class="left-col">
+                                    <div id="video-modal">
+										<iframe src="${properties.videoPopUpLink}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                                    </div>
+                                </div>
+                                <div class="right-col">
+                                    <div data-sly-resource="${'container-main' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--personal loan modal -->
+

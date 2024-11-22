@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2022-12-16T00:05:22.755+05:30"
+        cq:lastModifiedBy="vivek"
+        cq:lastReplicated="{Date}2022-12-16T19:44:47.852+05:30"
+        cq:lastReplicatedBy="nikita"
+        cq:lastReplicationAction="Activate"
+        cq:template="/conf/tata-capital-web/settings/wcm/templates/personal-loan-template"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:uuid="cc6ed604-7f1d-40cb-8e26-db7c1760232a"
+        sling:resourceType="tata-capital-web/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="tata-capital-web/components/container"
+            layout="responsiveGrid">
+            <experiencefragment
+                jcr:created="{Date}2022-12-15T17:01:04.081+05:30"
+                jcr:createdBy="khushboo"
+                jcr:lastModified="{Date}2022-12-15T23:59:46.578+05:30"
+                jcr:lastModifiedBy="vivek"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/tata-capital-web/us/en/site/header-Experience-Fragment/master"/>
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/container"
+                editable="{Boolean}true"
+                layout="responsiveGrid"/>
+            <responsivegrid
+                jcr:created="{Date}2022-12-02T13:12:29.953+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-12-02T13:12:29.953+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+                <experiencefragment
+                    jcr:created="{Date}2022-12-16T00:00:11.258+05:30"
+                    jcr:createdBy="vivek"
+                    jcr:lastModified="{Date}2022-12-16T00:00:23.341+05:30"
+                    jcr:lastModifiedBy="vivek"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="tata-capital-web/components/experiencefragment"
+                    fragmentVariationPath="/content/experience-fragments/tata-capital-web/us/en/site/Footer-Experience-Fragment/master"/>
+                <experiencefragment_1522464401
+                    jcr:created="{Date}2022-12-16T00:05:07.167+05:30"
+                    jcr:createdBy="vivek"
+                    jcr:lastModified="{Date}2022-12-16T00:05:22.753+05:30"
+                    jcr:lastModifiedBy="vivek"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="tata-capital-web/components/experiencefragment"
+                    fragmentVariationPath="/content/experience-fragments/tata-capital-web/us/en/site/right-sticky-buttons/master"/>
+            </responsivegrid>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Long}768"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

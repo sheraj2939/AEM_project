@@ -1,0 +1,12 @@
+.faq-box .faq-row .faq-heading{
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    .faq-box .faq-row .faq-body-inner p{
+        font-size: 13px;
+            line-height: 19px;
+    }
+}
+.cmp-accordion__item .scrollMargin{
+	scroll-margin-top:200px ;
+}

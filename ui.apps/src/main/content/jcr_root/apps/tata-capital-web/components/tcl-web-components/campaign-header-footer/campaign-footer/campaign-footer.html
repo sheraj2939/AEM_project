@@ -1,0 +1,61 @@
+    <!-- Footer default blue-->
+    <footer class="footer nps-footer">    
+        <div class="nps-footer-box ${properties.bgTheme}">
+            <div class="custom-container">
+                <div class="row-flex">
+                    <div class="row-col-33 col-sp15">
+                        <ul class="nps-social-list">
+                            <sly data-sly-list.iconList="${resource.children}">
+                                <sly data-sly-test="${iconList.name == 'iconClasses'}">
+                                    <sly data-sly-list.icon="${iconList.children}">
+                                        <li>
+                                            <a href="${icon.link}" target="${icon.openInNewTab ? '_blank' : '' }">
+                                                <span class="${icon.iconClass}"></span>
+                                            </a>
+                                        </li>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </ul>
+                    </div>
+                    <div class="row-col-33 col-sp15">
+                        <ul class="list-nps-link">
+                            <sly data-sly-list.disclaimer="${resource.children}">
+                                <sly data-sly-test="${disclaimer.name == 'disclaimerNo'}">
+                                    <sly data-sly-list.disclaimerList="${disclaimer.children}">
+                                        <li>
+                                            <a href="${disclaimerList.pdfLink}" target="${disclaimerList.openInPdfNewTab ? '_blank' : '' }" class="nps-ft-text">${disclaimerList.contentForFooter}</a>
+                                        </li>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </ul>
+                    </div>                                            
+                    <div class="row-col-33 col-sp15">                                               
+                        <p class="nps-ft-text">${properties.copyrightText ? properties.copyrightText : 'Copyright © 2023 Tata Capital Limited' }</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>    
+    <!-- Footer default blue --> 
+    <div class="popover-modal modals-blue fade custom-blue-fade" id="failure-modal">
+        <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-lg2">
+            <div class="modal-tb-content">
+                <div class="popover-modal-content subscribes-content">
+                    <button data-dismiss="popover-modal" class="popover-modal-close jsSubscribeClose"><span
+                            class="icon-close"></span></button>
+                    <div class="popover-modal-body">
+                        <div class="modal-body-inner">
+                            <div class="mx-490">
+                                <img src="/content/dam/tata-capital-web/assets/img/error-icon-red.png" alt=""
+                                    class="thanks-imgs">
+                                <p class="heading36 bold">Uh oh, something went wrong</p>
+                                <p class="text16i">Please try again later.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

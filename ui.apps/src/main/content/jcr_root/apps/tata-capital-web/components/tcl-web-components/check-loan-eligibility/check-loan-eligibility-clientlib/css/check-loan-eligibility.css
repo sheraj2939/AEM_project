@@ -1,0 +1,98 @@
+.check-eligibility-box .row-flex {
+  margin-top: -30px;
+}
+.check-eligibility-box .row-flex .row-col-33 {
+  padding-top: 30px;
+}
+.check-eligibility-box .eligibility-cards {
+  background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.67) 99.11%);
+  padding: 30px 50px;
+}
+.check-eligibility-box .eligibility-cards h3 {
+  margin-bottom: 26px;
+  color: #1268B3;
+}
+.check-eligibility-box .test-cols {
+  position: relative;
+  min-height: 32px;
+  padding-left: 42px;
+  display: flex;
+  align-items: center;
+}
+.check-eligibility-box .test-cols .test-icon {
+  position: absolute;
+  left: 0px;
+  top: 0%;
+}
+.check-eligibility-box.sm-eligibility-box .eligibility-cards {
+  padding: 0px;
+  background: none;
+}
+.check-eligibility-box.sm-eligibility-box p {
+  margin-bottom: 0px !important;
+}
+
+.eligibility-single-list.row-flex {
+  display: block;
+  margin-top: 0px;
+}
+.eligibility-single-list.row-flex .row-col-33 {
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 0px;
+}
+.eligibility-single-list.row-flex .row-col-33:first-child {
+  margin-top: 0px;
+}
+
+.eligibility-two-list.row-flex .row-col-33 {
+  width: 50%;
+}
+
+.eligibility-four-list.row-flex .row-col-33 {
+  width: 25%;
+}
+
+@media (max-width: 1199px) {
+  .check-eligibility-box .eligibility-cards {
+    padding: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .check-eligibility-box .test-cols .text14i {
+    font-size: 13px;
+  }
+
+  .eligibility-four-list.row-flex .row-col-33 {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .check-eligibility-box .eligibility-cards {
+    padding: 24px;
+  }
+  .check-eligibility-box .eligibility-cards h3 {
+    margin-bottom: 12px;
+  }
+  .check-eligibility-box .row-flex {
+    margin-top: 0px;
+  }
+  .check-eligibility-box .row-flex .row-col-33 {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 0px;
+  }
+  .check-eligibility-box .row-flex .row-col-33:first-child {
+    margin-top: 0px;
+  }
+
+  .eligibility-two-list.row-flex .row-col-33 {
+    width: 100%;
+  }
+
+  .eligibility-four-list.row-flex .row-col-33 {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

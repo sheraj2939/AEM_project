@@ -1,0 +1,56 @@
+<sly  data-sly-use.image="com.adobe.cq.wcm.core.components.models.Image"
+     data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-cmp-is="image"
+     data-cmp-lazy="${image.lazyEnabled}"
+     data-cmp-lazythreshold="${image.lazyThreshold}"
+     data-cmp-src="${image.srcUriTemplate ? image.srcUriTemplate : image.src}"
+     data-cmp-widths="${image.widths}"
+     data-cmp-dmimage="${image.dmImage}"
+     data-cmp-smartcroprendition="${image.smartCropRendition}"
+     data-asset="${image.fileReference}"
+     data-asset-id="${image.uuid}"
+     data-title="${image.title || image.alt}"
+     id="${component.id}"
+     data-cmp-data-layer="${image.data.json}"
+     class="cmp-image${!wcmmode.disabled ? ' cq-dd-image' : ''}"
+     itemscope itemtype="https://schema.org/ImageObject">
+<section class="media-resources-box space-tb40">
+        <div class="container">
+            <div class="row-flex row-flex-20">
+                <div class="row-col-50 col-sp20 resent50">
+                    <div class="resource-update-wrap bg-div">
+                        <div class="resoure-update-top">
+                            <h3 class="heading20"><span>${properties.mainHeading}</span></h3>
+                        </div>
+                        <div class="resoure-update-bottom">
+                            <ul class="resource-update-list simple-bar" data-simplebar="init">
+                                <sly
+                            data-sly-resource="${'press-release-left-box' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                        </sly>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-col-50 col-sp20 resent50">
+                    <div class="resource-report-right">
+
+                       <sly
+                            data-sly-resource="${'press-release-right-box' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                        </sly>
+
+
+                        <div class="resource-report-rb">
+                            <a href="${image.link}"  target="${properties.cardLinkNew2 ? '_blank' : '' }" class="resource-right-item">
+                                <img src="${image.src}" class="resource-right-img" alt="${properties.alt}">
+                                <p class="heading20 has-arrow">
+                                     ${properties.whiteText}
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </sly>

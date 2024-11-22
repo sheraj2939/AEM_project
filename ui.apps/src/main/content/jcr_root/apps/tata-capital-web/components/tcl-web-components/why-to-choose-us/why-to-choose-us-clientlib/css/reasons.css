@@ -1,0 +1,45 @@
+.reasons-box .tops-heads {
+	 max-width: 653px;
+}
+ /* .reasons-box .reasons-list li {
+	 margin-top: 20px;
+	 background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.71) 0%, rgba(255, 255, 255, 0.95) 99.11%), linear-gradient(134.06deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.67) 99.11%);
+	 backdrop-filter: blur(9px);
+	 box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.01), 5px 0px 10px rgba(0, 0, 0, 0.01), 0px -5px 10px rgba(0, 0, 0, 0.01), 0px 5px 10px rgba(0, 0, 0, 0.01);
+	 border-radius: 30px;
+	 padding: 20px;
+}
+ .reasons-box .reasons-list li:first-child {
+	 margin-top: 0px;
+} */
+ .reasons-box .reasons-list .reasons-col {
+	 position: relative;
+	 padding-left: 67px;
+	 min-height: 47px;
+}
+ .reasons-box .reasons-list .reasons-col .reasons-icon {
+	 position: absolute;
+	 left: 0px;
+	 top: 0px;
+}
+ .reasons-box .reasons-list .reasons-col .reasons-icon .all-icon {
+	 background-color: #b287d4;
+}
+ .reasons-box .reasons-list .reasons-col .heading20 {
+	 margin-bottom: 12px;
+}
+ .reasons-box .reasons-list .reasons-col p {
+	 color: #4f4f4f;
+	 letter-spacing: 0.02em;
+}
+ @media (max-width: 767px) {
+	 .reasons-box .reasons-list .reasons-col {
+		 padding-left: 50px;
+		 min-height: 40px;
+	}
+	 .reasons-box .reasons-list .reasons-col p {
+		 font-size: 13px;
+		 line-height: 20px;
+	}
+}
+ 

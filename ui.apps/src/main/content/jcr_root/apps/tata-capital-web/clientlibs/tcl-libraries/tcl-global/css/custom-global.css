@@ -1,0 +1,236 @@
+/*# Custom Global CSS */
+.root.container.responsivegrid{
+	padding:0px;
+    max-width:100%;
+	overflow:hidden;
+}
+.container.responsivegrid{
+  padding:0px;
+  max-width:100%;
+}
+a{
+  color: #1961AC;
+  }
+
+  @media (max-width: 767px) {
+    p {
+      font-size: 13px;
+    }
+  }  
+
+/*** hl seo tag changes ***/
+.tata-whatsapp-box .component-title p span {
+  font-family: "OpenSans-SemiBold";
+}
+
+.apply-step-lists p.heading20 span {
+  font-family: "OpenSans-SemiBold";
+}
+
+.apply-step-lists p.heading20 {
+  margin-bottom: 6px;
+}
+
+.customer-say-box .customer-say-details .customer-bottom p {
+  font-size: 16px;
+  margin-bottom: 6px;
+  line-height: 22px;
+  color: #333;
+}
+
+.related-video-box p.heading20 span {
+  font-family: "OpenSans-SemiBold";
+}
+
+.related-video-box .block-left .block-title p {
+  margin-bottom: 10px;
+}
+
+.related-video-box .block-right .block-title p {
+  font-size: 16px;
+  line-height: 130%;
+  font-family: "OpenSans-SemiBold";
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.fi-overlay-card .fi-card-mid p {
+  font-family: "OpenSans-SemiBold";
+  font-size: 16px;
+  line-height: 130%;
+  color: #333;
+}
+
+.financial-insights-slider .financial-insights-item:hover .fi-overlay-card .fi-card-mid p {
+  color: #FFFFFF;
+}
+
+.financial-insights-slider .financial-insights-item:hover .fi-overlay-card .fi-card-mid p a {
+  color: #FFFFFF;
+}
+
+.instant-loan-in-your-city .component-title p.text-center {
+  font-family: "OpenSans-Regular";
+  font-size: 34px;
+  line-height: 130%;
+  letter-spacing: .02em;
+  color: #000;
+}
+
+.instant-loan-in-your-city .component-title p.text-center span {
+  font-family: "OpenSans-Bold";
+}
+
+.instant-slider-box .instant-slider .instant-card p.heading20 {
+  margin-bottom: 12px;
+  transition: all 0.1s;
+}
+
+.instant-slider-box .instant-slider .instant-card p.heading20 span {
+  font-family: "OpenSans-SemiBold";
+}
+.who-can-take-loan .component-title p{
+    font-family: "OpenSans-Regular";
+    font-size: 34px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.who-can-take-loan .component-title p span{
+  font-family: "OpenSans-Bold";
+}
+
+.instant-personal-slider.multipurpose-slider .instant-per-div p.heading20{
+  font-family: "OpenSans-Light";
+}
+.instant-personal-slider.multipurpose-slider .instant-per-div p.heading20 span{
+  font-family: "OpenSans-SemiBold";
+}
+
+.find-right-loan-box .find-right-loan-tabs .tab-content-wrap .tab-content .right-loan-img p.heading20{
+  font-family: "OpenSans-Light";
+}
+.find-right-loan-box .find-right-loan-tabs .tab-content-wrap .tab-content .right-loan-img p.heading20 span{
+  font-family: "OpenSans-SemiBold";
+}
+
+.space-tb30 {
+  padding: 30px 0;
+}
+
+@media (max-width: 991px) {
+  .fi-overlay-card .fi-card-mid p {
+      font-size: 15px;
+      line-height: 19px;
+  }
+
+  .instant-loan-in-your-city .component-title p.text-center {
+      font-size: 30px;
+  }
+
+  .how-apply-desc .component-title p{
+    display: none;
+  }
+
+  .who-can-take-loan .component-title p{
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  .popular-faq-box .component-title h3 {
+      font-size: 30px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .related-video-box .related-video .block-title p {
+      margin-bottom: 15px;
+  }
+
+  .instant-loan-in-your-city .component-title p.text-center {
+      font-size: 22px;
+  }
+
+  .instant-slider-box .instant-slider .instant-card p.heading20 {
+      margin-bottom: 10px;
+  }
+
+  .instant-slider-box .instant-slider .instant-col p.heading20 {
+      font-size: 16px;
+      line-height: 130%;
+  }
+  .who-can-take-loan .component-title p{
+    font-size: 22px;
+  }
+}
+
+/*** hl seo tag changes ***/
+
+.popular-faq-box .component-title h3{
+  font-family: "OpenSans-Regular";
+    font-size: 34px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    color: #000;
+}
+.popular-faq-box .component-title h3 span{
+  font-family: "OpenSans-Bold";
+}
+
+/* otp timer */
+.loan-otp-timers {
+  margin-top: 20px;
+}
+.loan-otp-timers .text16i {
+  margin-bottom: 0px !important;
+}
+.loan-otp-timers .btn-links {
+  font-size: 15px;
+}
+.loan-otp-timers .otp-timers-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+}
+.loan-otp-timers .otp-timers-row .otp-timers-col {
+  padding: 0 12px;
+}
+
+.loan-against-body .btn-controls .btn-link {
+  margin-left: 20px;
+  height: 51px;
+  min-width: 163px;
+}
+button.jsLoadingBtn  img {
+  margin: auto;
+  width: 24px;
+}
+
+.otp-number-dot.dot-animation {
+  display: inline-block;
+  width: 16px;
+  vertical-align: bottom;
+}
+@media (max-width: 575px){
+.loan-against-otp-wrap .btn-controls .btn-link {
+    margin-left: 0;
+    margin-top: 10px;
+}
+}
+@media (max-width: 767px) {
+  .loan-otp-timers .btn-links {
+    font-size: 14px;
+  }
+  .popular-faq-box .component-title h3{
+      font-size: 22px;
+  }
+}
+/* otp timer */
+.customeStrongTag{
+  letter-spacing: normal;
+  font-family: "OpenSans-SemiBold";
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+}

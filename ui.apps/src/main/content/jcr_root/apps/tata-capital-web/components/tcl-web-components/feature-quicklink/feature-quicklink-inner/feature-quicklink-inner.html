@@ -1,0 +1,14 @@
+
+<div class="feature-quicklinks-item bg-div" data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+    data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-use.imageTemplate="image.html"
+    data-sly-use.pretitleTemplate="pretitle.html" data-sly-use.titleTemplate="title.html"
+    data-sly-use.descriptionTemplate="description.html" data-sly-use.actionsTemplate="actions.html"
+    data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+    data-cmp-data-layer="${teaser.data.json}">
+    <span class="${teaser.pretitle}"></span>
+    <h3 class="heading20"><span>${teaser.title}</span></h3>
+    <div class="text14i advise-text">${teaser.description @context = "html"}</div>
+    <div class="btn-controls">
+        <sly data-sly-call="${actionsTemplate.actions @ teaser=teaser}"></sly>
+    </div>
+</div>

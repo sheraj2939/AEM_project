@@ -1,0 +1,81 @@
+<section class="space-tb40 space-b80">
+        <div class="tops-heads">
+            <div
+                data-sly-resource="${'community-heading' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+            </div>
+        </div>
+        <div class="general-info-box">
+            <div class="general-info-section">
+                <div class="general-info-section">
+                    <div class="dropdown-right">
+                        <div class="custom-dropdown-wrap min-width-auto filter-drop-wrap close-on-outside"
+                            data-sly-test="${properties.defaultYear}">
+                            <a href="javascript:void(0);" class="custom-dropdown-btn jsShowDrop"
+                                data-defaultYear="${properties.defaultYear}"
+                                data-rel="fy-3">${properties.defaultYear}</a>
+                            <div class="custom-dropdown-block jsDropdownBlock" id="fy-3">
+                                <ul class="custom-dropdown-list simple-bar jsGetValue">
+                                    <sly data-sly-list.yearFilterList="${resource.children}">
+                                        <sly data-sly-test="${yearFilterList.name == 'rightFilterYear'}">
+                                            <sly data-sly-list.yearFilterItem="${yearFilterList.children}">
+                                                <li class="list" data-year="${yearFilterItem.filterItemsData}">
+                                                    <label class="custom-checkbox-label">
+                                                        ${yearFilterItem.filterItemsText}
+                                                    </label>
+                                                </li>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="custom-dropdown-wrap min-width-auto filter-drop-wrap close-on-outside"
+                            data-sly-test="${properties.defaultMonth}">
+                            <a href="javascript:void(0);" class="custom-dropdown-btn jsShowDrop"
+                                data-defaultMonth="${properties.defaultMonth}"
+                                data-rel="fy-4">${properties.defaultMonth}</a>
+                            <div class="custom-dropdown-block jsDropdownBlock" id="fy-4">
+                                <ul class="custom-dropdown-list simple-bar jsGetValue">
+                                    <sly data-sly-list.monthFilterList="${resource.children}">
+                                        <sly data-sly-test="${monthFilterList.name == 'filterMonths'}">
+                                            <sly data-sly-list.monthFilterItem="${monthFilterList.children}">
+                                                <li class="list" data-month="${monthFilterItem.filterItemsData}">
+                                                    <label class="custom-checkbox-label">
+                                                        ${monthFilterItem.filterItemsText}
+                                                    </label>
+                                                </li>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-div general-info-content">
+                        <h3 data-sly-test="${properties.mainHeading}" class="heading20"><span>${properties.mainHeading}</span></h3>
+                        <ul class="general-infolist-wrap">
+                            <sly data-sly-list.reportList="${resource.children}">
+                                <sly data-sly-test="${reportList.name == 'reportMulti'}">
+                                    <sly data-sly-list.reportItem="${reportList.children}">
+                                        <li class="report-list">
+                                            <div class="infolist-item lg-pr datestamp">
+                                                <span class="icon-pdf list-icon"></span>
+                                                <p class="text12">${reportItem.pdfDate}</p>
+                                                <p class="text14 semibold">${reportItem.title}</p>
+                                                <div class="btn-controls">
+                                                    <a href="${reportItem.btnLink}"
+                                                        target="${reportItem.checkNewTab ? '_blank' : ''}"
+                                                        class="btn-links link-with-arrow">${reportItem.buttonText}<span
+                                                            class="icon-arrow-right arros"></span></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>

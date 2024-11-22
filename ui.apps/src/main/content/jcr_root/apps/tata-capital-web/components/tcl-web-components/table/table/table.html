@@ -1,0 +1,222 @@
+<main class="main-content">
+    <section class="table-box">
+        <sly data-sly-list.itemListsecs="${resource.children}">
+            <sly data-sly-test="${itemListsecs.name == 'table'}">
+                <sly data-sly-list.tableList="${itemListsecs.children}">
+
+                    <!--Normal Table-->
+                    <sly data-sly-test="${tableList.tableType == 'normalTable'}">
+                        <div class="table-section ${properties.apicallClassName ? properties.apicallClassName : ''}">
+                            ${tableList.heading @context= 'html' || ''}
+                            <div
+                                class="${properties.noHeading ? 'faq-table-wrap': 'table-block '} ${properties.widthZero ? 'width-zero': ' '}">
+                                <table
+                                    class="${properties.noHeading ? 'faq-main-table': 'table-main '} ${tableList.tableTheme}  w-100">
+                                    <thead>
+                                        <tr class="sticky-header">
+                                            <sly data-sly-list.itemList="${tableList.children}">
+                                                <sly data-sly-test="${itemList.name == 'theading'}">
+                                                    <sly data-sly-list.thData="${itemList.children}">
+
+                                                        <th class="${thDataList.count == 1 ? 'sticky-cell' : ''}">
+                                                            ${thData.thdata}</th>
+
+                                                    </sly>
+                                                </sly>
+                                            </sly>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <sly data-sly-list.itemLists="${tableList.children}">
+                                            <sly data-sly-test="${itemLists.name == 'tableRow'}">
+                                                <sly data-sly-list.tablerow="${itemLists.children}">
+                                                    <tr>
+                                                        <sly data-sly-list.trlist="${tablerow.children}">
+                                                            <sly data-sly-test="${trlist.name == 'trowdata'}">
+
+                                                                <sly data-sly-list.tr="${trlist.children}">
+
+                                                                    <sly data-sly-test="${!tr.tdurl}">
+                                                                        <!-- <sly data-sly-test="${trList.count == 1} "> -->
+                                                                        <sly data-sly-test="${tr.tdColor == 'default'}">
+                                                                            <td rowspan="${tr.rowspan}"
+                                                                                colspan="${tr.colspan}"
+                                                                                class="${tr.removeSticky ? '' : 'sticky-cell'} ${rowCol?'table-data' : ''} ">
+                                                                                ${tr.trData} ${tr.rowDescription
+                                                                                @context = 'html'}</td>
+                                                                        </sly>
+                                                                        <sly data-sly-test="${tr.tdColor == 'whiteBg'}">
+                                                                            <td rowspan="${tr.rowspan}"
+                                                                                colspan="${tr.colspan}"
+                                                                                class="${tr.removeSticky ? '' : 'sticky-cell'} ${rowCol?'table-data' : ''} whiteBg">
+                                                                                ${tr.trData} ${tr.rowDescription
+                                                                                @context = 'html'}</td>
+                                                                        </sly>
+                                                                        <sly data-sly-test="${tr.tdColor == 'greyBg'}">
+                                                                            <td rowspan="${tr.rowspan}"
+                                                                                colspan="${tr.colspan}"
+                                                                                class="${tr.removeSticky ? '' : 'sticky-cell'} ${rowCol?'table-data' : ''}  greyBg ">
+                                                                                ${tr.trData} ${tr.rowDescription
+                                                                                @context = 'html'}</td>
+                                                                        </sly>
+                                                                        <!-- </sly> -->
+
+                                                                    </sly>
+                                                                    <sly data-sly-test="${tr.tdurl}">
+                                                                        <sly data-sly-test="${tr.tdColor == 'default'}">
+                                                                            <td rowspan="${tr.rowspan}"
+                                                                                colspan="${tr.colspan}"
+                                                                                class="${tr.removeSticky ? '' : 'sticky-cell'} ${rowCol?'table-data' : ''} ">
+                                                                                <a href="${tr.tdurl}"
+                                                                                    target="${(tr.openNewTab)?'_blank':''}">${tr.trData}</a>
+                                                                            </td>
+                                                                        </sly>
+                                                                        <sly data-sly-test="${tr.tdColor == 'whiteBg'}">
+                                                                            <td rowspan="${tr.rowspan}"
+                                                                                colspan="${tr.colspan}"
+                                                                                class="${tr.removeSticky ? '' : 'sticky-cell'} ${rowCol?'table-data' : ''} whiteBg">
+                                                                                <a href="${tr.tdurl}"
+                                                                                    target="${(tr.openNewTab)?'_blank':''}">${tr.trData}</a>
+                                                                            </td>
+                                                                        </sly>
+                                                                        <sly data-sly-test="${tr.tdColor == 'greyBg'}">
+                                                                            <td rowspan="${tr.rowspan}"
+                                                                                colspan="${tr.colspan}"
+                                                                                class="${tr.removeSticky ? '' : 'sticky-cell'} ${rowCol?'table-data' : ''}  greyBg ">
+                                                                                <a href="${tr.tdurl}"
+                                                                                    target="${(tr.openNewTab)?'_blank':''}">${tr.trData}</a>
+                                                                            </td>
+                                                                        </sly>
+                                                                    </sly>
+                                                                </sly>
+                                                            </sly>
+                                                        </sly>
+                                                    </tr>
+                                                </sly>
+                                            </sly>
+                                        </sly>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </sly>
+                    <!--Normal Table-->
+                    <!-- More than 5 Columns & 10 Rows Both Scroll -->
+                    <sly data-sly-test="${tableList.tableType == 'stickyHeadRow'}">
+                        <div class="table-section ${properties.apicallClassName ? properties.apicallClassName : ''}">
+                            ${tableList.heading @context= 'html' || ''}
+                            <div class="table-block" id="tablefixed-top-left2">
+                                <table class="table-main ${tableList.tableTheme}">
+                                    <thead>
+                                        <tr>
+                                            <sly data-sly-list.itemList="${tableList.children}">
+                                                <sly data-sly-test="${itemList.name == 'theading'}">
+                                                    <sly data-sly-list.thData="${itemList.children}">
+
+                                                        <th class="${thDataList.count == 1 ? 'sticky-cell' : ''}">
+                                                            ${thData.thdata}</th>
+
+                                                    </sly>
+                                                </sly>
+                                            </sly>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <sly data-sly-list.itemLists="${tableList.children}">
+                                            <sly data-sly-test="${itemLists.name == 'tableRow'}">
+                                                <sly data-sly-list.tablerow="${itemLists.children}">
+                                                    <tr>
+                                                        <sly data-sly-list.trlist="${tablerow.children}">
+                                                            <sly data-sly-test="${trlist.name == 'trowdata'}">
+
+                                                                <sly data-sly-list.tr="${trlist.children}">
+
+                                                                    <sly data-sly-test="${!tr.tdurl}">
+                                                                        <!-- <sly data-sly-test="${trList.count == 1} "> -->
+                                                                        <sly data-sly-test="${tr.tdColor == 'default'}">
+                                                                            <td rowspan="${tr.rowspan}"
+                                                                                colspan="${tr.colspan}"
+                                                                                class="${tr.removeSticky ? '' : 'sticky-cell'} ${rowCol?'table-data' : ''} ">
+                                                                                ${tr.trData} ${tr.rowDescription
+                                                                                @context = 'html'}</td>
+                                                                        </sly>
+                                                                        <sly data-sly-test="${tr.tdColor == 'whiteBg'}">
+                                                                            <td rowspan="${tr.rowspan}"
+                                                                                colspan="${tr.colspan}"
+                                                                                class="${tr.removeSticky ? '' : 'sticky-cell'} ${rowCol?'table-data' : ''} whiteBg">
+                                                                                ${tr.trData} ${tr.rowDescription
+                                                                                @context = 'html'}</td>
+                                                                        </sly>
+                                                                        <sly data-sly-test="${tr.tdColor == 'greyBg'}">
+                                                                            <td rowspan="${tr.rowspan}"
+                                                                                colspan="${tr.colspan}"
+                                                                                class="${tr.removeSticky ? '' : 'sticky-cell'} ${rowCol?'table-data' : ''}  greyBg ">
+                                                                                ${tr.trData} ${tr.rowDescription
+                                                                                @context = 'html'}</td>
+                                                                        </sly>
+                                                                        <!-- </sly> -->
+                                                                    </sly>
+                                                                    <sly data-sly-test="${tr.tdurl}">
+                                                                        <!-- <sly data-sly-test="${trList.count == 1} "> -->
+                                                                        <sly data-sly-test="${tr.tdColor == 'default'}">
+                                                                            <td rowspan="${tr.rowspan}"
+                                                                                colspan="${tr.colspan}"
+                                                                                class="${tr.removeSticky ? '' : 'sticky-cell'} ${rowCol?'table-data' : ''} ">
+                                                                                <a href="${tr.tdurl}"
+                                                                                    target="${(tr.openNewTab)?'_blank':''}">${tr.trData}</a>
+                                                                            </td>
+                                                                        </sly>
+                                                                        <sly data-sly-test="${tr.tdColor == 'whiteBg'}">
+                                                                            <td rowspan="${tr.rowspan}"
+                                                                                colspan="${tr.colspan}"
+                                                                                class="${tr.removeSticky ? '' : 'sticky-cell'} ${rowCol?'table-data' : ''} whiteBg">
+                                                                                <a href="${tr.tdurl}"
+                                                                                    target="${(tr.openNewTab)?'_blank':''}">${tr.trData}</a>
+                                                                            </td>
+                                                                        </sly>
+                                                                        <sly data-sly-test="${tr.tdColor == 'greyBg'}">
+                                                                            <td rowspan="${tr.rowspan}"
+                                                                                colspan="${tr.colspan}"
+                                                                                class="${tr.removeSticky ? '' : 'sticky-cell'} ${rowCol?'table-data' : ''} greyBg ">
+                                                                                <a href="${tr.tdurl}"
+                                                                                    target="${(tr.openNewTab)?'_blank':''}">${tr.trData}</a>
+                                                                            </td>
+                                                                        </sly>
+                                                                        <!-- </sly> -->
+                                                                    </sly>
+                                                                </sly>
+                                                            </sly>
+                                                        </sly>
+                                                    </tr>
+                                                </sly>
+                                            </sly>
+                                        </sly>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </sly>
+                    <!-- More than 5 Columns & 10 Rows Both Scroll -->
+                </sly>
+            </sly>
+        </sly>
+    </section>
+</main>
+<sly data-sly-test="${PageProperties.dySchima}">
+    <script type="application/ld+json" data-sly-use.objTable="com.tatacapital.web.core.models.TableSchemaModel">
+    {
+        "@context": "https://schema.org",
+        "@type": "Table",
+        "about": "Comparison of Loan Options for Salaried and Self-Employed Borrowers",
+        "additionalProperty": ${objTable.getData @ context = 'unsafe'}}
+    </script>
+</sly>
+<sly data-sly-test="${properties.tbSchema}">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Table",
+      "about": "${properties.tbSchema @context = 'html'}"
+    }
+</script>
+</sly>

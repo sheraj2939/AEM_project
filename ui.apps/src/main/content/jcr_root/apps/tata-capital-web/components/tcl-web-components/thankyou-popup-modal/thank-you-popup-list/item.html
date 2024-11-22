@@ -1,0 +1,6 @@
+<template data-sly-template.item="${@ list, item}">
+    <a class="cmp-list__item-link btn-links link-with-arrow" data-sly-attribute="${item.link.htmlAttributes}" data-sly-unwrap="${!list.linkItems || !item.link.valid}"
+        data-cmp-clickable="${item.data ? true : false}">
+		${item.title}<span class="icon-arrow-right arros"></span>
+    </a>
+</template>

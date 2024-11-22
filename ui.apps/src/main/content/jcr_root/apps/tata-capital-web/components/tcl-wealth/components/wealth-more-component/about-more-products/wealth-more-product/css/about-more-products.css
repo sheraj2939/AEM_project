@@ -1,0 +1,254 @@
+/* personal loan */
+.personal-loan-cntr {
+  position: relative;
+  z-index: 1;
+}
+
+.personal-loan-pro-box .slick-dots {
+  bottom: -30px;
+}
+
+.personal-loan-pro-box .item {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 36px;
+  position: relative;
+}
+
+.personal-loan-pro-box .item img {
+  display: inline-block;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.personal-loan-pro-box .item .per-loan-outers {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  width: calc(100% - 40px);
+  height: 72px;
+  transition: all 0.1s ease-in-out 0s;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.personal-loan-pro-box .item .personal-loan-detail {
+  padding: 16px;
+  border-radius: 20px;
+  border: 1px solid #FFF;
+  background: linear-gradient(0deg, rgba(100, 8, 17, 0.88) 29.69%, rgba(100, 8, 17, 0.81) 100%);
+  overflow: hidden;
+}
+
+.personal-loan-pro-box .item .btn-holder {
+  margin-top: auto;
+}
+
+.personal-loan-pro-box .item .btn-holder .btn-link {
+  border-radius: 12px;
+  text-transform: none;
+}
+
+.personal-loan-pro-box .item:hover .per-loan-outers {
+  bottom: 0px;
+  left: 10px;
+  width: calc(100% - 20px);
+  height: calc(100% - 0px);
+  padding-bottom: 36px;
+}
+
+.personal-loan-pro-box .item:hover .personal-loan-detail {
+  overflow: auto;
+  height: 100%;
+  padding: 40px 20px;
+  border: none;
+  background: linear-gradient(0deg, rgba(100, 8, 17, 0.88) 29.69%, rgba(100, 8, 17, 0.81) 100%);
+}
+
+.personal-loan-pro-box .item:hover .text {
+  color: #ffffff;
+  margin-bottom: 10px;
+  height: calc(100% - 94px);
+  overflow: auto;
+}
+
+.personal-loan-pro-box .item:hover .text h4 {
+  min-height: auto;
+}
+
+.personal-loan-pro-box .item .personal-wrapper {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-loan-pro-box .item .media-holder {
+  height: 340px;
+  position: relative;
+}
+
+.personal-loan-pro-box .item .media-holder img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.personal-loan-pro-box .item .media-holder img.mob-img {
+  display: none;
+}
+
+.personal-loan-pro-box .item .text {
+  padding-bottom: 15px;
+}
+
+.personal-loan-pro-box .item .text::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  border-radius: 0px;
+}
+
+.personal-loan-pro-box .item .text::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.personal-loan-pro-box .item .text::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  outline: none;
+  border-radius: 4px;
+}
+
+.personal-loan-pro-box .item .text p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.personal-loan-pro-box .item .text h4 {
+  min-height: 42px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.btn-holders-btns {
+  text-align: center;
+}
+
+.btn-holders-btns .btn-links {
+  color: #fff;
+}
+
+.btn-holders-btns .btn-link {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 1199px) {
+  .personal-loan-pro-box .item:hover .personal-loan-detail {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .personal-loan-pro-box .slick-list {
+    padding-left: 8px !important;
+  }
+
+  .personal-loan-pro-box .item {
+    padding-bottom: 0px;
+  }
+
+  .personal-loan-pro-box .item .per-loan-outers {
+    height: 280px;
+    margin-top: -80px;
+    position: relative;
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    bottom: auto;
+    left: auto;
+  }
+
+  .personal-loan-pro-box .item .personal-loan-detail {
+    position: relative;
+    transition: all 0s;
+    height: 280px;
+    background: linear-gradient(0deg, rgba(100, 8, 17, 0.88) 29.69%, rgba(100, 8, 17, 0.81) 100%);
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.01), 0px 5px 10px rgba(0, 0, 0, 0.01);
+    color: #ffffff;
+    border: 1px solid #fff;
+  }
+
+  .personal-loan-pro-box .item:hover .per-loan-outers {
+    height: 280px;
+    bottom: auto;
+    left: auto;
+    width: calc(100% - 40px);
+  }
+
+  .personal-loan-pro-box .item:hover .personal-loan-detail {
+    padding: 16px;
+    height: 280px;
+    background: linear-gradient(0deg, rgba(100, 8, 17, 0.88) 29.69%, rgba(100, 8, 17, 0.81) 100%);
+    border: 1px solid #fff;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.01), 0px 5px 10px rgba(0, 0, 0, 0.01);
+  }
+
+  .personal-loan-pro-box .item .text h4 {
+    min-height: auto;
+  }
+
+  .personal-loan-pro-box .item .text h4 br {
+    display: none;
+  }
+
+  .personal-loan-pro-box .item .text p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .personal-loan-pro-box .item .media-holder {
+    height: 250px;
+  }
+
+  .personal-loan-pro-box .item .media-holder img.dsk-img {
+    display: none;
+  }
+
+  .personal-loan-pro-box .item .media-holder img.mob-img {
+    display: block;
+  }
+
+  .personal-loan-pro-box .item .btn-holder .btn-link {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (max-width: 359px) {
+  .personal-loan-pro-box .item .per-loan-outers {
+    height: 290px;
+  }
+
+  .personal-loan-pro-box .item .personal-loan-detail {
+    height: 290px;
+  }
+
+  .personal-loan-pro-box .item:hover .per-loan-outers {
+    height: 290px;
+  }
+
+  .personal-loan-pro-box .item:hover .personal-loan-detail {
+    height: 290px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

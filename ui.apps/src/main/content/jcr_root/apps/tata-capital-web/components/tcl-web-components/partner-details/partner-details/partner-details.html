@@ -1,0 +1,45 @@
+<sly data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+  data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-use.imageTemplate="image.html"
+  data-sly-use.pretitleTemplate="pretitle.html" data-sly-use.titleTemplate="title.html"
+  data-sly-use.descriptionTemplate="description.html" data-sly-use.actionsTemplate="actions.html"
+  data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+  id="${teaser.id}" class="cmp-teaser${!wcmmode.disabled && teaser.imageResource ? ' cq-dd-image' : ''}"
+  data-cmp-data-layer="${teaser.data.json}">
+  <div class="all-alliances-box partners-details-box space-tb40 pd-t50">
+    <div class="container">
+      <div class="all-alliances-inner">
+        <div class="all-alliances-row">
+          <div class="all-alliances-col bg-div">
+            <div class="col-inner">
+
+              <div class="left-col">
+                <img class="${properties.mobImage ? 'custome-img-size' : ''}" src="${properties.fileReference}" alt="${properties.alt}">
+              </div>
+              <div class="right-col">
+                <p class="text14i lender-name">
+                  ${teaser.title}
+                </p>
+                <p class="heading20 semibold">
+                  <sly data-sly-call="${actionsTemplate.actions @ teaser=teaser}"></sly>
+
+                  <!-- <a href="javascript:void(0)" class="text-primay-blue">
+                      Housing.Com
+                  </a> -->
+              </p> 
+
+              </div>
+            </div>
+            <div class="bottom-content">
+              <h3 class="heading20 top-heading">
+                  <span>${teaser.pretitle}</span>
+              </h3>
+              <p class="text16i">
+                ${teaser.description @ context = 'html'}
+              </p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</sly>

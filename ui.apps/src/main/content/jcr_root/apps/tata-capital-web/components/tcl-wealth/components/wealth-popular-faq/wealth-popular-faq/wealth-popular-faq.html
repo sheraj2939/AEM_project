@@ -1,0 +1,25 @@
+<!--  faq box  -->
+<section class="faq-box space-tb40 space-b80">
+    <div class="container">
+        <sly
+            data-sly-resource="${'faq-title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+        </sly>
+        <div class="faq-card bg-div jsAccordian">
+            <sly data-sly-list.popularFaq="${resource.children}">
+                <sly data-sly-test="${popularFaq.name == 'faqs'}">
+                    <sly data-sly-list.faqItems="${popularFaq.children}">
+                        <div class="faq-row" accod-row>
+                            <a href="javascript:void(0)" class="faq-heading" accod-head>${faqItems.textQuetion}</a>
+                            <div class="faq-body" accod-body>
+                                <div class="faq-body-inner">
+                                    ${faqItems.answerDescription @ context = 'html'}
+                                </div>
+                            </div>
+                        </div>
+                    </sly>
+                </sly>
+            </sly>
+        </div>
+    </div>
+</section>
+<!-- faq box-->

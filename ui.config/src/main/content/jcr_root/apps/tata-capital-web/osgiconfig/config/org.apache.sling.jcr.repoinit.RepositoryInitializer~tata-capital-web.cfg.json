@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/tata-capital-web",
+        "create path (nt:unstructured) /content/dam/tata-capital-web/jcr:content",
+        "set properties on /content/dam/tata-capital-web/jcr:content\n  set cq:conf{String} to /conf/tata-capital-web\n  set jcr:title{String} to \"TATA Capital Web\"\nend"
+    ]
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-11-29T18:46:00.281+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastRolledout="{Date}2022-11-24T12:19:07.345+05:30"
+        cq:lastRolledoutBy="admin"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/tata-capital-web/settings/wcm/templates/tatacapital-web-footer-template"
+        cq:xfVariantType="web"
+        jcr:mixinTypes="[cq:LiveRelationship,cq:LiveSync]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="V2"
+        sling:resourceType="tata-capital-web/components/xfpage">
+        <root
+            cq:lastRolledout="{Date}2022-11-24T12:19:07.329+05:30"
+            cq:lastRolledoutBy="admin"
+            jcr:mixinTypes="[cq:LiveRelationship]"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="tata-capital-web/components/container"
+            layout="responsiveGrid">
+            <footer_policies_docu
+                jcr:created="{Date}2022-11-24T12:19:58.109+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-11-29T18:46:00.281+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/Tc-Revamp/Tc-Footer/footer-policies-documents-accordian-exp"
+                otherDocHeading="Policies, Codes &amp; Other Documents"
+                policiesCodes="tab-12"
+                tittle="Tata Capital Housing Finance Limited">
+                <otherDocument jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Fair Practice Code"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Fair Practice Code"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Fair Practice Code"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Whistleblower Policy"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        tittle="Code Of Conduct For Non-Executive Directors"/>
+                </otherDocument>
+            </footer_policies_docu>
+        </root>
+        <cq:LiveSyncConfig
+            cq:isDeep="{Boolean}true"
+            cq:master="/content/experience-fragments/tata-capital-web/us/en/site/Footer-Policies-Codes-Doc-Accordian-Experience-Fragment/master"
+            cq:rolloutConfigs="[]"
+            jcr:primaryType="cq:LiveCopy"/>
+    </jcr:content>
+</jcr:root>

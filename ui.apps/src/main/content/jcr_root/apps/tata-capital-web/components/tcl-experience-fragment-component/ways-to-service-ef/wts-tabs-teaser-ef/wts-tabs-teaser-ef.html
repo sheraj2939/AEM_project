@@ -1,0 +1,19 @@
+<sly data-sly-test="${!properties.alexaTeaser}">
+    <div data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser" data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-use.imageTemplate="image.html" data-sly-use.pretitleTemplate="pretitle.html" data-sly-use.titleTemplate="title.html" data-sly-use.descriptionTemplate="description.html" data-sly-use.actionsTemplate="actions.html" data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}" id="${teaser.id}" class="tab-content mobile-apps active" data-cmp-data-layer="${teaser.data.json}">
+        <sly class="main-container" data-sly-resource="${'sub-header' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/component-title/component-title'}">
+        </sly>
+        <img data-src="${properties.fileReference}" alt="img" height="298" width="231" class="lozad">
+        <sly data-sly-call="${descriptionTemplate.description @ teaser=teaser}"></sly>
+        <div data-sly-resource="${'ways-to-service-teaser-buttons' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></div>
+        <img data-src="${properties.fileReference}" alt="img" height="333" width="258" class="lozad">
+    </div>
+</sly>
+<sly data-sly-test="${properties.alexaTeaser}">
+    <div data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser" data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-use.imageTemplate="image.html" data-sly-use.pretitleTemplate="pretitle.html" data-sly-use.titleTemplate="title.html" data-sly-use.descriptionTemplate="description.html" data-sly-use.actionsTemplate="actions.html" data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}" id="${teaser.id}" class="tab-content alexa has-outer-img active" data-cmp-data-layer="${teaser.data.json}">
+        <sly class="main-container" data-sly-resource="${'sub-header' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/component-title/component-title'}"></sly>
+        <img data-src="${properties.fileReference}" alt="img" class="lozad">
+        <sly data-sly-call="${descriptionTemplate.description @ teaser=teaser}"></sly>
+        <div data-sly-resource="${'ways-to-service-teaser-buttons' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></div>
+        <img data-src="${properties.fileReference}" alt="img" class="lozad">
+    </div>
+</sly>

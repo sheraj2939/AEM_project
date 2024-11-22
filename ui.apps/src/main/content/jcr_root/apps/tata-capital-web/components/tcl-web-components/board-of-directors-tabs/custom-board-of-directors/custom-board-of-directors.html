@@ -1,0 +1,28 @@
+<div class="board-director-box space-tb40 space-b80">
+  <div class="container">
+    <div class="board-director-inner">
+      <div class="board-directors-left tab-left"> 
+        <sly data-sly-list.redirecionList="${resource.children}">
+          <sly data-sly-test="${redirecionList.name == 'linksMultifield'}">
+            <sly data-sly-list.links="${redirecionList.children}">
+              <a href="${links.Redirectionlink}" class="tabs-button tabScrollCenter tablinks has-right-arrow ${links.activeTabEle?'active':''}">${links.linkLabel}</a>
+            </sly>
+          </sly>
+        </sly>
+      </div>
+      <div class="board-directors-right">
+        <div class=" key-people-details-box">
+          <div class="directors-top">
+          <p class="heading20 semibold people-name">${properties.name}</p>
+          <p class="text14i people-profile">${properties.designation}</p>
+          <img data-sly-test="${!properties.disableTataImage}" src="/content/dam/tata-capital-web/key-people/tata-big.svg" alt="tata-big">
+          </div>
+          <div class="directors-infoes">
+            <div class="text14i">${properties.description @ context='html'}</div>
+            <a data-sly-test="${properties.Profilelink}" type="button" class="btn-links link-with-arrow" href="${properties.Profilelink}">View Next Profile <span class="icon-arrow-right arros"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

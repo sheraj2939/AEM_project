@@ -1,0 +1,24 @@
+<ul class="list-cash-loans">
+    <sly data-sly-list.cashList="${resource.children}">
+        <sly data-sly-test="${cashList.name == 'cashLoanList'}">
+            <sly data-sly-list.cashItem="${cashList.children}">
+                <li>
+                    <sly data-sly-test="${!cashItem.cashBtnLink}">
+                        <a href="javascript:void(0)" target="${cashItem.openlinknewtab ? '_blank' : ''}"
+                            class="bg-div heading20 semibold myAnchorTag">
+                            <span data-sly-test="${cashItem.cashIcon}" class="${cashItem.cashIcon ? cashItem.cashIcon : 'icon-rupee rupee-img'}"></span>
+                            ${cashItem.cashBtntxt}
+                        </a>
+                    </sly>
+                    <sly data-sly-test="${cashItem.cashBtnLink}">
+                        <a href="${cashItem.cashBtnLink}" target="${cashItem.openlinknewtab ? '_blank' : ''}"
+                            class="bg-div heading20 semibold myAnchorTag">
+                            <span data-sly-test="${cashItem.cashIcon}" class="${cashItem.cashIcon ? cashItem.cashIcon : 'icon-rupee rupee-img'}"></span>
+                            ${cashItem.cashBtntxt}
+                        </a>
+                    </sly>
+                </li>
+            </sly>
+        </sly>
+    </sly>
+</ul>

@@ -1,0 +1,23 @@
+<div class="subsub-accordian-row" accod-row>
+    <a href="javascript:void(0)" class="subsub-head" accod-head>${properties.vehicleLoanTitle}</a>
+    <div class="subsub-accordian-body" accod-body>
+        <div class="loan-card">
+            <ul>
+                <sly data-sly-list.vhlLinks="${resource.listChildren}">
+                    <sly data-sly-test="${vhlLinks.name == 'vlList'}">
+                        <sly data-sly-list.vlLinks="${vhlLinks.listChildren}">
+                            <li class="loan-card-item">
+                                <a href="${vlLinks.redirectionLink}" class="loan-card-link"
+                                    target="${vlLinks.loanListpeninNewTab ? '_blank' : '' }"
+                                    data-header="headerAnalyticData-${consumerList.loanForYourNeedTitle}">
+                                    <span class="${vlLinks.iconClass} head-icons"></span>
+                                    <p>${vlLinks.loanListHeading}</p>
+                                </a>
+                            </li>
+                        </sly>
+                    </sly>
+                </sly>
+            </ul>
+        </div>
+    </div>
+</div>

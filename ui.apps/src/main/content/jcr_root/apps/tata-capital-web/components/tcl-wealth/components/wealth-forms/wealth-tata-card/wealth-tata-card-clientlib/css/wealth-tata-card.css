@@ -1,0 +1,537 @@
+.loan-against-form-wrap {
+    background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.71) 0%, rgba(255, 255, 255, 0.95) 99.11%);
+    border-radius: 30px;
+    margin-bottom: 80px;
+    position: relative;
+    min-height: 368px;
+  }
+  .loan-against-form-wrap.journey-cards {
+    min-height: inherit;
+  }
+  
+  .loan-against-prop-box.space-tb16 {
+    padding: 16px 0;
+  }
+  .loan-against-prop-box .tops-heads {
+    max-width: 100%;
+    position: relative;
+    padding: 0 60px;
+  }
+  .loan-against-prop-box .tops-heads.has-only-back-btn {
+    min-height: 40px;
+  }
+  .loan-against-prop-box .comp-back-to {
+    position: absolute;
+    top: 18px;
+    left: 0px;
+    z-index: 1;
+  }
+  .loan-against-prop-box .comp-back-to a {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-family: "OpenSans-SemiBold";
+    color: #126fb3;
+  }
+  .loan-against-prop-box .comp-back-to a span {
+    margin-right: 7px;
+    font-size: 13px;
+  }
+  .loan-against-prop-box .comp-back-to a:hover {
+    color: #333;
+  }
+  
+  .loan-against-header {
+    background: #D2B434;
+    border-radius: 30px 30px 0 0;
+    padding: 24px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .loan-against-header h4 {
+    color: #ffffff;
+    margin-right: 20px;
+  }
+  .loan-against-header h4 a {
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: underline;
+  }
+  
+  .hide-input-note {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .form-bottom-right-img {
+    position: absolute;
+    right: -60px;
+    bottom: -60px;
+    height: 200px;
+  }
+  
+  .loan-against-body {
+    border-radius: 0 0 30px 30px;
+    padding: 25px 40px;
+  }
+  .loan-against-body .input-textbox {
+    transition: none;
+  }
+  .loan-against-body .form-textbox-new {
+    margin-bottom: 8px;
+  }
+  .loan-against-body .form-heading {
+    font-family: "OpenSans-SemiBold";
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 24px;
+    color: #000000;
+  }
+  .loan-against-body .btn-controls {
+    margin-top: 14px;
+  }
+  .loan-against-body .btn-controls.otp-btn {
+    display: flex;
+    align-items: center;
+  }
+  .loan-against-body .btn-controls .btn-link {
+    margin-left: 20px;
+    height: 51px;
+    min-width: 163px;
+  }
+  .loan-against-body .btn-controls .btn-link img {
+    margin: auto;
+    width: 24px;
+  }
+  .loan-against-body .dot-animation {
+    display: inline-block;
+    width: 16px;
+    vertical-align: bottom;
+  }
+  
+  .has-rupee-icon .icon-rupee {
+    position: absolute;
+    top: 14px;
+    font-size: 63%;
+    line-height: 17px;
+  }
+  .has-rupee-icon .input-textbox {
+    padding-left: 12px;
+  }
+  
+  .truncate-with-tooltip .before-text {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    width: calc(100% - 20px);
+    max-width: 237px;
+  }
+  .truncate-with-tooltip .custom-tooltip {
+    transform: translateY(-2px);
+  }
+  
+  .clear-btn {
+    font-family: "OpenSans-SemiBold";
+    font-size: 14px;
+    line-height: 19px;
+    min-width: 60px;
+  }
+  .clear-btn .link {
+    color: #ffffff;
+  }
+  .clear-btn .link span {
+    font-size: 14px;
+    margin-left: 6px;
+  }
+  
+  .loan-againstclose-btn {
+    font-family: "OpenSans-SemiBold";
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .loan-againstclose-btn .link {
+    color: #ffffff;
+  }
+  .loan-againstclose-btn .link span {
+    font-size: 14px;
+    margin-left: 6px;
+  }
+  
+  .loan-against-form .la-agree-btn {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+  }
+  .loan-against-form .la-agree-btn a {
+    color: #640811;
+    font-family: "OpenSans-SemiBold";
+  }
+  .loan-against-form .la-agree-btn.pb-20 {
+    padding-bottom: 20px;
+  }
+  
+  .to-apply-loan .to-apply-mx {
+    max-width: 494px;
+    margin: auto;
+    text-align: center;
+  }
+  .to-apply-loan .to-apply-mx .pdf-imgs {
+    margin: 0 auto 10px;
+    background: #d8e024;
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    color: #2a78bc;
+  }
+  .to-apply-loan .to-apply-mx h2 {
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  
+  .loan-aganist-otp-wrap .text16i {
+    margin-bottom: 20px;
+  }
+  .loan-aganist-otp-wrap .call-with-img {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .loan-aganist-otp-wrap .call-with-img img {
+    width: 20px;
+    margin-right: 5px;
+  }
+  
+  .loan-aganist-otp .text-12 {
+    color: #9d9d9d;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 4px;
+  }
+  .loan-aganist-otp .loan-aganist-enter-otp {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .loan-aganist-otp .loan-aganist-enter-otp .otp-col {
+    display: flex;
+    justify-content: center;
+  }
+  .loan-aganist-otp .loan-aganist-enter-otp .otp-col .input-textbox {
+    width: 54px;
+    height: 48px;
+    border-radius: 5px;
+    border: 1px solid #D2B434;
+    background: rgba(246, 241, 231, 0);
+    border-radius: 5px;
+    margin-left: 12px;
+    text-align: center;
+    font-family: "OpenSans-Bold";
+  }
+  .loan-aganist-otp .loan-aganist-enter-otp .otp-col .input-textbox:focus {
+    border: 1px solid #D2B434;
+  }
+  .loan-aganist-otp .loan-aganist-enter-otp .otp-col .input-textbox:nth-child(1) {
+    margin-left: 0;
+  }
+  
+  .otp-name-pt {
+    padding-top: 10px;
+  }
+  
+  .loan-against-sucess-msg {
+    border-radius: 30px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .loan-against-sucess-msg .msg-closed {
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    right: 40px;
+    top: 23px;
+    font-weight: bold;
+    background: #D2B434;
+  }
+  .loan-against-sucess-msg .success-inner {
+    margin: auto;
+  }
+  .loan-against-sucess-msg .application-id {
+    font-family: "OpenSans-SemiBold";
+    padding-top: 10px;
+  }
+  .loan-against-sucess-msg .application-id span {
+    font-family: "OpenSans-Bold";
+    color: #b369ab;
+  }
+  .loan-against-sucess-msg .ticks-img {
+    margin: 0 auto 20px;
+  }
+  .loan-against-sucess-msg h2,
+  .loan-against-sucess-msg p {
+    margin-bottom: 20px;
+  }
+  .loan-against-sucess-msg h2 span,
+  .loan-against-sucess-msg p span {
+    font-family: "OpenSans-Bold";
+  }
+  .loan-against-sucess-msg h2:nth-last-child(1),
+  .loan-against-sucess-msg p:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+  .loan-against-sucess-msg h2 {
+    margin-bottom: 10px;
+  }
+  .loan-against-sucess-msg .btn-blue {
+    margin-top: 10px;
+  }
+  
+  .customer-survery-form .form-textbox-new {
+    padding-top: 5px;
+  }
+  
+  .btn-controls.btn-surveys {
+    margin-top: 35px;
+  }
+  
+  .customer-survery-star-wrap {
+    padding-top: 12px;
+    padding-bottom: 30px;
+  }
+  .customer-survery-star-wrap .text14i {
+    margin-bottom: 8px;
+  }
+  
+  .name-with-title.row-flex {
+    margin-left: -6px;
+    margin-right: -6px;
+    flex-wrap: nowrap;
+  }
+  .name-with-title.row-flex .name-title-col {
+    padding: 0 6px;
+  }
+  .name-with-title.row-flex .row-col-33 {
+    min-width: 111px;
+    width: 111px !important;
+  }
+  .name-with-title.row-flex .row-col-66 {
+    width: 100%;
+  }
+  
+  .search-finds {
+    background-color: #85202F;
+    border-radius: 0px 0px 2px 2px;
+    padding: 20px;
+  }
+  .search-finds .cant-find-text {
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  .search-finds .pls-try-text {
+    color: #fff;
+  }
+  .search-finds .pls-try-text a {
+    color: #fff;
+  }
+  
+  .loan-otp-timers {
+    margin-top: 20px;
+  }
+  .loan-otp-timers .text16i {
+    margin-bottom: 0px !important;
+  }
+  .loan-otp-timers .btn-links {
+    font-size: 15px;
+  }
+  .loan-otp-timers .otp-timers-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+  }
+  .loan-otp-timers .otp-timers-row .otp-timers-col {
+    padding: 0 12px;
+  }
+  
+  .select2-closed {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    z-index: 2;
+    width: 12px;
+    height: 12px;
+    font-size: 10px;
+    display: block;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  .notes-text {
+    padding-bottom: 30px;
+  }
+  .notes-text p {
+    font-size: 12px;
+  }
+  
+  .refer-friends-forms .form-textbox-new.textboxerror .error-msgs {
+    top: 43px;
+  }
+  
+  @media (max-width: 991px) {
+    .loan-against-body .row-flex .row-col-33 {
+      width: 50%;
+    }
+    .customer-survery-form .row-flex .row-col-66 {
+      width: 100%;
+    }
+    .loan-against-form-wrapper {
+      padding-top: 16px;
+    }
+    .loan-against-form-wrapper:nth-child(1) {
+      padding-top: 0;
+    }
+    .loan-against-otp-wrap .row-flex .row-col-33 {
+      width: 100%;
+    }
+    .loan-against-otp-wrap .row-flex .row-col-66 {
+      width: 100%;
+    }
+    .otp-outer-box {
+      margin-bottom: 20px;
+    }
+    .otp-name-pt {
+      padding-top: 0;
+    }
+    .form-bottom-right-img.no-bottom-space {
+      right: -60px;
+      bottom: -59px;
+      height: 120px;
+    }
+  }
+  @media (max-width: 767px) {
+    .notes-text {
+      padding-bottom: 10px;
+    }
+    .customer-survery-star-wrap {
+      padding-bottom: 20px;
+    }
+    .loan-against-form-wrap {
+      border-radius: 24px;
+      margin-bottom: 50px;
+    }
+    .loan-against-prop-box.space-tb16 {
+      padding: 0;
+    }
+    .loan-against-header {
+      border-radius: 24px 24px 0 0;
+      padding: 15px 16px;
+    }
+    .loan-against-body {
+      border-radius: 0 0 24px 24px;
+      padding: 20px 16px;
+    }
+    .loan-against-body .form-heading {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 4px;
+    }
+    .loan-against-body .row-flex {
+      margin: 0;
+    }
+    .loan-against-body .row-flex.mob-rw-15 {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+    .loan-against-body .row-flex .row-col-33 {
+      width: 100%;
+    }
+    .loan-against-body .row-flex .col-sp30 {
+      padding: 0;
+    }
+    .loan-against-body .btn-controls {
+      margin-top: 14px;
+    }
+    .loan-against-body .btn-controls .btn-blue {
+      width: 100%;
+    }
+    .loan-against-form .la-agree-btn {
+      margin-top: 20px;
+      font-size: 13px;
+      line-height: 18px;
+    }
+    .loan-aganist-otp .loan-aganist-enter-otp .otp-col .input-textbox {
+      max-width: 55px;
+      width: 100%;
+    }
+    .loan-against-otp-wrap .btn-controls {
+      margin-top: 14px;
+    }
+    .loan-against-otp-wrap .btn-controls .btn-blue {
+      width: auto;
+    }
+    .loan-against-otp-wrap .btn-controls .btn-link {
+      font-size: 14px;
+    }
+    .loan-against-sucess-msg {
+      border-radius: 23px;
+      padding: 16px;
+    }
+    .loan-against-sucess-msg .msg-closed {
+      right: 16px;
+      top: 14px;
+    }
+    .loan-against-sucess-msg .ticks-img {
+      margin: 0 auto 20px;
+    }
+    .truncate-with-tooltip .custom-tooltip {
+      transform: translateY(2px);
+    }
+    .form-bottom-right-img {
+      position: absolute;
+      right: -15px;
+      bottom: -15px;
+      height: 90px;
+    }
+    .form-bottom-right-img.no-bottom-space {
+      display: none;
+    }
+    .loan-against-prop-box .tops-heads {
+      padding: 0px;
+    }
+    .loan-against-prop-box .tops-heads.has-only-back-btn {
+      min-height: auto;
+    }
+    .loan-against-prop-box .comp-back-to {
+      text-align: left;
+      position: static;
+      margin-bottom: 15px;
+    }
+    .loan-otp-timers .btn-links {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 575px) {
+    .loan-against-otp-wrap .btn-controls.otp-btn {
+      display: block;
+    }
+    .loan-against-otp-wrap .btn-controls .btn-blue,
+    .loan-against-otp-wrap .btn-controls .btn-link, .loan-against-otp-wrap .btn-controls .btn-dangers {
+      width: 100%;
+    }
+    .loan-against-otp-wrap .btn-controls .btn-link {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+  

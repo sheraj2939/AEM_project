@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    cq:adobeTargetExportFormat="html"
+    jcr:primaryType="sling:OrderedFolder"
+    jcr:title="Site">
+    <header/>
+    <footer/>
+    <right-sticky1/>
+    <test/>
+    <right-sticky-buttons/>
+    <Footer-Experience-Fragment/>
+    <Header-Loan-for-You-Experience-Fragment/>
+    <Footer-Policies-Codes-Doc-Experience-Fragment/>
+    <Footer-Policies-Codes-Doc-Accordian-Experience-Fragment/>
+    <Footer-top-Experience-Fragment/>
+    <Footer-main-content-Fragment/>
+    <Footer-Other-doc-Subsidiary-Experience-Fragment/>
+    <Footer-Solution-for-consumer-Experience-Fragment/>
+    <Footer-corporate-Experience-Fragment/>
+    <Footer-calculators-rates-charges-Experience-Fragment/>
+    <Footer-imp-info-Experience-Fragment/>
+    <Footer-follow-box-Experience-Fragment/>
+    <Footer-Copy-right-Experience-Fragment/>
+    <Footer-imp-info-investor-info-Experience-Fragment/>
+    <Footer-investor-info-Experience-Fragment/>
+    <Footer-Policies-Codes-Doc-Parent-Experience-Fragment/>
+    <download-widget-popup/>
+    <header-Experience-Fragment/>
+    <header-invesment-Experience-Fragment/>
+    <header-mobile-Experience-Fragment/>
+    <Header-Loan-for-Business-Experience-Fragment/>
+    <Header-insurance-Experience-Fragment/>
+    <Header-Apply-Experience-Fragment/>
+</jcr:root>

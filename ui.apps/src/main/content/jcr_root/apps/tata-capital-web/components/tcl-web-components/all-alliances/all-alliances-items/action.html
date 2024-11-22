@@ -1,0 +1,11 @@
+<sly data-sly-template.action="${@ action}" >
+  <div class = "btn-links link-with-arrow alliances-space">
+      <a class="cmp-teaser__action-link" 
+       data-sly-attribute="${action.link.htmlAttributes}"
+       data-sly-unwrap="${!action.link.valid}"
+       id="${action.id}"
+       data-cta="Way to service section"
+       data-cmp-data-layer="${action.data.json}"
+       data-cmp-clickable="${action.data ? true : false}">${action.title}<span class="icon-arrow-right arros"></span></a>
+   </div>
+</sly>

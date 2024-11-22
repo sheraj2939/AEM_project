@@ -1,0 +1,19 @@
+.loan-you-box .loan-you-col .loan-you-bottom .btn-holder .loan-card-width{
+    margin-right: 8px;
+}
+.loan-you-box .loan-you-col .loan-you-bottom .btn-holder .loan-card-width:last-child{
+    margin-right: 0px;
+}
+@media (max-width: 991px) {
+    .loan-you-box .loan-card-width{
+        width: 50%;
+    }
+}
+@media (max-width: 767px) {
+    .loan-you-box .loan-card-width{
+        width: 100%;
+    }
+    .loan-you-box .loan-you-col .loan-you-bottom .btn-holder .loan-card-width:first-child {
+        margin-top: 0px;
+    }
+}

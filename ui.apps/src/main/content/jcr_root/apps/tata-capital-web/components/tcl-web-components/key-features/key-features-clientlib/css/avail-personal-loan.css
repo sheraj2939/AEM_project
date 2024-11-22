@@ -1,0 +1,167 @@
+.emi-option-box .emi-option .option-col {
+  padding: 25px;
+  height: 100%;
+  background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.67) 99.11%);
+}
+.emi-option-box .emi-option .option-icon {
+  margin-bottom: 12px;
+}
+.emi-option-box .emi-option .option-icon .all-icon {
+  margin-bottom: 12px;
+}
+.emi-option-box .emi-option h3 {
+  margin-bottom: 12px;
+}
+.emi-option-box .emi-option p {
+  margin-bottom: 20px;
+}
+.emi-option-box .emi-option p:last-child {
+  margin-bottom: 0px;
+}
+.emi-option-box.payment-option-box .emi-option .option-col {
+  background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.71) 0%, rgba(255, 255, 255, 0.95) 99.11%), linear-gradient(134.06deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.67) 99.11%);
+}
+.emi-option-box.payment-option-box .tops-heads {
+  margin-bottom: 0px;
+  width: 390px;
+  padding-right: 30px;
+  text-align: left;
+}
+.emi-option-box.payment-option-box .payment-right {
+  width: calc(100% - 390px);
+}
+.emi-option-box.payment-option-box .payment-option-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.emi-option-box.document-required-box .tops-heads {
+  max-width: 573px;
+}
+.emi-option-box.document-required-box .emi-option .option-col {
+  background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.71) 0%, rgba(255, 255, 255, 0.95) 99.11%), linear-gradient(134.06deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.67) 99.11%);
+}
+.emi-option-box.document-required-box .document-flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -30px;
+}
+.emi-option-box.document-required-box .document-flex-row .document-col {
+  width: 33.33%;
+  padding: 0 15px;
+  margin-top: 30px;
+}
+.emi-option-box.document-required-box.document-four .document-flex-row .document-col {
+  width: 25%;
+}
+.emi-option-box.document-required-box.document-two .document-flex-row {
+  display: flex;
+}
+.emi-option-box.document-required-box.document-two .document-flex-row .document-col {
+  width: 50%;
+}
+.emi-option-box.document-required-box.document-two-four .document-flex-row .document-col {
+  width: 50%;
+}
+.emi-option-box.document-required-box.document-one .emi-option .option-col {
+  position: relative;
+  padding-left: 92px;
+}
+.emi-option-box.document-required-box.document-one .emi-option .option-icon .all-icon {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+}
+.emi-option-box.document-required-box.document-one .document-flex-row .document-col {
+  width: 100%;
+}
+
+@media (max-width: 1199px) {
+  .emi-option-box.document-required-box .document-flex-row {
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -20px;
+  }
+  .emi-option-box.document-required-box .document-flex-row .document-col {
+    padding: 0 10px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .emi-option-box.payment-option-box .payment-option-row {
+    display: block;
+  }
+  .emi-option-box.payment-option-box .tops-heads {
+    width: 100%;
+    padding-right: 0px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .emi-option-box.payment-option-box .payment-right {
+    width: 100%;
+  }
+  .emi-option-box.document-required-box .slick-dots {
+    bottom: -30px;
+  }
+  .emi-option-box.document-required-box .document-flex-row {
+    display: block;
+    margin: 0px;
+  }
+  .emi-option-box.document-required-box .document-flex-row.slider-dots {
+    margin-bottom: 30px;
+  }
+  .emi-option-box.document-required-box .document-flex-row .document-col {
+    width: auto;
+    margin-top: 0px;
+    padding: 0 8px;
+  }
+  .emi-option-box.document-required-box.document-two .document-flex-row {
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 767px) {
+  .emi-option-box .emi-option .option-col {
+    padding: 24px;
+  }
+  .emi-option-box .emi-option .option-icon {
+    display: flex;
+    align-items: center;
+  }
+  .emi-option-box .emi-option .option-icon .all-icon {
+    margin-bottom: 0px;
+    margin-right: 12px;
+  }
+  .emi-option-box .emi-option .option-icon h3 {
+    margin-bottom: 0px;
+  }
+  .emi-option-box .row-flex .row-col-50 {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .emi-option-box .row-flex .row-col-50:first-child {
+    margin-top: 0px;
+  }
+  .emi-option-box.payment-option-box .tops-heads {
+    margin-bottom: 30px;
+  }
+  .emi-option-box.document-required-box .slick-list {
+    padding-left: 8px !important;
+  }
+  .emi-option-box.document-required-box.document-two .document-flex-row {
+    display: block;
+    margin: 0px 0 30px;
+  }
+  .emi-option-box.document-required-box.document-one .emi-option .option-col {
+    padding-left: 24px;
+  }
+  .emi-option-box.document-required-box.document-one .emi-option .option-icon .all-icon {
+    position: static;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

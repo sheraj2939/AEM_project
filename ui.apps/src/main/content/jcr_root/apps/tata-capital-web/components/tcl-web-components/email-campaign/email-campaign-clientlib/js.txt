@@ -1,0 +1,6 @@
+#base=js
+productNameMaster.js
+financer-list.js
+api.js
+biz.js
+campaign-form.js

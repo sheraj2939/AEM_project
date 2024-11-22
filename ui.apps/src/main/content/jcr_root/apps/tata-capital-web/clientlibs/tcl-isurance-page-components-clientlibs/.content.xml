@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    allowProxy="{Boolean}true"
+    categories="tcl-isurance-page-components-clientlibs"
+    embed="[tcl-header-clientlib,tcl-footer-clientlib,tcl-banner-clientlib,tcl-sub-nav,tcl-about-product,tcl-saving-and-investment,tcl-community-impact,tcl-insurance-plans,tcl-best-deals,tcl-who-can-take-loan,tcl-why-to-choose-us,component-title-clientlib,tcl-newsletter-clientlib,tcl-ipopular-faq,component-title-clientlib,tcl-about-more-products,tcl-key-features,tcl-apply-for-loans,tcl-instant-loan-box,tcl-benefits-of-pre-paying,tcl-why-to-choose-us,tcl-faq-accordian-with-tab,tcl-insurance-plans,tcl-about-more-products,tcl-proceed-popup-btn]"/>

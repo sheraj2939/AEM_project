@@ -1,0 +1,14 @@
+<button data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button"
+    data-sly-use.iconTemplate="icon.html"
+    data-sly-element="${button.buttonLink.valid ? 'a' : 'button'}"
+    id="${button.id}"
+    type="button"
+    class="btn-blue btn-big ${properties.linkClass? 'download-playstore-btn' : ' '} ${properties.marginClass}"
+    data-sly-attribute="${button.buttonLink.htmlAttributes}"
+    aria-label="${button.accessibilityLabel}"
+    data-cta = "wts-tabs"
+    data-cmp-clickable="${button.data ? true : false}"
+    data-cmp-data-layer="${button.data.json}">
+    <span class="${properties.iconClass}"></span>
+    ${button.text}
+</button>

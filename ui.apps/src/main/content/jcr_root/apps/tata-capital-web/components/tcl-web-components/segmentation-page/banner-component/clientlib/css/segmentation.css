@@ -1,0 +1,288 @@
+.animation-grafti {
+    position: absolute;
+    top: 0px;
+    max-width: 374px;
+}
+
+.animation-grafti.granfti-left {
+    left: 0px;
+    top: -100px;
+}
+
+.animation-grafti.granfti-right {
+    right: 0px;
+    top: -73px;
+}
+
+.segmentation-box .tops-heads {
+    max-width: 840px;
+}
+
+.segmentation-box .tops-heads h2 span {
+    color: #630A13;
+}
+
+.segmentation-box.premiers-box .tops-heads {
+    max-width: 900px;
+}
+
+.segmentation-box.premiers-box .tops-heads h2 span {
+    color: #005C53;
+}
+
+.segmentation-slider .segmentation-row {
+    padding: 0 8px;
+}
+
+.flip-box {
+    perspective: 1000;
+    height: 396px;
+    width: 100%;
+    background: transparent;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px;
+}
+
+.flip-box-back {
+    transform: rotateY(180deg);
+    background-color: #fff;
+}
+
+.segmentation-cards {
+    background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.71) 0%, rgba(255, 255, 255, 0.95) 99.11%);
+    border: 1px solid #630A13;
+    border-radius: 20px;
+}
+
+.segment-top {
+    padding: 24px;
+    background: url("/content/dam/tata-capital-web/segmentation-page/elite/elite-bg.svg") no-repeat bottom right;
+    height: 100%;
+    overflow: hidden;
+}
+
+.segment-top .segment-icons {
+    padding: 5px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #630A13;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.segment-bottom {
+    padding-bottom: 50px;
+}
+
+.segment-bottom .segment-bottom-head {
+    background-color: #F2EAEB;
+    padding: 13px 20px;
+    border-radius: 20px 20px 0 0;
+}
+
+.segment-bottom .segment-bottom-head h6 {
+    font-size: 13px;
+    line-height: 15px;
+    color: #222222;
+    font-family: "OpenSans-Bold";
+}
+
+.segment-bottom .segment-btns {
+    padding: 0 20px 20px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.segment-bottom .segment-btns a {
+    color: #630A13;
+}
+
+.segment-bottom .segment-bottom-content {
+    padding: 9px 20px;
+    max-height: 305px;
+    overflow: auto;
+}
+
+.segment-bottom .segment-bottom-content h6 {
+    font-family: "OpenSans-Bold";
+    font-size: 12px;
+    line-height: 16.8px;
+    letter-spacing: 0.02em;
+    margin-bottom: 6px;
+}
+
+.segment-bottom .seg-content-rows {
+    margin-top: 13px;
+}
+
+.segment-bottom .seg-content-rows:first-child {
+    margin-top: 0px;
+}
+
+.segment-bottom .segments-lists {
+    list-style-type: none;
+}
+
+.segment-bottom .segments-lists li {
+    font-size: 12px;
+    line-height: 16.8px;
+    letter-spacing: 0.02em;
+    font-family: "OpenSans-Regular";
+    position: relative;
+    color: #555555;
+    padding-left: 10px;
+    margin-top: 4px;
+}
+
+.segment-bottom .segments-lists li:first-child {
+    margin-top: 0px;
+}
+
+.segment-bottom .segments-lists li span {
+    font-family: "OpenSans-SemiBold";
+}
+
+.segment-bottom .segments-lists li:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    position: absolute;
+    left: 0px;
+    top: 4px;
+}
+
+.premiers-sliders .segmentation-cards {
+    border-color: #005C53;
+    background: linear-gradient(135.05deg, #FFFFFF -3.27%, rgba(255, 255, 255, 0) 113.09%);
+}
+
+.premiers-sliders .segment-top {
+    background-image: url("/content/dam/tata-capital-web/segmentation-page/elite/diamond-bg.svg");
+}
+
+.premiers-sliders .segment-top .segment-icons {
+    background-color: #005C53;
+}
+
+.premiers-sliders .segment-bottom .segment-bottom-head {
+    background-color: #D3E3E4;
+}
+
+.premiers-sliders .segment-bottom .segment-btns a {
+    color: #005C53;
+}
+
+.commingsoontext-box {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.click-benefits {
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+    top: -91px;
+}
+
+.click-benefits p {
+    position: absolute;
+    right: -94px;
+    top: -27px;
+    text-align: center;
+    max-width: 100px;
+    color: #000;
+}
+
+@media (max-width: 1279px) {
+    .click-benefits {
+        right: 71px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .segmentation-box .tops-heads {
+        margin-bottom: 50px;
+    }
+
+    .animation-grafti {
+        max-width: 200px;
+    }
+
+    .animation-grafti.granfti-left {
+        top: -50px;
+    }
+
+    .click-benefits {
+        right: 103px;
+        top: -35px;
+    }
+
+    .click-benefits img {
+        width: 70px;
+        transform: rotateX(-60deg);
+    }
+
+    .click-benefits p {
+        top: -11px;
+        right: -94px;
+    }
+}
+
+@media (max-width: 991px) {
+    .segmentation-box .tops-heads {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .click-benefits p {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .animation-grafti {
+        max-width: 150px;
+    }
+
+    .commingsoontext-box {
+        padding-bottom: 30px;
+    }
+
+    .segment-top {
+        padding: 20px;
+    }
+
+    .segment-top .segment-icons {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+/*# sourceMappingURL=style.css.map */

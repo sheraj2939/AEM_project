@@ -1,0 +1,91 @@
+<sly data-sly-use.webConfig="com.tatacapital.web.core.services.TataCapitalWebConfiguration">
+ <script>
+    var approvedProjectApplyNowUrl = "${webConfig.config.approvedProjectApplyNowUrl @ context = 'uri' }";
+</script>
+</sly>
+<div class="approved-projects-box space-tb40">
+    <div class="container">
+        <div class="bg-div project-cards">
+            <h2>Find Tata Capital Approved Projects in <span> your city</span></h2>
+            <div class="jsProjectForm">
+                <div class="row-flex row-flex-30">
+                    <div class="row-col-33 col-sp30">
+                        <div class="form-textbox-new active">
+                            <label class="label-name">State*</label>
+                            <div class="textbox-inner">
+                                <div class="custom-select2">
+                                    <select class="js-select2 jsValueOK" data-type="state" jsname="selectState">
+                                        <option value=""></option>
+                                        
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-col-33 col-sp30">
+                        <div class="form-textbox-new active">
+                            <label class="label-name">City*</label>
+                            <div class="textbox-inner">
+                                <div class="custom-select2">
+                                    <select class="js-select2 jsValueOK" data-type="city" jsname="selectCity">
+                                        <option value=""></option>
+                            
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-col-33 col-sp30">
+                             <!-- 28-3-2023 -->
+                             <div class="custom-multiselect-dropdown jsMultiDropdown form-textbox-new close-on-outside active">
+                                <label class="label-name">Builder</label>
+                                <div class="multiselect-dropdown-button js-filterBtn">
+                                    <a href="javascript:void(0);" data-multiselect="multiselect-drop">Select</a>
+                                    <input type="text" class="input-textbox jsValueOK jsMulitSelectValue d-none" data-type="multiple-dropVal"/>
+                                </div>
+                                <!--3-4-2023-->
+                                <div class="multiselect-dropdown-card jsMultiDropdown" id="multiselect-drop">
+                                    <div class="dropdown-card-inner">
+                                        <div class="filter-card">
+                                            <div class="dropdown-content">
+                                                <div class="search-wrap">
+                                                    <div class="search-form">
+                                                        <input type="text" class="form-control jsSearchInput">
+                                                        <!--<button class="search-btn"><span class="icon-search"></span></button>-->
+                                                    </div>
+                                                </div>
+                                                <div class="amc-filter-list">
+                                                    <div class="simple-bar multiple-select-scrollbar">
+                                                        <ul class="multiple-select-list jsMultiSelectList" jsname="selectBuilder">
+
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="no-result jsNoSearchResult d-none">
+                                                    <span>No results found</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--3-4-2023-->
+                            </div>
+                            <!-- 28-3-2023 -->
+                    </div>
+                </div>
+                <button class="btn-blue btn-large show-project-btn jsShowProjectBtn" jsname="showProject">Show Projects</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div jsname="approvedProjectResult">
+    <div class="container">
+        <div class="tops-heads" jsname="approvedProjectCardTitle">
+            
+        </div>
+        <div class="approved-proj-inner" jsname="approvedProjectCard">
+
+        </div>
+    </div>
+</div>

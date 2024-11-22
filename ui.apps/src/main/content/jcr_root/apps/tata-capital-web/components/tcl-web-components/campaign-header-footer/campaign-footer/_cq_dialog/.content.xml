@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Configuration NPS Header"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <socialIcon
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Social Icon"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        eaem-show-on-collapse="EAEM.showProductName"
+                        fieldLabel="Social Icon">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                            eaem-nested="NODE_STORE"
+                            name="./iconClasses">
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <href
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                            fieldLabel="Link"
+                                            name="./link"/>
+                                        <social-icon
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                            fieldLabel="Select Icon"
+                                            name="./iconClass">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <Twitter
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Twitter"
+                                                    value="icon-twitter"/>
+                                                <Instagram
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Instagram"
+                                                    value="icon-instagram"/>
+                                                <LinkedIn
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="LinkedIn"
+                                                    value="icon-linkedin"/>
+                                                <facebook
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="whatsApp"
+                                                    value="icon-facebook"/>
+                                                <YouTube
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="YouTube"
+                                                    value="icon-youtube"/>
+                                            </items>
+                                        </social-icon>
+                                        <openinNewTab
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            composite="{Boolean}true"
+                                            name="./openInNewTab"
+                                            text="Open link in new tab"
+                                            value="true"/>
+                                    </items>
+                                </column>
+                            </items>
+                        </field>
+                    </socialIcon>
+                    <disclaimer
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Content For Footer"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        eaem-show-on-collapse="EAEM.showProductName"
+                        fieldLabel="Content for footer">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                            eaem-nested="NODE_STORE"
+                            name="./disclaimerNo">
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <href
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                            fieldLabel="Pdf Link"
+                                            name="./pdfLink"/>
+                                        <openinNewTab
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            composite="{Boolean}true"
+                                            name="./openInPdfNewTab"
+                                            text="Open PDF in new tab"
+                                            value="true"/>
+                                        <contentForFooter
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Enter Footer Content"
+                                            name="./contentForFooter"/>
+                                    </items>
+                                </column>
+                            </items>
+                        </field>
+                    </disclaimer>
+                    <copyright-text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="Leave Empty for Standard Copyright Text"
+                        fieldLabel="Enter Copyright Text"
+                        name="./copyrightText"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

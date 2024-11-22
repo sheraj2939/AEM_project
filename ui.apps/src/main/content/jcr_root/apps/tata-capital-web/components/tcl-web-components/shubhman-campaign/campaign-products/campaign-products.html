@@ -1,0 +1,46 @@
+<section class="campaign-box space-tb40">
+    <div class="container">
+        <sly data-sly-test="${properties.boxContent}">
+            <div class="mx-1060">
+                <div class="bg-div campaign-infos">
+                    <p class="text16i"><b>${properties.boxContent}</b></p>
+                </div>
+            </div>
+        </sly>
+        <sly
+            data-sly-resource="${'product-dropdown' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+        </sly>
+        <div class="mx-1060">
+            <div class="campaign-ul">
+                <sly data-sly-list.campaignProduct="${resource.children}">
+                    <sly data-sly-test="${campaignProduct.name == 'campaignProductList'}">
+                        <sly data-sly-list.campaign="${campaignProduct.children}">
+
+                            <div class="campaign-li" id="${campaign.productId}">
+                                <div class="campaign-row bg-div">
+                                    <div class="campaign-left">
+                                        <img src="${campaign.image}" alt="">
+                                    </div>
+                                    <div class="campaign-right">
+
+                                        <div class="campaign-content-top">
+                                            <h2><span> ${campaign.Title}</span></h2>
+                                            <div>
+                                                ${campaign.bulletPoint @context = 'html'}
+                                            </div>
+                                        </div>
+
+                                        <div class="campaign-btns">
+                                            <a href="${campaign.buttonlink}"
+                                                target="${campaign.buttoncheckbox ? '_blank' : ''}"
+                                                class="btn-blue btn-large" data-product = '${campaign.productButton}'> ${campaign.buttonTitle}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </sly>
+                    </sly>
+                </sly>
+            </div>
+        </div>
+</section>

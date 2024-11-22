@@ -1,0 +1,214 @@
+/* Please Keep Comment on line 69 */
+.how-apply-box .tops-heads {
+  display: none;
+}
+.how-apply-box .how-apply-tabs {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.71) 0%, rgba(255, 255, 255, 0.95) 99.11%), linear-gradient(134.06deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.67) 99.11%);
+  backdrop-filter: blur(9px);
+  border-radius: 30px;
+  margin-bottom: 0;
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.01), 5px 0px 10px rgba(0, 0, 0, 0.01), 0px -5px 10px rgba(0, 0, 0, 0.01), 0px 5px 10px rgba(0, 0, 0, 0.01);
+}
+.how-apply-box .how-apply-tabs .tab-left {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 90px;
+  padding-bottom: 40px;
+  width: 265px;
+  background: none;
+  border-radius: 30px;
+  position: relative;
+  z-index: 2;
+}
+.how-apply-box .how-apply-tabs .tab-left .tablinks {
+  padding: 10px 20px;
+  font-family: "OpenSans-SemiBold";
+  font-size: 14px;
+  line-height: 19px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: rgba(25, 97, 172, 0.5);
+  background: none;
+  border: none;
+  width: 171px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+.how-apply-box .how-apply-tabs .tab-left .tablinks:nth-last-child(1) {
+  border-radius: 10px;
+  margin-bottom: 0;
+}
+.how-apply-box .how-apply-tabs .tab-left .tablinks:nth-child(1) {
+  border-radius: 10px;
+}
+.how-apply-box .how-apply-tabs .tab-left .tablinks:hover {
+  background: linear-gradient(134.06deg, rgba(18, 104, 179, 0.71) 0%, rgba(16, 141, 250, 0.95) 99.11%);
+  color: #FFFFFF;
+  box-shadow: 0px 25px 25px rgba(15, 157, 245, 0.02), 0px 70px 42px rgba(15, 157, 245, 0.07), 0px 31px 31px rgba(15, 157, 245, 0.12), 0px 8px 17px rgba(15, 157, 245, 0.14), 0px 0px 0px rgba(15, 157, 245, 0.14);
+}
+.how-apply-box .how-apply-tabs .tab-left .tablinks.active {
+  background: linear-gradient(134.06deg, rgba(18, 104, 179, 0.71) 0%, rgba(16, 141, 250, 0.95) 99.11%);
+  color: #FFFFFF;
+  border: none;
+  box-shadow: 0px 25px 25px rgba(15, 157, 245, 0.02), 0px 70px 42px rgba(15, 157, 245, 0.07), 0px 31px 31px rgba(15, 157, 245, 0.12), 0px 8px 17px rgba(15, 157, 245, 0.14), 0px 0px 0px rgba(15, 157, 245, 0.14);
+}
+.how-apply-box .how-apply-tabs .tab-content-wrap {
+  width: calc(100% - 265px);
+  left: 0;
+  padding-left: 0;
+  background: none;
+  backdrop-filter: none;
+}
+.how-apply-box .how-apply-tabs .tab-content-wrap .tab-content {
+  padding: 25px 50px 25px 10px;
+  min-height: 100%;
+  /* display: none; */
+  justify-content: space-between;
+}
+.how-apply-box .how-apply-tabs .tab-content-wrap .tab-content.active {
+  display: flex;
+}
+
+.how-apply-desc {
+  width: 100%;
+}
+.how-apply-desc h2 {
+  margin-bottom: 20px;
+}
+
+ul.dot-list.how-apply-list li {
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #333;
+  margin-bottom: 10px;
+}
+ul.dot-list.how-apply-list li:nth-last-child(1) {
+  margin-bottom: 0;
+}
+ul.dot-list.how-apply-list li:before {
+  top: 10px;
+}
+
+.apply-step-lists {
+  padding-top: 20px;
+}
+.apply-step-lists li {
+  margin-top: 33px;
+}
+.apply-step-lists li:first-child {
+  margin-top: 0px;
+}
+.apply-step-lists h3 {
+  margin-bottom: 6px;
+}
+.apply-step-lists .per-btns {
+  margin-top: 6px;
+}
+.apply-step-lists .btn-links {
+  font-size: 14px;
+}
+.apply-step-lists .btn-links .arros {
+  font-size: 9px;
+  padding-top: 4px;
+}
+
+@media (max-width: 991px) {
+  .how-apply-box .tops-heads {
+    display: block;
+  }
+  .how-apply-box .how-apply-tabs {
+    align-items: center;
+    background: none;
+    backdrop-filter: none;
+    border-radius: 30px;
+    box-shadow: none;
+  }
+  .how-apply-box .how-apply-tabs .tab-left {
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    width: 100%;
+    border-radius: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    /* Hide scrollbar for Chrome, Safari and Opera */
+  }
+  .how-apply-box .how-apply-tabs .tab-left::-webkit-scrollbar {
+    display: none;
+  }
+  .how-apply-box .how-apply-tabs .tab-left .tablinks {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 0;
+    width: initial;
+    min-width: fit-content;
+  }
+  .how-apply-box .how-apply-tabs .tab-left .tablinks:hover {
+    background: transparent;
+    box-shadow: none;
+    color: rgba(25, 97, 172, 0.5);
+  }
+  .how-apply-box .how-apply-tabs .tab-left .tablinks.active {
+    background: linear-gradient(134.06deg, rgba(18, 104, 179, 0.71) 0%, rgba(16, 141, 250, 0.95) 99.11%);
+    color: #FFFFFF;
+    box-shadow: 0px 25px 25px rgba(15, 157, 245, 0.02), 0px 70px 42px rgba(15, 157, 245, 0.07), 0px 31px 31px rgba(15, 157, 245, 0.12), 0px 8px 17px rgba(15, 157, 245, 0.14), 0px 0px 0px rgba(15, 157, 245, 0.14);
+  }
+  .how-apply-box .how-apply-tabs .tab-content-wrap {
+    width: 100%;
+    left: 0;
+    background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.71) 0%, rgba(255, 255, 255, 0.95) 99.11%), linear-gradient(134.06deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.67) 99.11%);
+    backdrop-filter: blur(9px);
+    border-radius: 24px;
+  }
+  .how-apply-box .how-apply-tabs .tab-content-wrap .tab-content {
+    padding: 24px;
+    background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.67) 99.11%);
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.01), 5px 0px 10px rgba(0, 0, 0, 0.01), 0px -5px 10px rgba(0, 0, 0, 0.01), 0px 5px 10px rgba(0, 0, 0, 0.01);
+    backdrop-filter: blur(9px);
+    border: 1px solid #FFFFFF;
+    border-radius: 35px;
+  }
+
+  .how-apply-desc h2 {
+    display: none;
+  }
+
+  ul.dot-list.how-apply-list li {
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+  ul.dot-list.how-apply-list li:before {
+    top: 8px;
+  }
+
+  .apply-step-lists li {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .how-apply-box .how-apply-tabs {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+  }
+  .how-apply-box .how-apply-tabs .tab-content-wrap {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    background: transparent;
+    backdrop-filter: blur(0px);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,108 @@
+.tabs-button {
+    background-color: #FFFFFF;
+    padding: 15px 45px 15px 25px;
+    width: 100%;
+    font-family: "OpenSans-SemiBold";
+    font-size: 16px;
+    line-height: 21px;
+    color: #A4AAAF;
+    border-bottom: 1px solid #E0E9F1;
+    position: relative;
+    display: inline-block;
+  }
+  .tabs-button.has-right-arrow:after {
+    content: "";
+    font-family: "icomoon";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    right: 17px;
+    color: #BDC9D3;
+    font-size: 14px;
+    font-weight: 400;
+    transition: all 0.2s;
+  }
+  .tabs-button.active, .tabs-button:hover {
+    background: #DEDC00;
+    color: #333333;
+    border-bottom-color: #DEDC00;
+  }
+  .tabs-button.active.has-right-arrow:after, .tabs-button:hover.has-right-arrow:after {
+    transform: translateY(-50%) rotate(0);
+    color: #333333;
+  }
+  .tabs-button:nth-child(1) {
+    border-radius: 30px 30px 0 0;
+    padding-top: 25px;
+  }
+  .tabs-button:nth-last-child(1) {
+    border-radius: 0 0 30px 30px;
+    padding-bottom: 25px;
+    border-bottom: none;
+  }
+  @media (max-width: 991px) {
+    .tab-btn-group {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      overflow-x: auto;
+      margin-bottom: 30px;
+      padding-left: 15px;
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+      /* Hide scrollbar for Chrome, Safari and Opera */
+    }
+    .tab-btn-group::-webkit-scrollbar {
+      display: none;
+    }
+    .tab-btn-group .tab-item:nth-last-child(1) .tab-button {
+      margin-right: 0;
+    }
+    .tab-btn-group .tab-item .tab-button {
+      margin-right: 0px;
+      margin-bottom: 0;
+    }
+    .tab-btn-group .tab-item .tab-button.active {
+      box-shadow: none;
+    }
+  
+    .tabs-button {
+      background: transparent;
+      padding: 10px 20px;
+      width: auto;
+      min-width: fit-content;
+      font-family: "OpenSans-SemiBold";
+      font-size: 14px;
+      line-height: 16px;
+      color: #1961AC;
+      text-align: center;
+      -webkit-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      border-bottom: none;
+      border-radius: 10px;
+      margin: 0 0px 5px 0px;
+      /*height: 36px;*/
+    }
+    .tabs-button.has-right-arrow:after {
+      display: none;
+    }
+    .tabs-button:hover {
+      color: #1961AC;
+      background: transparent;
+    }
+    .tabs-button.active {
+      background: #1961AC;
+      color: #FFFFFF;
+    }
+    .tabs-button:nth-child(1) {
+      border-radius: 10px;
+      padding-top: 10px;
+    }
+    .tabs-button:nth-last-child(1) {
+      border-radius: 10px;
+      padding-bottom: 10px;
+    } 
+  }

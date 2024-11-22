@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-12-15T12:14:59.139+05:30"
+        cq:lastModifiedBy="rinkal"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/tata-capital-web/settings/wcm/templates/tatacapital-web-footer-template"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Header Loan for You Experience Fragment"
+        sling:resourceType="tata-capital-web/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="tata-capital-web/components/container"
+            layout="responsiveGrid">
+            <loan_for_you_section
+                jcr:created="{Date}2022-11-23T17:18:58.108+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-12-01T20:07:45.232+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/Tc-Revamp/Tc-header/loan-for-you-section"
+                textIsRich="[true,true,true,true,true,true,true,true,true,true,true,true,true,true,true]">
+                <tabMenu jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        applyNowloanInfoDetailButton="Apply Now"
+                        calculatorTitle="Calculator"
+                        knowMoreLoanInfoDetailButton="Know More"
+                        knowMoretextImageButton="Check Credit Score"
+                        loanForYourNeedCOmpoent="true"
+                        loanForYourNeedTitle="Our Bestselling Products "
+                        loanInfoDetailDescription="&lt;h3>Financing solutions tailored to your business needs&lt;/h3>&#xd;&#xa;"
+                        needKnowBoxTitle="All you need to know"
+                        needLoanInfoDetailCOmpoent="true"
+                        needOtherInfoComponent="true"
+                        oterInfoTitle=" "
+                        redirectionLinkApplyNow="#"
+                        redirectionLinkKnowMoreTextImage="#"
+                        tabMenuItemTitle="Working Capital Loans"
+                        textImageDescription="&lt;p>Higher credit score increases the chances of loan approval. Check your CIBIL score today and get free insights on how to be credit-worthy.&lt;/p>&#xd;&#xa;"
+                        textImageTitle="Check Your Credit Score">
+                        <importanLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Quick approvals"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Flexible payment options"/>
+                        </importanLinks>
+                        <needKnowBoxLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="How to Apply "/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="Rates &amp; Charges                  "/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                redirectionLink="#"
+                                subMenuHead="Documents Required"/>
+                        </needKnowBoxLinks>
+                        <loanList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Loan Against Securities"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Structured Investment"
+                                redirectionLink="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Debt Syndication"
+                                redirectionLink="#"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Letter of Credit"
+                                redirectionLink="#"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Lease Rental Discounting"
+                                redirectionLink="#"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Loan Against Property"
+                                redirectionLink="#"/>
+                        </loanList>
+                        <loanListCalc jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="EMI Calculator"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="Pre-payment Calculator"
+                                redirectionLink="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle="Eligibility Calculator"
+                                redirectionLink="#"/>
+                        </loanListCalc>
+                        <loanListOtherInfo jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListOtherInfoLinkTitle="Track Your Application"
+                                loanListOtherInfoTitle="Check Your Application Status"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListOtherInfoLinkTitle="Request a Callback"
+                                loanListOtherInfoTitle="Want To Know More?"
+                                redirectionLink="#"/>
+                        </loanListOtherInfo>
+                    </item0>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        tabMenuItemTitle="Structured Products"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        tabMenuItemTitle="Term Loans"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        tabMenuItemTitle="Equipment Financing &amp; Leasing"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        tabMenuItemTitle="Construction Financing"/>
+                </tabMenu>
+            </loan_for_you_section>
+            <loan_for_you_section_2089793995
+                jcr:created="{Date}2022-12-05T13:30:19.563+05:30"
+                jcr:createdBy="nikita"
+                jcr:lastModified="{Date}2022-12-15T12:14:59.114+05:30"
+                jcr:lastModifiedBy="rinkal"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/tcl-web-components/header/loan-for-you-section"
+                textIsRich="[true,true,true,true,true,true,true,true,true,true,true,true,true,true,true]">
+                <tabMenu jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        applyNowloanInfoDetailButton="Apply Now"
+                        knowMoreLoanInfoDetailButton="Know More"
+                        loanForYourNeedCOmpoent="true"
+                        loanForYourNeedTitle="Most Popular products"
+                        loanInfoDetailDescription="&lt;p class=&quot;heading18s&quot;>Digital financial solutions to aid your growth&lt;/p>&#xd;&#xa;"
+                        needKnowBoxTitle="All you need to know"
+                        needLoanInfoDetailCOmpoent="true"
+                        needOtherInfoComponent="true"
+                        redirectionLinkApplyNow="#"
+                        redirectionLinkKnowMore="#"
+                        tabMenuItemTitle="Working Capital Loans">
+                        <importanLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Simple standard documentation process"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Quick disbursal"/>
+                        </importanLinks>
+                        <loanList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Channel Financing"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Invoice Discounting"
+                                redirectionLink="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Purchase Order Funding"
+                                redirectionLink="#"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Working Capital Demand Loan"
+                                redirectionLink="#"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="GST Loan"
+                                redirectionLink="#"/>
+                        </loanList>
+                        <loanListOtherInfo jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListOtherInfoLinkTitle="Track Your Application"
+                                loanListOtherInfoTitle="Check Your Application Status"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListOtherInfoLinkTitle="Request a Callback"
+                                loanListOtherInfoTitle="Want To Know More?"
+                                redirectionLink="#"/>
+                        </loanListOtherInfo>
+                    </item0>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        applyNowloanInfoDetailButton="Apply Now"
+                        knowMoreLoanInfoDetailButton="Know More"
+                        loanForYourNeedCOmpoent="true"
+                        loanForYourNeedTitle="Our Bestselling Products"
+                        loanInfoDetailDescription="&lt;p class=&quot;heading18s&quot;>Financing solutions tailored to your business needs&lt;/p>&#xd;&#xa;"
+                        needLoanInfoDetailCOmpoent="true"
+                        needOtherInfoComponent="true"
+                        redirectionLinkApplyNow="#"
+                        redirectionLinkKnowMore="#"
+                        tabMenuItemTitle="Structured Products">
+                        <importanLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Quick approvals"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Flexible payment options"/>
+                        </importanLinks>
+                        <loanList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading=" Loan Against Securities"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Structured Investment"
+                                redirectionLink="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading=" Debt Syndication"
+                                redirectionLink="#"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading=" Letter of Credit"
+                                redirectionLink="#"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading=" Lease Rental Discounting"
+                                redirectionLink="#"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Loan Against Property"
+                                redirectionLink="#"/>
+                        </loanList>
+                        <loanListOtherInfo jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListOtherInfoLinkTitle="Track Your Application"
+                                loanListOtherInfoTitle="Check Your Application Status"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListOtherInfoLinkTitle="Request a Callback"
+                                loanListOtherInfoTitle=" Want To Know More?"
+                                redirectionLink="#"/>
+                        </loanListOtherInfo>
+                    </item1>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        applyNowloanInfoDetailButton="Apply Now"
+                        calculator="true"
+                        calculatorTitle="Calculators"
+                        knowMoreLoanInfoDetailButton="Know More"
+                        loanInfoDetailDescription="&lt;p class=&quot;heading18s&quot;>Avail loan up to ₹ 2 crores &amp;amp; expand your business&lt;/p>&#xd;&#xa;"
+                        needLoanInfoDetailCOmpoent="true"
+                        needOtherInfoComponent="true"
+                        redirectionLinkApplyNow="#"
+                        redirectionLinkKnowMore="#"
+                        tabMenuItemTitle="Term Loans">
+                        <importanLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Customise loan tenures as per your needs"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Get your loan processed, sanctioned and funds disbursed digitally"/>
+                        </importanLinks>
+                        <loanListCalc jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle=" Eligibility Calculator"
+                                redirectionLink="#"/>
+                        </loanListCalc>
+                        <loanListOtherInfo jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListOtherInfoLinkTitle="Track Your Application"
+                                loanListOtherInfoTitle="Check Your Application Status"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListOtherInfoLinkTitle="Request a Callback"
+                                loanListOtherInfoTitle="Want To Know More?"
+                                redirectionLink="#"/>
+                        </loanListOtherInfo>
+                    </item2>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        applyNowloanInfoDetailButton="Apply Now"
+                        calculator="true"
+                        calculatorTitle="Calculators"
+                        knowMoreLoanInfoDetailButton="Know More"
+                        loanInfoDetailDescription="&lt;p class=&quot;heading18s&quot;>Avail loan up to ₹ 2 crores &amp;amp; expand your business&lt;/p>&#xd;&#xa;"
+                        needLoanInfoDetailCOmpoent="true"
+                        needOtherInfoComponent="true"
+                        redirectionLinkApplyNow="#"
+                        redirectionLinkKnowMore="#"
+                        tabMenuItemTitle="Equipment Financing &amp; Leasing">
+                        <importanLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Customise loan tenures as per your needs"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Get your loan processed, sanctioned and funds disbursed digitally"/>
+                        </importanLinks>
+                        <loanListCalc jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListCalcTitle=" Eligibility Calculator"
+                                redirectionLink="#"/>
+                        </loanListCalc>
+                        <loanListOtherInfo jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListOtherInfoLinkTitle="Track Your Application"
+                                loanListOtherInfoTitle=" Check Your Application Status"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListOtherInfoLinkTitle="Request a Callback"
+                                loanListOtherInfoTitle=" Want To Know More?"
+                                redirectionLink="#"/>
+                        </loanListOtherInfo>
+                    </item3>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        applyNowloanInfoDetailButton="Apply Now"
+                        knowMoreLoanInfoDetailButton="Know More"
+                        loanForYourNeedCOmpoent="true"
+                        loanForYourNeedTitle="Most Popular products"
+                        loanInfoDetailDescription="&lt;p class=&quot;heading18s&quot;>Ensure your business’ operational effeciency with ease&lt;/p>&#xd;&#xa;"
+                        needLoanInfoDetailCOmpoent="true"
+                        needOtherInfoComponent="true"
+                        redirectionLinkApplyNow="#"
+                        redirectionLinkKnowMore="#"
+                        tabMenuItemTitle="Construction Financing">
+                        <importanLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Wide range of equipments covered"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                subMenuHead="Minimum paperwork"/>
+                        </importanLinks>
+                        <loanList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Construction Finance"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading=" Construction Equipment Finance"
+                                redirectionLink="#"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                loanListHeading="Construction Equipment Finance"
+                                redirectionLink="#"/>
+                        </loanList>
+                        <loanListOtherInfo jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                loanListOtherInfoLinkTitle="Track Your Application"
+                                loanListOtherInfoTitle="Check Your Application Status"
+                                redirectionLink="#"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                loanListOtherInfoLinkTitle="Request a Callback"
+                                loanListOtherInfoTitle="Want To Know More?"
+                                redirectionLink="#"/>
+                        </loanListOtherInfo>
+                    </item4>
+                </tabMenu>
+            </loan_for_you_section_2089793995>
+        </root>
+    </jcr:content>
+</jcr:root>

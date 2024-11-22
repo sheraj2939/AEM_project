@@ -1,0 +1,101 @@
+<section class="calculator-wrapper space-tb40 pd-t0i">
+    <div class="container">
+        <div class="tops-heads mx-1060">
+            <div class="tops-heads-inner">
+                <h1>${properties.calcName} <strong>Calculator</strong></h1>
+                ${properties.description @ context = 'html'}
+            </div>
+        </div>
+        <div id="investmentForm" data-calc="investment">
+            <div class="bg-div calculator-wrapper--box mx-944 investment-period">
+                <div class="calculator-forms">
+                    <div class="calculator-col mg-b0">
+                        <label>${properties.timePeriod}</label>
+                        <div class="textbox-wrapper">
+                            <div class="assist-textbox" data-text="year">
+                                <button class="btn-dangers btn-month btn-change btn-count minus" type="button"
+                                    data-year="year"><i class="icon-minus"></i></button>
+                                <div class="text-group">
+                                    <input type="text" class="input-textbox only-numeric-input text-center"
+                                        data-value="5" data-maxvalue="25" data-minvalue="5" value="5"
+                                        autocomplete="off" data-id="numberOfYears">
+                                </div>
+                                <button class="btn-dangers btn-month btn-change btn-count plus" type="button"
+                                    data-year="year"><i class="icon-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-div bg-with-img calculator-wrapper--box mx-944 wealth-assist-wrapper">
+                <div class="wealth-assist-table">
+                    <div class="las-stock-head hidden-xs">
+                        <div class="las-stock-row">
+                            <ul>
+                                <li class="stock35 left-align">
+                                    <span class="text-label14">Investment Instruments</span>
+                                </li>
+                                <li class="stock20">
+                                    <span class="text-label14">Investment Amount</span>
+                                </li>
+                                <li class="stock25">
+                                    <span class="text-label14">Investment Allocation</span>
+                                </li>
+                                <li class="stock20 right-align">
+                                    <span class="text-label14">Expected return on Investment</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="las-stock-body investment-table-scroll" data-id="investmentStructure">
+                    </div>
+                    <div class="las-stock-footer">
+                        <span>Total </span><span data-id="totalValue"></span>
+                    </div>
+                </div>
+                <div class="wealth-assist-footer">
+                    <ul>
+                        <li>
+                            <div class="calculator-information">
+                                <div class="final-amount">
+                                    <p class="customPtag" style="flex-wrap: nowrap;">Future Value of your Investment <span data-id="futureValue">₹1,71,68,602</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="calculator-information">
+                                <div class="final-amount">
+                                    <p class="customPtag" style="flex-wrap: nowrap;">Expected Return on your Investment <span data-id="expectedRate">11.66%</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="calculator-forms-button">
+                    <ul>
+                        <li>
+                            <a href="/content/tata-capital-web/en/wealth/request-callback.html"
+                                class="btn-dangers btn-big request-callback-btn" type="button">Request Callback</a>
+                        </li>
+                        <li>
+                            <button type="button" class="btn-dangers btn-big btn-outline btn-apps"
+                                data-popovermodal="popover-modal" data-target="#whatsapp-email-modal">
+                                Get this result on <img
+                                    src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/what-app.svg"
+                                    alt=""> &amp; <img
+                                    src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/email-circle.svg"
+                                    alt="">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Calculator Section -->
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories='wealth-investment-calculator'}"></sly>
+</sly>

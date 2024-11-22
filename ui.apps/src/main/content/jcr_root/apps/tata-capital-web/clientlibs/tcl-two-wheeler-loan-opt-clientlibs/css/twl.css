@@ -1,0 +1,32 @@
+.loans-details-per {
+    backdrop-filter: blur(9px);
+}
+
+.emi-option-box.document-required-box .document-flex-row {
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -40px;
+}
+
+.emi-option-box.document-required-box .document-flex-row .document-col {
+    margin-top: 40px;
+}
+
+@media (max-width: 767px)
+{
+    .personal-loan-box.top-loan-space {
+        padding-top: 30px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .personal-loan-box.top-loan-space {
+        padding-top: 30px !important;
+    }
+    .emi-option-box.document-required-box .document-flex-row {
+       margin: 0px;
+    }
+    .emi-option-box.document-required-box .document-flex-row .document-col {
+        margin-top: 0px;
+    }
+}

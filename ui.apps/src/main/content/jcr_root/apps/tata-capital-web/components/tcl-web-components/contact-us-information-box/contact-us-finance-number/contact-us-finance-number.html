@@ -1,0 +1,49 @@
+<div class="contactus-news-top">
+    <div class="contacts-flex-row">
+        <sly data-sly-list.contactUs="${resource.children}">
+            <sly data-sly-test="${contactUs.name == 'topContact'}">
+                <sly data-sly-list.topContent="${contactUs.children}">
+                    <div class="contacts-flex-col">
+                        <div class="top-details">
+                            ${topContent.contactDec @ context='html'}
+                        </div>
+                    </div>
+                </sly>
+            </sly>
+        </sly>
+    </div>
+</div>
+
+<div class="contactus-news-bottom">
+    <div class="top-details">
+        <sly data-sly-test="${properties.bottomHeading}">
+            <h3 class="heading20">
+                <span>${properties.bottomHeading}</span>
+            </h3>
+        </sly>
+        <div class="top-email-outers">
+            <div class="loan-row">
+                <sly data-sly-list.bottomContactUs="${resource.children}">
+                    <sly data-sly-test="${bottomContactUs.name == 'bottomContact'}">
+                        <sly data-sly-list.bottomContent="${bottomContactUs.children}">
+                            <div class="loan-col">
+                                <p class="text16i">
+                                    ${bottomContent.emailHeading}
+                                </p>
+                                <a href="${bottomContent.emailUrl}" class="text14i">
+                                    ${bottomContent.emailText}
+                                </a>
+                            </div>
+                        </sly>
+                    </sly>
+                </sly>
+            </div>
+
+            <div class="reachout-btn">
+                <button type="button" class="btn-link btn-big btn-with-card-bg" data-popovermodal="popover-modal"
+                    data-target="#reach-out-modal">Reach out to us</button>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,80 @@
+<section data-sly-use.title="com.adobe.cq.wcm.core.components.models.Title"
+data-sly-use.template="core/wcm/components/commons/v1/templates.html" data-sly-test.text="${title.text}"
+data-cmp-data-layer="${title.data.json}" class="emi-calculator-box micro-finance-calculator top-loan-space space-tb40">
+    <div class="container">
+        <div class="mx-944">
+            <div class="tops-heads">
+                <div
+                    data-sly-resource="${'title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                </div>
+            </div>
+
+            <div class="calculator-content-wrap page-calculator-wrap z-0" data-calc-name="${title.text}">
+                <div class="calculator-inputs-wrap">
+                    <div class="calculator-inputs-inner no-wrap">
+                        <!-- calculator row  -->
+                        <div class="calculator-details product-details">
+                            <div class="calculator-dropdown-filter employer-dropdown">
+                                <div
+                                    data-sly-resource="${'calculator-heading-state' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/calculators/calculator-field-heading'}">
+                                </div>
+                                <div class="calculator-textbox">
+                                    <div
+                                        class="custom-dropdown name-dropdown-filter close-on-outside js-searchDropdownWrap">
+                                        <a href="javascript:void(0)" class="dropdown-heading"
+                                            data-rel="employer_name">Pragati</a>
+                                        <div class="dropdown-block dropdownmenu" id="employer_name" data-search="">
+                                            <div class="search-dropdown">
+                                                <div class="search-dropdown-inner">
+                                                    <input type="text" class="form-control" placeholder="Search"
+                                                        data-searchinput="">
+                                                    <button type="button" class="btnsearch">
+                                                        <span class="icon-search"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <ul class="simple-bar microfinance-companies" data-list="name">
+       
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- calculator row  -->
+                        <div
+                            data-sly-resource="${'main-container' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-graph-wrap">
+                    <div class="calculator-graph-inner">
+                        <div class="monthly-emi-row flex-wrap balanceTransfer-totalSavings-row">
+                            <div class="monthly-emi-section">
+                                <div class="monthly-emi-col">
+                                    <p class="semibold">Installments
+                                    </p>
+                                    <h4 class="installments"></h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="monthly-emi-row monthly-emi-wrapper">
+                            <div class="monthly-emi-section">
+                                <div class="monthly-emi-col">
+                                    <p class="semibold" data-repayment-option>EMI Amount (Monthly)
+                                    </p>
+                                    <h4 class="emi-amount"></h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="final-amount-text">
+                            <p>*Final amount may vary and it will depend on the final credit approval</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

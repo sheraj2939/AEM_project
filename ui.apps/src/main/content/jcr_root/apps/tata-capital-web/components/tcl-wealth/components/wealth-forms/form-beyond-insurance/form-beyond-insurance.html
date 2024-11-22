@@ -1,0 +1,349 @@
+<!-- conversation box -->
+<div class="request-callback-box space-tb40 pd-t50 space-b80">
+    <div class="container">
+        <div class="request-callback-form" id="request-call-forms">
+            <div class="request-callback-header">
+                <h4>Request Callback</h4>
+                <div class="clear-btn">
+                    <a href="javascript:void(0)" class="link jsClearConversationDetails">Clear <span
+                            class="icon-clear"></span></a>
+                </div>
+            </div>
+            <div class="bg-div bg-img-right request-callback-inner">
+                <!-- conversation form start -->
+                <div class="conversation-form" id="conversation-form" data-formtype="${properties.selectForm}">
+                    <div>
+                        <div class="row-flex">
+                            <div class="row-col-33 col-sp15" data-ri>
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Name of the Customer (Nominee)*</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" class="input-textbox only-alpha-input disable-emoji"
+                                            placeholder="" data-type="name">
+                                    </div>
+                                    <!-- <span class="text-infos">Name (as per PAN Card)</span> -->
+                                </div>
+                            </div>
+                            <div class="row-col-33 col-sp15" data-ri>
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Name of the Policy Holder*</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" class="input-textbox only-alpha-input disable-emoji"
+                                            placeholder="" data-type="policy-holder-name" data-form="policy-holder-name">
+                                    </div>
+                                    <span class="text-infos">Name (as per PAN Card)</span>
+                                </div>
+                            </div>
+                            <div class="row-col-33 col-sp15" data-ri>
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Email ID*</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" class="input-textbox disable-emoji" placeholder=""
+                                            data-type="email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-33 col-sp15">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">PAN details*</label>
+                                    <div class="textbox-inner">
+                                        <input type="text"
+                                            class="input-textbox jsValueOK only-alpha-numeric-input disable-emoji"
+                                            placeholder="" data-type="pan" maxlength="10" data-form="panNumber">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-33 col-sp15">
+                                <div class="form-textbox-new active">
+                                    <label class="label-name">Occupation*</label>
+                                    <div class="textbox-inner">
+                                        <div class="custom-select2">
+                                            <select class="js-select2 jsValueOK" data-type="occupation"
+                                                data-form="occupation">
+                                                <option value=""></option>
+                                                <option value="Salaried">Salaried</option>
+                                                <option value="SelfEmployed">Self Employed</option>
+                                                <option value="Professional">Professional</option>
+                                                <option value="Housewife">Housewife</option>
+                                                <option value="Retired">Retired</option>
+                                                <option value="Others">Others</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-33 col-sp15" data-ri="ri-mobile">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Mobile number*</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" class="input-textbox allow-numeric disable-emoji"
+                                            maxlength="10" pattern="[0-9]*" inputmode="numeric" placeholder=""
+                                            data-type="mobile">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-33 col-sp15" data-ri="where-you">
+                                <div class="form-textbox-new fixed-active">
+                                    <label class="label-name">City of Residence?*</label>
+                                    <div class="textbox-inner">
+                                        <div class="custom-select2">
+                                            <select class="js-select2 city" data-type="resi-city">
+                                                <option value=""></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-33 col-sp15">
+                                <div class="form-textbox-new fixed-active">
+                                    <label class="label-name">Corporate Name*</label>
+                                    <div class="textbox-inner">
+                                        <div class="custom-select2">
+                                            <select class="js-select2" data-type="corporate-name">
+                                                <option value=""></option>
+                                                <option value="IHCL">IHCL</option>
+                                                <option value="Voltas">Voltas</option>
+                                                <option value="Croma">Croma</option>
+                                                <option value="Westside">Westside</option>
+                                                <option value="Tata Housing">Tata Housing</option>
+                                                <option value="Titan">Titan</option>
+                                                <option value="Tata Cliq">Tata Cliq</option>
+                                                <option value="Tata AIA">Tata AIA</option>
+                                                <option value="Tata Steel">Tata Steel</option>
+                                                <option value="Tata Motors">Tata Motors</option>
+                                                <option value="StarQuik">StarQuik</option>
+                                                <option value="Tanishq">Tanishq</option>
+                                                <option value="Tata Sky">Tata Sky</option>
+                                                <option value="Infinity Retail">Infinity Retail
+                                                </option>
+                                                <option value="Nelco">Nelco</option>
+                                                <option value="Tata Advance System">Tata Advance
+                                                    System</option>
+                                                <option value="Tata AIG">Tata AIG</option>
+                                                <option value="Trent">Trent</option>
+                                                <option value="Tata Tele Communication">Tata Tele
+                                                    Communication</option>
+                                                <option value="Tata Consultancy Services">Tata
+                                                    Consultancy Services</option>
+                                                <option value="Tata Elxsi">Tata Elxsi</option>
+                                                <option value="Jaquar Land Rover">Jaquar Land Rover
+                                                </option>
+                                                <option value="Tata Autocomp">Tata Autocomp
+                                                </option>
+                                                <option value="Tata Chemical">Tata Chemical
+                                                </option>
+                                                <option value="Tata Consumer Products">Tata
+                                                    Consumer Products</option>
+                                                <option value="Tata Power">Tata Power</option>
+                                                <option value="Tata Project">Tata Project</option>
+                                                <option value="Tata Consulting Engineers">Tata
+                                                    Consulting Engineers</option>
+                                                <option value="Tata Realty and Infrastructure">Tata
+                                                    Realty and Infrastructure</option>
+                                                <option value="Tata Asset Management">Tata Asset
+                                                    Management</option>
+                                                <option value="Tata SIA" data-select2-id="47">Tata SIA</option>
+                                                <option value="Tata Teleservices">Tata Teleservices
+                                                </option>
+                                                <option value="Tata International">Tata
+                                                    International</option>
+                                                <option value="Tata Industries">Tata Industries
+                                                </option>
+                                                <option value="other">other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <button type="button" class="btn-dangers btn-big jsConversationBtn">Submit</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- conversation form  end-->
+
+                <!-- conversation otp start -->
+                <div class="conversation-otp-wrap d-none" id="conversation-otp">
+                    <div class="otp-top-head">
+                        <h3 class="heading20"><span>Verify your mobile number</span></h3>
+                        <p class="text14i">Please enter the 4 digit OTP sent to your mobile number</p>
+                    </div>
+
+                    <div class="row-flex row-flex-30">
+                        <div class="row-col-33 col-sp30">
+                            <div class="otp-name-pt">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Mobile number</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" class="input-textbox allow-numeric disable-emoji"
+                                            placeholder="" data-type="otp-send-number" maxlength="10" pattern="[0-9]*"
+                                            inputmode="numeric">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-col-66 col-sp30">
+                            <div class="otp-outer-box">
+                                <div class="">
+                                    <div class="form-otp-wrap jsOTPInputBox d-none">
+                                        <p class="label12-text">Enter OTP</p>
+                                        <div class="all-enter-otp">
+                                            <div class="otp-col js-OtpBox">
+                                                <input class="input-textbox allow-numeric disable-emoji" data-otp="otp"
+                                                    type="text" maxlength="1" placeholder="" pattern="[0-9]*"
+                                                    inputmode="numeric" />
+                                                <input class="input-textbox allow-numeric pointer-none disable-emoji"
+                                                    data-otp="otp" type="text" maxlength="1" placeholder=""
+                                                    pattern="[0-9]*" inputmode="numeric" />
+                                                <input class="input-textbox allow-numeric pointer-none disable-emoji"
+                                                    data-otp="otp" type="text" maxlength="1" placeholder=""
+                                                    pattern="[0-9]*" inputmode="numeric" />
+                                                <input class="input-textbox allow-numeric pointer-none disable-emoji"
+                                                    data-otp="otp" type="text" maxlength="1" placeholder=""
+                                                    pattern="[0-9]*" inputmode="numeric" />
+                                            </div>
+                                        </div>
+
+                                        <div class="loan-otp-timers">
+                                            <div class="otp-timers-row">
+                                                <div class="otp-timers-col">
+                                                    <p class="text16i" id="timer">03:00</p>
+                                                </div>
+                                                <div class="otp-timers-col">
+                                                    <a href="javascript:void(0)"
+                                                        class="btn-links d-none jsOnGetCall">Get
+                                                        OTP via call</a>
+                                                    <p
+                                                        class="text16i text-primary call-with-img semibold jsGetCalling d-none">
+                                                        <img src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/call.gif"
+                                                            alt="call icon"> Calling
+                                                        <span class="semibold"> +91 XXXXXXXXXX</span>
+                                                    </p>
+                                                    <p class="text16i text-primary semibold jsGetOTPSent d-none">OTP
+                                                        sent
+                                                        via call</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-controls">
+                        <button class="btn-dangers btn-large jsConversationSendOTP  d-none">Send OTP</button>
+                        <button class="btn-dangers btn-large jsConversationSubmitOTP btn-disabled d-none">Submit
+                        </button>
+                        <button class="btn-link btn-big jsConversationResendOTP d-none">Resend OTP</button>
+                    </div>
+                </div>
+                <!-- conversation otp send -->
+            </div>
+            <!-- thankyou  end-->
+        </div>
+
+        <!-- error start -->
+        <div class="thanks-callback bg-div bg-with-img d-none jsFailOTPVarification">
+            <div>
+                <img src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/errors.svg" alt="Not Match"
+                    class="iconimg">
+                <p class="heading20 semibold heading-texts"><span>INCORRECT OTP</span></p>
+                <p class="text16i otp-error-text">OTP once used cannot be reused. Please resend OTP to try
+                    again.
+                </p>
+                <div>
+                    <button type="button" class="btn-dangers btn-big min-w149 jsOTPTryAgain">Try Again</button>
+                </div>
+            </div>
+        </div>
+        <!-- error  end-->
+
+        <!-- thankyou start -->
+        <div class="thanks-callback bg-div bg-with-img d-none jsSuccessOTPVarification">
+            <div>
+                <a href="javascript:void(0)" class="conversation-closed jsClearConversationDetails">
+                    <span class="icon-close"></span>
+                </a>
+                <img src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/thanks.svg" alt="Thank You"
+                    class="iconimg">
+                <p class="heading20 semibold heading-texts"><span>Thank you for reaching out to us</span></p>
+                <p class="text16i ref-text">We have received your information and your reference number is <span
+                        class="heading20 bold" id="refNum"> 117718507</span>
+                </p>
+                <p class="text16i">Our representative will get in touch with you soon.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- conversation box -->
+
+<!-- interest modal -->
+<div class="popover-modal fade" id="interest-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md6">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content bg-with-img">
+                <button data-dismiss="popover-modal" class="popover-modal-close jsSubscribeClose"><span
+                        class="icon-close"></span></button>
+                <div class="popover-modal-body">
+                    <div class="subscribe-thakyou">
+                        <img src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/thanks.svg" alt=""
+                            class="thanks-imgs">
+                        <p class="heading20 semibold">Thank you for your interest!</p>
+                        <p class="text14i">Our relationship manager has elevated the priority of reviewing your details
+                            and will respond promptly</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- interest modal -->
+
+<div class="popover-modal fade" id="not-receive-otp-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md6">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content bg-with-img">
+                <button data-dismiss="popover-modal" class="popover-modal-close jsNotReceiveOtpClose"><span
+                        class="icon-close"></span></button>
+                <div class="popover-modal-body">
+                    <div class="subscribe-thakyou">
+                        <img src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/call-ring-img.svg"
+                            alt="" class="thanks-imgs">
+                        <p class="heading20 semibold">Did not receive OTP?</p>
+                        <p class="text14">Receive your OTP instantly via call</p>
+                        <div class="get-otp-btn pd-t20i">
+                            <a href="javascript:void(0)" class="btn-dangers btn-big min-w149 jsModalOnGetCall">Get OTP
+                                via call</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popover-modal fade" id="otp-sent-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md6">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content bg-with-img">
+                <button data-dismiss="popover-modal" class="popover-modal-close jsThanksModalClose"><span
+                        class="icon-close"></span></button>
+                <div class="popover-modal-body">
+                    <div class="subscribe-thakyou otp-send-success d-none">
+                        <img src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/check-circle.svg"
+                            class="thanks-imgs" alt="">
+                        <p class="heading24 otp-heads">OTP has been sent</p>
+                    </div>
+                    <div class="subscribe-thakyou otp-expired d-none">
+                        <img src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/errors.svg"
+                            class="thanks-imgs" alt="">
+                        <h3 class="semibold">OTP Expired</h3>
+                        <p class="otp-heads pd-t20i">Your OTP has been expired. Please try again.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

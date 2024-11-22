@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Product List Box"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <title-light
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Title Light"
+                        name="./titleLight"/>
+                    <title-bold
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Title Bold"
+                        name="./titleBold"/>
+                    <product-list-box
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Product list box"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        eaem-show-on-collapse="EAEM.showProductName"
+                        fieldLabel="Product list">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                            eaem-nested="NODE_STORE"
+                            name="./productList">
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <icon
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldDescription="Enter Icon Class Name."
+                                            fieldLabel="Icon"
+                                            name="./classIcon"/>
+                                        <title
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Title"
+                                            name="./titleTxt"/>
+                                        <needPtag
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            composite="{Boolean}true"
+                                            name="./needPTag"
+                                            text="Need title in P tag"
+                                            value="true"/>
+                                        <linkText
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Link Text"
+                                            name="./linkText"/>
+                                        <linkTextLight
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Link Text light"
+                                            name="./linkTextLight"/>
+                                        <linkTextAfterLigh
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Link Text After Bold Text"
+                                            name="./linkTextBold"/>
+                                        <linkUrl
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Link Url"
+                                            name="./linkUrl"/>
+                                        <open-in-new-tab
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            composite="{Boolean}true"
+                                            name="./openInNewTab"
+                                            text="Open In New Tab"
+                                            value="true"/>
+                                    </items>
+                                </column>
+                            </items>
+                        </field>
+                    </product-list-box>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

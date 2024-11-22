@@ -1,0 +1,145 @@
+.service-wealth-box .tops-heads h2 {
+  margin-bottom: 10px;
+}
+.service-wealth-box .tops-heads p {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.service-wealth-box .tops-heads p:last-child {
+  margin-bottom: 0px;
+}
+
+.wealth-service-card .wealth-service-col {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.wealth-service-card .wealth-service-col .service-imgs {
+  width: 100%;
+  height: 317px;
+  object-fit: cover;
+}
+.wealth-service-card .wealth-service-col:hover .wealth-service-main {
+  display: none;
+}
+.wealth-service-card .wealth-service-col:hover .wealth-service-contents {
+  display: flex;
+}
+.wealth-service-card .wealth-service-main {
+  background: linear-gradient(0deg, rgba(100, 8, 17, 0.6) 29.69%, rgba(100, 8, 17, 0.552) 100%);
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  z-index: 1;
+}
+.wealth-service-card .wealth-service-main .wealth-squire {
+  width: 52px;
+  height: 52px;
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 14.5px;
+  display: block;
+  border: 1px solid #fff;
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  font-size: 13px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wealth-service-card .wealth-service-inner {
+  padding: 25px 20px;
+}
+.wealth-service-card .wealth-service-contents {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(0deg, rgba(100, 8, 17, 0.85) 29.69%, rgba(100, 8, 17, 0.782) 100%);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.wealth-service-card .wealth-service-contents .imgs {
+  width: 148px;
+  margin: 0 auto 17px;
+}
+.wealth-service-card .wealth-service-contents .heading20 {
+  text-align: center;
+  color: #fff;
+  margin: 0 auto 8px;
+}
+.wealth-service-card .wealth-service-contents .text12 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.wealth-service-card .wealth-service-contents .wealth-service-btn {
+  margin-top: 14px;
+  text-align: center;
+}
+.wealth-service-card .wealth-service-contents .wealth-service-btn .btn-links {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .service-wealth-box .row-flex {
+    margin-top: -30px;
+  }
+  .service-wealth-box .row-flex .row-col-50 {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .wealth-service-card .service-imgs {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+  }
+  .wealth-service-card .wealth-service-main {
+    display: none;
+  }
+  .wealth-service-card .wealth-service-contents {
+    display: flex;
+    position: relative;
+    z-index: 1;
+  }
+  .wealth-service-card .wealth-service-inner {
+    padding: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .wealth-service-card .wealth-service-inner {
+    padding: 20px;
+  }
+  .wealth-service-card .wealth-service-contents .imgs {
+    width: auto;
+    height: 25px;
+  }
+  .wealth-service-card .wealth-service-contents .text12 {
+    margin-bottom: 8px;
+  }
+  .wealth-service-card .wealth-service-contents .wealth-service-btn {
+    margin-top: 16px;
+  }
+}
+@media (max-width: 359px) {
+  .wealth-service-card .wealth-service-contents .list-wealth.two-list li {
+    width: 100%;
+    padding-right: 0px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

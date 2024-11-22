@@ -1,0 +1,26 @@
+<div data-sly-use.image="com.adobe.cq.wcm.core.components.models.Image"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-cmp-dmimage="${image.dmImage}"
+     data-asset-id="${image.uuid}"
+     id="${image.id}"
+     data-cmp-data-layer="${image.data.json}"
+     class="how-do-box space-tb40 cmp-image${!wcmmode.disabled ? ' cq-dd-image' : ''}"
+     itemscope itemtype="http://schema.org/ImageObject">
+            <div class="container">                
+<sly
+            data-sly-resource="${'how-we-title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+        </sly>
+                <div class="how-do-img">
+                    <img srcset="${image.srcset}" src="${image.src}"
+             loading="${image.lazyEnabled ? 'lazy' : ''}"
+             class="cmp-image__image"
+             itemprop="contentUrl"
+             width="${image.width}" height="${image.height}"
+             alt="${image.alt || true}" title="${image.displayPopupTitle && image.title}" class="howdo-img">
+                </div>
+                <div class="wealth-para-list text-center">
+                   ${properties.howWeDoimg @ context ='html'}
+                </div>
+            </div>
+
+        </div>

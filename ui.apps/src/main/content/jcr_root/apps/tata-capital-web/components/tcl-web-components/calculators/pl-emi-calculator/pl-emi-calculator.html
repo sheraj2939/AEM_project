@@ -1,0 +1,81 @@
+<!--Personal Loan EMI Calculator-->
+<section data-sly-use.title="com.adobe.cq.wcm.core.components.models.Title"
+    data-sly-use.template="core/wcm/components/commons/v1/templates.html" data-sly-test.text="${title.text}"
+    data-cmp-data-layer="${title.data.json}" class="${!properties.homePageCalculator? 'calculator-box space-tb40' : ' '}">
+    <div class="container">
+        <div class="${!properties.homePageCalculator? 'mx-944' : '' }">
+            <sly data-sly-test.text="${!properties.homePageCalculator}">
+                <div class="tops-heads">
+                    <div
+                        data-sly-resource="${'title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                    </div>
+
+                </div>
+            </sly>
+            <div class="calculator-content-wrap z-0" data-calc-name="${title.text}">
+                <div class="calculator-inputs-wrap">
+
+                    <sly
+                        data-sly-resource="${'container-main' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                    </sly>
+
+
+                </div>
+                <div class="calculator-graph-wrap">
+                    <div class="calculator-graph-inner">
+                        <div class="calculate-price">
+                            <p>Monthly EMI</p>
+                            <p class="calculated-emi customCssEmi"></p>
+                        </div>
+
+                        <div class="d-none d-md-block">
+                            <div class="charts-blocks">
+                                <div class="charts-blocks-left">                                            
+                                    <div id="${title.text}" class="graph-chart-box2"></div>
+                                </div>
+                                <div class="charts-blocks-right">
+                                    <ul class="chart-value-list">
+                                        <li class="tap">
+                                            <span class="charts-circles"></span>
+                                            <p class="total-amt-text">Total Amount Payable</p>
+                                            <p class="text16 total-amt calculated-tap"><span class="icon-rupee"></span>0*</p>
+                                        </li>
+                                        <li class="tip">
+                                            <span class="charts-circles charts-lime"></span>
+                                            <p class="total-amt-text">Total Interest Payable</p>
+                                            <p class="text16 total-amt calculated-tip"><span class="icon-rupee"></span>0*</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- <div class="calculator-graph">
+                                <div id="${title.text}" class="graph-chart-box"></div>
+                            </div> -->
+                        </div>
+                        <div class="d-md-none">
+                            <div class="amountPayable-interestPayable-wrap">
+                                <div class="amountPayable-interestPayable-col tap">
+                                    <p>Total Amount Payable</p>
+                                    <p class="calculated-tap-mobile"></p>
+                                </div>
+                                <div class="amountPayable-interestPayable-col tip">
+                                    <p>Total Interest Payable</p>
+                                    <p class="calculated-tip-mobile"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <sly data-sly-test="${title.linkURL}">
+                            <div class="calculate-btn-wrap">
+                                <a href="${title.linkURL}" target=" ${properties.newTab ? '_blank' : '' }"
+                                    class="calculate-btn btn-blue btn-large">
+                                    Apply Now
+                                </a>
+                            </div>
+                        </sly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Personal Loan EMI Calculator-->

@@ -1,0 +1,9 @@
+.cmp-teaser__action-container .alliances-space:nth-child(2) {
+    padding-left: 20px;
+}
+
+@media (max-width: 767px) {
+    .all-alliances-box.partners-details-box .left-col .custome-img-size {
+        max-width: 80px;
+    }
+}

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-12-15T15:57:01.052+05:30"
+        cq:lastModifiedBy="rinkal"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/tata-capital-web/settings/wcm/templates/tatacapital-web-footer-template"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Header Loan for You Experience Fragment"
+        sling:resourceType="tata-capital-web/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="tata-capital-web/components/container"
+            layout="responsiveGrid">
+            <insurance_component
+                jcr:created="{Date}2022-12-01T20:22:15.848+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-12-01T20:27:14.369+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/Tc-Revamp/Tc-header/insurance-component"
+                applyNowloanInfoDetailButton="Know More"
+                knowMoretextImageButton="Calculate Now"
+                loanForYourNeedCOmpoent="true"
+                loanForYourNeedTitle="Bestselling insurance solutions"
+                loanInfoDetailDescription="&lt;h3>Protect your family against unforeseen risks&lt;/h3>&#xd;&#xa;&lt;p>Avail any of the Insurance policies online in just a few clicks&lt;/p>&#xd;&#xa;"
+                needLoanInfoDetailCOmpoent="true"
+                redirectionLinkKnowMoreTextImage="#"
+                textImageComponent="true"
+                textImageDescription="&lt;p>A comprehensive protection at an affordable price to protect yourself and your loved ones. Get protected for your whole life with HDFC life click 2 protect super.&lt;/p>&#xd;&#xa;"
+                textImageTitle="Calculate life insurance - easily customize your plans"
+                textIsRich="[true,true,true]">
+                <loanList jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        loanListHeading="Motor Insurance"
+                        redirectionLink="#"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        loanListHeading="Life Insurance"
+                        redirectionLink="#"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        loanListHeading="Health Insurance"
+                        redirectionLink="#"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        loanListHeading="Child Insurance Plans"
+                        redirectionLink="#"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        loanListHeading="Home Insurance"
+                        redirectionLink="#"/>
+                    <item5
+                        jcr:primaryType="nt:unstructured"
+                        loanListHeading="Commercial Insurance  Solutions"
+                        redirectionLink="#"/>
+                    <item6
+                        jcr:primaryType="nt:unstructured"
+                        loanListHeading="Travel Insurance"
+                        redirectionLink="#"/>
+                    <item7
+                        jcr:primaryType="nt:unstructured"
+                        loanListHeading="Wellnes Insurance"
+                        redirectionLink="#"/>
+                    <item8
+                        jcr:primaryType="nt:unstructured"
+                        loanListHeading="Protection Plan &amp; other solutions"
+                        redirectionLink="#"/>
+                    <item9
+                        jcr:primaryType="nt:unstructured"
+                        loanListHeading="Retirement Solutions &amp; Child Plan"
+                        redirectionLink="#"/>
+                    <item10
+                        jcr:primaryType="nt:unstructured"
+                        loanListHeading="Pocket Friendly Insurance"
+                        redirectionLink="#"/>
+                </loanList>
+            </insurance_component>
+            <insurance_component_897380195
+                jcr:created="{Date}2022-12-04T21:08:35.037+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-12-15T15:57:01.039+05:30"
+                jcr:lastModifiedBy="rinkal"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/tcl-web-components/header/insurance-component"
+                applyNowloanInfoDetailButton="Know More"
+                imageTextImage="/content/dam/tata-capital-web/tc-header-images/calculate-life-insurance.png"
+                knowMoretextImageButton="Calculate Now"
+                loanForYourNeedCOmpoent="true"
+                loanForYourNeedTitle="Bestselling insurance solutions"
+                loanInfoDetailDescription="&lt;p>&lt;span class=&quot;heading18s&quot;>Protect your family against unforeseen risks&lt;/span>&lt;/p>&#xd;&#xa;&lt;p>Avail any of the Insurance policies online in just a few clicks&lt;/p>&#xd;&#xa;"
+                needLoanInfoDetailCOmpoent="true"
+                redirectionLinkApplyNow="#"
+                redirectionLinkKnowMoreTextImage="#"
+                textImageComponent="true"
+                textImageDescription="&lt;p>A comprehensive protection at an affordable price to protect yourself and your loved ones. Get protected for your whole life with HDFC life click 2 protect super.&lt;/p>&#xd;&#xa;"
+                textImageTitle="Calculate life insurance - easily customize your plans"
+                textIsRich="[true,true,true]">
+                <loanList jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        loanListHeading="Motor Insurance"
+                        redirectionLink="#"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        loanListHeading="Life Insurance"
+                        redirectionLink="#"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        loanListHeading="Health Insurance"
+                        redirectionLink="#"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        loanListHeading="Child Insurance Plans"
+                        redirectionLink="#"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        loanListHeading="Home Insurance"
+                        redirectionLink="#"/>
+                    <item5
+                        jcr:primaryType="nt:unstructured"
+                        loanListHeading="Commercial Insurance  Solutions"
+                        redirectionLink="#"/>
+                    <item6
+                        jcr:primaryType="nt:unstructured"
+                        loanListHeading="Travel Insurance"
+                        redirectionLink="#"/>
+                    <item7
+                        jcr:primaryType="nt:unstructured"
+                        loanListHeading="Wellnes Insurance"
+                        redirectionLink="#"/>
+                    <item8
+                        jcr:primaryType="nt:unstructured"
+                        loanListHeading="Protection Plan &amp; other solutions"
+                        redirectionLink="#"/>
+                    <item9
+                        jcr:primaryType="nt:unstructured"
+                        loanListHeading="Retirement Solutions &amp; Child Plan"
+                        redirectionLink="#"/>
+                    <item10
+                        jcr:primaryType="nt:unstructured"
+                        loanListHeading="Pocket Friendly Insurance"
+                        redirectionLink="#"/>
+                </loanList>
+            </insurance_component_897380195>
+        </root>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,41 @@
+<div data-sly-use.title="com.adobe.cq.wcm.core.components.models.Title"
+        data-sly-use.template="core/wcm/components/commons/v1/templates.html" data-sly-test.text="${title.text}"
+        data-cmp-data-layer="${title.data.json}" id="${title.id}" class="cmp-title tops-heads ${properties.titleWidth}">
+        <sly data-sly-test="${!properties.bottomLine}">
+                <div class="tops-heads-inner">
+                        <sly data-sly-test="${properties.typeTiitle=='secondBold'}">
+                                <h1 class="cmp-title__text" data-sly-element="${title.type}">
+                                        ${text}<strong>${properties.boldTitle}
+                                        </strong></h1>
+                        </sly>
+                        <sly data-sly-test="${properties.typeTiitle=='firstBold'}">
+                                <h1 class="cmp-title__text" data-sly-element="${title.type}">
+                                        <strong>${properties.boldTitle}
+                                        </strong>${text}
+                                </h1>
+                        </sly>
+                        ${properties.titleBottomPara @ context = 'html'}
+                </div>
+        </sly>
+        <sly data-sly-test="${properties.bottomLine}">
+                <sly data-sly-test="${properties.typeTiitle=='secondBold'}">
+                        <h1 class="cmp-title__text" data-sly-element="${title.type}">
+                                ${text}<strong>${properties.boldTitle}
+                                </strong></h1>
+                </sly>
+                <sly data-sly-test="${properties.typeTiitle=='firstBold'}">
+                        <h1 class="cmp-title__text" data-sly-element="${title.type}">
+                                <strong>${properties.boldTitle}
+                                </strong>${text}
+                        </h1>
+                </sly>
+                <sly data-sly-test="${properties.typeTiitle=='spanTagBold'}">
+                        <h1 class="cmp-title__text" data-sly-element="${title.type}">
+                                ${text}<span class="semibold">${properties.boldTitle}
+                                </span></h1>
+                </sly>
+                ${properties.titleBottomPara @ context = 'html'}
+        </sly>
+</div>
+
+<sly data-sly-call="${template.placeholder @ isEmpty=!text, classAppend='cmp-title'}"></sly>

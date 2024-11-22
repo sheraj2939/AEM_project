@@ -1,0 +1,532 @@
+.presence-box .presence-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.presence-box .presence-left {
+  width: 359px;
+}
+.presence-box .presence-right {
+  width: calc(100% - 359px);
+  padding-left: 30px;
+}
+.presence-box .presence-infos {
+  padding: 25px;
+}
+.presence-box .presence-infos .heading42 {
+  color: #71161F;
+  margin-bottom: 8px;
+}
+.presence-box .presence-infos .text16i {
+  color: #333;
+}
+.presence-box .presence-lists li {
+  padding: 25px 0;
+  border-top: 1px solid rgba(199, 199, 199, 0.6);
+}
+.presence-box .presence-lists li:first-child {
+  border-top: none;
+  padding-top: 0px;
+}
+.presence-box .presence-lists li:last-child {
+  padding-bottom: 0px;
+}
+
+.presence-state-map {
+  padding: 25px;
+  height: 100%;
+}
+
+@media (max-width: 991px) {
+  .presence-box .presence-row {
+    flex-direction: column-reverse;
+  }
+  .presence-box .presence-left {
+    width: 100%;
+    margin-top: 24px;
+  }
+  .presence-box .presence-right {
+    width: 100%;
+    padding-left: 0px;
+  }
+}
+@media (max-width: 767px) {
+  .presence-box .presence-infos .heading42 {
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0.48px;
+  }
+}
+/* Map Pointer */
+.map-dropdown {
+  display: none;
+}
+
+.mapbody {
+  position: relative;
+  max-width: 767px;
+}
+.mapbody.wealthmap {
+  max-width: 412px;
+  margin: auto;
+  height: auto;
+}
+
+.state-tooltip {
+  font-family: "Open Sans", sans-serif;
+  background: #D2B434;
+  padding: 8px 15px;
+  font-size: 14px;
+  position: absolute;
+  transform: translateX(-50%);
+  text-align: center;
+  max-width: 170px;
+  white-space: nowrap;
+  display: none;
+  pointer-events: none;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+}
+.state-tooltip p {
+  color: #ffffff;
+}
+.state-tooltip:before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ffffff;
+}
+.state-tooltip:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #D2B434;
+}
+.state-tooltip.arrow-right:after {
+  left: auto;
+  transform: none;
+  right: 10px;
+}
+
+.state-map {
+  cursor: pointer;
+}
+
+.state-tooltip-container {
+  position: absolute;
+}
+.state-tooltip-container .state-tooltip-place {
+  font-family: "OpenSans-SemiBold";
+  background: #fff;
+  padding: 2px 10px;
+  font-size: 14px;
+  position: absolute;
+  transform: translateX(-50%);
+  text-align: center;
+  max-width: 170px;
+  white-space: nowrap;
+  pointer-events: none;
+  border: 1px solid #AB932B;
+  border-radius: 6px;
+}
+.state-tooltip-container .state-tooltip-place p {
+  color: #000;
+}
+.state-tooltip-container .state-tooltip-place:before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #AB932B;
+}
+.state-tooltip-container .state-tooltip-place:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #fff;
+}
+.state-tooltip-container .state-tooltip-place.arrow-right:after {
+  left: auto;
+  transform: none;
+  right: 10px;
+}
+.state-tooltip-container.maharashtra .state-tooltip-place:nth-child(1) {
+  left: 28px;
+  top: 0px;
+}
+.state-tooltip-container.maharashtra .state-tooltip-place:nth-child(2) {
+  top: 20px;
+  left: -50px;
+}
+.state-tooltip-container.maharashtra .state-tooltip-place:nth-child(3) {
+  top: 67px;
+  left: -53px;
+}
+.state-tooltip-container.gujarat .state-tooltip-place:nth-child(1) {
+  top: -25px;
+  left: 25px;
+}
+.state-tooltip-container.gujarat .state-tooltip-place:nth-child(2) {
+  top: 30px;
+  left: 34px;
+}
+.state-tooltip-container.punjab .state-tooltip-place:nth-child(1) {
+  top: 7px;
+  left: 12px;
+}
+.state-tooltip-container.punjab .state-tooltip-place:nth-child(2) {
+  top: -16px;
+  left: 4px;
+}
+.state-tooltip-container.westbengal .state-tooltip-place:nth-child(1) {
+  top: 62px;
+  left: 7px;
+}
+.state-tooltip-container.madhyapradesh .state-tooltip-place:nth-child(1) {
+  top: 55px;
+  left: -60px;
+}
+.state-tooltip-container.jharkhand .state-tooltip-place:nth-child(1) {
+  top: 13px;
+  left: -10px;
+}
+.state-tooltip-container.jharkhand .state-tooltip-place:nth-child(2) {
+  top: -14px;
+  left: -3px;
+}
+.state-tooltip-container.odisha .state-tooltip-place:nth-child(1) {
+  top: 5px;
+  left: 35px;
+}
+.state-tooltip-container.telangana .state-tooltip-place:nth-child(1) {
+  top: 27px;
+  left: -29px;
+}
+.state-tooltip-container.tamilnadu .state-tooltip-place:nth-child(1) {
+  top: -26px;
+  left: 25px;
+}
+.state-tooltip-container.karnataka .state-tooltip-place:nth-child(1) {
+  top: 59px;
+  left: 17px;
+}
+.state-tooltip-container.delhi .state-tooltip-place:nth-child(1) {
+  top: -30px;
+  left: 1px;
+}
+
+/* Map Pointer */
+.label-states {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .citylist {
+    display: none;
+  }
+  .state-tooltip-container .state-tooltip-place {
+    padding: 2px 10px;
+  }
+  .state-tooltip-container .state-tooltip-place p {
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .label-states {
+    display: block;
+    color: #4F4F4F;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 5px;
+    font-family: "OpenSans-Regular";
+  }
+  .map-dropdown {
+    display: block;
+    width: 200px;
+    border-radius: 4px;
+    position: relative;
+  }
+  .map-dropdown.dropdown-tab {
+    margin-bottom: 24px;
+    width: 100%;
+  }
+  .map-dropdown.dropdown-tab.show .btn-dropdown:after {
+    content: "\e90d";
+  }
+  .map-dropdown.dropdown-tab.show .site-tab {
+    display: block !important;
+  }
+  .map-dropdown.dropdown-tab .btn-dropdown {
+    color: #4F4F4F;
+    height: auto;
+    padding: 5px 30px 5px 0px;
+    font-family: "OpenSans-Bold";
+    width: 100%;
+    font-size: 14px;
+    line-height: 130%;
+    background: transparent;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid rgba(79, 79, 79, 0.6);
+    text-align: left;
+    text-transform: capitalize;
+    position: relative;
+  }
+  .map-dropdown.dropdown-tab .btn-dropdown:after {
+    right: 0px;
+    color: #4F4F4F;
+    content: "\e90e";
+    font-family: "icomoon";
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .map-dropdown.dropdown-tab .site-tab {
+    background: #fff;
+    box-shadow: 0px 0px 0px 0px rgba(86, 130, 164, 0.1), 0px 2px 5px 0px rgba(86, 130, 164, 0.1), 0px 10px 10px 0px rgba(86, 130, 164, 0.09), 0px 22px 13px 0px rgba(86, 130, 164, 0.05), 0px 39px 15px 0px rgba(86, 130, 164, 0.01), 0px 61px 17px 0px rgba(86, 130, 164, 0);
+    margin: 0;
+    padding: 10px 15px;
+    max-height: 195px;
+    border-radius: 4px;
+    z-index: 1;
+    display: none !important;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 100%;
+  }
+  .map-dropdown.dropdown-tab .site-tab li a {
+    padding: 5px 0;
+    color: #333;
+    display: block;
+    font-size: 14px;
+  }
+  .map-dropdown.dropdown-tab .site-tab li.active a {
+    font-family: "OpenSans-Bold";
+  }
+  .mapbody {
+    margin: 30px auto 0;
+    border: 4px solid #F3F3EA;
+    padding: 10px;
+  }
+  .mapbody.wealthmap {
+    padding: 0;
+    border: 0;
+    margin-top: 10px;
+  }
+  .state-tooltip {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  .state-tooltip p {
+    font-size: 13px !important;
+  }
+  .state-tooltip:after {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #d7df23;
+  }
+  .state-tooltip-container.in-mh .state-tooltip-place:nth-child(1) {
+    left: 20px;
+    top: -10px;
+  }
+  .state-tooltip-container.in-mh .state-tooltip-place:nth-child(2) {
+    left: -57px;
+    top: 28px;
+  }
+  .state-tooltip-container.in-mh .state-tooltip-place:nth-child(3) {
+    top: 61px;
+    left: -52px;
+  }
+  .state-tooltip-container.in-gj .state-tooltip-place:nth-child(1) {
+    left: 25px;
+    top: -19px;
+  }
+  .state-tooltip-container.in-gj .state-tooltip-place:nth-child(2) {
+    top: 31px;
+    left: 28px;
+  }
+  .state-tooltip-container.in-pb .state-tooltip-place:nth-child(1) {
+    left: 6px;
+    top: 8px;
+  }
+  .state-tooltip-container.in-pb .state-tooltip-place:nth-child(2) {
+    left: 3px;
+    top: -14px;
+  }
+  .state-tooltip-container.in-wb .state-tooltip-place:nth-child(1) {
+    top: 53px;
+    left: 6px;
+  }
+  .state-tooltip-container.in-mp .state-tooltip-place:nth-child(1) {
+    left: -62px;
+    top: 44px;
+  }
+  .state-tooltip-container.in-jh .state-tooltip-place:nth-child(1) {
+    left: -12px;
+    top: 8px;
+  }
+  .state-tooltip-container.in-jh .state-tooltip-place:nth-child(2) {
+    left: -11px;
+    top: -13px;
+  }
+  .state-tooltip-container.in-od .state-tooltip-place:nth-child(1) {
+    left: 22px;
+    top: 0;
+  }
+  .state-tooltip-container.in-ts .state-tooltip-place:nth-child(1) {
+    left: -27px;
+    top: 18px;
+  }
+  .state-tooltip-container.in-tn .state-tooltip-place:nth-child(1) {
+    left: 14px;
+    top: -15px;
+  }
+  .state-tooltip-container.in-ka .state-tooltip-place:nth-child(1) {
+    top: 52px;
+    left: 15px;
+  }
+  .state-tooltip-container.in-dl .state-tooltip-place:nth-child(1) {
+    top: -26px;
+    left: 0px;
+  }
+}
+@media (min-width: 1199px) {
+  .mapbody {
+    height: 880px;
+  }
+}
+@media (max-width: 575px) {
+  .state-tooltip-container.in-mh .state-tooltip-place:nth-child(1) {
+    top: -15px;
+  }
+  .state-tooltip-container.in-mh .state-tooltip-place:nth-child(2) {
+    left: -47px;
+    top: 8px;
+  }
+  .state-tooltip-container.in-mh .state-tooltip-place:nth-child(3) {
+    top: 40px;
+    left: -44px;
+  }
+  .state-tooltip-container.in-gj .state-tooltip-place:nth-child(1) {
+    left: 20px;
+    top: -10px;
+  }
+  .state-tooltip-container.in-gj .state-tooltip-place:nth-child(2) {
+    top: 21px;
+    left: 21px;
+  }
+  .state-tooltip-container.in-pb .state-tooltip-place:nth-child(1) {
+    top: -3px;
+  }
+  .state-tooltip-container.in-wb .state-tooltip-place:nth-child(1) {
+    top: 35px;
+    left: 4px;
+  }
+  .state-tooltip-container.in-mp .state-tooltip-place:nth-child(1) {
+    left: -45px;
+    top: 25px;
+  }
+  .state-tooltip-container.in-jh .state-tooltip-place:nth-child(1) {
+    left: -11px;
+    top: -3px;
+  }
+  .state-tooltip-container.in-od .state-tooltip-place:nth-child(1) {
+    left: 17px;
+    top: -7px;
+  }
+  .state-tooltip-container.in-ts .state-tooltip-place:nth-child(1) {
+    left: -27px;
+    top: 18px;
+  }
+  .state-tooltip-container.in-tn .state-tooltip-place:nth-child(1) {
+    left: 14px;
+    top: -15px;
+  }
+  .state-tooltip-container.in-ka .state-tooltip-place:nth-child(1) {
+    top: 35px;
+    left: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .state-tooltip-container.in-mh .state-tooltip-place:nth-child(1) {
+    top: -15px;
+    left: 22px;
+  }
+  .state-tooltip-container.in-mh .state-tooltip-place:nth-child(2) {
+    left: -33px;
+    top: -8px;
+  }
+  .state-tooltip-container.in-mh .state-tooltip-place:nth-child(3) {
+    top: 20px;
+    left: -26px;
+  }
+  .state-tooltip-container.in-gj .state-tooltip-place:nth-child(1) {
+    left: 10px;
+    top: -20px;
+  }
+  .state-tooltip-container.in-gj .state-tooltip-place:nth-child(2) {
+    top: 20px;
+    left: 17px;
+  }
+  .state-tooltip-container.in-pb .state-tooltip-place:nth-child(1) {
+    top: -21px;
+    left: 5px;
+  }
+  .state-tooltip-container.in-wb .state-tooltip-place:nth-child(1) {
+    top: 19px;
+    left: 5px;
+  }
+  .state-tooltip-container.in-mp .state-tooltip-place:nth-child(1) {
+    left: -25px;
+    top: 14px;
+  }
+  .state-tooltip-container.in-jh .state-tooltip-place:nth-child(1) {
+    left: -7px;
+    top: 6px;
+  }
+  .state-tooltip-container.in-jh .state-tooltip-place:nth-child(2) {
+    left: -7px;
+    top: -14px;
+  }
+  .state-tooltip-container.in-od .state-tooltip-place:nth-child(1) {
+    left: 15px;
+    top: -15px;
+  }
+  .state-tooltip-container.in-ts .state-tooltip-place:nth-child(1) {
+    left: -14px;
+    top: -12px;
+  }
+  .state-tooltip-container.in-tn .state-tooltip-place:nth-child(1) {
+    left: 8px;
+    top: -19px;
+  }
+  .state-tooltip-container.in-ka .state-tooltip-place:nth-child(1) {
+    top: 18px;
+    left: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

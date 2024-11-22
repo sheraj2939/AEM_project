@@ -1,0 +1,70 @@
+<section class="faq-box space-tb40 pd-t50">
+  <div class="container">
+      <div class="faq-accordian-with-tab vertical-tabs" tab-wrapper>
+          <ul class="tab-btn-group" tabMenu-wrap>
+            <sly data-sly-list.investorInformation="${resource.children}">
+              <sly data-sly-test="${investorInformation.name == 'dropdownList'}">
+                <sly data-sly-list.investorInfo="${investorInformation.children}">
+                  <sly data-sly-test.tabMenu="${'tab-option-{0}{1}' @ format =[drop.name,investorInfoList.count]}">
+                  <li class="tab-item">
+                    <a href="javascript:void(0);" class="tab-button js-tabClick${investorInfo.activeTab?' active':' '}" tab-menu="${TabMenu}">${investorInfo.option}</a>
+                  </li>
+                  </sly>
+                </sly>
+              </sly>
+            </sly>
+          </ul>
+          <div class="faq-tab-content-wrap">
+            <sly data-sly-list.investorInformation="${resource.children}">
+              <sly data-sly-test="${investorInformation.name == 'dropdownList'}">
+                <sly data-sly-list.investorInfo="${investorInformation.children}">
+                  <sly data-sly-test.tabMenu="${'tab-option-{0}{1}' @ format =[drop.name,investorInfoList.count]}">
+                  <div class="${investorInfo.activeTab?' ':' d-none'}" tab-contnet="${tabMenu}">
+                  <div class="tops-heads">
+                      <h2>${investorInfo.titleReg} <span>${investorInfo.titleBold}</span></h2>
+                  </div>
+                  <div class="faq-card jsAccordian">
+                    <sly data-sly-list.year="${investorInfo.children}">
+                      <sly data-sly-test="${year.name == 'dropdownList1'}">
+                        <sly data-sly-list.yearItem="${year.children}">
+                          <sly data-sly-test="${yearItem.financialTitle}">
+                            <div class="faq-row" accod-row>
+                                <a href="javascript:void(0)" class="faq-heading" accod-head>${yearItem.financialTitle}</a>
+                                <div class="faq-body" accod-body>
+                                    <div class="faq-body-inner">
+                                        <ul class="list-info-pdf">
+                                          <sly data-sly-list.pdfItem="${yearItem.children}">
+                                            <sly data-sly-test="${pdfItem.name == 'ansmultifield'}">
+                                              <sly data-sly-list.pdfAsset="${pdfItem.children}">
+                                                <li data-sly-test="${pdfAsset.attachmentTitle}">
+                                                  <a href="${pdfAsset.attachmentLink}" target="${pdfAsset.newTab? '-blank':''}" class="pdf-col">
+                                                    <sly data-sly-test="${!pdfAsset.disablePdfIcon}">
+                                                      <span class="icon-pdf pdf-img"></span>
+                                                    </sly>
+                                                      ${pdfAsset.attachmentTitle}
+                                                  </a>
+                                                </li>
+                                              </sly>
+                                            </sly>
+                                          </sly>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            </sly>
+                          </sly>
+                        </sly>
+                      </sly>
+                      <sly data-sly-test="${investorInfo.pdfRte}">
+                      <div class="text14i" style="margin: 11px 0;">${investorInfo.pdfRte @ context = 'html'}</div>
+                      </sly>
+                  </div>
+                  </div>
+                  </sly>
+                </sly>
+              </sly>
+            </sly>
+          </div>
+      </div>
+  </div>
+</section>

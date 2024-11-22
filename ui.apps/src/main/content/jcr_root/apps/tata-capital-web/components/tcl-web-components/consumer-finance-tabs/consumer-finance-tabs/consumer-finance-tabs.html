@@ -1,0 +1,140 @@
+<div class="board-director-box space-tb40">
+    <div class="container">         
+        <div data-sly-test="${properties.titleReg || properties.titleBold || properties.titleDesc}"
+        class="tops-heads mx-w100">
+            <h2>${properties.titleReg} <span>${properties.titleBold}</span></h2>
+            ${properties.titleDesc @ context="html"}
+        </div>
+        <div class="board-director-inner" id="complaint-policy-plan">
+            <div class="board-directors-left leveltabmob tab-left">
+                <sly data-sly-list.investorInformation="${resource.children}">
+                    <sly data-sly-test="${investorInformation.name == 'dropdownList'}">
+                        <sly data-sly-list.investorInfo="${investorInformation.children}">
+                            <sly data-sly-test.tabMenu="${'level{0}{1}' @ format =[drop.name,investorInfoList.count]}">
+                                <a href="javascript:void(0)" class="tabs-button tablinks has-right-arrow jsTabSelect${investorInfo.activeTab?' active':' '}" id="${TabMenu}">
+                                    ${investorInfo.option}
+                                    <span class="subs-links">${investorInfo.optionDesc}</span>
+                                </a>
+                            </sly>
+                        </sly>
+                    </sly>
+                </sly>
+            </div>
+            <div class="board-directors-right">
+                <sly data-sly-list.investorInformation="${resource.children}">
+                    <sly data-sly-test="${investorInformation.name == 'dropdownList'}">
+                        <sly data-sly-list.investorInfo="${investorInformation.children}">
+                            <sly data-sly-test.tabMenu="${'{0}{1}' @ format =[drop.name,investorInfoList.count]}">
+                                <div class="tab-content level${TabMenu}${investorInfo.activeTab?' active':' '}" data-level="${TabMenu}">
+                                    <div class="raise-complaint-box">
+                                        <h3 class="heading20"><span>${investorInfo.detailTitle}</span></h3>
+                                        <div data-sly-test="${investorInfo.detailDesc}" class="text14i">${investorInfo.detailDesc @ context='html'}</div>
+                                        <sly data-sly-list.cardInfo="${investorInfo.children}">
+                                            <sly data-sly-test="${cardInfo.name == 'dropdownList1'}">
+                                                <div data-sly-list.card="${cardInfo.children}" class="raise-complaint-row">
+                                                    <sly data-sly-test="${card.cardTitle || card.cardDesc}">
+                                                    <!-- icon detail variation -->
+                                                    <div class="raise-complaint-col">
+                                                        <div class="complaint-left">
+                                                            <span class="${card.iconVariation}"></span>
+                                                        </div>
+                                                        <div class="complaint-right">
+                                                            <div class="text14i complaint-text">
+                                                                ${card.cardTitle @ context='html'}
+                                                            </div>
+                                                            <div class="text14i">
+                                                                ${card.cardDesc @ context='html'}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- icon detail variation -->
+                                                    </sly>
+                                                </div>
+                                            </sly>
+                                        </sly>
+                                        <div data-sly-test="${investorInfo.inputBoxVariation}" class="raise-complain-forms js-raise-complain-level2">
+                                            <!-- Form Variation -->
+                                            <div class="form-textbox-new">
+                                                <label class="label-name">Enter complaint number*</label>
+                                                <div class="textbox-inner">
+                                                    <input type="text" class="input-textbox only-numeric-input text-uppercase" placeholder="" data-type="complaintnumber">
+                                                </div>
+                                            </div>
+                                            <div class="form-textbox-new textarea-active">
+                                                <label class="label-name">Write you complaint here</label>
+                                                <div class="textbox-inner">                                            
+                                                    <textarea class="input-textbox form-textarea" data-type="message" style="height: 91px;"></textarea>
+                                                </div>
+                                            </div>
+                                            <button class="btn-blue btn-large jsSubmitBtn">
+                                                Submit
+                                            </button>
+                                            <!-- Form Variation -->
+                                        </div>
+                                        <div data-sly-test="${investorInfo.redirectionLinkText}" class="raise-btns">
+                                            <!-- Redirect Link Variation -->
+                                            <a href="${investorInfo.redirectionLink}" class="btn-links link-with-arrow">${investorInfo.redirectionLinkText}<span class="icon-arrow-right arros"></span></a>
+                                            <!-- Redirect Link Variation -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </sly>
+                        </sly>
+                    </sly>
+                </sly>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- PopUp -->
+<div class="popover-modal modals-blue fade" id="thankyou-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md4">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content">
+                <button data-dismiss="popover-modal" class="popover-modal-close jsCloseLevels"><span class="icon-close"></span></button>    
+                <div class="popover-modal-body">                      
+                    <div class="thankyou-modal-inner">              
+                        <img src="/content/dam/tata-capital-web/assets/img/thanks.svg" alt="" class="thankyou-img">
+                        <p class="heading36">
+                            <span>
+                                Thank you 
+                            </span>
+                        </p>
+                        <p class="text16i mg-b15">We have escalated your issue to Level <span id="levelPopup">3</span>. Our executive will get in touch with you soon.</p>
+                        <p class="text16i">Your feedback is important to us. In case you don't receive a response within 7 working days, you can escalate your request to the next level.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popover-modal modals-blue fade" id="thankyou-modal-new">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md4">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content">
+                <button data-dismiss="popover-modal" class="popover-modal-close jsCloseLevels"><span class="icon-close"></span></button>    
+                <div class="popover-modal-body">                      
+                    <div class="thankyou-modal-inner d-none" id="valid">              
+                        <img src="/content/dam/tata-capital-web/assets/img/thanks.svg" alt="" class="thankyou-img">
+                        <p class="heading36">
+                            <span>
+                                Thank you 
+                            </span>
+                        </p>
+                        <p class="text16i mg-b15 responseMsg"></p>
+                    </div>
+                    <div class="thankyou-modal-inner d-none" id="invalid">              
+                        <img src="/content/dam/tata-capital-web/assets/img/unsuccesful.svg" alt="" class="thankyou-img">
+                        <p class="heading36">
+                            <span>
+                                Invalid Escalation
+                            </span>
+                        </p>
+                        <p class="text16i mg-b15 responseMsg"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

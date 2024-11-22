@@ -1,0 +1,18 @@
+
+.customcontainer.container.responsivegrid.related-video-border{
+    border-bottom: 1px solid #E0E9F1;
+}
+.custom-related-videos{
+	height:inherit;
+}
+.related-video .media-holder .media-figure {
+	    cursor: pointer;
+}
+/*.related-video-box.related-video-two .block-left {
+	margin: 0px;
+}*/
+
+.related-video-box .alignLeft{
+    margin-inline: inherit;
+}
+

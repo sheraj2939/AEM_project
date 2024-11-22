@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Page"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.common.wcm,core.wcm.components.page.v2.editor,cq.wcm.msm.properties,granite.contexthub.configuration]"
+    helpPath="https://www.adobe.com/go/aem_cmp_page_v2"
+    mode="edit">
+    <content
+        granite:class="cq-dialog-content-page"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                granite:class="cq-siteadmin-admin-properties-tabs"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                size="L">
+                <items jcr:primaryType="nt:unstructured">
+                    <socialmedia
+                        cq:showOnCreate="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Page Configuration"
+                        sling:orderBefore="cloudservices"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <section
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Social Media sharing"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <navbar
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                name="./selectedNavbarTab">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <tab0
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Tab 0"
+                                                        value="0"/>
+                                                    <tab1
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Tab 1"
+                                                        value="1"/>
+                                                    <tab2
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Tab 2"
+                                                        value="2"/>
+                                                    <tab3
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Tab 3"
+                                                        value="3"/>
+                                                    <tab4
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Tab 4"
+                                                        value="4"/>
+                                                    <tab5
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Tab 5"
+                                                        value="5"/>
+                                                    <tab6
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Tab 6"
+                                                        value="6"/>
+                                                    <tab7
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Tab 7"
+                                                        value="7"/>
+                                                    <tab8
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Tab 8"
+                                                        value="8"/>
+                                                    <tab9
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Tab 9"
+                                                        value="9"/>
+                                                    <tab10
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Tab 10"
+                                                        value="10"/>
+                                                    <tab11
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Tab 11"
+                                                        value="11"/>
+                                                </items>
+                                            </navbar>
+                                        </items>
+                                    </section>
+                                </items>
+                            </column>
+                        </items>
+                    </socialmedia>
+                    <product-items
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Page Configuration "
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <product-select
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        fieldLabel="Select Product"
+                                        name="./productSelect">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <all
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./all"
+                                                text="All"
+                                                value="home"/>
+                                            <residential
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./residential"
+                                                text="Residential"
+                                                value="WEALTH ADVISORY"/>
+                                            <nri
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./creditCard"
+                                                text="NRI"
+                                                value="WM-NRI"/>
+                                            <business
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./hlBtTopup"
+                                                text="Business"
+                                                value="WEALTH ADVISORY"/>
+                                            <insurance
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./insuranceForm"
+                                                text="Insurance Form"
+                                                value="insurance-form"/>
+                                        </items>
+                                    </product-select>
+                                    <page-type-select
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        fieldLabel="Select Page Type"
+                                        name="./pageType">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <Product_x0020_Page
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Product Page"
+                                                value="Product Page"/>
+                                            <Other_x0020_Page
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Other Page"
+                                                value="Other Page"/>
+                                        </items>
+                                    </page-type-select>
+                                    <canonical-configuration
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Canonical Configuration"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        name="./enableAlternate"
+                                        text="Show Alternate"
+                                        value="{Boolean}true"/>
+                                    <Dtm-configuration
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Disable DTM"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        name="./diableDTM"
+                                        text="Disable DTM"
+                                        value="{Boolean}true"/>
+                                    <disable-smartsearch
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Disable SmartSearch"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        name="./diableSmartSearch"
+                                        text="Disable Smart Search"
+                                        value="{Boolean}true"/>
+                                </items>
+                            </column>
+                        </items>
+                    </product-items>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

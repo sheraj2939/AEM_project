@@ -1,0 +1,163 @@
+.leadership-team-box .row-flex {
+  margin-left: -12px;
+  margin-right: -12px;
+  margin-top: -28px;
+  justify-content: center;
+}
+.leadership-team-box .row-flex .row-col-25 {
+  padding: 0 12px;
+  margin-top: 28px;
+}
+.leadership-team-box .leadership-cards {
+  padding-bottom: 57px;
+  position: relative;
+}
+.leadership-team-box .leadership-cards .leadership-img img {
+  width: 100%;
+  border-radius: 30px;
+}
+.leadership-team-box .leadership-cards .leadership-img .dsk-img {
+  display: block;
+}
+.leadership-team-box .leadership-cards .leadership-img .mob-img {
+  display: none;
+}
+.leadership-team-box .leadership-cards .leadership-content {
+  padding: 0 15px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+  transition: all 0.2s;
+}
+.leadership-team-box .leadership-cards .leadership-inner {
+  background: radial-gradient(50.79% 52.48% at 48.36% 50.79%, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.98) 100%);
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.01), 5px 0px 10px rgba(0, 0, 0, 0.01), 0px -5px 10px rgba(0, 0, 0, 0.01), 0px 5px 10px rgba(0, 0, 0, 0.01);
+  border-radius: 16px;
+  padding: 15px 16px 17px;
+  border: 1px solid #fff;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  min-height: 118px;
+}
+.leadership-team-box .leadership-cards .leadership-inner .leadership-tops {
+  flex-grow: 1;
+}
+.leadership-team-box .leadership-cards .leadership-inner .team-name {
+  margin-bottom: 4px;
+}
+.leadership-team-box .leadership-cards .leadership-inner .team-name img {
+  width: 100%;
+}
+.leadership-team-box .leadership-cards .leadership-inner .team-profile {
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: #333333;
+  margin-bottom: 10px;
+}
+.leadership-team-box .leadership-cards .leadership-inner .team-logos {
+  min-height: 15px;
+  display: flex;
+  align-items: flex-end;
+}
+.leadership-team-box .leadership-cards .leadership-inner .team-logos .logo-dsk {
+  display: block;
+}
+.leadership-team-box .leadership-cards .leadership-inner .team-logos .logo-mob {
+  display: none;
+}
+.leadership-team-box .leadership-cards .leadership-inner .team-btn-view {
+  display: none;
+}
+.leadership-team-box .leadership-cards:hover .leadership-content {
+  bottom: 15px;
+}
+.leadership-team-box .leadership-cards:hover .leadership-inner {
+  background: radial-gradient(50.79% 52.48% at 48.36% 50.79%, rgba(20, 96, 163, 0.99) 0%, rgba(7, 126, 230, 0.98) 100%);
+  box-shadow: 0px 124px 49px rgba(15, 157, 245, 0.02), 0px 70px 42px rgba(15, 157, 245, 0.07), 0px 31px 31px rgba(15, 157, 245, 0.12), 0px 8px 17px rgba(15, 157, 245, 0.14), 0px 0px 0px rgba(15, 157, 245, 0.14);
+}
+.leadership-team-box .leadership-cards:hover .leadership-inner .team-name, .leadership-team-box .leadership-cards:hover .leadership-inner .team-profile {
+  color: #fff;
+}
+.leadership-team-box .leadership-cards:hover .leadership-inner .team-profile {
+  margin-bottom: 28px;
+}
+.leadership-team-box .leadership-cards:hover .leadership-inner .team-logos {
+  display: none;
+}
+.leadership-team-box .leadership-cards:hover .leadership-inner .team-btn-view {
+  display: block;
+}
+
+@media (max-width: 1199px) {
+  .leadership-team-box .row-flex .row-col-25 {
+    width: 33.33%;
+  }
+}
+@media (max-width: 991px) {
+  .leadership-team-box .row-flex .row-col-25 {
+    width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  .leadership-team-box .row-flex .row-col-25 {
+    width: 100%;
+  }
+  .leadership-team-box .leadership-cards {
+    padding-bottom: 0px;
+  }
+  .leadership-team-box .leadership-cards:hover .leadership-content {
+    bottom: 0px;
+  }
+  .leadership-team-box .leadership-cards .leadership-img img {
+    border-radius: 24px;
+  }
+  .leadership-team-box .leadership-cards .leadership-img .dsk-img {
+    display: none;
+  }
+  .leadership-team-box .leadership-cards .leadership-img .mob-img {
+    display: block;
+  }
+  .leadership-team-box .leadership-cards .leadership-content {
+    margin-top: -65px;
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+  .leadership-team-box .leadership-cards .leadership-inner {
+    padding: 17px 20px;
+    background: radial-gradient(50.79% 52.48% at 48.36% 50.79%, rgba(20, 96, 163, 0.99) 0%, rgba(7, 126, 230, 0.98) 100%);
+    box-shadow: 0px 124px 49px rgba(15, 157, 245, 0.02), 0px 70px 42px rgba(15, 157, 245, 0.07);
+    border-radius: 24px;
+  }
+  .leadership-team-box .leadership-cards .leadership-inner .team-name {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  .leadership-team-box .leadership-cards .leadership-inner .team-profile {
+    margin-bottom: 15px;
+  }
+  .leadership-team-box .leadership-cards .leadership-inner .team-name, .leadership-team-box .leadership-cards .leadership-inner .team-profile {
+    color: #fff;
+  }
+  .leadership-team-box .leadership-cards .leadership-inner .team-btn-view {
+    display: block;
+  }
+  .leadership-team-box .leadership-cards .leadership-inner .team-logos {
+    display: block;
+    min-height: initial;
+    margin-bottom: 20px;
+  }
+  .leadership-team-box .leadership-cards .leadership-inner .team-logos .logo-dsk {
+    display: none;
+  }
+  .leadership-team-box .leadership-cards .leadership-inner .team-logos .logo-mob {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

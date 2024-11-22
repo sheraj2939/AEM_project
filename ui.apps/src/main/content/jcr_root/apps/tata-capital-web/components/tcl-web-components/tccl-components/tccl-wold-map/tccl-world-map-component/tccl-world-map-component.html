@@ -1,0 +1,248 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='tcc-world-map-clientlib'}"></sly>
+</sly>
+<section class="map-cntr world mg-b60 mg-t40">
+    <div class="text-content-box bg-white tchfl-mirco-content finance-member-section mg-b20">
+        <div class="container">
+            <div class="bg-div pd-0">
+                <div class="tops-heads text-left">
+                    <h2>Members of the coveted group include leading <br /><span> Climate Finance Institutions</span>
+                    </h2>
+                </div>
+                <div class="finance-member-listbox-desktop">
+                    <img class="map-image" src="/content/dam/tata-capital-web/assets/img/worldMap.svg" alt="" />
+                    <div class="member-card usa">
+                        <div class="country-flag">
+                            <img src="/content/dam/tata-capital-web/assets/img/unitedstatesofamerica(US).svg" alt="" />
+                        </div>
+                        <div class="country-name">
+                            <p>RIIB | CGB</p>
+                            <div class="country-detail">
+                                <img src="/content/dam/tata-capital-web/assets/img/map/usa-riib.png" alt="">
+                                <img src="/content/dam/tata-capital-web/assets/img/map/usa-cgb.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card new-york">
+                        <div class="country-flag">
+                            <img src="/content/dam/tata-capital-web/assets/img/unitedstatesofamerica(US).svg" alt="" />
+                        </div>
+                        <div class="country-name">
+                            <p>NYGB</p>
+                            <div class="country-detail">
+                                <img src="/content/dam/tata-capital-web/assets/img/map/newyork-ny-green-bank.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card united-kingdom">
+                        <div class="country-flag">
+                            <img src="/content/dam/tata-capital-web/assets/img/unitedkingdom(GB).svg" alt="" />
+                        </div>
+                        <div class="country-name">
+                            <p>GIG</p>
+                            <div class="country-detail">
+                                <img src="/content/dam/tata-capital-web/assets/img/map/green-investment-group.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card eearsf">
+                        <div class="country-flag">
+                            <img src="/content/dam/tata-capital-web/assets/img/bulgaria(BG).svg" alt="" />
+                        </div>
+                        <div class="country-name">
+                            <p>EEARSF</p>
+                            <div class="country-detail">
+                                <img src="/content/dam/tata-capital-web/assets/img/map/eearsf-logo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card india">
+                        <div class="country-flag">
+                            <img src="/content/dam/tata-capital-web/assets/img/india(IN).svg" alt="" />
+                        </div>
+                        <div class="country-name">
+                            <p>INDIA</p>
+                            <div class="country-detail">
+                                <img src="/content/dam/tata-capital-web/assets/img/map/tata-cleantech.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card japan">
+                        <div class="country-flag">
+                            <img src="/content/dam/tata-capital-web/assets/img/japan(JP).svg" alt="" />
+                        </div>
+                        <div class="country-name">
+                            <p>GFO</p>
+                            <div class="country-detail">
+                                <img src="/content/dam/tata-capital-web/assets/img/map/green-finance-organisation.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card malasia">
+                        <div class="country-flag">
+                            <img src="/content/dam/tata-capital-web/assets/img/malaysia(MY).svg" alt="" />
+                        </div>
+                        <div class="country-name">
+                            <p>MGTC</p>
+                            <div class="country-detail">
+                                <img src="/content/dam/tata-capital-web/assets/img/map/greent-tech.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card australia">
+                        <div class="country-flag">
+                            <img src="/content/dam/tata-capital-web/assets/img/australia(AU).svg" alt="" />
+                        </div>
+                        <div class="country-name">
+                            <p>CEFC</p>
+                            <div class="country-detail">
+                                <img src="/content/dam/tata-capital-web/assets/img/map/cefc.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nav tabs -->
+                <div class="finance-member-dropdown">
+                    <a href="javascript:;" class="nav-tabs-dropdown tab-drodown-button">Select Country</a>
+                    <ul id="nav-tabs-wrapper" class="our-presence-tab-list finnce-member-tab-list nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#selectcountry">Select Country</a></li>
+                        <li class=""><a data-toggle="tab" href="#usa">USA</a></li>
+                        <li class=""><a data-toggle="tab" href="#newyork">New York</a></li>
+                        <li class=""><a data-toggle="tab" href="#unitedkingdom">United Kingdom</a></li>
+                        <li class=""><a data-toggle="tab" href="#eearsf">EEARSF</a></li>
+                        <li class=""><a data-toggle="tab" href="#india">India</a></li>
+                        <li class=""><a data-toggle="tab" href="#japan">Japan</a></li>
+                        <li class=""><a data-toggle="tab" href="#malasia">Malasia</a></li>
+                        <li class=""><a data-toggle="tab" href="#australia">Australia</a></li>
+                    </ul>
+                </div>
+                <div class="finance-member-listbox-mobile">
+                    <div class="tab-content nav-mobile-image">
+                        <div id="selectcountry" class="tab-pane usa-img fade in active"
+                            style="background-image: url('/content/dam/tata-capital-web/assets/img/world.svg'); background-size: cover; background-position: center center;">
+                            &nbsp;</div>
+                        <div id="usa" class="tab-pane usa-img fade"
+                            style="background-image: url('/content/dam/tata-capital-web/assets/img/world.svg');">
+                            <div class="member-card usa">
+                                <div class="country-flag">
+                                    <img src="/content/dam/tata-capital-web/assets/img/unitedstatesofamerica(US).svg" alt="" />
+                                </div>
+                                <div class="country-name">
+                                    <p>RIIB | CGB</p>
+                                    <div class="country-detail">
+                                        <img src="/content/dam/tata-capital-web/assets/img/map/usa-riib.png" alt="">
+                                        <img src="/content/dam/tata-capital-web/assets/img/map/usa-cgb.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="newyork" class="tab-pane new-york-img fade"
+                            style="background-image: url('/content/dam/tata-capital-web/assets/img/world.svg');">
+                            <div class="member-card new-york">
+                                <div class="country-flag">
+                                    <img src="/content/dam/tata-capital-web/assets/img/unitedstatesofamerica(US).svg" alt="" />
+                                </div>
+                                <div class="country-name">
+                                    <p>NYGB</p>
+                                    <div class="country-detail">
+                                        <img src="/content/dam/tata-capital-web/assets/img/map/newyork-ny-green-bank.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="unitedkingdom" class="tab-pane united-kingdom-img fade"
+                            style="background-image: url('/content/dam/tata-capital-web/assets/img/world.svg');">
+                            <div class="member-card united-kingdom">
+                                <div class="country-flag">
+                                    <img src="/content/dam/tata-capital-web/assets/img/unitedkingdom(GB).svg" alt="" />
+                                </div>
+                                <div class="country-name">
+                                    <p>GIG</p>
+                                    <div class="country-detail">
+                                        <img src="/content/dam/tata-capital-web/assets/img/map/green-investment-group.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="eearsf" class="tab-pane eearsf-img fade"
+                            style="background-image: url('/content/dam/tata-capital-web/assets/img/world.svg');">
+                            <div class="member-card eearsf">
+                                <div class="country-flag">
+                                    <img src="/content/dam/tata-capital-web/assets/img/bulgaria(BG).svg" alt="" />
+                                </div>
+                                <div class="country-name">
+                                    <p>EEARSF</p>
+                                    <div class="country-detail">
+                                        <img src="/content/dam/tata-capital-web/assets/img/map/eearsf-logo.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="india" class="tab-pane india-img fade"
+                            style="background-image: url('/content/dam/tata-capital-web/assets/img/world.svg');">
+                            <div class="member-card india">
+                                <div class="country-flag">
+                                    <img src="/content/dam/tata-capital-web/assets/img/india(IN).svg" alt="" />
+                                </div>
+                                <div class="country-name">
+                                    <p>INDIA</p>
+                                    <div class="country-detail">
+                                        <img src="/content/dam/tata-capital-web/assets/img/map/tata-cleantech.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="japan" class="tab-pane japan-img fade"
+                            style="background-image: url('/content/dam/tata-capital-web/assets/img/world.svg');">
+                            <div class="member-card japan">
+                                <div class="country-flag">
+                                    <img src="/content/dam/tata-capital-web/assets/img/japan(JP).svg" alt="" />
+                                </div>
+                                <div class="country-name">
+                                    <p>GFO</p>
+                                    <div class="country-detail">
+                                        <img src="/content/dam/tata-capital-web/assets/img/map/green-finance-organisation.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="malasia" class="tab-pane malasia-img fade"
+                            style="background-image: url('/content/dam/tata-capital-web/assets/img/world.svg');">
+                            <div class="member-card malasia">
+                                <div class="country-flag">
+                                    <img src="/content/dam/tata-capital-web/assets/img/malaysia(MY).svg" alt="" />
+                                </div>
+                                <div class="country-name">
+                                    <p>MGTC</p>
+                                    <div class="country-detail">
+                                        <img src="/content/dam/tata-capital-web/assets/img/map/greent-tech.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="australia" class="tab-pane australia-img fade"
+                            style="background-image: url('/content/dam/tata-capital-web/assets/img/world.svg');">
+                            <div class="member-card australia">
+                                <div class="country-flag">
+                                    <img src="/content/dam/tata-capital-web/assets/img/australia(AU).svg" alt="" />
+                                </div>
+                                <div class="country-name">
+                                    <p>CEFC</p>
+                                    <div class="country-detail">
+                                        <img src="/content/dam/tata-capital-web/assets/img/map/cefc.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-holder text-center pd-b40">
+                    <a href="https://greenbanknetwork.org/" target="_blank" class="btn-blue btn-big bg-blue" tabindex="0">Know More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories='tcc-world-map-clientlib'}"></sly>
+</sly>

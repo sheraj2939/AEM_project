@@ -1,0 +1,102 @@
+.festival-offer-box {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+}
+.festival-offer-box .offer-img {
+  width: 100%;
+}
+.festival-offer-box .offer-conditions {
+  display: block;
+  font-size: 8px;
+  line-height: 10px;
+  color: #fff;
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+}
+.festival-offer-box .offer-conditions.offer-right {
+  left: auto;
+  right: 12px;
+}
+.festival-offer-box .offer-captions {
+  width: 287px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15px;
+  text-align: center;
+}
+.festival-offer-box .offer-captions .btn-link {
+  font-size: 10px;
+  line-height: 14px;
+  color: #33332C;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin-top: 6px;
+}
+.festival-offer-box .offer-captions img {
+  margin: auto;
+}
+.festival-offer-box .offer-captions p {
+  margin-bottom: 2px;
+  font-family: "OpenSansExtraBold";
+}
+.festival-offer-box .offer-txts {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+@media (max-width: 1199px) {
+  .festival-offer-box .offer-captions {
+    top: 9px;
+  }
+}
+@media (max-width: 991px) {
+  .festival-offer-box .offer-captions {
+    top: 6px;
+    width: 208px;
+  }
+  .festival-offer-box .offer-captions img {
+    max-width: 150px;
+  }
+  .festival-offer-box .offer-captions .btn-link {
+    margin-top: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .festival-offer-box .offer-txts {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+@media (max-width: 767px) {
+  .festival-offer-box .offer-captions {
+    width: 190px;
+    top: 23%;
+  }
+  .festival-offer-box .offer-captions img {
+    max-width: 190px;
+  }
+  .festival-offer-box .offer-captions p {
+    margin-bottom: 8px;
+  }
+  .festival-offer-box .offer-captions .btn-link {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px 14px;
+    margin-top: 25px;
+  }
+  .festival-offer-box .offer-conditions {
+    bottom: 8px;
+  }
+  .festival-offer-box .offer-txts {
+    font-size: 13px;
+    line-height: 17px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

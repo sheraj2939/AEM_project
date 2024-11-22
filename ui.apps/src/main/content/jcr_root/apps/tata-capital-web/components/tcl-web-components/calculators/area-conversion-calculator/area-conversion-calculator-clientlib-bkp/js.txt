@@ -1,0 +1,3 @@
+#base=js
+hl-area-convertor.js
+hl-area-convertor-custom.js

@@ -1,0 +1,3 @@
+#base=js
+bl-foreclosure.js
+bl-foreclosure-custom.js

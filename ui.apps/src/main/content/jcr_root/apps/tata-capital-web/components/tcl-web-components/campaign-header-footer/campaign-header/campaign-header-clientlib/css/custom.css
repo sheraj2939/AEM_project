@@ -1,0 +1,39 @@
+.header-container {
+    width: 100%;
+    max-width: 1294px;
+    margin: auto;
+    padding: 0 15px;
+    position: relative;
+    z-index: 10;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1294px;
+    margin: auto;
+    padding: 0 15px;
+    position: relative;
+    z-index: 10;
+}
+
+.custom-campaign-header {
+    padding: 0 10px;
+    position: relative;
+    min-height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.custom-campaign-header:nth-child(1)::after{
+    content: "";
+    background: #ddd;
+    width: 1px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.custom-campaign-header img{
+margin-top: 5px;
+}

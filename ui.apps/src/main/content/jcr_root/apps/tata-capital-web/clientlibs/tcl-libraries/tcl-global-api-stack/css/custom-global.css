@@ -1,0 +1,19 @@
+/*# Custom Global CSS */
+.root.container.responsivegrid{
+	padding:0px;
+    max-width:100%;
+	overflow:hidden;
+}
+.container.responsivegrid{
+  padding:0px;
+  max-width:100%;
+}
+a{
+  color: #1961AC;
+  }
+
+  @media (max-width: 767px) {
+    p {
+      font-size: 13px;
+    }
+  }  

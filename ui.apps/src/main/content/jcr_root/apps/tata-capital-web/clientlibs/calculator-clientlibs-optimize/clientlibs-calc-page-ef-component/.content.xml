@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    allowProxy="{Boolean}true"
+    categories="[clientlibs-calc-page-ef-component]"
+    embed="[tcl-area-conversion-calculator-opt,tcl-pl-emi-calculator-opt23,tcl-cog-gst-calculator-opt,tcl-hl-eligibility-calculator-opt,tcl-bl-foreclosure-calculator-opt,tcl-pmay-calculator-opt,tcl-pl-eligibility-calculator-opt,tcl-top-up-calculator-opt,tcl-stamp-duty-calculator-opt,tcl-pl-pre-payment-calculator-opt,tcl-apr-calculator]"/>

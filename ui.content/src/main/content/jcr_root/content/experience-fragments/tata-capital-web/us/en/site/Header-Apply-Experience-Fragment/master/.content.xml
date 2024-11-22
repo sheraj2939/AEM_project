@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-12-09T14:23:17.814+05:30"
+        cq:lastModifiedBy="nikita"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/tata-capital-web/settings/wcm/templates/tatacapital-web-footer-template"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Header Loan for You Experience Fragment"
+        sling:resourceType="tata-capital-web/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="tata-capital-web/components/container"
+            layout="responsiveGrid">
+            <quick_link_component
+                jcr:created="{Date}2022-12-01T20:31:17.190+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-12-01T20:38:31.613+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/Tc-Revamp/Tc-header/quick-link-component"
+                quickLinkTopHeadingLeft="Quick Links for loans"
+                quickLinkTopHeadingRight="Quick Links for insurance">
+                <quickLinksLeft jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleLeft="Personal Loan"
+                        redirectionLink="#"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleLeft="Home Loans"
+                        redirectionLink="#"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleLeft="Two Wheeler Loan"
+                        redirectionLink="#"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleLeft="Used Car Loans"
+                        redirectionLink="#"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleLeft="Business Loan"
+                        redirectionLink="#"/>
+                    <item5
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleLeft="Loan against Property"
+                        redirectionLink="#"/>
+                    <item6
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleLeft="Loan Against securities"
+                        redirectionLink="#"/>
+                    <item7
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleLeft="Credit Cards"
+                        redirectionLink="#"/>
+                </quickLinksLeft>
+                <quickLinksRight jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Car Insurance"
+                        redirectionLink="#"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Cancer care"
+                        redirectionLink="#"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Domestic pets"
+                        redirectionLink="#"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Two wheeler insurance"
+                        redirectionLink="#"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Wellness solutions"
+                        redirectionLink="#"/>
+                    <item5
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Card safety"
+                        redirectionLink="#"/>
+                    <item6
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Term insurance"
+                        redirectionLink="#"/>
+                    <item7
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Protection Plans"
+                        redirectionLink="#"/>
+                    <item8
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Wallet protection"
+                        redirectionLink="#"/>
+                    <item9
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Savings and investments"
+                        redirectionLink="#"/>
+                    <item10
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Home appliances"
+                        redirectionLink="#"/>
+                    <item11
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Retirement Solutions and Child Plans"
+                        redirectionLink="#"/>
+                    <item12
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Medical insurance"
+                        redirectionLink="#"/>
+                    <item13
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Accident assistance"
+                        redirectionLink="#"/>
+                    <item14
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Home and Travel Insurance"
+                        redirectionLink="#"/>
+                    <item15
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Cardiac care"
+                        redirectionLink="#"/>
+                    <item16
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Healthcare"
+                        redirectionLink="#"/>
+                    <item17
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Commercial Insurance Solutions"
+                        redirectionLink="#"/>
+                </quickLinksRight>
+            </quick_link_component>
+            <quick_link_component_1105728705
+                jcr:created="{Date}2022-12-05T13:49:21.550+05:30"
+                jcr:createdBy="nikita"
+                jcr:lastModified="{Date}2022-12-09T14:23:17.804+05:30"
+                jcr:lastModifiedBy="nikita"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/tcl-web-components/header/quick-link-component"
+                quickLinkTopHeadingLeft="Quick Links for Loans"
+                quickLinkTopHeadingRight="Quick Links for insurance">
+                <quickLinksLeft jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleLeft="Personal Loan"
+                        redirectionLink="#"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleLeft="Home Loans"
+                        redirectionLink="#"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleLeft="Two Wheeler Loan"
+                        redirectionLink="#"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleLeft="Used Car Loans"
+                        redirectionLink="#"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleLeft="Business Loan"
+                        redirectionLink="#"/>
+                    <item5
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleLeft="Loan against Property"
+                        redirectionLink="#"/>
+                    <item6
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleLeft="Loan Against securities"
+                        redirectionLink="#"/>
+                    <item7
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleLeft="Credit Cards"
+                        redirectionLink="#"/>
+                </quickLinksLeft>
+                <quickLinksRight jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Car Insurance"
+                        redirectionLink="#"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Cancer care"
+                        redirectionLink="#"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Domestic pets"
+                        redirectionLink="#"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Two wheeler insurance"
+                        redirectionLink="#"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Wellness solutions"
+                        redirectionLink="#"/>
+                    <item5
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Card safety"
+                        redirectionLink="#"/>
+                    <item6
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Term insurance"
+                        redirectionLink="#"/>
+                    <item7
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Protection Plans"
+                        redirectionLink="#"/>
+                    <item8
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Wallet protection"
+                        redirectionLink="#"/>
+                    <item9
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Savings and investments"
+                        redirectionLink="#"/>
+                    <item10
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Home appliances"
+                        redirectionLink="#"/>
+                    <item11
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Retirement Solutions and Child Plans"
+                        redirectionLink="#"/>
+                    <item12
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Medical insurance"
+                        redirectionLink="#"/>
+                    <item13
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Accident assistance"
+                        redirectionLink="#"/>
+                    <item14
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Home and Travel Insurance"
+                        redirectionLink="#"/>
+                    <item15
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Cardiac care"
+                        redirectionLink="#"/>
+                    <item16
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Healthcare"
+                        redirectionLink="#"/>
+                    <item17
+                        jcr:primaryType="nt:unstructured"
+                        quickLinkTitleRight="Commercial Insurance Solutions"
+                        redirectionLink="#"/>
+                </quickLinksRight>
+            </quick_link_component_1105728705>
+        </root>
+    </jcr:content>
+</jcr:root>

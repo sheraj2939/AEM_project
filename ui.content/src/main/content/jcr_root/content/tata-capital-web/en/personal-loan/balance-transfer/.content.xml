@@ -1,0 +1,1458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-12-19T12:29:51.353+05:30"
+        cq:lastModifiedBy="khushboo"
+        cq:lastReplicated="{Date}2022-12-17T20:36:12.566+05:30"
+        cq:lastReplicatedBy="poojan"
+        cq:lastReplicationAction="Activate"
+        cq:template="/conf/tata-capital-web/settings/wcm/templates/personal-loan-template"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Balance Transfer"
+        jcr:uuid="7cf28613-8920-4c7f-8d9e-54acc83639ab"
+        sling:resourceType="tata-capital-web/components/page"
+        breadcrumbTitle="Balance Transfer">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="tata-capital-web/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/container"
+                layout="responsiveGrid">
+                <customcontainer_1918
+                    jcr:created="{Date}2022-12-16T15:53:47.649+05:30"
+                    jcr:createdBy="tejas"
+                    jcr:lastModified="{Date}2022-12-16T15:53:47.649+05:30"
+                    jcr:lastModifiedBy="tejas"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                    <breadcrumb
+                        jcr:created="{Date}2022-12-16T15:53:55.271+05:30"
+                        jcr:createdBy="tejas"
+                        jcr:lastModified="{Date}2022-12-16T15:54:05.823+05:30"
+                        jcr:lastModifiedBy="tejas"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/tcl-web-components/breadcrumb/breadcrumb"
+                        disableShadowing="false"
+                        hideCurrent="false"
+                        showHidden="false"
+                        startLevel="3"/>
+                </customcontainer_1918>
+                <container_1970754877
+                    jcr:created="{Date}2022-12-15T17:14:37.081+05:30"
+                    jcr:createdBy="khushboo"
+                    jcr:lastModified="{Date}2022-12-15T17:14:37.081+05:30"
+                    jcr:lastModifiedBy="khushboo"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="tata-capital-web/components/container">
+                    <banner_copy
+                        jcr:created="{Date}2022-12-02T19:43:18.326+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-12-15T17:24:43.820+05:30"
+                        jcr:lastModifiedBy="khushboo"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/tcl-web-components/banner/banner"
+                        className="true"
+                        selectBannertype="banner-bg-yellow">
+                        <container-main
+                            jcr:lastModified="{Date}2022-12-17T17:37:16.311+05:30"
+                            jcr:lastModifiedBy="khushboo"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer"
+                            className="banner-slider slider-dots">
+                            <banner_item_copy
+                                jcr:created="{Date}2022-12-02T19:45:37.525+05:30"
+                                jcr:createdBy="admin"
+                                jcr:description="&lt;p>An instant way to fund your larger expenses&lt;/p>&#xd;&#xa;"
+                                jcr:lastModified="{Date}2022-12-17T17:36:23.658+05:30"
+                                jcr:lastModifiedBy="khushboo"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="tata-capital-web/components/tcl-web-components/banner/banner-item"
+                                actionsEnabled="false"
+                                descriptionFromPage="false"
+                                fileReference="/content/dam/tata-capital-web/personal-loan/ap-banner-lg.png"
+                                textIsRich="true"
+                                titleFromPage="false">
+                                <customtitle
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="core/wcm/components/container/v1/container">
+                                    <component_title
+                                        jcr:created="{Date}2022-12-02T19:47:14.515+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-06T22:16:50.059+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Don’t just dream it,"
+                                        sling:resourceType="tata-capital-web/components/common/component-title"
+                                        bannerTitle="true"
+                                        boldTerm="drive It!"
+                                        linkTarget="_self"
+                                        type="h1"/>
+                                    <component_title_907580729
+                                        jcr:created="{Date}2022-12-14T20:43:07.572+05:30"
+                                        jcr:createdBy="tejas"
+                                        jcr:lastModified="{Date}2022-12-16T16:39:48.255+05:30"
+                                        jcr:lastModifiedBy="rinkal"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Personal Loan"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/component-title/component-title"
+                                        bannerTitle="true"
+                                        boldTerm="Balance Transfer"
+                                        linkTarget="_self"
+                                        type="h1"/>
+                                </customtitle>
+                                <container-main
+                                    jcr:lastModified="{Date}2022-12-02T19:48:27.663+05:30"
+                                    jcr:lastModifiedBy="admin"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer"
+                                    className="btn-holder d-none d-lg-block">
+                                    <banner_button
+                                        cq:styleIds="[1670051005926,1670050954354]"
+                                        jcr:created="{Date}2022-12-02T19:48:00.153+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-02T19:51:11.995+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Apply Now"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/banner/banner-button"
+                                        linkTarget="_self"/>
+                                    <banner_button_copy
+                                        cq:styleIds="[1670051021227,1670051005926]"
+                                        jcr:created="{Date}2022-12-02T19:48:00.153+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-02T19:52:40.005+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Check Eligibility"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/banner/banner-button"
+                                        linkTarget="_self"/>
+                                </container-main>
+                                <containerMain
+                                    jcr:lastModified="{Date}2022-12-02T19:54:33.294+05:30"
+                                    jcr:lastModifiedBy="admin"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer"
+                                    className="btn-holder d-flex d-lg-none">
+                                    <banner_button_copy
+                                        cq:styleIds="[1670051005926,1670050954354]"
+                                        jcr:created="{Date}2022-12-02T19:48:00.153+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-02T19:51:11.995+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Apply Now"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/banner/banner-button"
+                                        linkTarget="_self"/>
+                                    <banner_button_copy_c
+                                        cq:styleIds="[1670051021227,1670051005926]"
+                                        jcr:created="{Date}2022-12-02T19:48:00.153+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-02T19:52:40.005+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Check Eligibility"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/banner/banner-button"
+                                        linkTarget="_self"/>
+                                    <container_main_copy
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer"/>
+                                </containerMain>
+                            </banner_item_copy>
+                            <banner_item_copy_cop
+                                jcr:created="{Date}2022-12-02T19:45:37.525+05:30"
+                                jcr:createdBy="admin"
+                                jcr:description="&lt;p>An instant way to fund your larger expenses&lt;/p>&#xd;&#xa;"
+                                jcr:lastModified="{Date}2022-12-17T17:36:47.251+05:30"
+                                jcr:lastModifiedBy="khushboo"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="tata-capital-web/components/tcl-web-components/banner/banner-item"
+                                actionsEnabled="false"
+                                descriptionFromPage="false"
+                                fileReference="/content/dam/tata-capital-web/personal-loan/ap-banner-lg.png"
+                                textIsRich="true"
+                                titleFromPage="false">
+                                <customtitle
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="core/wcm/components/container/v1/container">
+                                    <component_title
+                                        jcr:created="{Date}2022-12-02T19:47:14.515+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-06T22:16:50.059+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Don’t just dream it,"
+                                        sling:resourceType="tata-capital-web/components/common/component-title"
+                                        bannerTitle="true"
+                                        boldTerm="drive It!"
+                                        linkTarget="_self"
+                                        type="h1"/>
+                                    <component_title_907580729
+                                        jcr:created="{Date}2022-12-14T20:43:07.572+05:30"
+                                        jcr:createdBy="tejas"
+                                        jcr:lastModified="{Date}2022-12-16T16:40:51.230+05:30"
+                                        jcr:lastModifiedBy="rinkal"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Personal Loan"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/component-title/component-title"
+                                        bannerTitle="true"
+                                        boldTerm="Balance Transfer"
+                                        linkTarget="_self"
+                                        type="h1"/>
+                                </customtitle>
+                                <container-main
+                                    jcr:lastModified="{Date}2022-12-02T19:48:27.663+05:30"
+                                    jcr:lastModifiedBy="admin"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer"
+                                    className="btn-holder d-none d-lg-block">
+                                    <banner_button
+                                        cq:styleIds="[1670051005926,1670050954354]"
+                                        jcr:created="{Date}2022-12-02T19:48:00.153+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-02T19:51:11.995+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Apply Now"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/banner/banner-button"
+                                        linkTarget="_self"/>
+                                    <banner_button_copy
+                                        cq:styleIds="[1670051021227,1670051005926]"
+                                        jcr:created="{Date}2022-12-02T19:48:00.153+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-02T19:52:40.005+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Check Eligibility"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/banner/banner-button"
+                                        linkTarget="_self"/>
+                                </container-main>
+                                <containerMain
+                                    jcr:lastModified="{Date}2022-12-02T19:54:33.294+05:30"
+                                    jcr:lastModifiedBy="admin"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer"
+                                    className="btn-holder d-flex d-lg-none">
+                                    <banner_button_copy
+                                        cq:styleIds="[1670051005926,1670050954354]"
+                                        jcr:created="{Date}2022-12-02T19:48:00.153+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-02T19:51:11.995+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Apply Now"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/banner/banner-button"
+                                        linkTarget="_self"/>
+                                    <banner_button_copy_c
+                                        cq:styleIds="[1670051021227,1670051005926]"
+                                        jcr:created="{Date}2022-12-02T19:48:00.153+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-02T19:52:40.005+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Check Eligibility"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/banner/banner-button"
+                                        linkTarget="_self"/>
+                                </containerMain>
+                            </banner_item_copy_cop>
+                            <banner_item_copy_cop_1157299181
+                                jcr:created="{Date}2022-12-02T19:45:37.525+05:30"
+                                jcr:createdBy="admin"
+                                jcr:description="&lt;p>An instant way to fund your larger expenses&lt;/p>&#xd;&#xa;"
+                                jcr:lastModified="{Date}2022-12-17T17:37:06.782+05:30"
+                                jcr:lastModifiedBy="khushboo"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="tata-capital-web/components/tcl-web-components/banner/banner-item"
+                                actionsEnabled="false"
+                                descriptionFromPage="false"
+                                fileReference="/content/dam/tata-capital-web/personal-loan/ap-banner-lg.png"
+                                textIsRich="true"
+                                titleFromPage="false">
+                                <customtitle
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="core/wcm/components/container/v1/container">
+                                    <component_title
+                                        jcr:created="{Date}2022-12-02T19:47:14.515+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-06T22:16:50.059+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Don’t just dream it,"
+                                        sling:resourceType="tata-capital-web/components/common/component-title"
+                                        bannerTitle="true"
+                                        boldTerm="drive It!"
+                                        linkTarget="_self"
+                                        type="h1"/>
+                                    <component_title_907580729
+                                        jcr:created="{Date}2022-12-14T20:43:07.572+05:30"
+                                        jcr:createdBy="tejas"
+                                        jcr:lastModified="{Date}2022-12-16T16:41:15.062+05:30"
+                                        jcr:lastModifiedBy="rinkal"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Personal Loan"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/component-title/component-title"
+                                        bannerTitle="true"
+                                        boldTerm="Balance Transfer"
+                                        linkTarget="_self"
+                                        type="h1"/>
+                                </customtitle>
+                                <container-main
+                                    jcr:lastModified="{Date}2022-12-02T19:48:27.663+05:30"
+                                    jcr:lastModifiedBy="admin"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer"
+                                    className="btn-holder d-none d-lg-block">
+                                    <banner_button
+                                        cq:styleIds="[1670051005926,1670050954354]"
+                                        jcr:created="{Date}2022-12-02T19:48:00.153+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-02T19:51:11.995+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Apply Now"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/banner/banner-button"
+                                        linkTarget="_self"/>
+                                    <banner_button_copy
+                                        cq:styleIds="[1670051021227,1670051005926]"
+                                        jcr:created="{Date}2022-12-02T19:48:00.153+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-02T19:52:40.005+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Check Eligibility"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/banner/banner-button"
+                                        linkTarget="_self"/>
+                                </container-main>
+                                <containerMain
+                                    jcr:lastModified="{Date}2022-12-02T19:54:33.294+05:30"
+                                    jcr:lastModifiedBy="admin"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer"
+                                    className="btn-holder d-flex d-lg-none">
+                                    <banner_button_copy
+                                        cq:styleIds="[1670051005926,1670050954354]"
+                                        jcr:created="{Date}2022-12-02T19:48:00.153+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-02T19:51:11.995+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Apply Now"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/banner/banner-button"
+                                        linkTarget="_self"/>
+                                    <banner_button_copy_c
+                                        cq:styleIds="[1670051021227,1670051005926]"
+                                        jcr:created="{Date}2022-12-02T19:48:00.153+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-02T19:52:40.005+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Check Eligibility"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/banner/banner-button"
+                                        linkTarget="_self"/>
+                                </containerMain>
+                            </banner_item_copy_cop_1157299181>
+                        </container-main>
+                    </banner_copy>
+                    <customcontainer
+                        jcr:created="{Date}2022-12-15T18:47:46.439+05:30"
+                        jcr:createdBy="khushboo"
+                        jcr:lastModified="{Date}2022-12-15T18:47:46.439+05:30"
+                        jcr:lastModifiedBy="khushboo"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                        <container
+                            jcr:created="{Date}2022-12-16T13:30:50.504+05:30"
+                            jcr:createdBy="khushboo"
+                            jcr:lastModified="{Date}2022-12-16T13:30:50.504+05:30"
+                            jcr:lastModifiedBy="khushboo"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="tata-capital-web/components/container">
+                            <customcontainer
+                                jcr:created="{Date}2022-12-16T15:29:59.431+05:30"
+                                jcr:createdBy="tejas"
+                                jcr:lastModified="{Date}2022-12-16T15:29:59.431+05:30"
+                                jcr:lastModifiedBy="tejas"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                                <sub_nav
+                                    jcr:created="{Date}2022-12-16T15:30:11.358+05:30"
+                                    jcr:createdBy="tejas"
+                                    jcr:lastModified="{Date}2022-12-19T12:29:51.334+05:30"
+                                    jcr:lastModifiedBy="khushboo"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="tata-capital-web/components/tcl-web-components/sub-nav/sub-nav"
+                                    btnSpanText="Now"
+                                    btnText="Apply"
+                                    mobTabLink="javascript:"
+                                    mobTabText="Balance Transfer">
+                                    <overviewsLinkField jcr:primaryType="nt:unstructured">
+                                        <item0
+                                            jcr:primaryType="nt:unstructured"
+                                            accordion="true"
+                                            newTab="true"
+                                            overviewLink="/content/tata-capital-web/en/personal-loan/balance-transfer.html"
+                                            overviewText="Overview">
+                                            <overviewSubMenu jcr:primaryType="nt:unstructured">
+                                                <item0
+                                                    jcr:primaryType="nt:unstructured"
+                                                    overviewSubMenuLink="/content/tata-capital-web/en/personal-loan/overdraft-facility.html"
+                                                    overviewSubMenuText="Overdraft Loan"/>
+                                                <item1
+                                                    jcr:primaryType="nt:unstructured"
+                                                    overviewSubMenuLink="#"
+                                                    overviewSubMenuText="Instant Personal Loan"/>
+                                                <item2
+                                                    jcr:primaryType="nt:unstructured"
+                                                    overviewSubMenuLink="/content/tata-capital-web/en/personal-loan/balance-transfer.html"
+                                                    overviewSubMenuText="Balance transfer"/>
+                                            </overviewSubMenu>
+                                        </item0>
+                                        <item1
+                                            jcr:primaryType="nt:unstructured"
+                                            newTab="true"
+                                            overviewLink="/content/tata-capital-web/en/personal-loan/required-documents.html"
+                                            overviewText="Required Documents"/>
+                                        <item2
+                                            jcr:primaryType="nt:unstructured"
+                                            newTab="true"
+                                            overviewLink="javascript:"
+                                            overviewText="Application Process"/>
+                                        <item3
+                                            jcr:primaryType="nt:unstructured"
+                                            newTab="true"
+                                            overviewLink="javascript:"
+                                            overviewText="Rates &amp; Charges"/>
+                                        <item4
+                                            jcr:primaryType="nt:unstructured"
+                                            accordion="true"
+                                            newTab="true"
+                                            overviewLink="javascript:"
+                                            overviewText="Calculators">
+                                            <overviewSubMenu jcr:primaryType="nt:unstructured">
+                                                <item0
+                                                    jcr:primaryType="nt:unstructured"
+                                                    overviewSubMenuLink="javascript:"
+                                                    overviewSubMenuText="EMI Calculator"/>
+                                                <item1
+                                                    jcr:primaryType="nt:unstructured"
+                                                    overviewSubMenuLink="javascript:"
+                                                    overviewSubMenuText="Pre-Payment Calculator"/>
+                                                <item2
+                                                    jcr:primaryType="nt:unstructured"
+                                                    overviewSubMenuLink="javascript:"
+                                                    overviewSubMenuText="Eligibility Calculator"/>
+                                            </overviewSubMenu>
+                                        </item4>
+                                        <item5
+                                            jcr:primaryType="nt:unstructured"
+                                            newTab="true"
+                                            overviewLink="javascript:"
+                                            overviewText="EMI Options"/>
+                                    </overviewsLinkField>
+                                </sub_nav>
+                            </customcontainer>
+                        </container>
+                        <about_product_505444
+                            jcr:created="{Date}2022-12-08T11:25:23.327+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-12-08T11:25:23.327+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="tata-capital-web/components/tcl-web-components/about-product/about-product">
+                            <container-main
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                                <container_main_copy
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                                    <about_product_big_di
+                                        jcr:created="{Date}2022-12-08T11:25:29.066+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-08T11:25:29.066+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/about-product/about-product-big-div">
+                                        <container-main
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                                            <component_title
+                                                jcr:created="{Date}2022-12-16T15:24:50.332+05:30"
+                                                jcr:createdBy="tejas"
+                                                jcr:lastModified="{Date}2022-12-16T16:52:22.461+05:30"
+                                                jcr:lastModifiedBy="rinkal"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Personal Loan"
+                                                sling:resourceType="tata-capital-web/components/tcl-web-components/component-title/component-title"
+                                                boldTerm="Balance Transfer"
+                                                linkTarget="_self"
+                                                loanInformation="true"
+                                                type="h1"/>
+                                            <about_product_text_c_113497562
+                                                jcr:created="{Date}2022-12-02T18:57:02.972+05:30"
+                                                jcr:createdBy="admin"
+                                                jcr:lastModified="{Date}2022-12-16T16:52:31.146+05:30"
+                                                jcr:lastModifiedBy="rinkal"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="tata-capital-web/components/tcl-web-components/about-product/about-product-text"
+                                                text="&lt;p>Unhappy with your current personal loan? We have the perfect solution for you! Find a loan with better terms and more affordable interest rates by opting for balance transfers of loans. Wondering what is the balance transfer personal loan meaning? With this facility, you can transfer your outstanding personal loan from one lender to another to secure better loan terms – from better interest rates and repayment terms to a longer loan tenure.&lt;/p>&#xd;&#xa;"
+                                                textIsRich="true"/>
+                                            <about_product_text_c_1596614030
+                                                jcr:created="{Date}2022-12-02T18:57:02.972+05:30"
+                                                jcr:createdBy="admin"
+                                                jcr:lastModified="{Date}2022-12-16T16:52:44.974+05:30"
+                                                jcr:lastModifiedBy="rinkal"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="tata-capital-web/components/tcl-web-components/about-product/about-product-text"
+                                                text="&lt;p>A personal loan balance transfer is an excellent way to significantly reduce your EMI burden by availing personal loan balance transfer lowest interest rates. Transfer your personal to Tata Capital with our personal loan balance transfer facility to enjoy flexible loan tenure of up to 7 years and structured EMI plans for easy loan repayment.&lt;/p>&#xd;&#xa;"
+                                                textIsRich="true"/>
+                                            <about_product_text_c
+                                                jcr:created="{Date}2022-12-02T18:57:02.972+05:30"
+                                                jcr:createdBy="admin"
+                                                jcr:lastModified="{Date}2022-12-16T16:52:52.632+05:30"
+                                                jcr:lastModifiedBy="rinkal"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="tata-capital-web/components/tcl-web-components/about-product/about-product-text"
+                                                text="&lt;p>The best part? We offer personal loan balance transfer at a nominal processing fee and interest rates starting at just 10.99%!&lt;/p>&#xd;&#xa;"
+                                                textIsRich="true"/>
+                                        </container-main>
+                                        <heading
+                                            jcr:lastModified="{Date}2022-12-08T12:14:07.419+05:30"
+                                            jcr:lastModifiedBy="admin"
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="What is a"
+                                            sling:resourceType="tata-capital-web/components/common/component-title"
+                                            boldTerm="Personal Loan?"
+                                            linkTarget="_self"
+                                            loanInformation="true"
+                                            type="h1"/>
+                                        <container-blue
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                                            <why_to_choose_us
+                                                jcr:created="{Date}2022-12-07T19:54:41.706+05:30"
+                                                jcr:createdBy="admin"
+                                                jcr:lastModified="{Date}2022-12-07T19:54:41.706+05:30"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="tata-capital-web/components/tcl-web-components/why-to-choose-us/why-to-choose-us">
+                                                <container-main
+                                                    jcr:lastModified="{Date}2022-12-07T20:15:12.720+05:30"
+                                                    jcr:lastModifiedBy="admin"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer"
+                                                    className="reasons-list-container">
+                                                    <why_to_choose_us_rea
+                                                        jcr:created="{Date}2022-12-07T20:04:41.550+05:30"
+                                                        jcr:createdBy="admin"
+                                                        jcr:description="&lt;p>Tata Capital is a brand that is loved across the country. Want to spruce up your home or fund a grand wedding? Looking for a Personal Loan Balance Transfer Lowest Interest Rate? Whatever your financial needs are, our team of experts will guide you through the Personal Loan Balance Transfer process and customize a personal loan offering most suitable for you.&lt;/p>&#xd;&#xa;"
+                                                        jcr:lastModified="{Date}2022-12-16T16:58:10.097+05:30"
+                                                        jcr:lastModifiedBy="rinkal"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="A name you can trust"
+                                                        sling:resourceType="tata-capital-web/components/tcl-web-components/why-to-choose-us/why-to-choose-us-reasonlist"
+                                                        actionsEnabled="false"
+                                                        descriptionFromPage="false"
+                                                        pretitle="all-icon icon-apple"
+                                                        textIsRich="true"
+                                                        titleFromPage="false"/>
+                                                    <why_to_choose_us_rea_2070261468
+                                                        jcr:created="{Date}2022-12-07T20:04:41.550+05:30"
+                                                        jcr:createdBy="admin"
+                                                        jcr:description="&lt;p>personal loan interest rates don't get better than ours! Starting at only 10.99%, we offer the Personal Loan Balance Transfer Lowest Interest Rate in the industry to make sure your personal loan journey goes smoothly.&lt;/p>&#xd;&#xa;"
+                                                        jcr:lastModified="{Date}2022-12-16T17:00:12.854+05:30"
+                                                        jcr:lastModifiedBy="rinkal"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="Competitive interest rates"
+                                                        sling:resourceType="tata-capital-web/components/tcl-web-components/why-to-choose-us/why-to-choose-us-reasonlist"
+                                                        actionsEnabled="false"
+                                                        descriptionFromPage="false"
+                                                        pretitle="all-icon icon-apple"
+                                                        textIsRich="true"
+                                                        titleFromPage="false"/>
+                                                    <why_to_choose_us_rea_458072273
+                                                        jcr:created="{Date}2022-12-07T20:04:41.550+05:30"
+                                                        jcr:createdBy="admin"
+                                                        jcr:description="&lt;p>Tired of meeting the EMI deadlines? Opt for a longer tenure when you go for a Personal Loan Balance Transfer and repay the personal loan EMI comfortably. At Tata Capital, we offer tenures going up to 7 years!&lt;/p>&#xd;&#xa;"
+                                                        jcr:lastModified="{Date}2022-12-16T17:00:47.707+05:30"
+                                                        jcr:lastModifiedBy="rinkal"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="Longer tenures"
+                                                        sling:resourceType="tata-capital-web/components/tcl-web-components/why-to-choose-us/why-to-choose-us-reasonlist"
+                                                        actionsEnabled="false"
+                                                        descriptionFromPage="false"
+                                                        pretitle="all-icon icon-apple"
+                                                        textIsRich="true"
+                                                        titleFromPage="false"/>
+                                                    <why_to_choose_us_rea_499391721
+                                                        jcr:created="{Date}2022-12-07T20:04:41.550+05:30"
+                                                        jcr:createdBy="admin"
+                                                        jcr:description="&lt;p>Before opting for a Personal Loan Balance Transfer, it's best to check all the costs involved, so your pockets don't suffer a strain. With Tata Capital, you are assured of the lowest processing fees.&lt;/p>&#xd;&#xa;"
+                                                        jcr:lastModified="{Date}2022-12-16T17:01:10.790+05:30"
+                                                        jcr:lastModifiedBy="rinkal"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="Nominal processing fee"
+                                                        sling:resourceType="tata-capital-web/components/tcl-web-components/why-to-choose-us/why-to-choose-us-reasonlist"
+                                                        actionsEnabled="false"
+                                                        descriptionFromPage="false"
+                                                        pretitle="all-icon icon-apple"
+                                                        textIsRich="true"
+                                                        titleFromPage="false"/>
+                                                    <why_to_choose_us_rea_1708358173
+                                                        jcr:created="{Date}2022-12-07T20:04:41.550+05:30"
+                                                        jcr:createdBy="admin"
+                                                        jcr:description="&lt;p>Need quick cash to meet last-minute needs? Switch to Tata Capital's personal loan overdraft facility and enjoy flexible repayment options under the salaried CC limit. Our quick Personal Loan Balance Transfer process offers tenure of up to 60 months with interest rates starting at just 13.50%! Apply for a Balance Transfer of Loans with Tata Capital today.&lt;/p>&#xd;&#xa;"
+                                                        jcr:lastModified="{Date}2022-12-16T17:01:26.790+05:30"
+                                                        jcr:lastModifiedBy="rinkal"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="Overdraft facility"
+                                                        sling:resourceType="tata-capital-web/components/tcl-web-components/why-to-choose-us/why-to-choose-us-reasonlist"
+                                                        actionsEnabled="false"
+                                                        descriptionFromPage="false"
+                                                        pretitle="all-icon icon-apple"
+                                                        textIsRich="true"
+                                                        titleFromPage="false"/>
+                                                    <why_to_choose_us_rea_121792436
+                                                        jcr:created="{Date}2022-12-07T20:04:41.550+05:30"
+                                                        jcr:createdBy="admin"
+                                                        jcr:description="&lt;p>Why pay interest when you don’t need funds? Use the limit when you need funds and pay back whenever you have excess funds. Apply for a Personal Loan Balance Transfer with Tata Capital and pay only interest on the utilised limit for the first two years, with no principal repayment. Pay principal and interest on utilised limit after two years for the next 5 years. Moreover, with Tata Capital, you get the Personal Loan Balance Transfer Lowest Interest Rate in the industry.&lt;/p>&#xd;&#xa;"
+                                                        jcr:lastModified="{Date}2022-12-16T17:01:44.978+05:30"
+                                                        jcr:lastModifiedBy="rinkal"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="Tenure up to 72 months"
+                                                        sling:resourceType="tata-capital-web/components/tcl-web-components/why-to-choose-us/why-to-choose-us-reasonlist"
+                                                        actionsEnabled="false"
+                                                        descriptionFromPage="false"
+                                                        pretitle="all-icon icon-apple"
+                                                        textIsRich="true"
+                                                        titleFromPage="false"/>
+                                                </container-main>
+                                                <container-title
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="core/wcm/components/container/v1/container">
+                                                    <component_title
+                                                        jcr:created="{Date}2022-12-08T11:45:27.661+05:30"
+                                                        jcr:createdBy="admin"
+                                                        jcr:lastModified="{Date}2022-12-08T12:08:20.352+05:30"
+                                                        jcr:lastModifiedBy="admin"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="why you should choose us"
+                                                        sling:resourceType="tata-capital-web/components/common/component-title"
+                                                        boldTerm="7 reasons"
+                                                        linkTarget="_self"
+                                                        type="h1"
+                                                        why-to-choose-us-title="true"
+                                                        whyChoose="true"/>
+                                                    <component_title_966895249
+                                                        jcr:created="{Date}2022-12-15T18:40:52.952+05:30"
+                                                        jcr:createdBy="khushboo"
+                                                        jcr:lastModified="{Date}2022-12-16T20:44:02.242+05:30"
+                                                        jcr:lastModifiedBy="khushboo"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="Reasons you should opt for Personal Loan transfer to"
+                                                        sling:resourceType="tata-capital-web/components/tcl-web-components/component-title/component-title"
+                                                        bestDealsHeading="true"
+                                                        boldTerm=" Tata Capital"
+                                                        linkTarget="_self"
+                                                        type="h1"/>
+                                                </container-title>
+                                            </why_to_choose_us>
+                                            <container_1707567473
+                                                jcr:created="{Date}2022-12-15T20:53:41.500+05:30"
+                                                jcr:createdBy="tejas"
+                                                jcr:lastModified="{Date}2022-12-15T20:53:41.500+05:30"
+                                                jcr:lastModifiedBy="tejas"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="tata-capital-web/components/container">
+                                                <check_loan_eligibili
+                                                    jcr:created="{Date}2022-12-15T20:53:49.699+05:30"
+                                                    jcr:createdBy="tejas"
+                                                    jcr:lastModified="{Date}2022-12-15T20:53:49.699+05:30"
+                                                    jcr:lastModifiedBy="tejas"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="tata-capital-web/components/tcl-web-components/check-loan-eligibility/check-loan-eligibility">
+                                                    <heading
+                                                        jcr:lastModified="{Date}2022-12-16T17:08:12.170+05:30"
+                                                        jcr:lastModifiedBy="rinkal"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="How to check eligibility for"
+                                                        sling:resourceType="tata-capital-web/components/tcl-web-components/component-title/component-title"
+                                                        boldTerm="Personal Loan Balance Transfer?"
+                                                        linkTarget="_self"
+                                                        singleLineTitle="true"
+                                                        type="h1"/>
+                                                    <description
+                                                        jcr:lastModified="{Date}2022-12-16T17:09:17.369+05:30"
+                                                        jcr:lastModifiedBy="rinkal"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="core/wcm/components/text/v2/text"
+                                                        text="&lt;p>You can apply for a Personal Loan Balance Transfer by fulfilling the conditions below:&lt;/p>&#xd;&#xa;"
+                                                        textIsRich="true"/>
+                                                    <items
+                                                        jcr:lastModified="{Date}2022-12-15T21:03:17.213+05:30"
+                                                        jcr:lastModifiedBy="tejas"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer"
+                                                        className="row-flex">
+                                                        <check_loan_eligibili_1077804246
+                                                            cq:styleIds="[1671118213828,1671118214469]"
+                                                            jcr:created="{Date}2022-12-15T20:55:06.341+05:30"
+                                                            jcr:createdBy="tejas"
+                                                            jcr:lastModified="{Date}2022-12-17T20:33:13.922+05:30"
+                                                            jcr:lastModifiedBy="tejas"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="tata-capital-web/components/tcl-web-components/check-loan-eligibility/check-loan-eligibility-items"
+                                                            blockText="true"
+                                                            text="&lt;p>Age should be between&lt;/p>&#xd;&#xa;&lt;p>22 to 58 years&lt;/p>&#xd;&#xa;"
+                                                            textClass="all-icon32 icon-apple"
+                                                            textIsRich="true"/>
+                                                        <check_loan_eligibili_374561183
+                                                            cq:styleIds="[1671118213828,1671118214469]"
+                                                            jcr:created="{Date}2022-12-15T20:55:06.341+05:30"
+                                                            jcr:createdBy="tejas"
+                                                            jcr:lastModified="{Date}2022-12-17T20:34:50.433+05:30"
+                                                            jcr:lastModifiedBy="tejas"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="tata-capital-web/components/tcl-web-components/check-loan-eligibility/check-loan-eligibility-items"
+                                                            blockText="true"
+                                                            text="&lt;p>You must have at least one year of work experience&lt;/p>&#xd;&#xa;"
+                                                            textClass="all-icon32 icon-apple"
+                                                            textIsRich="true"/>
+                                                        <check_loan_eligibili
+                                                            cq:styleIds="[1671118213828,1671118214469]"
+                                                            jcr:created="{Date}2022-12-15T20:55:06.341+05:30"
+                                                            jcr:createdBy="tejas"
+                                                            jcr:lastModified="{Date}2022-12-17T20:34:58.878+05:30"
+                                                            jcr:lastModifiedBy="tejas"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="tata-capital-web/components/tcl-web-components/check-loan-eligibility/check-loan-eligibility-items"
+                                                            blockText="true"
+                                                            text="&lt;p>You must have a monthly income of at least ₹15,000&lt;/p>&#xd;&#xa;"
+                                                            textClass="all-icon32 icon-apple"
+                                                            textIsRich="true"/>
+                                                    </items>
+                                                    <only-heading
+                                                        jcr:lastModified="{Date}2022-12-16T17:09:46.368+05:30"
+                                                        jcr:lastModifiedBy="rinkal"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="tata-capital-web/components/tcl-web-components/component-title/component-title"
+                                                        applyOnWhatsapp="true"
+                                                        boldTerm="Eligibility for Business Loan for Professionals?"
+                                                        linkTarget="_self"
+                                                        type="h1"/>
+                                                </check_loan_eligibili>
+                                            </container_1707567473>
+                                        </container-blue>
+                                    </about_product_big_di>
+                                </container_main_copy>
+                            </container-main>
+                        </about_product_505444>
+                        <who_can_take_loan_co
+                            jcr:created="{Date}2022-12-15T22:04:32.938+05:30"
+                            jcr:createdBy="tejas"
+                            jcr:lastModified="{Date}2022-12-15T22:04:49.612+05:30"
+                            jcr:lastModifiedBy="tejas"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="tata-capital-web/components/tcl-web-components/who-can-take-loan/who-can-take-loan"
+                            howToApplyForLoan="true">
+                            <find-right-loan-box-tabs
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                                <customcontainer
+                                    jcr:created="{Date}2022-12-15T22:04:59.561+05:30"
+                                    jcr:createdBy="tejas"
+                                    jcr:lastModified="{Date}2022-12-15T22:18:11.519+05:30"
+                                    jcr:lastModifiedBy="tejas"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer"
+                                    className="tops-heads">
+                                    <component_title
+                                        jcr:created="{Date}2022-12-15T22:16:44.485+05:30"
+                                        jcr:createdBy="tejas"
+                                        jcr:lastModified="{Date}2022-12-15T22:17:12.459+05:30"
+                                        jcr:lastModifiedBy="tejas"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="How to apply for a "
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/component-title/component-title"
+                                        boldTerm="Personal Loan?"
+                                        linkTarget="_self"
+                                        preApprovedFormTitle="true"
+                                        type="h1"/>
+                                </customcontainer>
+                                <customcontainer_149407184
+                                    jcr:created="{Date}2022-12-15T22:05:05.359+05:30"
+                                    jcr:createdBy="tejas"
+                                    jcr:lastModified="{Date}2022-12-15T22:05:05.359+05:30"
+                                    jcr:lastModifiedBy="tejas"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                                    <who_can_take_loan_ta
+                                        jcr:created="{Date}2022-12-15T22:05:10.634+05:30"
+                                        jcr:createdBy="tejas"
+                                        jcr:lastModified="{Date}2022-12-17T19:15:30.862+05:30"
+                                        jcr:lastModifiedBy="tejas"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/who-can-take-loan/who-can-take-loan-tabs"
+                                        tabClassName="how-apply-tabs">
+                                        <item_1671122042173
+                                            cq:panelTitle="offline application"
+                                            jcr:lastModified="{Date}2022-12-17T19:14:18.812+05:30"
+                                            jcr:lastModifiedBy="tejas"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="tata-capital-web/components/tcl-web-components/who-can-take-loan/how-apply-list"
+                                            balanceTransfer="true">
+                                            <who-can-take-loan-title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                                                <component_title
+                                                    jcr:created="{Date}2022-12-15T22:08:26.866+05:30"
+                                                    jcr:createdBy="tejas"
+                                                    jcr:lastModified="{Date}2022-12-16T18:54:32.840+05:30"
+                                                    jcr:lastModifiedBy="rinkal"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="How to apply for a "
+                                                    sling:resourceType="tata-capital-web/components/tcl-web-components/component-title/component-title"
+                                                    boldTerm="Personal Loan?"
+                                                    linkTarget="_self"
+                                                    singleLineTitle="true"
+                                                    type="h1"/>
+                                                <text_copy
+                                                    jcr:created="{Date}2022-12-17T19:16:23.276+05:30"
+                                                    jcr:createdBy="tejas"
+                                                    jcr:lastModified="{Date}2022-12-17T19:16:47.030+05:30"
+                                                    jcr:lastModifiedBy="tejas"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="tata-capital-web/components/text"
+                                                    text="&lt;p>Tata Capital provides unique and flexible Personal Loans for salaried individuals. Now that you know what is a personal loan, the following can get a Personal Loan from Tata Capital:&lt;/p>&#xd;&#xa;"
+                                                    textIsRich="true"/>
+                                            </who-can-take-loan-title>
+                                            <who-can-take-loan-list
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                                                <how_apply_list_tease
+                                                    jcr:created="{Date}2022-12-17T19:17:02.630+05:30"
+                                                    jcr:createdBy="tejas"
+                                                    jcr:description="&lt;p>You can visit our website and apply for a home loan online in a few simple steps.&lt;/p>&#xd;&#xa;"
+                                                    jcr:lastModified="{Date}2022-12-17T19:18:10.717+05:30"
+                                                    jcr:lastModifiedBy="tejas"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="Online"
+                                                    sling:resourceType="tata-capital-web/components/tcl-web-components/who-can-take-loan/how-apply-list-teaser"
+                                                    altValueFromPageImage="true"
+                                                    descriptionFromPage="false"
+                                                    imageFromPageImage="true"
+                                                    isDecorative="false"
+                                                    linkTarget="_self"
+                                                    textIsRich="true"
+                                                    titleFromPage="false">
+                                                    <actions jcr:primaryType="nt:unstructured">
+                                                        <item0
+                                                            jcr:primaryType="nt:unstructured"
+                                                            link="#"
+                                                            linkTarget="_blank"
+                                                            text="Apply Now"/>
+                                                    </actions>
+                                                </how_apply_list_tease>
+                                            </who-can-take-loan-list>
+                                        </item_1671122042173>
+                                        <item_1671284482192
+                                            cq:panelTitle="Online application"
+                                            jcr:lastModified="{Date}2022-12-17T19:15:42.483+05:30"
+                                            jcr:lastModifiedBy="tejas"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="tata-capital-web/components/tcl-web-components/who-can-take-loan/how-apply-list"
+                                            balanceTransfer="true">
+                                            <who-can-take-loan-title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                                                <component_title
+                                                    jcr:created="{Date}2022-12-17T19:15:50.156+05:30"
+                                                    jcr:createdBy="tejas"
+                                                    jcr:lastModified="{Date}2022-12-17T19:16:14.101+05:30"
+                                                    jcr:lastModifiedBy="tejas"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="How to apply for a "
+                                                    sling:resourceType="tata-capital-web/components/tcl-web-components/component-title/component-title"
+                                                    boldTerm="Personal Loan?"
+                                                    linkTarget="_self"
+                                                    singleLineTitle="true"
+                                                    type="h1"/>
+                                                <text
+                                                    jcr:created="{Date}2022-12-17T19:16:23.276+05:30"
+                                                    jcr:createdBy="tejas"
+                                                    jcr:lastModified="{Date}2022-12-17T19:16:47.030+05:30"
+                                                    jcr:lastModifiedBy="tejas"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="tata-capital-web/components/text"
+                                                    text="&lt;p>Tata Capital provides unique and flexible Personal Loans for salaried individuals. Now that you know what is a personal loan, the following can get a Personal Loan from Tata Capital:&lt;/p>&#xd;&#xa;"
+                                                    textIsRich="true"/>
+                                            </who-can-take-loan-title>
+                                            <who-can-take-loan-list
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                                                <how_apply_list_tease
+                                                    jcr:created="{Date}2022-12-17T19:17:02.630+05:30"
+                                                    jcr:createdBy="tejas"
+                                                    jcr:description="&lt;p>You can visit our website and apply for a home loan online in a few simple steps.&lt;/p>&#xd;&#xa;"
+                                                    jcr:lastModified="{Date}2022-12-17T19:18:10.717+05:30"
+                                                    jcr:lastModifiedBy="tejas"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="Online"
+                                                    sling:resourceType="tata-capital-web/components/tcl-web-components/who-can-take-loan/how-apply-list-teaser"
+                                                    altValueFromPageImage="true"
+                                                    descriptionFromPage="false"
+                                                    imageFromPageImage="true"
+                                                    isDecorative="false"
+                                                    linkTarget="_self"
+                                                    textIsRich="true"
+                                                    titleFromPage="false">
+                                                    <actions jcr:primaryType="nt:unstructured">
+                                                        <item0
+                                                            jcr:primaryType="nt:unstructured"
+                                                            link="#"
+                                                            linkTarget="_blank"
+                                                            text="Apply Now"/>
+                                                    </actions>
+                                                </how_apply_list_tease>
+                                                <how_apply_list_tease_174386549
+                                                    jcr:created="{Date}2022-12-17T19:17:02.630+05:30"
+                                                    jcr:createdBy="tejas"
+                                                    jcr:description="&lt;p>You can take the help of our virtual assistant to apply for a home loan.&lt;/p>&#xd;&#xa;"
+                                                    jcr:lastModified="{Date}2022-12-17T19:20:03.999+05:30"
+                                                    jcr:lastModifiedBy="tejas"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="Virtual Assistant"
+                                                    sling:resourceType="tata-capital-web/components/tcl-web-components/who-can-take-loan/how-apply-list-teaser"
+                                                    altValueFromPageImage="true"
+                                                    descriptionFromPage="false"
+                                                    imageFromPageImage="true"
+                                                    isDecorative="false"
+                                                    linkTarget="_self"
+                                                    textIsRich="true"
+                                                    titleFromPage="false">
+                                                    <actions jcr:primaryType="nt:unstructured">
+                                                        <item0
+                                                            jcr:primaryType="nt:unstructured"
+                                                            link="#"
+                                                            linkTarget="_blank"
+                                                            text="Chat Now"/>
+                                                    </actions>
+                                                </how_apply_list_tease_174386549>
+                                                <how_apply_list_tease_444834216
+                                                    jcr:created="{Date}2022-12-17T19:17:02.630+05:30"
+                                                    jcr:createdBy="tejas"
+                                                    jcr:description="&lt;p>You can simply dial 1860 267 6060 to apply for a home loan through your phone.&lt;/p>&#xd;&#xa;"
+                                                    jcr:lastModified="{Date}2022-12-17T19:20:50.916+05:30"
+                                                    jcr:lastModifiedBy="tejas"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="Phone"
+                                                    sling:resourceType="tata-capital-web/components/tcl-web-components/who-can-take-loan/how-apply-list-teaser"
+                                                    altValueFromPageImage="true"
+                                                    descriptionFromPage="false"
+                                                    imageFromPageImage="true"
+                                                    isDecorative="false"
+                                                    linkTarget="_self"
+                                                    textIsRich="true"
+                                                    titleFromPage="false">
+                                                    <actions jcr:primaryType="nt:unstructured">
+                                                        <item0
+                                                            jcr:primaryType="nt:unstructured"
+                                                            link="#"
+                                                            linkTarget="_blank"
+                                                            text="Request a call back"/>
+                                                    </actions>
+                                                </how_apply_list_tease_444834216>
+                                            </who-can-take-loan-list>
+                                        </item_1671284482192>
+                                    </who_can_take_loan_ta>
+                                </customcontainer_149407184>
+                            </find-right-loan-box-tabs>
+                        </who_can_take_loan_co>
+                    </customcontainer>
+                </container_1970754877>
+                <container_1707567473
+                    jcr:created="{Date}2022-12-15T20:53:41.500+05:30"
+                    jcr:createdBy="tejas"
+                    jcr:lastModified="{Date}2022-12-15T20:53:41.500+05:30"
+                    jcr:lastModifiedBy="tejas"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="tata-capital-web/components/container"/>
+                <how_to_apply_for_loa
+                    jcr:created="{Date}2022-12-07T21:54:30.410+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-12-07T21:54:30.410+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="tata-capital-web/components/tcl-web-components/how-to-apply-for-loan/how-to-apply-for-loan">
+                    <container-button
+                        jcr:lastModified="{Date}2022-12-07T22:04:03.214+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer"
+                        className="tab-left">
+                        <how_to_apply_for_loa
+                            jcr:created="{Date}2022-12-07T22:02:03.353+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-12-07T22:08:23.553+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Offline application"
+                            sling:resourceType="tata-capital-web/components/tcl-web-components/how-to-apply-for-loan/how-to-apply-for-loan-tab-button"
+                            className="true"
+                            id="offline-application"
+                            linkTarget="_self"/>
+                        <how_to_apply_for_loa_1700451995
+                            jcr:created="{Date}2022-12-07T22:02:03.353+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-12-07T22:08:49.894+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Online application"
+                            sling:resourceType="tata-capital-web/components/tcl-web-components/how-to-apply-for-loan/how-to-apply-for-loan-tab-button"
+                            id="online-application"
+                            linkTarget="_self"/>
+                    </container-button>
+                </how_to_apply_for_loa>
+                <container_765653874
+                    jcr:created="{Date}2022-12-15T21:15:48.862+05:30"
+                    jcr:createdBy="tejas"
+                    jcr:lastModified="{Date}2022-12-15T21:15:48.862+05:30"
+                    jcr:lastModifiedBy="tejas"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="tata-capital-web/components/container">
+                    <container
+                        jcr:created="{Date}2022-12-15T21:58:00.720+05:30"
+                        jcr:createdBy="tejas"
+                        jcr:lastModified="{Date}2022-12-15T21:58:00.720+05:30"
+                        jcr:lastModifiedBy="tejas"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/container">
+                        <customer_testimonial
+                            jcr:created="{Date}2022-12-03T13:04:05.436+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-12-03T13:04:05.436+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="tata-capital-web/components/tcl-web-components/customer-testimonial/customer-testimonial">
+                            <container-main
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="core/wcm/components/container/v1/container">
+                                <component_title
+                                    jcr:created="{Date}2022-12-03T13:05:14.451+05:30"
+                                    jcr:createdBy="admin"
+                                    jcr:lastModified="{Date}2022-12-03T13:05:51.061+05:30"
+                                    jcr:lastModifiedBy="admin"
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="What our customers say"
+                                    sling:resourceType="tata-capital-web/components/common/component-title"
+                                    boldTerm="about us"
+                                    linkTarget="_self"
+                                    singleLineTitle="true"
+                                    type="h1"/>
+                                <component_title_325297165
+                                    jcr:created="{Date}2022-12-15T21:59:33.340+05:30"
+                                    jcr:createdBy="tejas"
+                                    jcr:lastModified="{Date}2022-12-15T23:09:21.802+05:30"
+                                    jcr:lastModifiedBy="tejas"
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="What our customers say "
+                                    sling:resourceType="tata-capital-web/components/tcl-web-components/component-title/component-title"
+                                    boldTerm="about us"
+                                    linkTarget="_self"
+                                    singleLineTitle="true"
+                                    type="h1"/>
+                            </container-main>
+                        </customer_testimonial>
+                    </container>
+                    <container_972306897
+                        jcr:created="{Date}2022-12-16T14:58:37.739+05:30"
+                        jcr:createdBy="tejas"
+                        jcr:lastModified="{Date}2022-12-16T14:58:37.739+05:30"
+                        jcr:lastModifiedBy="tejas"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/container"/>
+                </container_765653874>
+                <container_main_copy jcr:primaryType="nt:unstructured"/>
+                <customcontainer_383873441
+                    jcr:created="{Date}2022-12-15T22:23:01.436+05:30"
+                    jcr:createdBy="tejas"
+                    jcr:lastModified="{Date}2022-12-15T22:23:01.436+05:30"
+                    jcr:lastModifiedBy="tejas"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                    <who_can_take_loan
+                        jcr:created="{Date}2022-12-15T22:23:20.084+05:30"
+                        jcr:createdBy="tejas"
+                        jcr:lastModified="{Date}2022-12-15T22:23:48.843+05:30"
+                        jcr:lastModifiedBy="tejas"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/tcl-web-components/who-can-take-loan/who-can-take-loan"
+                        findRightLoanBox="true">
+                        <find-right-loan-box-tabs
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                            <customcontainer
+                                jcr:created="{Date}2022-12-15T22:24:05.324+05:30"
+                                jcr:createdBy="tejas"
+                                jcr:lastModified="{Date}2022-12-15T22:24:44.097+05:30"
+                                jcr:lastModifiedBy="tejas"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer"
+                                className="tops-heads">
+                                <component_title
+                                    jcr:created="{Date}2022-12-15T22:24:15.582+05:30"
+                                    jcr:createdBy="tejas"
+                                    jcr:lastModified="{Date}2022-12-15T22:24:36.726+05:30"
+                                    jcr:lastModifiedBy="tejas"
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Find the right Loan "
+                                    sling:resourceType="tata-capital-web/components/tcl-web-components/component-title/component-title"
+                                    boldTerm="for you"
+                                    linkTarget="_self"
+                                    singleLineTitle="true"
+                                    type="h1"/>
+                            </customcontainer>
+                            <customcontainer_193639488
+                                jcr:created="{Date}2022-12-15T22:24:09.080+05:30"
+                                jcr:createdBy="tejas"
+                                jcr:lastModified="{Date}2022-12-15T22:24:09.080+05:30"
+                                jcr:lastModifiedBy="tejas"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                                <who_can_take_loan_ta
+                                    jcr:created="{Date}2022-12-15T22:24:51.680+05:30"
+                                    jcr:createdBy="tejas"
+                                    jcr:lastModified="{Date}2022-12-15T22:26:17.065+05:30"
+                                    jcr:lastModifiedBy="tejas"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="tata-capital-web/components/tcl-web-components/who-can-take-loan/who-can-take-loan-tabs"
+                                    tabClassName="find-right-loan-tabs">
+                                    <item_1671123079130
+                                        cq:panelTitle="Overdraft Loan"
+                                        jcr:description="&lt;p>Want to fund your vacation but falling short on funds? An EMI based loan can be an ideal way to pay for a holiday that you can’t quite cover in one go.&lt;/p>&#xd;&#xa;&lt;p>Tata Capital Personal Loan for Travel is how you can make it happen. Head off on your next adventure.&lt;/p>&#xd;&#xa;"
+                                        jcr:lastModified="{Date}2022-12-15T22:43:48.830+05:30"
+                                        jcr:lastModifiedBy="tejas"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Overdraft Loan"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/who-can-take-loan/find-right-loan-box-teaser"
+                                        alt="find-loan"
+                                        altValueFromDAM="false"
+                                        descriptionFromPage="false"
+                                        fileReference="/content/dam/tata-capital-web/assets/img/find-right-loan-icon/find-right-loan-01.png"
+                                        imageFromPageImage="false"
+                                        isDecorative="false"
+                                        linkTarget="_self"
+                                        mobImage="/content/dam/tata-capital-web/assets/img/find-right-loan-icon/mob-find-right-loan-01.png"
+                                        textIsRich="true"
+                                        titleFromPage="false">
+                                        <find-right-loan-box-teaser-button
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                                            <find_right_loan_box_
+                                                jcr:created="{Date}2022-12-15T22:50:27.505+05:30"
+                                                jcr:createdBy="tejas"
+                                                jcr:lastModified="{Date}2022-12-15T22:50:34.695+05:30"
+                                                jcr:lastModifiedBy="tejas"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Know More"
+                                                sling:resourceType="tata-capital-web/components/tcl-web-components/who-can-take-loan/find-right-loan-box-teaser-button"
+                                                linkTarget="_self"/>
+                                        </find-right-loan-box-teaser-button>
+                                    </item_1671123079130>
+                                    <item_1671123084058
+                                        cq:panelTitle="Wedding Loan"
+                                        jcr:description="&lt;p>Want to fund your vacation but falling short on funds? An EMI based loan can be an ideal way to pay for a holiday that you can’t quite cover in one go.&lt;/p>&#xd;&#xa;&lt;p>Tata Capital Personal Loan for Travel is how you can make it happen. Head off on your next adventure.&lt;/p>&#xd;&#xa;"
+                                        jcr:lastModified="{Date}2022-12-15T22:46:11.094+05:30"
+                                        jcr:lastModifiedBy="tejas"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Wedding Loan"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/who-can-take-loan/find-right-loan-box-teaser"
+                                        alt="find-loan"
+                                        altValueFromDAM="false"
+                                        descriptionFromPage="false"
+                                        fileReference="/content/dam/tata-capital-web/assets/img/find-right-loan-icon/find-right-loan-01.png"
+                                        imageFromPageImage="false"
+                                        isDecorative="false"
+                                        linkTarget="_self"
+                                        mobImage="/content/dam/tata-capital-web/assets/img/find-right-loan-icon/mob-find-right-loan-01.png"
+                                        textIsRich="true"
+                                        titleFromPage="false">
+                                        <find-right-loan-box-teaser-button
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                                            <find_right_loan_box_
+                                                jcr:created="{Date}2022-12-15T22:50:27.505+05:30"
+                                                jcr:createdBy="tejas"
+                                                jcr:lastModified="{Date}2022-12-15T22:50:34.695+05:30"
+                                                jcr:lastModifiedBy="tejas"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Know More"
+                                                sling:resourceType="tata-capital-web/components/tcl-web-components/who-can-take-loan/find-right-loan-box-teaser-button"
+                                                linkTarget="_self"/>
+                                        </find-right-loan-box-teaser-button>
+                                    </item_1671123084058>
+                                    <item_1671123088058
+                                        cq:panelTitle="Medical Loan"
+                                        jcr:description="&lt;p>Want to fund your vacation but falling short on funds? An EMI based loan can be an ideal way to pay for a holiday that you can’t quite cover in one go.&lt;/p>&#xd;&#xa;&lt;p>Tata Capital Personal Loan for Travel is how you can make it happen. Head off on your next adventure.&lt;/p>&#xd;&#xa;"
+                                        jcr:lastModified="{Date}2022-12-15T22:47:36.198+05:30"
+                                        jcr:lastModifiedBy="tejas"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Medical Loan"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/who-can-take-loan/find-right-loan-box-teaser"
+                                        alt="loan image"
+                                        altValueFromDAM="false"
+                                        descriptionFromPage="false"
+                                        fileReference="/content/dam/tata-capital-web/assets/img/find-right-loan-icon/find-right-loan-01.png"
+                                        imageFromPageImage="false"
+                                        isDecorative="false"
+                                        linkTarget="_self"
+                                        mobImage="/content/dam/tata-capital-web/assets/img/find-right-loan-icon/mob-find-right-loan-01.png"
+                                        textIsRich="true"
+                                        titleFromPage="false">
+                                        <find-right-loan-box-teaser-button
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                                            <find_right_loan_box_
+                                                jcr:created="{Date}2022-12-15T22:50:27.505+05:30"
+                                                jcr:createdBy="tejas"
+                                                jcr:lastModified="{Date}2022-12-15T22:50:34.695+05:30"
+                                                jcr:lastModifiedBy="tejas"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Know More"
+                                                sling:resourceType="tata-capital-web/components/tcl-web-components/who-can-take-loan/find-right-loan-box-teaser-button"
+                                                linkTarget="_self"/>
+                                        </find-right-loan-box-teaser-button>
+                                    </item_1671123088058>
+                                    <item_1671123091097
+                                        cq:panelTitle="Travel Loan"
+                                        jcr:description="&lt;p>Want to fund your vacation but falling short on funds? An EMI based loan can be an ideal way to pay for a holiday that you can’t quite cover in one go.&lt;/p>&#xd;&#xa;&lt;p>Tata Capital Personal Loan for Travel is how you can make it happen. Head off on your next adventure.&lt;/p>&#xd;&#xa;"
+                                        jcr:lastModified="{Date}2022-12-15T22:48:57.123+05:30"
+                                        jcr:lastModifiedBy="tejas"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Travel Loan"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/who-can-take-loan/find-right-loan-box-teaser"
+                                        alt="loan image"
+                                        altValueFromDAM="false"
+                                        descriptionFromPage="false"
+                                        fileReference="/content/dam/tata-capital-web/assets/img/find-right-loan-icon/find-right-loan-01.png"
+                                        imageFromPageImage="false"
+                                        isDecorative="false"
+                                        linkTarget="_self"
+                                        mobImage="/content/dam/tata-capital-web/assets/img/find-right-loan-icon/mob-find-right-loan-01.png"
+                                        textIsRich="true"
+                                        titleFromPage="false">
+                                        <find-right-loan-box-teaser-button
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                                            <find_right_loan_box_
+                                                jcr:created="{Date}2022-12-15T22:50:27.505+05:30"
+                                                jcr:createdBy="tejas"
+                                                jcr:lastModified="{Date}2022-12-15T22:50:34.695+05:30"
+                                                jcr:lastModifiedBy="tejas"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Know More"
+                                                sling:resourceType="tata-capital-web/components/tcl-web-components/who-can-take-loan/find-right-loan-box-teaser-button"
+                                                linkTarget="_self"/>
+                                        </find-right-loan-box-teaser-button>
+                                    </item_1671123091097>
+                                    <item_1671123096694
+                                        cq:panelTitle="Education Loan"
+                                        jcr:description="&lt;p>Want to fund your vacation but falling short on funds? An EMI based loan can be an ideal way to pay for a holiday that you can’t quite cover in one go.&lt;/p>&#xd;&#xa;&lt;p>Tata Capital Personal Loan for Travel is how you can make it happen. Head off on your next adventure.&lt;/p>&#xd;&#xa;"
+                                        jcr:lastModified="{Date}2022-12-15T22:50:21.384+05:30"
+                                        jcr:lastModifiedBy="tejas"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Education Loan"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/who-can-take-loan/find-right-loan-box-teaser"
+                                        alt="loan image"
+                                        altValueFromDAM="false"
+                                        descriptionFromPage="false"
+                                        fileReference="/content/dam/tata-capital-web/assets/img/find-right-loan-icon/find-right-loan-01.png"
+                                        imageFromPageImage="false"
+                                        isDecorative="false"
+                                        linkTarget="_self"
+                                        mobImage="/content/dam/tata-capital-web/assets/img/find-right-loan-icon/mob-find-right-loan-01.png"
+                                        textIsRich="true"
+                                        titleFromPage="false">
+                                        <find-right-loan-box-teaser-button
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                                            <find_right_loan_box_
+                                                jcr:created="{Date}2022-12-15T22:50:27.505+05:30"
+                                                jcr:createdBy="tejas"
+                                                jcr:lastModified="{Date}2022-12-15T22:50:34.695+05:30"
+                                                jcr:lastModifiedBy="tejas"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Know More"
+                                                sling:resourceType="tata-capital-web/components/tcl-web-components/who-can-take-loan/find-right-loan-box-teaser-button"
+                                                linkTarget="_self"/>
+                                        </find-right-loan-box-teaser-button>
+                                    </item_1671123096694>
+                                </who_can_take_loan_ta>
+                            </customcontainer_193639488>
+                        </find-right-loan-box-tabs>
+                    </who_can_take_loan>
+                    <container
+                        jcr:created="{Date}2022-12-15T23:00:52.685+05:30"
+                        jcr:createdBy="tejas"
+                        jcr:lastModified="{Date}2022-12-15T23:00:52.685+05:30"
+                        jcr:lastModifiedBy="tejas"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/container">
+                        <customcontainer_9056
+                            jcr:created="{Date}2022-12-03T13:04:18.224+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-12-03T13:04:18.224+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                            <financial_insights
+                                jcr:created="{Date}2022-12-03T13:04:24.097+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-12-03T13:04:24.097+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="tata-capital-web/components/tcl-web-components/financial-insight/financial-insights">
+                                <container-main
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="core/wcm/components/container/v1/container">
+                                    <component_title
+                                        jcr:created="{Date}2022-12-03T13:06:02.701+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2022-12-03T14:02:24.172+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Financial "
+                                        sling:resourceType="tata-capital-web/components/common/component-title"
+                                        boldTerm="insights"
+                                        linkTarget="_self"
+                                        singleLineTitle="true"
+                                        type="h1"/>
+                                    <component_title_1949127410
+                                        jcr:created="{Date}2022-12-15T23:03:27.202+05:30"
+                                        jcr:createdBy="tejas"
+                                        jcr:lastModified="{Date}2022-12-15T23:03:46.057+05:30"
+                                        jcr:lastModifiedBy="tejas"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="tata-capital-web/components/tcl-web-components/component-title/component-title"
+                                        boldTerm="Blogs"
+                                        linkTarget="_self"
+                                        singleLineTitle="true"
+                                        type="h1"/>
+                                </container-main>
+                            </financial_insights>
+                        </customcontainer_9056>
+                    </container>
+                    <newsletter_copy
+                        jcr:created="{Date}2022-12-16T17:38:25.324+05:30"
+                        jcr:createdBy="tejas"
+                        jcr:lastModified="{Date}2022-12-16T17:38:25.324+05:30"
+                        jcr:lastModifiedBy="tejas"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tata-capital-web/components/tcl-web-components/newsletter/newsletter">
+                        <sub-header
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="core/wcm/components/container/v1/container">
+                            <component_title
+                                jcr:created="{Date}2022-12-16T17:39:48.694+05:30"
+                                jcr:createdBy="tejas"
+                                jcr:lastModified="{Date}2022-12-16T17:40:28.036+05:30"
+                                jcr:lastModifiedBy="tejas"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Subscribe to our"
+                                sling:resourceType="tata-capital-web/components/tcl-web-components/component-title/component-title"
+                                boldTerm=" newsletter"
+                                linkTarget="_self"
+                                newsletterTitle="true"
+                                type="h1"/>
+                        </sub-header>
+                        <sub-btn
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="core/wcm/components/container/v1/container">
+                            <newsletter_btn
+                                jcr:created="{Date}2022-12-16T17:40:42.483+05:30"
+                                jcr:createdBy="tejas"
+                                jcr:lastModified="{Date}2022-12-16T17:41:01.284+05:30"
+                                jcr:lastModifiedBy="tejas"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Subscribe Now"
+                                sling:resourceType="tata-capital-web/components/tcl-web-components/newsletter/newsletter-btn"
+                                linkTarget="_self"/>
+                        </sub-btn>
+                    </newsletter_copy>
+                </customcontainer_383873441>
+                <customcontainer jcr:primaryType="nt:unstructured">
+                    <quick_links_drawer
+                        cq:styleIds="[1671185792769]"
+                        jcr:lastModified="{Date}2022-12-17T19:51:05.960+05:30"
+                        jcr:lastModifiedBy="tejas"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Quick Links"
+                        sling:resourceType="tata-capital-web/components/tcl-web-components/quick-links-drawer/quick-links-drawer"
+                        linkTarget="_self">
+                        <quick-links-drawer-list jcr:primaryType="nt:unstructured">
+                            <list
+                                cq:styleIds="[1671185733722]"
+                                jcr:lastModified="{Date}2022-12-17T19:50:02.340+05:30"
+                                jcr:lastModifiedBy="tejas"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="tata-capital-web/components/list"
+                                childDepth="1"
+                                displayItemAsTeaser="false"
+                                linkItems="true"
+                                listFrom="static"
+                                maxItems="3"
+                                pages="[/content/tata-capital-web/en/personal-loan/whatsapp,/content/tata-capital-web/en/personal-loan/required-documents,/content/tata-capital-web/en/personal-loan/balance-transfer]"
+                                showDescription="false"
+                                showModificationDate="false"
+                                sortOrder="asc"
+                                tagsMatch="any"/>
+                        </quick-links-drawer-list>
+                    </quick_links_drawer>
+                </customcontainer>
+                <customcontainer_931683293
+                    jcr:created="{Date}2022-12-17T19:52:27.988+05:30"
+                    jcr:createdBy="tejas"
+                    jcr:lastModified="{Date}2022-12-17T19:52:27.988+05:30"
+                    jcr:lastModifiedBy="tejas"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                    <quick_links_drawer
+                        cq:styleIds="[1671185792769]"
+                        jcr:created="{Date}2022-12-17T19:52:34.869+05:30"
+                        jcr:createdBy="tejas"
+                        jcr:lastModified="{Date}2022-12-17T19:53:03.954+05:30"
+                        jcr:lastModifiedBy="tejas"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Quick Links"
+                        sling:resourceType="tata-capital-web/components/tcl-web-components/quick-links-drawer/quick-links-drawer"
+                        linkTarget="_self">
+                        <quick-links-drawer-list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer">
+                            <list
+                                cq:styleIds="[1671185733722]"
+                                jcr:created="{Date}2022-12-17T19:53:33.350+05:30"
+                                jcr:createdBy="tejas"
+                                jcr:lastModified="{Date}2022-12-17T19:54:06.893+05:30"
+                                jcr:lastModifiedBy="tejas"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="tata-capital-web/components/list"
+                                childDepth="1"
+                                displayItemAsTeaser="false"
+                                linkItems="true"
+                                listFrom="static"
+                                pages="[/content/tata-capital-web/en/personal-loan/whatsapp,/content/tata-capital-web/en/personal-loan/required-documents,/content/tata-capital-web/en/personal-loan/balance-transfer]"
+                                showDescription="false"
+                                showModificationDate="false"
+                                sortOrder="asc"
+                                tagsMatch="any"/>
+                        </quick-links-drawer-list>
+                    </quick_links_drawer>
+                </customcontainer_931683293>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

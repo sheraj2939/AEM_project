@@ -1,0 +1,29 @@
+<div class="filter-inner">
+    <div class="filter-left">
+        <p class="text16i">
+            Sort by
+        </p>
+    </div>
+    <div class="custom-dropdown-wrap filter-drop-wrap close-on-outside">
+        <a href="javascript:void(0);" class="custom-dropdown-btn" data-rel="filer">Recent first</a>
+        <div class="custom-dropdown-block jsDropdownBlock" id="filer">
+            <ul class="custom-dropdown-list simple-bar" id="filerList">
+                <sly data-sly-list.itemList="${resource.children}">
+                    <sly data-sly-test="${itemList.name == 'filterItemsField'}">
+                        <sly data-sly-list.thData="${itemList.children}">
+                            <li class="list" data-filterAllAwards="${thData.filterItemsData}">
+                                <label class="custom-checkbox-label" >
+                                    <span class="custom-checkbox-new">
+                                        <!-- <input type="text" class="filterSelectedId" > -->
+                                        <!-- <span class="checkbox-check"></span> -->
+                                    </span>
+                                    ${thData.filterItemsText}
+                                </label>
+                            </li>
+                        </sly>
+                    </sly>
+                </sly>
+            </ul>
+        </div>
+    </div>
+</div>

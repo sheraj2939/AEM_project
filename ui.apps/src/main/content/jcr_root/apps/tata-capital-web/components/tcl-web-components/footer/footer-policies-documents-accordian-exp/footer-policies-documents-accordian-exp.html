@@ -1,0 +1,32 @@
+<div class="accordian-content">
+    <div class="tab-accordian visible-xs">
+        <a class="tab-title" href="javascript:void(0)" data-toggle="collapse" aria-expanded="false"
+            data-target="${properties.policiesCodes}">${properties.tittle}</a>
+    </div>
+    <sly data-sly-test="${properties.openedAccordian}">
+        <div class="tab-panel collapse" id="${properties.policiesCodes}" style="display: block;">
+            <ul class="footer-links">
+                <sly data-sly-list.loginLinks="${resource.listChildren}">
+                    <sly data-sly-test="${loginLinks.name == 'otherDocument'}">
+                        <sly data-sly-list.footerTopList="${loginLinks.listChildren}">
+                            <li><a href="${footerTopList.redirectionLink}">${footerTopList.tittle}</a></li>
+                        </sly>
+                    </sly>
+                </sly>
+            </ul>
+        </div>
+    </sly>
+    <sly data-sly-test="${!properties.openedAccordian}">
+        <div class="tab-panel collapse" id="${properties.policiesCodes}" style="display: none;">
+            <ul class="footer-links">
+                <sly data-sly-list.loginLinks="${resource.listChildren}">
+                    <sly data-sly-test="${loginLinks.name == 'otherDocument'}">
+                        <sly data-sly-list.footerTopList="${loginLinks.listChildren}">
+                            <li><a href="${footerTopList.redirectionLink}">${footerTopList.tittle}</a></li>
+                        </sly>
+                    </sly>
+                </sly>
+            </ul>
+        </div>
+    </sly>
+</div>

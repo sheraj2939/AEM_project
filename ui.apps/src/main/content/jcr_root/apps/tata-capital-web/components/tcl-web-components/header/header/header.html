@@ -1,0 +1,234 @@
+<sly data-sly-test="${wcmmode.edit}">
+
+    <style>
+        .dropdown-content-wrap {
+            height: 0px;
+            overflow: visible;
+            position: absolute;
+            z-index: 10000;
+            top: 100%;
+            left: 0;
+            right: 0;
+            width: calc(100% - 100px);
+            margin: -1px auto 0;
+            padding-top: 9px;
+            transform: translateY(-100%);
+            transition: all 0.1s ease-in-out 0s;
+        }
+        .menu-tab-block {
+    display: block !important;
+}
+    </style>
+
+</sly>
+<!-- Header 1-11-2022-->
+<header class="header header-backdrop">
+    <div class="header-inner">
+        <div class="header-top">
+            <div class="header-container">
+                <div class="header-slider-contact-wrap">
+                    <div class="left-col">
+                        <div class="header-top-slider">
+                            <div class="slider-item">
+                               <p>${properties.headerTopHeading}<a class="text-downloads" data-sly-test="${properties.topRedirectionLink}" href="${properties.topRedirectionLink}" target="${properties.topOpeninNewTab ? '_blank' : '' }">${properties.topRedirectionTitle}<span class="icon-download2 download2icon"></span></a>
+                                <a class="text-downloads" data-sly-test="${!properties.topRedirectionLink}" href="javascript:void(0);" target="${properties.loanInfoDetailApplyNowButtonOpeninNewTabRight ? '_blank' : '' }">${properties.topRedirectionTitle}<span class="icon-download2 download2icon"></span></a>
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-col">
+                       <!--/* <a href="${properties.redirectionCallLink}" class="call-btn" data-header="headerAnalyticData-Header Top Section" target="${properties.loanInfoDetailApplyNowButtonOpeninNewTabRight ? '_blank' : '' }">
+                            <span class="${properties.topLinksCallSelect}"></span> ${properties.callTittle}
+                        </a>*/-->
+                        <a href="${properties.redirectionBlogLink}" class="text-icon-link blog-link" data-header="headerAnalyticData-Header Top Section" target="${properties.blogOpeninNewTab ? '_blank' : '' }">
+                            <span class="${properties.topLinkBlogSelect}"></span> ${properties.blogTittle}
+                        </a>
+                        <a href="${properties.redirectionContactUsLink}" class="text-icon-link contact-link" data-header="headerAnalyticData-Header Top Section" target="${properties.loanInfoDetailApplyNowButtonOpeninNewTabRight ? '_blank' : '' }">
+                            <span class="${properties.topLinkSelectContactUs}"></span> ${properties.contactUsTittle}
+                        </a>
+                        <select class="text-icon-link dropdown-btn language-dropdown" data-langaa="headerAnalyticData"  id="selectLocale"  onchange="lnfyChangeLanguage(this)">
+                            <option value="en-US" selected="selected">English</option>
+                            <option value="hi_IN">हिंदी</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-navbar">
+            <div class="header-container">
+                <div class="header-navbar-inner">
+                    <div class="header-logo">
+                        <div class="mobile-tab-menu d-lg-none">
+                            <div class="hamburger-menu" data-menu="menu" data-target="hamburgerMenu">
+                                <div class="first-sub-bar"></div>
+                                <div class="second-sub-bar"></div>
+                                <div class="third-sub-bar"></div>
+                            </div>
+                        </div>
+                        <a href="${properties.redirectionLogoLink}" class="logos" data-header="headerAnalyticData-Header Top Section">
+                            <img src="${properties.logoImage}" alt="Header Logo" data-img-content="Header Logo"/>
+                        </a>
+                    </div>
+                    <div class="header-menu-wrap">
+                        <ul class="header-menu">
+                            <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                <sly data-sly-test="${loginLinks.name == 'headerNavList'}">
+                                    <sly data-sly-list.navList="${loginLinks.listChildren}">
+                                        <sly
+                                            data-sly-test.subNavigationId="${'{0}_{1}_{2}_{3}' @ format =[navList.name]}">
+                                            <li
+                                                class="menu-item ${navListList.count > 4 ? 'menu-tab-none' : ''} ${navListList.count == 4 ? 'menu-tab-block' : ''}">
+                                                <sly data-sly-test="${navList.redirectionLink}">
+                                                    <a href="${navList.redirectionLink}"
+                                                        class="nav-link ${navList.navDropdownClass ? 'nav-link-dropdown' : ''}" data-header="headerAnalyticData-Header Menu Section" target="${navList.openInNewTab ? '_blank' : '' }">
+                                                        ${navList.navHeading}
+                                                    </a>
+                                                    <sly
+                                                    data-sly-test="${navList.navDropdownClass}" data-sly-resource="${navListList.count @ resourceType='/apps/core/wcm/components/container/v1/container'}">
+                                                    </sly>
+                                                </sly>
+                                                <sly data-sly-test="${!navList.redirectionLink}">
+                                                    <a href="javascript:void(0);"
+                                                        class="nav-link ${navList.navDropdownClass ? 'nav-link-dropdown' : ''}" data-header="headerAnalyticData-Header Menu Section">
+                                                        ${navList.navHeading}
+                                                    </a>
+                                                    <sly
+                                                    data-sly-test="${navList.navDropdownClass}" data-sly-resource="${navListList.count @ resourceType='/apps/core/wcm/components/container/v1/container'}">
+                                                    </sly>
+                                                </sly>
+
+                                            </li>
+                                        </sly>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </ul>
+                    </div>
+                    <div class="login-search-wrap">
+                        <ul class="login-search-menu">
+                            <li class="login-search-item">
+                                <div class="sf-search-wrapper">
+                                    <!-- <img src="/content/dam/tata-capital-web/assets/img/search-icon.svg" id="sf-find-icon">
+                                    <img class="sf-overlay-tooltip" style="display:none" src="/content/dam/tata-capital-web/assets/img/overlayTooltip.svg" alt=""> -->
+                                </div>
+                            </li>
+                            <li class="login-search-item search-icon-wrap close-on-outside">
+                                <a href="javascript:void(0);" data-rel="updatesList" class="notification-wrap" data-img-content="Notification Icon" data-header="headerAnalyticData-offer updates">
+                                    <span class="icon-bell"></span>
+                                </a>
+                                <div class="dropdown-block" id="updatesList">
+                                    <div class="dropdown-header has-icon">
+                                        <p class="update-p">${properties.notificationTitle}</p>
+                                        <a href="javascript:;" class="data-dismiss" dismiss-rel="updatesList" data-header="headerAnalyticData-offer updates">
+                                            <i class="icon-close"></i>
+                                        </a>
+                                    </div>
+                                    <ul class="updates-list">
+                                        <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                            <sly data-sly-test="${loginLinks.name == 'notificationList'}">
+                                                <sly data-sly-list.navList="${loginLinks.listChildren}">
+                                                    <li class="list">
+                                                        <div class="list-item has-icon">
+                                                            <span class="media-holder">
+                                                                <i class="icon-score"></i>
+                                                            </span>
+                                                            <p class="notification-head">${navList.notificationTitleHeading}</p>
+                                                            ${navList.description @context='html'}
+                                                            <a href="${navList.redirectionLink}" class="updates-link" data-header="headerAnalyticData-offer updates" target="${navList.openInNewTab ? '_blank' : '' }">${navList.notificationTitleLink} <i
+                                                                    class="icon-arrow-right"></i></a>
+                                                        </div>
+                                                    </li>
+                                                </sly>
+                                            </sly>
+                                        </sly>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="login-search-item close-on-outside">
+                                <a href="javascript:void(0);" data-rel="signIn" data-header="headerAnalyticData-Header Login Section" data-img-content="Google Icon">
+                                    <span class="icon-google"></span>
+                                    <span class="profile-picture-img hidden">
+                                        <img src="  " alt="Google Profile Image" data-img-content="Google Profile Image">
+                                    </span>
+                                </a>
+                                <div class="dropdown-block signin-dropdown" id="signIn">
+                                    <div class="sign-in-block js-signin" id="google-signin">
+                                        <div class="sign-in">
+                                            <p class="sign-in-class">Sign in to unlock <br>
+                                                special offers!</p>
+                                            <div class="btn-holder">
+                                                <button type="button" class="btn-blue js-btn-signin" id="js-google-signin" data-header="headerAnalyticData-sign in to unlock special offers" data-img-content="Sign In">Sign In</button>
+                                            </div>
+                                        </div>
+                                        <a href="javascript:;" class="data-dismiss" dismiss-rel="signIn">
+                                            <i class="icon-close"></i>
+                                        </a>
+                                    </div>
+                                    <div class="signed-in-block js-signin" id="google-signout" style="display: none;">
+                                        <div class="signed-in">
+                                            <p class="signout-heading hidden">You are signed in to unlock special offers!</p>
+                                            <div class="profile">
+                                                <div class="avatar hidden">
+                                                    <img alt="profile" data-img-content="Google Profile Image">
+                                                </div>
+                                                <div class="avatar-info">
+                                                    <div class="avatar-name"></div>
+                                                    <div class="avatar-email">Data Loading Please Wait !!</div>
+                                                </div>
+                                            </div>
+                                            <div class="btn-holder hidden">
+                                                <button type="button" class="btn-blue js-btn-signin" id="js-google-signout" data-header="headerAnalyticData-Header Login Section">Sign out</button>
+                                            </div>
+                                        </div>
+                                        <a href="javascript:;" class="data-dismiss" dismiss-rel="signIn">
+                                            <i class="icon-close"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="login-search-item login-btn-wrap close-on-outside">
+                                <a href="javascript:void(0);" class="d-block d-lg-none" data-rel="login" data-header="headerAnalyticData-Header Login Section">
+                                    <span class="icon-user"></span>
+                                </a>
+                                <a href="javascript:void(0);" class="login-btn d-none d-lg-flex" data-rel="login" data-header="headerAnalyticData-Header Login Section">
+                                    ${properties.loginTitle}
+                                    <!-- 3-1-2023 -->
+                                        <!-- <span class="icon-arrow-arrow"></span>
+                                        <span class="icon-arrow-top"></span> -->
+                                        <!-- 3-1-2023 -->
+                                </a>
+                                <div class="dropdown-block login-dropdown" id="login">
+                                    <ul class="updates-list" id="updatesList">
+                                        <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                            <sly data-sly-test="${loginLinks.name == 'loginList'}">
+                                                <sly data-sly-list.navList="${loginLinks.listChildren}">
+                                                    <li class="list">
+                                                        <div class="list-item has-icon-right">
+                                                            <span class="media-holder">
+                                                                <i class="icon-arrow-up-right"></i>
+                                                            </span>
+                                                            <a href="${navList.redirectionLink}" class="updates-link" data-header="headerAnalyticData-Header Login Section" target="${navList.openInNewTab ? '_blank' : '' }">${navList.loginTitleLink}</a>
+                                                        </div>
+                                                    </li>
+                                                </sly>
+                                            </sly>
+                                        </sly>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <sly  data-sly-resource="${'content-main-mob' @ resourceType='/apps/core/wcm/components/container/v1/container'}"></sly>
+    </div>
+</header>
+<!-- Header 1-11-2022-->
+
+<sly data-sly-use.gcIDConfig="com.tatacapital.web.core.services.TataCapitalWebConfiguration">
+    <script>
+         var gcIDUrl = "${gcIDConfig.config.googleClientId @ context = 'unsafe' }";
+    </script>
+</sly>

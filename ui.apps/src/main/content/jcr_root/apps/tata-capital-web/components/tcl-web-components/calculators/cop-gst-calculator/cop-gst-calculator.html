@@ -1,0 +1,93 @@
+<!-- <h3 class="text-center"><span>COP Calculator</span></h3> -->
+<!--COP gst Calculator-->
+<section data-sly-use.title="com.adobe.cq.wcm.core.components.models.Title"
+    data-sly-use.template="core/wcm/components/commons/v1/templates.html" data-sly-test.text="${title.text}"
+    data-cmp-data-layer="${title.data.json}" class="calculator-box space-tb40">
+    <div class="container">
+        <div class="mx-944">
+            <div class="tops-heads">
+                <div
+                    data-sly-resource="${'title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                </div>
+            </div>
+            <div class="calculator-content-wrap" data-calc-name="${title.text}">
+                <div class="calculator-inputs-wrap">
+                    <div class="calculator-inputs-inner">
+                        <div class="calculator-details">
+                            <div class="calculator-dropdown-filter employer-dropdown gst-dropdown">
+
+                                <div class="calculator-textbox">
+                                    <div
+                                        class="custom-dropdown name-dropdown-filter close-on-outside js-searchDropdownWrap">
+                                        <a href="javascript:void(0)" class="dropdown-heading" data-rel="COP">COP</a>
+                                        <div class="dropdown-block dropdownmenu" id="COP" data-search="">
+                                            <ul class="simple-bar" data-list="name">
+                                                <li>
+                                                    <a href="javascript:void(0)">Wholesaler</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">COG</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">COP</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- calculator row  -->
+                        <sly
+                            data-sly-resource="${'container-main' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                        </sly>
+                    </div>
+                </div>
+                <div class="calculator-graph-wrap">
+                    <div class="calculator-graph-inner">
+                        <div class="monthly-emi-row flex-wrap balanceTransfer-totalSavings-row">
+                            <div class="monthly-emi-section">
+
+                                <div class="monthly-emi-col">
+                                    <p class="semibold">Gross Price
+                                    </p>
+                                    <h4>₹1*</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="monthly-emi-row flex-wrap">
+                            <div class="monthly-emi-section">
+                                <div class="monthly-emi-col">
+                                    <p class="semibold">CGST Amount
+                                    </p>
+
+                                    <h4>₹0*</h4>
+                                </div>
+                                <div class="monthly-emi-col">
+                                    <p class="semibold">IGST Amount
+                                    </p>
+                                    <h4>₹9,0*</h4>
+                                </div>
+                            </div>
+                            <div class="monthly-emi-section">
+                                <div class="monthly-emi-col">
+                                    <p class="semibold">Total Tax
+                                    </p>
+                                    <h4>₹0*</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="calculate-btn-wrap mob-no-margin">
+                            <a href="javascript:void(0);" class="calculate-btn btn-blue btn-large">
+                                Apply Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--COP gst Calculator-->

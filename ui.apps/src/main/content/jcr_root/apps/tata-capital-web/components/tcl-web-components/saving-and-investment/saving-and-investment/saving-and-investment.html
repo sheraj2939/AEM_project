@@ -1,0 +1,44 @@
+<!-- savings investments plans -->
+<div class="saving-investments-box space-tb40 space-t80">
+    <div class="container">
+        <div class="has-filer-btn">
+            <sly
+                data-sly-resource="${'saving-and-investment-heading' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+            </sly>
+            <div data-sly-test="${!properties.disableFilter}" class="custom-dropdown-wrap filter-drop-wrap close-on-outside">
+                <a href="javascript:void(0);" class="custom-dropdown-btn"
+                    data-rel="filer">${properties.filterheading}</a>
+                <div class="custom-dropdown-block jsDropdownBlock" id="filer">
+                    <ul class="custom-dropdown-list" id="filerList">
+                        <sly data-sly-list.itemList="${resource.children}">
+                            <sly data-sly-test="${itemList.name == 'filterItemsField'}">
+                                <sly data-sly-list.thData="${itemList.children}">
+                                    <sly data-sly-test.filterId="${'{0}_{1}_{2}_{3}' @ format =[thData.name]}">
+                                        <li class="list">
+                                            <div class="form-check custom-checkbox">
+                                                <div class="label-text">
+                                                    <input type="checkbox" class="form-check-input jsIAgreeTermsPolicy"
+                                                        id="${filterId}" value="">
+                                                    <label class="checkbox-wrap form-check-label"
+                                                        for="${filterId}"></label>
+                                                    ${thData.filterItemsData @ context = 'html'}
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container relative mob-pd0">
+        <sly
+            data-sly-resource="${'saving-items' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+        </sly>
+    </div>
+</div>
+<!-- savings investments plans -->

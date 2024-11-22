@@ -1,0 +1,28 @@
+<sly data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+    data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-use.imageTemplate="image.html"
+    data-sly-use.pretitleTemplate="pretitle.html" data-sly-use.titleTemplate="title.html"
+    data-sly-use.descriptionTemplate="description.html" data-sly-use.actionsTemplate="actions.html"
+    data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+    id="${teaser.id}" data-cmp-data-layer="${teaser.data.json}">
+    
+        <div class="our-logo-details">
+            <div class="our-logo-col bg-div">
+                <div class="top-cotent">
+                    <p class="text16i">
+                        ${teaser.title}
+                    </p>
+                </div>
+                <div class="bottom-content">
+                    <div class="logo-wrapper">
+                        <img src="${properties.fileReference}" alt="logo">
+                    </div>
+                    <div class="download-btn">
+                        <sly
+                            data-sly-resource="${'download-logo-button' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                        </sly>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</sly>

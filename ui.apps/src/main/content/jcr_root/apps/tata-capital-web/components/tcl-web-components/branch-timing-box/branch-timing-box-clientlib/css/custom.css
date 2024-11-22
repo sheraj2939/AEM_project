@@ -1,0 +1,6 @@
+.row-flex .col-sp15 {
+    padding: 0 15px;
+}
+.row-flex .container.row-col-33.col-sp15,.row-flex .container.row-col-66.col-sp15,.row-flex .container.row-col-33.col-space-5,.row-flex .container.row-col-66.col-space-5{
+    margin: unset;
+}

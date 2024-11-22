@@ -1,0 +1,31 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='tcl-error-page'}"></sly>
+</sly>
+
+<!-- 404 starts -->
+        <div class="space-tb40 space-b80">
+            <div class="container">
+                <div class="mx-944">
+                    <div class="error-box bg-div">
+                        <div class="error-inner">
+                            <div class="error-left">
+                                <p class="error-num semibold">
+                                    <span>404</span>
+                                </p>
+                                <p class="heading20 text-black semibold">
+                                    Oops! Something went wrong
+                                </p>
+                                <p class="text14i">
+                                    The page you are looking for doesn’t exist or has been removed.
+                                </p>
+                                <a href="${properties.path}" class="btn-blue btn-large">Back to Homepage</a>
+                            </div>
+                            <div class="error-right">
+                                <img src="/content/dam/tata-capital-web/assets/404-error-img.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 404 ends -->

@@ -1,0 +1,42 @@
+.white-links a {
+  font-family: "OpenSans-Regular" !important;
+  font-size: 14px !important;
+  color: #fff !important;
+}
+.loans-details-per {
+  backdrop-filter: blur(9px);
+}
+.instant-personal-slider .instant-per-div .left-number {
+  min-width: 32px;
+  font-family: "OpenSans-Bold";
+  font-size: 54.1063px;
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #b287d4;
+  margin-right: 29px;
+  margin-left: 9px;
+}
+.personal-btn a{
+	cursor: pointer;
+}
+@media (max-width: 767px) {
+  .instant-personal-slider.tab-no-flex .instant-per-row {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .instant-personal-slider.tab-no-flex .instant-per-row:first-child {
+    margin-top: 0px;
+  }
+  .instant-personal-slider.tab-no-flex .instant-per-col {
+    padding: 0;
+}
+ p {
+  font-size: 13px;
+}
+}
+@media (max-width: 991px) {
+  .personal-loan-box.pre-approved-box .personal-blue-card .btn-link {
+    max-width: 297px;
+  }
+}

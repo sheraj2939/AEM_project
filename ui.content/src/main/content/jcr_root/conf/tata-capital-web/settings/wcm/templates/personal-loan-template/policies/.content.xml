@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-12-19T17:36:13.341+05:30"
+        cq:lastModifiedBy="khushboo"
+        cq:lastReplicated="{Date}2022-12-16T19:44:47.852+05:30"
+        cq:lastReplicatedBy="nikita"
+        cq:lastReplicationAction="Activate"
+        cq:policy="tata-capital-web/components/page/policy_1671103731949"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:ReplicationStatus,mix:versionable]"
+        jcr:primaryType="nt:unstructured"
+        jcr:uuid="de05b98a-7827-4c3b-8c31-1032a4623d0a"
+        sling:resourceType="wcm/core/components/policies/mappings">
+        <root
+            cq:policy="tata-capital-web/components/container/policy_1574694950110"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/core/components/policies/mapping">
+            <container
+                cq:policy="tata-capital-web/components/container/policy_1574695586800"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping">
+                <tata-capital-web jcr:primaryType="nt:unstructured">
+                    <components jcr:primaryType="nt:unstructured">
+                        <text
+                            cq:policy="tata-capital-web/components/text/policy_94245291310700"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                        <teaser
+                            cq:policy="tata-capital-web/components/teaser/policy_162735773371300"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                        <tcl-web-components jcr:primaryType="nt:unstructured">
+                            <instant-loan-box jcr:primaryType="nt:unstructured">
+                                <instant-loan-box-card
+                                    cq:policy="tata-capital-web/components/tcl-web-components/instant-loan-box/instant-loan-box-card/policy_1669965792363"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                                <instant-loan-box-title
+                                    cq:policy="tata-capital-web/components/tcl-web-components/instant-loan-box/instant-loan-box-title/policy_1669975151433"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </instant-loan-box>
+                            <about-product jcr:primaryType="nt:unstructured">
+                                <about-product-text
+                                    cq:policy="tata-capital-web/components/tcl-web-components/about-product/about-product-text/policy_1669987789993"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </about-product>
+                            <banner jcr:primaryType="nt:unstructured">
+                                <banner-button
+                                    cq:policy="tata-capital-web/components/tcl-web-components/banner/banner-button/policy_1670050931717"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </banner>
+                            <payment-options jcr:primaryType="nt:unstructured">
+                                <payment-options-card
+                                    cq:policy="tata-capital-web/components/tcl-web-components/payment-options/payment-options-card/policy_1671109141532"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </payment-options>
+                            <key-features jcr:primaryType="nt:unstructured">
+                                <key-features-card
+                                    cq:policy="tata-capital-web/components/tcl-web-components/key-features/key-features-card/policy_1671110709057"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </key-features>
+                            <check-loan-eligibility jcr:primaryType="nt:unstructured">
+                                <check-loan-eligibility-items
+                                    cq:policy="tata-capital-web/components/tcl-web-components/check-loan-eligibility/check-loan-eligibility-items/policy_1671118210172"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </check-loan-eligibility>
+                            <customcontainer jcr:primaryType="nt:unstructured">
+                                <customcontainer
+                                    cq:policy="tata-capital-web/components/tcl-web-components/customcontainer/customcontainer/policy_2236680590857081"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </customcontainer>
+                            <apply-for-loan-on-whatsapp jcr:primaryType="nt:unstructured">
+                                <loan-whatsapp-col-left
+                                    cq:policy="tata-capital-web/components/tcl-web-components/apply-for-loan-on-whatsapp/loan-whatsapp-col-left/policy_1671184924964"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                                <loan-whatsapp-col-right
+                                    cq:policy="tata-capital-web/components/tcl-web-components/apply-for-loan-on-whatsapp/loan-whatsapp-col-right/policy_1671185100406"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </apply-for-loan-on-whatsapp>
+                            <why-to-choose-us jcr:primaryType="nt:unstructured">
+                                <why-to-choose-us-reasonlist
+                                    cq:policy="tata-capital-web/components/tcl-web-components/why-to-choose-us/why-to-choose-us-reasonlist/policy_1671184981788"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </why-to-choose-us>
+                            <quick-links-drawer jcr:primaryType="nt:unstructured">
+                                <quick-links-drawer
+                                    cq:policy="tata-capital-web/components/tcl-web-components/quick-links-drawer/quick-links-drawer/policy_1671185760567"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </quick-links-drawer>
+                            <explore-our-product jcr:primaryType="nt:unstructured">
+                                <explore-our-product-button
+                                    cq:policy="tata-capital-web/components/tcl-web-components/explore-our-product/explore-our-product-button/policy_2502244708295026"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </explore-our-product>
+                            <component-title jcr:primaryType="nt:unstructured">
+                                <component-title
+                                    cq:policy="tata-capital-web/components/tcl-web-components/component-title/component-title/policy_1671441646209"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </component-title>
+                        </tcl-web-components>
+                        <image
+                            cq:policy="tata-capital-web/components/image/policy_2177677951453704"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                        <list
+                            cq:policy="tata-capital-web/components/list/policy_1671185697337"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                    </components>
+                </tata-capital-web>
+            </container>
+            <responsivegrid
+                cq:policy="wcm/foundation/components/responsivegrid/policy_162626231760200"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping"/>
+        </root>
+    </jcr:content>
+</jcr:root>

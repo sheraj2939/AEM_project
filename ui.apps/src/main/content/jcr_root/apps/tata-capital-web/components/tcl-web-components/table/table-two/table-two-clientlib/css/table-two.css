@@ -1,0 +1,60 @@
+.table-main-new {
+  margin-bottom: 30px;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+.table-main-new table {
+  width: 100%;
+  border-collapse: collapse;
+  border-style: hidden;
+  table-layout: fixed;
+  border-radius: 10px;
+  overflow: hidden;
+  overflow-x: auto;
+}
+.table-main-new table td, .table-main-new table th {
+  padding: 16px 20px;
+  text-align: left;
+  vertical-align: top;
+}
+.table-main-new table tr {
+  background: linear-gradient(134.06deg, rgba(18, 104, 179, 0.71) 0%, rgba(16, 141, 250, 0.95) 99.11%);
+}
+.table-main-new table th {
+  font-family: "OpenSans-SemiBold";
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 130%;
+}
+.table-main-new table td {
+  background: #FFFFFF;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #333333;
+  border-bottom: 1px solid #E0E0E0;
+}
+.table-main-new table tbody tr:nth-child(odd) td {
+  background-color: #EAF4F2;
+}
+
+@media (max-width: 767px) {
+  .table-main-new {
+    padding-bottom: 10px;
+  }
+  .table-main-new table th {
+    font-size: 14px;
+  }
+  .table-main-new table td {
+    font-size: 13px;
+  }
+}
+.retes-chanrges-inner {
+  max-width: 1060px;
+  margin: auto;
+  box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, 0.0117647059);
+}
+.retes-chanrges-inner .table-section {
+  margin-bottom: 0px;
+}
+/*# sourceMappingURL=style.css.map */

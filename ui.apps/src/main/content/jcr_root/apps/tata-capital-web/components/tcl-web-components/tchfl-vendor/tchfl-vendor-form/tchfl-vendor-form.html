@@ -1,0 +1,117 @@
+<section class="loan-against-prop-box space-tb16">
+    <div class="container">
+        <div class="tops-heads has-only-back-btn">
+            <sly
+                data-sly-resource="${'form-upper-heading' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+            </sly>
+        </div>
+        <div class="loan-against-form-wrap">
+            <div class="loan-against-header">
+                <h4>${properties.greenFeildHeading @ context = 'html'}</h4>
+                <div class="clear-btn">
+                    <a href="javascript:void(0)" class="link jsClearContactForm">Clear <span
+                            class="icon-clear"></span></a>
+                </div>
+                <div class="loan-againstclose-btn jsContactUsNoClose d-none">
+                    <a href="javascript:void(0)" class="link jsContactUsMgs"> <span class="icon-close"></span></a>
+                </div>
+            </div>
+            <div class="loan-against-body">
+                <div class="loan-against-form " id="contact-us-no-form">
+                    <div class="loan-against-form-wrapper">
+                        <div class="row-flex row-flex-30">
+                            <div class="row-col-33 col-sp30">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">PAN details</label>
+                                    <div class="textbox-inner">
+                                        <input type="text"
+                                            class="input-textbox jsValueOK only-alpha-numeric-input disable-emoji"
+                                            placeholder="" data-type="pan" maxlength="10" data-form="panNumber">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-33 col-sp30">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Full Name</label>
+                                    <div class="textbox-inner">
+                                        <input type="text"
+                                            class="input-textbox jsValueOK only-alpha-input disable-emoji"
+                                            placeholder="" data-type="name" data-form="customerName" disabled="true">
+                                    </div>
+                                    <span class="text-infos">Name (as per PAN Card)</span>
+                                </div>
+                            </div>
+                            <div class="row-col-33 col-sp30">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Email ID</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" class="input-textbox jsValueOK" placeholder=""
+                                            data-type="email" data-form="personalEmail" disabled="true">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-33 col-sp30">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Mobile number</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" class="input-textbox only-numeric-input jsValueOK"
+                                            placeholder="" data-type="mobile" maxlength="10" disabled="true"
+                                            data-form="number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-33 name-title-col">
+                                <div class="form-textbox-new active">
+                                    <label class="label-name">Type of Document</label>
+                                    <div class="textbox-inner">
+                                        <div class="custom-select2">
+                                            <select class="js-select2 jsValueOK" data-type="pd-title"
+                                                data-form="docType">
+                                                <option value=""></option>
+                                                <option value="Passport">Passport</option>
+                                                <option value="DrivingLicense">Driving License</option>
+                                                <option value="VoterIDcard">Voter ID Card</option>
+                                                <option value="AadharCard">Aadhar Card</option>
+                                                <option value="Jobcard">Jobcard - NREGA</option>
+                                                <option value="NPR">Letter issued by NPR</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-col-33 col-sp30">
+                                <div class="form-textbox-new active">
+                                    <label class="label-name">Attachment</label>
+                                    <div class="textbox-inner custom-file-input">
+                                        <input class="input-filebox jsValueOK" data-file='fileInput' type="file"
+                                            id="formFile" accept="image/png, image/jpeg, application/pdf"
+                                            data-form="file" disabled="true">
+                                        <div class="custom-file">
+                                            <img class="iconfile"
+                                                src="/content/dam/tata-capital-web/assets/img/file-input-icon.svg"
+                                                alt="fileinputicon">
+                                            <span>Choose a file</span>
+                                        </div>
+                                        <span class="no-file-text">No file chosen</span>
+                                    </div>
+                                    <span class="custome-error-msg d-none">file size less than 5MB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-controls">
+                        <button class="btn-blue btn-large jsApplyContactUsNo jsVendorForm btn-disabled">Submit</button>
+                    </div>
+                </div>
+                <div class="loan-against-sucess-msg jsMsgContactSuccessful d-none">
+                    <a href="javascript:void(0)" class="msg-closed jsContactUsMgs"><span class="icon-close"></span></a>
+                    <div class="success-inner">
+                        <img src="/content/dam/tata-capital-web/assets/img/ticks.svg" alt="" class="ticks-img">
+                        <h2>We have <span>received your request</span></h2>
+                        <p class="text16i">A respective team representative will get in touch with you shortly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Segmentation Banner"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[banner-dialog]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <banner-variation
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                        <items jcr:primaryType="nt:unstructured">
+                            <bannerImage
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Banner Images"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                composite="{Boolean}true"
+                                eaem-show-on-collapse="EAEM.showProductName"
+                                fieldLabel="Banner Images">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <desktopImage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Desktop Image"
+                                                name="./desktopImage"
+                                                rootPath="/content/dam/tata-capital-web"/>
+                                            <tabImage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Tablet Image"
+                                                name="./tabImage"
+                                                rootPath="/content/dam/tata-capital-web"/>
+                                            <mobileImage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Mobile Image"
+                                                name="./mobileImage"
+                                                rootPath="/content/dam/tata-capital-web"/>
+                                            <bannerimagealt
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Image Alt Title "
+                                                name="./ImageAltTitle"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </bannerImage>
+                            <bannerTextContent
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Banner Text Content"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                composite="{Boolean}true"
+                                eaem-show-on-collapse="EAEM.showProductName"
+                                fieldLabel="Video Content For Right Scroller">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <title-logo
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Title Logo"
+                                                name="./titleLogo"
+                                                rootPath="/content/dam/tata-capital-web"/>
+                                            <title-logo-alt
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Title Logo alt Text"
+                                                name="./titleLogoAlt"/>
+                                            <title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Title"
+                                                name="./title"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </bannerTextContent>
+                            <bannerBackgorundAnimation
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Banner Background Animation"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                composite="{Boolean}true"
+                                eaem-show-on-collapse="EAEM.showProductName"
+                                fieldLabel="Banner Background Animation">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <banner-animation-left
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Banner Animation Left Image"
+                                                name="./bannerAnimationLeft"
+                                                rootPath="/content/dam/tata-capital-web"/>
+                                            <banner-left-alt
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Banner Animation Left Alt Title "
+                                                name="./bannerLeftAltTitle"/>
+                                            <banner-animation-right
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldLabel="Banner Animation Right Image"
+                                                name="./bannerAnimationRight"
+                                                rootPath="/content/dam/tata-capital-web"/>
+                                            <banner-right-alt
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Banner Animation Right Alt Title "
+                                                name="./bannerRightAltTitle"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </bannerBackgorundAnimation>
+                        </items>
+                    </banner-variation>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

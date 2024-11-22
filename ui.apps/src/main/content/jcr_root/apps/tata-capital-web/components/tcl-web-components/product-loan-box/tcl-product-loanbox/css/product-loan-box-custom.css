@@ -1,0 +1,43 @@
+.blue-card-items li .liItems:first-child {
+border-left: none;
+}
+.blue-card-items li .liItems{
+     border-left: 1px solid #E0E9F1;
+    padding: 0 30px;
+    width: 33.33%;
+    margin-top: 30px;
+}
+
+.liItems p:nth-child(1){
+color: #fff;
+margin-bottom: 10px;
+            line-height: 140%;
+    letter-spacing: 0.02em;
+}
+
+.liItems p:nth-child(2){
+    color: #fff;
+    font-family: "OpenSans-SemiBold";
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: normal;
+        }
+
+.views-links a{
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: "OpenSans-Regular";
+    text-decoration: underline;
+    }
+
+    .white-links a {
+        font-family: "OpenSans-Regular" !important;
+        font-size: 14px !important;
+        color: #FFFFFF ! important;
+    }
+.z-index-0.loan-details-outer{
+        z-index: 0;
+}

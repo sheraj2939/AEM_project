@@ -1,0 +1,99 @@
+.customer-say-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.customer-say-box .customer-col {
+  padding: 0 10px;
+  height: 100%;
+}
+
+.customer-say-box .slick-dots {
+  bottom: -42px;
+}
+
+.customer-say-box .customer-say-details {
+  background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.67) 99.11%);
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.01), 5px 0px 10px rgba(0, 0, 0, 0.01), 0px -5px 10px rgba(0, 0, 0, 0.01), 0px 5px 10px rgba(0, 0, 0, 0.01);
+  border: 1px solid #FFFFFF;
+  border-radius: 40px;
+  padding: 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-say-box .customer-say-details .customer-top {
+  flex-grow: 1;
+  max-height: 114px;
+}
+
+.customer-say-box .customer-say-details .customer-top p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.customer-say-box .customer-say-details .customer-bottom {
+  padding-top: 15px;
+}
+
+.customer-say-box .customer-say-details .customer-bottom h6 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.customer-say-box .customer-say-details .customer-bottom .loan-date {
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 0px;
+  color: rgba(51, 51, 51, 0.8);
+}
+
+.customer-say-box .customer-say-details .customer-bottom .loan-date span {
+  color: #711628;
+  font-family: "OpenSans-Bold";
+}
+
+.customer-say-box .customer-say-details .list-star {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px -3px 0;
+}
+
+.customer-say-box .customer-say-details .list-star img {
+  margin: 0 3px;
+}
+
+.customer-say-box .say-btn {
+  text-align: center;
+  padding-top: 43px;
+}
+
+@media (max-width: 767px) {
+  .customer-say-box .say-btn {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .customer-say-box .say-btn .btn-blue {
+    width: 100%;
+  }
+
+  .customer-say-box .customer-col {
+    padding: 0 7px;
+  }
+
+  .customer-say-box .mob-pd0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .customer-say-box .customer-say-details .customer-top p {
+    font-size: 13px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

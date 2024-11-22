@@ -1,0 +1,29 @@
+<section class="instant-support-box space-tb40">
+    <div class="container">
+        <sly
+            data-sly-resource="${'nstant-support-title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+        </sly>
+
+        <div class="instant-support-list">
+            <ul>
+                <sly data-sly-list.instantSupport="${resource.children}">
+                    <sly data-sly-test="${instantSupport.name == 'instantSupportList'}">
+                        <sly data-sly-list.support="${instantSupport.children}">
+                            <li>
+                                <div class="bg-div instant-cols">
+                                    <span class="all-icon47">
+                                        <span class="inner-icon">
+                                            <span class="${support.icon}"></span>
+                                        </span>
+                                    </span>
+                                    <p class="heading20 semibold">${support.title}</p>
+                                </div>
+                            </li>
+                        </sly>
+                    </sly>
+                </sly>
+
+            </ul>
+        </div>
+    </div>
+</section>

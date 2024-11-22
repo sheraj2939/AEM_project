@@ -1,0 +1,15 @@
+.faq-box .faq-row .faq-heading.cmp-tabs__tab--active:before {
+    content: "";
+}
+.branch-locator-tabs.faq-accordian-with-tab.vertical-tabs .tab-btn-group .tab-button.cmp-tabs__tab--active {
+    background: linear-gradient(134.06deg, rgba(18, 104, 179, 0.71) 0%, rgba(16, 141, 250, 0.95) 99.11%);
+    color: #FFFFFF;
+}
+.tab-btn-group .tab-item .tab-button.cmp-tabs__tab--active, .tab-btn-group .tab-item .tab-button:hover {
+    background: linear-gradient(134.06deg, rgba(18, 104, 179, 0.71) 0%, rgba(16, 141, 250, 0.95) 99.11%);
+    color: #FFFFFF;
+    box-shadow: 0px 25px 25px rgba(15, 157, 245, 0.02), 0px 70px 42px rgba(15, 157, 245, 0.07), 0px 31px 31px rgba(15, 157, 245, 0.12), 0px 8px 17px rgba(15, 157, 245, 0.14), 0px 0px 0px rgba(15, 157, 245, 0.14);
+}
+.cutom-branch-pandding{
+    padding-top: 5px;
+}

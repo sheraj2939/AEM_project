@@ -1,0 +1,53 @@
+.italic-list {
+  padding-left: 8px;
+}
+.italic-list li {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  margin: 10px 0;
+  position: relative;
+  padding-left: 13px;
+}
+.italic-list li:before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #4F4F4F;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+.italic-list li:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.italic-list li:nth-child(1) {
+  margin-top: 0;
+}
+
+.rates-charges-list.list-circle-info li {
+  letter-spacing: 0.02em;
+}
+
+.no-padding.list-circle-info {
+  padding-left: 0;
+}
+.no-padding.list-circle-info li {
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 767px) {
+  .italic-list {
+    padding-left: 8px;
+  }
+  .italic-list li {
+    font-size: 13px;
+    line-height: 18px;
+    margin: 8px 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

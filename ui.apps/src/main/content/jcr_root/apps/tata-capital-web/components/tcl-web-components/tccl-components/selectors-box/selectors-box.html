@@ -1,0 +1,35 @@
+<!-- selectors -->
+<section class="selectors-box space-tb40 space-b80">
+    <div class="container">
+        <div class="selectors-inner bg-div" style="background-image: url('${properties.desktopImage @ context='uri'}')">
+            <div class="tops-heads">
+                <h2>${properties.title} <span>${properties.boldTerm}</span></h2>
+            </div>
+            <ul class="selectors-lists">
+                <sly data-sly-list.selectorList="${resource.children}">
+                    <sly data-sly-test="${selectorList.name == 'selectorsLists'}">
+                        <sly data-sly-list.selectorItem="${selectorList.children}">
+                            <li>
+                                <div class="selectors-cols">
+                                    <span class="selectors-img">
+                                        <img src="${selectorItem.img}" alt="${selectorItem.imgAlt}">
+                                    </span>
+                                    <p class="text14">${selectorItem.imgAltLeft}</p>
+                                </div>
+                            </li>
+                        </sly>
+                    </sly>
+                </sly>
+
+            </ul>
+        </div>
+    </div>
+</section>
+<style data-sly-test="${properties.mobileImage}">
+    @media (max-width: 425px) {
+        .selectors-box .selectors-inner {
+            background-image: url('${properties.mobileImage @ context=' uri'}');
+        }
+    }
+</style>
+<!-- selectors -->

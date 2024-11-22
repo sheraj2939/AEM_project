@@ -1,0 +1,58 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+	<sly data-sly-call="${clientlib.css @ categories='tcl-values-box'}"></sly>
+</sly>
+<!--  values box  21-3-2024-->
+    <section class="values-box space-tb40">
+        <div class="container">
+            <div class="tops-heads">
+                <h2>${properties.heading}<span>${properties.boldheading}</span></h2>
+            </div>
+            <div class="values-inners">
+            <div class="values-rows">
+                <div class="values-key">
+                    <h3 class="semibold heading20">${properties.keyProjectsTitle}</h3>
+                    <ul class="lists-key-project">        
+                        <sly data-sly-list.multi="${resource.children}">
+                            <sly data-sly-test="${multi.name == 'keyProjectsBox'}">
+                                <sly data-sly-list.project="${multi.children}">
+                                    <li>
+                                        <div class="keys-contents">
+                                            <p>${project.projectTitle}</p>
+                                            <span class="keys-date">${project.date}</span>
+                                        </div>
+                                        <div class="keys-imgs">
+                                            <img src="${project.Img}" alt="${project.alt}">
+                                        </div>
+                                    </li>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </ul>
+                    <div class="mg-t20">
+                        <a href="${propeties.keyProjBtnPath}" target="${properties.newTab ? '_blank':''}" class="btn-blue btn-large">${properties.keyProjBtn}</a>
+                    </div>
+                </div>
+                <div class="values-right">
+                    <div class="values-right-inner">    
+                        <ul class="values-info-list">
+                            <sly data-sly-list.multi="${resource.children}">
+                                <sly data-sly-test="${multi.name == 'valuesBoxRight'}">
+                                    <sly data-sly-list.blueBox="${multi.children}">
+                                        <li>
+                                            <div class="values-cols">
+                                                <p class="semibold heading20"><span class="icon-loan-education"></span> ${blueBox.title}</p>
+                                                <p class="vals-helps"><span>${blueBox.helpCount}</span>${blueBox.help}</p>
+                                                <p class="vals-helps vals-reach"><span>${blueBox.reachCount}</span>${blueBox.reach}</p>
+                                            </div>
+                                        </li>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </ul>                        
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+<!--  values box 21-3-2024-->    

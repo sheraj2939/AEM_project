@@ -1,0 +1,201 @@
+<section class="loan-against-prop-box space-tb40">
+    <div class="container">
+        <div class="tops-heads ${!properties.backBtn ? 'has-only-back-btn' : ''}">
+            <sly data-sly-test="${!properties.backBtn}">
+                <div class="comp-back-to">
+                    <sly data-sly-test="${properties.backButtonLink}">
+                        <a href="${properties.backButtonLink}" class="formBackBtn"><span
+                                class="icon-arrow-tail-left"></span>${properties.backText ? properties.backText :
+                            'Back'}</a>
+                    </sly>
+                    <sly data-sly-test="${!properties.backButtonLink}">
+                        <a href="javascript:void(0)" class="formBackBtn"><span
+                                class="icon-arrow-tail-left"></span>${properties.backText ? properties.backText :
+                            'Back'}</a>
+                    </sly>
+                </div>
+            </sly>
+            <sly
+                data-sly-resource="${'form-upper-heading' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+            </sly>
+        </div>
+        <div class="loan-against-form-wrap">
+            <input type="text" id="" name="lname" class="hidden disable-emoji" data-loanOnCar="productName"
+                value="${properties.loanOnCar ? 'true' : 'false'}">
+            <div class="loan-against-header">
+                ${properties.greenFeildHeading @ context = 'html'}
+                <div class="clear-btn">
+                    <a href="javascript:void(0)" class="link jsClearLangComm">Clear <span class="icon-clear"></span></a>
+                </div>
+                <div class="loan-againstclose-btn d-none">
+                    <a href="javascript:void(0)" class="link jsCloseLangCommMgs"> <span class="icon-close"></span></a>
+                </div>
+            </div>
+            <div class="loan-against-body">
+                <img src="${properties.cornerImage}" class="form-bottom-right-img" alt="${properties.formAltImage}">
+                <div class="loan-against-form" id="language-communication-form">
+                    <sly data-sly-test="${properties.noteText}">
+                        <div class="notes-text">
+                            <p class="text-12">${properties.noteText}</p>
+                        </div>
+                    </sly>
+                    <sly data-sly-list.inputList="${resource.children}">
+                        <sly data-sly-test="${inputList.name == 'inputFeild'}">
+                            <sly data-sly-list.inputChecks="${inputList.children}">
+                                <div class="loan-against-form-wrapper">
+                                    <h3 class="form-heading">${inputChecks.headingOne}</h3>
+
+                                    <div class="row-flex language-comminucation-rows">
+                                        <sly data-sly-test="${inputChecks.english}">
+                                            <div class="row-col-25 lang-comm-cols">
+                                                <div class="lang-comm-list">
+                                                    <input type="radio" name="language communication" data-language="English"
+                                                        class="langs-radio" checked>
+                                                    <label>
+                                                        <span class="langs-ticks"></span>
+                                                        <span class="langs-texts">English</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.hindi}">
+                                            <div class="row-col-25 lang-comm-cols">
+                                                <div class="lang-comm-list">
+                                                    <input type="radio" name="language communication" data-language="Hindi"
+                                                        class="langs-radio">
+                                                    <label>
+                                                        <span class="langs-ticks"></span>
+                                                        <span class="langs-texts">हिन्दी</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.gujarati}">
+                                            <div class="row-col-25 lang-comm-cols">
+                                                <div class="lang-comm-list">
+                                                    <input type="radio" name="language communication" data-language="Gujarati"
+                                                        class="langs-radio">
+                                                    <label>
+                                                        <span class="langs-ticks"></span>
+                                                        <span class="langs-texts">ગુજરાતી</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.marathi}">
+                                            <div class="row-col-25 lang-comm-cols">
+                                                <div class="lang-comm-list">
+                                                    <input type="radio" name="language communication" data-language="Marathi"
+                                                        class="langs-radio">
+                                                    <label>
+                                                        <span class="langs-ticks"></span>
+                                                        <span class="langs-texts">मराठी</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.punjabi}">
+                                            <div class="row-col-25 lang-comm-cols">
+                                                <div class="lang-comm-list">
+                                                    <input type="radio" name="language communication" data-language="Punjabi"
+                                                        class="langs-radio">
+                                                    <label>
+                                                        <span class="langs-ticks"></span>
+                                                        <span class="langs-texts">ਪੰਜਾਬੀ</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.bengali}">
+                                            <div class="row-col-25 lang-comm-cols">
+                                                <div class="lang-comm-list">
+                                                    <input type="radio" name="language communication" data-language="Bengali"
+                                                        class="langs-radio">
+                                                    <label>
+                                                        <span class="langs-ticks"></span>
+                                                        <span class="langs-texts">বাংলা</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.oriya}">
+                                            <div class="row-col-25 lang-comm-cols">
+                                                <div class="lang-comm-list">
+                                                    <input type="radio" name="language communication" data-language="Oriya"
+                                                        class="langs-radio">
+                                                    <label>
+                                                        <span class="langs-ticks"></span>
+                                                        <span class="langs-texts">ଓଡ଼ିଆ</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.tamil}">
+                                            <div class="row-col-25 lang-comm-cols">
+                                                <div class="lang-comm-list">
+                                                    <input type="radio" name="language communication" data-language="Tamil"
+                                                        class="langs-radio">
+                                                    <label>
+                                                        <span class="langs-ticks"></span>
+                                                        <span class="langs-texts">தமிழ்</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.telugu}">
+                                            <div class="row-col-25 lang-comm-cols">
+                                                <div class="lang-comm-list">
+                                                    <input type="radio" name="language communication" data-language="Telugu"
+                                                        class="langs-radio">
+                                                    <label>
+                                                        <span class="langs-ticks"></span>
+                                                        <span class="langs-texts">తెలుగు</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${inputChecks.kannada}">
+                                            <div class="row-col-25 lang-comm-cols">
+                                                <div class="lang-comm-list">
+                                                    <input type="radio" name="language communication" data-language="Kannada"
+                                                        class="langs-radio">
+                                                    <label>
+                                                        <span class="langs-ticks"></span>
+                                                        <span class="langs-texts">ಕನ್ನಡ</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </sly>
+
+                                    </div>
+                                </div>
+                            </sly>
+                        </sly>
+                    </sly>
+
+                    <div class="btn-controls pd-t15i">
+                        <button class="btn-blue btn-large jsLangCommunication"
+                            data-track="${properties.needFormTracking ? 'tracking' : '' }">Save</button>
+                        ${properties.formDescription @ context = 'html'}
+                        <!-- <p class="la-agree-btn">By submitting your choice, you agree to receive all future
+                            communications from TATA Capital in the selected language.</p> -->
+                    </div>
+                </div>
+
+                <div class="loan-against-sucess-msg d-none jsMsgLanguageComm">
+                    <a href="javascript:void(0)" class="msg-closed jsCloseLangCommMgs">
+                        <span class="icon-close"></span>
+                    </a>
+                    <div class="success-inner pd-t15i">
+                        <img src="assets/img/ticks.svg" alt="" class="ticks-img">
+                        <h2>Your selection has been saved!</h2>
+                        <p class="text16i">Changed your mind about your communication preferences? <a
+                                href="javascript:void(0)" class="edit-text-link jsEditSelections">Edit your
+                                selection</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

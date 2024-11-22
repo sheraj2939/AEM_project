@@ -1,0 +1,204 @@
+<footer class="footer">          
+        <div class="footer-inner">
+            <!-- our-other-websites-->
+            <div class="our-other-websites jsAccordian">
+                <div class="footer-container">
+                    <div class="row-flex">                        
+                        <div class="col-sp15 row-col-50 other-rows" accod-row>
+                            <div class="accordian-panel">
+                                <a href="javascript:void(0)" class="footer-headings" accod-head>${properties.otherSubsheading ? properties.otherSubsheading : 'Our Subsidiaries'}</a>
+                                <div class="our-websites-inner" accod-body>
+                                    <ul class="footer-links mob-foot-link">
+                                        <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                            <sly data-sly-test="${loginLinks.name == 'footerOtherWebsite'}">
+                                                <sly data-sly-list.footerTopList="${loginLinks.listChildren}">
+                                                    <li><a href="${footerTopList.redirectionLink}" target="${footerTopList.openInNewTab ? '_blank' : ''}">${footerTopList.heading}</a></li>
+                                                </sly>
+                                            </sly>
+                                        </sly>
+                                    </ul>   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sp15 row-col-50 other-rows" accod-row>
+                            <div class="accordian-panel">
+                                <a href="javascript:void(0)" class="footer-headings" accod-head>${properties.websiteHeading ? properties.websiteHeading : 'Group Websites'}</a>
+                                <div class="our-websites-inner" accod-body>
+                                    <ul class="footer-links mob-foot-link">
+                                        <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                            <sly data-sly-test="${loginLinks.name == 'otherSubscriber'}">
+                                                <sly data-sly-list.footerTopList="${loginLinks.listChildren}">
+                                                    <li><a href="${footerTopList.redirectionLink}" target="${footerTopList.openInNewTab ? '_blank' : ''}">${footerTopList.heading @ context='html'}</a></li>
+                                                </sly>
+                                            </sly>
+                                        </sly>
+                                    </ul>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- our-other-websites-->
+
+            <!-- footer-main-content-->
+            <div class="footer-main-content">
+                <div class="footer-container">
+                    <div class="top-outer-policies bottom-outer-noline">                      
+                        <p class="footer-headings no-arrows">${properties.otherDocHeading}</p>                
+                        <div class="policies-tabnav accrodian" id="policies-codes2">
+                            <div class="hidden-xs policies-tab-top">
+                                <ul class="tablist-nav navTab">
+                                    <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                        <sly data-sly-test="${loginLinks.name == 'otherDocument'}">
+                                            <sly data-sly-list.corpotateList="${loginLinks.listChildren}">
+                                                <sly data-sly-test.tabData="${'tab{0}_{1}' @ format =[drop.name,corpotateListList.count]}">
+                                                    <li class="nav-tablist"><a href="javascript:void(0)" class="nav-link" data-collapse="collapse" data-target="${tabData}">${corpotateList.tittle}</a></li>
+                                                </sly>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </ul>
+                            </div>                                
+                            <div class="tab-content">
+                                <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                    <sly data-sly-test="${loginLinks.name == 'otherDocument'}">
+                                        <sly data-sly-list.corpotateList="${loginLinks.listChildren}">
+                                            <sly data-sly-test.tabData="${'tab{0}_{1}' @ format =[drop.name,corpotateListList.count]}">
+                                                <div class="accordian-content">
+                                                    <div class="tab-accordian visible-xs">
+                                                        <a class="tab-title" href="javascript:void(0)" data-toggle="collapse" aria-expanded="false" data-target="${tabData}">${corpotateList.tittle}</a>
+                                                    </div>
+                                                    <div class="tab-panel collapse" id="${tabData}">
+                                                        <ul class="footer-links">
+                                                            <sly data-sly-list.loginLinks="${corpotateList.listChildren}">
+                                                                <sly data-sly-test="${loginLinks.name == 'otherDocList'}">
+                                                                    <sly data-sly-list.corpotateList="${loginLinks.listChildren}">
+                                                                        <sly data-sly-test="${!corpotateList.languagePopup}">
+                                                                            <li><a href="${corpotateList.subMenuLink}">${corpotateList.subMenuHead}</a></li>
+                                                                        </sly>
+                                                                        <sly data-sly-test="${corpotateList.languagePopup}">
+                                                                            <li><a href="javascript:void(0);" data-popovermodalMITC="#prefrencelang-modal" data-footer="footerAnalyticData-${properties.otherDocHeading}">${corpotateList.subMenuHead}</a></li>
+                                                                        </sly>
+                                                                    </sly>
+                                                                </sly>
+                                                            </sly>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </sly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer-main-content-->
+
+            <!-- copyright-box-->
+            <div class="copyright-box">
+                <div class="footer-container">
+                    <div class="copyright-inner">    
+                        <div class="socal-lists">
+                            <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                <sly data-sly-test="${loginLinks.name == 'socialMedia'}">
+                                    <sly data-sly-list.socialMediaList="${loginLinks.listChildren}">
+                                        <a href="${socialMediaList.redirectionLink}" target="${socialMediaList.openInNewTab ? '_blank' : ''}">
+                                            <img alt="${socialMediaList.altName}" class="lozad" src="${socialMediaList.imagePath}">
+                                        </a>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </div>  
+                        <div class="copyright-links">
+                            <ul>
+                                <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                    <sly data-sly-test="${loginLinks.name == 'copyRight'}">
+                                        <sly data-sly-list.copyRightList="${loginLinks.listChildren}">
+                                            <li><a href="${copyRightList.redirectionLink}" target="${copyRightList.openInNewTab? '_blank' : ''}">${copyRightList.heading}</a></li>
+                                        </sly>
+                                    </sly>
+                                </sly>
+                            </ul>
+                        </div>
+                        <div class="copyright-text">
+                            ${properties.description @context = 'html'}
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+            <!-- copyright-box-->
+        </div>
+    </footer>  
+
+    <!--home loan modal -->
+    <div class="popover-modal modals-blue fade popover-show" id="prefrencelang-modal">
+        <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md2">
+            <div class="modal-tb-content">
+                <div class="popover-modal-content prefrence-language-content">
+                    <button data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></button>    
+                    <div class="popover-modal-body">                      
+                        <div class="modal-body-inner">      
+                            <div class="prefrence-mx">                
+                                <img src="/content/dam/tata-capital-web/Tc-footer-images/mic.svg" alt="" class="lozad pdf-imgs">
+                                <div class="strongCss">
+                                    <strong class="heading20"><span>Most Important Terms & Conditions - Home Loans</span></strong>
+                                </div>
+                                <p>Download in your preferred language</p>
+                                <div class="mx-314">
+                                    <div class="custom-select2 select2-white">
+                                        <select class="js-select2" id="mitc-language-dropdown" data-type="language" data-placeholder="Language">
+                                            <option value="English">Select an option</option>
+                                            <sly  data-sly-list.loginLinks="${resource.listChildren}">
+                                                <sly data-sly-test="${loginLinks.name == 'otherDocument'}">
+                                                    <sly data-sly-list.otherDocLists="${loginLinks.listChildren}">
+                                                      <sly data-sly-list.submenudata="${otherDocLists.children}">
+                                                        <sly data-sly-test="${submenudata.name == 'otherDocList'}">
+                                                            <sly data-sly-list.subMenulist="${submenudata.children}">
+                                                               <sly data-sly-list.mitcLanguage="${subMenulist.children}">
+                                                                  <sly data-sly-test="${mitcLanguage.name == 'mitcLanguageDropdown'}">
+                                                                    <sly data-sly-list.mitcLanguageItem="${mitcLanguage.children}">
+                                                                      <option value="${mitcLanguageItem.languageName}" data-pdf="${mitcLanguageItem.pdfPath}" class="optInvisible" data-parent="${subMenulist.subMenuHead}">${mitcLanguageItem.languageName}</option>         
+                                                                </sly>
+                                                            </sly>
+                                                        </sly>
+                                                    </sly>
+                                                </sly>
+                                            </sly>
+                                         </sly>
+                                    </sly>
+                                  </sly>                               
+                                        </select>
+                                    </div>                        
+                                </div>
+                                <a href="" id="mitc-language-download-btn" download class="btn-link btn-big btn-with-card-bg min-w149 btn-xs-full disabled" data-popoverclose="popover-modal">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--home loan modal -->
+<div class="popover-modal modals-blue fade custom-blue-fade" id="failure-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-lg2">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content subscribes-content">
+                <button data-dismiss="popover-modal" class="popover-modal-close jsSubscribeClose"><span
+                        class="icon-close"></span></button>
+                <div class="popover-modal-body">
+                    <div class="modal-body-inner">
+                        <div class="mx-490">
+                            <img src="/content/dam/tata-capital-web/assets/img/error-icon-red.png" alt=""
+                                class="thanks-imgs">
+                            <p class="heading36 bold">Uh oh, something went wrong</p>
+                            <p class="text16i">Please try again later.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

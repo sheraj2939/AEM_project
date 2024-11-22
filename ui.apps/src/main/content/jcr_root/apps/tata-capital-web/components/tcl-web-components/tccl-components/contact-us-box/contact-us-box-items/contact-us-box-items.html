@@ -1,0 +1,34 @@
+<div class="bottom-content-col bg-div">
+    <div class="top-content">
+        <h3 class="heading20">
+            ${properties.headingGreen}
+        </h3>
+    </div>
+    <div class="bottom-content">
+        <div class="bottom-cont-inners">
+            <h3 class="heading20 dark-text mg-b8"><span>${properties.cardTopHeading}</span></h3>
+            <div class="text14">${properties.topDescription @ context = 'html'}</div>
+        </div>
+        <div class="bottom-cont-bot">
+            <ul class="company-info min-height-170">
+                <sly data-sly-list.cardList="${resource.children}">
+                    <sly data-sly-test="${cardList.name == 'cardMulti'}">
+                        <sly data-sly-list.cardItem="${cardList.children}">
+                            <li>
+                                <h3 class="heading20 dark-text mg-b8"><span>${cardItem.cardHeading}</span></h3>
+                                <p class="heading20 semibold">
+                                    <sly data-sly-test="${!cardItem.checkLink}">
+                                        <p class="text14">${cardItem.cardTitle}</p>
+                                    </sly>
+                                    <sly data-sly-test="${cardItem.checkLink}">
+                                        <a class="text-suchsia">${cardItem.cardTitle}</a>
+                                    </sly>
+                                </p>
+                            </li>
+                        </sly>
+                    </sly>
+                </sly>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,72 @@
+.subsidiary-box .subsidiary-ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -30px;
+}
+.subsidiary-box .subsidiary-ul .subsidiary-li {
+  padding: 0 15px;
+  margin-top: 30px;
+  width: 25%;
+}
+.subsidiary-box .subsidiary-col {
+  display: block;
+  background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.71) 0%, rgba(255, 255, 255, 0.95) 99.11%), linear-gradient(134.06deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.67) 99.11%);
+  width: 100%;
+  height: 100%;
+  padding: 25px 25px 60px;
+  position: relative;
+  transition: all 0.2s;
+}
+.subsidiary-box .subsidiary-col .heading20 {
+  margin-bottom: 10px;
+}
+.subsidiary-box .subsidiary-col .subsidiary-bottom {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  padding: 13px 25px 25px;
+}
+.subsidiary-box .subsidiary-col .subsidiary-bottom span {
+  color: #1961AC;
+  display: block;
+}
+.subsidiary-box .subsidiary-col:hover {
+  background: linear-gradient(134.06deg, rgba(18, 98, 167, 0.71) 0%, rgba(7, 125, 227, 0.95) 99.11%);
+  box-shadow: 0px 70px 42px rgba(15, 157, 245, 0.07), 0px 31px 31px rgba(15, 157, 245, 0.12), 0px 8px 17px rgba(15, 157, 245, 0.14), 0px 0px 0px rgba(15, 157, 245, 0.14), -5px 0px 10px rgba(0, 0, 0, 0.01), 5px 0px 10px rgba(0, 0, 0, 0.01), 0px -5px 10px rgba(0, 0, 0, 0.01), 0px 5px 10px rgba(0, 0, 0, 0.01);
+}
+.subsidiary-box .subsidiary-col:hover .heading20, .subsidiary-box .subsidiary-col:hover p {
+  color: #fff;
+}
+.subsidiary-box .subsidiary-col:hover .subsidiary-bottom span {
+  color: #fff;
+}
+
+@media (max-width: 1199px) {
+  .subsidiary-box .subsidiary-ul .subsidiary-li {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .subsidiary-box .subsidiary-ul {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: -20px;
+  }
+  .subsidiary-box .subsidiary-ul .subsidiary-li {
+    width: 100%;
+    padding: 0px;
+    margin-top: 20px;
+  }
+  .subsidiary-box .subsidiary-col {
+    padding: 24px 24px 51px;
+  }
+  .subsidiary-box .subsidiary-col .subsidiary-bottom {
+    padding: 13px 24px 24px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

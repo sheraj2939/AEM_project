@@ -1,0 +1,523 @@
+.our-presence-section {
+  position: relative;
+}
+.our-presence-section.presence-box {
+  padding-bottom: 25px;
+}
+.our-presence-section.text-content-box p {
+  font-size: 13px;
+  line-height: 24px;
+  color: #333333;
+  font-family: "OpenSans-Bold";
+}
+.our-presence-section.text-content-box .state-tooltip p {
+  color: #ffffff;
+}
+
+/* Map Pointer */
+.map-dropdown {
+  display: none;
+}
+
+.mapbody {
+  position: relative;
+  max-width: 767px;
+}
+.mapbody.wealthmap {
+  max-width: none;
+  height: auto;
+}
+
+.map-cntr .wealthmap {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+}
+
+.state-tooltip {
+  font-family: "Open Sans", sans-serif;
+  background: #d8df50;
+  padding: 8px 15px;
+  font-size: 14px;
+  position: absolute;
+  transform: translateX(-50%);
+  text-align: center;
+  max-width: 170px;
+  white-space: nowrap;
+  display: none;
+  pointer-events: none;
+  border: 1px solid #d8df50;
+  border-radius: 0px;
+}
+.state-tooltip p {
+  color: #464636 !important;
+}
+.state-tooltip:before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ffffff;
+}
+.state-tooltip:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #d8df50;
+}
+.state-tooltip.arrow-right:after {
+  left: auto;
+  transform: none;
+  right: 10px;
+}
+
+.state-map {
+  cursor: pointer;
+}
+
+.state-tooltip-container {
+  position: absolute;
+}
+.state-tooltip-container .state-tooltip-place {
+  font-family: "Open Sans", sans-serif;
+  background: #d8df50;
+  padding: 2px 10px;
+  font-size: 14px;
+  position: absolute;
+  transform: translateX(-50%);
+  text-align: center;
+  max-width: 170px;
+  white-space: nowrap;
+  pointer-events: none;
+  border: 1px solid #d8df50;
+  border-radius: 0px;
+}
+.state-tooltip-container .state-tooltip-place p {
+  color: #464636;
+}
+.state-tooltip-container .state-tooltip-place:before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #ffffff;
+}
+.state-tooltip-container .state-tooltip-place:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #d8df50;
+}
+.state-tooltip-container .state-tooltip-place.arrow-right:after {
+  left: auto;
+  transform: none;
+  right: 10px;
+}
+.state-tooltip-container.maharashtra .state-tooltip-place:nth-child(1) {
+  left: 28px;
+  top: 0px;
+}
+.state-tooltip-container.maharashtra .state-tooltip-place:nth-child(2) {
+  top: 20px;
+  left: -50px;
+}
+.state-tooltip-container.maharashtra .state-tooltip-place:nth-child(3) {
+  top: 67px;
+  left: -53px;
+}
+.state-tooltip-container.gujarat .state-tooltip-place:nth-child(1) {
+  top: -10px;
+  left: 25px;
+}
+.state-tooltip-container.gujarat .state-tooltip-place:nth-child(2) {
+  top: 30px;
+  left: 34px;
+}
+.state-tooltip-container.punjab .state-tooltip-place:nth-child(1) {
+  top: 10px;
+  left: 15px;
+}
+.state-tooltip-container.westbengal .state-tooltip-place:nth-child(1) {
+  top: 62px;
+  left: 7px;
+}
+.state-tooltip-container.madhyapradesh .state-tooltip-place:nth-child(1) {
+  top: 55px;
+  left: -60px;
+}
+.state-tooltip-container.jharkhand .state-tooltip-place:nth-child(1) {
+  top: 13px;
+  left: -10px;
+}
+.state-tooltip-container.odisha .state-tooltip-place:nth-child(1) {
+  top: 5px;
+  left: 35px;
+}
+.state-tooltip-container.telangana .state-tooltip-place:nth-child(1) {
+  top: 27px;
+  left: -29px;
+}
+.state-tooltip-container.tamilnadu .state-tooltip-place:nth-child(1) {
+  top: -18px;
+  left: 25px;
+}
+.state-tooltip-container.karnataka .state-tooltip-place:nth-child(1) {
+  top: 65px;
+  left: 24px;
+}
+.state-tooltip-container.delhi .state-tooltip-place:nth-child(1) {
+  top: -30px;
+  left: 1px;
+}
+
+.map-cntr .bg-div {
+  padding: 25px;
+}
+
+.color-scheme {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: -30px;
+  margin-right: -70px;
+}
+.color-scheme .label {
+  font-size: 12px;
+  color: #9D9D9D;
+  font-weight: 700;
+  margin-right: 10px;
+}
+.color-scheme .color-theme {
+  height: 10px;
+  width: 70px;
+  background: rgb(143, 187, 222);
+  background: linear-gradient(90deg, rgb(143, 187, 222) 0%, rgb(79, 140, 197) 100%);
+}
+
+@media (min-width: 1199px) {
+  .mapbody {
+    height: 880px;
+  }
+}
+@media (max-width: 1199px) {
+  .color-scheme {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .our-presence-section.presence-box {
+    padding: 30px 15px;
+  }
+  .citylist {
+    display: none;
+  }
+  .state-tooltip-container .state-tooltip-place {
+    padding: 2px 10px;
+  }
+  .state-tooltip-container .state-tooltip-place p {
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .our-presence-section .mapbody svg {
+    width: 478px;
+    margin: 0 auto;
+    display: block;
+  }
+  .map-dropdown {
+    display: block;
+    width: 100%;
+    background: transparent;
+    border-radius: 4px;
+    position: relative;
+  }
+  .map-dropdown.dropdown-tab {
+    margin-bottom: 35px;
+    width: 100%;
+  }
+  .map-dropdown.dropdown-tab.show .btn-dropdown:after {
+    content: "\e90d";
+  }
+  .map-dropdown.dropdown-tab .state-label {
+    font-size: 12px;
+    color: #9D9D9D;
+  }
+  .map-dropdown.dropdown-tab .btn-dropdown {
+    color: #828282;
+    height: 40px;
+    padding: 11px 30px 11px 0px;
+    font-family: "OpenSans-Regular";
+    width: 100%;
+    background: transparent;
+    border-radius: 0px;
+    border: none;
+    text-align: left;
+    text-transform: capitalize;
+    position: relative;
+    font-size: 14px;
+    border-bottom: 1px solid #C7C7C7;
+    font-weight: 700;
+  }
+  .map-dropdown.dropdown-tab .btn-dropdown:after {
+    color: #333333;
+    content: "\e90e";
+    font-family: "icomoon";
+    font-size: 10px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .map-dropdown.dropdown-tab .site-tab {
+    margin: 0;
+    padding: 10px 15px;
+    max-height: 195px;
+    overflow-y: scroll;
+    border-radius: 0px;
+    z-index: 1;
+    background-color: #4a87c7;
+  }
+  .map-dropdown.dropdown-tab .site-tab li a {
+    padding: 5px 0;
+    color: #ffffff;
+    display: block;
+  }
+  .map-dropdown.dropdown-tab .site-tab li.active a {
+    font-family: "OpenSans-Bold";
+  }
+  .mapbody {
+    margin: 30px auto 0;
+    border: 4px solid #F3F3EA;
+    padding: 10px;
+  }
+  .mapbody.wealthmap {
+    padding: 0;
+    border: 0;
+    margin-top: 10px;
+  }
+  .state-tooltip {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  .state-tooltip p {
+    font-size: 13px !important;
+  }
+  .state-tooltip:after {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #d8df50;
+  }
+  .state-tooltip-container.in-mh .state-tooltip-place:nth-child(1) {
+    left: 20px;
+    top: -10px;
+  }
+  .state-tooltip-container.in-mh .state-tooltip-place:nth-child(2) {
+    left: -57px;
+    top: 28px;
+  }
+  .state-tooltip-container.in-mh .state-tooltip-place:nth-child(3) {
+    top: 61px;
+    left: -52px;
+  }
+  .state-tooltip-container.in-gj .state-tooltip-place:nth-child(1) {
+    left: 25px;
+    top: -4px;
+  }
+  .state-tooltip-container.in-gj .state-tooltip-place:nth-child(2) {
+    top: 31px;
+    left: 28px;
+  }
+  .state-tooltip-container.in-pb .state-tooltip-place:nth-child(1) {
+    left: 6px;
+    top: 3px;
+  }
+  .state-tooltip-container.in-wb .state-tooltip-place:nth-child(1) {
+    top: 53px;
+    left: 6px;
+  }
+  .state-tooltip-container.in-mp .state-tooltip-place:nth-child(1) {
+    left: -62px;
+    top: 44px;
+  }
+  .state-tooltip-container.in-jh .state-tooltip-place:nth-child(1) {
+    left: -11px;
+    top: -3px;
+  }
+  .state-tooltip-container.in-od .state-tooltip-place:nth-child(1) {
+    left: 22px;
+    top: 0;
+  }
+  .state-tooltip-container.in-ts .state-tooltip-place:nth-child(1) {
+    left: -27px;
+    top: 18px;
+  }
+  .state-tooltip-container.in-tn .state-tooltip-place:nth-child(1) {
+    left: 14px;
+    top: -15px;
+  }
+  .state-tooltip-container.in-ka .state-tooltip-place:nth-child(1) {
+    top: 52px;
+    left: 15px;
+  }
+  .state-tooltip-container.in-dl .state-tooltip-place:nth-child(1) {
+    top: -26px;
+    left: 0px;
+  }
+  .map-cntr .bg-div {
+    padding: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .our-presence-section .mapbody svg {
+    width: 383px;
+  }
+  .state-tooltip-container.in-mh .state-tooltip-place:nth-child(1) {
+    top: -15px;
+  }
+  .state-tooltip-container.in-mh .state-tooltip-place:nth-child(2) {
+    left: -47px;
+    top: 8px;
+  }
+  .state-tooltip-container.in-mh .state-tooltip-place:nth-child(3) {
+    top: 40px;
+    left: -44px;
+  }
+  .state-tooltip-container.in-gj .state-tooltip-place:nth-child(1) {
+    left: 20px;
+    top: -10px;
+  }
+  .state-tooltip-container.in-gj .state-tooltip-place:nth-child(2) {
+    top: 21px;
+    left: 21px;
+  }
+  .state-tooltip-container.in-pb .state-tooltip-place:nth-child(1) {
+    top: -3px;
+  }
+  .state-tooltip-container.in-wb .state-tooltip-place:nth-child(1) {
+    top: 35px;
+    left: 4px;
+  }
+  .state-tooltip-container.in-mp .state-tooltip-place:nth-child(1) {
+    left: -45px;
+    top: 25px;
+  }
+  .state-tooltip-container.in-jh .state-tooltip-place:nth-child(1) {
+    left: -11px;
+    top: -3px;
+  }
+  .state-tooltip-container.in-od .state-tooltip-place:nth-child(1) {
+    left: 17px;
+    top: -7px;
+  }
+  .state-tooltip-container.in-ts .state-tooltip-place:nth-child(1) {
+    left: -27px;
+    top: 18px;
+  }
+  .state-tooltip-container.in-tn .state-tooltip-place:nth-child(1) {
+    left: 14px;
+    top: -15px;
+  }
+  .state-tooltip-container.in-ka .state-tooltip-place:nth-child(1) {
+    top: 35px;
+    left: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .our-presence-section .mapbody svg {
+    width: 288px;
+  }
+  .state-tooltip-container.in-mh .state-tooltip-place:nth-child(1) {
+    top: -15px;
+    left: 22px;
+  }
+  .state-tooltip-container.in-mh .state-tooltip-place:nth-child(2) {
+    left: -33px;
+    top: -8px;
+  }
+  .state-tooltip-container.in-mh .state-tooltip-place:nth-child(3) {
+    top: 20px;
+    left: -26px;
+  }
+  .state-tooltip-container.in-gj .state-tooltip-place:nth-child(1) {
+    left: 10px;
+    top: -20px;
+  }
+  .state-tooltip-container.in-gj .state-tooltip-place:nth-child(2) {
+    top: 6px;
+    left: 17px;
+  }
+  .state-tooltip-container.in-pb .state-tooltip-place:nth-child(1) {
+    top: -9px;
+    left: 5px;
+  }
+  .state-tooltip-container.in-wb .state-tooltip-place:nth-child(1) {
+    top: 19px;
+    left: 5px;
+  }
+  .state-tooltip-container.in-mp .state-tooltip-place:nth-child(1) {
+    left: -25px;
+    top: 14px;
+  }
+  .state-tooltip-container.in-jh .state-tooltip-place:nth-child(1) {
+    left: -7px;
+    top: -10px;
+  }
+  .state-tooltip-container.in-od .state-tooltip-place:nth-child(1) {
+    left: 15px;
+    top: -15px;
+  }
+  .state-tooltip-container.in-ts .state-tooltip-place:nth-child(1) {
+    left: -14px;
+    top: -12px;
+  }
+  .state-tooltip-container.in-tn .state-tooltip-place:nth-child(1) {
+    left: 8px;
+    top: -19px;
+  }
+  .state-tooltip-container.in-ka .state-tooltip-place:nth-child(1) {
+    top: 18px;
+    left: 10px;
+  }
+}
+@media (max-width: 359px) {
+  .our-presence-section .mapbody svg {
+    width: 240px;
+  }
+}
+.custom-dropdown .custom-dropdown-container {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
+  padding: 10px 0px;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  z-index: 10;
+  display: none !important;
+}
+.custom-dropdown.show .custom-dropdown-container {
+  display: block !important;
+}
+/*# sourceMappingURL=style.css.map */

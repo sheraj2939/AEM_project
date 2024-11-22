@@ -1,0 +1,37 @@
+<div class="retes-chanrges-inner">
+    <div class="table-section">
+        <div class="table-main-new">
+            <table>
+                <thead>
+                    <tr>
+                        <sly data-sly-list.itemListHead="${resource.children}">
+                            <sly data-sly-test="${itemListHead.name == 'tableHeading'}">
+                                <sly data-sly-list.tableListHead="${itemListHead.children}">
+                                    <th>${tableListHead.thdata}</th>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </tr>
+                </thead>
+                <tbody>
+                    <sly data-sly-list.itemListRow="${resource.children}">
+                        <sly data-sly-test="${itemListRow.name == 'tableTRow'}">
+                            <sly data-sly-list.tableListRow="${itemListRow.children}">
+                                <tr>
+                                    <sly data-sly-list.dataListRow="${tableListRow.children}">
+                                        <sly data-sly-test="${dataListRow.name == 'tableRowData'}">
+                                            <sly data-sly-list.tableRow="${dataListRow.children}">
+                                                <td>${tableRow.trData} ${tableRow.rowDescription
+                                                    @context = 'html'}</td>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </tr>
+                            </sly>
+                        </sly>
+                    </sly>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2023-01-02T17:32:49.190+05:30"
+        cq:lastModifiedBy="admin"
+        cq:policy="tata-capital-web/components/xfpage/policy_1672659404231"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="wcm/core/components/policies/mappings">
+        <root
+            cq:policy="tata-capital-web/components/container/policy_1575040440977"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/core/components/policies/mapping">
+            <mysite jcr:primaryType="nt:unstructured">
+                <components jcr:primaryType="nt:unstructured">
+                    <title
+                        cq:policy="tata-capital-web/components/title/policy_641528232375303"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/core/components/policies/mapping"/>
+                    <text
+                        cq:policy="tata-capital-web/components/text/policy_641562756958017"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/core/components/policies/mapping"/>
+                    <teaser
+                        cq:policy="tata-capital-web/components/teaser/policy_1575031387650"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/core/components/policies/mapping"/>
+                    <download
+                        cq:policy="tata-capital-web/components/download/policy_1575032193319"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/core/components/policies/mapping"/>
+                    <image
+                        cq:policy="tata-capital-web/components/image/policy_651483963895698"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/core/components/policies/mapping"/>
+                </components>
+            </mysite>
+            <tata-capital-web jcr:primaryType="nt:unstructured">
+                <components jcr:primaryType="nt:unstructured">
+                    <TC-Revamp jcr:primaryType="nt:unstructured">
+                        <footer-right-sticky jcr:primaryType="nt:unstructured">
+                            <nav-tablist-button
+                                cq:policy="tata-capital-web/components/TC-Revamp/footer-right-sticky/nav-tablist-button/policy_1669613405394"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                        </footer-right-sticky>
+                    </TC-Revamp>
+                    <tcl-web-components jcr:primaryType="nt:unstructured">
+                        <download-widget jcr:primaryType="nt:unstructured">
+                            <dwp-nav-tablist-button
+                                cq:policy="tata-capital-web/components/tcl-web-components/download-widget/dwp-nav-tablist-button/policy_1670054180037"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                        </download-widget>
+                        <banner jcr:primaryType="nt:unstructured">
+                            <banner-button
+                                cq:policy="tata-capital-web/components/tcl-web-components/banner/banner-button/policy_1670050931717"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                        </banner>
+                        <ways-to-service jcr:primaryType="nt:unstructured">
+                            <wts-card
+                                cq:policy="tata-capital-web/components/tcl-web-components/ways-to-service/wts-card/policy_1670064171324"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                        </ways-to-service>
+                    </tcl-web-components>
+                    <tcl-experience-fragment-component jcr:primaryType="nt:unstructured">
+                        <pre-approved-offer-ef jcr:primaryType="nt:unstructured">
+                            <pre-approved-inner-cont-ef
+                                cq:policy="tata-capital-web/components/tcl-experience-fragment-component/pre-approved-offer-ef/pre-approved-inner-cont-ef/policy_1672654794122"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                        </pre-approved-offer-ef>
+                        <ways-to-service-ef jcr:primaryType="nt:unstructured">
+                            <wts-card-ef
+                                cq:policy="tata-capital-web/components/tcl-experience-fragment-component/ways-to-service-ef/wts-card-ef/policy_1672654402342"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                        </ways-to-service-ef>
+                    </tcl-experience-fragment-component>
+                    <image
+                        cq:policy="tata-capital-web/components/image/policy_110645593694500"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/core/components/policies/mapping"/>
+                </components>
+            </tata-capital-web>
+        </root>
+    </jcr:content>
+</jcr:root>

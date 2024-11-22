@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    allowProxy="{Boolean}true"
+    categories="[tclweb.calc-page-component-las-opt]"
+    embed="[tcl-about-product,tcl-table,tcl-why-to-choose-us,tcl-about-more-products,tcl-customer-testimonials-clientlib,tcl-ipopular-faq,tcl-who-can-take-loan,tcl-instant-loan-box,tcl-financial-insight-clientlib,tcl-custom-related-video,tcl-las-calculator-opt]"/>

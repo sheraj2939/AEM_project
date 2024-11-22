@@ -1,0 +1,13 @@
+<sly data-sly-use.blogList="${'com.tatacapital.web.core.models.BlogModel' @ perPage='4', categoryId=properties.productMapValue}">
+</sly>
+<!-- financial insights -->
+<sly data-sly-list="${blogList.blogDetails}">
+    <img data-src="${item.blogImage}" alt="img" class="lozad" width="346" height="212">
+    <a href="${item.blogLink}" target="_blank">
+        <span>${item.blogProductName}</span>
+        <h6>${item.blogTitle @context='unsafe'}</h6>
+        <span>${item.blogDate}</span>
+        <button>Share</button>
+    </a>
+</sly>
+<!-- financial insights -->

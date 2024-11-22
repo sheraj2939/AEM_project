@@ -1,0 +1,22 @@
+<!-- similar box-->
+<div class="space-tb40 space-b80">
+    <div class="container">
+        <div class="tops-heads">
+            <h2>Similar <span>Properties</span></h2>
+        </div>
+        <div>
+            <div class="deal-row js-similar-properties-list" id="similarPropertiesRow">
+            </div>
+            <div class="mg-t40 text-center similar-properties-btn">
+                <button class="btn-blue btn-large" id="jsLoadMoreProperties">Load More</button>
+                <button class="btn-blue btn-large d-none" id="jsLoadLessProperties">Load Less</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var dataLocation = '${pageProperties["location"] @ context = "scriptString"}'
+    var dataState = '${pageProperties["state"] @ context = "scriptString"}'
+</script>
+
+<!-- similar box-->

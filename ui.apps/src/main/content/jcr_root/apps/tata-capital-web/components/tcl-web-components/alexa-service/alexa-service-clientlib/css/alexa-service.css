@@ -1,0 +1,102 @@
+.loan-approval-box .approval-inner {
+	 padding: 40px;
+	 display: flex;
+	 align-items: center;
+	 flex-wrap: wrap;
+}
+ .loan-approval-box .approval-left {
+	 width: calc(100% - 383px);
+	 padding-right: 17px;
+}
+ .loan-approval-box .approval-right {
+	 width: 383px;
+}
+ .loan-approval-box .approval-right img {
+	 margin: 0 auto;
+}
+ .loan-approval-box .top-text {
+	 margin-bottom: 20px;
+}
+ .loan-approval-box .steps-details {
+	 padding-top: 20px;
+}
+ .loan-approval-box .steps-details:first-child {
+	 padding-top: 0;
+}
+ .loan-approval-box .steps-details p {
+	 margin-bottom: 11px;
+}
+ .loan-approval-box .queries-text {
+	 margin-top: 20px;
+}
+ .loan-approval-box .queries-text a {
+	 display: inline-block;
+}
+ .loan-approval-box .download-wrap {
+	 padding-top: 31px;
+}
+ .loan-approval-box.portal-box .approval-left {
+	 width: calc(100% - 507px);
+}
+ .loan-approval-box.portal-box .approval-right {
+	 width: 507px;
+}
+ .loan-approval-box .service-notes {
+	 padding-top: 20px;
+}
+ .loan-approval-box.alexa-service-box .approval-left {
+	 width: calc(100% - 340px);
+}
+ .loan-approval-box.alexa-service-box .approval-right {
+	 width: 340px;
+}
+ @media (max-width: 1119px) {
+	 .loan-approval-box.portal-box .approval-left {
+		 width: calc(100% - 420px);
+	}
+	 .loan-approval-box.portal-box .approval-right {
+		 width: 420px;
+	}
+}
+ @media (max-width: 991px) {
+	 .loan-approval-box .approval-inner {
+		 padding: 24px;
+	}
+	 .loan-approval-box .approval-left {
+		 width: 100%;
+		 padding-right: 0;
+	}
+	 .loan-approval-box .approval-mob {
+		 padding-bottom: 20px;
+	}
+	 .loan-approval-box .approval-mob img {
+		 margin: 0 auto;
+	}
+	 .loan-approval-box .download-wrap {
+		 padding-top: 24px;
+	}
+	 .loan-approval-box.portal-box .approval-left {
+		 width: 100%;
+	}
+	 .loan-approval-box.alexa-service-box .approval-left {
+		 width: 100%;
+	}
+	 .loan-approval-box.alexa-service-box .approval-right {
+		 width: 100%;
+	}
+}
+ @media (max-width: 767px) {
+	 .loan-approval-box .steps-details p {
+		 margin-bottom: 12px;
+	}
+	 .loan-approval-box .queries-text {
+		 margin-top: 12px;
+	}
+	 .loan-approval-box .btn-blue {
+		 width: 100%;
+	}
+	 .loan-approval-box .service-notes {
+		 padding-top: 24px;
+	}
+}
+ 

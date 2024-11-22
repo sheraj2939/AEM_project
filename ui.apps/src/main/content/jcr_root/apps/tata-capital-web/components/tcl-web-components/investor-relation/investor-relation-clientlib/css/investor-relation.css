@@ -1,0 +1,32 @@
+.investor-relations-box .list-investor li {
+  margin-top: 20px;
+}
+.investor-relations-box .list-investor li:first-child {
+  margin-top: 0px;
+}
+.investor-relations-box .investor-cols {
+  padding: 30px;
+  border-radius: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.investor-relations-box .investor-cols .investor-left {
+  padding-right: 50px;
+}
+
+@media (max-width: 767px) {
+  .investor-relations-box .investor-cols {
+    padding: 23px 24px;
+    display: block;
+  }
+  .investor-relations-box .investor-cols .investor-left {
+    padding-right: 0px;
+  }
+  .investor-relations-box .investor-cols .investor-btn {
+    margin-top: 24px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

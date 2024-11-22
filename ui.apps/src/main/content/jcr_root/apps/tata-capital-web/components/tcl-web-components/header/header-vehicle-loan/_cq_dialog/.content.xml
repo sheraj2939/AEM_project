@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Header Mobile Authoring"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <vehicle-loan
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        composite="{Boolean}true"
+                        name="./vehicleLoan"
+                        text="Vehicle loan"
+                        value="true"/>
+                    <vehicle-loan-items
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                        <items jcr:primaryType="nt:unstructured">
+                            <container
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Vehicle loan items"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Enter Title"
+                                        name="./vehicleLoanTitle"
+                                        useFixedInlineToolbar="{Boolean}true"/>
+                                    <subLink
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <subLink
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Loan List"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="Loan List">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                    name="./vlList">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <topHeading
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Enter Loan List"
+                                                                    name="./loanListHeading"
+                                                                    useFixedInlineToolbar="{Boolean}true"/>
+                                                                <iconClass
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Enter class of icon"
+                                                                    name="./iconClass"
+                                                                    useFixedInlineToolbar="{Boolean}true"/>
+                                                                <link
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                    fieldLabel="Enter redirection link"
+                                                                    name="./redirectionLink"
+                                                                    rootPath=""/>
+                                                                <loan-list-open-new-Tab
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                    composite="{Boolean}true"
+                                                                    name="./loanListpeninNewTab"
+                                                                    text="Open in New Tab"
+                                                                    value="true"/>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                            </subLink>
+                                        </items>
+                                    </subLink>
+                                </items>
+                            </container>
+                        </items>
+                    </vehicle-loan-items>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

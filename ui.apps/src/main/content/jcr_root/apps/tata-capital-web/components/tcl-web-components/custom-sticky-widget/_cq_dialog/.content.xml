@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Sub Nav Authoring"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <widget
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                        <items jcr:primaryType="nt:unstructured">
+                            <container
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Right Sticky Widget Authoring"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <download-app-button-text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Enter Download App Button Title"
+                                        fieldLabel="Enter Download App Button Title"
+                                        name="./downloadApp"/>
+                                    <credit-score-button-text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Enter Credit Score Button Title"
+                                        fieldLabel="Enter Credit Score Button Title"
+                                        name="./creditScore"/>
+                                    <credit-score-button-link
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                        fieldDescription="Enter credit score Link"
+                                        fieldLabel="Enter credit score Link"
+                                        name="./creditScoreLink"/>
+                                    <looking-for-investment-text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Enter Title for Investment"
+                                        fieldLabel="Enter Title for Investment"
+                                        name="./lfiText"/>
+                                    <looking-for-loan-text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Enter Title for Loan"
+                                        fieldLabel="Enter Title for Loan"
+                                        name="./lflText"/>
+                                    <tab-multifield
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldLabel="Switch Tabs">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                            aem_nested="NODE_STORE"
+                                            name="./tabsField">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <dnone-checkbox
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldDescription="Check for display none "
+                                                    name="./displayNone"
+                                                    text="Tab Panel display none"
+                                                    value="{Boolean}true"/>
+                                                <tab-content-id
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Enter Tab Content Id"
+                                                    fieldLabel="Enter Tab Content Id"
+                                                    name="./tcId"/>
+                                                <mobile-image
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                    fieldDescription="Enter Tab Panel Mobile Image"
+                                                    fieldLabel="Mobile Image"
+                                                    name="./imageMobile"/>
+                                                <mobile-image-alt
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Enter Mobile Alt text"
+                                                    fieldLabel="Enter Mobile Alt text"
+                                                    name="./altMobileText"/>
+                                                <image
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                    fieldDescription="Enter Tab Panel Desktop Image"
+                                                    fieldLabel="Desktop Image"
+                                                    name="./image"/>
+                                                <image-alt
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Enter Alt text"
+                                                    fieldLabel="Enter Alt text"
+                                                    name="./altText"/>
+                                                <title
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Enter Title"
+                                                    fieldLabel="Enter Title"
+                                                    name="./title"/>
+                                                <description
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                    fieldDescription="Enter Description"
+                                                    fieldLabel="Enter Description"
+                                                    name="./description"/>
+                                                <get-link
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Enter App get ID"
+                                                    fieldLabel="Enter App get ID"
+                                                    name="./getLink"/>
+                                                <app-multifield
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                    composite="{Boolean}true"
+                                                    fieldLabel="Mobile View App Image">
+                                                    <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                        aem_nested="NODE_STORE"
+                                                        name="./overviewsLinkField">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <app-image-link
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldDescription="Enter Link for app images in mobile view"
+                                                                fieldLabel="Enter Image Link"
+                                                                name="./appLink"/>
+                                                            <app-image
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldDescription="Enter app Image for mobile view"
+                                                                fieldLabel="Image"
+                                                                name="./appImage"/>
+                                                            <app-alt-text
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldDescription="Enter Alternate Text for app images in mobile view"
+                                                                fieldLabel="Enter Alternate Text"
+                                                                name="./appAlt"/>
+                                                        </items>
+                                                    </field>
+                                                </app-multifield>
+                                                <qr-image
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                    fieldDescription="Provide QR Image"
+                                                    fieldLabel="QR Image"
+                                                    name="./qrImage"/>
+                                                <number
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Enter number id"
+                                                    fieldLabel="Enter number id"
+                                                    name="./number"/>
+                                                <number-class
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Enter number Class"
+                                                    fieldLabel="Enter number Class"
+                                                    name="./numberClass"/>
+                                            </items>
+                                        </field>
+                                    </tab-multifield>
+                                </items>
+                            </container>
+                        </items>
+                    </widget>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,128 @@
+.text-blue.custom-blue-title {
+    font-family: "OpenSans-SemiBold";
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.profile .avatar img {
+    border-radius: 50%;
+}
+
+.profile-picture-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profile-picture-img {
+    min-width: 20px;
+    height: 20px;
+    display: block;
+    position: relative;
+    top: 3px;
+    border-radius: 50%;
+    transform: scale(1.5);
+}
+.modal-backdrop-custom {
+    width: auto;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 13;
+}
+@media (max-width: 991px) {
+    .modal-backdrop-custom {
+        z-index: 13;
+    }
+}
+/* @media (max-width:764px) {
+    .sf-search-wrapper img{
+        min-width: 30px;
+        width: 30px;
+    }
+} */
+
+/* thank you modal */
+.thankyou-modal-inner {
+    text-align: center;
+  }
+  .thankyou-modal-inner .heading36 {
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+  .thankyou-modal-inner p {
+    color: #ffffff;
+  }
+  .thankyou-modal-inner .thankyou-img {
+    margin: 0 auto 10px;
+  }
+  .thankyou-modal-inner .tatalogo-img {
+    margin: 16px auto 16px;
+  }
+  .thankyou-modal-inner .otp-failure-btn {
+    margin-top: 40px;
+  }
+  .thankyou-modal-inner .has-bottom-btns {
+    padding-top: 40px;
+  }
+  .thankyou-modal-inner .has-bottom-btns .yes-no-btn {
+    min-width: 95px;
+    margin: 0 9px;
+  }
+  /* thank you modal */
+
+    .text-img-card p.custome-header-p-tag,
+    .vehicle-info-col .loan-info-detail-box p.custome-header-p-tag,
+    .loan-info-detail-box p.custome-header-p-tag {
+      font-family: "OpenSans-Bold";
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .notification-head {
+      font-family: "OpenSans-SemiBold" !important;
+    font-size: 13px !important;
+    line-height: 130% !important;
+     color: #333 !important;
+       margin-bottom: 4px !important;
+      }
+
+
+    .sign-in-class {
+        text-transform: capitalize !important;
+        font-family: "OpenSans-SemiBold" !important;
+        font-size: 16px !important;
+        line-height: 130% !important;
+        color: #333 !important;
+        opacity: .9 !important;
+        text-transform: none !important;
+    }
+  .signout-heading{
+      text-transform: capitalize !important;
+      font-family: "OpenSans-SemiBold" !important;
+      font-size: 16px !important;
+      line-height: 130% !important;
+      color: #333 !important;
+      opacity: .9 !important;
+      text-transform: none !important;
+  }
+
+.update-p {
+    text-transform: capitalize !important;
+    font-family: "OpenSans-SemiBold" !important;
+    font-size: 16px !important;
+    line-height: 130% !important;
+    color: #333 !important;
+    opacity: .9 !important;
+    padding-right: 20px !important;
+}

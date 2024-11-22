@@ -1,0 +1,70 @@
+.found-products-box .found-products-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -30px -15px 0;
+}
+.found-products-box .found-products-list .found-products-item {
+  width: 50%;
+  padding: 30px 15px 0;
+}
+.found-products-box .found-products-list.found-list3 .found-products-item {
+  width: 33.33%;
+}
+.found-products-box .ways-service-cards .found-products {
+  min-height: 339px;
+}
+.found-products-box .found-products {
+  height: 100%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.found-products-box .found-products .btn-controls {
+  padding-top: 25px;
+}
+.found-products-box .found-products .product-icon {
+  flex-grow: 1;
+}
+.found-products-box .found-products .product-icon .all-icon {
+  margin-bottom: 12px;
+}
+.found-products-box .found-products .heading20 {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 991px) {
+  .found-products-box .found-products-list.found-list3 .found-products-item {
+    width: 50%;
+  }
+  .found-products-box .ways-service-cards .found-products {
+    min-height: 300px;
+  }
+}
+@media (max-width: 767px) {
+  .found-products-box .ways-service-cards .found-products {
+    min-height: inherit;
+  }
+  .found-products-box .found-products-list {
+    margin: 0;
+  }
+  .found-products-box .found-products-list.found-list3 .found-products-item {
+    width: 100%;
+  }
+  .found-products-box .found-products-list .found-products-item {
+    width: 100%;
+    padding: 0 0 20px;
+  }
+  .found-products-box .found-products-list .found-products-item:nth-last-child(1) {
+    padding-bottom: 0;
+  }
+  .found-products-box .found-products {
+    padding: 24px;
+  }
+  .found-products-box .found-products .product-icon .all-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

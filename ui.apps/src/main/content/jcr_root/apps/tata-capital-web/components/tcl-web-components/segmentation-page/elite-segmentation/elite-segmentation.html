@@ -1,0 +1,84 @@
+<section class="segmentation-box ${properties.premierBox ?'premiers-box':''} space-tb40 space-t80">
+    <div class="container">
+        <div class="tops-heads">
+             ${properties.topHeadTitle @ context = 'html'}
+             ${properties.topHeadDesciption @ context = 'html'}
+        </div>
+    </div>
+    <div class="container mob-pd0 relative">
+        <div class="click-benefits">
+            <img src="${properties.clickImg}" alt="${properties.clickAltTitle}">
+            <p>${properties.clickText}</p>
+        </div>
+        <div
+            class="segmentation-slider ${properties.premierBox ?'premiers-sliders':''} flex-slider slider-dots slider-arrows jsSegmentationSlider">
+
+            <sly data-sly-list.segmentationList="${resource.children}">
+                <sly data-sly-test="${segmentationList.name == 'segmentationMultifield'}">
+                    <sly data-sly-list.segmentationItem="${segmentationList.children}">
+
+                        <div class="segmentation-row">
+                            <div class="flip-box">
+                                <div class="segmentation-cards flip-box-inner">
+                                    <div class="flip-box-front">
+                                        <div class="segment-top">
+                                            <div class="segment-icons">
+                                                <img src="${segmentationItem.segmentIcon}"
+                                                    alt="${segmentationItem.segmentAlt}">
+                                            </div>
+                                            <h5 class="heading20 semibold">${segmentationItem.segmentTitle}</h5>
+                                        </div>
+                                    </div>
+                                    <div class="flip-box-back">
+                                        <div class="segment-bottom">
+                                            <div class="segment-bottom-head">
+                                                <h6>${segmentationItem.bottomMainTitle}</h6>
+                                            </div>
+                                            <div class="segment-bottom-content">
+                                                <sly
+                                                    data-sly-list.segmentationBackList="${segmentationItem.listChildren}">
+                                                    <sly
+                                                        data-sly-test="${segmentationBackList.name == 'segmentBottomMultifield'}">
+                                                        <sly
+                                                            data-sly-list.segmentationBackItem="${segmentationBackList.children}">
+                                                            <div class="seg-content-rows">
+                                                                <h6>${segmentationBackItem.bottomListTitle}</h6>
+                                                                <ol class="segments-lists">
+                                                                    ${segmentationBackItem.bottomList @ context =
+                                                                    'html'}
+                                                                </ol>
+                                                            </div>
+                                                        </sly>
+                                                    </sly>
+                                                </sly>
+                                            </div>
+                                            <div data-sly-test="${segmentationItem.buttonTitle}" class="segment-btns">
+                                                <sly data-sly-test="${segmentationItem.buttonLink}">
+                                                    <a href="${segmentationItem.buttonLink}"
+                                                        target="${segmentationItem.openInNewTab ? '_blank' : '' }"
+                                                        class="btn-links link-with-arrow">${segmentationItem.buttonTitle}
+                                                        <span class="icon-arrow-right arros"></span></a>
+                                                </sly>
+                                                <sly data-sly-test="${!segmentationItem.buttonLink}">
+                                                    <a href="javascript:void(0)"
+                                                        class="btn-links link-with-arrow">${segmentationItem.buttonTitle}
+                                                        <span class="icon-arrow-right arros"></span></a>
+                                                </sly>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </sly>
+                </sly>
+            </sly>
+        </div>
+    </div>
+</section>
+
+<div class="commingsoontext-box">
+    <div class="container">
+        <div class="text16i">${properties.bottomText @ context = 'html'}</div>
+    </div>
+</div>

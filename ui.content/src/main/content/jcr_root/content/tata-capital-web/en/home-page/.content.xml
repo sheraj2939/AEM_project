@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-11-24T13:14:15.560+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/tata-capital-web/settings/wcm/templates/home-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Home Page"
+        sling:resourceType="tata-capital-web/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="tata-capital-web/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="tata-capital-web/components/container"
+                layout="responsiveGrid">
+                <tc_instant_loan
+                    jcr:created="{Date}2022-11-18T11:36:43.925+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-11-18T11:36:43.925+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="tata-capital-web/components/home-page/TC-instant-loan"/>
+                <tc_instant_loan_214831895
+                    jcr:created="{Date}2022-11-24T13:11:45.959+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-11-24T13:11:45.959+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="tata-capital-web/components/home-page/Instant-loan/TC-instant-loan"/>
+                <tc_instant_loan_1395013104
+                    jcr:created="{Date}2022-11-24T13:14:15.555+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-11-24T13:14:15.555+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="tata-capital-web/components/home-page/Instant-loan/TC-instant-loan"/>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

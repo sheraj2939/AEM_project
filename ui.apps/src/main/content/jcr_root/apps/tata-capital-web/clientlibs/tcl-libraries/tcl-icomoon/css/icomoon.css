@@ -1,0 +1,1179 @@
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-flexi:before {
+  content: "\ea61";
+}
+.icon-rupees-cross:before {
+  content: "\ea62";
+}
+.icon-headphones:before {
+  content: "\ea63";
+}
+.icon-forwards:before {
+  content: "\ea64";
+}
+.icon-hand-circle:before {
+  content: "\ea65";
+}
+.icon-hand-setting:before {
+  content: "\ea66";
+}
+.icon-rupee-circle:before {
+  content: "\ea67";
+}
+.icon-flexi-repayment:before {
+  content: "\ea68";
+}
+.icon-monitor-mobile:before {
+  content: "\ea69";
+}
+.icon-car-3:before {
+  content: "\ea6a";
+}
+.icon-home-2:before {
+  content: "\ea6b";
+}
+.icon-infos:before {
+  content: "\ea6c";
+}
+.icon-home-3:before {
+  content: "\ea6d";
+}
+.icon-bags:before {
+  content: "\ea6e";
+}
+.icon-hand-rupees:before {
+  content: "\ea5d";
+}
+.icon-notes2:before {
+  content: "\ea5e";
+}
+.icon-cell-power:before {
+  content: "\ea5f";
+}
+.icon-monitors:before {
+  content: "\ea60";
+}
+.icon-build:before {
+  content: "\ea5a";
+}
+.icon-day:before {
+  content: "\ea5b";
+}
+.icon-favorite:before {
+  content: "\ea5c";
+}
+.icon-hands:before {
+  content: "\ea59";
+}
+.icon-hands:before {
+  content: "\ea59";
+}
+.icon-approve:before {
+  content: "\ea58";
+}
+.icon-receive-rupee:before { 
+  content: "\ea57";
+}
+.icon-light:before {
+  content: "\ea64";
+}
+.icon-reset:before {
+  content: "\ea63";
+}
+.icon-rail:before {
+  content: "\ea59";
+}
+.icon-metro:before {
+  content: "\ea5a";
+}
+.icon-homes:before {
+  content: "\ea56";
+}
+.icon-highway:before {
+  content: "\ea5b";
+}
+.icon-airport:before {
+  content: "\ea5c";
+}
+.icon-bus:before {
+  content: "\ea5d";
+}
+.icon-mall:before {
+  content: "\ea5e";
+}
+.icon-hospital:before {
+  content: "\ea5f";
+}
+.icon-market:before {
+  content: "\ea60";
+}
+.icon-school:before {
+  content: "\ea61";
+}
+.icon-location:before {
+  content: "\ea62";
+}
+.icon-city1:before {
+  content: "\ea58";
+}
+.icon-city2:before {
+  content: "\ea6e";
+}
+.icon-mgs:before {
+  content: "\ea56";
+}
+.icon-locator:before {
+  content: "\ea57";
+}
+.icon-climate:before {
+  content: "\ea56";
+}
+.icon-download2:before {
+  content: "\ea55";
+}
+.icon-office-building:before {
+  content: "\ea52";
+}
+.icon-beneficiary:before {
+  content: "\ea53";
+}
+.icon-flexible-tenure2:before {
+  content: "\ea54";
+}
+.icon-sms-services:before {
+  content: "\ea4b";
+}
+.icon-alexa:before {
+  content: "\ea4c";
+}
+.icon-chatbot:before {
+  content: "\ea4d";
+}
+.icon-corporate-portal:before {
+  content: "\ea4e";
+}
+.icon-google-assistant:before {
+  content: "\ea4f";
+}
+.icon-mobile-app:before {
+  content: "\ea50";
+}
+.icon-retail-shop:before {
+  content: "\ea51";
+}
+.icon-calender-timer:before {
+  content: "\ea4a";
+}
+.icon-search-rupee:before {
+  content: "\ea3e";
+}
+.icon-mgs:before {
+  content: "\ea56";
+}
+.icon-corporates:before {
+  content: "\ea3f";
+}
+.icon-calc-time:before {
+  content: "\ea40";
+}
+.icon-sme:before {
+  content: "\ea41";
+}
+.icon-flexi-rupee:before {
+  content: "\ea42";
+}
+.icon-hand-dollor:before {
+  content: "\ea43";
+}
+.icon-medical-bag:before {
+  content: "\ea44";
+}
+.icon-no-needed:before {
+  content: "\ea45";
+}
+.icon-no-runnings:before {
+  content: "\ea46";
+}
+.icon-per-down:before {
+  content: "\ea47";
+}
+.icon-repayments:before {
+  content: "\ea48";
+}
+.icon-rupees-loan:before {
+  content: "\ea49";
+}
+.icon-star2:before {
+  content: "\ea3d";
+}
+.icon-shops:before {
+  content: "\e9b5";
+}
+.icon-tracking:before {
+  content: "\e9be";
+}
+.icon-cross-rupee:before {
+  content: "\ea35";
+}
+.icon-home-calculator:before {
+  content: "\ea36";
+}
+.icon-house-person:before {
+  content: "\ea37";
+}
+.icon-income2:before {
+  content: "\ea38";
+}
+.icon-marriage:before {
+  content: "\ea39";
+}
+.icon-mobile-card:before {
+  content: "\ea3a";
+}
+.icon-no-running2:before {
+  content: "\ea3b";
+}
+.icon-rupee-circle2:before {
+  content: "\ea3c";
+}
+.icon-pdf:before {
+  content: "\e9aa";
+}
+.icon-download-new:before {
+  content: "\e996";
+}
+.icon-clear:before {
+  content: "\e994";
+}
+.icon-architect-engineering:before {
+  content: "\e93c";
+}
+.icon-area-converter:before {
+  content: "\e93d";
+}
+.icon-balance:before {
+  content: "\e93e";
+}
+.icon-balance-tfr:before {
+  content: "\e93f";
+}
+.icon-best-gift:before {
+  content: "\e940";
+}
+.icon-biz-expansion:before {
+  content: "\e941";
+}
+.icon-biz-loan:before {
+  content: "\e942";
+}
+.icon-biz-productivity:before {
+  content: "\e943";
+}
+.icon-biz-proof:before {
+  content: "\e944";
+}
+.icon-biz-vintage:before {
+  content: "\e945";
+}
+.icon-branch:before {
+  content: "\e946";
+}
+.icon-buy-construct-house:before {
+  content: "\e947";
+}
+.icon-buyers-credit:before {
+  content: "\e948";
+}
+.icon-cal-area:before {
+  content: "\e949";
+}
+.icon-cal-balance:before {
+  content: "\e94a";
+}
+.icon-cal-eligibility:before {
+  content: "\e94b";
+}
+.icon-cal-fd:before {
+  content: "\e94c";
+}
+.icon-cal-foreclosure:before {
+  content: "\e94d";
+}
+.icon-cal-GST:before {
+  content: "\e94e";
+}
+.icon-call1:before {
+  content: "\e94f";
+}
+.icon-cal-LAS:before {
+  content: "\e950";
+}
+.icon-cal-pre-payment:before {
+  content: "\e951";
+}
+.icon-cal-stamp:before {
+  content: "\e952";
+}
+.icon-career:before {
+  content: "\e953";
+}
+.icon-car-loan:before {
+  content: "\e954";
+}
+.icon-cashflow-requirements:before {
+  content: "\e955";
+}
+.icon-channel-financing:before {
+  content: "\e956";
+}
+.icon-chartered-accountant:before {
+  content: "\e957";
+}
+.icon-cheque:before {
+  content: "\e958";
+}
+.icon-collateral:before {
+  content: "\e959";
+}
+.icon-commercial-vehicle:before {
+  content: "\e95a";
+}
+.icon-comp-interest-rates:before {
+  content: "\e95b";
+}
+.icon-const-equip:before {
+  content: "\e95c";
+}
+.icon-const-finance:before {
+  content: "\e95d";
+}
+.icon-const-loan:before {
+  content: "\e95e";
+}
+.icon-convenient-loan:before {
+  content: "\e95f";
+}
+.icon-credit-card:before {
+  content: "\e960";
+}
+.icon-credit-score:before {
+  content: "\e961";
+}
+.icon-cust-loan:before {
+  content: "\e962";
+}
+.icon-cust-product:before {
+  content: "\e963";
+}
+.icon-cust-repayment:before {
+  content: "\e964";
+}
+.icon-cust-svcs:before {
+  content: "\e965";
+}
+.icon-debt-consolidation:before {
+  content: "\e966";
+}
+.icon-debt-syndication:before {
+  content: "\e967";
+}
+.icon-digital-equip:before {
+  content: "\e968";
+}
+.icon-disbursals:before {
+  content: "\e969";
+}
+.icon-doc:before {
+  content: "\e96a";
+}
+.icon-doc-checklist:before {
+  content: "\e96b";
+}
+.icon-doorstep-svcs:before {
+  content: "\e96c";
+}
+.icon-down-payment:before {
+  content: "\e96d";
+}
+.icon-dynamic-loan:before {
+  content: "\e96e";
+}
+.icon-early-budget:before {
+  content: "\e96f";
+}
+.icon-easy-repayment:before {
+  content: "\e970";
+}
+.icon-eligibility:before {
+  content: "\e971";
+}
+.icon-EMI-ac:before {
+  content: "\e972";
+}
+.icon-EMI-appliances:before {
+  content: "\e973";
+}
+.icon-EMI-bullet:before {
+  content: "\e974";
+}
+.icon-EMI-calculator:before {
+  content: "\e975";
+}
+.icon-EMI-camera:before {
+  content: "\e976";
+}
+.icon-EMI-electronics:before {
+  content: "\e977";
+}
+.icon-EMI-laptop:before {
+  content: "\e978";
+}
+.icon-EMI-mobile:before {
+  content: "\e979";
+}
+.icon-EMI-plan:before {
+  content: "\e97a";
+}
+.icon-EMI-refrigerator:before {
+  content: "\e97b";
+}
+.icon-EMI-tv:before {
+  content: "\e97c";
+}
+.icon-EMI-washing-mc:before {
+  content: "\e97d";
+}
+.icon-employment-type:before {
+  content: "\e97e";
+}
+.icon-equip-finance:before {
+  content: "\e97f";
+}
+.icon-equip-lease:before {
+  content: "\e980";
+}
+.icon-everyday-needs:before {
+  content: "\e981";
+}
+.icon-existing-EMI:before {
+  content: "\e982";
+}
+.icon-experience:before {
+  content: "\e983";
+}
+.icon-extension-oan:before {
+  content: "\e984";
+}
+.icon-fill-appli:before {
+  content: "\e985";
+}
+.icon-find-dealer:before {
+  content: "\e986";
+}
+.icon-fix-broken:before {
+  content: "\e987";
+}
+.icon-fixed-limit:before {
+  content: "\e988";
+}
+.icon-flexible:before {
+  content: "\e989";
+}
+.icon-flexible-repayment:before {
+  content: "\e98a";
+}
+.icon-flexible-tenure:before {
+  content: "\e98b";
+}
+.icon-flexi-personal-loan:before {
+  content: "\e98c";
+}
+.icon-funds:before {
+  content: "\e98d";
+}
+.icon-gst-loal:before {
+  content: "\e98e";
+}
+.icon-guarantor-security:before {
+  content: "\e98f";
+}
+.icon-handsome-loan:before {
+  content: "\e990";
+}
+.icon-high-loan:before {
+  content: "\e991";
+}
+.icon-home-enovation:before {
+  content: "\e992";
+}
+.icon-home-loan:before {
+  content: "\e993";
+}
+.icon-homeloan-top-up:before {
+  content: "\e995";
+}
+.icon-identity-proof:before {
+  content: "\e997";
+}
+.icon-income:before {
+  content: "\e998";
+}
+.icon-Income-proof:before {
+  content: "\e999";
+}
+.icon-indian-nationality:before {
+  content: "\e99a";
+}
+.icon-industry-longer:before {
+  content: "\e99b";
+}
+.icon-insiant-approval:before {
+  content: "\e99c";
+}
+.icon-instant-Pl:before {
+  content: "\e99d";
+}
+.icon-institutes:before {
+  content: "\e99e";
+}
+.icon-insurance:before {
+  content: "\e99f";
+}
+.icon-insurance-child:before {
+  content: "\e9a0";
+}
+.icon-insurance-commercial:before {
+  content: "\e9a1";
+}
+.icon-insurance-health:before {
+  content: "\e9a2";
+}
+.icon-insurance-home:before {
+  content: "\e9a3";
+}
+.icon-insurance-life:before {
+  content: "\e9a4";
+}
+.icon-insurance-motor:before {
+  content: "\e9a5";
+}
+.icon-insurance-pocket:before {
+  content: "\e9a6";
+}
+.icon-insurance-travel:before {
+  content: "\e9a7";
+}
+.icon-insurance-wellness:before {
+  content: "\e9a8";
+}
+.icon-interest-rate:before {
+  content: "\e9a9";
+}
+.icon-invest-future:before {
+  content: "\e9ab";
+}
+.icon-investment-future:before {
+  content: "\e9ac";
+}
+.icon-invoice-discount:before {
+  content: "\e9ad";
+}
+.icon-join-loans:before {
+  content: "\e9ae";
+}
+.icon-know-more:before {
+  content: "\e9af";
+}
+.icon-KYC-doc:before {
+  content: "\e9b0";
+}
+.icon-LAS-digital:before {
+  content: "\e9b1";
+}
+.icon-latest-equip:before {
+  content: "\e9b2";
+}
+.icon-lease-rental:before {
+  content: "\e9b3";
+}
+.icon-letter-credit:before {
+  content: "\e9b4";
+}
+.icon-loan-bike:before {
+  content: "\e9b6";
+}
+.icon-loan-disbursal:before {
+  content: "\e9b7";
+}
+.icon-loan-education:before {
+  content: "\e9b8";
+}
+.icon-loan-eligibility:before {
+  content: "\e9b9";
+}
+.icon-loan-principal:before {
+  content: "\e9ba";
+}
+.icon-loan-property:before {
+  content: "\e9bb";
+}
+.icon-loans:before {
+  content: "\e9bc";
+}
+.icon-loan-sanction:before {
+  content: "\e9bd";
+}
+.icon-loan-shares:before {
+  content: "\e9bf";
+}
+.icon-loan-soln:before {
+  content: "\e9c0";
+}
+.icon-loan-travel:before {
+  content: "\e9c1";
+}
+.icon-longer-tenure:before {
+  content: "\e9c2";
+}
+.icon-long-time:before {
+  content: "\e9c3";
+}
+.icon-lower-EMI:before {
+  content: "\e9c4";
+}
+.icon-machinery-loan:before {
+  content: "\e9c5";
+}
+.icon-marriage-loan:before {
+  content: "\e9c6";
+}
+.icon-medical:before {
+  content: "\e9c7";
+}
+.icon-meet-physically:before {
+  content: "\e9c8";
+}
+.icon-mid-tenure:before {
+  content: "\e9c9";
+}
+.icon-mini-doc:before {
+  content: "\e9ca";
+}
+.icon-mini-paperwork:before {
+  content: "\e9cb";
+}
+.icon-mitra-program:before {
+  content: "\e9cc";
+}
+.icon-monthly-income:before {
+  content: "\e9cd";
+}
+.icon-monthly-obligations:before {
+  content: "\e9ce";
+}
+.icon-MSME-loan:before {
+  content: "\e9cf";
+}
+.icon-multiple-loan:before {
+  content: "\e9d0";
+}
+.icon-multi-purpose--loans:before {
+  content: "\e9d1";
+}
+.icon-mutual-funds:before {
+  content: "\e9d2";
+}
+.icon-net-salary:before {
+  content: "\e9d3";
+}
+.icon-no-collateral-needed:before {
+  content: "\e9d4";
+}
+.icon-no-EMI:before {
+  content: "\e9d5";
+}
+.icon-no-penalty:before {
+  content: "\e9d6";
+}
+.icon-no-prepayment:before {
+  content: "\e9d7";
+}
+.icon-no-running:before {
+  content: "\e9d8";
+}
+.icon-OD:before {
+  content: "\e9d9";
+}
+.icon-online:before {
+  content: "\e9da";
+}
+.icon-online-application:before {
+  content: "\e9db";
+}
+.icon-options:before {
+  content: "\e9dc";
+}
+.icon-outstanding-dues:before {
+  content: "\e9dd";
+}
+.icon-pay-online:before {
+  content: "\e9de";
+}
+.icon-phone:before {
+  content: "\e9df";
+}
+.icon-plot-construction:before {
+  content: "\e9e0";
+}
+.icon-PMAY:before {
+  content: "\e9e1";
+}
+.icon-post-cheques:before {
+  content: "\e9e2";
+}
+.icon-process-guidance:before {
+  content: "\e9e3";
+}
+.icon-processing-fee:before {
+  content: "\e9e4";
+}
+.icon-profit:before {
+  content: "\e9e5";
+}
+.icon-profit-revenues:before {
+  content: "\e9e6";
+}
+.icon-property:before {
+  content: "\e9e7";
+}
+.icon-property-cost:before {
+  content: "\e9e8";
+}
+.icon-property-search:before {
+  content: "\e9e9";
+}
+.icon-protection-plan:before {
+  content: "\e9ea";
+}
+.icon-purchase-funding:before {
+  content: "\e9eb";
+}
+.icon-qualification:before {
+  content: "\e9ec";
+}
+.icon-qualify-top-up:before {
+  content: "\e9ed";
+}
+.icon-quick-approval:before {
+  content: "\e9ee";
+}
+.icon-quick-cash:before {
+  content: "\e9ef";
+}
+.icon-quick-loan:before {
+  content: "\e9f0";
+}
+.icon-quick-processing:before {
+  content: "\e9f1";
+}
+.icon-quick-sanction:before {
+  content: "\e9f2";
+}
+.icon-raw-materials:before {
+  content: "\e9f3";
+}
+.icon-reduce-tenure:before {
+  content: "\e9f4";
+}
+.icon-relaxed-eligibility:before {
+  content: "\e9f5";
+}
+.icon-relocation-charges:before {
+  content: "\e9f6";
+}
+.icon-renovate-house:before {
+  content: "\e9f7";
+}
+.icon-repayment:before {
+  content: "\e9f8";
+}
+.icon-requested-loan:before {
+  content: "\e9f9";
+}
+.icon-requested-tenure:before {
+  content: "\e9fa";
+}
+.icon-research-everything:before {
+  content: "\e9fb";
+}
+.icon-retirement-soln-child-plan:before {
+  content: "\e9fc";
+}
+.icon-ROI:before {
+  content: "\e9fd";
+}
+.icon-salary-deduction:before {
+  content: "\e9fe";
+}
+.icon-salary-slips:before {
+  content: "\e9ff";
+}
+.icon-sanction:before {
+  content: "\ea00";
+}
+.icon-save-interest:before {
+  content: "\ea01";
+}
+.icon-score:before {
+  content: "\ea02";
+}
+.icon-secure-business:before {
+  content: "\ea03";
+}
+.icon-security:before {
+  content: "\ea04";
+}
+.icon-self-employed:before {
+  content: "\ea05";
+}
+.icon-shortage-cashflow:before {
+  content: "\ea06";
+}
+.icon-small-business:before {
+  content: "\ea07";
+}
+.icon-special-purpose:before {
+  content: "\ea08";
+}
+.icon-special-rate-women:before {
+  content: "\ea09";
+}
+.icon-stability:before {
+  content: "\ea0a";
+}
+.icon-standard-EMI:before {
+  content: "\ea0b";
+}
+.icon-statement:before {
+  content: "\ea0c";
+}
+.icon-step-down-flexi:before {
+  content: "\ea0d";
+}
+.icon-step-up-flexi:before {
+  content: "\ea0e";
+}
+.icon-structured-EMI:before {
+  content: "\ea0f";
+}
+.icon-structured-investment:before {
+  content: "\ea10";
+}
+.icon-submit-documents:before {
+  content: "\ea11";
+}
+.icon-tailor-made:before {
+  content: "\ea12";
+}
+.icon-tata-trust:before {
+  content: "\ea13";
+}
+.icon-tds:before {
+  content: "\ea14";
+}
+.icon-tenure:before {
+  content: "\ea15";
+}
+.icon-tenures:before {
+  content: "\ea16";
+}
+.icon-term-loans:before {
+  content: "\ea17";
+}
+.icon-track-finances:before {
+  content: "\ea18";
+}
+.icon-trust:before {
+  content: "\ea19";
+}
+.icon-turnover:before {
+  content: "\ea1a";
+}
+.icon-upgrade-house:before {
+  content: "\ea1b";
+}
+.icon-used-car-loan:before {
+  content: "\ea1c";
+}
+.icon-value-check:before {
+  content: "\ea1d";
+}
+.icon-vehicle-oan:before {
+  content: "\ea1e";
+}
+.icon-verification:before {
+  content: "\ea1f";
+}
+.icon-virtual-account:before {
+  content: "\ea20";
+}
+.icon-virtual-assistant:before {
+  content: "\ea21";
+}
+.icon-wealth:before {
+  content: "\ea22";
+}
+.icon-we-care:before {
+  content: "\ea23";
+}
+.icon-withdrawals:before {
+  content: "\ea24";
+}
+.icon-withdraw-repay:before {
+  content: "\ea25";
+}
+.icon-work-experience:before {
+  content: "\ea26";
+}
+.icon-working-capital:before {
+  content: "\ea27";
+}
+.icon-zero-charges:before {
+  content: "\ea28";
+}
+.icon-zero-securities:before {
+  content: "\ea29";
+}
+.icon-academic-record:before {
+  content: "\ea2a";
+}
+.icon-accountancy-firm:before {
+  content: "\ea2b";
+}
+.icon-address-proof:before {
+  content: "\ea2c";
+}
+.icon-age:before {
+  content: "\ea2d";
+}
+.icon-age-limit1:before {
+  content: "\ea2e";
+}
+.icon-age-limit2:before {
+  content: "\ea2f";
+}
+.icon-application:before {
+  content: "\ea30";
+}
+.icon-application-process:before {
+  content: "\ea31";
+}
+.icon-approval:before {
+  content: "\ea32";
+}
+.icon-approval-minutes:before {
+  content: "\ea33";
+}
+.icon-app-status:before {
+  content: "\ea34";
+}
+.icon-headphone:before {
+  content: "\e93b";
+}
+.icon-check-circle:before {
+  content: "\e93a";
+}
+.icon-close-circle:before {
+  content: "\e939";
+}
+.icon-check:before {
+  content: "\e938"; 
+}
+.icon-rupee:before {
+  content: "\e937";
+}
+.icon-whatapp:before {
+  content: "\e935";
+}
+.icon-instagram:before {
+  content: "\e936";
+}
+.icon-card:before {
+  content: "\e931";
+}
+.icon-car:before {
+  content: "\e932";
+}
+.icon-play:before {
+  content: "\e930";
+}
+.icon-google:before {
+  content: "\e92f";
+}
+.icon-download-right:before {
+  content: "\e92b";
+}
+.icon-download:before {
+  content: "\e92c";
+}
+.icon-apple:before {
+  content: "\e929";
+}
+.icon-playstore:before {
+  content: "\e92a";
+}
+.icon-copy:before {
+  content: "\e928";
+}
+.icon-arrow-up-right:before {
+  content: "\e926";
+}
+.icon-score:before {
+  content: "\e927";
+}
+.icon-user:before {
+  content: "\e925";
+}
+.icon-arrow-tail-left:before {
+  content: "\e924";
+}
+.icon-arrow-tail-right:before {
+  content: "\e923";
+}
+.icon-search:before {
+  content: "\e902";
+}
+.icon-bell:before {
+  content: "\e922";
+}
+.icon-phone-fill:before {
+  content: "\e920";
+}
+.icon-blog:before {
+  content: "\e921";
+}
+.icon-minus:before {
+  content: "\e91f";
+}
+.icon-info .path1:before {
+  content: "\e91d";
+  color: rgb(0, 0, 0);
+}
+.icon-info .path2:before {
+  content: "\e91e";
+  margin-left: -1.0771484375em;
+  color: rgb(255, 255, 255);
+}
+.icon-watch:before {
+  content: "\e91b";
+}
+.icon-edit:before {
+  content: "\e91c";
+}
+.icon-plus:before {
+  content: "\e91a";
+}
+.icon-angle-up:before {
+  content: "\e919";
+}
+.icon-filter:before {
+  content: "\e917";
+}
+.icon-sort:before {
+  content: "\e918";
+}
+.icon-alert:before {
+  content: "\e916";
+}
+.icon-calander:before {
+  content: "\e915";
+}
+.icon-caret-down:before {
+  content: "\e913";
+}
+.icon-caret-top:before {
+  content: "\e914";
+}
+.icon-binocular:before {
+  content: "\e912";
+}
+.icon-whatsapp:before {
+  content: "\e911";
+}
+.icon-close:before {
+  content: "\e910";
+}
+.icon-equity:before {
+  content: "\e90f";
+}
+.icon-arrow-top:before {
+  content: "\e90d";
+}
+.icon-arrow-arrow:before {
+  content: "\e90e";
+}
+.icon-twitter:before {
+  content: "\e900";
+}
+.icon-facebook:before {
+  content: "\e901";
+}
+.icon-angle-down:before {
+  content: "\e903";
+}
+.icon-share:before {
+  content: "\e904";
+}
+.icon-arrow-right:before {
+  content: "\e905";
+}
+.icon-arrow-left:before {
+  content: "\e906";
+}
+.icon-star:before {
+  content: "\e907";
+}
+.icon-email:before {
+  content: "\e908";
+}
+.icon-call:before {
+  content: "\e909";
+}
+.icon-map:before {
+  content: "\e90a";
+}
+.icon-youtube:before {
+  content: "\e90b";
+}
+.icon-linkedin:before {
+  content: "\e90c";
+}
+.icon-phone-call:before {
+  content: "\e92d";
+}
+.icon-map-pin-filled:before {
+  content: "\e92e";
+}
+.icon-web:before {
+  content: "\e933";
+}
+.icon-info-alt:before {
+  content: "\e934";
+}
+.icon-reset:before {
+  content: "\ea63";
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2023-01-02T19:29:21.601+05:30"
+        cq:lastModifiedBy="admin"
+        cq:policy="tata-capital-web/components/page/policy_1672646730788"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="wcm/core/components/policies/mappings">
+        <root
+            cq:policy="tata-capital-web/components/container/policy_1574694950110"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/core/components/policies/mapping">
+            <container
+                cq:policy="tata-capital-web/components/container/policy_1574695586800"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping">
+                <tata-capital-web jcr:primaryType="nt:unstructured">
+                    <components jcr:primaryType="nt:unstructured">
+                        <tcl-web-components jcr:primaryType="nt:unstructured">
+                            <banner jcr:primaryType="nt:unstructured">
+                                <banner-button
+                                    cq:policy="tata-capital-web/components/tcl-web-components/banner/banner-button/policy_1670050931717"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </banner>
+                            <track-my-application jcr:primaryType="nt:unstructured">
+                                <track-my-application
+                                    cq:policy="tata-capital-web/components/tcl-web-components/track-my-application/track-my-application/policy_1670051472697"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                                <track-my-application-structure
+                                    cq:policy="tata-capital-web/components/tcl-web-components/track-my-application/track-my-application-structure/policy_1671103126773"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </track-my-application>
+                            <explore-our-product jcr:primaryType="nt:unstructured">
+                                <explore-our-product-button
+                                    cq:policy="tata-capital-web/components/tcl-web-components/explore-our-product/explore-our-product-button/policy_1670052331707"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </explore-our-product>
+                        </tcl-web-components>
+                        <tcl-experience-fragment-component jcr:primaryType="nt:unstructured">
+                            <pre-approved-offer-ef jcr:primaryType="nt:unstructured">
+                                <pre-approved-inner-cont-ef
+                                    cq:policy="tata-capital-web/components/tcl-experience-fragment-component/pre-approved-offer-ef/pre-approved-inner-cont-ef/policy_1672654794122"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </pre-approved-offer-ef>
+                            <ways-to-service-ef jcr:primaryType="nt:unstructured">
+                                <wts-card-ef
+                                    cq:policy="tata-capital-web/components/tcl-experience-fragment-component/ways-to-service-ef/wts-card-ef/policy_1672654402342"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </ways-to-service-ef>
+                        </tcl-experience-fragment-component>
+                        <image
+                            cq:policy="tata-capital-web/components/image/policy_110645593694500"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                    </components>
+                </tata-capital-web>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

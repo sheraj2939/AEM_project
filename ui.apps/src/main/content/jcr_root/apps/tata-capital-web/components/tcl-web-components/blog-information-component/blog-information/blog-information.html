@@ -1,0 +1,116 @@
+<div class="best-loan-box space-tb40 space-t80">
+    <div class="container">
+        <div class="tops-heads">
+            <h2>${properties.liteTitle} <span>${properties.boldTitle}</span></h2>
+        </div>
+        <div class="informed-blog-box">
+            <div class="row-flex row-col-30">
+                <sly data-sly-list.blogBox="${resource.children}">
+                    <sly data-sly-test="${blogBox.name == 'mainBlogBox'}">
+                        <sly data-sly-list.boxItems="${blogBox.children}">
+                            <div class="row-col-50 col-sp15 cards-rows">
+                                <div class="bg-div informed-blog">
+                                    <div class="informed-top">
+                                        <h3 class="heading20"><span>${boxItems.boxHeading}</span></h3>
+                                    </div>
+                                    <div class="informed-bottom">
+                                        <ul class="informed-lists">
+                                            <sly data-sly-list.blogContent="${boxItems.children}">
+                                                <sly data-sly-test="${blogContent.name == 'blueItemsMultifield'}">
+                                                    <sly data-sly-list.boxContentItems="${blogContent.children}">
+                                                        <sly data-sly-test="${boxContentItems.cardType =='withImage'}">
+                                                            <li>
+                                                                <a href="${boxContentItems.url}"
+                                                                    class="informed-article"
+                                                                    target="${boxContentItems.openNewTav ? '_blank' : ''}">
+                                                                    <div class="informed-row">
+                                                                        <div class="informed-left">
+                                                                            <div class="informed-medias">
+                                                                                <img src="${boxContentItems.blogImage}"
+                                                                                    alt="${boxContentItems.altImageText}"
+                                                                                    class="informed-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="informed-right">
+                                                                            <div class="hash-tag">
+                                                                                <span>${boxContentItems.tag}</span>
+                                                                            </div>
+                                                                            <p class="text16i informed-text">
+                                                                                ${boxContentItems.contentHeading}
+                                                                            </p>
+                                                                            <p class="text14i semibold informed-date">
+                                                                                ${boxContentItems.dateArticle}
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                        </sly>
+                                                        <sly data-sly-test="${boxContentItems.cardType =='video'}">
+                                                            <li>
+                                                                <a href="${boxContentItems.url}"
+                                                                    class="informed-article">
+                                                                    <div class="informed-row">
+                                                                        <div class="informed-left">
+                                                                            <div class="informed-medias">
+                                                                                <img src="${boxContentItems.blogImage}"
+                                                                                    alt="${boxContentItems.altImageText}"
+                                                                                    class="informed-img">
+                                                                                <span class="informed-play-btn">
+                                                                                    <img src="/content/dam/tata-capital-web/assets/img/informed-play.png"
+                                                                                        alt="play-icon" class="">
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="informed-right">
+                                                                            <div class="hash-tag">
+                                                                                <span>${boxContentItems.tag}</span>
+                                                                            </div>
+                                                                            <p class="text16i informed-text">
+                                                                                ${boxContentItems.contentHeading}</p>
+                                                                            <p class="text14i semibold informed-date">
+                                                                                ${boxContentItems.dateArticle}
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                        </sly>
+                                                        <sly data-sly-test="${boxContentItems.cardType =='noImage'}">
+                                                            <li>
+                                                                <a href="${boxContentItems.url}"
+                                                                    class="informed-article">
+                                                                    <div class="informed-row no-left-imgage">
+                                                                        <div class="informed-right">
+                                                                            <div class="hash-tag">
+                                                                                <span>${boxContentItems.tag}</span>
+                                                                            </div>
+                                                                            <p class="text16i informed-text">
+                                                                                ${boxContentItems.contentHeading}</p>
+                                                                            <p class="text14i semibold informed-date">
+                                                                                ${boxContentItems.dateArticle}</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                        </sly>
+                                                    </sly>
+                                                </sly>
+                                            </sly>
+                                        </ul>
+                                    </div>
+                                    <sly data-sly-test="${boxItems.btnText}">
+                                        <div class="informed-btn">
+                                            <a href="${boxItems.btnUrl}" target="${boxItems.openNewTab ? '_blank' : ''}"
+                                                class="btn-blue btn-large">${boxItems.btnText}</a>
+                                        </div>
+                                    </sly>
+                                </div>
+                            </div>
+                        </sly>
+                    </sly>
+                </sly>
+            </div>
+        </div>
+    </div>
+</div>

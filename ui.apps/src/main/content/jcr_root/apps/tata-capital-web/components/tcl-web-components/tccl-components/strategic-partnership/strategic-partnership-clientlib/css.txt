@@ -1,0 +1,2 @@
+#base=css
+strategic-partnership.css

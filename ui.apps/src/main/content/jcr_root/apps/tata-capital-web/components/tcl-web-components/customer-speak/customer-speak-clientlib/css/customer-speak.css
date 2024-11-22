@@ -1,0 +1,183 @@
+.cutomer-speak-box .customer-speak-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.cutomer-speak-box .top-left {
+  width: 460px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.cutomer-speak-box .custom-dropdown-wrap {
+  width: 200px;
+  position: relative;
+}
+.cutomer-speak-box .custom-dropdown-wrap .custom-dropdown-block {
+  width: auto;
+  min-width: 254px;
+  left: 0;
+  border-radius: 0 8px 8px 8px;
+}
+.cutomer-speak-box .custom-checkbox-label {
+  padding-left: 0;
+}
+.cutomer-speak-box .top-right {
+  text-align: right;
+  width: calc(100% - 460px);
+}
+.cutomer-speak-box .service-text {
+  width: calc(100% - 200px);
+  padding-left: 12px;
+}
+.cutomer-speak-box .service-text p {
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.cutomer-speak-box .top-right {
+  width: calc(100% - 460px);
+  padding-left: 20px;
+}
+.cutomer-speak-box .customer-speak-row {
+  padding-bottom: 20px;
+}
+.cutomer-speak-box .customer-speak-row:last-child {
+  padding-bottom: 0;
+}
+.cutomer-speak-box .customer-speak-col {
+  background: linear-gradient(134.06deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.67) 99.11%);
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.01), 5px 0px 10px rgba(0, 0, 0, 0.01), 0px -5px 10px rgba(0, 0, 0, 0.01), 0px 5px 10px rgba(0, 0, 0, 0.01);
+  border-radius: 30px;
+  padding: 25px;
+}
+.cutomer-speak-box .loan-details {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+.cutomer-speak-box .loan-details-left {
+  width: calc(100% - 151px);
+  padding-right: 20px;
+}
+.cutomer-speak-box .loan-details-right {
+  width: 151px;
+}
+.cutomer-speak-box .loan-inner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cutomer-speak-box .loan-inner-left {
+  padding-right: 10px;
+  position: relative;
+}
+.cutomer-speak-box .loan-inner-left::before {
+  position: absolute;
+  content: "";
+  background: #585858;
+  width: 1px;
+  height: 16px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cutomer-speak-box .loan-inner-right {
+  padding-left: 10px;
+}
+.cutomer-speak-box .loan-inner-right .text14i {
+  font-family: "OpenSans-SemiBold";
+}
+.cutomer-speak-box .heading20 {
+  font-family: "OpenSans-SemiBold";
+  margin-bottom: 8px;
+}
+.cutomer-speak-box .text-suchsia {
+  font-family: "OpenSans-Bold";
+}
+.cutomer-speak-box .list-star {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 0 -3px;
+}
+.cutomer-speak-box .list-star img {
+  margin: 0 3px;
+}
+.customer-speak-top .simple-bar{
+  max-height: 240px;
+}
+.simplebar-track {
+  cursor: pointer;
+}
+.cutomer-speak-box .simplebar-track.simplebar-vertical{
+  margin: 6px 16px 6px 0;
+}
+.cutomer-speak-box .simplebar-track .simplebar-scrollbar{
+  height: 136px;
+}
+.cutomer-speak-box .custom-dropdown-wrap .custom-dropdown-block {
+  min-width: 242px;
+}
+
+@media (max-width: 991px) {
+  .cutomer-speak-box .top-left {
+    width: 100%;
+  }
+  .cutomer-speak-box .top-right {
+    width: 100%;
+    text-align: left;
+    padding-left: 0;
+    padding-top: 30px;
+  }
+  .cutomer-speak-box .custom-dropdown-wrap {
+    width: 143px;
+  }
+  .cutomer-speak-box .custom-dropdown-wrap .custom-dropdown-btn {
+    min-width: 100%;
+    width: auto;
+  }
+  .cutomer-speak-box .service-text {
+    width: calc(100% - 143px);
+  }
+}
+@media (max-width: 767px) {
+  .cutomer-speak-box .customer-speak-row {
+    padding-bottom: 30px;
+  }
+  .cutomer-speak-box .customer-speak-col {
+    padding: 24px;
+    border-radius: 24px;
+  }
+  .cutomer-speak-box .custom-dropdown-wrap .custom-dropdown-block {
+    min-width: 100%;
+    border-top-right-radius: 0;
+  }
+  .cutomer-speak-box .loan-details-left {
+    width: 100%;
+    padding-right: 0;
+  }
+  .cutomer-speak-box .loan-details-right {
+    width: 100%;
+    padding-top: 20px;
+  }
+  .cutomer-speak-box .list-star {
+    justify-content: flex-start;
+  }
+  .cutomer-speak-box .loan-inner-right .text14i {
+    font-family: "OpenSans-Regular";
+  }
+  .cutomer-speak-box .simple-bar.custom-dropdown-block{
+    max-width: 143px;
+    max-height: 242px;
+  }
+  .cutomer-speak-box .simple-bar .custom-dropdown-list{
+    max-width: 110px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

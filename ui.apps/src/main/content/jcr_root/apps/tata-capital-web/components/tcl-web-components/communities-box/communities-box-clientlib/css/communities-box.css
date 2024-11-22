@@ -1,0 +1,103 @@
+.communities-box .communities-row {
+  position: relative;
+}
+.communities-box .communities-left {
+  padding: 25px 210px 25px 40px;
+  width: calc(100% - 128px);
+}
+.communities-box .communities-left h2 {
+  margin-bottom: 26px;
+}
+.communities-box .communities-left .communities-btn {
+  margin-top: 26px;
+}
+.communities-box .communities-left .communities-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: -20px;
+}
+.communities-box .communities-left .communities-list li {
+  padding: 0 10px;
+  width: 25%;
+  margin-top: 20px;
+  text-align: center;
+}
+.communities-box .communities-left .communities-list .communities-icons {
+  margin: auto;
+}
+.communities-box .communities-left .communities-list .text16i {
+  margin-top: 6px;
+}
+.communities-box .communities-details {
+  background: linear-gradient(134.06deg, rgba(18, 104, 179, 0.71) 0%, rgba(16, 141, 250, 0.95) 99.11%);
+  border-radius: 20px;
+  width: 323px;
+  padding: 30px;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.communities-box .communities-details .communities-pers li {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 30px 0;
+}
+.communities-box .communities-details .communities-pers li:first-child {
+  padding-top: 0px;
+  border-top: none;
+}
+.communities-box .communities-details .communities-pers li:last-child {
+  padding-bottom: 0px;
+}
+.communities-box .communities-details .heading36 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.communities-box .communities-details .text16i {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .communities-box .communities-left {
+    width: 100%;
+    padding: 25px 40px 130px;
+  }
+  .communities-box .communities-left .communities-btn {
+    text-align: center;
+  }
+  .communities-box .communities-details {
+    position: static;
+    transform: translateY(0px);
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+    padding: 24px;
+    margin-top: -110px;
+  }
+  .communities-box .communities-details .communities-pers li {
+    padding: 20px 0;
+  }
+  .communities-box .communities-details .text16i {
+    font-size: 13px;
+  }
+}
+@media (max-width: 767px) {
+  .communities-box .communities-left {
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-right: 24px;
+  }
+  .communities-box .communities-left .communities-list li {
+    width: 50%;
+  }
+  .communities-box .communities-left .communities-btn .btn-big {
+    width: 100%;
+  }
+  .communities-box .communities-details {
+    max-width: calc(100% - 48px);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

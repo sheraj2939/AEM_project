@@ -1,0 +1,18 @@
+<div class="tia-chatbot-box space-tb40 pd-t50">
+    <div class="container">
+        <div class="tia-chatbot-inner bg-div">
+            <div class="tia-chatbot-left">
+                <img src="${properties.fileReference}" alt="${properties.alt}" class="d-none d-md-block">
+                <img src="${properties.fileReferenceMob}" alt="${properties.altMob}" class="d-block d-md-none">
+                <a href="javascript:;" class="play-icon" modal-title="${properties.modalTitle}"
+                    modal-description="${properties.modalDescription @ context = 'html'}"
+                    video-source="${properties.url}" data-popovermodal="popover-modal" data-target="#video-popup-modal">
+                    <i class="icon-play pointEvt"></i>
+                </a>
+            </div>
+            <div class="tia-chatbot-right"
+                data-sly-resource="${'tia-chatbot' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+            </div>
+        </div>
+    </div>
+</div>

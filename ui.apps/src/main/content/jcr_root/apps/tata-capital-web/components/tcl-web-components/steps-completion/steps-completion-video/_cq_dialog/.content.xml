@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Banner"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <steps-content
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Loan Steps"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        eaem-show-on-collapse="EAEM.showProductName"
+                        fieldLabel="Loan Steps">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                            eaem-nested="NODE_STORE"
+                            name="./stepMulti">
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <step-num
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Step Number"
+                                            name="./stepNum"/>
+                                        <step-text
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Step Number"
+                                            name="./stepText"/>
+                                        <step-text-type
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="/libs/granite/ui/components/coral/foundation/form/select"
+                                            fieldLabel="Step Text"
+                                            name="./stepTextType">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <deafult
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="default"
+                                                    value=""/>
+                                                <h4
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="H4"
+                                                    value="videoHeadingTagH4"/>
+                                                <p
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="P"
+                                                    value="videoHeadingTagP"/>
+                                            </items>
+                                        </step-text-type>
+                                        <icon-img
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                            fieldDescription="Please Upload Image As Per Card Variation"
+                                            fieldLabel="Icon Image"
+                                            name="./iconImg"
+                                            rootPath="/content/dam/tata-capital-web"/>
+                                    </items>
+                                </column>
+                            </items>
+                        </field>
+                    </steps-content>
+                    <right-video-thumbnail
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                        fieldDescription="Please Upload Image As Per Card Variation"
+                        fieldLabel=" Thumbnail Image"
+                        name="./thumbnailImageRight"
+                        rootPath="/content/dam/tata-capital"/>
+                    <right-video-link
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Video Link"
+                        name="./VideoSrc"/>
+                    <right-videoimageImagealt
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Image Alt Title "
+                        name="./ImageAltTitle"/>
+                    <apply-button
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Apply Now Button Text"
+                        name="./applyBtn"/>
+                    <applyNowLink
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Video Link"
+                        name="./applyNowLink"/>
+                    <openNewTab
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        name="./openNewTab"
+                        text="Open Link In New Tab"
+                        value="{Boolean}true"/>
+                    <google-play
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                        fieldDescription="Please Upload Google Play Img"
+                        fieldLabel=" Google Play Img"
+                        name="./googlePlayImg"
+                        rootPath="/content/dam/tata-capital"/>
+                    <google-play-url-path
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="URL"
+                        name="./googlePlayUrl"/>
+                    <google-play-openNewTab
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        name="./googleOpenNewTab"
+                        text="Open Link In New Tab"
+                        value="{Boolean}true"/>
+                    <app-store
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                        fieldDescription="Please Upload App Store Img"
+                        fieldLabel="App Store Img"
+                        name="./appStoreImg"
+                        rootPath="/content/dam/tata-capital"/>
+                    <app-store-url-path
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="URL"
+                        name="./appStoreUrl"/>
+                    <app-store-play-openNewTab
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        name="./appStorePlayOpenNewTab"
+                        text="Open Link In New Tab"/>
+                    <schema
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        fieldDescription="Check for Schema Show"
+                        name="./howToSchema"
+                        text="HowTo Schema Show"
+                        value="{Boolean}true"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

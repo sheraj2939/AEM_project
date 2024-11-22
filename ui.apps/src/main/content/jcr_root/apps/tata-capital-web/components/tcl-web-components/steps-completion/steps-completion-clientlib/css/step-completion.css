@@ -1,0 +1,200 @@
+.loan-steps-box {
+  padding: 45px;
+}
+.loan-steps-box .loan-steps-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.loan-steps-box .loan-steps-left {
+  width: 310px;
+}
+.loan-steps-box .loan-steps-right {
+  width: calc(100% - 310px);
+  padding-left: 60px;
+}
+.loan-steps-box .video-imgs {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.loan-steps-box .video-imgs .step-video-poster {
+  border-radius: 20px;
+  width: 100%;
+}
+.loan-steps-box .video-imgs .step-play-btn {
+  width: 70px;
+  height: 70px;
+  display: block;
+  border-radius: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.loan-steps-box .video-imgs .step-play-btn img {
+  width: 100%;
+}
+
+.loan-steps-ul .loan-steps-li {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 28px;
+  position: relative;
+}
+.loan-steps-ul .loan-steps-li:after {
+  content: "";
+  width: 2px;
+  height: auto;
+  background-color: #BFD4E2;
+  position: absolute;
+  top: 45px;
+  bottom: 6px;
+  left: 19px;
+}
+.loan-steps-ul .loan-steps-li:last-child {
+  padding-top: 0px;
+}
+.loan-steps-ul .loan-steps-li:last-child:after {
+  display: none;
+}
+.loan-steps-ul .loan-steps-li.highlight .progress-custom-container {
+  opacity: 1;
+}
+.loan-steps-ul .loan-steps-li.highlight .heading20 {
+  font-family: "OpenSans-Bold";
+}
+.loan-steps-ul .loan-steps-li.highlight .steps-icon-in {
+  background-color: #B287D4;
+  border: 1px solid #B287D4;
+}
+.loan-steps-ul .loan-steps-li.highlight .steps-icon-in img {
+  filter: brightness(0) invert(1);
+}
+.loan-steps-ul .loan-steps-li.completed .progress-custom-container {
+  opacity: 0;
+}
+.loan-steps-ul .loan-steps-li.completed .steps-icon-in {
+  display: none;
+}
+.loan-steps-ul .loan-steps-li.completed .step-ticks-img {
+  display: block;
+}
+.loan-steps-ul .loan-steps-li.completed .heading20 {
+  font-family: "OpenSans-Bold";
+}
+.loan-steps-ul .loan-steps-li.completed .steps-icon-in {
+  background-color: #B287D4;
+  border: 1px solid #B287D4;
+}
+.loan-steps-ul .loan-steps-li.completed .steps-icon-in img {
+  filter: brightness(0) invert(1);
+}
+.loan-steps-ul .loan-steps-li.completed:after {
+  background-color: #219653;
+}
+.loan-steps-ul .progress-custom-container {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.2s;
+}
+.loan-steps-ul .progress-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(red 0% 0%, green 0% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 3s linear;
+}
+.loan-steps-ul .progressCircle {
+  height: 40px;
+  border-radius: 50%;
+}
+.loan-steps-ul .steps-li-left {
+  width: 40px;
+  position: relative;
+  z-index: 1;
+}
+.loan-steps-ul .steps-li-right {
+  width: calc(100% - 40px);
+  padding-left: 19px;
+}
+.loan-steps-ul .steps-number {
+  font-size: 13px;
+  line-height: 17px;
+  color: #1268B3;
+  display: block;
+  font-family: "OpenSans-SemiBold";
+  text-transform: uppercase;
+}
+.loan-steps-ul .heading20 {
+  margin-top: 6px;
+  transition: all 0.3s;
+}
+.loan-steps-ul .steps-icons {
+  padding: 3px;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loan-steps-ul .step-ticks-img {
+  display: none;
+}
+.loan-steps-ul .steps-icon-in {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #BFD4E2;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1199px) {
+  .loan-steps-box {
+    padding: 32px;
+  }
+}
+@media (max-width: 991px) {
+  .loan-steps-box {
+    padding: 30px;
+  }
+  .loan-steps-box .loan-steps-left {
+    width: 100%;
+  }
+  .loan-steps-box .loan-steps-right {
+    width: 100%;
+    padding-left: 0px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .loan-steps-box {
+    padding: 24px;
+  }
+  .loan-steps-box .video-imgs .step-play-btn {
+    width: 50px;
+    height: 50px;
+  }
+  .loan-steps-box .steps-apply-btn .btn-blue {
+    max-width: 297px;
+  }
+}
+
+.steps-completion-video .steps-downloads-store {
+  display: flex;
+  flex-wrap: nowrap;
+}
+/*# sourceMappingURL=style.css.map */

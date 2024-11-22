@@ -1,0 +1,70 @@
+<div class="top-outer-policies bottom-outer-noline">
+    <p class="footer-headings no-arrows" data-footer="footerAnalyticData-Solutions fo Consumers">${properties.consumerSolHead}</p>
+    <div class="policies-tabnav accrodian" id="policies-codes">
+        <div class="hidden-xs policies-tab-top">
+            <ul class="tablist-nav navTab">
+                <sly data-sly-list.loginLinks="${resource.listChildren}">
+                    <sly data-sly-test="${loginLinks.name == 'solutionConsumer'}">
+                        <sly data-sly-list.consumerList="${loginLinks.listChildren}">
+                            <sly
+                                data-sly-test.tabData="${'tab{0}_{1}' @ format =[drop.name,consumerListList.count]}">
+                                <li class="nav-tablist">
+                                    <a data-footer="footerAnalyticData-Solutions fo Consumers" href="javascript:void(0)"
+                                        class="nav-link" data-collapse="collapse"
+                                        data-target="${tabData}">${consumerList.tittle}</a>
+                                </li>
+                            </sly>
+                        </sly>
+                    </sly>
+                </sly>
+            </ul>
+        </div>
+
+        <div class="tab-content">
+
+            <sly data-sly-list.loginLinks="${resource.listChildren}">
+                <sly data-sly-test="${loginLinks.name == 'solutionConsumer'}">
+                    <sly data-sly-list.consumerList="${loginLinks.listChildren}">
+                        <sly
+                            data-sly-test.tabData="${'tab{0}_{1}' @ format =[drop.name,consumerListList.count]}">
+                            <div class="accordian-content">
+                                <div class="tab-accordian visible-xs">
+                                    <a class="tab-title" href="javascript:void(0)"
+                                        data-toggle="collapse" aria-expanded="false"
+                                        data-target="${tabData}">${consumerList.tittle}</a>
+                                </div>
+                                <div class="tab-panel collapse"
+                                    id="${tabData}">
+                                    <sly data-sly-list.subMenu="${consumerList.children}">
+                                        <sly data-sly-test="${subMenu.name == 'SubMenuFiled'}">
+                                            <sly data-sly-list.subMenuList="${subMenu.listChildren}">
+                                                <div class="foot-solution-row">
+													<sly data-sly-test="${subMenuList.subLinkTitle}">
+                                                    <p class="footer-head-sub12"> ${subMenuList.subLinkTitle}</p>
+													</sly>
+                                                    <ul class="footer-links">
+                                                        <sly data-sly-list.submenudata="${subMenuList.children}">
+                                                            <sly data-sly-test="${submenudata.name == 'subLinks'}">
+                                                                <sly data-sly-list.subMenuInnerlist="${submenudata.children}">
+                                                                    <li><a href="${subMenuInnerlist.subMenuLink}"
+                                                                            target="${subMenuInnerlist.openInNewTab ? '_blank' : ''}"
+                                                                            data-footer="footerAnalyticData-Solutions fo Consumers">${subMenuInnerlist.subMenuHead}</a>
+                                                                    </li>
+                                                                </sly>
+                                                            </sly>
+                                                        </sly>
+                                                    </ul>
+                                                </div>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </div>
+                            </div>
+                        </sly>
+                    </sly>
+                </sly>
+            </sly>
+
+        </div>
+    </div>
+</div>

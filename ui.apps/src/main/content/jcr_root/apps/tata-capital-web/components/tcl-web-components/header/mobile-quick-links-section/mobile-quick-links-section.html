@@ -1,0 +1,41 @@
+<sly data-sly-test="${properties.quickLinksTitle}">
+    <div class="accord-col js-accord-col-mob">
+        <div class="submenu-head"><a href="${properties.navQuickLinksTitleRedirectionLink}"
+                data-header="headerAnalyticData-${properties.loanforYouTitle}">${properties.quickLinksTitle}</a><span
+                class="submenu-head-arrow"></span></div>
+        <div class="accord-body">
+            <div class="mob-apply-menu-row">
+                <sly data-sly-list.loginLinks="${resource.listChildren}">
+                    <sly data-sly-test="${loginLinks.name == 'tabMenuQuciLinksection'}">
+                        <sly data-sly-list.consumerList="${loginLinks.listChildren}">
+                            <sly data-sly-test.tabData="${'tab{0}_{1}' @ format =[drop.name,consumerListList.count]}">
+                                <div class="mob-apply-menu-col">
+                                    <sly data-sly-test="${!consumerList.pTagNeed}">
+                                        <h6>${consumerList.tabMenuItemTitle}</h6>
+                                    </sly>
+                                    <sly data-sly-test="${consumerList.pTagNeed}">
+                                        <p class="tabMobPtag">${consumerList.tabMenuItemTitle}</p>
+                                    </sly>
+                                    <ul class="mob-sub-menu">
+                                        <sly data-sly-list.loginLinks="${consumerList.listChildren}">
+                                            <sly data-sly-test="${loginLinks.name == 'quickLinkItem'}">
+                                                <sly data-sly-list.consumerListItem="${loginLinks.listChildren}">
+                                                    <li>
+                                                        <a href="${consumerListItem.redirectionLink}"
+                                                            target="${consumerListItem.quickrLinkOpeninNewTab ? '_blank' : '' }"
+                                                            data-header="headerAnalyticData-${properties.loanforYouTitle}">${consumerListItem.quickLinkItemTitle}</a>
+                                                    </li>
+                                                </sly>
+                                            </sly>
+                                        </sly>
+                                    </ul>
+                                </div>
+                            </sly>
+                        </sly>
+                    </sly>
+                </sly>
+            </div>
+
+        </div>
+    </div>
+</sly>

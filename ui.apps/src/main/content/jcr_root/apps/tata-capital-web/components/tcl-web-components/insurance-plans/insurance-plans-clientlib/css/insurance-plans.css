@@ -1,0 +1,159 @@
+.insurance-plan-box .insurance-plan-inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .insurance-plan-box .insurance-plans-left {
+    width: 369px;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.08);
+    height: fit-content;
+    z-index: 1;
+    border-radius: 30px;
+  }
+  .insurance-plan-box .insurance-plans-right {
+    position: relative;
+    left: -65px;
+    width: calc(100% - 369px);
+    background: #FFFFFF;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 30px;
+    padding: 20px 20px 20px 94px;
+  }
+  /* .insurance-plan-box .insurance-plans-right .tab-content {
+    display: none;
+  } */
+  .insurance-plan-box .insurance-plans-right .tab-content.active {
+    display: block;
+  }
+  .insurance-plan-box .insurance-plans-right .plans-img-wrapper {
+    padding-bottom: 12px;
+  }
+  .insurance-plan-box .insurance-plans-right .heading20 {
+    margin-bottom: 8px;
+  }
+  .insurance-plan-box .insurance-plans-right .text14i {
+    margin-bottom: 12px;
+  }
+  .insurance-plan-box .insurance-plans-right .with-note-text {
+    margin-bottom: 25px;
+  }
+  .insurance-plan-box .insurance-plans-right .with-note-text,
+  .insurance-plan-box .insurance-plans-right .notes {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .insurance-plan-box .key-features-details {
+    padding-top: 25px;
+  }
+  .insurance-plan-box .key-features-details .heading20 {
+    margin-bottom: 12px;
+  }
+  .insurance-plan-box .key-features-inner {
+    background: linear-gradient(134.06deg, rgba(18, 104, 179, 0.81) 0%, rgba(16, 141, 250, 0.99) 99.11%);
+    border-radius: 16px;
+    padding: 20px 10px 20px 20px;
+  }
+  .insurance-plan-box .key-features-inner li {
+    position: relative;
+    padding-left: 35px;
+    padding-bottom: 15px;
+    font-family: "OpenSans-SemiBold";
+    color: #FFFFFF;
+  }
+  .insurance-plan-box .key-features-inner li:nth-last-child(1) {
+    padding-bottom: 0;
+  }
+  .insurance-plan-box .key-features-points .all-icon {
+    position: absolute;
+    left: 0;
+    top: -2px;
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
+  
+  @media (max-width: 1199px) {
+    .insurance-plan-box .insurance-plans-left {
+      width: 250px;
+    }
+    .insurance-plan-box .insurance-plans-right {
+      width: calc(100% - 250px);
+    }
+  }
+  @media (max-width: 991px) {
+    .insurance-plan-box .insurance-plans-left {
+      width: 100%;
+      box-shadow: none;
+      margin-bottom: 30px;
+      border-radius: 0;
+      display: flex;
+      overflow-x: auto;
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+      /* Hide scrollbar for Chrome, Safari and Opera */
+    }
+    .insurance-plan-box .insurance-plans-left::-webkit-scrollbar {
+      display: none;
+    }
+    .insurance-plan-box .insurance-plans-right {
+      left: 0;
+      width: 100%;
+      background: #FFFFFF;
+      padding: 24px;
+    }
+    .insurance-plan-box .insurance-plans-right .plans-img-wrapper {
+      padding-bottom: 14px;
+    }
+    .insurance-plan-box .insurance-plans-right .heading20 {
+      margin-bottom: 14px;
+    }
+    .insurance-plan-box .insurance-plans-right .with-note-text {
+      margin-bottom: 20px;
+    }
+    .insurance-plan-box .insurance-plans-right .btn-blue {
+      width: 100%;
+    }
+    .insurance-plan-box .key-features-details {
+      padding-top: 30px;
+    }
+    .insurance-plan-box .key-features-details .heading20 {
+      margin-bottom: 14px;
+    }
+    .insurance-plan-box .key-features-inner {
+      padding: 26px 20px 20px;
+    }
+    .insurance-plan-box .key-features-inner .text14i {
+      margin-bottom: 0;
+    }
+    .insurance-plan-box .key-features-inner li {
+      position: relative;
+      padding-left: 35px;
+      padding-bottom: 18px;
+      font-weight: 600;
+      color: #FFFFFF;
+    }
+  }
+  @media (max-width: 767px) {
+    .insurance-plan-box {
+      margin: 0 -15px;
+    }
+    .insurance-plan-box .insurance-plans-left {
+      padding-left: 15px;
+    }
+    .insurance-plan-box .insurance-plans-right {
+      margin: 0 15px;
+    }
+    .insurance-plan-box .insurance-plans-right .heading20 {
+      font-size: 16px;
+      line-height: 22px;
+    }
+    .insurance-plan-box .insurance-plans-right .text14i {
+      font-size: 13px;
+      line-height: 18px;
+    }
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+  

@@ -1,0 +1,27 @@
+<div class="space-tb40 ${properties.investmentComponent}">
+    <div class="container">
+        <sly
+            data-sly-resource="${'investment-service-title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+        </sly>
+
+        <ul class="service-list-details">
+            <sly data-sly-list.investmentServices="${resource.children}">
+                <sly data-sly-test="${investmentServices.name == 'investmentServicesList'}">
+                    <sly data-sly-list.service="${investmentServices.children}">
+                        <li id=${service.boxid}>
+                            <div class="bg-div bg-with-img secure-box">
+                                <h2>${service.Title} <span>${service.boldTitle}</span></h2>
+                                <div class="text16i">${service.bulletPoint @context = 'html'}</div>
+                                <div class="btns-tops">
+                                    <a href="${service.buttonlink}" target="${service.buttoncheckbox ? '_blank' : ''}"
+                                        class="btn-dangers btn-big" data-product='${service.productButton}'>
+                                        ${service.buttonTitle}</a>
+                                </div>
+                            </div>
+                        </li>
+                    </sly>
+                </sly>
+            </sly>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,59 @@
+.list-group.bg-div {
+  padding: 25px 40px;
+  margin-top: 20px;
+}
+.list-group.bg-div .charges-right .personal-para .text16i:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.list-group .list-group-item {
+  padding: 30px 0;
+  border-bottom: 1px solid #C5D0D9;
+}
+.list-group .list-group-item:nth-last-child(1) {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.list-group .list-group-item:nth-child(1) {
+  padding-top: 0;
+}
+
+.charges-list {
+  display: flex;
+}
+.charges-list .charges-left {
+  width: 420px;
+  margin-right: 12px;
+}
+.charges-list .charges-left .heading20 {
+  margin-bottom: 0;
+}
+.charges-list .charges-right {
+  width: calc(100% - 432px);
+}
+
+@media (max-width: 991px) {
+  .charges-list .charges-left {
+    width: 220px;
+  }
+  .charges-list .charges-right {
+    width: calc(100% - 232px);
+  }
+}
+@media (max-width: 767px) {
+  .list-group.bg-div {
+    padding: 16px;
+    margin-top: 12px;
+  }
+  .list-group .list-group-item {
+    padding: 20px 0;
+  }
+
+  .charges-list .charges-left {
+    width: 105px;
+  }
+  .charges-list .charges-right {
+    width: calc(100% - 117px);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

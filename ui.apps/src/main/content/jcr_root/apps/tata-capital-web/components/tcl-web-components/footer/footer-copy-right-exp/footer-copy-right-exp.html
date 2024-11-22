@@ -1,0 +1,29 @@
+<!-- copyright-box-->
+<div class="copyright-box">
+    <div class="footer-container">
+        <div class="copyright-inner">
+
+            <div class="copyright-links">
+                <ul>
+                    <sly data-sly-list.loginLinks="${resource.listChildren}">
+                        <sly data-sly-test="${loginLinks.name == 'copyRight'}">
+                            <sly data-sly-list.copyRightList="${loginLinks.listChildren}">
+                                <li><a href="${copyRightList.redirectionLink}"
+                                        target="${copyRightList.openInNewTab? '_blank' : ''}" data-footer="footerAnalyticData-Copy Right Section">${copyRightList.heading}</a>
+                                </li>
+                            </sly>
+                        </sly>
+                    </sly>
+                </ul>
+            </div>
+            <div class="copyright-text">
+                ${properties.description @context = 'html'}
+            </div>
+            <!--/*<div class="designby-text">
+                <p>Designed by <a href="javascript:void(0)">ScreenRoot</a></p>
+            </div>*/-->
+
+        </div>
+    </div>
+</div>
+<!-- copyright-box-->

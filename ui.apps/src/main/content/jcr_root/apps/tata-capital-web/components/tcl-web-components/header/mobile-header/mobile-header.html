@@ -1,0 +1,1124 @@
+<div class="mob-header">
+    <div class="mob-inner-header">
+        <div class="mob-fixscrollmain">
+            <div class="accordian-mobsubmenu js-mobsubmenu active">
+                <sly data-sly-test="${properties.loanforYouTitle}">
+                    <div class="accord-col js-accord-col-mob"><div class="submenu-head"><a href="${properties.navLoanforYouTitleRedirectionLink}" data-header="headerAnalyticData-${properties.loanforYouTitle}">${properties.loanforYouTitle}</a><span class="submenu-head-arrow"></span></div>
+                        <div class="accord-body">
+                            <ul class="mob-sub-menu">
+                                <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                    <sly data-sly-test="${loginLinks.name == 'tabMenuLoanForYousection'}">
+                                        <sly data-sly-list.consumerList="${loginLinks.listChildren}">
+                                            <sly
+                                                data-sly-test.tabData="${'tab_loanForYou{0}_{1}' @ format =[drop.name,consumerListList.count]}">
+                                                <sly data-sly-test="${!consumerList.needAccordian}">
+                                                    <sly data-sly-test="${!consumerList.needPopupforMobile}">
+                                                        <sly data-sly-test="${consumerList.menuRedirectionLink}">
+                                                            <li class="${consumerList.newLableShow ? 'animated-header-btn' : ''}">
+                                                                <sly data-sly-test="${consumerList.notShowdetails}">
+                                                                    <a href="${consumerList.menuRedirectionLink}" class="" data-header="headerAnalyticData-${properties.loanforYouTitle}"> <i>${consumerList.tabMenuItemTitle} <span data-sly-test="${consumerList.newLableShow}" class="text-tag-new ">New</span></i></a>
+                                                                </sly>
+                                                                <sly data-sly-test="${!consumerList.notShowdetails}">
+                                                                    <span class="menu-sub-items ms-bg js-showDetail" data-value="${tabData}"></span>
+                                                                    <a href="${consumerList.menuRedirectionLink}" class="text-only" data-header="headerAnalyticData-${properties.loanforYouTitle}">
+                                                                        <i>${consumerList.tabMenuItemTitle} <span data-sly-test="${consumerList.newLableShow}" class="text-tag-new ">New</span></i>
+                                                                    </a>
+                                                                </sly>
+                                                            </li>
+                                                        </sly>
+                                                        <sly data-sly-test="${!consumerList.menuRedirectionLink}">
+                                                            <li>
+                                                                <span class="menu-sub-items ms-bg js-showDetail" data-value="${tabData}"></span>
+                                                                <a href="${consumerList.menuRedirectionLink}" class="${consumerList.newLableShow ? 'animated-header-btn new-lable' : 'text-only'}" data-header="headerAnalyticData-${properties.loanforYouTitle}">
+                                                                    <i>${consumerList.tabMenuItemTitle} <span data-sly-test="${consumerList.newLableShow}" class="text-tag-new ">New</span></i>
+                                                                </a>
+                                                            </li>
+                                                        </sly>
+                                                    </sly>
+                                                    <sly data-sly-test="${consumerList.needPopupforMobile}">
+                                                        <li class="js-showDetail">
+                                                            <a href="javascript:void(0)" data-popovermodal="popover-modal" data-target="#creditCards-modal" class="jsOpenModal" data-header="headerAnalyticData-${properties.loanforYouTitle}">${consumerList.tabMenuItemTitle}</a>
+                                                        </li>
+                                                    </sly>
+                                                </sly>
+                                                <sly data-sly-test="${consumerList.needAccordian}">
+                                                    <li class="">
+                                                        <div class="sub-accordian-mob js-sub-accordian2">
+                                                            <div class="sub-accordian-row" subaccord-row>
+                                                                <div class="subaccord-head">
+                                                                    <span class="menu-sub-items subsubmenu-heads-arrow" subaccord-head></span>
+                                                                    <a href="${consumerList.menuRedirectionLink}" class="sub-heads" data-header="headerAnalyticData-${properties.loanforYouTitle}">${consumerList.tabMenuItemTitle}</a>
+                                                                </div>
+                                                                <div class="sub-accordian-body" subaccord-body>
+                                                                    <ul class="mob-sub-menu">
+                                                                        <sly data-sly-list.loginLinks="${consumerList.listChildren}">
+                                                                            <sly data-sly-test="${loginLinks.name == 'innertabMenuLoanForYousection'}">
+                                                                                <sly data-sly-list.consumerListInner="${loginLinks.listChildren}">
+                                                                                    <sly data-sly-test.tabDataInner="${'tabInner{0}_{1}' @ format =[drop.name,consumerListInnerList.count]}">
+                                                                                        <li>
+                                                                                            <span class="menu-sub-items ms-bg js-showDetail" data-value="${tabDataInner}"></span>
+                                                                                            <a href="${consumerListInner.menuInnerRedirectionLink}" class="text-only" data-header="headerAnalyticData-${properties.loanforYouTitle}">${consumerListInner.innertabMenuItemTitle}</a>
+                                                                                        </li>
+                                                                                    </sly>
+                                                                                </sly>
+                                                                            </sly>
+                                                                        </sly>
+                                                                    </ul>
+                                                                </div>        
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </li>
+                                                </sly>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </sly>
+                            </ul>
+                        </div>
+                    </div>
+                </sly>
+                <sly data-sly-test="${properties.loanforBusinessTitle}">
+                    <div class="accord-col js-accord-col-mob"> <div class="submenu-head"> <a href="${properties.navLoanforBusinessTitleRedirectionLink}" data-header="headerAnalyticData-${properties.loanforYouTitle}">${properties.loanforBusinessTitle}</a><span class="submenu-head-arrow"></span></div>
+                        <div class="accord-body">
+                            <ul class="mob-sub-menu">
+                                <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                    <sly data-sly-test="${loginLinks.name == 'tabMenuLoanForBusinesssection'}">
+                                        <sly data-sly-list.consumerList="${loginLinks.listChildren}">
+                                            <sly
+                                                data-sly-test.tabData="${'tab-business{0}_{1}' @ format =[drop.name,consumerListList.count]}">
+                                                <sly data-sly-test="${!consumerList.needGreenBtn}">
+                                                    <sly data-sly-test="${!consumerList.needAccordian}">
+                                                        <li>
+                                                            <sly data-sly-test="${consumerList.notShowdetails}">
+                                                                <a href="${consumerList.tabGreenRedirectionLink}" class="" data-header="headerAnalyticData-${properties.loanforYouTitle}">${consumerList.tabMenuItemTitle}</a>
+                                                            </sly>
+                                                            <sly data-sly-test="${!consumerList.notShowdetails}">
+                                                                <span class="menu-sub-items ms-bg js-showDetail" data-value="${tabData}"></span>
+                                                                <a href="${consumerList.tabGreenRedirectionLink}" class="text-only" data-header="headerAnalyticData-${properties.loanforYouTitle}">${consumerList.tabMenuItemTitle}</a>
+                                                            </sly>
+                                                        </li>
+                                                    </sly>
+                                                   <sly data-sly-test="${consumerList.needAccordian}">
+                                                        <li class="">
+                                                            <div class="sub-accordian-mob js-sub-accordian2">
+                                                                <div class="sub-accordian-row" subaccord-row>
+                                                                    <div class="subaccord-head">
+                                                                        <span class="menu-sub-items subsubmenu-heads-arrow" subaccord-head></span>
+                                                                        <a href="${consumerList.tabGreenRedirectionLink}" class="sub-heads" data-header="headerAnalyticData-${properties.loanforYouTitle}">${consumerList.tabMenuItemTitle}</a>
+                                                                    </div>
+                                                                    <div class="sub-accordian-body" subaccord-body>
+                                                                        <ul class="mob-sub-menu">
+                                                                            <sly data-sly-list.loginLinks="${consumerList.listChildren}">
+                                                                                <sly data-sly-test="${loginLinks.name == 'innertabMenuLoanForBusinesssection'}">
+                                                                                    <sly data-sly-list.consumerListInner="${loginLinks.listChildren}">
+                                                                                        <sly data-sly-test.tabDataInner="${'tabBusinessInner{0}_{1}_{2}' @ format =[drop.name,consumerListInnerList.count,consumerListInner.innertabMenuItemIdMap]}">
+                                                                                            <li>
+                                                                                                <span class="menu-sub-items ms-bg js-showDetail" data-value="${tabDataInner}"></span>
+                                                                                                <a href="${consumerListInner.tabinnerGreenRedirectionLink}" class="text-only" data-header="headerAnalyticData-${properties.loanforYouTitle}">${consumerListInner.innertabMenuItemTitle}</a>
+                                                                                            </li>
+                                                                                        </sly>
+                                                                                    </sly>
+                                                                                </sly>
+                                                                            </sly>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </sly>
+                                                </sly>
+                                                <sly data-sly-test="${consumerList.needGreenBtn}">
+                                                    <li>
+                                                        <div class="tab-btns-grren">
+                                                            <a href="${consumerList.btnGreenRedirectionLink}" class="btn-grrens" target="${consumerList.btnGreenOpeninNewTab ? '_blank' : '' }">${consumerList.btnGreenText}</a>
+                                                        </div> 
+                                                    </li>
+                                                </sly>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </sly>
+                            </ul>
+                        </div>
+                    </div>
+                </sly>
+
+                <sly data-sly-test="${properties.loanforInvestmentTitle}">
+                    <div class="accord-col js-accord-col-mob"><div class="submenu-head"><a href="${properties.navLoanforInvestmentTitleRedirectionLink}" data-header="headerAnalyticData-${properties.loanforYouTitle}">${properties.loanforInvestmentTitle}</a><span class="submenu-head-arrow"></span>
+                        </div>
+                        <div class="accord-body">
+                            <ul class="mob-sub-menu">
+                                <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                    <sly data-sly-test="${loginLinks.name == 'tabMenuInvestmentsection'}">
+                                        <sly data-sly-list.consumerList="${loginLinks.listChildren}">
+                                            <sly
+                                                data-sly-test.tabData="${'tab-investment{0}_{1}' @ format =[drop.name,consumerListList.count]}">
+                                                <li>
+                                                    <span class="menu-sub-items ms-bg js-showDetail" data-value="${tabData}"></span>
+                                                    <a href="${consumerList.redirectionTabLink}" data-sly-attribute.rel="${consumerlist.nofollow ? 'nofollow' : ''}" class="text-only" data-header="headerAnalyticData-${properties.loanforYouTitle}">${consumerList.tabMenuItemTitle}</a>
+                                                </li>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </sly>
+                            </ul>
+                        </div>
+                    </div>
+                </sly>
+
+                <sly data-sly-test="${properties.insuranceTitle}">
+                    <a href="javascript:void(0)" class="submenu-head mob-right-arrow js-showDetail"
+                    data-value="insurance-menu-mob" data-header="headerAnalyticData-${properties.loanforYouTitle}">${properties.insuranceTitle}</a>
+                </sly>
+
+                <sly data-sly-test="${properties.quickLinksTitle}">
+                    <sly data-sly-resource="${'mob-quick-links' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/header/mobile-quick-links-section'}"> </sly>
+                </sly>
+
+                <sly data-sly-list.loginLinks="${resource.listChildren}">
+                    <sly data-sly-test="${loginLinks.name == 'otherLinkItem'}">
+                        <sly data-sly-list.consumerList="${loginLinks.listChildren}">
+                            <sly data-sly-test="${!consumerList.needOfferPopup}">
+                                <a href="${consumerList.redirectionLink}" class="submenu-head" target="${consumerList.otherLinkOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${properties.loanforYouTitle}">${consumerList.otherLinkItemTitle}</a>
+                            </sly>
+                            <sly data-sly-test="${consumerList.needOfferPopup}">
+                                <a href="javascript:void(0);" class="submenu-head" target="${consumerList.otherLinkOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${properties.loanforYouTitle}">${consumerList.otherLinkItemTitle}</a>
+                            </sly>
+                        </sly>
+                    </sly>
+                </sly>
+            </div>
+        </div>
+        <!-- mob main menu -->
+    </div>
+
+    <!-- mob sub sub menu -->
+    <sly data-sly-list.loginLinks="${resource.listChildren}">
+        <sly data-sly-test="${loginLinks.name == 'tabMenuLoanForYousection'}">
+            <sly data-sly-list.consumerList="${loginLinks.listChildren}">
+                <sly data-sly-test.tabData="${'tab_loanForYou{0}_{1}' @ format =[drop.name,consumerListList.count]}">
+                    <!-- personalloan -->
+                    <sly data-sly-test="${!consumerList.needAccordian}">
+                        <div class="mob-subsub-menu js-close-details" id="${tabData}">
+                            <!-- back button -->
+                            <div class="backmenu">
+                                <a href="javascript:void(0)" class="backto js-menu-back">
+                                    <i class="icon-arrow-tail-left" aria-hidden="true"></i>
+                                    Back
+                                </a>
+                            </div>
+                            <div class="mob-fixscroll">
+                                <div class="mob-submenucotent">
+                                    <div class="loan-info-detail-box">
+                                        <sly data-sly-test="${consumerList.needLoanInfoDetailCOmpoent}">
+                                            <div class="mob-head-tops">
+                                                <sly data-sly-test="${consumerList.loanInfoDetailTitle}">
+                                                    <p class="text-blue custom-blue-title">
+                                                        ${consumerList.loanInfoDetailTitle}</p>
+                                                </sly>
+                                                ${consumerList.loanInfoDetailDescription @context='html'}
+                                                <ul class="dot-list">
+                                                    <sly data-sly-list.loginLinks="${consumerList.listChildren}">
+                                                        <sly data-sly-test="${loginLinks.name == 'importanLinks'}">
+                                                            <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                                <li>${impLinks.subMenuHead}</li>
+                                                            </sly>
+                                                        </sly>
+                                                    </sly>
+                                                </ul>
+                                                <div class="apply-knowMore-wrap">
+                                                    <a href="${consumerList.redirectionLinkKnowMore}" class="btn-link"
+                                                        data-sly-test="${consumerList.knowMoreLoanInfoDetailButton}" target="${consumerList.knowMoreButtonloanInfoDetailOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${impLinks.subMenuHead}">
+                                                        ${consumerList.knowMoreLoanInfoDetailButton}
+                                                    </a>
+                                                    <a href="${consumerList.redirectionLinkApplyNow}" class="apply-btn"
+                                                        data-sly-test="${consumerList.applyNowloanInfoDetailButton}" target="${consumerList.loanInfoDetailApplyNowButtonOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${impLinks.subMenuHead}">
+                                                        ${consumerList.applyNowloanInfoDetailButton}
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${consumerList.needKnowBox}">
+                                            <div class="need-know-box">
+                                                <p>${consumerList.needKnowBoxTitle}</p>
+                                                <sly data-sly-test="${!consumerList.inlineLinks}">
+                                                    <ul class="${consumerList.inlineLinks ? 'need-know-link-inline' : ''}">
+                                                        <sly data-sly-list.loginLinks="${consumerList.listChildren}">
+                                                            <sly data-sly-test="${loginLinks.name == 'needKnowBoxLinks'}">
+                                                                <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                                    <li class="need-know-item">
+                                                                        <sly data-sly-test="${impLinks.redirectionLink}">
+                                                                            <a href="${impLinks.redirectionLink}"
+                                                                                class="need-know-link" target="${impLinks.needKnowBoxLinksOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${impLinks.subMenuHead}">
+                                                                                ${impLinks.subMenuHead}
+                                                                            </a>
+                                                                        </sly>
+                                                                        <sly data-sly-test="${!impLinks.redirectionLink}">
+                                                                            <a href="${impLinks.redirectionLink}"
+                                                                                class="need-know-link" data-header="headerAnalyticData-${impLinks.subMenuHead}">
+                                                                                ${impLinks.subMenuHead}
+                                                                            </a>
+                                                                        </sly>
+                                                                    </li>
+                                                                </sly>
+                                                            </sly>
+                                                        </sly>
+                                                    </ul>
+                                                </sly>
+                                                <sly data-sly-test="${consumerList.inlineLinks}">
+                                                    <ul class="${consumerList.inlineLinks ? 'need-know-link-inline' : ''}">
+                                                        <sly data-sly-list.loginLinks="${consumerList.listChildren}">
+                                                            <sly data-sly-test="${loginLinks.name == 'needKnowBoxLinks'}">
+                                                                <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                                    <li class="">
+                                                                        <sly data-sly-test="${impLinks.redirectionLink}">
+                                                                            <a href="${impLinks.redirectionLink}"
+                                                                                class="need-know-link" target="${impLinks.needKnowBoxLinksOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${impLinks.subMenuHead}">
+                                                                                ${impLinks.subMenuHead}
+                                                                            </a>
+                                                                        </sly>
+                                                                        <sly data-sly-test="${!impLinks.redirectionLink}">
+                                                                            <a href="${impLinks.redirectionLink}"
+                                                                                class="need-know-link" data-header="headerAnalyticData-${impLinks.subMenuHead}">
+                                                                                ${impLinks.subMenuHead}
+                                                                            </a>
+                                                                        </sly>
+                                                                    </li>
+                                                                </sly>
+                                                            </sly>
+                                                        </sly>
+                                                    </ul>
+                                                </sly>
+                                            </div>
+                                        </sly>
+                                    </div>
+    
+                                    <div class="subsub-accordian jsAccordian">
+                                        <sly data-sly-test="${consumerList.loanForYourNeedCOmpoent}">
+                                            <div class="subsub-accordian-row" accod-row>
+                                                <a href="javascript:void(0)" class="subsub-head"
+                                                    accod-head data-header="headerAnalyticData-${consumerList.loanForYourNeedTitle}">${consumerList.loanForYourNeedTitle}</a>
+                                                <div class="subsub-accordian-body" accod-body>
+                                                    <div class="loan-card">
+                                                        <ul>
+                                                            <sly data-sly-list.loginLinks="${consumerList.listChildren}">
+                                                                <sly data-sly-test="${loginLinks.name == 'loanList'}">
+                                                                    <sly
+                                                                        data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                                        <li class="loan-card-item">
+                                                                            <a href="${impLinks.redirectionLink}"
+                                                                                class="loan-card-link" target="${impLinks.loanListpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${consumerList.loanForYourNeedTitle}">
+                                                                                <span class="${impLinks.iconClass} head-icons"></span>
+                                                                                <p>${impLinks.loanListHeading}</p>
+                                                                            </a>
+                                                                        </li>
+                                                                    </sly>
+                                                                </sly>
+                                                            </sly>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${consumerList.vehicleLoan}">
+                                        <sly data-sly-resource="${'mob-vl-header' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/header/header-vehicle-loan'}"></sly>
+                                        </sly>
+                                        <sly data-sly-test="${consumerList.calculator}">
+                                            <div class="subsub-accordian-row" accod-row>
+                                                <a href="javascript:void(0)" class="subsub-head"
+                                                    accod-head data-header="headerAnalyticData-${consumerList.loanForYourNeedTitle}">${consumerList.calculatorTitle}</a>
+                                                <div class="subsub-accordian-body" accod-body>
+                                                    <div class="loan-card">
+                                                        <ul>
+                                                            <sly data-sly-list.loginLinks="${consumerList.listChildren}">
+                                                                <sly data-sly-test="${loginLinks.name == 'loanListCalc'}">
+                                                                    <sly
+                                                                        data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                                        <li class="loan-card-item">
+                                                                            <a href="${impLinks.redirectionLink}"
+                                                                                class="loan-card-link" target="${impLinks.calcOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${consumerList.loanForYourNeedTitle}">
+                                                                                <span class="${impLinks.iconClass} head-icons"></span>
+                                                                                <p>${impLinks.loanListCalcTitle}</p>
+                                                                            </a>
+                                                                        </li>
+                                                                    </sly>
+                                                                </sly>
+                                                            </sly>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </sly>
+                    <!-- personalloan -->
+                    <sly data-sly-test="${consumerList.needAccordian}">
+                        <sly data-sly-list.loginLinks="${consumerList.listChildren}">
+                            <sly data-sly-test="${loginLinks.name == 'innertabMenuLoanForYousection'}">
+                                <sly data-sly-list.consumerListInner="${loginLinks.listChildren}">
+                                    <sly data-sly-test.tabDataInner="${'tabInner{0}_{1}' @ format =[drop.name,consumerListInnerList.count]}">
+                                        <div class="mob-subsub-menu js-close-details" id="${tabDataInner}">
+                                            <!-- back button -->
+                                            <div class="backmenu">
+                                                <a href="javascript:void(0)" class="backto js-menu-back">
+                                                    <i class="icon-arrow-tail-left" aria-hidden="true"></i>
+                                                    Back
+                                                </a>
+                                            </div>
+                                            <div class="mob-fixscroll">
+                                                <div class="mob-submenucotent">
+                                                    <div class="loan-info-detail-box">
+                                                        <sly data-sly-test="${consumerListInner.needLoanInfoDetailCOmpoent}">
+                                                            <div class="mob-head-tops">
+                                                                <sly data-sly-test="${consumerListInner.loanInfoDetailTitle}">
+                                                                    <p class="text-blue custom-blue-title">
+                                                                        ${consumerListInner.loanInfoDetailTitle}</p>
+                                                                </sly>
+                                                                ${consumerListInner.loanInfoDetailDescription @context='html'}
+                                                                <ul class="dot-list">
+                                                                    <sly data-sly-list.loginLinks="${consumerListInner.listChildren}">
+                                                                        <sly data-sly-test="${loginLinks.name == 'importanLinks'}">
+                                                                            <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                                                <li>${impLinks.subMenuHead}</li>
+                                                                            </sly>
+                                                                        </sly>
+                                                                    </sly>
+                                                                </ul>
+                                                                <div class="apply-knowMore-wrap">
+                                                                    <a href="${consumerListInner.redirectionLinkKnowMore}" class="btn-link"
+                                                                        data-sly-test="${consumerListInner.knowMoreLoanInfoDetailButton}" target="${consumerListInner.knowMoreButtonloanInfoDetailOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${consumerListInner.loanInfoDetailTitle}">
+                                                                        ${consumerListInner.knowMoreLoanInfoDetailButton}
+                                                                    </a>
+                                                                    <a href="${consumerListInner.redirectionLinkApplyNow}" class="apply-btn"
+                                                                        data-sly-test="${consumerListInner.applyNowloanInfoDetailButton}" target="${consumerListInner.loanInfoDetailApplyNowButtonOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${consumerListInner.loanInfoDetailTitle}">
+                                                                        ${consumerListInner.applyNowloanInfoDetailButton}
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </sly>
+                                                        <sly data-sly-test="${consumerListInner.needKnowBox}">
+                                                            <div class="need-know-box">
+                                                                <p>${consumerListInner.needKnowBoxTitle}</p>
+                                                                <sly data-sly-test="${!consumerListInner.inlineLinks}">
+                                                                    <ul class="${consumerListInner.inlineLinks ? 'need-know-link-inline' : ''}">
+                                                                        <sly data-sly-list.loginLinks="${consumerListInner.listChildren}">
+                                                                            <sly data-sly-test="${loginLinks.name == 'needKnowBoxLinks'}">
+                                                                                <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                                                    <li class="need-know-item">
+                                                                                        <sly data-sly-test="${impLinks.redirectionLink}">
+                                                                                            <a href="${impLinks.redirectionLink}"
+                                                                                                class="need-know-link" target="${impLinks.needKnowBoxLinksOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${consumerListInner.loanInfoDetailTitle}">
+                                                                                                ${impLinks.subMenuHead}
+                                                                                            </a>
+                                                                                        </sly>
+                                                                                        <sly data-sly-test="${!impLinks.redirectionLink}">
+                                                                                            <a href="${impLinks.redirectionLink}"
+                                                                                                class="need-know-link" data-header="headerAnalyticData-${consumerListInner.loanInfoDetailTitle}">
+                                                                                                ${impLinks.subMenuHead}
+                                                                                            </a>
+                                                                                        </sly>
+                                                                                    </li>
+                                                                                </sly>
+                                                                            </sly>
+                                                                        </sly>
+                                                                    </ul>
+                                                                </sly>
+                                                                <sly data-sly-test="${consumerListInner.inlineLinks}">
+                                                                    <ul class="${consumerListInner.inlineLinks ? 'need-know-link-inline' : ''}">
+                                                                        <sly data-sly-list.loginLinks="${consumerListInner.listChildren}">
+                                                                            <sly data-sly-test="${loginLinks.name == 'needKnowBoxLinks'}">
+                                                                                <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                                                    <li class="">
+                                                                                        <sly data-sly-test="${impLinks.redirectionLink}">
+                                                                                            <a href="${impLinks.redirectionLink}"
+                                                                                                class="need-know-link" target="${impLinks.needKnowBoxLinksOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${consumerListInner.loanInfoDetailTitle}">
+                                                                                                ${impLinks.subMenuHead}
+                                                                                            </a>
+                                                                                        </sly>
+                                                                                        <sly data-sly-test="${!impLinks.redirectionLink}">
+                                                                                            <a href="${impLinks.redirectionLink}"
+                                                                                                class="need-know-link" data-header="headerAnalyticData-${consumerListInner.loanInfoDetailTitle}">
+                                                                                                ${impLinks.subMenuHead}
+                                                                                            </a>
+                                                                                        </sly>
+                                                                                    </li>
+                                                                                </sly>
+                                                                            </sly>
+                                                                        </sly>
+                                                                    </ul>
+                                                                </sly>
+                                                            </div>
+                                                        </sly>
+                                                    </div>
+                                        
+                                                    <div class="subsub-accordian jsAccordian">
+                                                        <sly data-sly-test="${consumerListInner.loanForYourNeedCOmpoent}">
+                                                            <div class="subsub-accordian-row" accod-row>
+                                                                <a href="javascript:void(0)" class="subsub-head"
+                                                                    accod-head data-header="headerAnalyticData-${consumerListInner.loanInfoDetailTitle}">${consumerListInner.loanForYourNeedTitle}</a>
+                                                                <div class="subsub-accordian-body" accod-body>
+                                                                    <div class="loan-card">
+                                                                        <ul>
+                                                                            <sly data-sly-list.loginLinks="${consumerListInner.listChildren}">
+                                                                                <sly data-sly-test="${loginLinks.name == 'loanList'}">
+                                                                                    <sly
+                                                                                        data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                                                        <li class="loan-card-item">
+                                                                                            <a href="${impLinks.redirectionLink}"
+                                                                                                class="loan-card-link" target="${impLinks.loanListpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${consumerListInner.loanInfoDetailTitle}">
+                                                                                                <span class="${impLinks.iconClass} head-icons"></span>
+                                                                                                <p>${impLinks.loanListHeading}</p>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                    </sly>
+                                                                                </sly>
+                                                                            </sly>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </sly>
+                                                        <sly data-sly-test="${consumerListInner.calculator}">
+                                                            <div class="subsub-accordian-row" accod-row>
+                                                                <a href="javascript:void(0)" class="subsub-head"
+                                                                    accod-head data-header="headerAnalyticData-${consumerListInner.loanInfoDetailTitle}">${consumerListInner.calculatorTitle}</a>
+                                                                <div class="subsub-accordian-body" accod-body>
+                                                                    <div class="loan-card">
+                                                                        <ul>
+                                                                            <sly data-sly-list.loginLinks="${consumerListInner.listChildren}">
+                                                                                <sly data-sly-test="${loginLinks.name == 'loanListCalc'}">
+                                                                                    <sly
+                                                                                        data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                                                        <li class="loan-card-item">
+                                                                                            <a href="${impLinks.redirectionLink}"
+                                                                                                class="loan-card-link" target="${impLinks.calcOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${consumerListInner.loanInfoDetailTitle}">
+                                                                                                <span class="${impLinks.iconClass} head-icons"></span>
+                                                                                                <p>${impLinks.loanListCalcTitle}</p>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                    </sly>
+                                                                                </sly>
+                                                                            </sly>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </sly>
+                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </sly>
+                </sly>
+            </sly>
+        </sly>
+    </sly>
+
+    <sly data-sly-list.loginLinks="${resource.listChildren}">
+        <sly data-sly-test="${loginLinks.name == 'tabMenuLoanForBusinesssection'}">
+            <sly data-sly-list.consumerList="${loginLinks.listChildren}">
+                <sly data-sly-test.tabData="${'tab-business{0}_{1}' @ format =[drop.name,consumerListList.count]}">
+                    <!-- personalloan -->
+                    <sly data-sly-test="${!consumerList.needAccordian}">
+                        <div class="mob-subsub-menu js-close-details" id="${tabData}">
+                            <!-- back button -->
+                            <div class="backmenu">
+                                <a href="javascript:void(0)" class="backto js-menu-back">
+                                    <i class="icon-arrow-tail-left" aria-hidden="true"></i>
+                                    Back
+                                </a>
+                            </div>
+                            <div class="mob-fixscroll">
+                                <div class="mob-submenucotent">
+                                    <div class="loan-info-detail-box">
+                                        <sly data-sly-test="${consumerList.needLoanInfoDetailCOmpoent}">
+                                            <div class="mob-head-tops">
+                                                <sly data-sly-test="${consumerList.loanInfoDetailTitle}">
+                                                    <p class="text-blue custom-blue-title">
+                                                        ${consumerList.loanInfoDetailTitle}</p>
+                                                </sly>
+                                                ${consumerList.loanInfoDetailDescription @context='html'}
+                                                <ul class="dot-list">
+                                                    <sly data-sly-list.loginLinks="${consumerList.listChildren}">
+                                                        <sly data-sly-test="${loginLinks.name == 'importanLinks'}">
+                                                            <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                                <li>${impLinks.subMenuHead}</li>
+                                                            </sly>
+                                                        </sly>
+                                                    </sly>
+                                                </ul>
+                                                <div class="apply-knowMore-wrap">
+                                                    <a href="${consumerList.redirectionLinkKnowMore}" class="know-more-link"
+                                                        data-sly-test="${consumerList.knowMoreLoanInfoDetailButton}" target="${consumerList.knowMoreButtonloanInfoDetailOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${impLinks.subMenuHead}">
+                                                        ${consumerList.knowMoreLoanInfoDetailButton}
+                                                    </a>
+                                                    <a href="${consumerList.redirectionLinkApplyNow}" class="apply-btn"
+                                                        data-sly-test="${consumerList.applyNowloanInfoDetailButton}" target="${consumerList.loanInfoDetailApplyNowButtonOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${impLinks.subMenuHead}">
+                                                        ${consumerList.applyNowloanInfoDetailButton}
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${consumerList.needKnowBox}">
+                                            <div class="need-know-box">
+                                                <p>${consumerList.needKnowBoxTitle}</p>
+                                                <sly data-sly-test="${!consumerList.inlineLinks}">
+                                                    <ul class="${consumerList.inlineLinks ? 'need-know-link-inline' : ''}">
+                                                        <sly data-sly-list.loginLinks="${consumerList.listChildren}">
+                                                            <sly data-sly-test="${loginLinks.name == 'needKnowBoxLinks'}">
+                                                                <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                                    <li class="need-know-item">
+                                                                        <sly data-sly-test="${impLinks.redirectionLink}">
+                                                                            <a href="${impLinks.redirectionLink}"
+                                                                                class="need-know-link" target="${impLinks.needKnowBoxLinksOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${impLinks.subMenuHead}">
+                                                                                ${impLinks.subMenuHead}
+                                                                            </a>
+                                                                        </sly>
+                                                                        <sly data-sly-test="${!impLinks.redirectionLink}">
+                                                                            <a href="${impLinks.redirectionLink}"
+                                                                                class="need-know-link" data-header="headerAnalyticData-${impLinks.subMenuHead}">
+                                                                                ${impLinks.subMenuHead}
+                                                                            </a>
+                                                                        </sly>
+                                                                    </li>
+                                                                </sly>
+                                                            </sly>
+                                                        </sly>
+                                                    </ul>
+                                                </sly>
+                                                <sly data-sly-test="${consumerList.inlineLinks}">
+                                                    <ul class="${consumerList.inlineLinks ? 'need-know-link-inline' : ''}">
+                                                        <sly data-sly-list.loginLinks="${consumerList.listChildren}">
+                                                            <sly data-sly-test="${loginLinks.name == 'needKnowBoxLinks'}">
+                                                                <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                                    <li class="">
+                                                                        <sly data-sly-test="${impLinks.redirectionLink}">
+                                                                            <a href="${impLinks.redirectionLink}"
+                                                                                class="need-know-link" target="${impLinks.needKnowBoxLinksOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${impLinks.subMenuHead}">
+                                                                                ${impLinks.subMenuHead}
+                                                                            </a>
+                                                                        </sly>
+                                                                        <sly data-sly-test="${!impLinks.redirectionLink}">
+                                                                            <a href="${impLinks.redirectionLink}"
+                                                                                class="need-know-link" data-header="headerAnalyticData-${impLinks.subMenuHead}">
+                                                                                ${impLinks.subMenuHead}
+                                                                            </a>
+                                                                        </sly>
+                                                                    </li>
+                                                                </sly>
+                                                            </sly>
+                                                        </sly>
+                                                    </ul>
+                                                </sly>
+                                            </div>
+                                        </sly>
+                                    </div>
+    
+                                    <div class="subsub-accordian jsAccordian">
+                                        <sly data-sly-test="${consumerList.loanForYourNeedCOmpoent}">
+                                            <div class="subsub-accordian-row" accod-row>
+                                                <a href="javascript:void(0)" class="subsub-head"
+                                                    accod-head data-header="headerAnalyticData-${consumerList.loanForYourNeedTitle}">${consumerList.loanForYourNeedTitle}</a>
+                                                <div class="subsub-accordian-body" accod-body>
+                                                    <div class="loan-card">
+                                                        <ul>
+                                                            <sly data-sly-list.loginLinks="${consumerList.listChildren}">
+                                                                <sly data-sly-test="${loginLinks.name == 'loanList'}">
+                                                                    <sly
+                                                                        data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                                        <li class="loan-card-item">
+                                                                            <a href="${impLinks.redirectionLink}"
+                                                                                class="loan-card-link" target="${impLinks.loanListpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${consumerList.loanForYourNeedTitle}">
+                                                                                <span class="${impLinks.iconClass} head-icons"></span>
+                                                                                <p>${impLinks.loanListHeading}</p>
+                                                                            </a>
+                                                                        </li>
+                                                                    </sly>
+                                                                </sly>
+                                                            </sly>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${consumerList.calculator}">
+                                            <div class="subsub-accordian-row" accod-row>
+                                                <a href="javascript:void(0)" class="subsub-head"
+                                                    accod-head data-header="headerAnalyticData-${consumerList.calculatorTitle}">${consumerList.calculatorTitle}</a>
+                                                <div class="subsub-accordian-body" accod-body>
+                                                    <div class="loan-card">
+                                                        <ul>
+                                                            <sly data-sly-list.loginLinks="${consumerList.listChildren}">
+                                                                <sly data-sly-test="${loginLinks.name == 'loanListCalc'}">
+                                                                    <sly
+                                                                        data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                                        <li class="loan-card-item">
+                                                                            <a href="${impLinks.redirectionLink}"
+                                                                                class="loan-card-link" target="${impLinks.calcOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${consumerList.calculatorTitle}">
+                                                                                <span class="${impLinks.iconClass} head-icons"></span>
+                                                                                <p>${impLinks.loanListCalcTitle}</p>
+                                                                            </a>
+                                                                        </li>
+                                                                    </sly>
+                                                                </sly>
+                                                            </sly>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </sly>
+                    <!-- personalloan -->
+                    <sly data-sly-test="${consumerList.needAccordian}">
+                        <sly data-sly-list.loginLinks="${consumerList.listChildren}">
+                            <sly data-sly-test="${loginLinks.name == 'innertabMenuLoanForBusinesssection'}">
+                                <sly data-sly-list.consumerListInner="${loginLinks.listChildren}">
+                                    <sly data-sly-test.tabDataInner="${'tabBusinessInner{0}_{1}_{2}' @ format =[drop.name,consumerListInnerList.count,consumerListInner.innertabMenuItemIdMap]}">
+                                        <div class="mob-subsub-menu js-close-details" id="${tabDataInner}">
+                                            <!-- back button -->
+                                            <div class="backmenu">
+                                                <a href="javascript:void(0)" class="backto js-menu-back">
+                                                    <i class="icon-arrow-tail-left" aria-hidden="true"></i>
+                                                    Back
+                                                </a>
+                                            </div>
+                                            <div class="mob-fixscroll">
+                                                <div class="mob-submenucotent">
+                                                    <div class="loan-info-detail-box">
+                                                        <sly data-sly-test="${consumerListInner.needLoanInfoDetailCOmpoent}">
+                                                            <div class="mob-head-tops">
+                                                                <sly data-sly-test="${consumerListInner.loanInfoDetailTitle}">
+                                                                    <p class="text-blue custom-blue-title">
+                                                                        ${consumerListInner.loanInfoDetailTitle}</p>
+                                                                </sly>
+                                                                ${consumerListInner.loanInfoDetailDescription @context='html'}
+                                                                <ul class="dot-list">
+                                                                    <sly data-sly-list.loginLinks="${consumerListInner.listChildren}">
+                                                                        <sly data-sly-test="${loginLinks.name == 'importanLinks'}">
+                                                                            <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                                                <li>${impLinks.subMenuHead}</li>
+                                                                            </sly>
+                                                                        </sly>
+                                                                    </sly>
+                                                                </ul>
+                                                                <div class="apply-knowMore-wrap">
+                                                                    <a href="${consumerListInner.redirectionLinkKnowMore}" class="know-more-link"
+                                                                        data-sly-test="${consumerListInner.knowMoreLoanInfoDetailButton}" target="${consumerListInner.knowMoreButtonloanInfoDetailOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${impLinks.subMenuHead}">
+                                                                        ${consumerListInner.knowMoreLoanInfoDetailButton}
+                                                                    </a>
+                                                                    <a href="${consumerListInner.redirectionLinkApplyNow}" class="apply-btn"
+                                                                        data-sly-test="${consumerListInner.applyNowloanInfoDetailButton}" target="${consumerListInner.loanInfoDetailApplyNowButtonOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${impLinks.subMenuHead}">
+                                                                        ${consumerListInner.applyNowloanInfoDetailButton}
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </sly>
+                                                        <sly data-sly-test="${consumerListInner.needKnowBox}">
+                                                            <div class="need-know-box">
+                                                                <p>${consumerListInner.needKnowBoxTitle}</p>
+                                                                <sly data-sly-test="${!consumerListInner.inlineLinks}">
+                                                                    <ul class="${consumerListInner.inlineLinks ? 'need-know-link-inline' : ''}">
+                                                                        <sly data-sly-list.loginLinks="${consumerListInner.listChildren}">
+                                                                            <sly data-sly-test="${loginLinks.name == 'needKnowBoxLinks'}">
+                                                                                <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                                                    <li class="need-know-item">
+                                                                                        <sly data-sly-test="${impLinks.redirectionLink}">
+                                                                                            <a href="${impLinks.redirectionLink}"
+                                                                                                class="need-know-link" target="${impLinks.needKnowBoxLinksOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${impLinks.subMenuHead}">
+                                                                                                ${impLinks.subMenuHead}
+                                                                                            </a>
+                                                                                        </sly>
+                                                                                        <sly data-sly-test="${!impLinks.redirectionLink}">
+                                                                                            <a href="${impLinks.redirectionLink}"
+                                                                                                class="need-know-link" data-header="headerAnalyticData-${impLinks.subMenuHead}">
+                                                                                                ${impLinks.subMenuHead}
+                                                                                            </a>
+                                                                                        </sly>
+                                                                                    </li>
+                                                                                </sly>
+                                                                            </sly>
+                                                                        </sly>
+                                                                    </ul>
+                                                                </sly>
+                                                                <sly data-sly-test="${consumerListInner.inlineLinks}">
+                                                                    <!--/*<ul class="${consumerListInner.inlineLinks ? 'need-know-link-inline' : ''}">
+                                                                        <sly data-sly-list.loginLinks="${consumerListInner.listChildren}">
+                                                                            <sly data-sly-test="${loginLinks.name == 'needKnowBoxLinks'}">
+                                                                                <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                                                    <li class="">
+                                                                                        <sly data-sly-test="${impLinks.redirectionLink}">
+                                                                                            <a href="${impLinks.redirectionLink}"
+                                                                                                class="need-know-link" target="${impLinks.needKnowBoxLinksOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${impLinks.subMenuHead}">
+                                                                                                ${impLinks.subMenuHead}
+                                                                                            </a>
+                                                                                        </sly>
+                                                                                        <sly data-sly-test="${!impLinks.redirectionLink}">
+                                                                                            <a href="${impLinks.redirectionLink}"
+                                                                                                class="need-know-link" data-header="headerAnalyticData-${impLinks.subMenuHead}">
+                                                                                                ${impLinks.subMenuHead}
+                                                                                            </a>
+                                                                                        </sly>
+                                                                                    </li>
+                                                                                </sly>
+                                                                            </sly>
+                                                                        </sly>
+                                                                    </ul>*/-->
+                                                                </sly>
+                                                            </div>
+                                                        </sly>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </sly>
+                </sly>
+            </sly>
+        </sly>
+    </sly>
+
+
+    <sly data-sly-list.loginLinks="${resource.listChildren}">
+        <sly data-sly-test="${loginLinks.name == 'tabMenuInvestmentsection'}">
+            <sly data-sly-list.consumerList="${loginLinks.listChildren}">
+                <sly data-sly-test.tabData="${'tab-investment{0}_{1}' @ format =[drop.name,consumerListList.count]}">
+                    <!-- personalloan -->
+                    <div class="mob-subsub-menu js-close-details" id="${tabData}">
+                        <!-- back button -->
+                        <div class="backmenu">
+                            <a href="javascript:void(0)" class="backto js-menu-back">
+                                <i class="icon-arrow-tail-left" aria-hidden="true"></i>
+                                Back
+                            </a>
+                        </div>
+                        <div class="mob-fixscroll">
+                            <div class="mob-submenucotent">
+                                <div class="loan-info-detail-box">
+                                    <sly data-sly-test="${consumerList.needLoanInfoDetailCOmpoent}">
+                                        <div class="mob-head-tops">
+                                            <sly data-sly-test="${consumerList.loanInfoDetailTitle}">
+                                                <p class="text-blue custom-blue-title">
+                                                    ${consumerList.loanInfoDetailTitle}</p>
+                                            </sly>
+                                            ${consumerList.loanInfoDetailDescription @context='html'}
+                                            <ul class="dot-list">
+                                                <sly data-sly-list.loginLinks="${consumerList.listChildren}">
+                                                    <sly data-sly-test="${loginLinks.name == 'importanLinks'}">
+                                                        <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                            <li>${impLinks.subMenuHead}</li>
+                                                        </sly>
+                                                    </sly>
+                                                </sly>
+                                            </ul>
+                                            <div class="apply-knowMore-wrap">
+                                                <a href="${consumerList.redirectionLinkKnowMore}" class="know-more-link"
+                                                    data-sly-test="${consumerList.knowMoreLoanInfoDetailButton}" data-sly-attribute.rel="${consumerlist.nofollowWhite ? 'nofollow' : ''}" target="${consumerList.knowMoreButtonloanInfoDetailOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${consumerList.loanInfoDetailTitle}">
+                                                    ${consumerList.knowMoreLoanInfoDetailButton}
+                                                </a>
+                                                <sly data-sly-test="${!consumerList.needDownAppPopup}">
+                                                    <a href="${consumerList.redirectionLinkApplyNow}" class="apply-btn"
+                                                    data-sly-test="${consumerList.applyNowloanInfoDetailButton}" target="${consumerList.loanInfoDetailApplyNowButtonOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${consumerList.loanInfoDetailTitle}">
+                                                    ${consumerList.applyNowloanInfoDetailButton}
+                                                    </a>
+                                                </sly>
+                                                <sly data-sly-test="${consumerList.needDownAppPopup}">
+                                                    <a data-target="#moneyfyBanner" href="${consumerList.redirectionLinkApplyNow}" data-sly-attribute.rel="${consumerlist.nofollowBlue ? 'nofollow' : ''}"  data-popovermodal="popover-modal" class="apply-btn"
+                                                    data-sly-test="${consumerList.applyNowloanInfoDetailButton}" target="${consumerList.loanInfoDetailApplyNowButtonOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${consumerList.loanInfoDetailTitle}">
+                                                    ${consumerList.applyNowloanInfoDetailButton}
+                                                    </a>
+                                                </sly>
+                                            </div>
+                                        </div>
+                                    </sly>
+                                    <sly data-sly-test="${consumerList.needKnowBox}">
+                                        <div class="need-know-box">
+                                            <p>${consumerList.needKnowBoxTitle}</p>
+                                            <sly data-sly-test="${!consumerList.inlineLinks}">
+                                                <ul class="${consumerList.inlineLinks ? 'need-know-link-inline' : ''}">
+                                                    <sly data-sly-list.loginLinks="${consumerList.listChildren}">
+                                                        <sly data-sly-test="${loginLinks.name == 'needKnowBoxLinks'}">
+                                                            <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                                <li class="need-know-item">
+                                                                    <sly data-sly-test="${impLinks.redirectionLink}">
+                                                                        <a href="${impLinks.redirectionLink}"
+                                                                            class="need-know-link" data-sly-attribute.rel="${impLinks.nofollowKnowBox ? 'nofollow' : ''}" target="${impLinks.needKnowBoxLinksOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${impLinks.subMenuHead}">
+                                                                            ${impLinks.subMenuHead}
+                                                                        </a>
+                                                                    </sly>
+                                                                    <sly data-sly-test="${!impLinks.redirectionLink}">
+                                                                        <a href="${impLinks.redirectionLink}"
+                                                                            class="need-know-link" data-header="headerAnalyticData-${impLinks.subMenuHead}">
+                                                                            ${impLinks.subMenuHead}
+                                                                        </a>
+                                                                    </sly>
+                                                                </li>
+                                                            </sly>
+                                                        </sly>
+                                                    </sly>
+                                                </ul>
+                                            </sly>
+                                            <sly data-sly-test="${consumerList.inlineLinks}">
+                                                <!--/*<ul class="${consumerList.inlineLinks ? 'need-know-link-inline' : ''}">
+                                                    <sly data-sly-list.loginLinks="${consumerList.listChildren}">
+                                                        <sly data-sly-test="${loginLinks.name == 'needKnowBoxLinks'}">
+                                                            <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                                <li class="">
+                                                                    <sly data-sly-test="${impLinks.redirectionLink}">
+                                                                        <a href="${impLinks.redirectionLink}"
+                                                                            class="need-know-link" target="${impLinks.needKnowBoxLinksOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${impLinks.subMenuHead}">
+                                                                            ${impLinks.subMenuHead}
+                                                                        </a>
+                                                                    </sly>
+                                                                    <sly data-sly-test="${!impLinks.redirectionLink}">
+                                                                        <a href="${impLinks.redirectionLink}"
+                                                                            class="need-know-link" data-header="headerAnalyticData-${impLinks.subMenuHead}">
+                                                                            ${impLinks.subMenuHead}
+                                                                        </a>
+                                                                    </sly>
+                                                                </li>
+                                                            </sly>
+                                                        </sly>
+                                                    </sly>
+                                                </ul>*/-->
+                                            </sly>
+                                        </div>
+                                    </sly>
+                                </div>
+
+                                <div class="subsub-accordian jsAccordian">
+                                   <!--/*
+                                    <sly data-sly-test="${consumerList.loanForYourNeedCOmpoent}">
+                                        <div class="subsub-accordian-row" accod-row>
+                                            <a href="javascript:void(0)" class="subsub-head"
+                                                accod-head data-header="headerAnalyticData-${consumerList.loanForYourNeedTitle}">${consumerList.loanForYourNeedTitle}</a>
+                                            <div class="subsub-accordian-body" accod-body>
+                                                <div class="loan-card">
+                                                    <ul>
+                                                        <sly data-sly-list.loginLinks="${consumerList.listChildren}">
+                                                            <sly data-sly-test="${loginLinks.name == 'loanList'}">
+                                                                <sly
+                                                                    data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                                    <li class="loan-card-item">
+                                                                        <a href="${impLinks.redirectionLink}"
+                                                                            class="loan-card-link" target="${impLinks.loanListpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${consumerList.loanForYourNeedTitle}">
+                                                                            <span class="${impLinks.iconClass} head-icons"></span>
+                                                                            <p>${impLinks.loanListHeading}</p>
+                                                                        </a>
+                                                                    </li>
+                                                                </sly>
+                                                            </sly>
+                                                        </sly>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </sly>
+                                    */-->
+                                    <sly data-sly-test="${consumerList.calculator}">
+                                        <div class="subsub-accordian-row" accod-row>
+                                            <a href="javascript:void(0)" class="subsub-head"
+                                                accod-head data-header="headerAnalyticData-${consumerList.calculatorTitle}">${consumerList.calculatorTitle}</a>
+                                            <div class="subsub-accordian-body" accod-body>
+                                                <div class="loan-card">
+                                                    <ul>
+                                                        <sly data-sly-list.loginLinks="${consumerList.listChildren}">
+                                                            <sly data-sly-test="${loginLinks.name == 'loanListCalc'}">
+                                                                <sly
+                                                                    data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                                    <li class="loan-card-item">
+                                                                        <a href="${impLinks.redirectionLink}"
+                                                                            class="loan-card-link" data-sly-attribute.rel="${impLinks.nofollowCalc ? 'nofollow' : ''}" target="${impLinks.calcOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${consumerList.calculatorTitle}">
+                                                                            <span class="${impLinks.iconClass} head-icons"></span>
+                                                                            <p>${impLinks.loanListCalcTitle}</p>
+                                                                        </a>
+                                                                    </li>
+                                                                </sly>
+                                                            </sly>
+                                                        </sly>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </sly>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- personalloan -->
+                </sly>
+            </sly>
+        </sly>
+    </sly>
+
+
+   <!-- insurance -->
+   <div class="mob-subsub-menu js-close-details" id="insurance-menu-mob">
+    <!-- back button -->
+    <div class="backmenu">
+        <a href="javascript:void(0)" class="backto js-menu-back">
+            <i class="icon-arrow-tail-left" aria-hidden="true"></i>
+            Back
+        </a>
+    </div>
+    <div class="mob-fixscroll">
+        <div class="mob-submenucotent">
+            <div class="loan-info-detail-box">
+                <sly data-sly-test="${properties.insuranceneedLoanInfoDetailCOmpoent}">
+                    <div class="mob-head-tops">
+                        <sly data-sly-test="${properties.insuranceloanInfoDetailTitle}">
+                            <h3>${properties.insuranceloanInfoDetailTitle}</h3>
+                        </sly>
+                        ${properties.insuranceloanInfoDetailDescription @context='html'}
+                        <ul class="dot-list">
+                            <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                <sly data-sly-test="${loginLinks.name == 'insuranceimportanLinks'}">
+                                    <sly data-sly-list.insuranceimpLinks="${loginLinks.listChildren}">
+                                        <li>${insuranceimpLinks.insurancesubMenuHead}</li>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </ul>
+                        <div class="apply-knowMore-wrap">
+                            <a href="${properties.insuranceredirectionLinkKnowMore}" class="know-more-link"
+                                data-sly-test="${properties.insuranceknowMoreLoanInfoDetailButton}" target="${properties.insuranceknowMoreButtonloanInfoDetailOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${properties.insuranceloanInfoDetailTitle}">
+                                ${properties.insuranceknowMoreLoanInfoDetailButton}
+                            </a>
+                            <a href="${properties.insuranceredirectionLinkApplyNow}" class="apply-btn"
+                                data-sly-test="${properties.insuranceapplyNowloanInfoDetailButton}" target="${properties.insuranceloanInfoDetailApplyNowButtonOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${properties.insuranceloanInfoDetailTitle}">
+                                ${properties.insuranceapplyNowloanInfoDetailButton}
+                            </a>
+                        </div>
+                    </div>
+                </sly>
+                <sly data-sly-test="${properties.insuranceneedKnowBox}">
+                    <div class="need-know-box">
+                        <p>${properties.insuranceneedKnowBoxTitle}</p>
+                        <sly data-sly-test="${!properties.insuranceinlineLinks}">
+                            <ul class="${properties.insuranceinlineLinks ? 'need-know-link-inline' : ''}">
+                                <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                    <sly data-sly-test="${loginLinks.name == 'insuranceneedKnowBoxLinks'}">
+                                        <sly data-sly-list.insuranceimpLinks="${loginLinks.listChildren}">
+                                            <li class="need-know-item">
+                                                <sly data-sly-test="${impLinks.insuranceredirectionLink}">
+                                                    <a href="${insuranceimpLinks.insuranceredirectionLink}"
+                                                        class="need-know-link" target="${insuranceimpLinks.insuranceNeedKnowBoxLinksOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${properties.insuranceneedKnowBoxTitle}">
+                                                        ${insuranceimpLinks.insurancesubMenuHead}
+                                                    </a>
+                                                </sly>
+                                                <sly data-sly-test="${!impLinks.insuranceredirectionLink}">
+                                                    <a href="${insuranceimpLinks.insuranceredirectionLink}" class="need-know-link" data-header="headerAnalyticData-${properties.insuranceneedKnowBoxTitle}">
+                                                        ${insuranceimpLinks.insurancesubMenuHead}
+                                                    </a>
+                                                </sly>
+                                            </li>
+                                        </sly>
+                                    </sly>
+                                </sly>
+                            </ul>
+                        </sly>
+                        <sly data-sly-test="${properties.insuranceinlineLinks}">
+                            <ul class="${properties.insuranceinlineLinks ? 'need-know-link-inline' : ''}">
+                                <sly data-sly-list.loginLinks="${resource.insurancelistChildren}">
+                                    <sly data-sly-test="${loginLinks.name == 'needKnowBoxLinks'}">
+                                        <sly data-sly-list.insuranceimpLinks="${loginLinks.listChildren}">
+                                            <li class="">
+                                                <sly data-sly-test="${impLinks.insuranceredirectionLink}">
+                                                    <a href="${insuranceimpLinks.insuranceredirectionLink}"
+                                                        class="need-know-link" target="${insuranceimpLinks.insuranceNeedKnowBoxLinksOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData">
+                                                        ${insuranceimpLinks.insurancesubMenuHead}
+                                                    </a>
+                                                </sly>
+                                                <sly data-sly-test="${!impLinks.insuranceredirectionLink}">
+                                                    <a href="${insuranceimpLinks.insuranceredirectionLink}" class="need-know-link" data-header="headerAnalyticData">
+                                                        ${insuranceimpLinks.insurancesubMenuHead}
+                                                    </a>
+                                                </sly>
+                                            </li>
+                                        </sly>
+                                    </sly>
+                                </sly>
+                            </ul>
+                        </sly>
+                    </div>
+                </sly>
+
+            </div>
+
+            <div class="subsub-accordian jsAccordian">
+                <sly data-sly-test="${properties.insuranceloanForYourNeedCOmpoent}">
+                    <div class="subsub-accordian-row" accod-row>
+                        <a href="javascript:void(0)" class="subsub-head"
+                            accod-head data-header="headerAnalyticData-${properties.insuranceloanForYourNeedTitle}">${properties.insuranceloanForYourNeedTitle}</a>
+                        <div class="subsub-accordian-body" accod-body>
+                            <div class="loan-card">
+                                <ul>
+                                    <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                        <sly data-sly-test="${loginLinks.name == 'insuranceloanList'}">
+                                            <sly
+                                                data-sly-list.insuranceimpLinks="${loginLinks.listChildren}">
+                                                <li class="loan-card-item">
+                                                    <a href="${insuranceimpLinks.insuranceredirectionLink}"
+                                                        class="loan-card-link" target="${insuranceimpLinks.insuranceloanInfoDetailApplyNowButtonOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${properties.insuranceloanForYourNeedTitle}">
+                                                        <span class="${insuranceimpLinks.iconClass} head-icons"></span>
+                                                        <p>${insuranceimpLinks.insuranceloanListHeading}</p>
+                                                    </a>
+                                                </li>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </sly>
+                <sly data-sly-test="${properties.insurancecalculator}">
+                    <div class="subsub-accordian-row" accod-row>
+                        <a href="javascript:void(0)" class="subsub-head"
+                            accod-head data-header="headerAnalyticData">${properties.insurancecalculatorTitle}</a>
+                        <div class="subsub-accordian-body" accod-body>
+                            <div class="loan-card">
+                                <ul>
+                                    <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                        <sly data-sly-test="${loginLinks.name == 'insuranceloanListCalc'}">
+                                            <sly
+                                                data-sly-list.insuranceimpLinks="${loginLinks.listChildren}">
+                                                <li class="loan-card-item">
+                                                    <a href="${insuranceimpLinks.insuranceredirectionLink}"
+                                                        class="loan-card-link" target="${insuranceimpLinks.insuranceloanInfoDetailApplyNowButtonOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData">
+                                                        <span class="${insuranceimpLinks.iconClass} head-icons"></span>
+                                                        <p>${insuranceimpLinks.insuranceloanListCalcTitle}</p>
+                                                    </a>
+                                                </li>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </sly>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>

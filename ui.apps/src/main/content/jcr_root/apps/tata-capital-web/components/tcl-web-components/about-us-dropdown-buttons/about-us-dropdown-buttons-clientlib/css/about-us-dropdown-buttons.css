@@ -1,0 +1,115 @@
+@charset "UTF-8";
+.media-top-tabs {
+  position: relative;
+}
+.media-top-tabs .tab-btn-group {
+  margin-bottom: 0px;
+  justify-content: center;
+}
+.media-top-tabs .tab-btn-group .tab-item .tab-button {
+  min-width: 85px;
+}
+.media-top-tabs .custom-dropdown-wrap {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.media-top-tabs .custom-dropdown-wrap .custom-dropdown-block {
+  min-width: 100%;
+  width: 100%;
+  border-radius: 0 0px 8px 8px;
+  padding-right: 12px;
+}
+.media-top-tabs .custom-dropdown-wrap .custom-dropdown-list {
+  max-height: 200px;
+}
+
+.new-mob-dropdowns .mob-drop-heads {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .new-mob-dropdowns {
+    margin-bottom: 10px;
+  }
+  .new-mob-dropdowns .mob-drop-heads {
+    display: block;
+    background: radial-gradient(50.79% 52.48% at 48.36% 50.79%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.72) 100%);
+    box-shadow: 0px 7px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 14px 28px 14px 14px;
+    font-family: "OpenSans-Bold";
+    font-size: 13px;
+    line-height: 17px;
+    color: #333333;
+    position: relative;
+  }
+  .new-mob-dropdowns .mob-drop-heads:before {
+    content: "";
+    font-family: "icomoon";
+    font-size: 8px;
+    color: #333;
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .new-mob-dropdowns .mob-drop-heads.active {
+    border-radius: 8px 8px 0 0;
+  }
+  .new-mob-dropdowns .mob-drop-heads.active:before {
+    content: "";
+  }
+  .new-mob-dropdowns .tab-btn-group {
+    position: absolute;
+    width: 100%;
+    top: 45px;
+    background: #FFFFFF;
+    box-shadow: 0 7px 24px rgba(0, 0, 0, 0.2);
+    padding: 6px 14px;
+    border-radius: 0 0 8px 8px;
+    z-index: 2;
+    display: none;
+  }
+  .new-mob-dropdowns .tab-btn-group.show {
+    display: block;
+  }
+  .new-mob-dropdowns .tab-btn-group .tab-item {
+    width: 100%;
+    margin-right: 0;
+    border-bottom: 1px solid #E0E9F1;
+  }
+  .new-mob-dropdowns .tab-btn-group .tab-item:last-child {
+    border-bottom: none;
+  }
+  .new-mob-dropdowns .tab-btn-group .tab-button {
+    width: 100%;
+    font-family: "OpenSans-SemiBold";
+    font-size: 13px;
+    line-height: 18px;
+    padding: 8px 0;
+    border-radius: 10px;
+    color: #333333;
+    display: inline-block;
+    text-align: left;
+    background: transparent;
+  }
+  .new-mob-dropdowns .tab-btn-group .tab-button.active, .new-mob-dropdowns .tab-btn-group .tab-button:hover {
+    background: transparent;
+    color: #333;
+  }
+}
+@media (max-width: 767px) {
+  .media-top-tabs .custom-dropdown-wrap {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    max-width: 137px;
+  }
+
+  .new-mob-dropdowns {
+    margin-bottom: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

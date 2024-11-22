@@ -1,0 +1,3 @@
+#base=js
+wealth-calculation.js
+#wealth-calculator.js

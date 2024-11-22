@@ -1,0 +1,19 @@
+.tabs-button.cmp-tabs__tab--active{
+    background: #DEDC00;
+    color: #333333;
+    border-bottom-color: #DEDC00;
+}
+.tabs-button.cmp-tabs__tab--active.has-right-arrow:after{
+    transform: translateY(-50%) rotate(0);
+    color: #333333;
+}
+.cmp-tabs__tabpanel:focus-visible, .cmp-tabs__tab--active:focus-visible{
+    outline:none;
+}
+@media (max-width: 991px){
+    .board-director-box .board-directors-left .tabs-button.cmp-tabs__tab--active {
+        background: linear-gradient(134.06deg, rgba(18, 104, 179, 0.71) 0%, rgba(16, 141, 250, 0.95) 99.11%);
+        color: #fff;
+        box-shadow: 0px 124px 49px rgba(15, 157, 245, 0.02), 0px 70px 42px rgba(15, 157, 245, 0.07), 0px 31px 31px rgba(15, 157, 245, 0.08), 0px 8px 17px rgba(15, 157, 245, 0.14), 0px 0px 0px rgba(15, 157, 245, 0.14);
+    }
+}   

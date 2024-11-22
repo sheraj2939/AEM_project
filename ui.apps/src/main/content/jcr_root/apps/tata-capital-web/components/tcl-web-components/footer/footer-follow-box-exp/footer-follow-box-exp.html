@@ -1,0 +1,54 @@
+<!-- footer-follow-box-->
+<div class="footer-follow-box">
+    <div class="footer-container">
+        <div class="footer-follow-inner">
+
+            <div class="follow-left-outer">
+                <sly data-sly-list.loginLinks="${resource.listChildren}">
+                    <sly data-sly-test="${loginLinks.name == 'footorMainlogo'}">
+                        <sly data-sly-list.logoList="${loginLinks.listChildren}">
+                            <div class="follow-left follow-3">
+                                <div class="follow-logo">
+                                    <a href="${logoList.redirectionLink}"
+                                        target="${logoList.openInNewTab? '_blank' : ''}" data-img-content-social="footerAnalyticData-${logoList.altName}">
+                                        <img height="42" width="122" class="lozad" data-src="${logoList.image}" alt="${logoList.altName}">
+                                    </a>
+                                </div>
+                                <div class="follow-app-store">
+                                    <sly data-sly-list.submenudata="${logoList.children}">
+                                        <sly data-sly-test="${submenudata.name == 'subLogoList'}">
+                                            <sly data-sly-list.sublogoList="${submenudata.children}">
+                                                <a href="${sublogoList.redirectionLink}"
+                                                    target="${sublogoList.openInNewTab ? '_blank' : ''}" data-img-content-social="footerAnalyticData-${sublogoList.altName}" rel="nofollow">
+                                                    <img height="42" width="137" class="lozad" data-src="${sublogoList.image}" alt="${sublogoList.altName}">
+                                                </a>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </div>
+                            </div>
+                        </sly>
+                    </sly>
+                </sly>
+
+                <div class="follow-right follow-3">
+                    <h4 class="heading14 semibold">${properties.followheading}</h4>
+                    <div class="socal-lists">
+                        <sly data-sly-list.loginLinks="${resource.listChildren}">
+                            <sly data-sly-test="${loginLinks.name == 'socialMedia'}">
+                                <sly data-sly-list.socialMediaList="${loginLinks.listChildren}">
+                                    <a href="${socialMediaList.redirectionLink}"
+                                        target="${socialMediaList.openInNewTab ? '_blank' : ''}" data-img-content-social="footerAnalyticData-${socialMediaList.altName}" rel="nofollow">
+                                        <img height="21" width="26" class="lozad" data-src="${socialMediaList.imagePath}" alt="${socialMediaList.altName}">
+                                    </a>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- footer-follow-box-->

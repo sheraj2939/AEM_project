@@ -1,0 +1,91 @@
+.capabilities-slider.slick-dotted.slick-slider {
+  margin-bottom: 0px;
+}
+.capabilities-slider .capabilities-col {
+  padding: 8px 16px;
+  height: 100%;
+}
+.capabilities-slider .capabilities-div {
+  padding: 25px;
+  height: 100%;
+}
+.capabilities-slider .capabilities-div .all-icon47 {
+  margin-bottom: 12px;
+}
+.capabilities-slider .capabilities-div .heading20 {
+  margin-bottom: 12px;
+}
+.capabilities-slider.customers-segments {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -16px;
+  margin-right: -16px;
+  margin-top: -32px;
+}
+.capabilities-slider.customers-segments .capabilities-row {
+  width: 33.33%;
+  margin-top: 32px;
+}
+.capabilities-slider.customers-segments .capabilities-col {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.capabilities-slider.customers-segments .capabilities-div .text14i {
+  margin-bottom: 20px;
+}
+.capabilities-slider.customers-segments .capabilities-div .text14i:last-child {
+  margin-bottom: 0px;
+}
+
+@media (max-width: 991px) {
+  .capabilities-slider .capabilities-col {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .capabilities-slider.customers-segments {
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -20px;
+  }
+  .capabilities-slider.customers-segments .capabilities-row {
+    margin-top: 20px;
+    width: 50%;
+  }
+  .capabilities-slider.customers-segments .capabilities-col {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .capabilities-box .slick-list {
+    padding-left: 7px !important;
+  }
+  .segments-box .tab-btn-group {
+    margin-bottom: 15px;
+  }
+  .capabilities-slider.slick-dotted.slick-slider {
+    margin-bottom: 25px;
+  }
+  .capabilities-slider .capabilities-col {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .capabilities-slider .capabilities-div {
+    padding: 24px;
+  }
+  .capabilities-slider.customers-segments {
+    margin: 0px;
+  }
+  .capabilities-slider.customers-segments .capabilities-row {
+    margin-top: 0px;
+  }
+  .capabilities-slider.customers-segments .capabilities-col {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 13px;
+    padding-top: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

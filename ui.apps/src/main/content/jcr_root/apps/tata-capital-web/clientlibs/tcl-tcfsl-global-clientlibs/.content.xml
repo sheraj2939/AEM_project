@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    allowProxy="{Boolean}true"
+    categories="tcl-tcfsl-global-clientlibs"
+    embed="[tcl-jquery,tcl-icomoon,tcl-slick,tatacapital.api_web,tcl-lozad,tcl-select2,tcl-simplebar,tcl-global-ef,tcl-tcfsl-analytics-clientlibs,tcl-header-clientlib,tcl-download-widget-clientlib,tcl-newsletter-clientlib,tcl-financial-insight-clientlib,tcl-footer-clientlib,tcl-google-offer-popup,tcl-download-popup,tcl-site-loader,tcl-instant-loan-in-your-city]"/>

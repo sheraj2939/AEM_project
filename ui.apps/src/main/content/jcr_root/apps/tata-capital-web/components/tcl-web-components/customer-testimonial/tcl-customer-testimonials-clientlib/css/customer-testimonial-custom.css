@@ -1,0 +1,28 @@
+.customer-say-box .component-title.ct-custom-title span {
+    display: inline;
+}
+div.simplebar-scrollbar:before {
+    opacity: 1;
+    background: #c0d2e3;
+}
+.simplebar-track {
+    cursor: pointer;
+    pointer-events: unset;
+}
+.simplebar-content {
+    margin-right: 15px;
+}
+div.simplebar-track.simplebar-vertical {
+    width: 7px;
+}
+.customer-say-box .component-title span{
+    display: block;
+}
+.customer-say-box .component-title .text-center {
+    line-height: initial;
+}
+.downloads-stores {
+    display: flex;
+    gap: 13px;
+    margin-right: 45px;
+}

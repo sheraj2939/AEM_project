@@ -1,0 +1,66 @@
+<!--  customersay box  -->
+<sly
+    data-sly-use.model="${'com.tatacapital.web.core.models.CustomerSpeakModel' @ productName = properties.productSelect}">
+</sly>
+<section class="customer-say-box space-tb40">
+    <div class="container">
+        <sly
+            data-sly-resource="${'wealth-service-title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+        </sly>
+    </div>
+    <div class="">
+        <div class="customer-say-inner">
+            <div class="container mob-pd0 relative">
+                <div class="say-blur"></div>
+                <div class="customer-say-slider flex-slider slider-dots slider-arrows jsCustomerSaySlider">
+                    <!--/*<sly data-sly-use.model="${'com.tatacapital.web.core.models.CustomerSpeakModel' @ productName = properties.productSelect}">*/-->
+                    <sly data-sly-list="${model.customerData}">
+                        <div class="customer-row">
+                            <div class="customer-col">
+                                <div class="customer-say-details">
+                                    <div class="customer-top simple-bar">
+                                        <p>${item.reviewDescription}</p>
+                                    </div>
+                                    <div class="customer-bottom">
+                                        <sly
+                                            data-sly-test="${properties.bottomTag=='bottomTagH6' || !properties.bottomTag}">
+                                            <h6>${item.customerName}</h6>
+                                        </sly>
+                                        <sly data-sly-test="${properties.bottomTag=='bottomTagP'}">
+                                            <p>${item.customerName}</p>
+                                        </sly>
+                                        <p class="loan-date"><span>${item.productName}</span> | ${item.date}</p>
+                                        <div class="list-star" data-rating="${item.starRating}">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </sly>
+                    </sly>
+                </div>
+                <div data-sly-test="${properties.btnLink}" class="say-btn">
+                    <a href="${properties.btnLink}" class="btn-blue btn-large"
+                        data-cta="Customer Testimonial">${properties.btnText ? properties.btnText : 'Read All' }</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<sly data-sly-list="${model.customerData}"> </sly>
+<sly data-sly-test.testimonialSchema="${model.testimonialSchema}"></sly>
+<sly data-sly-test="${!PageProperties.fetchUrl}">
+    <script type="application/ld+json">
+ { "@context": "http://schema.org", "@type": "Product",
+        "aggregateRating": {
+       "@type": "AggregateRating",
+       "ratingValue": "${model.ratingValue @ context='scriptComment'}",
+       "reviewCount": "${model.size @ context='scriptComment' }"
+ },
+ "description": "${model.description @ context='scriptComment'}",
+ "name": "${model.title @ context='scriptComment'}",
+ "review" : ${testimonialSchema.toString @ context='scriptComment'}
+ }</script>
+    <!-- customersay box-->
+</sly>

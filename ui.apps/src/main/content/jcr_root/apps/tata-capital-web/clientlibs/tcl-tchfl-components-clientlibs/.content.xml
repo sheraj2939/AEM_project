@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    allowProxy="{Boolean}true"
+    categories="tcl-tchfl-components-clientlibs"
+    embed="[tcl-tcfsl-header-clientlib,tcl-sub-nav,tcl-footer-clientlib,tchfl-branch-locator,banner-clientlib,tcl-about-more-products,tcl-way-to-service-clientlib,tcl-slider-tab,tcl-key-people,tcl-board-of-directors-tabs,tcl-grievance-box,tcl-way-to-service-cards,tcl-reach-out-officer,tchfl-ads-video-box,tchfl-image-carousel,feature-quicklink,investor-relation,tcl-stock-exchange-pdf,tcl-tchfl-investor-relation-pdf,tcl-track-my-application-clientlib,tcl-consumer-finance-tabs,tcl-about-us-dropdown-buttons,tcl-all-alliances,tcl-partners-policy-box,tcl-table,tcl-key-features,tcl-about-product,tcl-contact-us-box,tcl-emi-suitable-for-you,tcl-saving-and-investment,tcl-insurance-plans]"/>

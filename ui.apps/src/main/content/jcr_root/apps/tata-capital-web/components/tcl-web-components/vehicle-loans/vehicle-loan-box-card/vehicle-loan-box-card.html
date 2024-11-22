@@ -1,0 +1,35 @@
+<div data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+  data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-use.imageTemplate="image.html"
+  data-sly-use.pretitleTemplate="pretitle.html" data-sly-use.titleTemplate="title.html"
+  data-sly-use.descriptionTemplate="description.html" data-sly-use.actionsTemplate="actions.html"
+  class="bg-div vehicles-loan-card bottom-fixed-controls"
+  data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+  id="${teaser.id}" data-cmp-data-layer="${teaser.data.json}">
+  <div class="vehicles-loan-img">
+    <sly data-sly-test="${properties.Lozad}">
+      <picture>
+        <source media="(max-width:767px)" srcset="${properties.fileReference}" >
+        <img data-src="${properties.fileReference}" alt="${properties.alt}" class="lozad" >
+      </picture>
+    </sly>
+    <sly data-sly-test="${properties.PictureTag}">
+      <picture>
+        <source media="(max-width:767px)" srcset="${properties.fileReference}">
+        <img src="${properties.fileReference}" alt="${properties.alt}" fetchpriority="high" decoding="sync">
+      </picture>
+    </sly>
+    <sly data-sly-test="${!properties.PictureTag && !properties.Lozad}">
+      <img src="${properties.fileReference}" alt="${properties.alt}" loading="lazy" />
+    </sly>
+  </div>
+  <h3 class="heading20"><span>${teaser.title}</span></h3>
+  <div class="text14i vehicle-infos">${properties.cardDescription @context = 'html'}</div>
+  <div class="vehicles-info-lists">
+    <div class="list-circle-ticks-voilet">
+      <sly data-sly-call="${descriptionTemplate.description @ teaser=teaser}"></sly>
+    </div>
+  </div>
+  <sly
+    data-sly-resource="${'container-main' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+  </sly>
+</div>

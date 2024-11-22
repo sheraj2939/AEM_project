@@ -1,0 +1,10 @@
+<ul class="actions">
+    <sly data-sly-list.linkList="${resource.children}">
+        <sly data-sly-test="${linkList.name == 'quickLinks'}">
+            <sly data-sly-list.listItems="${linkList.children}">
+                <li><a href="${listItems.link}" target="${listItems.newTab ? '_blank' : ''}">${listItems.linkText}</a>
+                </li>
+            </sly>
+        </sly>
+    </sly>
+</ul>

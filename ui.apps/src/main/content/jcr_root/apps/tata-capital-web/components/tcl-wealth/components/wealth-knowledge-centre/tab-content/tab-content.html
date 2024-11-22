@@ -1,0 +1,96 @@
+<div class="knowledge-outer ${properties.tabCategory}">
+    <sly data-sly-list.knowledgeCards="${resource.children}">
+        <sly data-sly-test="${knowledgeCards.name == 'cardsFeild'}">
+            <sly data-sly-list.knowledgeContent="${knowledgeCards.children}">
+                <div class="knowledge-row js-webinars-list" data-year="${knowledgeContent.year}"
+                    data-month="${knowledgeContent.month}">
+                    <div class="knowledge-col">
+                        <div class="knowledge-div bg-div radius30">
+                            <div class="video-media">
+                                <img src="${knowledgeContent.thumbnail}" alt="${knowledgeContent.imgAlt}"
+                                    class="media-img">
+                                <a href="javascript:void(0)" class="play-btns custom-play-video" data-popovermodal="popover-modal"
+                                    data-target="#video-modal" id="videoPlay"
+                                    data-video="${knowledgeContent.videoLink}">
+                                    <sly data-sly-test="${knowledgeContent.videoLink}">
+                                        <img src="/content/dam/tata-capital-web/tcl-wealth/wealth-component/play-btns.svg"
+                                            alt="Play Button">
+                                    </sly>
+                                </a>
+                            </div>
+                            <div class="knowledge-content">
+                                <sly data-sly-test="${knowledgeContent.tag}">
+                                    <div class="hash-tag">
+                                        <span>${knowledgeContent.tag}</span>
+                                    </div>
+                                </sly>
+                                <p class="heading20 semibold">${knowledgeContent.heading}</p>
+                                <sly data-sly-test="${knowledgeContent.cardDescription}">
+                                    <div class="text14i">${knowledgeContent.cardDescription @ context = 'html'}</div>
+                                </sly>
+                                <sly data-sly-test="${knowledgeContent.year}">
+                                    <span class="dates-mins">${knowledgeContent.date}
+                                        ${knowledgeContent.month}
+                                        ${knowledgeContent.year ? ',' : ''}
+                                        ${knowledgeContent.year} ${knowledgeContent.duration ? '|' : ''}
+                                        ${knowledgeContent.duration}</span>
+                                </sly>
+                            </div>
+                            <div class="knowledge-shares">
+                                <sly data-sly-test="${knowledgeContent.linkText}">
+                                    <div class="links-lefts">
+                                        <a href="${knowledgeContent.blogLink}"
+                                            class="btn-links link-with-arrow">${knowledgeContent.linkText}<span
+                                                class="icon-arrow-right arros"></span></a>
+                                    </div>
+                                </sly>
+                                <div class="share-bundle new-share-bundle js-close-outside">
+                                    <button class="btn-white js-shares-btn">Share <span
+                                            class="icon-share"></span></button>
+                                    <div class="share-bundle-menu js-fi-share-menu1">
+                                        <a href="#" class="social-btn">
+                                            <img src="/content/dam/tata-capital-web/assets/img/whatsapp-colored.svg"
+                                                alt="Whatsapp">
+                                        </a>
+                                        <a href="#" class="social-btn">
+                                            <img src="/content/dam/tata-capital-web/assets/img/facebook-colored.svg"
+                                                alt="Facebook">
+                                        </a>
+                                        <a href="#" class="social-btn">
+                                            <img src="/content/dam/tata-capital-web/assets/img/twitter-x.svg" alt="X">
+                                        </a>
+                                        <a href="javscript:void(0)" class="social-btn jsCopyLink">
+                                            <span class="icon-copy icon"></span>
+                                            <span class="text-copy">Copy</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </sly>
+        </sly>
+    </sly>
+</div>
+<div class="pd-t30i text-center view-more-btn">
+    <button type="button" class="btn-dangers btn-big min-w149" id="jsWebinarsLoadMore">Load more</button>
+    <button type="button" class="btn-dangers btn-big min-w149 d-none" id="jsWebinarsLoadLess">Load less</button>
+</div>
+
+<!-- video modal -->
+<div class="popover-modal fade" id="video-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-lg2">
+        <div class="popover-modal-content video-modals">
+            <button data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></button>
+            <div class="popover-modal-body">
+                <div class="videos-outer">
+                    <iframe src title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen id="videoIframe"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- video modal -->

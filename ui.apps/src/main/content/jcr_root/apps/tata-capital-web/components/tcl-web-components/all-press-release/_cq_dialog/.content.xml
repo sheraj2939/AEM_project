@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Banner"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <regulartitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Title (Regular)"
+                        name="./regularTitle"/>
+                    <boldTitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Titile (Bold)"
+                        name="./boldTitle"/>
+                    <cards
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Enter years"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        eaem-show-on-collapse="EAEM.showProductName">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                            eaem-nested="NODE_STORE"
+                            name="./multipleYear">
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <year
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Enter Year"
+                                            name="./year"/>
+                                        <pdfs
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Add Pdf's"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                            composite="{Boolean}true"
+                                            eaem-show-on-collapse="EAEM.showProductName">
+                                            <field
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                eaem-nested="NODE_STORE"
+                                                name="./multiplePdf">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <column
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <checkForIcon
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                composite="{Boolean}true"
+                                                                name="./checkForIcon"
+                                                                text="Check For Icon"
+                                                                value="true"/>
+                                                            <description
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter Description"
+                                                                name="./description"/>
+                                                            <assetLink
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldLabel="Enter Asset Link"
+                                                                name="./assetLink"/>
+                                                            <openAssetInNewTab
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                name="./linkNewTab"
+                                                                text="Open Asset In New Tab"
+                                                                value="true"/>
+                                                            <date
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Enter Date"
+                                                                name="./date"/>
+                                                            <buttonTitle
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Button Title"
+                                                                name="./buttonTitle"/>
+                                                            <buttonLink
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                fieldLabel="Enter Button Link"
+                                                                name="./buttonLink"/>
+                                                            <openInNewTab
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                name="./linkNewTab"
+                                                                text="Open In New Tab"
+                                                                value="true"/>
+                                                        </items>
+                                                    </column>
+                                                </items>
+                                            </field>
+                                        </pdfs>
+                                    </items>
+                                </column>
+                            </items>
+                        </field>
+                    </cards>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

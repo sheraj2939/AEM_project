@@ -1,0 +1,26 @@
+<section 
+	 class="what-personal-box space-tb40"
+	 data-sly-use.textModel="com.adobe.cq.wcm.core.components.models.Text"
+     data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-cmp-data-layer="${textModel.data.json}"
+     id="${component.id}"
+     >              
+     <!--/*data-sly-test.text="${textModel.text}" removed from section attribute 29-12-2022*/-->
+            <div class="container">
+                <div class="tops-heads ${properties.titleClass}">
+                    <sly data-sly-resource="${'heading' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/component-title/component-title'}"></sly>
+                    <p>${textModel.text  @ context='html'}</p>
+                </div>
+            </div>
+            <div class="container ${properties.mobPd ? '': 'mob-pd0'}">
+						<sly data-sly-resource="${'container-main' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></sly>
+            </div>            
+        </section>
+        <sly data-sly-test="${!properties.needSchema}">
+        <sly data-sly-use.model="${'com.tatacapital.web.core.models.HowToStepSchemaModel'}">
+            <script type="application/ld+json">
+                ${model.getSchemaData.toString @context="unsafe"}
+            </script>
+            </sly>
+        </sly>

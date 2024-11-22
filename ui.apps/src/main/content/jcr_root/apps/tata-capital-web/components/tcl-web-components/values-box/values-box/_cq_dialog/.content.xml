@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Values box"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        granite:class="cmp-image__editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Title (Regular)"
+                        name="./title"/>
+                    <boldheading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Title (Bold)"
+                        name="./boldTitle"/>
+                    <keyProjectsBoxTitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Enter Key Project Box Title (Left)"
+                        name="./keyProjectsTitle"/>
+                    <key-projectsBox
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldLabel="keyProjects">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                            name="./keyProjectsBox">
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <projectTitle
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="/libs/granite/ui/components/foundation/form/textfield"
+                                            fieldLabel="Enter Project Title"
+                                            name="./projectTitle"/>
+                                        <projectDate
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="/libs/granite/ui/components/foundation/form/textfield"
+                                            fieldLabel="Enter Project Date"
+                                            name="./date"/>
+                                        <Image
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                            fieldLabel="Select image path"
+                                            name="./Img"
+                                            rootPath="/content/dam/"/>
+                                        <imgAlt
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="/libs/granite/ui/components/foundation/form/textfield"
+                                            fieldLabel="Enter Image Alt Tag"
+                                            name="./imgAlt"/>
+                                    </items>
+                                </column>
+                            </items>
+                        </field>
+                    </key-projectsBox>
+                    <key-project-btn
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Key Project Box Button Title"
+                        name="./keyProjBtn"/>
+                    <key-project-btn-path
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                        fieldLabel="Key Project Box Button Path"
+                        name="./keyProjBtnPath"/>
+                    <newTab
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        name="./newTab"
+                        text="Open link in new tab"
+                        value="{Boolean}true"/>
+                    <valuesBoxRight
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldLabel="Blue Box Right">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                            name="./valuesBoxRight">
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <blueBoxTitle
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="/libs/granite/ui/components/foundation/form/textfield"
+                                            fieldLabel="BlueBox Title (Right)"
+                                            name="./title"/>
+                                        <blueBoxHelpCount
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="/libs/granite/ui/components/foundation/form/textfield"
+                                            fieldLabel="Help Count"
+                                            name="./helpCount"/>
+                                        <blueBoxhelp
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="/libs/granite/ui/components/foundation/form/textfield"
+                                            fieldLabel="Help title"
+                                            name="./help"/>
+                                        <blueBoxReachCount
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="/libs/granite/ui/components/foundation/form/textfield"
+                                            fieldLabel="BlueBox Reach Count"
+                                            name="./reachCount"/>
+                                        <blueBoxReach
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="/libs/granite/ui/components/foundation/form/textfield"
+                                            fieldLabel="BlueBox Reach"
+                                            name="./reach"/>
+                                    </items>
+                                </column>
+                            </items>
+                        </field>
+                    </valuesBoxRight>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

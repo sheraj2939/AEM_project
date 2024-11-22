@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-11-29T17:21:32.291+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastRolledout="{Date}2022-11-24T12:10:48.263+05:30"
+        cq:lastRolledoutBy="admin"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/tata-capital-web/settings/wcm/templates/tatacapital-web-footer-template"
+        cq:xfVariantType="web"
+        jcr:mixinTypes="[cq:LiveRelationship,cq:LiveSync]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="V2"
+        sling:resourceType="tata-capital-web/components/xfpage">
+        <root
+            cq:lastRolledout="{Date}2022-11-24T12:10:48.246+05:30"
+            cq:lastRolledoutBy="admin"
+            jcr:mixinTypes="[cq:LiveRelationship]"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="tata-capital-web/components/container"
+            layout="responsiveGrid">
+            <footer_policies_docu
+                cq:isCancelledForChildren="{Boolean}true"
+                jcr:mixinTypes="[cq:LiveRelationship,cq:LiveSyncCancelled]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/msm/components/ghost"/>
+        </root>
+        <cq:LiveSyncConfig
+            cq:isDeep="{Boolean}true"
+            cq:master="/content/experience-fragments/tata-capital-web/us/en/site/Footer-Policies-Codes-Doc-Experience-Fragment/master"
+            cq:rolloutConfigs="[]"
+            jcr:primaryType="cq:LiveCopy"/>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,66 @@
+<sly data-sly-test="${wcmmode.edit}">
+  <style>
+.hidden-destop.mob-app{
+	display:block;
+}
+  </style>
+</sly>
+
+<div class="qrcode-row">
+    <div class="qrcode-left">
+        <div class="looking-investment-step1">
+            <sly data-sly-resource="${'container-title' @ resourceType='/apps/core/wcm/components/container/v1/container'}"></sly>
+            <form class="hidden-mobile" id="getInvestmentLink">
+                <div class="form-subscribe">
+                    <div class="form-textbox">
+                        <span class="country-code">+91</span>
+                        <input type="tel" placeholder="Enter mobile number" class="only-numeric-input input-textbox"
+                            data-type="mobile" maxlength="10">
+                    </div>
+                    <sly data-sly-resource="${'container-button' @ resourceType='/apps/core/wcm/components/container/v1/container'}"></sly>
+
+                </div>
+            </form>
+            <div class="">
+				<ul data-sly-resource="${'container-mobapp-button' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></ul>
+            </div>
+        </div>
+
+        <!--/*<div class="white-dot-loader hidden"><img alt="loader"
+                src="${properties.fileReference}"></div>
+        <div id="moneyfy02" class="hidden">
+            <div class="thank-you text-center">
+                <p><img alt="" src="${properties.tickimage}">${properties.pretitle}</p>
+                <span class="success-mob"></span>
+                <span>${properties.title}</span>
+            </div>
+        </div>
+        <div id="moneyfy03" class="hidden">
+            <div class="thank-you text-center">
+                <span>${properties.unsuccessfultext}</span>
+            </div>
+        </div>*/-->
+        <div class="white-dot-loader d-none">
+            <img class="lozad" alt="loader" data-src="/content/dam/tata-capital-web/right-sticky/white-loader-dots.gif">
+        </div>
+        <div id="moneyfy02" class="d-none">
+            <div class="getapp-thank-you">
+                <div class="text-center">
+                    <p class="get-successs">
+                        <img alt="" class="lozad" data-src="/content/dam/tata-capital-web/right-sticky/tick-success.svg"> 
+                        SMS sent successfully!
+                    </p>
+                    <p class="getsuccess-sms">An SMS has been sent to <span class="success-mob jsShowLookNumber">XXXXXXXX13</span><br> <span class="textChange">Click on the link in the message to download the Moneyfy App.</span></p>
+                </div>                                                    
+            </div>
+        </div>
+    </div>
+    <div class="qrcode-right">
+        <div class="qrcode-or">
+            <span class="qrcode-or-text"> OR </span>
+        </div>
+        <div class="qrcode-content" data-sly-resource="${'container-qr' @ resourceType='/apps/core/wcm/components/container/v1/container'}">
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    allowProxy="{Boolean}true"
+    categories="[tcl-web-asset-disposal-page-component]"
+    embed="[banner-clientlib,asset-disposal-property-search-clientlib,tcl-customer-testimonials-clientlib,tcl-hot-deals,asset-disposal-property-listing-clientlib,asset-disposal-property-filters-clientlib,tcl-ipopular-faq,upcoming-properties]"/>

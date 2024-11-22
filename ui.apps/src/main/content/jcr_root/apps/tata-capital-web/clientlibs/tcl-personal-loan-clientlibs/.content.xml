@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    allowProxy="{Boolean}true"
+    categories="tcl-personal-loan-clientlibs"
+    embed="[tcl-table,tcl-check-loan-eligibility,tcl-best-deals,apply-via-whatsapp-clientlib,tcl-apply-via-whatsapp,tcl-product-loan-box,tcl-instant-loan-box,tcl-key-features,tcl-who-can-take-loan,tcl-about-product,tcl-check-loan-eligibility,tcl-payment-options,tcl-why-to-choose-us,tcl-instant-loan-in-your-city,tcl-about-more-products,tcl-ipopular-faq,tcl-personal-loan-box,tcl-credit-score-eligibility,tcl-renovation-project,tcl-benefits-of-pre-paying,tcl-emi-suitable-for-you,tcl-table,tcl-miscellaneous-charges,tcl-disclaimer,tcl-emi-prepaid,tcl-how-emi-calc-works,tcl-faq-accordian-with-tab,tcl-related-videos,tcl-sub-nav,tcl-video-pop-up,tcl-quick-links-drawer-clientlib,tcl-channel-partner-meet,tcl-explore-products-clientlib]"/>

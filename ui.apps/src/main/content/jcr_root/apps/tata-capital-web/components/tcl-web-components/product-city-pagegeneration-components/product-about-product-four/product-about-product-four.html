@@ -1,0 +1,44 @@
+<div data-sly-test="${!properties.dynamicAboutProductFour}" class="about-product">
+    <section class="personal-loan-box space-tb40">
+        <div class="container">
+            <div class="about-product-big-div title">
+                <div class="bg-div personal-cards jsParaOuter">
+                    <div class="personal-para">
+                        <div class="component-title title">
+                            <div class="container">
+                                <h2 class="text-center">Other Ways to Apply for a Personal Loan in <span class="upperFirstLatter">${PageProperties.cityName}?</span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="rte title">
+                            <ul class="list-circle-info">
+                                <!--/*<li>
+                                    <p>Registered Branch -</p>
+                                    <p>Address 1 - Tata Capital Financial Services Limited, Office No. 502, 5th Floor,
+                                        Neelyog Square, Opp. Ghatkopar Station, Ghatkopar East, Mumbai 400077</p>
+                                    <p>Address 2 - Tata Capital Financial Services Limited, Office No. 902 to 906,
+                                        Quantum Tower, Chincholi, Off SV Road, Malad West, Mumbai 400064</p>
+                                </li> */-->
+                                <li>
+                                    <p>Contact Number - 18602676060</p>
+                                </li>
+                                <li>
+                                    <p>Email - <a
+                                            href="mailto:contactus@tatacapital.com"><u>contactus@tatacapital.com</u></a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<div data-sly-test="${properties.dynamicAboutProductFour}" class="about-product">
+    <section class="personal-loan-box space-tb40">
+        ${properties.dynamicAboutProductFour @ context = 'html'}
+    </section>
+</div>

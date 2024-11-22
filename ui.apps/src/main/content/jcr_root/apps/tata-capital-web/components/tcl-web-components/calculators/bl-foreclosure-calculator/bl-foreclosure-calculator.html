@@ -1,0 +1,67 @@
+<!-- <h3 class="text-center"><span>Foreclosure Calculator</span></h3>    -->
+<!--Business Loan Foreclosure Calculator-->
+<section data-sly-use.title="com.adobe.cq.wcm.core.components.models.Title"
+    data-sly-use.template="core/wcm/components/commons/v1/templates.html" data-sly-test.text="${title.text}"
+    data-cmp-data-layer="${title.data.json}" class="calculator-box space-tb40">
+    <div class="container">
+        <div class="mx-944">
+            <div class="tops-heads">
+                <div
+                    data-sly-resource="${'title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                </div>
+            </div>
+            <div class="calculator-content-wrap z-0" data-calc-name="${title.text}">
+                <div class="calculator-inputs-wrap">
+                    <sly
+                        data-sly-resource="${'container-main' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                    </sly>
+
+                </div>
+                <div class="calculator-graph-wrap" data-calc-name="${title.text}">
+                    <div class="calculator-graph-inner">
+                        <div class="monthly-emi-row flex-wrap balanceTransfer-totalSavings-row">
+                            <div class="monthly-emi-section">
+
+                                <div class="monthly-emi-col">
+                                    <p class="semibold">Foreclosure Amount
+                                    </p>
+                                    <h4 class="foreclosure-amount-value"></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="monthly-emi-row flex-wrap">
+                            <div class="monthly-emi-section">
+                                <div class="monthly-emi-col">
+                                    <p class="semibold">EMI Amount
+                                    </p>
+                                    <p class="blank-space">.</p>
+                                    <h4 class="emi-amount-value"></h4>
+                                </div>
+                                <div class="monthly-emi-col">
+                                    <p class="semibold">Total Payment
+                                    </p>
+                                    <p>Principal + Interest</p>
+                                    <h4 class="total-payment-value"></h4>
+                                </div>
+                            </div>
+                            <div class="monthly-emi-section">
+                                <div class="monthly-emi-col">
+                                    <p class="semibold">Outstanding principal at the time of foreclosure
+                                    </p>
+                                    <h4 class="outstanding-principal-value"></h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="calculate-btn-wrap mob-no-margin">
+                            <a href="${title.linkURL}" target=" ${properties.newTab ? '_blank' : '' }" class="calculate-btn btn-blue btn-large">
+                                Apply Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Business Loan Foreclosure Calculator-->

@@ -1,0 +1,27 @@
+.products-box .products-list-slider {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.products-box .products-list-slider .products-col {
+  padding: 0 10px;
+}
+.products-box .products-list-slider .products-img {
+  width: 100%;
+  height: 206.7px;
+}
+.products-box .products-list-slider .products-img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .products-box .products-list-slider {
+    margin-left: -7px;
+    margin-right: -7px;
+  }
+  .products-box .products-list-slider .products-col {
+    padding: 0 7px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

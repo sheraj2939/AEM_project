@@ -1,0 +1,271 @@
+<div class="dropdown-content-wrap maxWidth-924">
+    <div class="dropdown-content-inner" tab-wrapper="">
+        <div class="loan-info-box vehicle-info-box" tab-contnet="${tabData}">
+            <div class="vehicle-info-col vehicle-info-right">
+                <sly data-sly-test="${properties.needLoanInfoDetailCOmpoentRight}">
+                    <div class="loan-info-detail-box">
+                        <sly data-sly-test="${properties.loanInfoDetailTitleRight}">
+                            <p class="text-blue"><a href="${properties.redirectionLinkBlueTitleRight}" class="text-primay-blue">${properties.loanInfoDetailTitleRight}</a></p>
+                           <!--/*<p class="text-blue custom-blue-title">
+                                ${properties.loanInfoDetailTitleRight}</p>*/-->
+                        </sly>
+                        ${properties.loanInfoDetailDescriptionRight @context='html'}
+                        <ul class="dot-list">
+                            <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                <sly data-sly-test="${loginLinks.name == 'importanLinksRight'}">
+                                    <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                        <li>${impLinks.subMenuHead}</li>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </ul>
+                        <div class="apply-knowMore-wrap">
+                            <a href="${properties.redirectionLinkKnowMoreRight}" class="btn-link"
+                                data-sly-test="${properties.knowMoreLoanInfoDetailButtonRight}" target="${properties.knowMoreButtonloanInfoDetailOpeninNewTabRight ? '_blank' : '' }" data-header="headerAnalyticData-${properties.loanInfoDetailTitleRight}" rel="nofollow">
+                                ${properties.knowMoreLoanInfoDetailButtonRight}
+                            </a>
+                            <sly data-sly-test="${!properties.needDownAppPopup}">
+                                <a href="${properties.redirectionLinkApplyNowRight}" class="apply-btn"
+                                data-sly-test="${properties.applyNowloanInfoDetailButtonRight}" target="${properties.loanInfoDetailApplyNowButtonOpeninNewTabRight ? '_blank' : '' }" data-header="headerAnalyticData-${properties.loanInfoDetailTitleRight}" rel="nofollow">
+                                ${properties.applyNowloanInfoDetailButtonRight}
+                            </a>
+                            </sly>
+                            <sly data-sly-test="${properties.needDownAppPopup}">
+                                <a data-target="#moneyfyBanner" href="javascript:void(0);" data-popovermodal="popover-modal" class="apply-btn"
+                                data-sly-test="${properties.applyNowloanInfoDetailButtonRight}" target="${properties.loanInfoDetailApplyNowButtonOpeninNewTabRight ? '_blank' : '' }" data-header="headerAnalyticData-${properties.loanInfoDetailTitleRight}" rel="nofollow">
+                                ${properties.applyNowloanInfoDetailButtonRight}
+                            </a>
+                            </sly>
+                        </div>
+                    </div>
+                </sly>
+                <div class="need-know-box">
+                    <sly data-sly-test="${properties.needKnowBoxRight}">
+                        <sly data-sly-test="${properties.loanForYourNeedCOmpoent}">
+                            <div class="loan-card-wrap">
+                                <p class="load-card-head" data-sly-test="${properties.loanForYourNeedTitle}">
+                                    ${properties.loanForYourNeedTitle}
+                                </p>
+                                <div class="loan-card card-col2">
+                                    <ul>
+                                        <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                            <sly data-sly-test="${loginLinks.name == 'loanList'}">
+                                                <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                    <li class="loan-card-item">
+                                                        <a href="${impLinks.redirectionLink}" class="loan-card-link" target="${impLinks.loanListpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${properties.loanInfoDetailTitleRight}" rel="nofollow">
+                                                            <span class="${impLinks.iconClass} head-icons"></span>
+                                                            <p>${impLinks.loanListHeading}</p>
+                                                        </a>
+                                                    </li>
+                                                </sly>
+                                            </sly>
+                                        </sly>
+                                    </ul>
+                                </div>
+                            </div>
+                        </sly>
+                        <sly data-sly-test="${properties.calculator}">
+                            <div class="loan-card-wrap">
+                                <p class="load-card-head" data-sly-test="${properties.calculatorTitle}">
+                                    ${properties.calculatorTitle}
+                                </p>
+                                <div class="loan-card card-col2">
+                                    <ul>
+                                        <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                            <sly data-sly-test="${loginLinks.name == 'loanListCalc'}">
+                                                <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                    <li class="loan-card-item">
+                                                        <a href="${impLinks.redirectionLink}" class="loan-card-link" target="${impLinks.calcOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${properties.loanInfoDetailTitleRight}" rel="nofollow">
+                                                            <span class="${impLinks.iconClass} head-icons"></span>
+                                                            <p>${impLinks.loanListCalcTitle}</p>
+                                                        </a>
+                                                    </li>
+                                                </sly>
+                                            </sly>
+                                        </sly>
+                                    </ul>
+                                </div>
+                            </div>
+                        </sly>
+                        <div class="need-to-know-wrap mg-b15">
+                            <p>${properties.needKnowBoxTitleRight}</p>
+                            <sly data-sly-test="${!properties.inlineLinks}">
+                                <ul class="${properties.inlineLinksRight ? 'need-know-link-inline' : ''}">
+                                    <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                        <sly data-sly-test="${loginLinks.name == 'needKnowBoxLinksRight'}">
+                                            <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                <li class="need-know-item">
+                                                    <sly data-sly-test="${impLinks.redirectionLink}">
+                                                        <a href="${impLinks.redirectionLink}" class="need-know-link" target="${impLinks.needKnowBoxLinksOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${properties.loanInfoDetailTitleRight}">
+                                                            ${impLinks.subMenuHead}
+                                                        </a>
+                                                    </sly>
+                                                    <sly data-sly-test="${!impLinks.redirectionLink}">
+                                                        <a href="javascript:void(0);" class="need-know-link" data-header="headerAnalyticData-${properties.loanInfoDetailTitleRight}" rel="nofollow">
+                                                            ${impLinks.subMenuHead}
+                                                        </a>
+                                                    </sly>
+                                                </li>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </ul>
+                            </sly>
+                            <sly data-sly-test="${properties.inlineLinks}">
+                                <ul class="${properties.inlineLinks ? 'need-know-link-inline' : ''}">
+                                    <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                        <sly data-sly-test="${loginLinks.name == 'needKnowBoxLinksRight'}">
+                                            <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                <li class="">
+                                                    <sly data-sly-test="${impLinks.redirectionLink}">
+                                                        <a href="${impLinks.redirectionLink}" class="need-know-link" target="${impLinks.needKnowBoxLinksOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${properties.loanInfoDetailTitleRight}" rel="nofollow">
+                                                            ${impLinks.subMenuHead}
+                                                        </a>
+                                                    </sly>
+                                                    <sly data-sly-test="${!impLinks.redirectionLink}">
+                                                        <a href="javascript:void(0);" class="need-know-link" data-header="headerAnalyticData-${properties.loanInfoDetailTitleRight}" rel="nofollow">
+                                                            ${impLinks.subMenuHead}
+                                                        </a>
+                                                    </sly>
+                                                </li>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </ul>
+                            </sly>
+                        </div>
+                    </sly>
+
+                </div>
+            </div>
+            <div class="vehicle-info-col vehicle-info-left">
+                <sly data-sly-test="${properties.needLoanInfoDetailCOmpoent}">
+                    <div class="loan-info-detail-box">
+                        <sly data-sly-test="${properties.loanInfoDetailTitle}">
+                            <p class="text-blue"><a href="${properties.redirectionLinkBlueTitle}" class="text-primay-blue">${properties.loanInfoDetailTitle}</a></p>
+                           <!--/*<p class="text-blue custom-blue-title">
+                                ${properties.loanInfoDetailTitle}</p>*/-->
+                        </sly>
+                        ${properties.loanInfoDetailDescription @context='html'}
+                        <ul class="dot-list">
+                            <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                <sly data-sly-test="${loginLinks.name == 'importanLinks'}">
+                                    <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                        <li>${impLinks.subMenuHead}</li>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </ul>
+                        <div class="apply-knowMore-wrap">
+                            <a href="${properties.redirectionLinkKnowMore}" class="btn-link"
+                                data-sly-test="${properties.knowMoreLoanInfoDetailButton}" target="${properties.knowMoreButtonloanInfoDetailOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${properties.loanInfoDetailTitle}">
+                                ${properties.knowMoreLoanInfoDetailButton}
+                            </a>
+                            <a href="${properties.redirectionLinkApplyNow}" class="apply-btn"
+                                data-sly-test="${properties.applyNowloanInfoDetailButton}" target="${properties.loanInfoDetailApplyNowButtonOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${properties.loanInfoDetailTitle}">
+                                ${properties.applyNowloanInfoDetailButton}
+                            </a>
+                        </div>
+                    </div>
+                </sly>
+                <div class="need-know-box">
+                    <sly data-sly-test="${properties.calculatorLeft}">
+                        <div class="loan-card-wrap">
+                            <p class="load-card-head" data-sly-test="${properties.calculatorTitle}">
+                                ${properties.calculatorTitleLeft}
+                            </p>
+                            <div class="loan-card card-col2">
+                                <ul>
+                                    <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                        <sly data-sly-test="${loginLinks.name == 'loanListCalcLeft'}">
+                                            <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                <li class="loan-card-item">
+                                                    <a href="${impLinks.redirectionLink}" class="loan-card-link" target="${impLinks.calcOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${properties.loanInfoDetailTitle}">
+                                                        <span class="${impLinks.iconClass} head-icons"></span>
+                                                        <p>${impLinks.loanListCalcTitle}</p>
+                                                    </a>
+                                                </li>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </ul>
+                            </div>
+                        </div>
+                    </sly>
+                    <sly data-sly-test="${properties.needKnowBox}">
+                        <div class="need-to-know-wrap mg-b15">
+                            <p>${properties.needKnowBoxTitle}</p>
+                            <sly data-sly-test="${!properties.inlineLinks}">
+                                <ul class="${properties.inlineLinks ? 'need-know-link-inline' : ''}">
+                                    <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                        <sly data-sly-test="${loginLinks.name == 'needKnowBoxLinks'}">
+                                            <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                <li class="need-know-item">
+                                                    <sly data-sly-test="${impLinks.redirectionLink}">
+                                                        <a href="${impLinks.redirectionLink}" class="need-know-link" target="${impLinks.needKnowBoxLinksOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${properties.loanInfoDetailTitle}">
+                                                            ${impLinks.subMenuHead}
+                                                        </a>
+                                                    </sly>
+                                                    <sly data-sly-test="${!impLinks.redirectionLink}">
+                                                        <a href="javascript:void(0);" class="need-know-link" data-header="headerAnalyticData-${properties.loanInfoDetailTitle}">
+                                                            ${impLinks.subMenuHead}
+                                                        </a>
+                                                    </sly>
+                                                </li>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </ul>
+                            </sly>
+                            <sly data-sly-test="${properties.inlineLinks}">
+                                <ul class="${properties.inlineLinks ? 'need-know-link-inline' : ''}">
+                                    <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                        <sly data-sly-test="${loginLinks.name == 'needKnowBoxLinks'}">
+                                            <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                <li class="">
+                                                    <sly data-sly-test="${impLinks.redirectionLink}">
+                                                        <a href="${impLinks.redirectionLink}" class="need-know-link" target="${impLinks.needKnowBoxLinksOpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${properties.loanInfoDetailTitle}">
+                                                            ${impLinks.subMenuHead}
+                                                        </a>
+                                                    </sly>
+                                                    <sly data-sly-test="${!impLinks.redirectionLink}">
+                                                        <a href="javascript:void(0);" class="need-know-link" data-header="headerAnalyticData-${properties.loanInfoDetailTitle}">
+                                                            ${impLinks.subMenuHead}
+                                                        </a>
+                                                    </sly>
+                                                </li>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </ul>
+                            </sly>
+                        </div>
+                    </sly>
+                    <sly data-sly-test="${properties.loanForYourNeedCOmpoentLeft}">
+                        <div class="loan-card-wrap">
+                            <p class="load-card-head" data-sly-test="${properties.loanForYourNeedTitle}">
+                                ${properties.loanForYourNeedTitleLeft}
+                            </p>
+                            <div class="loan-card card-col2">
+                                <ul>
+                                    <sly data-sly-list.loginLinks="${resource.listChildren}">
+                                        <sly data-sly-test="${loginLinks.name == 'loanListLeft'}">
+                                            <sly data-sly-list.impLinks="${loginLinks.listChildren}">
+                                                <li class="loan-card-item">
+                                                    <a href="${impLinks.redirectionLink}" class="loan-card-link" target="${impLinks.loanListpeninNewTab ? '_blank' : '' }" data-header="headerAnalyticData-${properties.loanInfoDetailTitle}">
+                                                        <span class="${impLinks.iconClass} head-icons"></span>
+                                                        <p>${impLinks.loanListHeading}</p>
+                                                    </a>
+                                                </li>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+                                </ul>
+                            </div>
+                        </div>
+                    </sly>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<div  data-sly-test="${!properties.dynamicAboutProductThree}" class="about-product">
+    <section class="personal-loan-box space-tb40">
+        <div class="container">
+            <div class="about-product-big-div title">
+                <div class="bg-div personal-cards jsParaOuter">
+                    <div class="personal-para">
+                        <div class="component-title title">
+                            <h2 class="main-heading">How to Calculate EMI for <span>Personal Loan Online?</span></h2>
+                        </div>
+                        <div class="rte title">
+                            <p>Calculating EMI for your loan in <span class="upperFirstLatter">${PageProperties.cityName}?</span> has never been easier. Use Tata Capital's <u><a
+                                        href="/content/tata-capital-web/en/personal-loan/emi-calculator.html">personal loan EMI calculator</a></u>,
+                                and get your loan with suitable EMIs sanctioned today.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div data-sly-test="${properties.dynamicAboutProductThree}" class="about-product">
+    <section class="personal-loan-box space-tb40">
+        ${properties.dynamicAboutProductThree @ context = 'html'}
+    </section>
+</div>

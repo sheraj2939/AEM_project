@@ -1,0 +1,145 @@
+@charset "UTF-8";
+.tata-cards-box {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+.tata-cards-box .tata-cards-inner {
+  padding: 40px 40px 57px;
+}
+.tata-cards-box .cards-inner-content {
+  max-width: 934px;
+  margin: 30px auto 0;
+}
+.tata-cards-box .card-inner-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.tata-cards-box .card-inner-col {
+  width: 30%;
+  padding: 0 15px;
+}
+.tata-cards-box .card-inner-col.credit-card-col {
+  width: 40%;
+}
+.tata-cards-box .card-list li {
+  position: relative;
+  color: #000000;
+  padding-bottom: 28px;
+  padding-left: 40px;
+}
+.tata-cards-box .card-list li::before {
+  position: absolute;
+  content: "";
+  font-family: "icomoon";
+  font-size: 12px;
+  color: #ffffff;
+  left: 0;
+  top: 0px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #B287D4;
+  border-radius: 50%;
+}
+.tata-cards-box .apply-tata-cards {
+  max-width: 944px;
+  margin: -57px auto 30px;
+  background: linear-gradient(134.06deg, rgba(18, 104, 179, 0.86) 0%, rgba(16, 141, 250, 0.96) 99.11%);
+  padding: 30px;
+  border-radius: 30px;
+}
+.tata-cards-box .apply-tata-cards .apply-cards-inner {
+  text-align: center;
+}
+.tata-cards-box .apply-tata-cards .apply-cards-inner h3 {
+  color: #ffffff;
+}
+.tata-cards-box .apply-tata-cards .default-duttons {
+  padding: 21px 0;
+}
+.tata-cards-box .apply-tata-cards .btn-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.tata-cards-box .apply-tata-cards .btn-list li {
+  padding-right: 20px;
+}
+.tata-cards-box .apply-tata-cards .btn-list li:last-child {
+  padding-right: 0;
+}
+.tata-cards-box .apply-tata-cards .btn-link {
+  color: #126FB3;
+}
+.tata-cards-box .disclaimer-text {
+  max-width: 764px;
+  margin: 0 auto;
+  text-align: center;
+}
+.tata-cards-box .disclaimer-text p {
+  color: #636363;
+}
+
+@media (max-width: 1199px) {
+  .tata-cards-box .card-inner-col {
+    width: 33.33% !important;
+  }
+  .tata-cards-box .apply-tata-cards {
+    max-width: 700px;
+  }
+}
+@media (max-width: 991px) {
+  .tata-cards-box {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .tata-cards-box .card-inner-row {
+    margin: 0;
+  }
+  .tata-cards-box .card-inner-col {
+    width: 100% !important;
+    padding: 0;
+  }
+  .tata-cards-box .card-inner-col.credit-card-col {
+    order: 2;
+  }
+  .tata-cards-box .card-inner-col.credit-card-col img {
+    width: 276px;
+    margin: auto;
+  }
+  .tata-cards-box .card-list li {
+    padding-bottom: 20px;
+    padding-left: 30px;
+  }
+  .tata-cards-box .card-list li::before {
+    font-size: 8px;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+  }
+  .tata-cards-box .apply-tata-cards {
+    max-width: 560px;
+    padding: 30px 24px;
+  }
+}
+@media (max-width: 767px) {
+  .tata-cards-box .tata-cards-inner {
+    padding: 30px 16px 97px;
+  }
+  .tata-cards-box .apply-tata-cards {
+    margin-top: -97px;
+    padding: 20px 21px 20px;
+    max-width: none;
+    margin-left: 21px;
+    margin-right: 21px;
+  }
+  .tata-cards-box .apply-tata-cards .btn-link {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

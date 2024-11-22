@@ -1,0 +1,3 @@
+#base=css
+all-awards.css
+all-awards-global.css

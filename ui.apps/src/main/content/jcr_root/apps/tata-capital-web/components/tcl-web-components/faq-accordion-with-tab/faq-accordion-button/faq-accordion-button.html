@@ -1,0 +1,14 @@
+
+<button 		data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button"
+        data-sly-use.iconTemplate="icon.html"
+        data-sly-element="a"
+        type="${button.buttonLink.valid ? '' : 'button'}"
+        id="${button.id}"
+        class="btn-light-blue"
+        data-sly-attribute="${button.buttonLink.htmlAttributes}"
+        aria-label="${button.accessibilityLabel}"
+        data-cmp-clickable="${button.data ? true : false}"
+        data-cmp-data-layer="${button.data.json}"
+   		>
+		${button.text}
+</button>

@@ -1,0 +1,21 @@
+.tabs-button.cmp-tabs__tab--active{
+    background: #DEDC00;
+    color: #333333;
+    border-bottom-color: #DEDC00;
+}
+.tabs-button.cmp-tabs__tab--active.has-right-arrow:after{
+    transform: translateY(-50%) rotate(0);
+    color: #333333;
+}
+.insurance-plan-box .insurance-plans-right .tab-content.cmp-tabs__tab--active {
+    display: block;
+}
+@media (max-width: 991px) {
+    .tab-btn-group .tab-item .tab-button.cmp-tabs__tab--active {
+        box-shadow: none;
+    }
+    .tabs-button.cmp-tabs__tab--active {
+        background: #1961AC;
+        color: #FFFFFF;
+    }
+}

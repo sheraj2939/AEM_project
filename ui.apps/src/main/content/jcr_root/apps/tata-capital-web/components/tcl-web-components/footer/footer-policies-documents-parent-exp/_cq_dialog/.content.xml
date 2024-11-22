@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Footer Authoring"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <otherDocument
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                        <items jcr:primaryType="nt:unstructured">
+                            <container
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Other document List"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <solutionConsumer
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Heading"
+                                        name="./otherDocHeading"
+                                        useFixedInlineToolbar="{Boolean}true"/>
+                                    <importantTab
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        composite="{Boolean}true"
+                                        name="./firstTab"
+                                        text="Check for important link tab"
+                                        value="true"/>
+                                    <otherSubscriber
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Other documents"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldLabel="Other documents">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                            name="./otherDocument">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <tittle
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Enter heading"
+                                                            name="./tittle"
+                                                            useFixedInlineToolbar="{Boolean}true"/>
+                                                        <accordian
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                            composite="{Boolean}true"
+                                                            name="./isAccordian"
+                                                            text="Is Accordian or not"
+                                                            value="true"/>
+                                                        <redirection
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="URL For Tab"
+                                                            name="./urlTab"
+                                                            useFixedInlineToolbar="{Boolean}true"/>
+                                                        <openNewTab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                            composite="{Boolean}true"
+                                                            name="./newTab"
+                                                            text="Open link in new tab"
+                                                            value="true"/>
+                                                        <subLink
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <subLink
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    jcr:title="Document List"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                    composite="{Boolean}true"
+                                                                    fieldLabel="Document List">
+                                                                    <field
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                                        name="./otherDocList">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <column
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                                <items jcr:primaryType="nt:unstructured">
+                                                                                    <topHeading
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                        fieldLabel="Enter heading"
+                                                                                        name="./subMenuHead"
+                                                                                        useFixedInlineToolbar="{Boolean}true"/>
+                                                                                    <link
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                        fieldLabel="Enter redirection link"
+                                                                                        name="./subMenuLink"
+                                                                                        rootPath="/content"/>
+                                                                                    <openinnewtab
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                                        composite="{Boolean}true"
+                                                                                        name="./openInNewTab"
+                                                                                        text="Check for open link in new tab"
+                                                                                        value="true"/>
+                                                                                    <languagepopup
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                                        composite="{Boolean}true"
+                                                                                        name="./languagePopup"
+                                                                                        text="Enable MITC Language Pop-up"
+                                                                                        value="true"/>
+                                                                                    <languagedropdown
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        jcr:title="Language Dropdown"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                                        composite="{Boolean}true"
+                                                                                        eaem-show-on-collapse="EAEM.showProductName"
+                                                                                        fieldLabel="Language Dropdown">
+                                                                                        <field
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                                                            eaem-nested="NODE_STORE"
+                                                                                            name="./mitcLanguageDropdown">
+                                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                                <column
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                                                        <language
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                                            fieldLabel="Language Name"
+                                                                                                            name="./languageName"/>
+                                                                                                        <pdfpath
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                                            fieldLabel="Language PDF Path"
+                                                                                                            name="./pdfPath"
+                                                                                                            rootPath="/content/"/>
+                                                                                                    </items>
+                                                                                                </column>
+                                                                                            </items>
+                                                                                        </field>
+                                                                                    </languagedropdown>
+                                                                                </items>
+                                                                            </column>
+                                                                        </items>
+                                                                    </field>
+                                                                </subLink>
+                                                            </items>
+                                                        </subLink>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </otherSubscriber>
+                                </items>
+                            </container>
+                        </items>
+                    </otherDocument>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

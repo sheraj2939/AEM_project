@@ -1,0 +1,35 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='tcl-dos-and-donts'}"></sly>
+</sly>
+<!--  Do dnot box  -->
+<section class="space-tb40">
+    <div class="container">
+        <div class="tops-heads">
+            <sly
+                data-sly-resource="${'dos-donts-title-conatiner' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+            </sly>
+        </div>
+        <div class="row-flex do-dont-row">
+            <div class="do-dont-col row-col-50 col-sp15">
+                <div class="bg-div do-dont-inner">
+                    <h3 class="heading20 semibold"><img src="/content/dam/tata-capital-web/assets/img/do-ticks.svg"
+                            alt="">Dos</h3>
+                    <sly
+                        data-sly-resource="${'dos-conatiner' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                    </sly>
+                </div>
+            </div>
+            <div class="do-dont-col row-col-50 col-sp15">
+                <div class="bg-div do-dont-inner">
+                    <h3 class="heading20 semibold"><img src="/content/dam/tata-capital-web/assets/img/dont-ticks.svg"
+                            alt="">Don’ts</h3>
+                    <sly
+                        data-sly-resource="${'donts-conatiner' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                    </sly>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--  Do dnot box  -->

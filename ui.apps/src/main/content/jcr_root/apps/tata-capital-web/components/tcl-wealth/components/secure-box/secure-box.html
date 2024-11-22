@@ -1,0 +1,19 @@
+<div class="space-tb40 pd-t50">
+    <div class="container">
+        <sly
+            data-sly-resource="${'secure-box-heading' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+        </sly>
+        <div class="bg-div bg-with-img secure-box">
+            <h2>${properties.title} <span>${properties.boldTitle}</span></h2>
+            <div>
+                ${properties.bulletPoints @context = 'html'}
+            </div>
+            <sly data-sly-test="${properties.btnTitle}">
+                <div class="btns-tops">
+                    <a href="${properties.buttonlink}" target="${properties.secureButton? '_blank' : ''}" type="button"
+                        class="btn-dangers btn-big">${properties.btnTitle}</a>
+                </div>
+            </sly>
+        </div>
+    </div>
+</div>

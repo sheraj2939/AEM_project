@@ -1,0 +1,26 @@
+<section class="split-cards-box space-tb40 pd-t0i space-b80">
+    <div class="container">
+        <div class="personal-two-loan-box">
+            <sly data-sly-list.itemList="${resource.children}">
+                <sly data-sly-test="${itemList.name == 'splitCardMultifield'}">
+                    <sly data-sly-list.card="${itemList.children}">
+                        <div class="personal-loan-row has-fixed-controls api-bottom">
+                            <div class="bg-div personal-cards">
+                                <h3 data-sly-test="${card.cardTitle}" class="heading20 mg-b15"><span>${card.cardTitle}</span></h3>
+                                <div data-sly-test="${card.description}" class="personal-para">                                
+                                    <div class="text16i">${card.description @ context='html'}</div>
+                                </div>
+                                <div data-sly-test="${card.linkLabel}" class="personal-btn btn-with-full">
+                                    <a target="${card.newTabCard ? '_blank' : ''}" href="${card.Redirectionlink}" class="btn-links link-with-arrow">${card.linkLabel}<span class="icon-arrow-right arros"></span></a>
+                                </div>                 
+                            </div>
+                        </div>
+                    </sly>
+                </sly>
+            </sly>
+        </div>
+        <div data-sly-test="${properties.linkLabel}" class="mg-t30 text-center">
+            <a target="${properties.newTab ? '_blank' : ''}" href="${properties.Redirectionlink}" type="button" class="btn-blue btn-large">${properties.linkLabel}</a>
+        </div>
+    </div>
+</section>

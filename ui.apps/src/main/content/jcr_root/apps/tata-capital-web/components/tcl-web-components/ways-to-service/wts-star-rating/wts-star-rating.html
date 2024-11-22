@@ -1,0 +1,12 @@
+<div class="ul-ratings">
+    <sly data-sly-list.multi="${resource.children}">
+        <sly data-sly-test="${multi.name == 'starRatings'}">
+            <sly data-sly-list.rating="${multi.children}">
+                <div class="li-ratings">
+                    <p class="heading20 semibold">${rating.value} <span class="icon-star"></span></p>
+                    <span class="text16i ratings-reviews-txt">${rating.review}</span>
+                </div>
+            </sly>
+        </sly>
+    </sly>
+</div>

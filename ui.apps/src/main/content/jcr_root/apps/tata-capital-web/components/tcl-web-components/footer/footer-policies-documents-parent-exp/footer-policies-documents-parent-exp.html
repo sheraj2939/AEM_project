@@ -1,0 +1,118 @@
+<div class="top-outer-policies">                                            
+    <p class="footer-headings no-arrows" data-footer="footerAnalyticData-${properties.otherDocHeading}">${properties.otherDocHeading}</p>
+    <div class="policies-tabnav accrodian" id="${properties.firstTab ? 'policies-codes1' : 'policies-codes2'}">
+        <div class="hidden-xs policies-tab-top">
+            <ul class="tablist-nav navTab">
+                <sly data-sly-list.loginLinks="${resource.listChildren}">
+                    <sly data-sly-test="${loginLinks.name == 'otherDocument'}">
+                        <sly data-sly-list.corpotateList="${loginLinks.listChildren}">
+                            <sly data-sly-test.tabData="${'tab{0}_{1}' @ format =[drop.name,corpotateListList.count]}">
+                                <sly data-sly-test="${!corpotateList.isAccordian}">
+                                    <li class="nav-tablist"><a href="javascript:void(0)" class="nav-link" data-collapse="collapse"
+                                            data-target="${tabData}"
+                                            data-footer="footerAnalyticData-${properties.otherDocHeading}">${corpotateList.tittle}</a></li>
+                                </sly>
+                                <sly data-sly-test="${corpotateList.isAccordian}">
+                                    <li class="nav-tablist"><a href="${corpotateList.urlTab}" target="${corpotateList.newTab ? '_blank' : ''}"
+                                            class="nav-link link-no-tabs"
+                                            data-footer="footerAnalyticData-${properties.otherDocHeading}">${corpotateList.tittle}</a></li>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </sly>
+                </sly>
+            </ul>
+        </div>                                
+        <div class="tab-content">
+            <sly data-sly-list.loginLinks="${resource.listChildren}">
+                <sly data-sly-test="${loginLinks.name == 'otherDocument'}">
+                    <sly data-sly-list.corpotateList="${loginLinks.listChildren}">
+                        <sly data-sly-test.tabData="${'tab{0}_{1}' @ format =[drop.name,corpotateListList.count]}">
+                            <div class="accordian-content">
+                                <div class="tab-accordian visible-xs">
+                                    <!-- <a class="tab-title" href="javascript:void(0)" data-toggle="collapse" aria-expanded="false" data-target="${tabData}" data-footer="footerAnalyticData-${properties.otherDocHeading}">${corpotateList.tittle}</a> -->
+                                    <sly data-sly-test="${!corpotateList.isAccordian}">
+                                       <a href="javascript:void(0)" class="tab-title" data-toggle="collapse"
+                                                data-target="${tabData}" aria-expanded="false"
+                                                data-footer="footerAnalyticData-${properties.otherDocHeading}">${corpotateList.tittle}</a>
+                                    </sly>
+                                    <sly data-sly-test="${corpotateList.isAccordian}">
+                                        <a href="${corpotateList.urlTab}" target="${corpotateList.newTab ? '_blank' : ''}"
+                                                class="tab-title link-no-tabs"
+                                                data-footer="footerAnalyticData-${properties.otherDocHeading}">${corpotateList.tittle}</a>
+                                    </sly>
+                                </div>
+                                <div class="tab-panel collapse" id="${tabData}">
+                                    <ul class="footer-links">
+                                        <sly data-sly-list.loginLinks="${corpotateList.listChildren}">
+                                            <sly data-sly-test="${loginLinks.name == 'otherDocList'}">
+                                                <sly data-sly-list.corpotateList="${loginLinks.listChildren}">
+                                                    <sly data-sly-test="${!corpotateList.languagePopup}">
+                                                        <li><a href="${corpotateList.subMenuLink}" data-footer="footerAnalyticData-${properties.otherDocHeading}">${corpotateList.subMenuHead}</a></li>
+                                                    </sly>
+                                                    <sly data-sly-test="${corpotateList.languagePopup}">
+                                                        <li><a href="javascript:void(0);" data-popovermodalMITC="#prefrencelang-modal" data-footer="footerAnalyticData-${properties.otherDocHeading}">${corpotateList.subMenuHead}</a></li>
+                                                    </sly>
+                                                </sly>
+                                            </sly>
+                                        </sly>
+                                    </ul>
+                                </div>
+                            </div>
+                        </sly>
+                    </sly>
+                </sly>
+            </sly>
+        </div>
+    </div>
+    </div>
+
+    <!--home loan modal -->
+    <div class="popover-modal modals-blue fade popover-show" id="prefrencelang-modal">
+        <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md2">
+            <div class="modal-tb-content">
+                <div class="popover-modal-content prefrence-language-content">
+                    <button data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></button>    
+                    <div class="popover-modal-body">                      
+                        <div class="modal-body-inner">      
+                            <div class="prefrence-mx">                
+                                <img data-src="/content/dam/tata-capital-web/Tc-footer-images/mic.svg" alt="" class="lozad pdf-imgs">
+                                <div class="strongCss">
+                                    <strong class="heading20"><span>Most Important Terms & Conditions - Home Loans</span></strong>
+                                </div>
+                                <p>Download in your preferred language</p>
+                                <div class="mx-314">
+                                    <div class="custom-select2 select2-white">
+                                        <select class="js-select2" id="mitc-language-dropdown" data-type="language" data-placeholder="Language">
+                                            <option value="English">Select an option</option>
+                                            <sly  data-sly-list.loginLinks="${resource.listChildren}">
+                                                <sly data-sly-test="${loginLinks.name == 'otherDocument'}">
+                                                    <sly data-sly-list.otherDocLists="${loginLinks.listChildren}">
+                                                      <sly data-sly-list.submenudata="${otherDocLists.children}">
+                                                        <sly data-sly-test="${submenudata.name == 'otherDocList'}">
+                                                            <sly data-sly-list.subMenulist="${submenudata.children}">
+                                                               <sly data-sly-list.mitcLanguage="${subMenulist.children}">
+                                                                  <sly data-sly-test="${mitcLanguage.name == 'mitcLanguageDropdown'}">
+                                                                    <sly data-sly-list.mitcLanguageItem="${mitcLanguage.children}">
+                                                                      <option value="${mitcLanguageItem.languageName}" data-pdf="${mitcLanguageItem.pdfPath}" class="optInvisible" data-parent="${subMenulist.subMenuHead}">${mitcLanguageItem.languageName}</option>         
+                                                                </sly>
+                                                            </sly>
+                                                        </sly>
+                                                    </sly>
+                                                </sly>
+                                            </sly>
+                                         </sly>
+                                    </sly>
+                                  </sly>                               
+                                        </select>
+                                    </div>                        
+                                </div>
+                                <a href="" id="mitc-language-download-btn" download class="btn-link btn-big btn-with-card-bg min-w149 btn-xs-full disabled" data-popoverclose="popover-modal">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--home loan modal -->

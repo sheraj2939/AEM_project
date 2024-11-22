@@ -1,0 +1,14 @@
+.loan-against-form .la-agree-btn {
+    margin-bottom: 20px;
+}
+.form-textbox-new.textboxerror.custom-text-area .error-msgs {
+    top: 100% !important;
+}
+.custom-text-area-label {
+    font-size: 14px;
+    line-height: 17px;
+    color: #9D9D9D;
+}
+.form-pdr{
+    padding-right: 0px !important;
+}

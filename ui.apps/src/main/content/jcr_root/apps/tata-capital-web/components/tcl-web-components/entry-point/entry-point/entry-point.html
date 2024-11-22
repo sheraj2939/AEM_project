@@ -1,0 +1,34 @@
+<sly class="item" data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+    data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-use.imageTemplate="image.html"
+    data-sly-use.pretitleTemplate="pretitle.html" data-sly-use.titleTemplate="title.html"
+    data-sly-use.descriptionTemplate="description.html" data-sly-use.actionsTemplate="actions.html"
+    data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+    id="${teaser.id}" data-cmp-data-layer="${teaser.data.json}">
+    <section class="space-tb40">
+        <div class="container">
+            <div class="${properties.discoverNew ? 'discover-exp-new-box' : 'discover-explore-box'}">
+                <div class="${properties.discoverNew ? 'discover-exp-new-row' : 'discover-explore-row'}">
+                    <div class="discover-explore-left">
+
+                        <sly data-sly-test="${properties.discoverNew}">
+                        <div class="exp-left-texts">
+                            <p class="heading20 fontsize semibold">${teaser.pretitle}</p>
+                        </div>
+                        <img src="${properties.dessktopImg}" alt="${properties.imageAlt}" class="d-none d-md-block discovers-img">
+                        <img src="${properties.mobileImage}" alt="${properties.imageAlt}" class="d-block d-md-none discovers-img">
+                        </sly>
+
+
+                        <sly data-sly-test="${!properties.discoverNew}">
+                        <img data-src="${properties.fileReference}" alt="${properties.alt}" class="discovers-img lozad">
+                        <p class="heading20 semibold">${teaser.pretitle}</p>
+                        </sly>
+                    </div>
+                    <div class="discover-explore-right">
+                        <sly class="icon-arrow-right" data-sly-call="${actionsTemplate.actions @ teaser=teaser}"></sly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</sly>

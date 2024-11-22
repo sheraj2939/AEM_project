@@ -1,0 +1,12 @@
+.loan-whatsapp-box .loan-whatsapp-cards {
+    display: flex;
+}
+.loan-whatsapp-box .loan-whatsapp-cards .loan-whatsapp-col:nth-child(1) {
+    padding-left: 0;
+}
+.loan-whatsapp-box .loan-whatsapp-item {
+    padding: 25px 40px;
+    height: 100%;
+    border-radius: 40px;
+    position: relative;
+}

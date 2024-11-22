@@ -1,0 +1,166 @@
+<!-- right sticky -->
+<!--2-2-2023-->
+<div class="sticky-actions js-sticky-actions close-on-outside">
+    <!--2-2-2023-->
+    <a href="javascript:;" class="actions-toggle js-actions-toggle">
+        <!-- sonar -->
+        <span class="icon-arrow-right"></span>
+        <span class="icon-arrow-left"></span>
+        <!-- sonar -->
+    </a>
+    <ul class="actions">
+        <!--1-2-2023-->
+        <li class="downloadApp" data-popovermodal="popover-modal" data-target="#getOurApps">
+            <a href="javascript:;" class="btn-action text-rotate">
+                <!-- sonar -->
+                <!--                    <span class="icon-download"></span>-->
+                <img width="13px" height="21px" src="/content/dam/tata-capital-web/assets/img/download-app.svg" class="download-icon-default"
+                    alt="Download app" />
+                <img width="12px" height="20px" src="/content/dam/tata-capital-web/assets/img/download-app-mobile.svg" class="download-icon-hover"
+                    alt="Download app" />
+                <span class="stick-txt">${properties.downloadApp}</span>
+                <!-- sonar -->
+            </a>
+        </li>
+        <li class="creditScore">
+            <a href="${properties.creditScoreLink}" class="btn-action text-rotate">
+                <!-- sonar -->
+                <!--                    <span class="icon-score"></span>-->
+                <img height="15px" width="27px"  src="/content/dam/tata-capital-web/assets/img/credit-score.svg" class="credit-score-icon"
+                    alt="Check credit score" />
+                <span class="stick-txt">${properties.creditScore}</span>
+                <!-- sonar -->
+            </a>
+        </li>
+        <!--1-2-2023-->
+        <!-- 7-12-2022 -->
+        <!-- <li class="chatBot">
+                <a href="javascript:;" class="btn-action">
+                    <img src="assets/img/banner/call-chat.png" />
+                </a>
+            </li>
+            <li class="whatsApp">
+                <a href="javascript:;" class="btn-action">
+                    <span class="icon-whatsapp"></span>
+                </a>
+            </li> -->
+        <!-- 7-12-2022 -->
+    </ul>
+</div>
+<!-- right sticky -->
+
+
+<!-- get our app modal -->
+<div class="popover-modal modal-popup fade" id="getOurApps">
+    <div class="popover-modal-dialog popover-modal-dialog-centered">
+        <div class="modalcontent">
+            <div class="popover-modal-body">
+                <button data-dismiss="popover-modal" class="popover-modal-close"><span
+                        class="icon-close"></span></button>
+                <div class="tabcontent pop-display" tab-wrapper>
+                    <ul class="navTab max-width-600">
+                        <li class="nav-tablist">
+                            <a href="javascript:void(0)" class="active"
+                                tab-menu="lookingInvestment">${properties.lfiText}</a>
+                        </li>
+                        <li class="nav-tablist">
+                            <a href="javascript:void(0)" tab-menu="lookingLoan">${properties.lflText}</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <sly data-sly-list="${resource.children}">
+                            <sly data-sly-test="${item.name=='tabsField'}">
+                                <sly data-sly-list.tabPanel="${item.children}">
+                                    
+                                    <div class="tab-panel ${tabPanel.displayNone ? 'd-none' : ''}"
+                                        tab-contnet="${tabPanel.tcId}">
+                                        <div class="tab-innerBox max-width-600">
+                                            <div class="tableft">
+                                                <img alt="${tabPanel.altMobileText}" data-src="${tabPanel.imageMobile}" class="lozad">
+                                            </div>
+                                            <div class="tabright">
+                                                <div class="tab-contentBox">
+                                                    <img alt="${tabPanel.altText}" class="hidden-xs lozad" data-src="${tabPanel.image}">
+                                                    <h5 class="heading">${tabPanel.title}</h5>
+                                                    <p>${tabPanel.description}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-subscribeBox">
+                                            <div class="qrcode-row">
+                                                <div class="qrcode-left">
+                                                    <!-- 6-1-2023 -->
+                                                    <div class="looking-investment-step1">
+                                                        <h6 class="hidden-mobile">Enter your mobile number to receive link to download the app</h6>
+                                                        <h6 class="hidden-destop">Download the app for your device</h6>
+                                                        <div class="hidden-mobile" id="${tabPanel.getLink}">
+                                                            <div class="form-subscribe">
+                                                                <div class="form-textbox">
+                                                                    <span class="country-code">+91</span>
+                                                                    <input type="tel" placeholder="Enter mobile number"
+                                                                        class="only-numeric-input input-textbox"
+                                                                        data-type="mobile" maxlength="10">
+                                                                </div>
+                                                                <button id="dwp-qrcode-form-button-93490cfa10"
+                                                                    type="button"
+                                                                    class="app-download btn-info js-getInvestmentLink"><span>Get
+                                                                        Link</span></button>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="hidden-destop mob-app">
+                                                            <sly data-sly-list="${tabPanel.children}">
+                                                                <sly data-sly-test="${item.name=='overviewsLinkField'}">
+                                                                    <sly data-sly-list.image="${item.children}">
+                                                                        <li>
+                                                                            <a href="${image.appLink}"><img alt="${image.appAlt}" class="lozad" data-src="${image.appImage}"></a>
+                                                                        </li>
+                                                                    </sly>
+                                                                </sly>
+                                                            </sly>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="white-dot-loader d-none">
+                                                        <img alt="Loader" class="lozad" data-src="/content/dam/tata-capital-web/tc-banner/white-loader-dots.gif">
+                                                    </div>
+
+                                                    <div id="moneyfy02" class="d-none">
+                                                        <div class="getapp-thank-you">
+                                                            <div class="text-center">
+                                                                <p class="get-successs">
+                                                                    <img class="lozad" alt="Tick" data-src="/content/dam/tata-capital-web/tc-banner/tick.png">
+                                                                    SMS sent successfully!
+                                                                </p>
+                                                                <p class="getsuccess-sms">An SMS has been sent to <span
+                                                                        class="success-mob ${tabPanel.numberClass}"
+                                                                        id="${tabPanel.number}">XXXXXXX051</span><br><span
+                                                                        class="textChange"> Click on the link in the
+                                                                        message
+                                                                        to download the Moneyfy App.</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div> 
+                                                    <!-- 6-1-2023 -->
+                                                </div>
+                                                <div class="qrcode-right">
+                                                    <div class="qrcode-or">
+                                                        <span class="qrcode-or-text"> OR </span>
+                                                    </div>
+                                                    <div class="qrcode-content">
+                                                        <h6>Scan QR to download the App</h6>
+                                                        <img data-src="${tabPanel.qrImage}" alt="Qrcode" class="lozad">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </sly>
+                            </sly>
+                        </sly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- get our app modal -->

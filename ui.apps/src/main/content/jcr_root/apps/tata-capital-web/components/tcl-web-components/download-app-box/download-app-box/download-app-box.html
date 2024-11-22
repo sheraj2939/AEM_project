@@ -1,0 +1,32 @@
+<!--  get-loans box  -->
+<section class="space-tb40 space-b80">
+    <div class="container">
+        <div class="bg-div get-loans-box">
+            <div class="get-loans-inner">
+                ${properties.rteSubTitle @ context = 'html'}
+                <div class="gets-loans-row">
+                    <div class="get-loan-lefts">
+                        <img src="${properties.barCodeImg}" alt="${properties.ImageAltText}">
+                    </div>
+                    <div class="get-loan-center">
+                        <div class="ortext">
+                            or
+                        </div>
+                    </div>
+                    <div class="get-loan-right">
+                        <div class="steps-downloads-store">
+                            <a href="${properties.googlePlayUrl}" target="${properties.googlePlayUrl ? '_blank' : ''}">
+                                <img src="${properties.googlePlayImg}" alt="${properties.googlePlayAlt}">
+                            </a>
+                            <a href="${properties.appStoreUrl}" target="${properties.appStoreUrl ? '_blank' : ''}">
+                                <img src="${properties.appStoreImg}" alt="${properties.appStoreAlt}">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="${properties.bannerComponentImg}" alt="${properties.bannerAltTag}" class="get-loans-img">
+        </div>
+    </div>
+</section>
+<!--  get-loans box  -->

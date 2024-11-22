@@ -1,0 +1,791 @@
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-write-us:before {
+    content: "\e93e";
+}
+
+.icon-view-summary:before {
+    content: "\e9b5";
+}
+
+.icon-mf-transactions:before {
+    content: "\e9b6";
+}
+
+.icon-relationship-managers:before {
+    content: "\e9b7";
+}
+
+.icon-request-statement:before {
+    content: "\e9b9";
+}
+
+.icon-review3:before {
+    content: "\e9ba";
+}
+
+.icon-transactions2:before {
+    content: "\e9bb";
+}
+
+.icon-book-rupees:before {
+    content: "\e9b3";
+}
+
+.icon-globes-rupees:before {
+    content: "\e9b4";
+}
+
+.icon-Ggobal-rupee:before {
+    content: "\e99a";
+}
+
+.icon-plus2:before {
+    content: "\e99c";
+}
+
+.icon-bag-rupees:before {
+    content: "\e9a1";
+}
+
+.icon-bike:before {
+    content: "\e9a2";
+}
+
+.icon-circle-loans:before {
+    content: "\e9a3";
+}
+
+.icon-booster:before {
+    content: "\e9a4";
+}
+
+.icon-port-management:before {
+    content: "\e9a5";
+}
+
+.icon-caps:before {
+    content: "\e9a6";
+}
+
+.icon-real-estate2:before {
+    content: "\e9a7";
+}
+
+.icon-savings-plans:before {
+    content: "\e9a8";
+}
+
+.icon-plans:before {
+    content: "\e9ab";
+}
+
+.icon-auto-loan:before {
+    content: "\e9ad";
+}
+
+.icon-bonds2:before {
+    content: "\e9ae";
+}
+
+.icon-bags-rupees:before {
+    content: "\e9af";
+}
+
+.icon-mac-mobile:before {
+    content: "\e9b0";
+}
+
+.icon-rupee-locks:before {
+    content: "\e9b1";
+}
+
+.icon-credit-cards2:before {
+    content: "\e9b2";
+}
+
+.icon-term-loans:before {
+    content: "\e986";
+}
+
+.icon-working-capital:before {
+    content: "\e987";
+}
+
+.icon-alternate-investment:before {
+    content: "\e988";
+}
+
+.icon-bonds:before {
+    content: "\e989";
+}
+
+.icon-channel-financing:before {
+    content: "\e98a";
+}
+
+.icon-gitars:before {
+    content: "\e98b";
+}
+
+.icon-rupess-lock:before {
+    content: "\e98c";
+}
+
+.icon-groups-man:before {
+    content: "\e98d";
+}
+
+.icon-multi-users:before {
+    content: "\e98e";
+}
+
+.icon-keys:before {
+    content: "\e98f";
+}
+
+.icon-Mutual-Funds:before {
+    content: "\e991";
+}
+
+.icon-umbrellas:before {
+    content: "\e992";
+}
+
+.icon-two-user:before {
+    content: "\e993";
+}
+
+.icon-portfolio-management:before {
+    content: "\e995";
+}
+
+.icon-man-sound:before {
+    content: "\e996";
+}
+
+.icon-SME-loan:before {
+    content: "\e997";
+}
+
+.icon-structured-products:before {
+    content: "\e999";
+}
+
+.icon-webinars:before {
+    content: "\e983";
+}
+
+.icon-blogs:before {
+    content: "\e984";
+}
+
+.icon-research-insights:before {
+    content: "\e985";
+}
+
+.icon-charts:before {
+    content: "\e91d";
+}
+
+.icon-Online-application:before {
+    content: "\e91e";
+}
+
+.icon-photo-identity:before {
+    content: "\e927";
+}
+
+.icon-retirement-solutions2:before {
+    content: "\e92b";
+}
+
+.icon-hand-setting:before {
+    content: "\e92e";
+}
+
+.icon-globe-man:before {
+    content: "\e93b";
+}
+
+.icon-per-circle:before {
+    content: "\e946";
+}
+
+.icon-more-loan:before {
+    content: "\e94f";
+}
+
+.icon-bags:before {
+    content: "\e95b";
+}
+
+.icon-checks:before {
+    content: "\e95d";
+}
+
+.icon-Documentation:before {
+    content: "\e95e";
+}
+
+.icon-meter:before {
+    content: "\e95f";
+}
+
+.icon-loans:before {
+    content: "\e960";
+}
+
+.icon-mans:before {
+    content: "\e961";
+}
+
+.icon-man2:before {
+    content: "\e963";
+}
+
+.icon-chat-edit:before {
+    content: "\e96a";
+}
+
+.icon-How-we-do:before {
+    content: "\e96d";
+}
+
+.icon-income-proof:before {
+    content: "\e96e";
+}
+
+.icon-KYC-documents:before {
+    content: "\e96f";
+}
+
+.icon-loan3:before {
+    content: "\e970";
+}
+
+.icon-worth-customer:before {
+    content: "\e972";
+}
+
+.icon-risk-profiling:before {
+    content: "\e974";
+}
+
+.icon-wealth-customers:before {
+    content: "\e975";
+}
+
+.icon-protection-services:before {
+    content: "\e977";
+}
+
+.icon-product-selection:before {
+    content: "\e979";
+}
+
+.icon-investment-services:before {
+    content: "\e97a";
+}
+
+.icon-allocation:before {
+    content: "\e97e";
+}
+
+.icon-branches:before {
+    content: "\e97f";
+}
+
+.icon-financing-services:before {
+    content: "\e981";
+}
+
+.icon-happy-customers:before {
+    content: "\e982";
+}
+
+.icon-high-loan-amount:before {
+    content: "\e93c";
+}
+
+.icon-higher-profits:before {
+    content: "\e93d";
+}
+
+.icon-loan-against-mutual-funds:before {
+    content: "\e941";
+}
+
+.icon-noun-pie:before {
+    content: "\e942";
+}
+
+.icon-online-application:before {
+    content: "\e943";
+}
+
+.icon-photo-identity-proof:before {
+    content: "\e944";
+}
+
+.icon-retirement-solutions:before {
+    content: "\e945";
+}
+
+.icon-union1:before {
+    content: "\e947";
+}
+
+.icon-what-we-do:before {
+    content: "\e948";
+}
+
+.icon-whatsapp2:before {
+    content: "\e949";
+}
+
+.icon-globe2:before {
+    content: "\e94a";
+}
+
+.icon-zero-charges:before {
+    content: "\e94b";
+}
+
+.icon-variety:before {
+    content: "\e94c";
+}
+
+.icon-business-expansion:before {
+    content: "\e94d";
+}
+
+.icon-application-status:before {
+    content: "\e94e";
+}
+
+.icon-documentation:before {
+    content: "\e950";
+}
+
+.icon-incoming-call:before {
+    content: "\e951";
+}
+
+.icon-man:before {
+    content: "\e957";
+}
+
+.icon-use2:before {
+    content: "\e958";
+}
+
+.icon-global-investments:before {
+    content: "\e959";
+}
+
+.icon-exchange-rupee:before {
+    content: "\e95a";
+}
+
+.icon-ribins:before {
+    content: "\e95c";
+}
+
+.icon-group:before {
+    content: "\e964";
+}
+
+.icon-group-1:before {
+    content: "\e965";
+}
+
+.icon-group-2:before {
+    content: "\e966";
+}
+
+.icon-health-insurance:before {
+    content: "\e967";
+}
+
+.icon-home-insurance:before {
+    content: "\e968";
+}
+
+.icon-home-loans:before {
+    content: "\e969";
+}
+
+.icon-user4:before {
+    content: "\e96b";
+}
+
+.icon-transactions:before {
+    content: "\e96c";
+}
+
+.icon-real-estate:before {
+    content: "\e973";
+}
+
+.icon-review:before {
+    content: "\e978";
+}
+
+.icon-sovereign-gold-bonds:before {
+    content: "\e97b";
+}
+
+.icon-subtract:before {
+    content: "\e97c";
+}
+
+.icon-term-loan:before {
+    content: "\e97d";
+}
+
+.icon-union:before {
+    content: "\e980";
+}
+
+.icon-hand-home:before {
+    content: "\e990";
+}
+
+.icon-credit-cards:before {
+    content: "\e99b";
+}
+
+.icon-clear:before {
+    content: "\e994";
+}
+
+.icon-homes:before {
+    content: "\ea56";
+}
+
+.icon-calender-timer:before {
+    content: "\ea51";
+}
+
+.icon-sme:before {
+    content: "\ea41";
+}
+
+.icon-star2:before {
+    content: "\ea3d";
+}
+
+.icon-pdf:before {
+    content: "\e9aa";
+}
+
+.icon-career:before {
+    content: "\e953";
+}
+
+.icon-eligibility:before {
+    content: "\e971";
+}
+
+.icon-income:before {
+    content: "\e998";
+}
+
+.icon-insurance:before {
+    content: "\e99f";
+}
+
+.icon-loan-education:before {
+    content: "\e9b8";
+}
+
+.icon-loan-travel:before {
+    content: "\e9c1";
+}
+
+.icon-medical:before {
+    content: "\e9c7";
+}
+
+.icon-mutual-funds:before {
+    content: "\e9d2";
+}
+
+.icon-OD:before {
+    content: "\e9d9";
+}
+
+.icon-online:before {
+    content: "\e9da";
+}
+
+.icon-options:before {
+    content: "\e9dc";
+}
+
+.icon-phone:before {
+    content: "\e9df";
+}
+
+.icon-ROI:before {
+    content: "\e9fd";
+}
+
+.icon-score:before {
+    content: "\ea02";
+}
+
+.icon-security:before {
+    content: "\ea04";
+}
+
+.icon-verification:before {
+    content: "\ea1f";
+}
+
+.icon-wealth:before {
+    content: "\ea22";
+}
+
+.icon-age:before {
+    content: "\ea2d";
+}
+
+.icon-application:before {
+    content: "\ea30";
+}
+
+.icon-approval:before {
+    content: "\ea32";
+}
+
+.icon-check-circle:before {
+    content: "\e93a";
+}
+
+.icon-close-circle:before {
+    content: "\e939";
+}
+
+.icon-check:before {
+    content: "\e938";
+}
+
+.icon-rupee:before {
+    content: "\e937";
+}
+
+.icon-whatapp:before {
+    content: "\e935";
+}
+
+.icon-instagram:before {
+    content: "\e936";
+}
+
+.icon-info-alt:before {
+    content: "\e934";
+}
+
+.icon-web:before {
+    content: "\e933";
+}
+
+.icon-card:before {
+    content: "\e931";
+}
+
+.icon-car:before {
+    content: "\e932";
+}
+
+.icon-play:before {
+    content: "\e930";
+}
+
+.icon-google:before {
+    content: "\e92f";
+}
+
+.icon-phone-call:before {
+    content: "\e92d";
+}
+
+.icon-download:before {
+    content: "\e92c";
+}
+
+.icon-apple:before {
+    content: "\e929";
+}
+
+.icon-playstore:before {
+    content: "\e92a";
+}
+
+.icon-copy:before {
+    content: "\e928";
+}
+
+.icon-arrow-up-right:before {
+    content: "\e926";
+}
+
+.icon-user:before {
+    content: "\e925";
+}
+
+.icon-arrow-tail-left:before {
+    content: "\e924";
+}
+
+.icon-arrow-tail-right:before {
+    content: "\e923";
+}
+
+.icon-search:before {
+    content: "\e902";
+}
+
+.icon-bell:before {
+    content: "\e922";
+}
+
+.icon-phone-fill:before {
+    content: "\e920";
+}
+
+.icon-blog:before {
+    content: "\e921";
+}
+
+.icon-minus:before {
+    content: "\e91f";
+}
+
+.icon-watch:before {
+    content: "\e91b";
+}
+
+.icon-edit:before {
+    content: "\e91c";
+}
+
+.icon-plus:before {
+    content: "\e91a";
+}
+
+.icon-angle-up:before {
+    content: "\e919";
+}
+
+.icon-filter:before {
+    content: "\e917";
+}
+
+.icon-sort:before {
+    content: "\e918";
+}
+
+.icon-alert:before {
+    content: "\e916";
+}
+
+.icon-calander:before {
+    content: "\e915";
+}
+
+.icon-caret-down:before {
+    content: "\e913";
+}
+
+.icon-caret-top:before {
+    content: "\e914";
+}
+
+.icon-binocular:before {
+    content: "\e912";
+}
+
+.icon-whatsapp:before {
+    content: "\e911";
+}
+
+.icon-close:before {
+    content: "\e910";
+}
+
+.icon-equity:before {
+    content: "\e90f";
+}
+
+.icon-arrow-top:before {
+    content: "\e90d";
+}
+
+.icon-arrow-arrow:before {
+    content: "\e90e";
+}
+
+.icon-twitter:before {
+    content: "\e900";
+}
+
+.icon-facebook:before {
+    content: "\e901";
+}
+
+.icon-angle-down:before {
+    content: "\e903";
+}
+
+.icon-share:before {
+    content: "\e904";
+}
+
+.icon-arrow-right:before {
+    content: "\e905";
+}
+
+.icon-arrow-left:before {
+    content: "\e906";
+}
+
+.icon-star:before {
+    content: "\e907";
+}
+
+.icon-email:before {
+    content: "\e908";
+}
+
+.icon-call:before {
+    content: "\e909";
+}
+
+.icon-map:before {
+    content: "\e90a";
+}
+
+.icon-youtube:before {
+    content: "\e90b";
+}
+
+.icon-linkedin:before {
+    content: "\e90c";
+}

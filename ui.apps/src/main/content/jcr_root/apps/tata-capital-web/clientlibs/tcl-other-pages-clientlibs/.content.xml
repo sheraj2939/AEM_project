@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    allowProxy="{Boolean}true"
+    categories="tcl-other-pages-clientlibs"
+    embed="[tcl-media-audio,tcl-download-logo,tcl-recent-updates,tcl-cluster-development,tcl-about-us-dropdown-buttons,tcl-consumer-finance-tabs,tcl-loan-mitra-form,tcl-community-impact,tcl-learning-development,tcl-current-opportunities,tcl-ql-ways-service,tcl-reach-out-officer,tcl-contact-infobox,tcl-grievance-box, tcl-site-maps,tcl-alexa-service,tcl-download-app,tcl-download-app-js,tcl-register-whatsapp,tcl-approved-projects-results,tcl-analytics-load]"/>

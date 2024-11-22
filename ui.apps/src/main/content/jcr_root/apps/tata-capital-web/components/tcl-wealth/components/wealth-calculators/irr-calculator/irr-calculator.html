@@ -1,0 +1,115 @@
+<section class="calculator-wrapper space-tb40 pd-t0i">
+    <div class="container">
+        <div class="tops-heads mx-1060">
+            <div class="tops-heads-inner">
+                <h1>${properties.headingNormal}<strong>${properties.headingBold}</strong></h1>
+
+                ${properties.description @ context = 'html'}
+            </div>
+        </div>
+        <div class="bg-div bg-with-img calculator-wrapper--box mx-944">
+            <h2 class="heading36">IRR <strong>Calculator</strong></h2>
+
+            <div id="irrForm" class="form-wizard" data-calc="irr">
+                <div class="calculator-forms" id="step-one" data-target="step">
+                    <div class="hidden-xs btn-clearposition">
+                        <button type="button" class="btn-link btn-clear" data-clear="step-one">Clear <i
+                                class="icon-clear"></i></button>
+                    </div>
+                    <div class="calculator-row">
+                        <div class="calculator-col">
+                            <label>My Initial Investment is</label>
+                            <div class="textbox-outer">
+                                <div class="rupee-symbol">
+                                    <label class="rupee"><i class="icon-rupee"></i></label>
+                                    <input type="text"
+                                        class="input-textbox width120 price-only-comma only-numeric-input"
+                                        data-type="amount" id="initialAmount" maxlength="12" data-value="10,00,000"
+                                        value="10,00,000" autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator-col">
+                            <label>I expect to receive</label>
+                            <div class="textbox-outer">
+                                <div class="rupee-symbol">
+                                    <label class="rupee"><i class="icon-rupee"></i></label>
+                                    <input type="text"
+                                        class="input-textbox width120 price-only-comma only-numeric-input"
+                                        data-type="amount" maxlength="12" data-value="1,00,000" value="1,00,000"
+                                        autocomplete="off" id="expectedAmount">
+                                </div>
+                            </div>
+                            <label>&nbsp; at the end of each year;</label>
+                        </div>
+                        <div class="calculator-col">
+                            <label>for the next</label>
+                            <div class="textbox-outer">
+                                <input type="text" data-type="years"
+                                    class="input-textbox text-center width50 only-numeric-input" maxlength="3"
+                                    data-value="5" value="5" autocomplete="off" data-type="years">
+                            </div>
+                            <label class="text-wrapper">years.</label>
+                        </div>
+                    </div>
+                    <div class="calculator-row">
+                        <div class="calculator-col">
+                            <label>In the terminal (Final) year along with my annual cash flow. I shall receive my
+                                initial investment.</label>
+                        </div>
+                    </div>
+                    <div class="calculator-forms-button">
+                        <ul>
+                            <li><a class="btn-link btn-big" href="inner-page.html"><i class="icon-arrow-tail-left"></i>
+                                    Back</a></li>
+                            <li><button class="btn-dangers btn-big" type="button" data-stepper="step"
+                                    data-next="step-two" data-current="step-one">Next</button></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="calculator-forms hidden" id="step-two" data-target="step">
+                    <!-- <div class="hidden-xs btn-clearposition">
+                        <button type="button" class="btn-link btn-clear" data-clear="step-two">Clear <i class="icon-clear"></i></button>
+                    </div> -->
+                    <div class="calculator-information">
+                        <div class="final-amount">
+                            <h3>Your Internal Rate of return (IRR) on the cash flow will be <span
+                                    id="irrVal">₹1,06,13,191</span></h3>
+                        </div>
+                    </div>
+                    <div class="calculator-forms-button">
+                        <ul>
+                            <li>
+                                <button class="btn-link btn-big" type="button" data-stepper="step" data-prev="step-one"
+                                    data-current="step-two">
+                                    <i class="icon-arrow-tail-left"></i> Back
+                                </button>
+                            </li>
+                            <li>
+                                <a href="/content/tata-capital-web/en/wealth/request-callback.html"
+                                    class="btn-dangers btn-big request-callback-btn" type="button">Request Callback</a>
+                            </li>
+                            <li>
+                                <button type="button" class="btn-dangers btn-big btn-outline btn-apps"
+                                    data-popovermodal="popover-modal" data-target="#whatsapp-email-modal">
+                                    Get this result on <img
+                                        src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/what-app.svg"
+                                        alt=""> &amp; <img
+                                        src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/email-circle.svg"
+                                        alt="">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="calculator-pagination">
+                <p class="counters"><span class="numbers">1</span> / <span class="total-val">3</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories='irr-calculator-clientlib'}"></sly>
+</sly>

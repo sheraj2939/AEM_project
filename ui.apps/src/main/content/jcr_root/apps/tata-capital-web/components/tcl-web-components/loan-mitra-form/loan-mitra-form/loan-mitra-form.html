@@ -1,0 +1,159 @@
+<div class="loan-mitra-box space-tb40">
+    <div class="container">
+        <div class="loan-mitra-pd bg-div">
+            <div class="loan-mitra-row">
+                <div class="loan-mitra-left" data-sly-resource="${'loan-mitra-left' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                </div>
+                <div class="loan-mitra-right">
+                    <div class="loan-mitra-form" id="loan-mitra">
+                        <div class="row-flex">
+                            <div class="col-sp15 row-col-50">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Full name</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" class="input-textbox only-alpha-input jsValueOK" placeholder="" data-type="name">
+                                    </div>
+                                    <span class="text-infos">Name (as per PAN Card)</span>
+                                </div>
+                            </div>
+                            <div class="col-sp15 row-col-50">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Mobile number</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" class="input-textbox only-numeric-input jsValueOK"
+                                                placeholder="" data-type="mobile" maxlength="10">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sp15 row-col-50">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Email ID</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" class="input-textbox jsValueOK" placeholder=""
+                                                data-type="email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sp15 row-col-50">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Pin code</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" class="input-textbox only-numeric-input jsValueOK"
+                                                placeholder=""
+                                                data-type="pincode" maxlength="6">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sp15 row-col-50">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Location</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" class="input-textbox only-alpha-input jsValueOK" placeholder="" data-type="location">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sp15 row-col-50">
+                                <div class="form-textbox-new active">
+                                    <label class="label-name">Entity</label>
+                                    <div class="textbox-inner">
+                                        <div class="custom-select2">
+                                            <select class="js-select2 jsValueOK" data-type="entity">
+                                                <option value=""></option>
+                                                <option value="Individual">Individual</option>
+                                                <option value="Proprietor">Proprietor</option>
+                                                <option value="Partnership Firm">Partnership Firm</option>
+                                                <option value="Company (Pvt / Public)">Company (Pvt / Public)</option>
+                                                <option value="LLP">LLP</option>
+                                                <option value="Others">Others</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sp15 row-col-50">
+                                <div class="form-textbox-new active">
+                                    <label class="label-name">Professional network</label>
+                                    <div class="textbox-inner">
+                                        <div class="custom-select2">
+                                            <select class="js-select2 jsValueOK" data-type="professional-network">
+                                                <option value=""></option>
+                                                <option value="Real Estate Consultant">Real Estate Consultant</option>
+                                                <option value="Real Estate Developer">Real Estate Developer</option>
+                                                <option value="Chartered Accountant">Chartered Accountant</option>
+                                                <option value="Tax Consultant">Tax Consultant</option>
+                                                <option value="Finance Advisor">Finance Advisor</option>
+                                                <option value="Insurance Advisor">Insurance Advisor</option>
+                                                <option value="Public Ltd Company">Public Ltd Company</option>
+                                                <option value="Pvt Ltd Company">Pvt Ltd Company</option>
+                                                <option value="Others">Others</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sp15 row-col-50">
+                                <div class="form-textbox-new active">
+                                    <label class="label-name">Channel partner type</label>
+                                    <div class="textbox-inner">
+                                        <div class="custom-select2">
+                                            <select class="js-select2 jsValueOK" data-type="channel-partner-type">
+                                                <option value=""></option>
+                                                <option value="DSA">DSA</option>
+                                                <option value="Connector">Connector</option>
+                                                <option value="Digital Aggregator">Digital Aggregator</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="loan-mitra-submit-wrap">
+                            <button class="btn-blue btn-large jsLoanMitraSubmit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popover-modal modals-blue fade " id="thankyou-modal"> 
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-lg">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content loan-mitra-content">
+                <button data-dismiss="popover-modal" class="popover-modal-close jsThanksModalClose"><i
+                        class="icon-close"></i></button>
+                <div class="popover-modal-body">
+                    <div class="modal-body-inner">
+                        <div class="to-apply-mx">
+                            <img src="/content/dam/tata-capital-web/assets/img/tick-success.svg" class="pdf-imgs" alt="tick">
+                            <p class="heading36"><span>Your application to become a channel partner has been submitted successfully</span></p>
+                            <p class="text14i">We will get in touch with you shortly</p>
+                            <p class="heading20 has-margin">Your application number is <span class="application-numbers" id="transactionId"></span></p>
+                            <p class="heading20">Please save this for future</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popover-modal modals-blue fade " id="existing-customer"> 
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-lg">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content loan-mitra-content">
+                <button data-dismiss="popover-modal" class="popover-modal-close jsThanksModalClose"><i
+                        class="icon-close"></i></button>
+                <div class="popover-modal-body">
+                    <div class="modal-body-inner">
+                        <div class="to-apply-mx">
+                            <img src="/content/dam/tata-capital-web/assets/img/tick-success.svg" class="pdf-imgs" alt="tick">
+                            <p class="heading36"><span>We have already received your Channel Partner application request</span></p>
+                            <p class="text14i">We will get in touch with you shortly</p>
+                            <p class="heading20 has-margin">Your existing application number is  <span class="application-numbers" id="existingId"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

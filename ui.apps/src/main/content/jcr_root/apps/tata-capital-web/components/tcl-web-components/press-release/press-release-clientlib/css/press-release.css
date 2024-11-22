@@ -1,0 +1,49 @@
+.latest-release-box {
+  background: linear-gradient(134.06deg, rgba(18, 104, 179, 0.71) 0%, rgba(16, 141, 250, 0.95) 99.11%);
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.01), 5px 0px 10px rgba(0, 0, 0, 0.01), 0px -5px 10px rgba(0, 0, 0, 0.01), 0px 5px 10px rgba(0, 0, 0, 0.01);
+  border-radius: 30px;
+  padding: 25px 40px;
+}
+.latest-release-box h2 {
+  margin-bottom: 8px;
+}
+.latest-release-box .hash-tag-new {
+  margin-bottom: 15px;
+}
+.latest-release-box .latest-rights {
+  padding-top: 53px;
+}
+.latest-release-box .latest-rights p {
+  margin-bottom: 20px;
+}
+.latest-release-box .release-dates {
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  display: block;
+  font-family: "OpenSans-SemiBold";
+}
+
+@media (max-width: 991px) {
+  .latest-release-box .row-flex .row-col-50 {
+    width: 100%;
+  }
+  .latest-release-box .latest-rights {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .latest-release-box {
+    padding: 24px;
+    border-radius: 24px;
+  }
+  .latest-release-box .latest-rights .btn-link {
+    width: 100%;
+  }
+  .latest-release-box .hash-tag-new {
+    margin-bottom: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

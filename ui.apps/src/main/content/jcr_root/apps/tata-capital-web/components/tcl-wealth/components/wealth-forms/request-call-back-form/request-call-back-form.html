@@ -1,0 +1,624 @@
+<!-- conversation box -->
+<div class="request-callback-box space-tb40 pd-t50 space-b80">
+    <div class="container">
+        <div class="request-callback-form" id="request-call-forms">
+            <div class="request-callback-header">
+                <h4>Request Callback</h4>
+                <div class="clear-btn">
+                    <a href="javascript:void(0)" class="link jsClearConversationDetails">Clear <span
+                            class="icon-clear"></span></a>
+                </div>
+            </div>
+            <div class="bg-div bg-img-right request-callback-inner">
+                <!-- conversation form start -->
+                <div class="conversation-form" id="conversation-form" data-formtype="${properties.selectForm}">
+                    <!-- <div class="tops-heads">
+                        <h2>${properties.headingNormal}<span>${properties.headingBold}</span></h2>
+                        ${properties.description @ context = 'html'}
+                    </div> -->
+                    <div>
+                        <div class="row-flex">
+                            <sly data-sly-test="${properties.selectForm == 'home-page-form'}">
+                                <div class="row-col-33 col-sp15">
+                                    <div class="form-textbox-new fixed-active">
+                                        <label class="label-name">You are*</label>
+                                        <div class="textbox-inner">
+                                            <div class="custom-select2">
+                                                <select class="js-select2" data-type="you-are">
+                                                    <option value=""></option>
+                                                    <option value="resident-individual">Resident Individual</option>
+                                                    <option value="NRI">NRI</option>
+                                                    <option value="business">Business</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </sly>
+                            <sly
+                                data-sly-test="${properties.selectForm == 'home-page-form' ||  properties.selectForm == 'resident-individual' ||  properties.selectForm == 'nri'}">
+                                <div class="row-col-33 col-sp15" data-ri>
+                                    <div class="form-textbox-new">
+                                        <label class="label-name">Full name*</label>
+                                        <div class="textbox-inner">
+                                            <input type="text" class="input-textbox only-alpha-input disable-emoji"
+                                                placeholder="" data-type="name">
+                                        </div>
+                                        <span class="text-infos">Name (as per PAN Card)</span>
+                                    </div>
+                                </div>
+                            </sly>
+                            <sly
+                                data-sly-test="${properties.selectForm == 'home-page-form'  ||  properties.selectForm == 'resident-individual' || properties.selectForm == 'nri'}">
+                                <div class="row-col-33 col-sp15" data-ri>
+                                    <div class="form-textbox-new">
+                                        <label class="label-name">Email ID*</label>
+                                        <div class="textbox-inner">
+                                            <input type="text" class="input-textbox disable-emoji" placeholder=""
+                                                data-type="email">
+                                        </div>
+                                    </div>
+                                </div>
+                            </sly>
+                            <sly
+                                data-sly-test="${properties.selectForm == 'home-page-form' ||  properties.selectForm == 'resident-individual' ||  properties.selectForm == 'nri'}">
+                                <div class="row-col-33 col-sp15" data-ri="ri-mobile">
+                                    <div class="form-textbox-new">
+                                        <label class="label-name">Mobile number*</label>
+                                        <div class="textbox-inner">
+                                            <input type="text" class="input-textbox allow-numeric disable-emoji"
+                                                maxlength="10" pattern="[0-9]*" inputmode="numeric" placeholder=""
+                                                data-type="mobile">
+                                        </div>
+                                    </div>
+                                </div>
+                            </sly>
+                            <sly data-sly-test="${properties.selectForm == 'non-residential'}">
+                                <div class="row-col-33 col-sp15 ${properties.selectForm == 'nri' ? '':'d-none' }"
+                                    data-nri="mobile">
+                                    <div class="form-textbox-new fixed-active">
+                                        <label class="label-name">Mobile number*</label>
+                                        <div class="textbox-inner">
+                                            <div class="country-code-numbers">
+                                                <div class="custom-select2">
+                                                    <select class="js-select4">
+                                                        <option value="+91">+91</option>
+                                                        <option value="+11">+111</option>
+                                                        <option value="+91">+91</option>
+                                                        <option value="+11">+11</option>
+                                                    </select>
+                                                </div>
+                                                <input type="text" class="input-textbox allow-numeric disable-emoji"
+                                                    maxlength="10" pattern="[0-9]*" inputmode="numeric" placeholder=""
+                                                    data-type="nriMobile">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </sly>
+                            <sly
+                                data-sly-test="${properties.selectForm == 'home-page-form' ||  properties.selectForm == 'resident-individual' ||  properties.selectForm == 'nri'}">
+                                <div class="row-col-33 col-sp15" data-ri="where-you">
+                                    <div class="form-textbox-new fixed-active">
+                                        <label class="label-name">Where do you live?*</label>
+                                        <div class="textbox-inner">
+                                            <div class="custom-select2">
+                                                <select class="js-select2 city" data-type="resi-city">
+                                                    <option value=""></option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </sly>
+                            <sly data-sly-test="${properties.selectForm == 'home-page-form'}">
+                                <div class="row-col-33 col-sp15 ${properties.selectForm == 'nri' ? '':'d-none' }"
+                                    data-nri="where-you-country">
+                                    <div class="form-textbox-new fixed-active">
+                                        <label class="label-name">Where do you stay (country)?*</label>
+                                        <div class="textbox-inner">
+                                            <div class="custom-select2">
+                                                <select class="js-select2" data-type="resi-coutnry">
+                                                    <option value=""></option>
+                                                    <option value="Delhi">Mumbai</option>
+                                                    <option value="Agra">Pune</option>
+                                                    <option value="Gurgaun">Ahmedabad</option>
+                                                    <option value="Allahabad">Indore</option>
+                                                    <option value="Hisar">Delhi</option>
+                                                    <option value="Faridabad">Faridabad</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </sly>
+                            <sly
+                                data-sly-test="${properties.selectForm == 'home-page-form' ||  properties.selectForm == 'resident-individual' || properties.selectForm == 'nri'||  properties.selectForm == 'business'}">
+                                <div class="row-col-33 col-sp15" data-ri>
+                                    <div class="form-textbox-new fixed-active">
+                                        <label class="label-name">Where would you need assistance from our
+                                            experts?*</label>
+                                        <div class="textbox-inner">
+                                            <div class="custom-select2">
+                                                <select class="js-select2" data-type="prod-category">
+                                                    <option value=""></option>
+                                                    <option value="Mutual Funds">Mutual Funds</option>
+                                                    <option value="Portfolio Management Services (PMS)">Portfolio
+                                                        Management
+                                                        Services (PMS)</option>
+                                                    <option value="Alternative Investments (AIF)">Alternative
+                                                        Investments
+                                                        (AIF)</option>
+                                                    <option value="NCD/Bonds">NCD/Bonds</option>
+                                                    <option value="Corporate Fixed Deposits">Corporate Fixed Deposits
+                                                    </option>
+                                                    <option value="Portfolio Review">Portfolio Review</option>
+                                                    <option value="Home Loan">Home Loan</option>
+                                                    <option value="Home Loan Balance Transfer">Home Loan Balance
+                                                        Transfer
+                                                    </option>
+                                                    <option value="Promoter Funding">Promoter Funding</option>
+                                                    <option value="Construction Equipment Financing">Construction
+                                                        Equipment
+                                                        Financing</option>
+                                                    <option value="Working Capital Loan">Working Capital Loan</option>
+                                                    <option value="Channel Finance">Channel Finance</option>
+                                                    <option value="Home Loan">Home Loan</option>
+                                                    <option value="Personal Loan">Personal Loan</option>
+                                                    <option value="Business Loans">Business Loans</option>
+                                                    <option value="Loan Against Property">Loan Against Property</option>
+                                                    <option value="Consumer Durable Loan">Consumer Durable Loan</option>
+                                                    <option value="Auto Loan">Auto Loan</option>
+                                                    <option value="Loan Against Securities">Loan Against Securities
+                                                    </option>
+                                                    <option value="Credit Cards">Credit Cards</option>
+                                                    <option value="Group Term">Group Term</option>
+                                                    <option value="Group Mediclaim">Group Mediclaim</option>
+                                                    <option value="Other Insurance Solutions">Other Insurance Solutions
+                                                    </option>
+                                                    <option value="Savings Investment plans">Savings and Investment
+                                                        plans
+                                                    </option>
+                                                    <option value="Motor Insurance">Motor Insurance</option>
+                                                    <option value="Travel Insurance">Travel Insurance</option>
+                                                    <option value="Health Insurance">Health Insurance</option>
+                                                    <option value="Home Insurance">Home Insurance</option>
+                                                    <option value="Structured Products">Structured Products</option>
+                                                    <option value="Sovereign Gold Bonds">Sovereign Gold Bonds</option>
+                                                    <option value="Real Estate">Real Estate</option>
+                                                    <option value="Inheritance and Succession planning">Inheritance and
+                                                        Succession planning</option>
+                                                    <option value="SME Loans">SME Loans</option>
+                                                    <option value="Term Loan">Term Loan</option>
+                                                    <option value="Protection Plan">Protection Plan</option>
+                                                    <option value="Global Investments">Global Investments</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </sly>
+                            <sly data-sly-test="${properties.selectForm == 'home-page-form'}">
+                                <div class="row-col-33 col-sp15 d-none" data-nri>
+                                    <div class="form-textbox-new fixed-active">
+                                        <label class="label-name">Type*</label>
+                                        <div class="textbox-inner">
+                                            <div class="custom-select2">
+                                                <select class="js-select2" data-type="type">
+                                                    <option value=""></option>
+                                                    <option value="Private Limited Company">Private Limited Company
+                                                    </option>
+                                                    <option value="Public Limited Company">Public Limited Company
+                                                    </option>
+                                                    <option value="Partnerships ">Partnerships </option>
+                                                    <option value="NGO">NGO</option>
+                                                    <option value="Limited Liability Partnership">Limited Liability
+                                                        Partnership</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </sly>
+                            <sly
+                                data-sly-test="${properties.selectForm == 'home-page-form' || properties.selectForm == 'business'}">
+                                <div class="row-col-33 col-sp15 ${properties.selectForm == 'business' ? '':'d-none' }"
+                                    data-business>
+                                    <div class="form-textbox-new">
+                                        <label class="label-name">What’s the company name?*</label>
+                                        <div class="textbox-inner">
+                                            <input type="text" class="input-textbox only-alpha-input disable-emoji"
+                                                placeholder="" data-type="company-name">
+                                        </div>
+                                    </div>
+                                </div>
+                            </sly>
+                            <sly
+                                data-sly-test="${properties.selectForm == 'home-page-form' || properties.selectForm == 'business'}">
+                                <div class="row-col-33 col-sp15 ${properties.selectForm == 'business' ? '':'d-none' }"
+                                    data-business>
+                                    <div class="form-textbox-new fixed-active">
+                                        <label class="label-name">Type*</label>
+                                        <div class="textbox-inner">
+                                            <div class="custom-select2">
+                                                <select class="js-select2" data-type="busi-type">
+                                                    <option value=""></option>
+                                                    <option value="Private Limited Company">Private Limited Company
+                                                    </option>
+                                                    <option value="Public Limited Company">Public Limited Company
+                                                    </option>
+                                                    <option value="Partnerships ">Partnerships </option>
+                                                    <option value="NGO">NGO</option>
+                                                    <option value="Limited Liability Partnership">Limited Liability
+                                                        Partnership</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </sly>
+                            <sly
+                                data-sly-test="${properties.selectForm == 'home-page-form' || properties.selectForm == 'business'}">
+                                <div class="row-col-33 col-sp15 ${properties.selectForm == 'business' ? '':'d-none' }"
+                                    data-business>
+                                    <div class="form-textbox-new">
+                                        <label class="label-name">Organization email ID*</label>
+                                        <div class="textbox-inner">
+                                            <input type="text" class="input-textbox disable-emoji" placeholder=""
+                                                data-type="business-org-email">
+                                        </div>
+                                    </div>
+                                </div>
+                            </sly>
+                            <sly
+                                data-sly-test="${properties.selectForm == 'home-page-form' || properties.selectForm == 'business'}">
+                                <div class="row-col-33 col-sp15 ${properties.selectForm == 'business' ? '':'d-none' }"
+                                    data-business>
+                                    <div class="form-textbox-new fixed-active">
+                                        <label class="label-name">Location*</label>
+                                        <div class="textbox-inner">
+                                            <div class="custom-select2">
+                                                <select class="js-select2 city" data-type="resi-location">
+                                                    <option value=""></option>
+                                                    <option value="Delhi">Mumbai</option>
+                                                    <option value="Agra">Pune</option>
+                                                    <option value="Gurgaun">Ahmedabad</option>
+                                                    <option value="Allahabad">Indore</option>
+                                                    <option value="Hisar">Delhi</option>
+                                                    <option value="Faridabad">Faridabad</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </sly>
+                            <sly
+                                data-sly-test="${properties.selectForm == 'home-page-form' || properties.selectForm == 'business'}">
+                                <div class="row-col-33 col-sp15 ${properties.selectForm == 'business' ? '':'d-none' }"
+                                    data-business>
+                                    <div class="form-textbox-new">
+                                        <label class="label-name">Authorized person name*</label>
+                                        <div class="textbox-inner">
+                                            <input type="text" class="input-textbox only-alpha-input disable-emoji"
+                                                placeholder="" data-type="business-auth-name">
+                                        </div>
+                                    </div>
+                                </div>
+                            </sly>
+                            <sly
+                                data-sly-test="${properties.selectForm == 'home-page-form' || properties.selectForm == 'business'}">
+                                <div class="row-col-33 col-sp15 ${properties.selectForm == 'business' ? '':'d-none' }"
+                                    data-business>
+                                    <div class="form-textbox-new">
+                                        <label class="label-name">Authorized person designation*</label>
+                                        <div class="textbox-inner">
+                                            <input type="text" class="input-textbox only-alpha-input disable-emoji"
+                                                placeholder="" data-type="business-degination">
+                                        </div>
+                                    </div>
+                                </div>
+                            </sly>
+                            <sly
+                                data-sly-test="${properties.selectForm == 'home-page-form' || properties.selectForm == 'business'}">
+                                <div class="row-col-33 col-sp15 ${properties.selectForm == 'business' ? '':'d-none' }"
+                                    data-business>
+                                    <div class="form-textbox-new">
+                                        <label class="label-name">Authorized email ID*</label>
+                                        <div class="textbox-inner">
+                                            <input type="text" class="input-textbox disable-emoji" placeholder=""
+                                                data-type="business-auth-email">
+                                        </div>
+                                    </div>
+                                </div>
+                            </sly>
+                            <sly
+                                data-sly-test="${properties.selectForm == 'home-page-form' || properties.selectForm == 'business'}">
+                                <div class="row-col-33 col-sp15 ${properties.selectForm == 'business' ? '':'d-none' }"
+                                    data-business>
+                                    <div class="form-textbox-new">
+                                        <label class="label-name">Authorized person mobile number*</label>
+                                        <div class="textbox-inner">
+                                            <input type="text" class="input-textbox allow-numeric disable-emoji"
+                                                maxlength="10" pattern="[0-9]*" inputmode="numeric" placeholder=""
+                                                data-type="business-auth-mobile">
+                                        </div>
+                                    </div>
+                                </div>
+                            </sly>
+                            <sly
+                                data-sly-test="${properties.selectForm == 'home-page-form' || properties.selectForm == 'business'}">
+                                <div class="row-col-33 col-sp15 ${properties.selectForm == 'business' ? '':'d-none' }"
+                                    data-business>
+                                    <div class="form-textbox-new fixed-active">
+                                        <label class="label-name">Where would you need assistance from our
+                                            experts?*</label>
+                                        <div class="textbox-inner">
+                                            <div class="custom-select2">
+                                                <select class="js-select2" data-type="assit-experts">
+                                                    <option value=""></option>
+                                                    <option value="Mutual Funds">Mutual Funds</option>
+                                                    <option value="Portfolio Management Services (PMS)">Portfolio
+                                                        Management
+                                                        Services (PMS)</option>
+                                                    <option value="Alternative Investments (AIF)">Alternative
+                                                        Investments
+                                                        (AIF)</option>
+                                                    <option value="NCD/Bonds">NCD/Bonds</option>
+                                                    <option value="Corporate Fixed Deposits">Corporate Fixed Deposits
+                                                    </option>
+                                                    <option value="Portfolio Review">Portfolio Review</option>
+                                                    <option value="Home Loan">Home Loan</option>
+                                                    <option value="Home Loan Balance Transfer">Home Loan Balance
+                                                        Transfer
+                                                    </option>
+                                                    <option value="Promoter Funding">Promoter Funding</option>
+                                                    <option value="Construction Equipment Financing">Construction
+                                                        Equipment
+                                                        Financing</option>
+                                                    <option value="Working Capital Loan">Working Capital Loan</option>
+                                                    <option value="Channel Finance">Channel Finance</option>
+                                                    <option value="Home Loan">Home Loan</option>
+                                                    <option value="Personal Loan">Personal Loan</option>
+                                                    <option value="Business Loans">Business Loans</option>
+                                                    <option value="Loan Against Property">Loan Against Property</option>
+                                                    <option value="Consumer Durable Loan">Consumer Durable Loan</option>
+                                                    <option value="Auto Loan">Auto Loan</option>
+                                                    <option value="Loan Against Securities">Loan Against Securities
+                                                    </option>
+                                                    <option value="Credit Cards">Credit Cards</option>
+                                                    <option value="Group Term">Group Term</option>
+                                                    <option value="Group Mediclaim">Group Mediclaim</option>
+                                                    <option value="Other Insurance Solutions">Other Insurance Solutions
+                                                    </option>
+                                                    <option value="Savings Investment plans">Savings and Investment
+                                                        plans
+                                                    </option>
+                                                    <option value="Motor Insurance">Motor Insurance</option>
+                                                    <option value="Travel Insurance">Travel Insurance</option>
+                                                    <option value="Health Insurance">Health Insurance</option>
+                                                    <option value="Home Insurance">Home Insurance</option>
+                                                    <option value="Structured Products">Structured Products</option>
+                                                    <option value="Sovereign Gold Bonds">Sovereign Gold Bonds</option>
+                                                    <option value="Real Estate">Real Estate</option>
+                                                    <option value="Inheritance and Succession planning">Inheritance and
+                                                        Succession planning</option>
+                                                    <option value="SME Loans">SME Loans</option>
+                                                    <option value="Term Loan">Term Loan</option>
+                                                    <option value="Protection Plan">Protection Plan</option>
+                                                    <option value="Global Investments">Global Investments</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </sly>
+                            <sly
+                                data-sly-test="${properties.selectForm == 'home-page-form' ||  properties.selectForm == 'resident-individual' || properties.selectForm == 'nri' || properties.selectForm == 'business'}">
+                                <div class="row-col-33 col-sp15">
+                                    <div class="form-textbox-new fixed-active fixed-form-sp">
+                                        <label class="label-name">Can you elaborate on your meeting
+                                            expectations?</label>
+                                        <div class="textbox-inner">
+                                            <textarea class="input-textbox text-area disable-emoji" placeholder="Type"
+                                                data-type='text-area' data-text="text-area"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </sly>
+                        </div>
+                        <div class="">
+                            <button type="button" class="btn-dangers btn-big jsConversationBtn">Request
+                                Callback</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- conversation form  end-->
+
+                <!-- conversation otp start -->
+                <div class="conversation-otp-wrap d-none" id="conversation-otp">
+                    <div class="otp-top-head">
+                        <h3 class="heading20"><span>Verify your mobile number</span></h3>
+                        <p class="text14i">Please enter the 4 digit OTP sent to your mobile number</p>
+                    </div>
+
+                    <div class="row-flex row-flex-30">
+                        <div class="row-col-33 col-sp30">
+                            <div class="otp-name-pt">
+                                <div class="form-textbox-new">
+                                    <label class="label-name">Mobile number</label>
+                                    <div class="textbox-inner">
+                                        <input type="text" class="input-textbox allow-numeric disable-emoji"
+                                            placeholder="" data-type="otp-send-number" maxlength="10" pattern="[0-9]*"
+                                            inputmode="numeric">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-col-66 col-sp30">
+                            <div class="otp-outer-box">
+                                <div class="">
+                                    <div class="form-otp-wrap jsOTPInputBox d-none">
+                                        <p class="label12-text">Enter OTP</p>
+                                        <div class="all-enter-otp">
+                                            <div class="otp-col js-OtpBox">
+                                                <input class="input-textbox allow-numeric disable-emoji" data-otp="otp"
+                                                    type="text" maxlength="1" placeholder="" pattern="[0-9]*"
+                                                    inputmode="numeric" />
+                                                <input class="input-textbox allow-numeric pointer-none disable-emoji"
+                                                    data-otp="otp" type="text" maxlength="1" placeholder=""
+                                                    pattern="[0-9]*" inputmode="numeric" />
+                                                <input class="input-textbox allow-numeric pointer-none disable-emoji"
+                                                    data-otp="otp" type="text" maxlength="1" placeholder=""
+                                                    pattern="[0-9]*" inputmode="numeric" />
+                                                <input class="input-textbox allow-numeric pointer-none disable-emoji"
+                                                    data-otp="otp" type="text" maxlength="1" placeholder=""
+                                                    pattern="[0-9]*" inputmode="numeric" />
+                                            </div>
+                                        </div>
+
+                                        <div class="loan-otp-timers">
+                                            <div class="otp-timers-row">
+                                                <div class="otp-timers-col">
+                                                    <p class="text16i" id="timer">03:00</p>
+                                                </div>
+                                                <div class="otp-timers-col">
+                                                    <a href="javascript:void(0)"
+                                                        class="btn-links d-none jsOnGetCall">Get
+                                                        OTP via call</a>
+                                                    <p
+                                                        class="text16i text-primary call-with-img semibold jsGetCalling d-none">
+                                                        <img src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/call.gif"
+                                                            alt="call icon"> Calling
+                                                        <span class="semibold"> +91 XXXXXXXXXX</span>
+                                                    </p>
+                                                    <p class="text16i text-primary semibold jsGetOTPSent d-none">OTP
+                                                        sent
+                                                        via call</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-controls">
+                        <button class="btn-dangers btn-large jsConversationSendOTP  d-none">Send OTP</button>
+                        <button class="btn-dangers btn-large jsConversationSubmitOTP btn-disabled d-none">Submit
+                        </button>
+                        <button class="btn-link btn-big jsConversationResendOTP d-none">Resend OTP</button>
+                    </div>
+                </div>
+                <!-- conversation otp send -->
+            </div>
+            <!-- error start -->
+            <div class="conversation-thankyou jsFailOTPVarification d-none">
+                <div>
+                    <a href="javascript:void(0)" class="conversation-closed jsClearConversationDetails">
+                        <span class="icon-close"></span>
+                    </a>
+                    <img src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/errors.svg" alt="Not Match"
+                        class="iconimg">
+                    <p class="heading20 semibold heading-texts"><span>INCORRECT OTP</span></p>
+                    <p class="text16i otp-error-text">OTP once used cannot be reused. Please resend OTP to try
+                        again.
+                    </p>
+                    <div>
+                        <button type="button" class="btn-dangers btn-big min-w149 jsOTPTryAgain">Try Again</button>
+                    </div>
+                </div>
+            </div>
+            <!-- error  end-->
+
+            <!-- thankyou start -->
+            <div class="conversation-thankyou jsSuccessOTPVarification d-none">
+                <div>
+                    <a href="javascript:void(0)" class="conversation-closed jsClearConversationDetails">
+                        <span class="icon-close"></span>
+                    </a>
+                    <img src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/thanks.svg" alt="Thank You"
+                        class="iconimg">
+                    <p class="heading20 semibold heading-texts"><span>Thank you for reaching out to us</span></p>
+                    <p class="text16i ref-text">We have received your information and your reference number is <span
+                            class="heading20 bold" id="refNum"> 117718507</span>
+                    </p>
+                    <p class="text16i">Our representative will get in touch with you soon.</p>
+                </div>
+            </div>
+            <!-- thankyou  end-->
+        </div>
+
+    </div>
+</div>
+<!-- conversation box -->
+
+<!-- interest modal -->
+<div class="popover-modal fade" id="interest-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md6">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content bg-with-img">
+                <button data-dismiss="popover-modal" class="popover-modal-close jsSubscribeClose"><span
+                        class="icon-close"></span></button>
+                <div class="popover-modal-body">
+                    <div class="subscribe-thakyou">
+                        <img src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/thanks.svg" alt=""
+                            class="thanks-imgs">
+                        <p class="heading20 semibold">Thank you for your interest!</p>
+                        <p class="text14i">Our relationship manager has elevated the priority of reviewing your details
+                            and will respond promptly</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- interest modal -->
+
+<div class="popover-modal fade" id="not-receive-otp-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md6">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content bg-with-img">
+                <button data-dismiss="popover-modal" class="popover-modal-close jsNotReceiveOtpClose"><span
+                        class="icon-close"></span></button>
+                <div class="popover-modal-body">
+                    <div class="subscribe-thakyou">
+                        <img src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/call-ring-img.svg"
+                            alt="" class="thanks-imgs">
+                        <p class="heading20 semibold">Did not receive OTP?</p>
+                        <p class="text14">Receive your OTP instantly via call</p>
+                        <div class="get-otp-btn pd-t20i">
+                            <a href="javascript:void(0)" class="btn-dangers btn-big min-w149 jsModalOnGetCall">Get OTP
+                                via call</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popover-modal fade" id="otp-sent-modal">
+    <div class="popover-modal-dialog popover-modal-dialog-centered popover-modal-md6">
+        <div class="modal-tb-content">
+            <div class="popover-modal-content bg-with-img">
+                <button data-dismiss="popover-modal" class="popover-modal-close jsThanksModalClose"><span
+                        class="icon-close"></span></button>
+                <div class="popover-modal-body">
+                    <div class="subscribe-thakyou otp-send-success d-none">
+                        <img src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/check-circle.svg"
+                            class="thanks-imgs" alt="">
+                        <p class="heading24 otp-heads">OTP has been sent</p>
+                    </div>
+                    <div class="subscribe-thakyou otp-expired d-none">
+                        <img src="/content/dam/tata-capital-web/tcl-wealth/wealth-global-assets/errors.svg"
+                            class="thanks-imgs" alt="">
+                        <h3 class="semibold">OTP Expired</h3>
+                        <p class="otp-heads pd-t20i">Your OTP has been expired. Please try again.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

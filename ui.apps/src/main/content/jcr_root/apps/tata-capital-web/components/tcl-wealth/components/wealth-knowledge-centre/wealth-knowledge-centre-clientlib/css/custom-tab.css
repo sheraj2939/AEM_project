@@ -1,0 +1,10 @@
+.tab-btn-group .tab-item .tab-button.cmp-tabs__tab--active {
+  background: linear-gradient(112deg, #982E3E 9.37%, #821E2D 93.48%);
+  color: #FFFFFF;
+  box-shadow: 0px 0px 0px 0px rgba(152, 46, 62, 0.14), 0px 8px 17px 0px rgba(152, 46, 62, 0.14), 0px 31px 31px 0px rgba(152, 46, 62, 0.12), 0px 70px 42px 0px rgba(152, 46, 62, 0.07), 0px 124px 49px 0px rgba(152, 46, 62, 0.02), 0px 193px 54px 0px rgba(152, 46, 62, 0);
+}
+
+.general-info-box .general-infolist-wrap .custom-pdf:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}

@@ -1,0 +1,32 @@
+<sly data-sly-test="${wcmmode.edit}">
+  <style>
+	.popover-modal.modal-popup {
+      display: block;
+        opacity:1;
+      z-index:999999999999;
+
+    }
+.popover-modal-dialog.popover-modal-dialog-centered{
+    top:65rem;
+    z-index:9999999999999;
+	}
+  </style>
+
+</sly>
+    <!-- get our app modal -->
+    <div class="popover-modal modal-popup fade" id="getOurApps">
+        <div class="popover-modal-dialog popover-modal-dialog-centered">
+            <div class="modalcontent">
+                <div class="popover-modal-body">
+                    <button data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></button>
+                    <div class="tabcontent pop-display" tab-wrapper>
+
+                            <sly data-sly-resource="${'container-navbtn' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></sly>
+
+                        <div class="tab-content" data-sly-resource="${'container-main' @ resourceType='/apps/core/wcm/components/container/v1/container'}"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- get our app modal -->

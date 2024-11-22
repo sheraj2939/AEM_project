@@ -1,0 +1,14 @@
+<li data-sly-use.textModel="com.adobe.cq.wcm.core.components.models.Text"
+    data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+    data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-test.text="${textModel.text}"
+    data-cmp-data-layer="${textModel.data.json}" id="${component.id}" class="cmp-text">
+    <div class="test-cols text14i ${properties.hThreeTag ? 'custom-pera-inline' : ''}  ${properties.blockText ? 'custom-block' : ''}">
+        <div class="test-icon">
+            <span class="${properties.textClass}"></span>
+        </div>
+    <sly data-sly-test="${properties.hThreeTag}">
+        <h3 class="custom-h3-check-eligibility">${properties.hThreeTag}</h3>
+    </sly>
+        <p data-sly-unwrap="${textModel.isRichText}" class="">${text @ context = textModel.isRichText ? 'html' : 'text'}</p>
+    </div>
+</li>

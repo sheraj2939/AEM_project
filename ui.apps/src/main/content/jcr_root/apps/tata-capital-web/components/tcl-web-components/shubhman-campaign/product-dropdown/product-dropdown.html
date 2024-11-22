@@ -1,0 +1,51 @@
+<div class="campagin-explore-dropdown">
+    <div class="campafin-heads">
+        <p class="heading32">${properties.Title} </p>
+    </div>
+    <div class="campagin-select2">
+        <div class="custom-multiselect-dropdown jsMultiDropdown close-on-outside new-dropdown-search">
+            <h1 class="multiselect-dropdown-button">
+                <a href="javascript:void(0);" data-multiselect="multiselect-drop"
+                    class="heading32">${properties.blueTitle}</a>
+            </h1>
+            <div class="multiselect-dropdown-card jsMultiDropdown" id="multiselect-drop">
+                <div class="dropdown-card-inner">
+                    <div class="dropdown-content">
+                        <div class="search-wrap">
+                            <div class="search-form">
+                                <input type="text" class="form-control jsSearchInput">
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="">
+                                <ul class="multiple-select-list jsMultiSelectList jsGetCampValue">
+                                    <sly data-sly-list.dropdown="${resource.children}">
+                                        <sly data-sly-test="${dropdown.name == 'dropdownMultifield'}">
+                                            <sly data-sly-list.dropdowmField="${dropdown.children}">
+                                                <li class="select-item">
+                                                    <a href="${dropdowmField.url}"
+                                                        class="custom-checkbox-label js-down">
+                                                        ${dropdowmField.Title}
+                                                    </a>
+                                                </li>
+                                            </sly>
+                                        </sly>
+                                    </sly>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="no-result jsNoSearchResult d-none">
+                            <span>No results found</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 28-3-2023 -->
+    </div>
+    <!-- <a href="javascript:void(0)" class="campagin-right-arrow">
+                        <img src="assets/img/campaign/arrow-circle.svg" alt="">
+                    </a> -->
+</div>

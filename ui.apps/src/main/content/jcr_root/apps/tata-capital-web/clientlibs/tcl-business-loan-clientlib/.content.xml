@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    allowProxy="{Boolean}true"
+    categories="tcl-business-loan-clientlib"
+    embed="[banner-clientlib,tcl-sub-nav,tcl-product-loan-box,tcl-about-product,apply-via-whatsapp-clientlib,tcl-key-features,tcl-who-can-take-loan,tcl-why-to-choose-us,tcl-about-more-products,tcl-how-emi-calc-works,tcl-custom-related-video,tcl-ipopular-faq,tcl-customer-testimonials-clientlib,tcl-quick-links-drawer-clientlib,tcl-check-loan-eligibility,tcl-instant-loan-in-your-city,tcl-instant-loan-box,tcl-table]"/>

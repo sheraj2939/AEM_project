@@ -1,0 +1,91 @@
+.loan-mitra-box .loan-mitra-pd {
+    padding: 25px 40px;
+  }
+  .loan-mitra-box .loan-mitra-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .loan-mitra-box .loan-mitra-row .loan-mitra-left {
+    width: 430px;
+  }
+  .loan-mitra-box .loan-mitra-row .loan-mitra-right {
+    width: calc(100% - 430px);
+    padding-left: 30px;
+  }
+  .loan-mitra-box .loan-mitra-img {
+    margin-bottom: 26px;
+  }
+  .loan-mitra-box .loan-mitra-img img {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .loan-mitra-box .who-joinus .heading20 {
+    margin-bottom: 12px;
+  }
+  .loan-mitra-box .who-joinus .list-circle-info li {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+  }
+  .loan-mitra-box .row-flex {
+    margin-top: -10px;
+  }
+  .loan-mitra-box .loan-mitra-submit-wrap {
+    padding-top: 14px;
+  }
+  
+  @media (max-width: 1199px) {
+    .loan-mitra-box .loan-mitra-row .loan-mitra-left {
+      width: 350px;
+    }
+    .loan-mitra-box .loan-mitra-row .loan-mitra-right {
+      width: calc(100% - 350px);
+    }
+  }
+  @media (max-width: 991px) {
+    .loan-mitra-box .loan-mitra-pd {
+      padding: 24px;
+    }
+    .loan-mitra-box .loan-mitra-row {
+      flex-direction: column;
+    }
+    .loan-mitra-box .loan-mitra-row .loan-mitra-left {
+      width: 100%;
+    }
+    .loan-mitra-box .loan-mitra-row .loan-mitra-right {
+      width: 100%;
+      padding-left: 0;
+    }
+    .loan-mitra-box .loan-mitra-img {
+      margin-bottom: 20px;
+    }
+    .loan-mitra-box .who-joinus {
+      margin-bottom: 20px;
+    }
+    .loan-mitra-box .row-flex {
+      margin-top: 0;
+    }
+    .loan-mitra-box .loan-mitra-submit-wrap {
+      padding-top: 4px;
+    }
+  }
+  @media (max-width: 767px) {
+    .loan-mitra-box .who-joinus .list-circle-info li {
+      font-size: 13px;
+      line-height: 18px;
+    }
+    .loan-mitra-box .row-flex .row-col-50 {
+      width: 100%;
+    }
+    .loan-mitra-box .loan-mitra-submit-wrap .btn-blue {
+      width: 100%;
+    }
+  }
+  
+  .hide-input-note {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+  

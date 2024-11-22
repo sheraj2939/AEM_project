@@ -1,0 +1,27 @@
+<!--  trusted details box  -->
+<section class="space-tb40">
+  <div class="container">
+    <div class="bg-div trusted-details-box">
+      <ul class="loans-lists-info">
+        <sly data-sly-list.trustDetail="${resource.children}">
+          <sly data-sly-test="${trustDetail.name == 'cashLoanList'}">
+            <sly data-sly-list.TrustItem="${trustDetail.children}">
+              <li>
+                <sly data-sly-test=${TrustItem.smallTitleTxt}>
+                  <p class="loans-numbers">${TrustItem.smallTitleTxt}</p>
+                </sly>
+                <sly data-sly-test=${TrustItem.middleText}>
+                  <p class="loans-rupees">${TrustItem.middleText}</p>
+                </sly>
+                <sly data-sly-test=${TrustItem.lastTitleTxt}>
+                  <p class="loans-captions">${TrustItem.lastTitleTxt}</p>
+                </sly>
+              </li>
+            </sly>
+          </sly>
+        </sly>
+      </ul>
+    </div>
+  </div>
+</section>
+<!--  trusted details box  -->

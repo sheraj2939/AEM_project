@@ -1,0 +1,123 @@
+.marquee-box {
+  margin-top: -45px;
+}
+
+.marquee-box .marquee-inner {
+  padding: 67px 0 25px;
+  position: relative;
+  border-radius: 24px;
+  background: linear-gradient(134deg, rgba(100, 8, 17, 0.79) 0%, rgba(100, 8, 17, 0.63) 41.46%, rgba(100, 8, 17, 0.79) 100%);
+  overflow: hidden;
+}
+
+.marquee-box .marquee-inner:before,
+.marquee-box .marquee-inner:after {
+  content: "";
+  width: 125.791px;
+  height: 35.699px;
+  position: absolute;
+  display: block;
+  top: 59px;
+  z-index: 1;
+}
+
+.marquee-box .marquee-inner:before {
+  background: linear-gradient(270deg, #853D41 6.25%, rgba(132, 59, 61, 0) 100%);
+  right: 0px;
+}
+
+.marquee-box .marquee-inner:after {
+  left: 0px;
+  background: linear-gradient(270deg, #894347 6.25%, rgba(141, 74, 77, 0) 100%);
+  transform: rotate(180deg);
+}
+
+.marquee-box .js-marquee {
+  display: flex;
+  align-items: center;
+}
+
+.marquee-box li {
+  padding-left: 7px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.marquee-box li::before {
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: 0;
+  height: 15px;
+  width: 1px;
+  background-color: #fff;
+}
+
+.marquee-box li:first-child {
+  padding-left: 0;
+}
+
+.marquee-box li:first-child::before {
+  content: none;
+}
+
+.marquee-box li:last-child {
+  padding-right: 0;
+}
+
+.marquee-box li p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 19px;
+  font-family: "OpenSans-SemiBold";
+  position: relative;
+  padding: 0 7px;
+  padding-left: 15px;
+}
+
+.marquee-box li p::before {
+  position: absolute;
+  content: "\e923";
+  left: 0;
+  top: 1px;
+  font-family: "icomoon";
+  color: #fff;
+  font-size: 10px;
+}
+
+.marquee-box li p:first-child {
+  padding-left: 0px;
+}
+
+.marquee-box li p:first-child::before {
+  content: none;
+}
+
+.marquee-box li p:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 767px) {
+  .marquee-box {
+    padding: 0 25px;
+  }
+
+  .marquee-box .marquee-inner:before,
+  .marquee-box .marquee-inner:after {
+    width: 60px;
+    height: 66px;
+    top: 45px;
+    background-size: cover;
+  }
+
+  .marquee-box li {
+    align-items: center;
+  }
+
+  .marquee-box li p {
+    font-size: 13px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

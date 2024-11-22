@@ -1,0 +1,104 @@
+
+<div class="preapproved-offers-box mg-b60" id="preapprovedOfferForm">
+            <div class="custom-container">
+                <div class="preapproved-offers-inner">
+                    <div class="preapproved-inner-row">
+                        <div class="preapproved-left-col">
+                           <div data-sly-resource="${'title-content' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></div>
+                        </div>
+                        <div class="preapproved-right-col">
+                            <div class="preapproved-form-wrapper get-otp-wrapper" id="js-preapprovepffer-loan">
+                                <div class="form-top-content">
+                                    <div data-sly-resource="${'inner-title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></div>
+                                </div>
+                                <div class="form-bottom-content">
+                                    <div data-sly-resource="${'form' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></div>
+                                    <div class="form-check custom-checkbox">
+                                        <div class="label-text">                                            
+                                            <input type="checkbox" class="form-check-input jsIAgreeTermsPolicy1" id="checkBoxWhatsapp" value="">
+                                            <label class="checkbox-wrap form-check-label" for="checkBoxWhatsapp"></label>
+                                            <div data-sly-resource="${'terms-conditions' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="otp-btn-wrapper">
+                                    <div data-sly-resource="${'button' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></div>
+                                </div>
+                            </div>
+                            <div class="preapproved-form-wrapper enter-otp-wrapper d-none" id="preapproved-offer-otp">
+                                <div class="form-top-content">
+                                    <div data-sly-resource="${'enter-otp-title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></div>
+                                </div>
+                                <div class="form-bottom-content">
+                                    <div class="opt-inner">
+                                        <div class="otp-outer-box">
+                                            <div data-sly-resource="${'otp-text' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></div>
+                                            <div class="enter-otp-block">
+                                                <div class="otp-col js-OtpBox">
+                                                    <input class="input-textbox only-numeric-input" type="text" maxlength="1" placeholder="" pattern="[0-9]*" inputmode="numeric">
+                                                    <input class="input-textbox only-numeric-input pointer-none" type="text" maxlength="1" placeholder="" pattern="[0-9]*" inputmode="numeric">
+                                                    <input class="input-textbox only-numeric-input pointer-none" type="text" maxlength="1" placeholder="" pattern="[0-9]*" inputmode="numeric">
+                                                    <input class="input-textbox only-numeric-input pointer-none" type="text" maxlength="1" placeholder="" pattern="[0-9]*" inputmode="numeric">
+                                                </div>
+                                                <!--/*<div class="count-text">
+                                                    <span>00:59</span>
+                                                </div>*/-->
+                                            </div>
+                                        </div>
+                                        <!-- otp timer -->
+                                        <div class="loan-otp-timers">
+                                            <div class="otp-timers-row">
+                                                <div class="otp-timers-col">
+                                                    <p class="text16i" id="timer">03:00</p>
+                                                </div>
+                                                <div class="otp-timers-col">
+                                                    <a href="javascript:void(0)" class="btn-links d-none jsOnGetCall jsOnGetCallButton">Get OTP via
+                                                        call</a>
+                                                    <p class="text16i jsGetCalling d-none">Calling <span class="semibold">+91 XXXXXXXXXX</span> <span
+                                                            class="otp-number-dot dot-animation"><img
+                                                                src="/content/dam/tata-capital-web/assets/img/lead-form/dot-img.gif" alt=""></span></p>
+                                                    <p class="text16i jsGetOTPSent d-none">OTP sent via call</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- otp timer -->
+                                    </div>
+                                </div>
+                                <div class="otp-controls otp-btn-wrapper">
+                                    <a href="javascript:void(0)" class="btn-blue btn14 js-otp-submit">Submit</a>
+                                    <a href="javascript:void(0)" class="btn-link btn14 resend-text js-resendOTP">Resend OTP</a>
+                                    <button class="btn-link btn-big jsLoadingBtn d-none">
+                                        <img src="/content/dam/tata-capital-web/assets/img/lead-form/loader-img.gif" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="preapproved-form-wrapper error-wrapper d-none" id="preapproved-offer-error">
+                                <div class="error-content">
+                                        <div class="error-content-inner">
+                                            <img src="/content/dam/tata-capital-web/preapproved-offer/error-logo.svg" alt="">
+                                        <p class="heading36">
+                                            <span>Error</span>
+                                        </p>
+                                        <p class="text16i">
+                                            Entered OTP is incorrect. Please try again.
+                                        </p>
+                                        <a href="javascript:void(0)" class="btn-blue btn14 js-pretry-again">Try Again</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="key-features-wrapper">
+                        <div class="key-feautures-inner">
+                            <div data-sly-resource="${'key-features-title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></div>
+
+                                <div data-sly-resource="${'kf' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></div>
+                                
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>

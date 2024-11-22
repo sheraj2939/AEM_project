@@ -1,0 +1,87 @@
+.faq-box .faq-card {
+  padding: 10px 40px;
+}
+
+.faq-box .faq-row {
+  border-bottom: 1px solid #BFD4E2;
+  padding: 30px 0;
+}
+
+.faq-box .faq-row:last-child {
+  border-bottom: none;
+}
+
+.faq-box .faq-row .faq-body {
+  display: none;
+}
+
+.faq-box .faq-row .faq-body-inner {
+  padding-top: 20px;
+}
+
+.faq-box .faq-row .faq-body-inner p {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.faq-box .faq-row .faq-body-inner p:last-child {
+  margin-bottom: 0px;
+}
+
+.faq-box .faq-row .faq-body-inner .list-circle-info li {
+  color: #333;
+}
+
+.faq-box .faq-row .faq-heading {
+  font-family: "OpenSans-SemiBold";
+  font-size: 16px;
+  line-height: 18px;
+  color: #333333;
+  display: block;
+  padding-right: 20px;
+  position: relative;
+}
+
+.faq-box .faq-row .faq-heading:before {
+  content: "\e90e";
+  font-family: "icomoon";
+  font-size: 12px;
+  font-weight: normal;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.faq-box .faq-row .faq-heading.active:before {
+  content: "\e90d";
+}
+
+@media (max-width: 1199px) {
+  .faq-box .faq-card {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .faq-box .faq-card {
+    padding: 4px 24px;
+  }
+
+  .faq-box .faq-row {
+    padding: 20px 0;
+  }
+
+  .faq-box .faq-row .faq-heading {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .faq-box .faq-body p {
+    font-size: 13px;
+    line-height: 19px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

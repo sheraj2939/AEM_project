@@ -1,0 +1,9 @@
+#base=js
+#tw-loan.js
+#lap-emi.js
+#hl-emi-calculator.js
+#bl-emi-calculator.js
+#car-emi.js
+pl-emi.js
+emi-calc.js
+emi-calc-custom.js

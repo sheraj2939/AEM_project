@@ -1,0 +1,93 @@
+<!-- financial insights -->
+<section class="financial-insights-wrap ${properties.spaceRemove?'space-tb30':'space-tb40'}">
+    <div class="financial-inner">
+        <div class="container">
+            <sly data-sly-test="${!properties.hThree}">
+                <h2 class="text-center">${properties.titleLight}<span>${properties.titleBold}</span></h2>
+            </sly>
+            <sly data-sly-test="${properties.hThree}">
+                <h3 class="text-center custom-h3" style="font-size: 34px;
+                            line-height: 130%;
+                            letter-spacing: .02em;
+                            color: #000;
+                            width: 100%;
+                            margin-bottom: 48px;">${properties.titleLight}<span style="font-family: OpenSans-Bold;">${properties.titleBold}</span></h3>
+            </sly>
+        </div>
+        <div class="container mob-px-0">
+            <div class="${properties.noSlider ? 'financials-shubh-rows' : 'js-fi-slider slider-dots financial-insights-slider-dots slider-arrows'}">
+                <sly data-sly-list.blogs="${resource.children}">
+                    <sly data-sly-test="${blogs.name == 'blogsFeild'}">
+                        <sly data-sly-list.blogsItems="${blogs.children}">
+                            <div class="financial-insights-slider">
+                                <div class="financial-insights-item jsTranslateBack">
+                                    <div class="fi-thumbnail-img">
+                                        <img src="${blogsItems.blogImage}" alt="${blogsItems.blogImgAlt}" class="lozad"
+                                            data-src="${blogsItems.blogImage}">
+                                    </div>
+                                    <div class="fi-overlay-card" style="cursor: default;"
+                                        target="${blogsItems.newTab ? '_blank' : '' }">
+                                        <div class="fi-card-top">
+                                            <span class="fi-insight-tag">
+                                                ${blogsItems.hashTag}
+                                            </span>
+                                            <span class="icon-arrow-up-right arrow-icon"></span>
+                                        </div>
+                                        <a href="${blogsItems.blogLink}" class="fi-card-mid">
+                                            <h6>${blogsItems.blogTitle}</h6>
+                                        </a>
+                                        <div class="fi-card-bottom">
+                                            <span class="time-stamp">${blogsItems.postDate}</span>
+                                            <div class="share-bundle close-on-outside">
+                                                <button class="btn-white js-fi-share-btn" id="js-fi-share-menu1"
+                                                    data-share-icon="Financial Insights">Share <span
+                                                        class="icon-share"></span></button>
+                                                <div class="share-bundle-menu js-fi-share-menu1">
+                                                    <button type="button" class="social-btn"
+                                                        data-shareurl="${blogsItems.blogLink}"
+                                                        data-share='whatsapp-icon'>
+                                                        <img class="lozad"
+                                                            data-src="/content/dam/tata-capital-web/assets/img/whatsapp-colored.svg"
+                                                            alt="Whatsapp">
+                                                    </button>
+                                                    <button type="button" class="social-btn"
+                                                        data-shareurl="${blogsItems.blogLink}"
+                                                        data-share="facebook-icon">
+                                                        <img class="lozad"
+                                                            data-src="/content/dam/tata-capital-web/assets/img/facebook-colored.svg"
+                                                            alt="Facebook">
+                                                    </button>
+                                                    <button type="button" class="social-btn"
+                                                        data-shareurl="${blogsItems.blogLink}"
+                                                        data-share="twitter-share">
+                                                        <img class="lozad"
+                                                            data-src="/content/dam/tata-capital-web/assets/img/twitter-x.svg"
+                                                            alt="Twitter">
+                                                    </button>
+                                                    <button type="button" class="social-btn jsCopyLink"
+                                                        data-shareurl="${blogsItems.blogLink}">
+                                                        <span class="icon-copy icon"></span>
+                                                        <span class="text-copy">Copy</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </sly>
+                    </sly>
+                </sly>
+            </div>
+            <sly data-sly-test="${properties.btnText}">
+                <div class="white-blue-button button text-center">
+                    <a class="btn-blue btn-large" target="${properties.newTab ? '_blank' : ''}"
+                        data-cta="about-cibil-score" href="${properties.btnLink}">
+                        ${properties.btnText}
+                    </a>
+                </div>
+            </sly>
+        </div>
+    </div>
+</section>
+<!-- financial insights -->

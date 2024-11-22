@@ -1,0 +1,68 @@
+.selectors-box .selectors-inner {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    border-radius: 30px;
+    padding: 32px 40px 36px;
+}
+
+.selectors-box h2 {
+    color: #fff;
+}
+
+.selectors-box .selectors-cols {
+    text-align: center;
+}
+
+.selectors-box .selectors-cols .selectors-img {
+    height: 48px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.selectors-box .selectors-cols .selectors-img img {
+    margin: auto;
+}
+
+.selectors-box .selectors-cols .text14 {
+    color: #fff;
+}
+
+.selectors-box .selectors-lists {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -35px;
+}
+
+.selectors-box .selectors-lists li {
+    width: 25%;
+    padding: 0 10px;
+    margin-top: 35px;
+}
+
+@media (max-width: 991px) {
+    .selectors-box .selectors-lists {
+        margin-top: -26px;
+    }
+
+    .selectors-box .selectors-lists li {
+        width: 33.33%;
+        margin-top: 26px;
+    }
+}
+
+@media (max-width: 767px) {
+    .selectors-box .selectors-inner {
+        padding: 24px;
+    }
+
+    .selectors-box .selectors-lists li {
+        width: 50%;
+    }
+}
+
+
+
+/*# sourceMappingURL=style.css.map */

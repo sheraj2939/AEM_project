@@ -1,0 +1,47 @@
+<!--  product list box  -->
+<section class="space-tb40">
+    <div class="container">
+        <div class="products-list-box">
+            <div class="tops-heads">
+                <h2>${properties.titleLight} <span>${properties.titleBold}</span></h2>
+            </div>
+            <ul class="products-start-list">
+                <sly data-sly-list.productBox="${resource.children}">
+                    <sly data-sly-test="${productBox.name == 'productList'}">
+                        <sly data-sly-list.productBoxContent="${productBox.children}">
+                            <li>
+                                <div class="bg-div products-start-col">
+                                    <div class="products-start-top">
+                                        <div class="products-texts">
+                                            <span class="all-icon ${productBoxContent.classIcon}"></span>
+                                            <sly data-sly-test="${!productBoxContent.needPTag}">
+                                                <a href="${productBoxContent.linkUrl}"
+                                                    target="${productBoxContent.openInNewTab ? '_blank' : ''}">
+                                                    <h3 class="heading20 semibold">${productBoxContent.titleTxt}</h3>
+                                                </a>
+                                            </sly>
+                                            <sly data-sly-test="${productBoxContent.needPTag}">
+                                                <p class="heading20 semibold">${productBoxContent.titleTxt}</p>
+                                            </sly>
+                                        </div>
+                                    </div>
+                                    <sly data-sly-test="${productBoxContent.linkText}">
+                                        <div class="products-start-bottom">
+                                            <a href="${productBoxContent.linkUrl}"
+                                                target="${productBoxContent.openInNewTab ? '_blank' : ''}"
+                                                class="btn-links btn-14 link-with-arrow">${productBoxContent.linkText}
+                                                <span>${productBoxContent.linkTextLight}</span>${productBoxContent.linkTextBold}<i
+                                                    class="icon-arrow-right arros"></i></a>
+                                        </div>
+                                    </sly>
+                                </div>
+                            </li>
+                        </sly>
+                    </sly>
+                </sly>
+            </ul>
+        </div>
+    </div>
+
+</section>
+<!--  product list box  -->

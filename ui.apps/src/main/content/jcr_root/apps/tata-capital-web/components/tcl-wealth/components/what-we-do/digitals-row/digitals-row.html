@@ -1,0 +1,71 @@
+<div class="digitals-col" data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+    data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-use.imageTemplate="image.html"
+    data-sly-use.pretitleTemplate="pretitle.html" data-sly-use.titleTemplate="title.html"
+    data-sly-use.descriptionTemplate="description.html" data-sly-use.actionsTemplate="actions.html"
+    data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}">
+    <sly data-sly-test="${properties.boxType =='icon-box'}">
+        <div class="digitals-div bg-div bg-with-img digitals-with-hover digital-center">
+            <div class="digitals-top">
+                <sly data-sly-test=${properties.newcheckbox}>
+                    <span class="digital-text-new">New</span>
+                </sly>
+                <span class="all-icon47">
+                    <span class="inner-icon"><span class="${teaser.pretitle}"></span>
+                    </span>
+                </span>
+                <p class="heading20 semibold">${teaser.title}</p>
+            </div>
+            <div class="digitals-overlay bg-div bg-with-img">
+                <p class="heading20 semibold">${teaser.title}</p>
+                <div class="text14i">${teaser.description @ context = 'html'}
+                </div>
+                <div class="digitals-btn d-none d-md-block">
+                    <sly class="icon-arrow-right" data-sly-call="${actionsTemplate.actions @ teaser=teaser}"></sly>
+                </div>
+            </div>
+            <div class="digitals-btn d-block d-md-none">
+                <sly class="icon-arrow-right" data-sly-call="${actionsTemplate.actions @ teaser=teaser}"></sly>
+            </div>
+        </div>
+    </sly>
+    <sly data-sly-test="${properties.boxType =='image-box'}">
+        <div class="digitals-div bg-div digitals-with-hover">
+            <div class="digitals-top">
+                <sly data-sly-test=${properties.newcheckbox}>
+                    <span class="digital-text-new">New</span>
+                </sly>
+                <div class="center-img">
+                    <img src="${properties.fileReference}" alt="${properties.alt}">
+                </div>
+                <p class="heading20 semibold">${teaser.title}</p>
+            </div>
+            <div class="digitals-overlay">
+                <p class="heading20 semibold">${teaser.title}</p>
+                <div class="text14i">${teaser.description @ context = 'html'}
+                </div>
+                <div class="digitals-btn d-none d-md-block">
+                    <sly class="icon-arrow-right" data-sly-call="${actionsTemplate.actions @ teaser=teaser}"></sly>
+                </div>
+            </div>
+            <div class="digitals-btn d-block d-md-none">
+                <sly class="icon-arrow-right" data-sly-call="${actionsTemplate.actions @ teaser=teaser}"></sly>
+            </div>
+        </div>
+    </sly>
+    <sly data-sly-test="${properties.boxType =='without-overlay'}">
+        <div class="digitals-div bg-div bg-with-img digitals-with-hover">
+            <div class="digitals-top">
+                <sly data-sly-test=${properties.newcheckbox}>
+                    <span class="digital-text-new">New</span>
+                </sly>
+                <span class="all-icon47">
+                    <span class="inner-icon"><span class="${teaser.pretitle}"></span>
+                    </span>
+                </span>
+                <p class="heading20 semibold">${teaser.title}</p>
+                <div class="text16i about-info-text">${teaser.description @ context = 'html'}
+                </div>
+            </div>
+        </div>
+    </sly>
+</div>

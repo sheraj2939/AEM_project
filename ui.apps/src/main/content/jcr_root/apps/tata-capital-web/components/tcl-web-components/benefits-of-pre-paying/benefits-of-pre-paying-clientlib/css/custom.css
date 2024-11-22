@@ -1,0 +1,20 @@
+.personal-two-loan-box .personal-loan-row{
+    width: 100%;
+}
+.personal-two-loan-box .customcontainer.container.responsivegrid.personal-loan-row{
+    margin:unset;
+}
+.personal-two-loan-box .customcontainer.container.responsivegrid.personal-loan-row .custom-height{
+    height: 100%;
+}
+.has-fixed-controls .custom-flex-button{
+    display: flex;
+}
+.personal-two-loan-box .personal-loan-row .personal-para .para-margin-custom:nth-last-child(1){
+    margin-bottom:20px;
+}
+@media (max-width: 767px){
+    .has-fixed-controls .custom-flex-button{
+        display: block;
+    }
+}

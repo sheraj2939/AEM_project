@@ -1,0 +1,33 @@
+<section class="branch-instant-loan-cntr" data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+    data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-use.imageTemplate="image.html"
+    data-sly-use.pretitleTemplate="pretitle.html" data-sly-use.titleTemplate="title.html"
+    data-sly-use.descriptionTemplate="description.html" data-sly-use.actionsTemplate="actions.html"
+    data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+    id="${teaser.id}" data-cmp-data-layer="${teaser.data.json}">
+    <div class="container">
+        <article class="branch-instant-loan-box space-tb40">
+            <div class="media-holder d-none d-md-block">
+                <img src="${properties.fileReference}" class data-src="${properties.fileReference}" alt="" />
+            </div>
+            <div class="media-holder d-block d-md-none">
+                <img src="${properties.mobileImage}" class data-src="${properties.mobileImage}" alt="" />
+            </div>
+            <div class="instant-loan">
+                <div class="branch-preapproved-loan">
+                    <div class="approved-candidate">
+                        <div class="info">
+                            <div
+                                data-sly-resource="${'instant-home-loan-title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                            </div>
+                            <p class="text16i">${teaser.description @ context = 'html'}</p>
+                        </div>
+                        <div
+                            data-sly-resource="${'instant-home-loan-button' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+<!--  instant loan end -->

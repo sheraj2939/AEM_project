@@ -1,0 +1,18 @@
+
+
+<main class="main-content">
+
+    <!--  instant loan -->
+    <section class="instant-loan-cntr">
+        <div class="container">
+            <article>
+				 <div  data-sly-resource="${'container-main' @resourceType='/apps/tata-capital-web/components/TC-Revamp/customcontainer/customcontainer'}" />
+            </article>
+        </div>
+    </section>
+    <!--  instant loan end -->
+
+</main>
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories='TC-revamp-instant-loan'}"></sly>
+</sly>

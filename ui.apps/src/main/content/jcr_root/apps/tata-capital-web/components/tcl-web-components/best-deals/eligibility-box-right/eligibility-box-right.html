@@ -1,0 +1,17 @@
+ <div class="card theme-card" data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+    data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-use.imageTemplate="image.html"
+    data-sly-use.pretitleTemplate="pretitle.html" data-sly-use.titleTemplate="title.html"
+    data-sly-use.descriptionTemplate="description.html" data-sly-use.actionsTemplate="actions.html"
+    data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+    id="${teaser.id}" data-cmp-data-layer="${teaser.data.json}">
+                            <img class="check-loan-img" loading="lazy" src="${properties.fileReference}"
+                                alt="watch-in-hand"/>
+                            <div class="card-body">
+                                <h3 class="heading20"><span>${teaser.title}</span>
+                                </h3>
+                                <ul class="dot-list check-loan-eligibility-points">
+                                   ${teaser.description @ context = 'html'}
+                                </ul>
+                                    <sly  data-sly-resource="${'white-blue-button' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/best-deals/white-blue-button'}"></sly>
+
+</div>

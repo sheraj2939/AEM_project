@@ -1,0 +1,87 @@
+    <section class="channel-partner-meet-box space-tb40">
+        <div class="container">
+            <div class="tops-heads">
+                <div data-sly-resource="${'title' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></div>
+
+            </div>            
+        </div>
+        <div class="container mob-pd0">
+
+                <div data-sly-resource="${'channel-row-card' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></div>
+                      
+        </div>
+
+        <div class="container">
+            <div class="text-center views-btns"> 
+			<div data-sly-resource="${'button' @ resourceType='/apps/tata-capital-web/components/tcl-web-components/customcontainer/customcontainer'}"></div>
+
+            </div>
+        </div>
+    </section>
+    <div class="popover-modal fade channel-partner-modal" id="partnerSliderOneModal">    
+    <button data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></button>
+    <div class="popover-modal-dialog popover-modal-dialog-centered">
+        <div class="popover-modal-content">                
+
+            <div class="modal-more-slider slick-slider slider-dots slider-arrows" id="viewSameSlider">
+                <sly data-sly-list.imageList="${resource.children}">
+                    <sly data-sly-test="${imageList.name == 'secondSliderField'}">
+                        <!--/* Not recommended, incase Slingmodel is used in the future then migrate this logic there */-->
+                        <sly data-sly-list.innerSlider="${imageList.children}">
+                            <sly data-sly-test.imageListSize="${innerSliderList.count}" />
+                        </sly>
+                        <sly data-sly-list.innerSlider="${imageList.children}">
+                <div class="more-slider-row">        
+                    <div class="more-slider-caption">
+                        <p class="heading20">${innerSlider.title}</p>
+                        <p class="dates-place">${innerSlider.placeDate}</p>
+                        <div class="view-more-total"><span>${innerSliderList.count}</span>/${imageListSize}</div>
+                    </div>                
+                    <div class="more-slider-image">
+                        <img src="${innerSlider.mainSliderImage}" alt="">
+                    </div>
+                </div>
+            </sly>
+        </sly>
+    </sly>
+            </div>
+            
+        </div>
+    </div>   
+</div>
+
+
+<div class="popover-modal fade channel-partner-modal" id="partnerSliderModal">
+    <button data-dismiss="popover-modal" class="popover-modal-close"><i class="icon-close"></i></button>
+    <div class="popover-modal-dialog popover-modal-dialog-centered">
+        <div class="popover-modal-content">            
+
+            <div class="modal-more-slider slick-slider slider-dots slider-arrows" id="viewMoreSlider">
+                <sly data-sly-list.imageList="${resource.children}">
+                    <sly data-sly-test="${imageList.name == 'secondSliderField'}">
+                        <!--/* Not recommended, incase Slingmodel is used in the future then migrate this logic there */-->
+                        <sly data-sly-list.innerSlider="${imageList.children}">
+                            <sly data-sly-test.imageListSize="${innerSliderList.count}" />
+                        </sly>
+                        <sly data-sly-list.innerSlider="${imageList.children}">
+                            <div class="more-slider-row">        
+                                <div class="more-slider-caption">
+                                    <p class="heading20">${innerSlider.title}</p>
+                                    <p class="dates-place">${innerSlider.placeDate}</p>
+                                    <div class="view-more-total"><span>${innerSliderList.count}</span>/${imageListSize}</div>
+                                </div>                
+                                <div class="more-slider-image">
+                                    <img src="${innerSlider.mainSliderImage}" alt="">
+                                </div>
+                            </div>
+                        </sly>
+                    </sly>
+                </sly>
+
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
